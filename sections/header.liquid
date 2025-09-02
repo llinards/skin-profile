@@ -1,61 +1,65 @@
 <header>
-  <h2 class="header__title">
-    {{ shop.name | link_to: routes.root_url }}
-  </h2>
+  <div class="relative bg-transparent container mx-auto">
+    <div class="mx-auto px-4 sm:px-6">
+      <!-- NAVIGATION MENU -->
+      <nav class="hidden md:flex items-center justify-between space-x-10">
+        <div class="space-x-8">
+          {% assign links = linklists['main-menu'].links %}
+          {% for link in links %}
+            {% if forloop.index <= 3 %}
+              {% if link.links != blank %}
+                {% render 'dropdown-menu-link', link: link %}
+              {% else %}
+                {% render 'menu-link', link: link %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
 
-  <div class="header__menu">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
+        <!-- LOGO IN THE MIDDLE -->
+        <div>
+          <img
+            src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+            alt="{{ shop.name }}"
+            height="1024"
+            width="1024"
+            class="w-64 h-18"
+          >
+        </div>
 
-  <div class="header__icons">
-    {% if shop.customer_accounts_enabled %}
-      {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}
-    {% endif %}
-
-    <a href="{{ routes.cart_url }}">
-      {% if cart.item_count > 0 %}
-        <sup>{{ cart.item_count }}</sup>
-      {% endif %}
-
-      {{ 'icon-cart.svg' | inline_asset_content }}
-    </a>
+        <div class="flex space-x-8">
+          {% for link in links %}
+            {% if forloop.index > 3 %}
+              {% if link.links != blank %}
+                {% render 'dropdown-menu-link', link: link %}
+              {% else %}
+                {% render 'menu-link', link: link %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          <div class="flex items-center">
+            <a href="{{ routes.cart_url }}">
+              {% render 'icon-shopping-bag' %}
+            </a>
+            <p class="text-white">
+              {{ cart.item_count }}
+            </p>
+          </div>
+        </div>
+      </nav>
+    </div>
   </div>
 </header>
-
-{% stylesheet %}
-  header {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header a {
-    position: relative;
-    text-decoration: none;
-    color: var(--color-foreground);
-  }
-  header a sup {
-    position: absolute;
-    left: 100%;
-    overflow: hidden;
-    max-width: var(--page-margin);
-  }
-  header svg {
-    width: 2rem;
-  }
-  header .header__menu,
-  header .header__icons {
-    display: flex;
-    gap: 1rem;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
   "name": "t:general.header",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
     {
       "type": "link_list",
       "id": "menu",
