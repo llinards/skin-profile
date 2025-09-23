@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@layer components {
+    .sp-brown {
+        color: #885642;
+    }
+
+    .bg-sp-brown {
+        background-color: #885642;
+    }
+
+    .hover\:bg-sp-brown:hover {
+        background-color: #885642 !important;
+    }
+}
+
+@layer base {
+
+    @font-face {
+        font-family: "Belleza-Regular";
+        src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Belleza-Regular.ttf?v=1758653937')
+    }
+
+    @font-face {
+        font-family: "Manrope-Light";
+        src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-Light.ttf?v=1758653989')
+    }
+
+    body {
+        font-family: "Manrope-Light";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Belleza-Regular";
+    }
+
+    body {
+        @apply text-base md:text-lg;
+    }
+}

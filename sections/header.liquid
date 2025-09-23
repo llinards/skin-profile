@@ -1,9 +1,9 @@
-<header>
-  <div class="relative bg-transparent container mx-auto">
-    <div class="mx-auto px-4 sm:px-6">
+<header class="relative container mx-auto">
+  <div class="flex justify-center absolute z-50 w-full ">
+    <div class="mx-auto px-4 sm:px-6 w-full ">
       <!-- NAVIGATION MENU -->
-      <nav class="hidden md:flex items-center justify-between space-x-10">
-        <div class="space-x-8">
+      <nav class="hidden md:flex items-center justify-between space-x-10 py-4">
+        <div class=" flex flex-row space-x-8">
           {% assign links = linklists['main-menu'].links %}
           {% for link in links %}
             {% if forloop.index <= 3 %}
@@ -16,7 +16,7 @@
           {% endfor %}
         </div>
 
-        <!-- LOGO IN THE MIDDLE -->
+        <!-- LOGO -->
         <div>
           <img
             src="{{ "skin-profile-logo-white.svg" | asset_url }}"
