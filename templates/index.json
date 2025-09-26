@@ -19,12 +19,22 @@
             "url": "shopify://pages/pakalpojumi",
             "style": "white"
           }
+        },
+        "button_TVAP9j": {
+          "type": "button",
+          "settings": {
+            "text": "Virtuālais konsultants",
+            "url": "#",
+            "style": "brown"
+          }
         }
       },
       "block_order": [
-        "button_4bdWCH"
+        "button_4bdWCH",
+        "button_TVAP9j"
       ],
       "settings": {
+        "bg_image": "shopify://shop_images/skin-profile-background-image.jpg",
         "heading": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija",
         "subtext": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
       }
