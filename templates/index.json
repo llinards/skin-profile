@@ -11,7 +11,23 @@
   "sections": {
     "main": {
       "type": "index",
-      "settings": {}
+      "blocks": {
+        "button_4bdWCH": {
+          "type": "button",
+          "settings": {
+            "text": "Pakalpojumi",
+            "url": "shopify://pages/pakalpojumi",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "button_4bdWCH"
+      ],
+      "settings": {
+        "heading": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija",
+        "subtext": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+      }
     },
     "text_section_BfGNQG": {
       "type": "text-section",
