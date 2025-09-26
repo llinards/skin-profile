@@ -4,7 +4,7 @@
 >
   <div class="container mx-auto px-4 sm:px-6 h-full">
     <div class="flex flex-col justify-center h-full md:w-3/5 space-y-6 items-start">
-      <h1 class="flex uppercase text-white text-3xl md:text-6xl md:leading-18">
+      <h1 class="flex uppercase text-3xl md:text-6xl md:leading-18">
         Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija
       </h1>
       <p class="text-white">
@@ -12,7 +12,10 @@
         ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.
       </p>
       <div class="flex justify-center md:justify-start w-full">
-        {% render 'btn', text: 'Pakalpojumi', url: '/pages/services' %}
+        {% render 'btn-white', text: 'Pakalpojumi', url: '/pages/services' %}
+      </div>
+      <div class="flex justify-center md:justify-start w-full fill-white hover:sp-fill-brown">
+        {% render 'btn-brown', text: 'Virtuālais konsultants' %}
       </div>
     </div>
   </div>

@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
+
 @layer components {
     .sp-brown {
         color: #885642;
+    }
+
+    .hover\:sp-brown:hover {
+        color: #885642 !important;
+    }
+
+    .sp-fill-brown {
+        fill: #885642;
+    }
+
+    .hover\:sp-fill-brown:hover {
+        fill: #885642 !important;
+    }
+
+    .sp-dark {
+        color: #14160D;
     }
 
     .bg-sp-brown {
@@ -12,6 +29,7 @@
     .hover\:bg-sp-brown:hover {
         background-color: #885642 !important;
     }
+
 }
 
 @layer base {
@@ -30,13 +48,22 @@
         font-family: "Manrope-Light";
     }
 
-    h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
         font-family: "Belleza-Regular";
+        color: #14160D;
+    }
+
+    h1 {
+        font-family: "Belleza-Regular";
+        color: #fff;
+    }
+
+    a {
+        @apply text-base
     }
 
     body {

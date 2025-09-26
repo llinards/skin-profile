@@ -8,12 +8,19 @@
     {% render 'meta-tags' %}
 
     {{ content_for_header }}
+    <script src="{{ 'application.js' | asset_url }}" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
   </head>
 
-  <body class="">
+  <body>
     {% sections 'header-group' %}
 
-    <main class="">
+    <main>
       {{ content_for_layout }}
     </main>
 
