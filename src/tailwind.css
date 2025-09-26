@@ -75,6 +75,6 @@
     }
 
     body {
-        @apply text-base md:text-lg sp-dark;
+        @apply text-base md:text-lg;
     }
 }
