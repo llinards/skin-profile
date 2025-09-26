@@ -29,7 +29,6 @@
     .hover\:bg-sp-brown:hover {
         background-color: #885642 !important;
     }
-
 }
 
 @layer base {
@@ -67,6 +66,6 @@
     }
 
     body {
-        @apply text-base md:text-lg;
+        @apply text-base md:text-lg sp-dark;
     }
 }
