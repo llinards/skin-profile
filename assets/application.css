@@ -629,10 +629,10 @@
   .hover\:sp-brown:hover {
     color: #885642 !important;
   }
-  .sp-fill-brown {
+  .fill-sp-brown {
     fill: #885642;
   }
-  .hover\:sp-fill-brown:hover {
+  .hover\:fill-sp-brown:hover {
     fill: #885642 !important;
   }
   .sp-dark {
