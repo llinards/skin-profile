@@ -1,0 +1,37 @@
+<div class="container mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-8">
+    <div class="md:w-1/2 w-full">
+      <h2 class="text-3xl font-bold">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="md:w-1/2 w-full">
+      <div class="prose max-w-none space-y-2">
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Split Text Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Virsraksts",
+      "default": "Virsraksts šeit"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Teksts",
+      "default": "<p>Jūsu teksts šeit.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split Text Section"
+    }
+  ]
+}
+{% endschema %}
