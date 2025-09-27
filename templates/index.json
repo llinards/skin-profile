@@ -89,6 +89,14 @@
             "name": "Nora Tarasova",
             "position": "Kosmētiķis"
           }
+        },
+        "member_BdQJaQ": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Anite.jpg",
+            "name": "Anita Baumane",
+            "position": "Uztura speciālists"
+          }
         }
       },
       "block_order": [
@@ -96,7 +104,8 @@
         "member_DeRTbH",
         "member_ydrh6E",
         "member_PbAW4D",
-        "member_mJgHKp"
+        "member_mJgHKp",
+        "member_BdQJaQ"
       ],
       "name": "Team Section",
       "settings": {
