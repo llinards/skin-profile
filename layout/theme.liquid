@@ -12,9 +12,10 @@
     {% render 'meta-tags' %}
 
     {{ content_for_header }}
-    <script src="{{ 'application.js' | asset_url }}" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
+    <script defer src="{{ 'application.js' | asset_url }}"></script>
+
     <style>
       [x-cloak] {
         display: none !important;

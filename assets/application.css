@@ -7,9 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -20,6 +24,7 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -229,6 +234,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
   }
@@ -401,6 +409,9 @@
   .border-b-white {
     border-bottom-color: var(--color-white);
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -437,12 +448,30 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .text-center {
+    text-align: center;
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .text-black {
     color: var(--color-black);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
@@ -575,11 +604,6 @@
       background-position: center;
     }
   }
-  .md\:py-24 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 24);
-    }
-  }
   .md\:text-5xl {
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
@@ -702,23 +726,23 @@
     filter: blur(0);
     transform: translateY(0);
   }
+}
+#teamCarousel {
+  --f-carousel-spacing: 32px;
+}
+@media screen and (min-width: 640px) {
   #teamCarousel {
-    --f-carousel-spacing: 16px;
+    --f-carousel-slide-width: calc((100% - 32px) / 2);
   }
-  @media screen and (min-width: 640px) {
-    #teamCarousel {
-      --f-carousel-slide-width: calc((100% - 32px) / 2);
-    }
+}
+@media screen and (min-width: 1024px) {
+  #teamCarousel {
+    --f-carousel-slide-width: calc((100% - 64px) / 3);
   }
-  @media screen and (min-width: 1024px) {
-    #teamCarousel {
-      --f-carousel-slide-width: calc((100% - 64px) / 3);
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    #teamCarousel {
-      --f-carousel-slide-width: calc((100% - 96px) / 4);
-    }
+}
+@media screen and (min-width: 1280px) {
+  #teamCarousel {
+    --f-carousel-slide-width: calc((100% - 32px) / 5);
   }
 }
 @property --tw-translate-x {
@@ -770,6 +794,10 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-blur {
   syntax: "*";
@@ -850,6 +878,7 @@
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
