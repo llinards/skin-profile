@@ -81,13 +81,22 @@
             "name": "Ilze Taubere",
             "position": "Skaistumkopšanas speciālists"
           }
+        },
+        "member_mJgHKp": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Nora.jpg",
+            "name": "Nora Tarasova",
+            "position": "Kosmētiķis"
+          }
         }
       },
       "block_order": [
         "member_VUrXxz",
         "member_DeRTbH",
         "member_ydrh6E",
-        "member_PbAW4D"
+        "member_PbAW4D",
+        "member_mJgHKp"
       ],
       "name": "Team Section",
       "settings": {
