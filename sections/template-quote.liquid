@@ -1,6 +1,8 @@
-<div class="container mx-auto transition-hide bg-sp-light-brown py-12">
-  <div class="max-w-2xl mx-auto text-center">
+<div class="container mx-auto transition-hide bg-sp-light-brown py-12 my-12 rounded-4xl">
+  <div class="max-w-2xl mx-auto text-center flex flex-col items-center space-y-12 md:space-y-24">
+    {% render 'icon-quote' %}
     {{ section.settings.quote_text }}
+    <h2 class="text-center text-2xl">{{ section.settings.quote_signature }}</h2>
   </div>
 </div>
 
@@ -13,6 +15,12 @@
       "id": "quote_text",
       "label": "Citāts",
       "default": "<p>Jūsu citāts šeit.</p>"
+    },
+    {
+      "type": "text",
+      "id": "quote_signature",
+      "label": "Citāta autors",
+      "default": "<p>Autors</p>"
     }
   ],
   "presets": [
