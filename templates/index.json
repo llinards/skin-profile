@@ -57,10 +57,19 @@
             "name": "Jana Krūmiņa",
             "position": "Dibinātāja, kosmētiķis"
           }
+        },
+        "member_DeRTbH": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Laura.jpg",
+            "name": "Laura Nebija",
+            "position": "Kosmētiķis"
+          }
         }
       },
       "block_order": [
-        "member_VUrXxz"
+        "member_VUrXxz",
+        "member_DeRTbH"
       ],
       "name": "Team Section",
       "settings": {
