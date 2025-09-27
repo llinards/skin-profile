@@ -129,11 +129,19 @@
       "settings": {
         "heading": "Komanda"
       }
+    },
+    "template_quote_fYGtGC": {
+      "type": "template-quote",
+      "name": "Citāts",
+      "settings": {
+        "quote_text": "<p>Hello there</p>"
+      }
     }
   },
   "order": [
     "main",
     "text_section_BfGNQG",
-    "team_section_WTmffT"
+    "team_section_WTmffT",
+    "template_quote_fYGtGC"
   ]
 }
