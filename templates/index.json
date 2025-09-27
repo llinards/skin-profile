@@ -49,6 +49,19 @@
     },
     "team_section_WTmffT": {
       "type": "team-section",
+      "blocks": {
+        "member_VUrXxz": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Jana.jpg",
+            "name": "Jana Krūmiņa",
+            "position": "Dibinātāja, kosmētiķis"
+          }
+        }
+      },
+      "block_order": [
+        "member_VUrXxz"
+      ],
       "name": "Team Section",
       "settings": {
         "heading": "Meet Our Team"
