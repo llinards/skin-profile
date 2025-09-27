@@ -16,11 +16,14 @@
           {% for block in section.blocks %}
             {% if block.type == 'button' %}
               <div class="flex justify-center md:justify-start w-full">
-                {% if block.settings.style == 'white' %}
-                  {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
-                {% else %}
-                  {% render 'btn-brown-ai', text: block.settings.text, url: block.settings.url %}
-                {% endif %}
+                {% case block.settings.style %}
+                  {% when 'white' %}
+                    {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
+                  {% when 'brown' %}
+                    {% render 'btn-brown-ai', text: block.settings.text, url: block.settings.url %}
+                  {% when 'ai' %}
+                    {% render 'btn-brown-ai', text: block.settings.text, url: block.settings.url %}
+                {% endcase %}
               </div>
             {% endif %}
           {% endfor %}
@@ -74,7 +77,8 @@
           "label": "Pogas veids",
           "options": [
             { "value": "white", "label": "Balta" },
-            { "value": "brown", "label": "Brūna" }
+            { "value": "brown", "label": "Brūna" },
+            { "value": "ai", "label": "AI" }
           ],
           "default": "white"
         }
