@@ -105,6 +105,14 @@
             "name": "Dr. Dace Beķere",
             "position": "Dermatologs"
           }
+        },
+        "member_3AxYwb": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Tatjana.jpg",
+            "name": "Tatjana Krūmiņa",
+            "position": "Administrators"
+          }
         }
       },
       "block_order": [
@@ -114,7 +122,8 @@
         "member_PbAW4D",
         "member_mJgHKp",
         "member_BdQJaQ",
-        "member_946Gdq"
+        "member_946Gdq",
+        "member_3AxYwb"
       ],
       "name": "Team Section",
       "settings": {
