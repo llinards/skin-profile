@@ -1,26 +1,32 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    Carousel(document.getElementById('teamCarousel'), {}).init();
+    Carousel(document.getElementById('teamCarousel'), {
+      fill: true,
+      infinite: false,
+      plugins: [window.Dots],
+    }).init();
   });
 </script>
 
-<div class="container mx-auto">
+<div class="container mx-auto px-4">
   <h2>{{ section.settings.heading }}</h2>
   <div class="py-12 f-carousel" id="teamCarousel">
     {% for block in section.blocks %}
-      <div class="f-carousel__slide text-center">
+      <div class="f-carousel__slide text-center h-full rounded-4xl">
         {% if block.settings.photo %}
-          <img
-            src="{{ block.settings.photo | image_url: width: 400 }}"
-            alt="{{ block.settings.name | escape }}"
-            class="mx-auto mb-4"
-            width="200"
-            height="200"
-            loading="lazy"
-          >
+          <div class="overflow-hidden h-96 rounded-4xl">
+            <img
+              src="{{ block.settings.photo | image_url }}"
+              alt="{{ block.settings.name | escape }}"
+              width="1080"
+              height="1920"
+              loading="lazy"
+              class="rounded-4xl h-96 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+            >
+          </div>
         {% endif %}
         <h3>{{ block.settings.name }}</h3>
-        <div class="text-sm text-gray-500">{{ block.settings.position }}</div>
+        <div class="text-sm">{{ block.settings.position }}</div>
       </div>
     {% endfor %}
   </div>
