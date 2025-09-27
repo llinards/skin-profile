@@ -10,9 +10,9 @@
 
 <div class="container mx-auto px-4">
   <h2>{{ section.settings.heading }}</h2>
-  <div class="py-12 f-carousel" id="teamCarousel">
+  <div class="py-6 md:py-12 f-carousel" id="teamCarousel">
     {% for block in section.blocks %}
-      <div class="f-carousel__slide text-center h-full rounded-4xl">
+      <div class="f-carousel__slide h-full rounded-4xl">
         {% if block.settings.photo %}
           <div class="overflow-hidden h-96 rounded-4xl">
             <img
@@ -26,7 +26,7 @@
           </div>
         {% endif %}
         <h3>{{ block.settings.name }}</h3>
-        <div class="text-sm">{{ block.settings.position }}</div>
+        <div class="text-sm text-center md:text-left">{{ block.settings.position }}</div>
       </div>
     {% endfor %}
   </div>

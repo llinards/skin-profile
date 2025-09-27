@@ -453,6 +453,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -620,6 +623,16 @@
       background-position: center;
     }
   }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
   .md\:text-5xl {
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
@@ -681,11 +694,17 @@
   .sp-dark {
     color: #14160D;
   }
+  .hover\:fill-sp-dark:hover {
+    fill: #14160D !important;
+  }
   .bg-sp-brown {
     background-color: #885642;
   }
   .hover\:bg-sp-brown:hover {
     background-color: #885642 !important;
+  }
+  .bg-sp-brown-30 {
+    background-color: rgb(136 86 66 / 0.3);
   }
 }
 @layer base {
@@ -703,6 +722,7 @@
   h2, h3, h4, h5, h6 {
     font-family: "Belleza-Regular";
     color: #14160D;
+    text-align: center;
   }
   h1 {
     font-family: "Belleza-Regular";
@@ -760,6 +780,11 @@
   #teamCarousel {
     --f-carousel-slide-width: calc((100% - 64px) / 3);
     --f-carousel-spacing: 32px;
+  }
+}
+@media screen and (min-width: 767px) {
+  h2, h3, h4, h5, h6 {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1024px) {

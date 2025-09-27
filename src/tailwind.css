@@ -22,12 +22,20 @@
         color: #14160D;
     }
 
+    .hover\:fill-sp-dark:hover {
+        fill: #14160D !important;
+    }
+
     .bg-sp-brown {
         background-color: #885642;
     }
 
     .hover\:bg-sp-brown:hover {
         background-color: #885642 !important;
+    }
+
+    .bg-sp-brown-30 {
+        background-color: rgb(136 86 66 / 0.3);
     }
 }
 
@@ -54,6 +62,7 @@
     h6 {
         font-family: "Belleza-Regular";
         color: #14160D;
+        text-align: center;
     }
 
     h1 {
@@ -113,6 +122,17 @@
     #teamCarousel {
         --f-carousel-slide-width: calc((100% - 64px) / 3);
         --f-carousel-spacing: 32px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: left;
     }
 }
 
