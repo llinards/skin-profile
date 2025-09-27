@@ -1,0 +1,24 @@
+<div class="container mx-auto transition-hide bg-sp-light-brown py-12">
+  <div class="max-w-2xl mx-auto text-center">
+    {{ section.settings.quote_text }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Citāts",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "quote_text",
+      "label": "Citāts",
+      "default": "<p>Jūsu citāts šeit.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Citāts"
+    }
+  ]
+}
+{% endschema %}
