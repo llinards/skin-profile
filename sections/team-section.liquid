@@ -1,0 +1,37 @@
+<div class="f-carousel" id="myCarousel">
+  <div class="f-carousel__slide">1</div>
+  <div class="f-carousel__slide">2</div>
+  <div class="f-carousel__slide">3</div>
+  <div class="f-carousel__slide">4</div>
+  <div class="f-carousel__slide">5</div>
+  <div class="f-carousel__slide">1</div>
+  <div class="f-carousel__slide">2</div>
+  <div class="f-carousel__slide">3</div>
+  <div class="f-carousel__slide">4</div>
+  <div class="f-carousel__slide">5</div>
+</div>
+
+<script>
+  Carousel(document.getElementById('teamCarousel'), {
+    // Your custom options
+  }).init();
+</script>
+
+{% schema %}
+{
+  "name": "Team Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Meet Our Team"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team Section"
+    }
+  ]
+}
+{% endschema %}

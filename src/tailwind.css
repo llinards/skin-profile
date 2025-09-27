@@ -90,4 +90,26 @@
         filter: blur(0);
         transform: translateY(0);
     }
+
+    #teamCarousel {
+        --f-carousel-spacing: 16px;
+    }
+
+    @media screen and (min-width: 640px) {
+        #teamCarousel {
+            --f-carousel-slide-width: calc((100% - 32px) / 2);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        #teamCarousel {
+            --f-carousel-slide-width: calc((100% - 64px) / 3);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        #teamCarousel {
+            --f-carousel-slide-width: calc((100% - 96px) / 4);
+        }
+    }
 }
