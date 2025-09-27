@@ -73,12 +73,21 @@
             "name": "Dr. Iryna Kulikova",
             "position": "Dermatologs, venerologs"
           }
+        },
+        "member_PbAW4D": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Ilze.jpg",
+            "name": "Ilze Taubere",
+            "position": "Skaistumkopšanas speciālists"
+          }
         }
       },
       "block_order": [
         "member_VUrXxz",
         "member_DeRTbH",
-        "member_ydrh6E"
+        "member_ydrh6E",
+        "member_PbAW4D"
       ],
       "name": "Team Section",
       "settings": {
