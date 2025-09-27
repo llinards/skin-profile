@@ -1,8 +1,10 @@
-<div class="container mx-auto transition-hide bg-sp-light-brown py-12 my-12 rounded-4xl">
-  <div class="max-w-2xl mx-auto text-center flex flex-col items-center space-y-12 md:space-y-24">
+<div class="container mx-auto transition-hide px-4">
+  <div class="w-full mx-auto text-center flex flex-col items-center space-y-12 md:space-y-24 bg-sp-light-brown px-8 py-12 my-12 rounded-4xl">
     {% render 'icon-quote' %}
-    {{ section.settings.quote_text }}
-    <h2 class="text-center text-2xl">{{ section.settings.quote_signature }}</h2>
+    <div class="max-w-4xl md:text-2xl lg:text-3xl">
+      {{ section.settings.quote_text }}
+    </div>
+    <h2 class="text-xl md:text-2xl lg:text-3xl">{{ section.settings.quote_signature }}</h2>
   </div>
 </div>
 
