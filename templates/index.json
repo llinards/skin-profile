@@ -97,6 +97,14 @@
             "name": "Anita Baumane",
             "position": "Uztura speciālists"
           }
+        },
+        "member_946Gdq": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/Dace.jpg",
+            "name": "Dr. Dace Beķere",
+            "position": "Dermatologs"
+          }
         }
       },
       "block_order": [
@@ -105,7 +113,8 @@
         "member_ydrh6E",
         "member_PbAW4D",
         "member_mJgHKp",
-        "member_BdQJaQ"
+        "member_BdQJaQ",
+        "member_946Gdq"
       ],
       "name": "Team Section",
       "settings": {
