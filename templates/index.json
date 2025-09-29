@@ -168,13 +168,21 @@
             "photo": "shopify://shop_images/podologs.jpg",
             "name": "Podologs"
           }
+        },
+        "service_N8cXR7": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "Sejas procedūras"
+          }
         }
       },
       "block_order": [
         "service_Pmbiyg",
         "service_BjqD4V",
         "service_mNBbBe",
-        "service_JMxV4A"
+        "service_JMxV4A",
+        "service_N8cXR7"
       ],
       "name": "Services Section",
       "settings": {
