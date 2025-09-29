@@ -189,6 +189,13 @@
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
             "name": "Ķermeņa procedūras"
           }
+        },
+        "service_PkbQ3h": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "Uztura speciālists"
+          }
         }
       },
       "block_order": [
@@ -198,7 +205,8 @@
         "service_JMxV4A",
         "service_N8cXR7",
         "service_wYGgCW",
-        "service_jF96NR"
+        "service_jF96NR",
+        "service_PkbQ3h"
       ],
       "name": "Services Section",
       "settings": {
