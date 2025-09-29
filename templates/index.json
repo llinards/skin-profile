@@ -140,6 +140,17 @@
     },
     "template_services_yTPcHr": {
       "type": "template-services",
+      "blocks": {
+        "service_Pmbiyg": {
+          "type": "service",
+          "settings": {
+            "name": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_Pmbiyg"
+      ],
       "name": "Services Section",
       "settings": {
         "heading": "Pakalpojumi"
