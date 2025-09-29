@@ -161,12 +161,20 @@
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
             "name": "Lāzerdermatoloģija"
           }
+        },
+        "service_JMxV4A": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/podologs.jpg",
+            "name": "Podologs"
+          }
         }
       },
       "block_order": [
         "service_Pmbiyg",
         "service_BjqD4V",
-        "service_mNBbBe"
+        "service_mNBbBe",
+        "service_JMxV4A"
       ],
       "name": "Services Section",
       "settings": {
