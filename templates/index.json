@@ -182,6 +182,13 @@
             "photo": "shopify://shop_images/lazerepilacija.jpg",
             "name": "Lāzerepilācija"
           }
+        },
+        "service_jF96NR": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "Ķermeņa procedūras"
+          }
         }
       },
       "block_order": [
@@ -190,7 +197,8 @@
         "service_mNBbBe",
         "service_JMxV4A",
         "service_N8cXR7",
-        "service_wYGgCW"
+        "service_wYGgCW",
+        "service_jF96NR"
       ],
       "name": "Services Section",
       "settings": {
