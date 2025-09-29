@@ -175,6 +175,13 @@
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
             "name": "Sejas procedūras"
           }
+        },
+        "service_wYGgCW": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "Lāzerepilācija"
+          }
         }
       },
       "block_order": [
@@ -182,7 +189,8 @@
         "service_BjqD4V",
         "service_mNBbBe",
         "service_JMxV4A",
-        "service_N8cXR7"
+        "service_N8cXR7",
+        "service_wYGgCW"
       ],
       "name": "Services Section",
       "settings": {
