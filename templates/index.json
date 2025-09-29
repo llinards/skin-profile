@@ -138,11 +138,19 @@
         "quote_signature": "Jana Krūmiņa, Dibinātāja"
       }
     },
+    "template_services_yTPcHr": {
+      "type": "template-services",
+      "name": "Services Section",
+      "settings": {
+        "heading": "Pakalpojumi"
+      }
+    }
   },
   "order": [
     "main",
     "text_section_BfGNQG",
     "team_section_WTmffT",
-    "template_quote_fYGtGC"
+    "template_quote_fYGtGC",
+    "template_services_yTPcHr"
   ]
 }
