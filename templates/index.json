@@ -144,7 +144,8 @@
         "service_Pmbiyg": {
           "type": "service",
           "settings": {
-            "name": ""
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "Estētiskā medicīna"
           }
         }
       },
