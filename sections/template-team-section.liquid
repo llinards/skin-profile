@@ -1,25 +1,11 @@
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const carousel = Carousel(document.getElementById('teamCarousel'), {
-        fill: true,
-        infinite: false,
-        plugins: [window.Dots],
-      }).init();
-  {% comment %}
-      function slideOpacity() {
-        const slides = Array.from(document.getElementsByClassName('f-carousel__slide'));
-        for (let slide of slides) {
-          if (slide.classList.contains('is-selected')) {
-            slide.classList.remove('opacity-50');
-          } else {
-            slide.classList.add('opacity-50');
-          }
-        }
-      }
-
-      carousel.on('ready', slideOpacity);
-      carousel.on('settle', slideOpacity); {% endcomment %}
-    });
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = Carousel(document.getElementById('teamCarousel'), {
+      fill: true,
+      infinite: false,
+      plugins: [window.Dots],
+    }).init();
+  });
 </script>
 
 <div class="container mx-auto px-4 transition-hide text-center md:text-left">

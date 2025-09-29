@@ -117,7 +117,8 @@
     }
 }
 
-#teamCarousel {
+#teamCarousel,
+#servicesCarousel {
     --f-carousel-slide-width: calc((100%) / 1.5);
     --f-carousel-gap: 24px;
 }
