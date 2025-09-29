@@ -1,27 +1,41 @@
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    Carousel(document.getElementById('teamCarousel'), {
-      fill: true,
-      infinite: false,
-      plugins: [window.Dots],
-    }).init();
-  });
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = Carousel(document.getElementById('teamCarousel'), {
+        fill: true,
+        infinite: false,
+        plugins: [window.Dots],
+      }).init();
+  {% comment %}
+      function slideOpacity() {
+        const slides = Array.from(document.getElementsByClassName('f-carousel__slide'));
+        for (let slide of slides) {
+          if (slide.classList.contains('is-selected')) {
+            slide.classList.remove('opacity-50');
+          } else {
+            slide.classList.add('opacity-50');
+          }
+        }
+      }
+
+      carousel.on('ready', slideOpacity);
+      carousel.on('settle', slideOpacity); {% endcomment %}
+    });
 </script>
 
 <div class="container mx-auto px-4 transition-hide text-center md:text-left">
   <h2>{{ section.settings.heading }}</h2>
   <div class="py-6 md:py-12 f-carousel" id="teamCarousel">
     {% for block in section.blocks %}
-      <div class="f-carousel__slide h-full rounded-4xl">
+      <div class="f-carousel__slide h-full rounded-4xl ">
         {% if block.settings.photo %}
-          <div class="overflow-hidden h-96 rounded-4xl">
+          <div class="overflow-hidden h-108 rounded-4xl">
             <img
               src="{{ block.settings.photo | image_url }}"
               alt="{{ block.settings.name | escape }}"
               width="1080"
               height="1920"
               loading="lazy"
-              class="rounded-4xl h-96 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+              class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
             >
           </div>
         {% endif %}
@@ -38,7 +52,6 @@
     {% endfor %}
   </div>
 </div>
-
 {% schema %}
 {
   "name": "Team Section",

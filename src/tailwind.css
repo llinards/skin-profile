@@ -118,7 +118,8 @@
 }
 
 #teamCarousel {
-    --f-carousel-gap: 22px;
+    --f-carousel-slide-width: calc((100%) / 1.5);
+    --f-carousel-gap: 24px;
 }
 
 .f-carousel__dot {
@@ -126,17 +127,39 @@
     opacity: 0.5;
 }
 
+.f-carousel__dot::after {
+    padding: 8px;
+}
+
+@media screen and (max-width: 479px) {
+    .f-carousel__slide {
+        opacity: .35;
+        transition: opacity .3s ease;
+    }
+
+    .f-carousel__slide.is-in {
+        opacity: 1;
+    }
+
+    .f-carousel__slide {
+        opacity: .35;
+        transition: opacity .3s ease;
+    }
+
+    .f-carousel__slide.is-selected {
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 480px) {
     #teamCarousel {
         --f-carousel-slide-width: calc((100% - 32px) / 2);
-        --f-carousel-spacing: 32px;
     }
 }
 
 @media screen and (min-width: 767px) {
     #teamCarousel {
         --f-carousel-slide-width: calc((100% - 64px) / 3);
-        --f-carousel-spacing: 32px;
     }
 }
 
