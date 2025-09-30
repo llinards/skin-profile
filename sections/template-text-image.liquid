@@ -1,13 +1,13 @@
 <div class="transition-hide bg-sp-light-brown">
-  <div class="container mx-auto flex text-center md:text-left px-4 pb-12">
-    <div class="w-3/5 flex flex-col items-center justify-center h-full">
-      <h2>{{ section.settings.heading }}</h2>
+  <div class="container mx-auto flex px-4 mb-12 h-126 gap-x-24">
+    <div class="w-4/7 flex flex-col justify-center h-full text-center md:text-left">
+      <h2 class="pb-6 md:pb-12 text-center md:text-left">{{ section.settings.heading }}</h2>
       <div class="space-y-2">
         {{ section.settings.text }}
       </div>
     </div>
 
-    <div class="w-2/5">
+    <div class="w-3/7">
       {% if section.settings.photo %}
         <img
           src="{{ section.settings.photo | image_url }}"
@@ -15,7 +15,7 @@
           width="1080"
           height="1920"
           loading="lazy"
-          class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+          class="object-cover w-full h-126"
         >
       {% endif %}
     </div>
@@ -33,12 +33,6 @@
       "default": "Virsraksts šeit"
     },
     {
-      "type": "text",
-      "id": "alt",
-      "label": "Bildes alt teksts",
-      "default": "Bildes alt teksts šeit"
-    },
-    {
       "type": "richtext",
       "id": "text",
       "label": "Teksts",
@@ -48,6 +42,12 @@
       "type": "image_picker",
       "id": "photo",
       "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Bildes alt teksts",
+      "default": "Bildes alt teksts šeit"
     }
   ],
   "presets": [{ "name": "Teksts ar bildi" }]
