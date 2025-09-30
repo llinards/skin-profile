@@ -145,56 +145,64 @@
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
-            "name": "Estētiskā medicīna"
+            "name": "Estētiskā medicīna",
+            "url": ""
           }
         },
         "service_BjqD4V": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
-            "name": "Dermatoloģija"
+            "name": "Dermatoloģija",
+            "url": ""
           }
         },
         "service_mNBbBe": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
-            "name": "Lāzerdermatoloģija"
+            "name": "Lāzerdermatoloģija",
+            "url": ""
           }
         },
         "service_JMxV4A": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
-            "name": "Podologs"
+            "name": "Podologs",
+            "url": ""
           }
         },
         "service_N8cXR7": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
-            "name": "Sejas procedūras"
+            "name": "Sejas procedūras",
+            "url": ""
           }
         },
         "service_wYGgCW": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
-            "name": "Lāzerepilācija"
+            "name": "Lāzerepilācija",
+            "url": ""
           }
         },
         "service_jF96NR": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
-            "name": "Ķermeņa procedūras"
+            "name": "Ķermeņa procedūras",
+            "url": ""
           }
         },
         "service_PkbQ3h": {
           "type": "service",
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
-            "name": "Uztura speciālists"
+            "name": "Uztura speciālists",
+            "url": ""
           }
         }
       },
@@ -212,6 +220,15 @@
       "settings": {
         "heading": "Pakalpojumi"
       }
+    },
+    "template_text_image_fyDtEG": {
+      "type": "template-text-image",
+      "name": "Teksts ar bildi",
+      "settings": {
+        "heading": "Skaistums sākas ar rūpēm",
+        "alt": "Bildes alt teksts šeit",
+        "text": "<p>Jūsu teksts šeit.</p>"
+      }
     }
   },
   "order": [
@@ -219,6 +236,7 @@
     "text_section_BfGNQG",
     "team_section_WTmffT",
     "template_quote_fYGtGC",
-    "template_services_yTPcHr"
+    "template_services_yTPcHr",
+    "template_text_image_fyDtEG"
   ]
 }
