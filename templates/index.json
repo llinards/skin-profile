@@ -226,8 +226,9 @@
       "name": "Teksts ar bildi",
       "settings": {
         "heading": "Skaistums sākas ar rūpēm",
-        "alt": "Bildes alt teksts šeit",
-        "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>"
+        "alt": "Biodroga serums",
+        "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
+        "photo": "shopify://shop_images/biodroga-serum.jpg"
       }
     }
   },
