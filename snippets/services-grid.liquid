@@ -1,21 +1,23 @@
-<div class="grid lg:grid-rows-2 lg:grid-cols-4 gap-8">
+<div class="grid justify-center items-center lg-grid-row-3 grid-cols-3 xl:grid-rows-2 xl:grid-cols-4 gap-8">
   {% for block in section.blocks %}
     {% if block.settings.photo %}
-      <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
-        <img
-          src="{{ block.settings.photo | image_url }}"
-          alt="{{ block.settings.name | escape }}"
-          width="1080"
-          height="1920"
-          loading="lazy"
-          class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-        >
-        <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
-          <h3 class="text-white text-2xl body-font md:text-3xl leading-tight text-center w-full break-words line-clamp-2">
-            {{ block.settings.name }}
-          </h3>
+      <a href="{{ block.settings.url }}" aria-label="{{ block.settings.name | escape }}">
+        <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
+          <img
+            src="{{ block.settings.photo | image_url }}"
+            alt="{{ block.settings.name | escape }}"
+            width="1080"
+            height="1920"
+            loading="lazy"
+            class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
+            <h3 class="text-white text-2xl body-font md:text-3xl leading-tight text-center w-full break-words line-clamp-2">
+              {{ block.settings.name }}
+            </h3>
+          </div>
         </div>
-      </div>
+      </a>
     {% endif %}
   {% endfor %}
 </div>
