@@ -162,6 +162,12 @@
     }
 }
 
+@media screen and (min-width: 640px) {
+    #servicesCarousel {
+        --f-carousel-slide-width: calc((100% - 64px) / 2);
+    }
+}
+
 @media screen and (min-width: 767px) {
     #teamCarousel {
         --f-carousel-slide-width: calc((100% - 64px) / 3);

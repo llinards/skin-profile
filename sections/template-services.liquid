@@ -8,27 +8,13 @@
   });
 </script>
 
-<div class="container mx-auto px-4 transition-hide text-center md:text-left">
-  <h2>{{ section.settings.heading }}</h2>
-  <div class="md:grid md:grid-rows-2 md:grid-cols-4 gap-8 py-12">
-    {% for block in section.blocks %}
-      {% if block.settings.photo %}
-        <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
-          <img
-            src="{{ block.settings.photo | image_url }}"
-            alt="{{ block.settings.name | escape }}"
-            width="1080"
-            height="1920"
-            loading="lazy"
-            class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-          >
-          <div class="absolute inset-0 bg-black/30"></div>
-          <h3 class="absolute z-10 text-white text-3xl body-font px-4 text-center">
-            {{ block.settings.name }}
-          </h3>
-        </div>
-      {% endif %}
-    {% endfor %}
+<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+  <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
+  <div class="hidden lg:flex">
+    {% render 'services-grid' %}
+  </div>
+  <div class="lg:hidden">
+    {% render 'services-carousel' %}
   </div>
 </div>
 
