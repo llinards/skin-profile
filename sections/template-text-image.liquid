@@ -1,22 +1,24 @@
-<div class="flex px-4 pb-12 container mx-auto transition-hide text-center md:text-left bg-sp-light-brown">
-  <div class="w-3/5">
-    <h2>{{ section.settings.heading }}</h2>
-    <div class="space-y-2">
-      {{ section.settings.text }}
+<div class="transition-hide bg-sp-light-brown">
+  <div class="container mx-auto flex text-center md:text-left px-4 pb-12">
+    <div class="w-3/5 flex flex-col items-center justify-center h-full">
+      <h2>{{ section.settings.heading }}</h2>
+      <div class="space-y-2">
+        {{ section.settings.text }}
+      </div>
     </div>
-  </div>
 
-  <div class="w-2/5">
-    {% if section.settings.photo %}
-      <img
-        src="{{ section.settings.photo | image_url }}"
-        alt="{{ section.settings.alt | escape }}"
-        width="1080"
-        height="1920"
-        loading="lazy"
-        class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
-      >
-    {% endif %}
+    <div class="w-2/5">
+      {% if section.settings.photo %}
+        <img
+          src="{{ section.settings.photo | image_url }}"
+          alt="{{ section.settings.alt | escape }}"
+          width="1080"
+          height="1920"
+          loading="lazy"
+          class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+        >
+      {% endif %}
+    </div>
   </div>
 </div>
 
