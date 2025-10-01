@@ -515,6 +515,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -687,6 +690,11 @@
       margin-bottom: calc(var(--spacing) * 12);
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:size-7 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 7);
@@ -699,6 +707,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .md\:h-126 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 126);
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -707,6 +720,16 @@
   .md\:w-3\/5 {
     @media (width >= 48rem) {
       width: calc(3/5 * 100%);
+    }
+  }
+  .md\:w-3\/7 {
+    @media (width >= 48rem) {
+      width: calc(3/7 * 100%);
+    }
+  }
+  .md\:w-4\/7 {
+    @media (width >= 48rem) {
+      width: calc(4/7 * 100%);
     }
   }
   .md\:-translate-y-1\/2 {
@@ -735,6 +758,15 @@
       gap: calc(var(--spacing) * 12);
     }
   }
+  .md\:space-y-12 {
+    @media (width >= 48rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
   .md\:space-y-24 {
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
@@ -744,14 +776,34 @@
       }
     }
   }
+  .md\:gap-x-24 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 24);
+    }
+  }
   .md\:bg-center {
     @media (width >= 48rem) {
       background-position: center;
     }
   }
+  .md\:px-4 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
+    }
+  }
   .md\:pb-0 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pb-6 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 6);
     }
   }
   .md\:pb-12 {

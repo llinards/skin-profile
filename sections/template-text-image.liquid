@@ -1,7 +1,7 @@
 <div class="transition-hide bg-sp-light-brown">
-  <div class="container mx-auto flex px-4 mb-12 h-126 gap-x-24">
-    <div class="w-4/7 flex flex-col justify-center h-full text-center md:text-left">
-      <h2 class="pb-6 md:pb-12 text-center md:text-left">{{ section.settings.heading }}</h2>
+  <div class="container mx-auto md:flex md:h-126 md:gap-x-24">
+    <div class="md:w-4/7 px-4 py-12 flex flex-col justify-center h-full text-center md:text-left space-y-6 md:space-y-12">
+      <h2 class="text-center md:text-left">{{ section.settings.heading }}</h2>
       <div class="space-y-2">
         {{ section.settings.text }}
       </div>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="w-3/7">
+    <div class="md:w-3/7 md:px-4">
       {% if section.settings.photo %}
         <img
           src="{{ section.settings.photo | image_url }}"
