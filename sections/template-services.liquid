@@ -10,11 +10,57 @@
 
 <div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
   <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
-  <div class="hidden lg:flex">
-    {% render 'services-grid' %}
+  <div class="hidden xl:flex">
+    <div class="grid w-full justify-center items-center xl:grid-rows-2 xl:grid-cols-4 gap-8">
+      {% for block in section.blocks %}
+        {% if block.settings.photo %}
+          <a href="{{ block.settings.url }}" aria-label="{{ block.settings.name | escape }}">
+            <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
+              <img
+                src="{{ block.settings.photo | image_url }}"
+                alt="{{ block.settings.name | escape }}"
+                width="1080"
+                height="1920"
+                loading="lazy"
+                class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              >
+              <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
+                <h3 class="text-white text-2xl body-font md:text-3xl leading-tight text-center w-full break-words line-clamp-2">
+                  {{ block.settings.name }}
+                </h3>
+              </div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
-  <div class="lg:hidden">
-    {% render 'services-carousel' %}
+  <div class="xl:hidden">
+    <div class="f-carousel pb-6 md:pb-12" id="servicesCarousel">
+      {% for block in section.blocks %}
+        <div class="f-carousel__slide h-full rounded-4xl">
+          <a href="{{ block.settings.url }}" aria-label="{{ block.settings.name | escape }}">
+            {% if block.settings.photo %}
+              <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
+                <img
+                  src="{{ block.settings.photo | image_url }}"
+                  alt="{{ block.settings.name | escape }}"
+                  width="1080"
+                  height="1920"
+                  loading="lazy"
+                  class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                >
+                <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
+                  <h3 class="text-white text-xl body-font md:text-3xl px-6 leading-tight text-center w-full break-words line-clamp-2">
+                    {{ block.settings.name }}
+                  </h3>
+                </div>
+              </div>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 

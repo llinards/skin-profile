@@ -172,6 +172,10 @@
     #teamCarousel {
         --f-carousel-slide-width: calc((100% - 64px) / 3);
     }
+
+    #servicesCarousel {
+        --f-carousel-slide-width: calc((100% - 64px) / 2.5);
+    }
 }
 
 
