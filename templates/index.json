@@ -223,12 +223,25 @@
     },
     "template_text_image_fyDtEG": {
       "type": "template-text-image",
+      "blocks": {
+        "button_iknHre": {
+          "type": "button",
+          "settings": {
+            "text": "Uz veikalu",
+            "url": "shopify://pages/veikals",
+            "style": "brown"
+          }
+        }
+      },
+      "block_order": [
+        "button_iknHre"
+      ],
       "name": "Teksts ar bildi",
       "settings": {
         "heading": "Skaistums sākas ar rūpēm",
-        "alt": "Biodroga serums",
         "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
-        "photo": "shopify://shop_images/biodroga-serum.jpg"
+        "photo": "shopify://shop_images/biodroga-serum.jpg",
+        "alt": "Biodroga serums"
       }
     }
   },
