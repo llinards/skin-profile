@@ -3,13 +3,21 @@
   <head>
     {% # Load and preload the critical CSS %}
     {{ 'application.css' | asset_url | stylesheet_tag: preload: true }}
+
+    <!-- Carousel -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.css"
     >
+    <!-- Carousel Dots -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.css"
+    >
+    <!-- Carousel Autoplay -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoplay.css"
     >
 
     {% # Social, title, etc. %}
@@ -20,6 +28,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.umd.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoplay.umd.js"></script>
 
     <style>
       [x-cloak] {
