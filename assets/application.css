@@ -769,6 +769,16 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .md\:h-32 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:h-36 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 36);
+    }
+  }
   .md\:h-126 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 126);
