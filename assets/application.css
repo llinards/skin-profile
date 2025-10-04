@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -29,6 +30,7 @@
     --text-6xl--line-height: 1;
     --leading-tight: 1.25;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -219,6 +221,9 @@
   .z-3 {
     z-index: 3;
   }
+  .z-4 {
+    z-index: 4;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -313,12 +318,6 @@
   }
   .w-1\/7 {
     width: calc(1/7 * 100%);
-  }
-  .w-3\/7 {
-    width: calc(3/7 * 100%);
-  }
-  .w-4\/7 {
-    width: calc(4/7 * 100%);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -422,9 +421,6 @@
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
-  .gap-x-24 {
-    column-gap: calc(var(--spacing) * 24);
-  }
   .space-x-8 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -451,12 +447,15 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[\#885642\] {
+    border-color: #885642;
   }
   .border-transparent {
     border-color: transparent;
@@ -514,9 +513,6 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
-  }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -680,6 +676,11 @@
       right: calc(var(--spacing) * 8);
     }
   }
+  .md\:bottom-24 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 24);
+    }
+  }
   .md\:z-2 {
     @media (width >= 48rem) {
       z-index: 2;
@@ -789,21 +790,6 @@
   .md\:px-4 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:py-12 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:pb-0 {
-    @media (width >= 48rem) {
-      padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:pb-6 {
-    @media (width >= 48rem) {
-      padding-bottom: calc(var(--spacing) * 6);
     }
   }
   .md\:pb-12 {
@@ -941,6 +927,9 @@
     src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-Light.ttf?v=1758653989');
   }
   body {
+    font-family: "Manrope-Light";
+  }
+  .header-font {
     font-family: "Manrope-Light";
   }
   .body-font {
