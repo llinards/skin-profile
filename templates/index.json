@@ -285,10 +285,20 @@
             "alt": "schramec_logo",
             "url": ""
           }
+        },
+        "slide_yk9Hee": {
+          "type": "slide",
+          "name": "Biodroga",
+          "settings": {
+            "image": "shopify://shop_images/biodroga.png",
+            "alt": "Biodroga Logo",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "slide_yiV3yr"
+        "slide_yiV3yr",
+        "slide_yk9Hee"
       ],
       "name": "Sadarbības partneri",
       "settings": {}
