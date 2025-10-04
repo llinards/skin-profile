@@ -32,7 +32,23 @@
 
     <div class="md:absolute md:inset-y-0 md:right-0 md:w-3/7">
       <div class="f-carousel" id="productBannerCarousel">
-        {% if section.settings.photo %}
+        {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
+        {% if slide_blocks.size > 0 %}
+          {% for block in slide_blocks %}
+            <div class="f-carousel__slide">
+              {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
+              <img
+                src="{{ block.settings.image | image_url }}"
+                alt="{{ block.settings.alt | escape }}"
+                width="1080"
+                height="1920"
+                loading="lazy"
+                class="object-cover w-full h-96 md:h-126"
+              >
+              {% if block.settings.url != blank %}</a>{% endif %}
+            </div>
+          {% endfor %}
+        {% elsif section.settings.photo %}
           <div class="f-carousel__slide">
             <img
               src="{{ section.settings.photo | image_url }}"
@@ -53,46 +69,30 @@
 {
   "name": "Teksts ar bildi",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Virsraksts",
-      "default": "Virsraksts šeit"
-    },
-    {
-      "type": "richtext",
-      "id": "text",
-      "label": "Teksts",
-      "default": "<p>Jūsu teksts šeit.</p>"
-    },
-    {
-      "type": "image_picker",
-      "id": "photo",
-      "label": "Foto"
-    },
-    {
-      "type": "text",
-      "id": "alt",
-      "label": "Bildes alt teksts",
-      "default": "Bildes alt teksts šeit"
-    }
+    { "type": "text", "id": "heading", "label": "Virsraksts", "default": "Virsraksts šeit" },
+    { "type": "richtext", "id": "text", "label": "Teksts", "default": "<p>Jūsu teksts šeit.</p>" },
+
+    // Optional fallback single image (used if no slide blocks added)
+    { "type": "image_picker", "id": "photo", "label": "Foto" },
+    { "type": "text", "id": "alt", "label": "Bildes alt teksts", "default": "Bildes alt teksts šeit" }
   ],
   "blocks": [
     {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Attēls" },
+        { "type": "text", "id": "alt", "label": "Alt teksts", "default": "alt text" },
+        { "type": "url", "id": "url", "label": "Saite (neobligāti)" }
+      ]
+    },
+    {
       "type": "button",
       "name": "Poga",
+      "limit": 1,
       "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Uzzināt vairāk",
-          "default": "Button"
-        },
-        {
-          "type": "url",
-          "id": "url",
-          "label": "Button link"
-        },
+        { "type": "text", "id": "text", "label": "Uzzināt vairāk", "default": "Button" },
+        { "type": "url", "id": "url", "label": "Button link" },
         {
           "type": "select",
           "id": "style",
@@ -106,12 +106,7 @@
       ]
     }
   ],
-  "max_blocks": 1,
-  "presets": [
-    {
-      "name": "Teksts ar bildi",
-      "blocks": [{ "type": "button", "settings": { "text": "Pakalpojumi", "url": "#", "style": "brown" } }]
-    }
-  ]
+  "max_blocks": 20,
+  "presets": [{ "name": "Teksts ar bildi" }]
 }
 {% endschema %}
