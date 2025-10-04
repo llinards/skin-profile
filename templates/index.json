@@ -231,10 +231,20 @@
             "url": "shopify://pages/veikals",
             "style": "brown"
           }
+        },
+        "slide_KPCDGA": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-serum.jpg",
+            "alt": "Biodroga Serum",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "button_iknHre"
+        "button_iknHre",
+        "slide_KPCDGA"
       ],
       "name": "Teksts ar bildi",
       "settings": {
