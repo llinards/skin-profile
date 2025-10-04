@@ -8,6 +8,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -29,6 +31,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --leading-tight: 1.25;
+    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
@@ -342,6 +345,9 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
@@ -522,6 +528,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -549,6 +558,9 @@
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -647,6 +659,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
