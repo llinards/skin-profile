@@ -299,11 +299,26 @@
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
   }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .h-18 {
     height: calc(var(--spacing) * 18);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
@@ -329,8 +344,17 @@
   .w-5\/7 {
     width: calc(5/7 * 100%);
   }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-56 {
+    width: calc(var(--spacing) * 56);
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
@@ -393,6 +417,9 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -497,6 +524,9 @@
   .fill-white {
     fill: var(--color-white);
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -526,6 +556,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -741,6 +774,11 @@
       height: calc(var(--spacing) * 126);
     }
   }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -759,6 +797,11 @@
   .md\:w-4\/7 {
     @media (width >= 48rem) {
       width: calc(4/7 * 100%);
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
     }
   }
   .md\:-translate-y-1\/2 {
@@ -792,6 +835,11 @@
       gap: calc(var(--spacing) * 12);
     }
   }
+  .md\:gap-16 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 16);
+    }
+  }
   .md\:space-y-12 {
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
@@ -818,6 +866,11 @@
   .md\:bg-center {
     @media (width >= 48rem) {
       background-position: center;
+    }
+  }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
     }
   }
   .md\:pb-12 {

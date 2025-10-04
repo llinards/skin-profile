@@ -1,12 +1,12 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('productBannerCarousel'),
+    const carousel = Carousel(document.getElementById('productBannerCarousel'), {
+      gestures: false,
       infinite: true,
       plugins: [window.Autoplay],
       Autoplay: {
         timeout: 3000,
       },
-      gestures: false,
       style: {
         '--f-progressbar-height': '0px',
       },
