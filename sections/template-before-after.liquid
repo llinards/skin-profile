@@ -1,0 +1,83 @@
+<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+  <div class="w-full md:w-1/2 text-center md:text-left">
+    <h2>{{ section.settings.heading }}</h2>
+    {{ section.settings.text }}
+  </div>
+  <div class="w-full md:w-1/2">
+    <div
+      class="relative"
+      x-data="
+        {
+            value: 50,
+            beforeSrc: 'https://i.imgur.com/s08MkXC.jpg',
+            afterSrc: 'https://i.imgur.com/PfIWek4.jpg',
+        }
+      "
+    >
+      <img :src="beforeSrc" alt="" class="w-full" width="1080" height="1080">
+      <div
+        class="absolute bottom-0 left-0 top-0 z-10 bg-[length:auto_100%]"
+        x-bind:style="`width: ${value}%; background-image: url(${afterSrc})`"
+      ></div>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        x-model="value"
+        class="absolute inset-0 z-20 cursor-ew-resize opacity-0 outline-0"
+      >
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 top-0 z-30 flex -translate-x-1/2 items-center justify-center"
+        x-bind:style="'left: '+value+'%'"
+      >
+        <div class="absolute left-1/2 h-full w-1 -translate-x-1/2 bg-gray-100"></div>
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-4 w-4"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-4 w-4"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Pirms un Pēc Sadaļa",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Virsraksts",
+      "default": "Virsraksts šeit"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Teksts",
+      "default": "<p>Jūsu teksts šeit.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pirms un Pēc Sadaļa"
+    }
+  ]
+}
+{% endschema %}
