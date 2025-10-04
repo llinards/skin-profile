@@ -303,12 +303,22 @@
             "alt": "Renew Logo",
             "url": ""
           }
+        },
+        "slide_m4xgqM": {
+          "type": "slide",
+          "name": "Olaplex",
+          "settings": {
+            "image": "shopify://shop_images/olaplex.png",
+            "alt": "Olaplex Logo",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "slide_yiV3yr",
         "slide_yk9Hee",
-        "slide_QyV7JH"
+        "slide_QyV7JH",
+        "slide_m4xgqM"
       ],
       "name": "Sadarbības partneri",
       "settings": {}
