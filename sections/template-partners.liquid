@@ -1,0 +1,38 @@
+<div class="transition-hide bg-black">
+  <div class="container mx-auto">
+    {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
+    {% if slide_blocks.size > 0 %}
+      {% for block in slide_blocks %}
+        {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
+        <img
+          src="{{ block.settings.image | image_url }}"
+          alt="{{ block.settings.alt | escape }}"
+          width="1080"
+          height="1080"
+          loading="lazy"
+          class="object-cover w-full"
+        >
+        {% if block.settings.url != blank %}</a>{% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sadarbības partneri",
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Sadarbības partneris",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Attēls" },
+        { "type": "text", "id": "alt", "label": "Alt teksts", "default": "Alt teksts" },
+        { "type": "url", "id": "url", "label": "Saite (neobligāti)" }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [{ "name": "Sadarbības partneri" }]
+}
+{% endschema %}

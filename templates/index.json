@@ -222,7 +222,7 @@
       }
     },
     "template_text_image_fyDtEG": {
-      "type": "template-text-image",
+      "type": "template-text-image-wide",
       "blocks": {
         "button_iknHre": {
           "type": "button",
