@@ -294,11 +294,21 @@
             "alt": "Biodroga Logo",
             "url": ""
           }
+        },
+        "slide_QyV7JH": {
+          "type": "slide",
+          "name": "Renew",
+          "settings": {
+            "image": "shopify://shop_images/renew.png",
+            "alt": "Renew Logo",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "slide_yiV3yr",
-        "slide_yk9Hee"
+        "slide_yk9Hee",
+        "slide_QyV7JH"
       ],
       "name": "Sadarbības partneri",
       "settings": {}
