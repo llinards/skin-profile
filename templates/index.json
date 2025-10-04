@@ -249,12 +249,22 @@
             "alt": "schrammek produkti",
             "url": ""
           }
+        },
+        "slide_AzfGjt": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-schwarzwald-new-series.jpg",
+            "alt": "biodroga schwarzwald new series produkti",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "button_iknHre",
         "slide_KPCDGA",
-        "slide_UPaJbx"
+        "slide_UPaJbx",
+        "slide_AzfGjt"
       ],
       "name": "Teksts ar bildi",
       "settings": {
