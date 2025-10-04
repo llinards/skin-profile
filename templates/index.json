@@ -273,6 +273,24 @@
         "photo": "shopify://shop_images/biodroga-serum.jpg",
         "alt": "Biodroga serums"
       }
+    },
+    "template_partners_RUpUhn": {
+      "type": "template-partners",
+      "blocks": {
+        "slide_yiV3yr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/schramec.png",
+            "alt": "schramec_logo",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_yiV3yr"
+      ],
+      "name": "Sadarbības partneri",
+      "settings": {}
     }
   },
   "order": [
@@ -281,6 +299,7 @@
     "team_section_WTmffT",
     "template_quote_fYGtGC",
     "template_services_yTPcHr",
-    "template_text_image_fyDtEG"
+    "template_text_image_fyDtEG",
+    "template_partners_RUpUhn"
   ]
 }
