@@ -1,72 +1,34 @@
-<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left flex">
-  <div class="w-full md:w-1/2 text-center md:text-left">
+<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+  <div class="w-full md:w-1/2 flex flex-col items-center justify-center space-y-6 md:space-y-12 text-center md:text-left">
     <h2>{{ section.settings.heading }}</h2>
     {{ section.settings.text }}
+    <div>
+      {% for block in section.blocks %}
+        {% if block.type == 'button' %}
+          <div class="flex justify-center md:justify-start w-full">
+            {% case block.settings.style %}
+              {% when 'white' %}
+                {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
+              {% when 'brown' %}
+                {% render 'btn-brown', text: block.settings.text, url: block.settings.url %}
+            {% endcase %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
   <div class="w-full md:w-1/2">
-    {% if section.settings.before_image and section.settings.after_image %}
-      <div
-        class="relative"
-        x-data="
-          {
-              value: 50,
-              beforeSrc: '{{ section.settings.before_image | image_url: width: 1080 }}',
-              afterSrc: '{{ section.settings.after_image | image_url: width: 1080 }}',
-          }
-        "
+    {% if section.settings.image %}
+      <img
+        src="{{ section.settings.image | image_url: width: 800 }}"
+        alt="{{ section.settings.alt_text | escape }}"
+        width="1080"
+        height="1080"
+        loading="lazy"
+        class="w-full h-auto object-cover rounded-lg"
       >
-        <img
-          :src="beforeSrc"
-          alt="{{ section.settings.before_alt | escape }}"
-          class="w-full"
-          width="1080"
-          height="1080"
-        >
-        <div
-          class="absolute bottom-0 left-0 top-0 z-10 bg-[length:auto_100%]"
-          x-bind:style="`width: ${value}%; background-image: url(${afterSrc})`"
-        ></div>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          x-model="value"
-          class="absolute inset-0 z-20 cursor-ew-resize opacity-0 outline-0"
-        >
-        <div
-          class="pointer-events-none absolute bottom-0 left-0 top-0 z-30 flex -translate-x-1/2 items-center justify-center"
-          x-bind:style="'left: '+value+'%'"
-        >
-          <div class="absolute left-1/2 h-full w-1 -translate-x-1/2 bg-gray-100"></div>
-          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-4 w-4"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-4 w-4"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    {% else %}
-      <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-        <p class="text-gray-500">Please select before and after images</p>
-      </div>
     {% endif %}
+    <p class="uppercase">*Attēlam ir ilustratīva nozīme</p>
   </div>
 </div>
 
@@ -88,25 +50,14 @@
     },
     {
       "type": "image_picker",
-      "id": "before_image",
-      "label": "Pirms attēls"
+      "id": "image",
+      "label": "Attēls"
     },
     {
       "type": "text",
-      "id": "before_alt",
-      "label": "Pirms attēla alt teksts",
-      "default": "Pirms"
-    },
-    {
-      "type": "image_picker",
-      "id": "after_image",
-      "label": "Pēc attēls"
-    },
-    {
-      "type": "text",
-      "id": "after_alt",
-      "label": "Pēc attēla alt teksts",
-      "default": "Pēc"
+      "id": "alt_text",
+      "label": "Attēla alt teksts",
+      "default": "Attēls"
     }
   ],
   "presets": [

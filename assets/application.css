@@ -357,6 +357,9 @@
   .h-192 {
     height: calc(var(--spacing) * 192);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
