@@ -240,11 +240,21 @@
             "alt": "Biodroga Serum",
             "url": ""
           }
+        },
+        "slide_UPaJbx": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/schrammek_produkti.jpg",
+            "alt": "schrammek produkti",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "button_iknHre",
-        "slide_KPCDGA"
+        "slide_KPCDGA",
+        "slide_UPaJbx"
       ],
       "name": "Teksts ar bildi",
       "settings": {
