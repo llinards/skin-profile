@@ -210,6 +210,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .z-0 {
     z-index: 0;
   }
@@ -218,6 +221,9 @@
   }
   .z-3 {
     z-index: 3;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .container {
     width: 100%;
@@ -293,20 +299,11 @@
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
   }
-  .h-1\/2 {
-    height: calc(1/2 * 100%);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
   .h-18 {
     height: calc(var(--spacing) * 18);
-  }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
@@ -314,14 +311,14 @@
   .h-108 {
     height: calc(var(--spacing) * 108);
   }
+  .h-192 {
+    height: calc(var(--spacing) * 192);
+  }
   .h-full {
     height: 100%;
   }
   .h-screen {
     height: 100vh;
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
   }
   .w-1\/7 {
     width: calc(1/7 * 100%);
@@ -367,9 +364,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -402,6 +396,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -505,6 +502,9 @@
   }
   .object-top {
     object-position: top;
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -674,11 +674,6 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
-  .md\:absolute {
-    @media (width >= 48rem) {
-      position: absolute;
-    }
-  }
   .md\:fixed {
     @media (width >= 48rem) {
       position: fixed;
@@ -707,6 +702,11 @@
   .md\:bottom-24 {
     @media (width >= 48rem) {
       bottom: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:left-auto {
+    @media (width >= 48rem) {
+      left: auto;
     }
   }
   .md\:z-2 {
