@@ -322,6 +322,14 @@
       ],
       "name": "Sadarbības partneri",
       "settings": {}
+    },
+    "template_before_after_k3ACH6": {
+      "type": "template-before-after",
+      "name": "Pirms un Pēc Sadaļa",
+      "settings": {
+        "heading": "Virsraksts šeit",
+        "text": "<p>Mēs ar lepnumu nodrošinām augstas kvalitātes estētisko aprūpi ātri un profesionāli. Jūsu drošība un komforts vienmēr būs mūsu augstākā prioritāte.</p>"
+      }
     }
   },
   "order": [
@@ -331,6 +339,7 @@
     "template_quote_fYGtGC",
     "template_services_yTPcHr",
     "template_text_image_fyDtEG",
-    "template_partners_RUpUhn"
+    "template_partners_RUpUhn",
+    "template_before_after_k3ACH6"
   ]
 }
