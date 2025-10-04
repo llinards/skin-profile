@@ -279,6 +279,7 @@
       "blocks": {
         "slide_yiV3yr": {
           "type": "slide",
+          "name": "Schramec",
           "settings": {
             "image": "shopify://shop_images/schramec.png",
             "alt": "schramec_logo",
