@@ -60,6 +60,28 @@
       "default": "Attēls"
     }
   ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Poga",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Uzzināt vairāk", "default": "Button" },
+        { "type": "url", "id": "url", "label": "Button link" },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Pogas veids",
+          "options": [
+            { "value": "white", "label": "Balta" },
+            { "value": "brown", "label": "Brūna" }
+          ],
+          "default": "white"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 1,
   "presets": [
     {
       "name": "Pirms un Pēc Sadaļa"
