@@ -325,6 +325,19 @@
     },
     "template_before_after_k3ACH6": {
       "type": "template-before-after",
+      "blocks": {
+        "button_Ac3wXh": {
+          "type": "button",
+          "settings": {
+            "text": "Pakalpojumi",
+            "url": "shopify://pages/pakalpojumi",
+            "style": "brown"
+          }
+        }
+      },
+      "block_order": [
+        "button_Ac3wXh"
+      ],
       "name": "Pirms un Pēc Sadaļa",
       "settings": {
         "heading": "Virsraksts šeit",
