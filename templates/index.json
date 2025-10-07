@@ -345,6 +345,14 @@
         "image": "shopify://shop_images/pirms-un-pec.jpg",
         "alt_text": "Pirms un pēc"
       }
+    },
+    "template_contact_us_wXe9dp": {
+      "type": "template-contact-us",
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Virsraksts šeit",
+        "text": "<p>Jūsu teksts šeit.</p>"
+      }
     }
   },
   "order": [
@@ -355,6 +363,7 @@
     "template_services_yTPcHr",
     "template_text_image_fyDtEG",
     "template_partners_RUpUhn",
-    "template_before_after_k3ACH6"
+    "template_before_after_k3ACH6",
+    "template_contact_us_wXe9dp"
   ]
 }
