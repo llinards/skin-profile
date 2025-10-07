@@ -1,7 +1,7 @@
 <div class="container mx-auto px-4 max-w-5xl transition-hide border-2 border-sp-brown rounded-4xl">
   <div class="px-8 py-4">
     <h2>{{ section.settings.heading }}</h2>
-    <p class="text-center uppercase">{{ section.settings.text }}</p>
+    <div class="text-center uppercase">{{ section.settings.text }}</div>
     <div class="flex flex-col space-y-2 md:justify-between md:flex-row">
       {% for block in section.blocks %}
         {% if block.type == 'button' %}
@@ -33,17 +33,9 @@
     {
       "type": "button",
       "name": "Poga",
-      "limit": 1,
       "settings": [
-        { "type": "text", "id": "text", "label": "Uzzināt vairāk", "default": "Button" },
-        { "type": "url", "id": "url", "label": "Button link" },
-        {
-          "type": "select",
-          "id": "style",
-          "label": "Pogas veids",
-          "options": [{ "value": "brown", "label": "Brūna" }],
-          "default": "white"
-        }
+        { "type": "text", "id": "text", "label": "Poga teksts", "default": "Sazināties" },
+        { "type": "url", "id": "url", "label": "Pogas saite" }
       ]
     }
   ],
