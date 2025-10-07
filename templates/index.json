@@ -275,7 +275,7 @@
       }
     },
     "template_partners_RUpUhn": {
-      "type": "template-partners",
+      "type": "template-partners-brands",
       "blocks": {
         "slide_yiV3yr": {
           "type": "slide",

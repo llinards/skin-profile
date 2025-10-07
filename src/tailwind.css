@@ -132,7 +132,7 @@
 }
 
 .f-carousel__dot {
-    color: #885642;
+    color: #885642 !important;
     opacity: 0.5;
 }
 
