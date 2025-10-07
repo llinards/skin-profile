@@ -1,18 +1,16 @@
-<div class="container mx-auto px-4 max-w-5xl transition-hide border-1 border-[#885642] rounded-4xl">
-  <div class="md:px-12 text-center py-6">
+<div class="container mx-auto max-w-5xl transition-hide">
+  <div class="mx-4 px-4 md:px-12 text-center py-6 rounded-4xl border-1 border-[#885642] ">
     <h2 class="text-center">{{ section.settings.heading }}</h2>
-    <div class="text-center uppercase">{{ section.settings.text }}</div>
-    <div class="flex flex-col space-y-2 md:space-x-8 md:justify-between md:flex-row">
+    <div class="text-center uppercase pb-6">{{ section.settings.text }}</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 lg:gap-8">
       {% for block in section.blocks %}
         {% if block.type == 'button' %}
-          <div class="flex-1">
-            {% render 'btn-brown',
-              text: block.settings.text,
-              url: block.settings.url,
-              new_tab: block.settings.new_tab,
-              full_width: true
-            %}
-          </div>
+          {% render 'btn-brown',
+            text: block.settings.text,
+            url: block.settings.url,
+            new_tab: block.settings.new_tab,
+            full_width: true
+          %}
         {% endif %}
       {% endfor %}
     </div>

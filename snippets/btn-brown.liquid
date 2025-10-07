@@ -1,5 +1,8 @@
 <a
   href="{{ url | default: '#' }}"
+  {% if new_tab %}
+    target="_blank" rel="noopener noreferrer"
+  {% endif %}
   class="inline-block text-white bg-sp-brown border-1 border-[#885642] hover:bg-white hover:sp-brown fill-white hover:fill-sp-brown transition-all duration-300 uppercase rounded-xl py-3 px-4 {% if full_width %}w-full text-center{% endif %}"
 >
   <span class="flex items-center justify-center gap-x-2 ">
