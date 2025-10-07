@@ -369,12 +369,20 @@
             "text": "Instagram",
             "url": "https://www.instagram.com/skinprofilesigulda/#"
           }
+        },
+        "button_j63iXj": {
+          "type": "button",
+          "settings": {
+            "text": "Whatsapp",
+            "url": "https://wa.me/+37127841111"
+          }
         }
       },
       "block_order": [
         "button_cq6Uf7",
         "button_brrm9B",
-        "button_LArqiT"
+        "button_LArqiT",
+        "button_j63iXj"
       ],
       "name": "Kontaktu sadaļa",
       "settings": {
