@@ -1,42 +1,77 @@
-<footer>
-  <div class="footer__copyright">
-    &copy;
-    {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url }}, {{ powered_by_link }}
+<footer class="bg-black text-white py-12 md:py-24">
+  <div class="container mx-auto flex flex-col justify-between px-4 gap-12 sm:grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-3 lg:flex lg:flex-row text-white">
+    <div>
+      <div>
+        <img
+          src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+          alt="{{ shop.name }} logo"
+          height="1024"
+          width="1024"
+          class="w-58 h-18"
+        >
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white pb-2">Menu</h3>
+      <ul class="list-none space-y-2">
+        {% assign links = linklists['main-menu'].links %}
+        {% for link in links %}
+          <li>
+            {% render 'menu-link', link: link %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white">Informācija</h3>
+      <a href="{{ pages.privacy-policy.url }}">Privātuma politika</a>
+    </div>
+    <div>
+      <h3 class="text-white pb-2">Kontakti</h3>
+      <ul class="list-none space-y-2">
+        <li>
+          <a
+            href="tel+37127841111"
+            class="lg:text-white py-2 border-1 border-transparent hover:border-b-white transition-all duration-300"
+          >
+            +371 27841111
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:toskinprofile@gmail.com"
+            class="lg:text-white py-2 border-1 border-transparent hover:border-b-white transition-all duration-300"
+          >
+            toskinprofile@gmail.com
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://maps.app.goo.gl/5EYTtEjfUguVUWAfA"
+            class="lg:text-white py-2 border-1 border-transparent hover:border-b-white transition-all duration-300"
+            target="_blank"
+            >Pils iela 13, Sigulda, Latvija</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white pb-2">Pieseko</h3>
+      <div class="flex flex-row fill-white space-x-6">
+        {% render 'icon-facebook' %}
+        {% render 'icon-instagram' %}
+      </div>
+    </div>
   </div>
 
-  <div class="footer__links">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
-
-  <div class="footer__payment">
-    {% if section.settings.show_payment_icons %}
-      {% for type in shop.enabled_payment_types %}
-        {{ type | payment_type_svg_tag }}
-      {% endfor %}
-    {% endif %}
-  </div>
+  {% comment %}
+    <div class="container mx-auto">
+      &copy;
+      {{ 'now' | date: '%Y' }}
+      {{ shop.name | link_to: routes.root_url }} - Visas tiesības rezervētas
+    </div>
+  {% endcomment %}
 </footer>
-
-{% stylesheet %}
-  footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-  }
-  footer a {
-    text-decoration: none;
-    color: var(--color-foreground);
-  }
-  footer .footer__links,
-  footer .footer__payment {
-    display: flex;
-    gap: 1rem;
-  }
-{% endstylesheet %}
-
 {% schema %}
 {
   "name": "t:general.footer",
