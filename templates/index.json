@@ -348,6 +348,18 @@
     },
     "template_contact_us_wXe9dp": {
       "type": "template-contact-us",
+      "blocks": {
+        "button_cq6Uf7": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111"
+          }
+        }
+      },
+      "block_order": [
+        "button_cq6Uf7"
+      ],
       "name": "Kontaktu sadaļa",
       "settings": {
         "heading": "Virsraksts šeit",
