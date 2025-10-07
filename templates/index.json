@@ -362,11 +362,19 @@
             "text": "Nosūtīt epastu",
             "url": "mailto:toskinprofile@gmail.com"
           }
+        },
+        "button_LArqiT": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/#"
+          }
         }
       },
       "block_order": [
         "button_cq6Uf7",
-        "button_brrm9B"
+        "button_brrm9B",
+        "button_LArqiT"
       ],
       "name": "Kontaktu sadaļa",
       "settings": {
