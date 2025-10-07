@@ -355,10 +355,18 @@
             "text": "Zvanīt",
             "url": "tel:+37127841111"
           }
+        },
+        "button_brrm9B": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt epastu",
+            "url": "mailto:toskinprofile@gmail.com"
+          }
         }
       },
       "block_order": [
-        "button_cq6Uf7"
+        "button_cq6Uf7",
+        "button_brrm9B"
       ],
       "name": "Kontaktu sadaļa",
       "settings": {
