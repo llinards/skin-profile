@@ -353,28 +353,32 @@
           "type": "button",
           "settings": {
             "text": "Zvanīt",
-            "url": "tel:+37127841111"
+            "url": "tel:+37127841111",
+            "new_tab": false
           }
         },
         "button_brrm9B": {
           "type": "button",
           "settings": {
             "text": "Nosūtīt epastu",
-            "url": "mailto:toskinprofile@gmail.com"
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
           }
         },
         "button_LArqiT": {
           "type": "button",
           "settings": {
             "text": "Instagram",
-            "url": "https://www.instagram.com/skinprofilesigulda/#"
+            "url": "https://www.instagram.com/skinprofilesigulda/#",
+            "new_tab": true
           }
         },
         "button_j63iXj": {
           "type": "button",
           "settings": {
             "text": "Whatsapp",
-            "url": "https://wa.me/+37127841111"
+            "url": "https://wa.me/+37127841111",
+            "new_tab": true
           }
         }
       },
