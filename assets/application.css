@@ -1348,6 +1348,12 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
   .md\:leading-18 {
     @media (width >= 48rem) {
       --tw-leading: calc(var(--spacing) * 18);
@@ -1446,10 +1452,22 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
   .lg\:text-6xl {
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .lg\:text-base {
+    @media (width >= 64rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
   .lg\:text-white {
