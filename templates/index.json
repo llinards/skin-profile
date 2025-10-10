@@ -52,10 +52,13 @@
       "blocks": {
         "member_VUrXxz": {
           "type": "member",
+          "name": "Jana Krūmiņa",
           "settings": {
             "photo": "shopify://shop_images/Jana.jpg",
             "name": "Jana Krūmiņa",
-            "position": "Dibinātāja, kosmētiķis"
+            "position": "Dibinātāja, kosmētiķis",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_DeRTbH": {
@@ -63,7 +66,9 @@
           "settings": {
             "photo": "shopify://shop_images/Laura.jpg",
             "name": "Laura Nebija",
-            "position": "Kosmētiķis"
+            "position": "Kosmētiķis",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_ydrh6E": {
@@ -71,7 +76,9 @@
           "settings": {
             "photo": "shopify://shop_images/Irina.jpg",
             "name": "Dr. Iryna Kulikova",
-            "position": "Dermatologs, venerologs"
+            "position": "Dermatologs, venerologs",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_PbAW4D": {
@@ -79,7 +86,9 @@
           "settings": {
             "photo": "shopify://shop_images/Ilze.jpg",
             "name": "Ilze Taubere",
-            "position": "Skaistumkopšanas speciālists"
+            "position": "Skaistumkopšanas speciālists",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_mJgHKp": {
@@ -87,7 +96,9 @@
           "settings": {
             "photo": "shopify://shop_images/Nora.jpg",
             "name": "Nora Tarasova",
-            "position": "Kosmētiķis"
+            "position": "Kosmētiķis",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_BdQJaQ": {
@@ -95,7 +106,9 @@
           "settings": {
             "photo": "shopify://shop_images/Anite.jpg",
             "name": "Anita Baumane",
-            "position": "Uztura speciālists"
+            "position": "Uztura speciālists",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_946Gdq": {
@@ -103,7 +116,9 @@
           "settings": {
             "photo": "shopify://shop_images/Dace.jpg",
             "name": "Dr. Dace Beķere",
-            "position": "Dermatologs"
+            "position": "Dermatologs",
+            "specialities": "",
+            "identificator": ""
           }
         },
         "member_3AxYwb": {
@@ -111,7 +126,9 @@
           "settings": {
             "photo": "shopify://shop_images/Tatjana.jpg",
             "name": "Tatjana Krūmiņa",
-            "position": "Administrators"
+            "position": "Administrators",
+            "specialities": "",
+            "identificator": ""
           }
         }
       },
@@ -393,13 +410,6 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
-    },
-    "template_team_member_pop_up_ndLpxm": {
-      "type": "template-team-member-pop-up",
-      "name": "Team Member Pop-up",
-      "settings": {
-        "button_text": "Open Modal"
-      }
     }
   },
   "order": [
@@ -411,7 +421,6 @@
     "template_text_image_fyDtEG",
     "template_partners_RUpUhn",
     "template_before_after_k3ACH6",
-    "template_contact_us_wXe9dp",
-    "template_team_member_pop_up_ndLpxm"
+    "template_contact_us_wXe9dp"
   ]
 }
