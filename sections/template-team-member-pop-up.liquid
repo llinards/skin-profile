@@ -1,0 +1,70 @@
+<div class="container mx-auto px-4 py-12">
+  <div class="text-center">
+    <div x-data="{ modalOpen: false }">
+      <!-- Button to open modal -->
+      <button
+        @click="modalOpen = true; document.body.style.overflow = 'hidden'"
+        class="inline-block text-white bg-sp-brown border-1 border-[#885642] hover:bg-white hover:text-sp-brown transition-all duration-300 uppercase rounded-xl py-3 px-6"
+      >
+        {{ section.settings.button_text }}
+      </button>
+
+      <!-- Modal -->
+      <div
+        x-show="modalOpen"
+        x-cloak
+        @click.self="modalOpen = false; document.body.style.overflow = 'auto'"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+      >
+        <div
+          class="bg-white rounded-lg shadow-xl w-full max-w-md transform p-6"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 scale-95"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-95"
+          @click.stop
+        >
+          <!-- Close button -->
+          <button
+            @click="modalOpen = false; document.body.style.overflow = 'auto'"
+            class="float-right text-gray-400 hover:text-gray-600 text-xl leading-none"
+          >
+            ×
+          </button>
+
+          <!-- Modal content -->
+          <div class="clear-both pt-4">
+            <h1 class="text-2xl text-gray-900">Hello World</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Komandas Biedra Modālis",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Open Modal"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team Member Pop-up"
+    }
+  ]
+}
+{% endschema %}
