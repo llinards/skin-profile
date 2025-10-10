@@ -127,6 +127,17 @@
             "identificator": ""
           }
         },
+        "member_WGPk4B": {
+          "type": "member",
+          "name": "Geila Saulāja",
+          "settings": {
+            "photo": "shopify://shop_images/Geila.jpg",
+            "name": "Geila Saulāja",
+            "position": "Podologs",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
         "member_3AxYwb": {
           "type": "member",
           "name": "Tatjana Krūmiņa",
@@ -147,6 +158,7 @@
         "member_mJgHKp",
         "member_BdQJaQ",
         "member_946Gdq",
+        "member_WGPk4B",
         "member_3AxYwb"
       ],
       "name": "Komanda",
