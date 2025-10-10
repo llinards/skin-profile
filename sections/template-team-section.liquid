@@ -96,8 +96,10 @@
               {{ block.settings.specialities }}
             {% endif %}
             {% if block.settings.identificator %}
-              <p>Ārstniecības personas identifikators:</p>
-              {{ block.settings.identificator }}
+              <div class="w-full bg-sp-light-brown rounded-full">
+                <h4 class="uppercase">Ārstniecības personas identifikators:</h4>
+                {{ block.settings.identificator }}
+              </div>
             {% endif %}
           </div>
         </div>
