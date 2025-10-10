@@ -57,7 +57,7 @@
       x-transition:leave-end="opacity-0"
     >
       <div
-        class="bg-white rounded-lg shadow-xl w-full min-w-7xl max-w-lg transform"
+        class="bg-white rounded-4xl shadow-xl w-full md:max-w-5xl max-w-lg transform"
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 scale-95"
         x-transition:enter-end="opacity-100 scale-100"
@@ -69,36 +69,44 @@
         <!-- Close button -->
 
         <!-- Modal content -->
-        <div class="p-6 flex items-center relative">
+        <div class="p-6 md:flex items-center relative">
           <button
             @click="activeModal = null; document.body.style.overflow = 'auto'"
-            class="absolute top-8 right-8 text-gray-400 hover:text-gray-600 text-2xl leading-none z-10 cursor-pointer"
+            class="absolute top-10 right-10 md:top-8 md:right-8 text-2xl leading-none z-10"
           >
-            X
+            {% render 'icon-mobile-menu-close', class: 'fill-white hover:fill-sp-brown md:fill-black' %}
           </button>
           {% if block.settings.photo %}
-            <div class="w-3/7">
+            <div class="md:w-3/7">
               <img
                 src="{{ block.settings.photo | image_url }}"
                 alt="{{ block.settings.name | escape }}"
                 width="1080"
                 height="1920"
                 loading="lazy"
-                class="w-full h-150 object-cover object-top rounded-lg"
+                class="w-full max-h-124 md:h-150 rounded-3xl object-cover object-top mb-2 md:mb-0"
               >
             </div>
           {% endif %}
-          <div class="flex w-4/7 flex-col justify-center md:px-32">
-            <h3 class="text-3xl capitalize">{{ block.settings.name }}</h3>
-            <p class="text-lg text-gray-600">{{ block.settings.position }}</p>
-            <h4>Specializējas</h4>
-            {% if block.settings.specialities %}
-              {{ block.settings.specialities }}
+          <div class="flex md:w-4/7 flex-col justify-center md:px-16 lg:px-24 xl:px-32 space-y-4">
+            <div class="space-y-1">
+              <h3 class="text-3xl md:text-4xl capitalize">{{ block.settings.name }}</h3>
+              <p>{{ block.settings.position }}</p>
+            </div>
+
+            {% if block.settings.specialities != blank %}
+              <div class="space-y-1">
+                <p class="uppercase font-bold">Specializējas</p>
+                {{ block.settings.specialities }}
+              </div>
             {% endif %}
-            {% if block.settings.identificator %}
+
+            {% if block.settings.identificator != blank %}
               <div class="w-full bg-sp-light-brown rounded-full">
-                <h4 class="uppercase">Ārstniecības personas identifikators:</h4>
-                {{ block.settings.identificator }}
+                <div class="p-4 text-center space-y-1">
+                  <p class="uppercase font-bold text-center text-base">Ārstniecības personas identifikators:</p>
+                  {{ block.settings.identificator }}
+                </div>
               </div>
             {% endif %}
           </div>
