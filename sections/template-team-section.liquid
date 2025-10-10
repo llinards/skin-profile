@@ -57,7 +57,7 @@
       x-transition:leave-end="opacity-0"
     >
       <div
-        class="bg-white rounded-4xl shadow-xl w-full md:max-w-5xl max-w-lg transform"
+        class="bg-white rounded-4xl shadow-xl w-full md:max-w-5xl xl:max-w-6xl max-w-lg transform"
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 scale-95"
         x-transition:enter-end="opacity-100 scale-100"
@@ -88,7 +88,7 @@
               >
             </div>
           {% endif %}
-          <div class="flex md:w-4/7 flex-col justify-center md:px-16 lg:px-24 xl:px-32 space-y-4">
+          <div class="flex md:w-4/7 flex-col justify-center md:px-12 lg:px-18 xl:px-24 space-y-4">
             <div class="space-y-1">
               <h3 class="text-3xl md:text-4xl capitalize">{{ block.settings.name }}</h3>
               <p>{{ block.settings.position }}</p>
@@ -103,8 +103,8 @@
 
             {% if block.settings.identificator != blank %}
               <div class="w-full bg-sp-light-brown rounded-full">
-                <div class="p-4 text-center space-y-1">
-                  <p class="uppercase font-bold text-center text-base">Ārstniecības personas identifikators:</p>
+                <div class="p-4 text-center space-y-1 text-sm md:text-base">
+                  <p class="uppercase font-bold text-center">Ārstniecības personas identifikators:</p>
                   {{ block.settings.identificator }}
                 </div>
               </div>
