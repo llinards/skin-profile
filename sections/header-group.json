@@ -15,7 +15,12 @@
       "type": "header",
       "settings": {
         "menu": "",
-        "invert_colors": true
+      }
+    },
+    "header_dark": {
+      "type": "header-dark",
+      "settings": {
+        "menu": ""
       }
     }
   },
