@@ -14,9 +14,9 @@
     "header": {
       "type": "header",
       "settings": {
-        "desktop_link_color": "#333333",
-        "desktop_cart_color": "#333333",
-        "desktop_logo_filter": "sepia(1) saturate(0)",
+        "desktop_link_color": "#000000",
+        "desktop_cart_color": "#000000",
+        "desktop_logo_filter": "invert(1)",
         "menu": ""
       }
     }
