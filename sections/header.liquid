@@ -1,6 +1,6 @@
 <header class="relative container mx-auto">
   <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
-    <nav class="mx-auto px-4 sm:px-6 w-full" role="navigation" aria-label="Main navigation">
+    <nav class="mx-auto px-4 w-full" role="navigation" aria-label="Main navigation">
       {% if page.metafields.custom.navigation_style == 'dark' %}
         {% render 'menu', invert_class: 'invert' %}
       {% else %}
