@@ -1,0 +1,113 @@
+<header class="relative container mx-auto pb-12">
+  <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
+    <nav class="mx-auto px-4 sm:px-6 w-full" role="navigation" aria-label="Main navigation">
+      {% assign links = linklists['main-menu'].links %}
+      <!-- DESKTOP MENU -->
+      <div class="hidden lg:flex items-center justify-between space-x-10 py-4">
+        <div class="flex flex-row space-x-8 invert">
+          {% for link in links %}
+            {% if forloop.index <= 3 %}
+              {% if link.links != blank %}
+                {% render 'dropdown-menu-link', link: link %}
+              {% else %}
+                {% render 'menu-link', link: link %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- LOGO -->
+        <div class="invert">
+          <img
+            src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+            alt="{{ shop.name }} logo"
+            height="1024"
+            width="1024"
+            class="w-58 h-18"
+          >
+        </div>
+
+        <div class="flex space-x-8 invert">
+          {% for link in links %}
+            {% if forloop.index > 3 %}
+              {% if link.links != blank %}
+                {% render 'dropdown-menu-link', link: link %}
+              {% else %}
+                {% render 'menu-link', link: link %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% render 'cart-counter' %}
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div>
+        <div class="lg:hidden flex items-center justify-between py-4 w-full">
+          <button
+            x-on:click="open = !open"
+            type="button"
+            aria-label="Toggle mobile menu"
+            aria-controls="mobile-menu"
+            :aria-expanded="open.toString()"
+            class="flex items-center justify-left cursor-pointer z-2 w-1/7"
+          >
+            <span x-show="!open">{% render 'icon-mobile-menu' %}</span>
+            <span x-show="open">{% render 'icon-mobile-menu-close' %}</span>
+          </button>
+
+          <div class="flex items-center justify-center z-2 w-5/7">
+            <img
+              src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+              alt="{{ shop.name }} logo"
+              height="1024"
+              width="1024"
+              class="w-48"
+              :class="open ? 'invert' : ''"
+            >
+          </div>
+          {% render 'cart-counter' %}
+        </div>
+        <div
+          id="mobile-menu"
+          x-show="open"
+          x-transition:enter="transition-all duration-300 ease-out"
+          x-transition:enter-start="-translate-x-full opacity-0"
+          x-transition:enter-end="translate-x-0 opacity-100"
+          x-transition:leave="transition-all duration-300 ease-in"
+          x-transition:leave-start="translate-x-0 opacity-100"
+          x-transition:leave-end="-translate-x-full opacity-0"
+          class="bg-white text-black h-screen fixed inset-0 z-0 flex flex-col items-center justify-center space-y-6 lg:hidden"
+        >
+          <div class="flex flex-col space-y-4">
+            {% for link in links %}
+              {% if link.links != blank %}
+                {% render 'dropdown-menu-link', link: link %}
+              {% else %}
+                {% render 'menu-link', link: link %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header Dark",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }
+  ]
+}
+{% endschema %}
