@@ -132,7 +132,7 @@
       "name": "Komanda",
       "settings": {
         "heading": "Komanda",
-        "is_page_title": false,
+        "is_page_title": true,
         "use_grid_layout": true
       }
     },
