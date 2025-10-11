@@ -16,18 +16,9 @@
       "settings": {
         "menu": ""
       }
-    },
-    "template_contact_us_6CjcQp": {
-      "type": "template-contact-us",
-      "name": "Kontaktu sadaļa",
-      "settings": {
-        "heading": "Virsraksts šeit",
-        "text": "<p>Jūsu teksts šeit.</p>"
-      }
     }
   },
   "order": [
-    "header",
-    "template_contact_us_6CjcQp"
+    "header"
   ]
 }
