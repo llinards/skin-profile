@@ -4,7 +4,12 @@
       {% assign links = linklists['main-menu'].links %}
       <!-- DESKTOP MENU -->
       <div class="hidden lg:flex items-center justify-between space-x-10 py-4">
-        <div class="flex flex-row space-x-8">
+        {% assign should_invert = false %}
+        {% if template contains 'page' and page.invert_header %}
+          {% assign should_invert = true %}
+        {% endif %}
+
+        <div id="links" class="flex flex-row space-x-8 {% if should_invert %}invert{% endif %}">
           {% for link in links %}
             {% if forloop.index <= 3 %}
               {% if link.links != blank %}
@@ -17,7 +22,7 @@
         </div>
 
         <!-- LOGO -->
-        <div>
+        <div id="logo" class="{% if should_invert %}invert{% endif %}">
           <img
             src="{{ "skin-profile-logo-white.svg" | asset_url }}"
             alt="{{ shop.name }} logo"
@@ -27,7 +32,7 @@
           >
         </div>
 
-        <div class="flex space-x-8">
+        <div id="cart" class="flex space-x-8 {% if should_invert %}invert{% endif %}">
           {% for link in links %}
             {% if forloop.index > 3 %}
               {% if link.links != blank %}
@@ -107,6 +112,12 @@
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_colors",
+      "label": "Invert header colors",
+      "default": false
     }
   ]
 }

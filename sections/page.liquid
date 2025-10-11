@@ -5,6 +5,16 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/page
 {% endcomment %}
 
+<div
+  x-data="{ invertHeader: false }"
+  x-init="$watch('invertHeader', value => window.dispatchEvent(new CustomEvent('header-invert-toggle', { detail: { invert: value } })))"
+>
+  <label class="flex items-center space-x-2 cursor-pointer">
+    <input type="checkbox" x-model="invertHeader" class="form-checkbox">
+    <span>Invert Header Colors</span>
+  </label>
+</div>
+
 <h1>{{ page.title }}</h1>
 
 {{ page.content }}
@@ -12,6 +22,13 @@
 {% schema %}
 {
   "name": "t:general.page",
-  "settings": []
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "invert_header",
+      "label": "Invert Header Colors",
+      "default": false
+    }
+  ]
 }
 {% endschema %}
