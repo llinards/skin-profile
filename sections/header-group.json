@@ -13,12 +13,7 @@
   "sections": {
     "header": {
       "type": "header",
-      "settings": {
-        "menu": "",
-      }
-    },
-    "header_dark": {
-      "type": "header-dark",
+      "disabled": true,
       "settings": {
         "menu": ""
       }
