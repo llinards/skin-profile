@@ -16,40 +16,9 @@
       "settings": {
         "menu": ""
       }
-    },
-    "template_team_section_hDzbQH": {
-      "type": "template-team-section",
-      "blocks": {
-        "member_wKXBdK": {
-          "type": "member",
-          "settings": {
-            "name": "Jane Doe",
-            "position": "Founder",
-            "specialities": "",
-            "identificator": ""
-          }
-        }
-      },
-      "block_order": [
-        "member_wKXBdK"
-      ],
-      "name": "Komanda",
-      "settings": {
-        "heading": "Komanda"
-      }
-    },
-    "template_contact_us_Q8FkgL": {
-      "type": "template-contact-us",
-      "name": "Kontaktu sadaļa",
-      "settings": {
-        "heading": "Virsraksts šeit",
-        "text": "<p>Jūsu teksts šeit.</p>"
-      }
     }
   },
   "order": [
-    "header",
-    "template_team_section_hDzbQH",
-    "template_contact_us_Q8FkgL"
+    "header"
   ]
 }
