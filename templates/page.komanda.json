@@ -132,7 +132,8 @@
       "name": "Komanda",
       "settings": {
         "heading": "Komanda",
-        "is_page_title": true
+        "is_page_title": false,
+        "use_grid_layout": true
       }
     },
     "template_contact_us_igV4Ai": {

@@ -163,7 +163,9 @@
       ],
       "name": "Komanda",
       "settings": {
-        "heading": "Komanda"
+        "heading": "Komanda",
+        "is_page_title": false,
+        "use_grid_layout": false
       }
     },
     "template_quote_fYGtGC": {
