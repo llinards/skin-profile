@@ -11,7 +11,9 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
     },
     "template_team_section_8U3NT7": {
       "type": "template-team-section",
@@ -129,7 +131,8 @@
       ],
       "name": "Komanda",
       "settings": {
-        "heading": "Komanda"
+        "heading": "Komanda",
+        "is_page_title": true
       }
     },
     "template_contact_us_igV4Ai": {
