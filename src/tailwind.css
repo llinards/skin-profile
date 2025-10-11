@@ -78,8 +78,8 @@
 
     h1 {
         font-family: "Belleza-Regular";
-        color: #fff;
         text-align: left;
+        @apply uppercase text-3xl md:text-5xl lg:text-6xl
     }
 
     h1,
