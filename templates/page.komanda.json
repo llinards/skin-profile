@@ -12,9 +12,129 @@
     "main": {
       "type": "page",
       "settings": {}
+    },
+    "template_team_section_8U3NT7": {
+      "type": "template-team-section",
+      "blocks": {
+        "member_BnTCca": {
+          "type": "member",
+          "name": "Jana Krūmiņa",
+          "settings": {
+            "photo": "shopify://shop_images/Jana.jpg",
+            "name": "Jana Krūmiņa",
+            "position": "Dibinātāja, kosmētiķis",
+            "specialities": "<p>Sejas procedūras, estētiskās injekcijas, lāzerestētika, lāzerepilācija.</p>",
+            "identificator": "43520060764"
+          }
+        },
+        "member_qEBT9H": {
+          "type": "member",
+          "name": "Laura Nebija",
+          "settings": {
+            "photo": "shopify://shop_images/Laura.jpg",
+            "name": "Laura Nebija",
+            "position": "Kosmētiķis",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_dTDW4h": {
+          "type": "member",
+          "name": "Dr. Iryna Kulikova",
+          "settings": {
+            "photo": "shopify://shop_images/Irina.jpg",
+            "name": "Dr. Iryna Kulikova",
+            "position": "Dermatologs, venerologs",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_qRYnCt": {
+          "type": "member",
+          "name": "Ilze Taubere",
+          "settings": {
+            "photo": "shopify://shop_images/Ilze.jpg",
+            "name": "Ilze Taubere",
+            "position": "Skaistumkopšanas speciālists",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_7GY3ze": {
+          "type": "member",
+          "name": "Nora Tarasova",
+          "settings": {
+            "photo": "shopify://shop_images/Nora.jpg",
+            "name": "Nora Tarasova",
+            "position": "Kosmētiķis",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_ifG7cd": {
+          "type": "member",
+          "name": "Anita Baumane",
+          "settings": {
+            "photo": "shopify://shop_images/Anite.jpg",
+            "name": "Anita Baumane",
+            "position": "Uztura speciālists",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_Dw8AFT": {
+          "type": "member",
+          "name": "Dr. Dace Beķere",
+          "settings": {
+            "photo": "shopify://shop_images/Dace.jpg",
+            "name": "Dr. Dace Beķere",
+            "position": "Dermatologs",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_7t39zF": {
+          "type": "member",
+          "name": "Geila Saulāja",
+          "settings": {
+            "photo": "shopify://shop_images/Geila.jpg",
+            "name": "Geila Saulāja",
+            "position": "Podologs",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_L7J3aB": {
+          "type": "member",
+          "name": "Tatjana Krūmiņa",
+          "settings": {
+            "photo": "shopify://shop_images/Tatjana.jpg",
+            "name": "Tatjana Krūmiņa",
+            "position": "Administrators",
+            "specialities": "",
+            "identificator": ""
+          }
+        }
+      },
+      "block_order": [
+        "member_BnTCca",
+        "member_qEBT9H",
+        "member_dTDW4h",
+        "member_qRYnCt",
+        "member_7GY3ze",
+        "member_ifG7cd",
+        "member_Dw8AFT",
+        "member_7t39zF",
+        "member_L7J3aB"
+      ],
+      "name": "Komanda",
+      "settings": {
+        "heading": "Komanda"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_team_section_8U3NT7"
   ]
 }
