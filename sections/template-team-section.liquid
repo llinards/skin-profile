@@ -9,7 +9,11 @@
 </script>
 <div x-data="{ activeModal: null }">
   <div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
-    <h2 class="mb-6 md:mb-12">{{ section.settings.heading }}</h2>
+    {% if section.settings.is_page_title %}
+      <h1 class="mb-6 md:mb-12">{{ section.settings.heading }}</h1>
+    {% else %}
+      <h2 class="mb-6 md:mb-12">{{ section.settings.heading }}</h2>
+    {% endif %}
     <div class="f-carousel pb-6 md:pb-12" id="teamCarousel">
       {% for block in section.blocks %}
         <div
@@ -125,6 +129,13 @@
       "id": "heading",
       "label": "Virsraksts",
       "default": "Komanda"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_page_title",
+      "label": "Vai šis ir lapas virsraksts?",
+      "default": false,
+      "info": "Ja ieslēgts, virsraksts tiks attēlots kā H1 (lapas galvenais virsraksts). Ja izslēgts, tiks izmantots H2."
     }
   ],
   "blocks": [
