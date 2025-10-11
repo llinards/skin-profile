@@ -1,0 +1,44 @@
+<nav class="mx-auto px-4 sm:px-6 w-full" role="navigation" aria-label="Main navigation">
+  {% assign links = linklists['main-menu'].links %}
+  <!-- DESKTOP MENU -->
+  <div class="hidden lg:flex items-center justify-between space-x-10 py-4">
+    <div class="flex flex-row space-x-8 invert">
+      {% for link in links %}
+        {% if forloop.index <= 3 %}
+          {% if link.links != blank %}
+            {% render 'dropdown-menu-link', link: link %}
+          {% else %}
+            {% render 'menu-link', link: link %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- LOGO -->
+    <div class="invert">
+      <img
+        src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+        alt="{{ shop.name }} logo"
+        height="1024"
+        width="1024"
+        class="w-58 h-18"
+      >
+    </div>
+
+    <div class="flex space-x-8 invert">
+      {% for link in links %}
+        {% if forloop.index > 3 %}
+          {% if link.links != blank %}
+            {% render 'dropdown-menu-link', link: link %}
+          {% else %}
+            {% render 'menu-link', link: link %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% render 'cart-counter' %}
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  {% render 'mobile-navigation' %}
+</nav>
