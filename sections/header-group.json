@@ -15,9 +15,9 @@
       "type": "header",
       "settings": {
         "menu": "",
-        "invert_links": false,
-        "invert_logo": false,
-        "invert_cart": false
+        "invert_links": true,
+        "invert_logo": true,
+        "invert_cart": true
       }
     }
   },
