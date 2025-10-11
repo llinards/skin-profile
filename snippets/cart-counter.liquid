@@ -1,8 +1,20 @@
-<div class="flex items-center justify-end z-2 w-1/7">
-  <a href="{{ routes.cart_url }}">
-    {% render 'icon-shopping-bag' %}
+<div class="relative">
+  <a href="{{ routes.cart_url }}" class="flex items-center">
+    <svg
+      class="w-6 h-6"
+      fill="currentColor"
+      style="color: {{ color | default: '#ffffff' }};"
+      viewBox="0 0 24 24"
+    >
+      <!-- Your cart icon SVG path -->
+    </svg>
+    {% if cart.item_count > 0 %}
+      <span
+        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+        style="color: {{ color | default: '#ffffff' }};"
+      >
+        {{ cart.item_count }}
+      </span>
+    {% endif %}
   </a>
-  <p class="rounded-full ml-2 px-2" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
-    {{ cart.item_count }}
-  </p>
 </div>
