@@ -3,10 +3,18 @@
     <nav class="mx-auto px-4 sm:px-6 w-full" role="navigation" aria-label="Main navigation">
       {% assign links = linklists['main-menu'].links %}
 
-      <!-- Determine inversion classes based on section settings -->
-      {% assign invert_links = section.settings.invert_links %}
-      {% assign invert_logo = section.settings.invert_logo %}
-      {% assign invert_cart = section.settings.invert_cart %}
+      <!-- Determine inversion classes based on block settings -->
+      {% assign invert_links = false %}
+      {% assign invert_logo = false %}
+      {% assign invert_cart = false %}
+
+      {% for block in section.blocks %}
+        {% if block.type == 'color_inversion' %}
+          {% assign invert_links = block.settings.invert_links %}
+          {% assign invert_logo = block.settings.invert_logo %}
+          {% assign invert_cart = block.settings.invert_cart %}
+        {% endif %}
+      {% endfor %}
 
       {% assign link_class = '' %}
       {% assign logo_class = '' %}
@@ -137,31 +145,36 @@
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
-    },
+    }
+  ],
+  "blocks": [
     {
-      "type": "header",
-      "content": "Color Inversion"
-    },
-    {
-      "type": "checkbox",
-      "id": "invert_links",
-      "label": "Invert link colors",
-      "default": false,
-      "info": "Inverts the color of navigation links"
-    },
-    {
-      "type": "checkbox",
-      "id": "invert_logo",
-      "label": "Invert logo colors",
-      "default": false,
-      "info": "Inverts the color of the logo"
-    },
-    {
-      "type": "checkbox",
-      "id": "invert_cart",
-      "label": "Invert cart icon colors",
-      "default": false,
-      "info": "Inverts the color of the cart counter"
+      "type": "color_inversion",
+      "name": "Color Inversion",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "invert_links",
+          "label": "Invert link colors",
+          "default": false,
+          "info": "Inverts the color of navigation links"
+        },
+        {
+          "type": "checkbox",
+          "id": "invert_logo",
+          "label": "Invert logo colors",
+          "default": false,
+          "info": "Inverts the color of the logo"
+        },
+        {
+          "type": "checkbox",
+          "id": "invert_cart",
+          "label": "Invert cart icon colors",
+          "default": false,
+          "info": "Inverts the color of the cart counter"
+        }
+      ]
     }
   ]
 }
