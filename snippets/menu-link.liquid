@@ -1,9 +1,6 @@
 <a
   href="{{ link.url }}"
-  class="relative inline-block py-2 px-1 transition-colors duration-300 {{ desktop_class }}"
-  {% if link.current %}
-    aria-current="page"
-  {% endif %}
+  class="lg:text-white py-2 border-1 border-transparent hover:border-b-white transition-all duration-300  {% if link.active == true %}border-b-white{% endif %}"
 >
-  {{ link.title }}
+  {{- link.title -}}
 </a>

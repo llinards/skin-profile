@@ -2,46 +2,72 @@
   <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
     <nav class="mx-auto px-4 sm:px-6 w-full" role="navigation" aria-label="Main navigation">
       {% assign links = linklists['main-menu'].links %}
+
+      <!-- Determine inversion classes based on section settings -->
+      {% assign invert_links = section.settings.invert_links %}
+      {% assign invert_logo = section.settings.invert_logo %}
+      {% assign invert_cart = section.settings.invert_cart %}
+
+      {% assign link_class = '' %}
+      {% assign logo_class = '' %}
+      {% assign cart_class = '' %}
+
+      {% if invert_links %}
+        {% assign link_class = 'invert' %}
+      {% endif %}
+
+      {% if invert_logo %}
+        {% assign logo_class = 'invert' %}
+      {% endif %}
+
+      {% if invert_cart %}
+        {% assign cart_class = 'invert' %}
+      {% endif %}
+
       <!-- DESKTOP MENU -->
       <div class="hidden lg:flex items-center justify-between space-x-10 py-4">
-        <div class="flex flex-row space-x-8">
+        <div class="flex flex-row space-x-8 {{ link_class }}">
           {% for link in links %}
             {% if forloop.index <= 3 %}
               {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link, desktop_class: 'desktop-menu-link' %}
+                {% render 'dropdown-menu-link', link: link %}
               {% else %}
-                {% render 'menu-link', link: link, desktop_class: 'desktop-menu-link' %}
+                {% render 'menu-link', link: link %}
               {% endif %}
             {% endif %}
           {% endfor %}
         </div>
 
         <!-- LOGO -->
-        <div>
+        <div class="{{ logo_class }}">
           <img
-            src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+            src="{{ 'skin-profile-logo-white.svg' | asset_url }}"
             alt="{{ shop.name }} logo"
             height="1024"
             width="1024"
-            class="w-58 h-18 desktop-logo"
+            class="w-58 h-18"
           >
         </div>
 
         <div class="flex space-x-8">
-          {% for link in links %}
-            {% if forloop.index > 3 %}
-              {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link, desktop_class: 'desktop-menu-link' %}
-              {% else %}
-                {% render 'menu-link', link: link, desktop_class: 'desktop-menu-link' %}
+          <div class="{{ link_class }}">
+            {% for link in links %}
+              {% if forloop.index > 3 %}
+                {% if link.links != blank %}
+                  {% render 'dropdown-menu-link', link: link %}
+                {% else %}
+                  {% render 'menu-link', link: link %}
+                {% endif %}
               {% endif %}
-            {% endif %}
-          {% endfor %}
-          {% render 'cart-counter', desktop_class: 'desktop-cart-counter' %}
+            {% endfor %}
+          </div>
+          <div class="{{ cart_class }}">
+            {% render 'cart-counter' %}
+          </div>
         </div>
       </div>
 
-      <!-- MOBILE MENU (unchanged) -->
+      <!-- MOBILE MENU -->
       <div>
         <div class="lg:hidden flex items-center justify-between py-4 w-full">
           <button
@@ -50,7 +76,7 @@
             aria-label="Toggle mobile menu"
             aria-controls="mobile-menu"
             :aria-expanded="open.toString()"
-            class="flex items-center justify-left cursor-pointer z-2 w-1/7"
+            class="flex items-center justify-left cursor-pointer z-2 w-1/7 {{ link_class }}"
           >
             <span x-show="!open">{% render 'icon-mobile-menu' %}</span>
             <span x-show="open">{% render 'icon-mobile-menu-close' %}</span>
@@ -58,16 +84,20 @@
 
           <div class="flex items-center justify-center z-2 w-5/7">
             <img
-              src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+              src="{{ 'skin-profile-logo-white.svg' | asset_url }}"
               alt="{{ shop.name }} logo"
               height="1024"
               width="1024"
-              class="w-48"
+              class="w-48 {{ logo_class }}"
               :class="open ? 'invert' : ''"
             >
           </div>
-          {% render 'cart-counter' %}
+
+          <div class="{{ cart_class }}">
+            {% render 'cart-counter' %}
+          </div>
         </div>
+
         <div
           id="mobile-menu"
           x-show="open"
@@ -107,6 +137,31 @@
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    },
+    {
+      "type": "header",
+      "content": "Color Inversion"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_links",
+      "label": "Invert link colors",
+      "default": false,
+      "info": "Inverts the color of navigation links"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_logo",
+      "label": "Invert logo colors",
+      "default": false,
+      "info": "Inverts the color of the logo"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_cart",
+      "label": "Invert cart icon colors",
+      "default": false,
+      "info": "Inverts the color of the cart counter"
     }
   ]
 }
