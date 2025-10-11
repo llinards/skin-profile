@@ -1,0 +1,28 @@
+{% for block in section.blocks %}
+  <div
+    class="f-carousel__slide h-full rounded-4xl cursor-pointer"
+    @click="activeModal = '{{ block.id }}'; document.body.style.overflow = 'hidden'"
+  >
+    {% if block.settings.photo %}
+      <div class="overflow-hidden h-108 rounded-4xl">
+        <img
+          src="{{ block.settings.photo | image_url }}"
+          alt="{{ block.settings.name | escape }}"
+          width="1080"
+          height="1920"
+          loading="lazy"
+          class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+        >
+      </div>
+    {% endif %}
+    <div class="flex w-full px-2 justify-between">
+      <div class="pt-4">
+        <h3 class="text-left">{{ block.settings.name }}</h3>
+        <div class="text-sm text-left">{{ block.settings.position }}</div>
+      </div>
+      <div class="flex justify-end items-end mb-1">
+        {% render 'icon-arrow' %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
