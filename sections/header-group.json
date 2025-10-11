@@ -13,21 +13,9 @@
   "sections": {
     "header": {
       "type": "header",
-      "blocks": {
-        "color_inversion_RNDqPh": {
-          "type": "color_inversion",
-          "settings": {
-            "invert_links": true,
-            "invert_logo": true,
-            "invert_cart": true
-          }
-        }
-      },
-      "block_order": [
-        "color_inversion_RNDqPh"
-      ],
       "settings": {
-        "menu": ""
+        "menu": "",
+        "invert_colors": true
       }
     }
   },
