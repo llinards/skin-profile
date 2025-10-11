@@ -4,7 +4,6 @@
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      :class="open ? 'fill-black' : 'fill-white'"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clip-path="url(#clip0_58_1469)">
@@ -17,7 +16,7 @@
       </defs>
     </svg>
   </a>
-  <p class="rounded-full ml-2 px-2 cart-count" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
+  <p class="rounded-full ml-2 px-2 cart-count text-white bg-black">
     {{ cart.item_count }}
   </p>
 </div>
