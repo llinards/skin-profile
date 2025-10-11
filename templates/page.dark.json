@@ -1,0 +1,14 @@
+{
+    "sections": {
+        "header_dark": {
+            "type": "header-dark"
+        },
+        "main": {
+            "type": "main-page"
+        }
+    },
+    "order": [
+        "header_dark",
+        "main"
+    ]
+}
