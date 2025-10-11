@@ -14,10 +14,10 @@
     "header": {
       "type": "header",
       "settings": {
-        "desktop_link_color": "#000000",
-        "desktop_cart_color": "#000000",
-        "desktop_logo_filter": "invert(1)",
-        "menu": ""
+        "menu": "",
+        "invert_links": true,
+        "invert_logo": true,
+        "invert_cart": true
       }
     }
   },
