@@ -1,0 +1,65 @@
+<!-- sections/page-header-styles.liquid -->
+<style>
+  {% if section.settings.invert_desktop_links %}
+    @media (min-width: 1024px) {
+      .desktop-menu-link {
+        color: #000000 !important;
+      }
+
+      .desktop-menu-link::after {
+        background-color: #000000 !important;
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.invert_cart_counter %}
+    @media (min-width: 1024px) {
+      .desktop-cart-counter svg {
+        fill: #000000 !important;
+      }
+
+      .desktop-cart-counter .cart-count {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.invert_logo %}
+    @media (min-width: 1024px) {
+      .desktop-logo {
+        filter: invert(1) !important;
+      }
+    }
+  {% endif %}
+</style>
+
+{% schema %}
+{
+  "name": "Page Header Colors",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop Header Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_desktop_links",
+      "label": "Invert Desktop Links Color",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_cart_counter",
+      "label": "Invert Cart Counter Color",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_logo",
+      "label": "Invert Logo Color",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

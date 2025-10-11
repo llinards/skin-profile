@@ -1,6 +1,9 @@
 <a
   href="{{ link.url }}"
-  class="flex lg:text-white items-center py-2 border-1 border-transparent hover:border-b-white transition-all duration-300"
+  class="flex lg:text-white items-center py-2 border-1 border-transparent hover:border-b-white transition-all duration-300 {{ desktop_class }}"
+  {% if link.current %}
+    aria-current="page"
+  {% endif %}
 >
   {{- link.title -}}
   {% render 'icon-arrow-down' %}

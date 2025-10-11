@@ -1,8 +1,8 @@
-<div class="flex items-center justify-end z-2 w-1/7">
+<div class="flex items-center justify-end z-2 w-1/7 {{ desktop_class }}">
   <a href="{{ routes.cart_url }}">
     {% render 'icon-shopping-bag' %}
   </a>
-  <p class="rounded-full ml-2 px-2" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
+  <p class="rounded-full ml-2 px-2 cart-count" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
     {{ cart.item_count }}
   </p>
 </div>

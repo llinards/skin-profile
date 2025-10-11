@@ -8,9 +8,9 @@
           {% for link in links %}
             {% if forloop.index <= 3 %}
               {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link %}
+                {% render 'dropdown-menu-link', link: link, desktop_class: 'desktop-menu-link' %}
               {% else %}
-                {% render 'menu-link', link: link %}
+                {% render 'menu-link', link: link, desktop_class: 'desktop-menu-link' %}
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -23,7 +23,7 @@
             alt="{{ shop.name }} logo"
             height="1024"
             width="1024"
-            class="w-58 h-18"
+            class="w-58 h-18 desktop-logo"
           >
         </div>
 
@@ -31,17 +31,17 @@
           {% for link in links %}
             {% if forloop.index > 3 %}
               {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link %}
+                {% render 'dropdown-menu-link', link: link, desktop_class: 'desktop-menu-link' %}
               {% else %}
-                {% render 'menu-link', link: link %}
+                {% render 'menu-link', link: link, desktop_class: 'desktop-menu-link' %}
               {% endif %}
             {% endif %}
           {% endfor %}
-          {% render 'cart-counter' %}
+          {% render 'cart-counter', desktop_class: 'desktop-cart-counter' %}
         </div>
       </div>
 
-      <!-- MOBILE MENU -->
+      <!-- MOBILE MENU (unchanged) -->
       <div>
         <div class="lg:hidden flex items-center justify-between py-4 w-full">
           <button

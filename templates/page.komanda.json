@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "page_header_styles": {
+      "type": "page-header-styles",
+      "settings": {
+        "invert_desktop_links": true,
+        "invert_cart_counter": true,
+        "invert_logo": false
+      }
+    },
     "main": {
       "type": "page",
       "settings": {}
@@ -182,6 +190,7 @@
     }
   },
   "order": [
+    "page_header_styles",
     "main",
     "template_team_section_8U3NT7",
     "template_contact_us_igV4Ai"
