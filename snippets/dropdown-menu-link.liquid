@@ -1,12 +1,7 @@
-<div class="relative group">
-  <button
-    class="flex items-center py-2 px-1 transition-colors duration-300"
-    style="color: {{ text_color | default: '#ffffff' }};"
-  >
-    {{ link.title }}
-    <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z"/>
-    </svg>
-  </button>
-  <!-- Dropdown content here -->
-</div>
+<a
+  href="{{ link.url }}"
+  class="flex lg:text-white items-center py-2 border-1 border-transparent hover:border-b-white transition-all duration-300"
+>
+  {{- link.title -}}
+  {% render 'icon-arrow-down' %}
+</a>

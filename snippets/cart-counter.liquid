@@ -1,18 +1,8 @@
-<div class="relative">
-  <a href="{{ routes.cart_url }}" class="flex items-center">
-    <svg
-      class="w-6 h-6"
-      style="fill: {{ color | default: '#ffffff' }};"
-      viewBox="0 0 24 24"
-    >
-      <path d="M7 4V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5a1 1 0 0 1 0 2h-2v13a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6H2a1 1 0 0 1 0-2h5zM6 6v13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6H6zm3-2V3h6v1H9zm2 3h2v9h-2V7z"/>
-    </svg>
-    {% if cart.item_count > 0 %}
-      <span
-        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
-      >
-        {{ cart.item_count }}
-      </span>
-    {% endif %}
+<div class="flex items-center justify-end z-2 w-1/7">
+  <a href="{{ routes.cart_url }}">
+    {% render 'icon-shopping-bag' %}
   </a>
+  <p class="rounded-full ml-2 px-2" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
+    {{ cart.item_count }}
+  </p>
 </div>

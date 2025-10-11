@@ -8,9 +8,9 @@
           {% for link in links %}
             {% if forloop.index <= 3 %}
               {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link, text_color: section.settings.desktop_link_color %}
+                {% render 'dropdown-menu-link', link: link %}
               {% else %}
-                {% render 'menu-link', link: link, text_color: section.settings.desktop_link_color %}
+                {% render 'menu-link', link: link %}
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -19,14 +19,11 @@
         <!-- LOGO -->
         <div>
           <img
-            src="{{ section.settings.desktop_logo | default: 'skin-profile-logo-white.svg' | asset_url }}"
+            src="{{ "skin-profile-logo-white.svg" | asset_url }}"
             alt="{{ shop.name }} logo"
             height="1024"
             width="1024"
             class="w-58 h-18"
-            {% if section.settings.desktop_logo_filter != blank %}
-              style="filter: {{ section.settings.desktop_logo_filter }}"
-            {% endif %}
           >
         </div>
 
@@ -34,13 +31,13 @@
           {% for link in links %}
             {% if forloop.index > 3 %}
               {% if link.links != blank %}
-                {% render 'dropdown-menu-link', link: link, text_color: section.settings.desktop_link_color %}
+                {% render 'dropdown-menu-link', link: link %}
               {% else %}
-                {% render 'menu-link', link: link, text_color: section.settings.desktop_link_color %}
+                {% render 'menu-link', link: link %}
               {% endif %}
             {% endif %}
           {% endfor %}
-          {% render 'cart-counter', color: section.settings.desktop_cart_color %}
+          {% render 'cart-counter' %}
         </div>
       </div>
 
@@ -102,45 +99,9 @@
   "name": "t:general.header",
   "settings": [
     {
-      "type": "header",
-      "content": "Desktop Menu Settings"
-    },
-    {
-      "type": "color",
-      "id": "desktop_link_color",
-      "label": "Desktop Link Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "desktop_cart_color",
-      "label": "Desktop Cart Counter Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "image_picker",
-      "id": "desktop_logo",
-      "label": "Desktop Logo (optional)"
-    },
-    {
-      "type": "select",
-      "id": "desktop_logo_filter",
-      "label": "Desktop Logo Color Filter",
-      "options": [
-        { "value": "", "label": "None" },
-        { "value": "invert(1)", "label": "Invert (Black to White)" },
-        { "value": "brightness(0) invert(1)", "label": "White" }
-      ],
-      "default": ""
-    },
-    {
-      "type": "header",
-      "content": "General Settings"
-    },
-    {
       "type": "image_picker",
       "id": "logo",
-      "label": "Default Logo"
+      "label": "Logo"
     },
     {
       "type": "link_list",
