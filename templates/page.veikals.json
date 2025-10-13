@@ -111,11 +111,19 @@
       ],
       "name": "Sadarbības partneri",
       "settings": {}
+    },
+    "template_services_XWDm6p": {
+      "type": "template-services",
+      "name": "Veikala kategoriju sadaļa",
+      "settings": {
+        "heading": "Kategorijas"
+      }
     }
   },
   "order": [
     "main",
     "template_header_carousel_HgcMyT",
-    "template_partners_brands_jywALt"
+    "template_partners_brands_jywALt",
+    "template_services_XWDm6p"
   ]
 }
