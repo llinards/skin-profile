@@ -114,6 +114,18 @@
     },
     "template_services_XWDm6p": {
       "type": "template-services",
+      "blocks": {
+        "service_G9eVH7": {
+          "type": "service",
+          "settings": {
+            "name": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_G9eVH7"
+      ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
         "heading": "Kategorijas"
