@@ -123,10 +123,20 @@
             "name": "Sejas Kopšana",
             "url": ""
           }
+        },
+        "service_K4hBm9": {
+          "type": "service",
+          "name": "Ķermeņa Kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_kopsana.jpg",
+            "name": "Ķermeņa Kopšana",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "service_G9eVH7"
+        "service_G9eVH7",
+        "service_K4hBm9"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
