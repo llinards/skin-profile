@@ -126,10 +126,10 @@
         },
         "service_K4hBm9": {
           "type": "service",
-          "name": "Ķermeņa Kopšana",
+          "name": "Ķermeņa kopšana",
           "settings": {
             "photo": "shopify://shop_images/kermena_kopsana.jpg",
-            "name": "Ķermeņa Kopšana",
+            "name": "Ķermeņa kopšana",
             "url": ""
           }
         },
