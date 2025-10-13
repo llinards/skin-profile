@@ -36,16 +36,26 @@
         },
         "image_HpUDG8": {
           "type": "image",
+          "name": "Schrammek Produkti",
           "settings": {
             "image": "shopify://shop_images/schrammek-produkti-lg.jpg",
             "alt_text": "Schrammek Produkti"
+          }
+        },
+        "image_ef746F": {
+          "type": "image",
+          "name": "Biodroga Serum",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-serum-lg.jpg",
+            "alt_text": "Biodroga Serum"
           }
         }
       },
       "block_order": [
         "button_weNna6",
         "image_i4HLyE",
-        "image_HpUDG8"
+        "image_HpUDG8",
+        "image_ef746F"
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
