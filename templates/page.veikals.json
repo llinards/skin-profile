@@ -33,7 +33,7 @@
     "main": {
       "type": "page",
       "settings": {
-        "add_top_padding": true
+        "add_top_padding": false
       }
     },
     "template_partners_brands_jywALt": {
