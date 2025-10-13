@@ -15,11 +15,6 @@
         "add_top_padding": true
       }
     },
-    "template_partners_brands_Vk7LFh": {
-      "type": "template-partners-brands",
-      "name": "Sadarbības partneri",
-      "settings": {}
-    },
     "template_partners_brands_jywALt": {
       "type": "template-partners-brands",
       "blocks": {
@@ -72,7 +67,6 @@
   },
   "order": [
     "main",
-    "template_partners_brands_Vk7LFh",
     "template_partners_brands_jywALt"
   ]
 }
