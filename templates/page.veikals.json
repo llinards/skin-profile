@@ -19,10 +19,60 @@
       "type": "template-partners-brands",
       "name": "Sadarbības partneri",
       "settings": {}
+    },
+    "template_partners_brands_jywALt": {
+      "type": "template-partners-brands",
+      "blocks": {
+        "slide_gggq9h": {
+          "type": "slide",
+          "name": "Schramec",
+          "settings": {
+            "image": "shopify://shop_images/schramec.png",
+            "alt": "schramec_logo",
+            "url": ""
+          }
+        },
+        "slide_xxL3EK": {
+          "type": "slide",
+          "name": "Biodroga",
+          "settings": {
+            "image": "shopify://shop_images/biodroga.png",
+            "alt": "Biodroga Logo",
+            "url": ""
+          }
+        },
+        "slide_44AEMN": {
+          "type": "slide",
+          "name": "Renew",
+          "settings": {
+            "image": "shopify://shop_images/renew.png",
+            "alt": "Renew Logo",
+            "url": ""
+          }
+        },
+        "slide_RLDz3L": {
+          "type": "slide",
+          "name": "Olaplex",
+          "settings": {
+            "image": "shopify://shop_images/olaplex.png",
+            "alt": "Olaplex Logo",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_gggq9h",
+        "slide_xxL3EK",
+        "slide_44AEMN",
+        "slide_RLDz3L"
+      ],
+      "name": "Sadarbības partneri",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "template_partners_brands_Vk7LFh"
+    "template_partners_brands_Vk7LFh",
+    "template_partners_brands_jywALt"
   ]
 }
