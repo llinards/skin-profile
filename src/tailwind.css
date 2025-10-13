@@ -126,6 +126,12 @@
     }
 }
 
+.home-introduction {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: 100svh;
+}
+
 #teamCarousel,
 #servicesCarousel {
     --f-carousel-slide-width: calc((100%) / 1.5);

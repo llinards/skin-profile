@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -372,9 +371,6 @@
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
   }
-  .max-h-full {
-    max-height: 100%;
-  }
   .w-1\/7 {
     width: calc(1/7 * 100%);
   }
@@ -404,12 +400,6 @@
   }
   .max-w-none {
     max-width: none;
-  }
-  .flex-1 {
-    flex: 1;
-  }
-  .flex-shrink-0 {
-    flex-shrink: 0;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -566,9 +556,6 @@
   }
   .overflow-hidden {
     overflow: hidden;
-  }
-  .overflow-y-auto {
-    overflow-y: auto;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -738,9 +725,6 @@
   .text-gray-400 {
     color: var(--color-gray-400);
   }
-  .text-gray-600 {
-    color: var(--color-gray-600);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -777,11 +761,6 @@
   }
   .transition-all {
     transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-colors {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -1418,6 +1397,11 @@
       text-align: left;
     }
   }
+}
+.home-introduction {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100svh;
 }
 #teamCarousel, #servicesCarousel {
   --f-carousel-slide-width: calc((100%) / 1.5);
