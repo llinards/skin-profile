@@ -117,8 +117,10 @@
       "blocks": {
         "service_G9eVH7": {
           "type": "service",
+          "name": "Sejas Kopšana",
           "settings": {
-            "name": "",
+            "photo": "shopify://shop_images/sejas_kopsana.jpg",
+            "name": "Sejas Kopšana",
             "url": ""
           }
         }
