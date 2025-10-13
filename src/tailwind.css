@@ -138,14 +138,21 @@
     --f-carousel-gap: 24px;
 }
 
-.f-carousel__dot {
+#teamCarousel .f-carousel__dot,
+#servicesCarousel .f-carousel__dot {
     color: #885642 !important;
-    opacity: 0.5;
 }
 
 .f-carousel__dot::after {
     padding: 8px;
 }
+
+#headerCarousel .f-carousel__dots {
+    top: 90%;
+    z-index: 4;
+    color: #ffffff !important;
+}
+
 
 @media screen and (max-width: 479px) {
     .f-carousel__slide {
