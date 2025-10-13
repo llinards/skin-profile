@@ -26,17 +26,17 @@
             "style": "white"
           }
         },
-        "image_HXxDgt": {
+        "image_i4HLyE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/estetiska_medicina.jpg",
-            "alt_text": ""
+            "image": "shopify://shop_images/biodroga-schwarzwald-new-series-lg.jpg",
+            "alt_text": "Biodroga-schwarzwald-new-series-lg"
           }
         }
       },
       "block_order": [
         "button_weNna6",
-        "image_HXxDgt"
+        "image_i4HLyE"
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
