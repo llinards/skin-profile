@@ -112,67 +112,6 @@
       "name": "Sadarbības partneri",
       "settings": {}
     },
-    "template_services_XWDm6p": {
-      "type": "template-services",
-      "blocks": {
-        "service_G9eVH7": {
-          "type": "service",
-          "name": "Sejas kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/sejas_kopsana.jpg",
-            "name": "Sejas kopšana",
-            "url": ""
-          }
-        },
-        "service_K4hBm9": {
-          "type": "service",
-          "name": "Ķermeņa kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/kermena_kopsana.jpg",
-            "name": "Ķermeņa kopšana",
-            "url": ""
-          }
-        },
-        "service_jjJyXr": {
-          "type": "service",
-          "name": "Matu kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu kopšana",
-            "url": ""
-          }
-        },
-        "service_ePxHqH": {
-          "type": "service",
-          "name": "Uztura bagātinātāji",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
-            "name": "Uztura bagātinātāji",
-            "url": ""
-          }
-        },
-        "service_cqNebx": {
-          "type": "service",
-          "name": "Dāvanu kartes",
-          "settings": {
-            "photo": "shopify://shop_images/davanu_kartes.jpg",
-            "name": "Dāvanu kartes",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "service_G9eVH7",
-        "service_K4hBm9",
-        "service_jjJyXr",
-        "service_ePxHqH",
-        "service_cqNebx"
-      ],
-      "name": "Veikala kategoriju sadaļa",
-      "settings": {
-        "heading": "Kategorijas"
-      }
-    },
     "template_store_categories_Nap3ey": {
       "type": "template-store-categories",
       "blocks": {
@@ -211,13 +150,23 @@
             "name": "Uztura bagātinātāji",
             "url": ""
           }
+        },
+        "service_BUJhP3": {
+          "type": "service",
+          "name": "Dāvanu kartes",
+          "settings": {
+            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "name": "Dāvanu kartes",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "service_G7bbBn",
         "service_bX3CNw",
         "service_fCWQTG",
-        "service_i68yB7"
+        "service_i68yB7",
+        "service_BUJhP3"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
@@ -229,7 +178,6 @@
     "main",
     "template_header_carousel_HgcMyT",
     "template_partners_brands_jywALt",
-    "template_services_XWDm6p",
     "template_store_categories_Nap3ey"
   ]
 }
