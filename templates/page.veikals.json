@@ -150,13 +150,23 @@
             "name": "Uztura bagātinātāji",
             "url": ""
           }
+        },
+        "service_cqNebx": {
+          "type": "service",
+          "name": "Dāvanu kartes",
+          "settings": {
+            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "name": "Dāvanu kartes",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "service_G9eVH7",
         "service_K4hBm9",
         "service_jjJyXr",
-        "service_ePxHqH"
+        "service_ePxHqH",
+        "service_cqNebx"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
