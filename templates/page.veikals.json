@@ -135,10 +135,19 @@
         },
         "service_jjJyXr": {
           "type": "service",
-          "name": "Matu Kopšana",
+          "name": "Matu kopšana",
           "settings": {
             "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu Kopšana",
+            "name": "Matu kopšana",
+            "url": ""
+          }
+        },
+        "service_ePxHqH": {
+          "type": "service",
+          "name": "Uztura bagātinātāji",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
+            "name": "Uztura bagātinātāji",
             "url": ""
           }
         }
@@ -146,7 +155,8 @@
       "block_order": [
         "service_G9eVH7",
         "service_K4hBm9",
-        "service_jjJyXr"
+        "service_jjJyXr",
+        "service_ePxHqH"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
