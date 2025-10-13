@@ -202,12 +202,22 @@
             "name": "Matu kopšana",
             "url": ""
           }
+        },
+        "service_i68yB7": {
+          "type": "service",
+          "name": "Uztura bagātinātāji",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
+            "name": "Uztura bagātinātāji",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "service_G7bbBn",
         "service_bX3CNw",
-        "service_fCWQTG"
+        "service_fCWQTG",
+        "service_i68yB7"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
