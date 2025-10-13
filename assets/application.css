@@ -1294,6 +1294,12 @@
       padding-inline: calc(var(--spacing) * 24);
     }
   }
+  .\32 xl\:text-3xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
 }
 @layer components {
   .sp-brown {
@@ -1409,11 +1415,11 @@
   min-height: -webkit-fill-available;
   min-height: 100svh;
 }
-#teamCarousel, #servicesCarousel {
+#teamCarousel, #servicesCarousel, #categoryCarousel {
   --f-carousel-slide-width: calc((100%) / 1.5);
   --f-carousel-gap: 24px;
 }
-#teamCarousel .f-carousel__dot, #servicesCarousel .f-carousel__dot {
+#teamCarousel .f-carousel__dot, #servicesCarousel .f-carousel__dot, #categoryCarousel .f-carousel__dot {
   color: #885642 !important;
 }
 .f-carousel__dot::after {
@@ -1444,10 +1450,16 @@
   #teamCarousel {
     --f-carousel-slide-width: calc((100% - 32px) / 2);
   }
+  #categoryCarousel {
+    --f-carousel-slide-width: calc((100% - 32px) / 2);
+  }
 }
 @media screen and (min-width: 640px) {
   #servicesCarousel {
     --f-carousel-slide-width: calc((100% - 64px) / 2);
+  }
+  #categoryCarousel {
+    --f-carousel-slide-width: calc((100% - 64px) / 3);
   }
 }
 @media screen and (min-width: 767px) {
@@ -1462,9 +1474,15 @@
   #teamCarousel {
     --f-carousel-slide-width: calc((100% - 72px) / 4);
   }
+  #categoryCarousel {
+    --f-carousel-slide-width: calc((100% - 72px) / 4);
+  }
 }
 @media screen and (min-width: 1280px) {
   #teamCarousel {
+    --f-carousel-slide-width: calc((100% - 96px) / 5);
+  }
+  #categoryCarousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
   }
 }
