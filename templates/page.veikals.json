@@ -28,15 +28,24 @@
         },
         "image_i4HLyE": {
           "type": "image",
+          "name": "Biodroga Schwarzwald New Series",
           "settings": {
             "image": "shopify://shop_images/biodroga-schwarzwald-new-series-lg.jpg",
-            "alt_text": "Biodroga-schwarzwald-new-series-lg"
+            "alt_text": "Biodroga Schwarzwald New Series"
+          }
+        },
+        "image_HpUDG8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/schrammek-produkti-lg.jpg",
+            "alt_text": "Schrammek Produkti"
           }
         }
       },
       "block_order": [
         "button_weNna6",
-        "image_i4HLyE"
+        "image_i4HLyE",
+        "image_HpUDG8"
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
