@@ -184,10 +184,20 @@
             "name": "Sejas kopšana",
             "url": ""
           }
+        },
+        "service_bX3CNw": {
+          "type": "service",
+          "name": "Ķermeņa kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_kopsana.jpg",
+            "name": "Ķermeņa kopšana",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "service_G7bbBn"
+        "service_G7bbBn",
+        "service_bX3CNw"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
