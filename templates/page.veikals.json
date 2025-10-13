@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": false
+      }
+    },
     "template_header_carousel_HgcMyT": {
       "type": "template-header-carousel",
       "blocks": {
@@ -19,21 +25,23 @@
             "url": "#store",
             "style": "white"
           }
+        },
+        "image_HXxDgt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/estetiska_medicina.jpg",
+            "alt_text": ""
+          }
         }
       },
       "block_order": [
-        "button_weNna6"
+        "button_weNna6",
+        "image_HXxDgt"
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
         "heading": "Profesionāla sejas kopšana tavās mājās",
         "subtext": "<p>Izvēlies dermatologu un kosmetologu ieteiktus produktus no pasaules vadošajiem zīmoliem.</p>"
-      }
-    },
-    "main": {
-      "type": "page",
-      "settings": {
-        "add_top_padding": false
       }
     },
     "template_partners_brands_jywALt": {
@@ -87,8 +95,8 @@
     }
   },
   "order": [
-    "template_header_carousel_HgcMyT",
     "main",
+    "template_header_carousel_HgcMyT",
     "template_partners_brands_jywALt"
   ]
 }
