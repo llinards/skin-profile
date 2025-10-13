@@ -193,11 +193,21 @@
             "name": "Ķermeņa kopšana",
             "url": ""
           }
+        },
+        "service_fCWQTG": {
+          "type": "service",
+          "name": "Matu kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/matu_kopsana.jpg",
+            "name": "Matu kopšana",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "service_G7bbBn",
-        "service_bX3CNw"
+        "service_bX3CNw",
+        "service_fCWQTG"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
