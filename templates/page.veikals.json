@@ -11,10 +11,18 @@
   "sections": {
     "main": {
       "type": "page",
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_partners_brands_Vk7LFh": {
+      "type": "template-partners-brands",
+      "name": "Sadarbības partneri",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_partners_brands_Vk7LFh"
   ]
 }
