@@ -9,6 +9,27 @@
  */
 {
   "sections": {
+    "template_header_carousel_HgcMyT": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "button_weNna6": {
+          "type": "button",
+          "settings": {
+            "text": "Iepirkties",
+            "url": "#store",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "button_weNna6"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija",
+        "subtext": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+      }
+    },
     "main": {
       "type": "page",
       "settings": {
@@ -63,41 +84,11 @@
       ],
       "name": "Sadarbības partneri",
       "settings": {}
-    },
-    "template_header_carousel_HgcMyT": {
-      "type": "template-header-carousel",
-      "blocks": {
-        "button_weNna6": {
-          "type": "button",
-          "settings": {
-            "text": "Pakalpojumi",
-            "url": "/pages/services",
-            "style": "white"
-          }
-        },
-        "button_8cQVLB": {
-          "type": "button",
-          "settings": {
-            "text": "Virtuālais konsultants",
-            "url": "#",
-            "style": "brown"
-          }
-        }
-      },
-      "block_order": [
-        "button_weNna6",
-        "button_8cQVLB"
-      ],
-      "name": "Galvenes sadaļa ar karuseli",
-      "settings": {
-        "heading": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija",
-        "subtext": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
-      }
     }
   },
   "order": [
-    "main",
     "template_header_carousel_HgcMyT",
+    "main",
     "template_partners_brands_jywALt"
   ]
 }
