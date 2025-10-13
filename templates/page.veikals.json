@@ -172,12 +172,34 @@
       "settings": {
         "heading": "Kategorijas"
       }
+    },
+    "template_store_categories_Nap3ey": {
+      "type": "template-store-categories",
+      "blocks": {
+        "service_G7bbBn": {
+          "type": "service",
+          "name": "Sejas kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_kopsana.jpg",
+            "name": "Sejas kopšana",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_G7bbBn"
+      ],
+      "name": "Veikala kategoriju sadaļa",
+      "settings": {
+        "heading": "Kategorijas"
+      }
     }
   },
   "order": [
     "main",
     "template_header_carousel_HgcMyT",
     "template_partners_brands_jywALt",
-    "template_services_XWDm6p"
+    "template_services_XWDm6p",
+    "template_store_categories_Nap3ey"
   ]
 }
