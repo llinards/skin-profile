@@ -132,11 +132,21 @@
             "name": "Ķermeņa Kopšana",
             "url": ""
           }
+        },
+        "service_jjJyXr": {
+          "type": "service",
+          "name": "Matu Kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/matu_kopsana.jpg",
+            "name": "Matu Kopšana",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "service_G9eVH7",
-        "service_K4hBm9"
+        "service_K4hBm9",
+        "service_jjJyXr"
       ],
       "name": "Veikala kategoriju sadaļa",
       "settings": {
