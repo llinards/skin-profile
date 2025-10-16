@@ -9,7 +9,7 @@
   <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
 
   <div class="collection-products">
-    {% paginate collection.products by 20 %}
+    {% paginate collection.products by 12 %}
       {% for product in collection.products %}
         <a href="{{ product.url }}">
           <div class="collection-product">

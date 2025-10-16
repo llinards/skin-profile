@@ -79,5 +79,26 @@
         "default": 4
       }
     ]
+  },
+  {
+    "name": "Language Settings",
+    "settings": [
+      {
+        "type": "select",
+        "id": "language_selector_type",
+        "label": "Language selector type",
+        "options": [
+          {
+            "value": "dropdown",
+            "label": "Dropdown"
+          },
+          {
+            "value": "list",
+            "label": "List"
+          }
+        ],
+        "default": "dropdown"
+      }
+    ]
   }
 ]

@@ -1,0 +1,52 @@
+{
+    "404": {
+        "title": "404",
+        "not_found": "Lapa nav atrasta.",
+        "back_to_shopping": "Atpakaļ uz iepirkšanos"
+    },
+    "blog": {
+        "article_comments": "Komentāri",
+        "article_metadata_html": "{{ date }} autors {{ author }}",
+        "comment_form_body": "Komentārs",
+        "comment_form_email": "E-pasts",
+        "comment_form_name": "Vārds",
+        "comment_form_submit": "Nosūtīt",
+        "comment_form_title": "Pievienot komentāru"
+    },
+    "cart": {
+        "checkout": "Apmaksāt",
+        "title": "Grozs",
+        "update": "Atjaunināt",
+        "remove": "Noņemt"
+    },
+    "customers": {
+        "login": {
+            "email": "E-pasts",
+            "password": "Parole",
+            "submit": "Pierakstīties",
+            "title": "Pierakstīšanās"
+        }
+    },
+    "collections": {
+        "title": "Kolekcijas"
+    },
+    "gift_card": {
+        "add_to_apple_wallet": "Pievienot Apple Wallet",
+        "card": "Dāvanu karte",
+        "expired": "Šī dāvanu karte ir beigusies",
+        "expires_on": "Derīga līdz {{ expires_on }}",
+        "use_at_checkout": "Izmantojiet šo dāvanu karti apmaksas laikā"
+    },
+    "password": {
+        "title": "Šis veikals ir privāts",
+        "password": "Parole",
+        "enter": "Ievadīt"
+    },
+    "search": {
+        "title": "Meklēt",
+        "placeholder": "Meklēt rakstus, lapas vai produktus",
+        "submit": "Meklēt",
+        "no_results_html": "Nav atrasti rezultāti vaicājumam {{ terms }}",
+        "results_for_html": "{{ count }} rezultāti atrasti vaicājumam {{ terms }}"
+    }
+}
