@@ -1,52 +1,427 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "404": {
-        "title": "404",
-        "not_found": "Lapa nav atrasta.",
-        "back_to_shopping": "Atpakaļ uz iepirkšanos"
-    },
-    "blog": {
-        "article_comments": "Komentāri",
-        "article_metadata_html": "{{ date }} autors {{ author }}",
-        "comment_form_body": "Komentārs",
-        "comment_form_email": "E-pasts",
-        "comment_form_name": "Vārds",
-        "comment_form_submit": "Nosūtīt",
-        "comment_form_title": "Pievienot komentāru"
-    },
-    "cart": {
-        "checkout": "Apmaksāt",
-        "title": "Grozs",
-        "update": "Atjaunināt",
-        "remove": "Noņemt"
-    },
-    "customers": {
-        "login": {
-            "email": "E-pasts",
-            "password": "Parole",
-            "submit": "Pierakstīties",
-            "title": "Pierakstīšanās"
-        }
-    },
-    "collections": {
-        "title": "Kolekcijas"
-    },
-    "gift_card": {
-        "add_to_apple_wallet": "Pievienot Apple Wallet",
-        "card": "Dāvanu karte",
-        "expired": "Šī dāvanu karte ir beigusies",
-        "expires_on": "Derīga līdz {{ expires_on }}",
-        "use_at_checkout": "Izmantojiet šo dāvanu karti apmaksas laikā"
-    },
-    "password": {
-        "title": "Šis veikals ir privāts",
-        "password": "Parole",
-        "enter": "Ievadīt"
-    },
-    "search": {
-        "title": "Meklēt",
-        "placeholder": "Meklēt rakstus, lapas vai produktus",
-        "submit": "Meklēt",
-        "no_results_html": "Nav atrasti rezultāti vaicājumam {{ terms }}",
-        "results_for_html": "{{ count }} rezultāti atrasti vaicājumam {{ terms }}"
+  "404": {
+    "title": "404",
+    "not_found": "Lapa nav atrasta.",
+    "back_to_shopping": "Atpakaļ uz iepirkšanos"
+  },
+  "blog": {
+    "article_comments": "Komentāri",
+    "article_metadata_html": "{{ date }} autors {{ author }}",
+    "comment_form_body": "Komentārs",
+    "comment_form_email": "E-pasts",
+    "comment_form_name": "Vārds",
+    "comment_form_submit": "Nosūtīt",
+    "comment_form_title": "Pievienot komentāru"
+  },
+  "cart": {
+    "checkout": "Apmaksāt",
+    "title": "Grozs",
+    "update": "Atjaunināt",
+    "remove": "Noņemt"
+  },
+  "customers": {
+    "login": {
+      "email": "E-pasts",
+      "password": "Parole",
+      "submit": "Pierakstīties",
+      "title": "Pierakstīšanās"
     }
+  },
+  "collections": {
+    "title": "Kolekcijas"
+  },
+  "gift_card": {
+    "add_to_apple_wallet": "Pievienot Apple Wallet",
+    "card": "Dāvanu karte",
+    "expired": "Šī dāvanu karte ir beigusies",
+    "expires_on": "Derīga līdz {{ expires_on }}",
+    "use_at_checkout": "Izmantojiet šo dāvanu karti apmaksas laikā"
+  },
+  "password": {
+    "title": "Šis veikals ir privāts",
+    "password": "Parole",
+    "enter": "Ievadīt"
+  },
+  "search": {
+    "title": "Meklēt",
+    "placeholder": "Meklēt rakstus, lapas vai produktus",
+    "submit": "Meklēt",
+    "no_results_html": "Nav atrasti rezultāti vaicājumam {{ terms }}",
+    "results_for_html": "{{ count }} rezultāti atrasti vaicājumam {{ terms }}"
+  },
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " un ",
+      "last_word_connector": "un "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "Vai tiešām vēlaties dzēst adresi {{address}} ?"
+      },
+      "general": {
+        "page_title": "Norēķināšanās",
+        "error_page_title": "Kļūda",
+        "skip_to_content": "Pāriet uz saturu",
+        "breadcrumb": "Navigācija",
+        "continue_button_label": "Turpināt",
+        "complete_purchase_button_label": "Pabeigt pasūtījumu",
+        "pay_now_button_label": "Maksāt tūlīt",
+        "authenticate_purchase_button_label": "Maksājuma autentifikācija",
+        "edit_link_label": "Rediģēt",
+        "all_rights_reserved": "Visas tiesības aizsargātas.",
+        "print_policies_link_label": "Drukāt",
+        "cart": "Grozs",
+        "close_modal_label": "Aizvērt",
+        "close_notice_label": "Aizvērt",
+        "expand_notice_label": "Skatīt vairāk",
+        "continue_to_shipping_method": "Turpināt ar piegādi",
+        "continue_to_payment_method": "Turpināt ar maksājumu",
+        "continue_to_review": "Pārskatīt pasūtījumu",
+        "back_to_cart": "Atgriezties grozā",
+        "back_to_contact_information": "Atgriezties pie informācijas",
+        "back_to_shipping_method": "Atgriezties pie piegādes",
+        "back_to_payment_method": "Atgriezties pie maksājuma",
+        "choose_shipping_method": "Izvēlieties piegādes metodi",
+        "choose_payment_method": "Izvēlieties maksājuma veidu",
+        "choose_billing_address": "Izvēlieties norēķinu adresi",
+        "contact_us_html": "Sazinieties ar mums, lai iegūtu vairāk informācijas",
+        "autocomplete_title": "Ieteikumi",
+        "autocomplete_single_item": "1 prece pieejama",
+        "autocomplete_multi_item": "{{number}} pieejamas preces",
+        "autocomplete_close": "Aizvērt ieteikumus",
+        "forwarding_indicator": {
+          "new_window": "Atveras jaunā logā.",
+          "external": "Atver ārēju tīmekļa vietni.",
+          "external_and_new_window": "Atver ārējo tīmekļa vietni jaunā logā."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Norēķināšanās"
+        },
+        "tooltip_accessibility_label": "Vairāk informācijas",
+        "qr_code": "QR kods",
+        "errors": {
+          "only_empty_terms_accepted": "Šī politika pieņem tikai tukšus terminus.",
+          "session_identifier_not_unique_error": "Radās problēma ar jūsu pasūtījumu. Lūdzu, mēģiniet vēlreiz norēķināties.",
+          "line_item_limit_reached": "Ir sasniegts maksimālais rindu vienību skaits.",
+          "session_is_already_finished": "Šī norēķināšanās sesija jau ir pabeigta.",
+          "merchandise": {
+            "only_value_constraint": "Preču ievades laukā ir atļautas tikai precīzas vērtības.",
+            "merchandise_not_found": "Produkts nav atrasts.",
+            "merchandise_variant_not_found": "Produkta variants nav atrasts.",
+            "merchandise_not_applicable": "Produkta variantu nevar iegādāties.",
+            "mixed_currencies": "Norēķins satur rindu vienības ar dažādām valūtām.",
+            "bundle_products_not_supported_for_b2b": "Šajā atrašanās vietā B2B pasūtījumiem nevar pievienot komplektā iekļautās preces.",
+            "gift_card_quantity_mismatch": "Norādot dāvanu karšu kodus, rindas vienības daudzumam un dāvanu karšu kodu skaitam ir jāsakrīt.",
+            "gift_card_not_supported": "Dāvanu kartes šajā norēķinu režīmā netiek atbalstītas.",
+            "gift_card_not_unique": "Dāvanu karte ar kodu {{code}} šajā norēķināšanās reizē parādās vairāk nekā vienu reizi. Kodi tiek formatēti pirms salīdzināšanas.",
+            "gift_card_used": "Dāvanu kartes kods {{code}} jau ir piešķirts dāvanu kartei. Kodi tiek formatēti pirms salīdzināšanas.",
+            "gift_card_invalid": "Dāvanu kartes kods {{code}} nav derīgs.",
+            "gift_card_code_changed": "Dāvanu kartes kods {{proposed_code}} tika mainīts uz {{formatted_code}} lai tas atbilstu formatēšanas noteikumiem.",
+            "gift_card_with_attributes_not_supported": "Dāvanu kartes ar pielāgotiem atribūtiem šajā norēķināšanās reizē netiek atbalstītas.",
+            "gift_card_with_components_not_supported": "Dāvanu kartes ar komponentiem šajā norēķinu režīmā netiek atbalstītas.",
+            "selling_plan_mismatch": "Abonements ir atjaunināts.",
+            "selling_plan_not_supported": "Abonementi netiek atbalstīti.",
+            "selling_plan_not_supported_b2b": "Abonementi netiek atbalstīti B2B norēķinu veikšanai.",
+            "price_mismatch": "Iepriekš piedāvātā šīs preces cena nebija derīga un ir atjaunināta.",
+            "inventory_not_found": "Šai precei nav atrasts neviens krājums.",
+            "product_not_published": "Produkts nav publicēts.",
+            "product_not_published_in_buyer_location": "Produkts nav publicēts pircēja atrašanās vietā.",
+            "duplicated_stable_id": "Šai preču līnijai ir tāds pats staļļa ID kā citai līnijai.",
+            "minimum_quantity_not_met": "Dažu preču daudzums neatbilst minimālajai nepieciešamajai normai.",
+            "maximum_quantity_exceeded": "Dažu priekšmetu daudzums pārsniedz maksimāli atļauto.",
+            "quantity_increment_not_met": "Dažu preču daudzums neatbilst pasūtījuma ierobežojumiem.",
+            "quantity_rules_not_met": "Dažu preču daudzums neatbilst pasūtījuma ierobežojumiem.",
+            "bundle_requires_components": "Šim komplekta produktam nav sastāvdaļu.",
+            "title_too_long": "Preces nosaukums ir pārāk garš.",
+            "title_empty": "Preces nosaukuma lauks ir tukšs."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Uzņēmuma kontaktpersonai nav piekļuves uzņēmumam.",
+            "customer_account_required": "Lai turpinātu, jums jāpiesakās.",
+            "company_location_required": "Lai turpinātu, klientam jāizvēlas uzņēmuma atrašanās vieta.",
+            "company_purchase_permission_required": "Klientam nav atļaujas veikt uzņēmuma pasūtījumus.",
+            "personal_order_not_allowed": "Personīgi pasūtījumi šajā veikalā nav atļauti.",
+            "lost_access_to_company": "Klients zaudēja piekļuvi jebkuram uzņēmumam.",
+            "contact_info_does_not_match_customer_account": "Kontaktinformācijai ir jāatbilst kontam, kurā esat pierakstījies.",
+            "phone_number_does_not_match_expected_pattern": "Norādītais tālruņa numurs neatbilst paredzētajam šablonam.",
+            "email_required": "Iegādājoties preci, izmantojot abonementu, ir nepieciešams e-pasts.",
+            "email_domain_is_invalid": "Šo norādīto domēnu nevar atrisināt.",
+            "missing_contact_method": "Trūkst derīgas saziņas metodes.",
+            "checkout_completion_target_is_missing": "Trūkst norēķināšanās pabeigšanas mērķa.",
+            "invalid_customer_profile": "Tika sniegts nederīgs klienta profils.",
+            "customer_profile_access_restricted": "Kasei nav atļaujas piekļūt klienta profilam.",
+            "checkout_completion_target_is_invalid_proc": "Nederīgs norēķināšanās pabeigšanas mērķis.",
+            "buyer_identity_presentment_currency_does_not_match": "Apstrādājot jūsu pasūtījumu, radās problēma. Mēģiniet vēlreiz pēc dažām minūtēm."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Grozam drīkst būt tikai viena piegādes rinda.",
+            "wrong_number_of_delivery_lines": "Katrai preču grupai ir jānorāda piegādes rinda.",
+            "external_delivery_promise_error": "Ārējās piegādes solījuma izgūšanas kļūda.",
+            "options_instructions_invalid": "Norādītās instrukcijas neatbilst paredzētajam modelim.",
+            "destination_address_required": "Lai turpinātu, nepieciešama galamērķa adrese.",
+            "pickup_points_unavailable": "Saņemšanas punkti pašlaik nav pieejami.",
+            "local_pickup_delivery_line_detail_changed": "Lai turpinātu, ir jāmaina pašreizējā vietējā piegādes stratēģija pēc pasūtījuma.",
+            "selected_pickup_option_no_longer_available": "Iepriekš izvēlētā saņemšanas iespēja vairs nav pieejama.",
+            "local_pickup_no_delivery_strategy_available": "Nav atrasta pieejama vietējā piegādes stratēģija.",
+            "origin_location_id_required": "Ja tiek pieprasīta mazumtirdzniecības piegādes metode, ir nepieciešams izcelsmes vietas ID.",
+            "invalid_origin_location_id": "Nevarēja atrast atrašanās vietu, kas atbilstu sākotnējās atrašanās vietas ID."
+          },
+          "captcha": {
+            "token_invalid": "Norādītais captcha žetons nebija derīgs. Lai turpinātu norēķināšanos, aizpildiet jaunu captcha.",
+            "token_not_valid_for_session": "Norādīto captcha nevar izmantot šajā norēķināšanās reizē."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Saņemtajai summai jābūt veikala valūtā."
+          },
+          "checkout_source": {
+            "revoked": "Šī norēķināšanās vairs nav pieejama."
+          }
+        },
+        "full_price": "Pilna cena:",
+        "title": "Norēķināšanās — {{shopName}}",
+        "full_title": "{{pageTitle}} — {{shopName}} — Norēķināšanās",
+        "loading": "Notiek ielāde…",
+        "loading_title": "Norēķināšanās — {{shopName}}",
+        "google_map_title": "Google karte",
+        "confirm_order_button_label": "Apstiprināt pasūtījumu",
+        "submit_order_button_label": "Iesniegt pasūtījumu",
+        "submit_for_review_button_label": "Iesniegt pārskatīšanai",
+        "submit_for_review_notice_label": "Maksājums nebūs jāveic, kamēr jūsu pasūtījums nebūs pārskatīts",
+        "continue_to_payment_plans_button_label": "Turpināt pie maksājumu plāniem",
+        "back_button_label": "Atgriešanās",
+        "choose_delivery_strategy": "Izvēlieties piegādes metodi",
+        "autocomplete_zero_item": "Nav pieejamu preču",
+        "autocomplete_powered_by_google": "Nodrošina {{brandName}}",
+        "submit": "Iesniegt",
+        "processing": "Notiek apstrāde…",
+        "stepper": {
+          "increase": "Palielināt {{type}}",
+          "decrease": "Samazināt {{type}}",
+          "minimum_reached": "Sasniegts minimālais {{value}}",
+          "maximum_reached": "Sasniegts maksimālais apjoms {{value}}"
+        },
+        "remove_chip": "Noņemt vienumu",
+        "remove_item": "Noņemt %{label}",
+        "remove_tag": "Noņemt atzīmi",
+        "dates": {
+          "weekdays": {
+            "monday": "Pirmdiena",
+            "tuesday": "Otrdiena",
+            "wednesday": "Trešdiena",
+            "thursday": "Ceturtdiena",
+            "friday": "Piektdiena",
+            "saturday": "Sestdiena",
+            "sunday": "Svētdiena"
+          },
+          "weekdays_abbreviation": {
+            "tuesday": "Otrdiena",
+            "wednesday": "Mēs",
+            "thursday": "Ceturtdiena",
+            "friday": "Piektdiena",
+            "sunday": "Sv"
+          },
+          "months": {
+            "january": "Janvāris",
+            "february": "Februāris",
+            "march": "Marts",
+            "april": "Aprīlis",
+            "may": "Maijs",
+            "june": "Jūnijs",
+            "july": "Jūlijs",
+            "august": "Augusts",
+            "september": "Septembris",
+            "october": "Oktobris",
+            "november": "Novembris",
+            "december": "Decembris"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Rādīt iepriekšējo mēnesi, {{month}} {{year}}",
+          "show_next_month": "Rādīt nākamo mēnesi, {{month}} {{year}}",
+          "range_start": "Diapazona sākums",
+          "in_range": "Diapazonā",
+          "range_end": "Diapazona beigas"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} marķieru kopa",
+            "other": "{{number}} marķieru kopa"
+          }
+        },
+        "sheet": {
+          "expand": "Izvērst"
+        },
+        "dropzone": {
+          "add_file": "Pievienot failu",
+          "invalid_file_type": "Faila tips netiek atbalstīts",
+          "dragged_over": "Nometiet failu, lai augšupielādētu"
+        }
+      },
+      "contact": {
+        "title": "Informācija",
+        "address_title": "Adrese",
+        "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam.",
+        "delivery_option_title": "Piegādes metode",
+        "contact_method_title": "Kontaktinformācija",
+        "email_label": "E-pasts",
+        "email_rollup_accessibility_label": "E-pasta opcijas",
+        "email_placeholder": "E-pasts",
+        "email_or_phone_label": "E-pasts vai mobilā tālruņa numurs",
+        "email_or_phone_placeholder": "E-pasts vai mobilā tālruņa numurs",
+        "stored_addresses_label": "Saglabātās adreses",
+        "available_addresses_label": "Pieejamās adreses",
+        "new_address_label": "Izmantojiet jaunu adresi",
+        "first_name_label": "Vārds",
+        "optional_first_name_label": "Vārds (pēc izvēles)",
+        "last_name_label": "Uzvārds",
+        "company_label": "Uzņēmums",
+        "company_attention_label": "Uzņēmums/Uzmanību",
+        "optional_company_attention_label": "Uzņēmums/Uzmanība (pēc izvēles)",
+        "optional_company_label": "Uzņēmums (pēc izvēles)",
+        "address1_label": "Adrese",
+        "address2_label": "Dzīvoklis, apartaments utt.",
+        "optional_address2_label": "Dzīvoklis, apartaments utt. (pēc izvēles)",
+        "city_label": "Pilsēta",
+        "country_label": "Valsts/reģions",
+        "country_code": "Valsts/reģiona kods",
+        "county_label": "Apgabals",
+        "county_placeholder": "Apgabals",
+        "state_label": "Štats",
+        "state_placeholder": "Štats",
+        "region_label": "Reģions",
+        "region_placeholder": "Reģions",
+        "region_none": "Nav atlasīts"
+      },
+      "order_summary": {
+        "cart_does_not_meet_discount_requirements_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> nav derīgs precēm jūsu grozā.",
+        "discount_requires_customer_notice": "Ievadiet savu piegādes informāciju, lai piemērotu atlaides kodu <strong style=\"text-transform:uppercase\">%{code}</strong>",
+        "customer_does_not_meet_discount_requirements_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> jums šobrīd nav pieejams.",
+        "eligible_customer_missing_notice": "Atlaides kodam <strong style=\"text-transform:uppercase\">%{code}</strong> nepieciešams atbilstošs klients.",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> nav pieejams jūsu piegādes adresei.",
+        "customer_already_used_once_per_customer_discount_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> jau ir izmantots",
+        "subtotal_label": "Starpsumma",
+        "subtotal_label_with_quantity": {
+          "one": "Starpsumma · %{count} prece",
+          "other": "Starpsumma · %{count} vienības"
+        },
+        "shipping_label": "Piegāde",
+        "pickup_label": "Saņemšana veikalā",
+        "no_pickup_location": "Nav pieejamas saņemšanas vietas.",
+        "pickup_unavailable_banner_title": {
+          "one": "Nav pieejamu veikalu ar jūsu preci",
+          "other": "Nav pieejamu veikalu ar jūsu precēm"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Piegāde uz adresi",
+          "ship_to_address_instead_html": "%{link} vietā"
+        },
+        "tip_label": "Padoms",
+        "unconfirmed_label": "Neapstiprināts",
+        "calculating_shipping": "Aprēķina…",
+        "calculating": "Aprēķina…",
+        "shipping_default_value": "Aprēķināts nākamajā solī",
+        "shipping_discount_title": "Piegādes atlaide",
+        "shipping_pending_message": "Vēl nav pieejams",
+        "shipping_policy_link": "Piegādes izmaksas",
+        "taxes_label": "Nodokļi",
+        "estimated_taxes_label": "Paredzamie nodokļi",
+        "estimated_taxes_label_short": "Paredzēts",
+        "information_estimated_taxes_label": "Nodokļi (aprēķināti)",
+        "estimated_taxes_finalization_tooltip_content": "Galīgais nodoklis un kopsumma tiks apstiprināti pa e-pastu vai īsziņu pēc pasūtījuma veikšanas.",
+        "order_total_label": "Pasūtījuma kopsumma",
+        "price_before_discount_aria_text": "Sākotnējā cena",
+        "price_after_discount_aria_text": "Atlaides cena",
+        "discount_code_aria_text": "Atlaides kods",
+        "total_savings": "Kopējie ietaupījumi",
+        "total_label": "Kopā",
+        "total_due_label": "Kopā jāmaksā",
+        "total_paid_label": "Kopā samaksāts",
+        "total_price_label": "Kopējā cena",
+        "total_outstanding_label": "Maksājamā summa",
+        "deposit_label": "Depozīts",
+        "total_due_today_label": "Kopā jāmaksā šodien",
+        "total_due_later_label": "Kopā jāmaksā vēlāk",
+        "partial_total_label": "Kopā",
+        "free_total_label": "Bezmaksas",
+        "free_shipping_total_label": "Bezmaksas",
+        "paid_label": "Apmaksāts",
+        "payment_due_label": "Maksājuma termiņš",
+        "vat_label_html": "Ieskaitot nodokļos %{amount}",
+        "duties_included_label": "Kopsumma ietver nodokļus un nodevas. Piegādes maksa netiek iekasēta.",
+        "discount_and_gift_card_savings_notice": "Pēc %{discount_amount} atlaidēm un %{gift_card_amount} dāvanu kartēm",
+        "discount_savings_notice": "Pēc atlaidēm %{discount_amount}",
+        "gift_card_savings_notice": "Pēc %{gift_card_amount} dāvanu kartēs",
+        "cost_table_title": "Izmaksu kopsavilkums",
+        "cost_table_item_column_header": "Prece",
+        "cost_table_value_column_header": "Vērtība",
+        "description_label": "Apraksts",
+        "price_label": "Cena",
+        "price_per_item": {
+          "accessibility_label": "%{price} par vienību",
+          "label": "%{cena}/gab."
+        },
+        "quantity_label": "Daudzums",
+        "product_change_label": "Mainīt",
+        "product_image_label": "Produkta attēls",
+        "product_image_quantity_label": "Daudzums",
+        "scroll_order_summary": "Ritiniet, lai skatītu vairāk vienumu",
+        "expand_order_summary_short": "Rādīt",
+        "collapse_order_summary_short": "Slēpt",
+        "expand_order_summary": "Rādīt pasūtījuma kopsavilkumu",
+        "collapse_order_summary": "Slēpt pasūtījuma kopsavilkumu",
+        "original_price": "Sākotnējā cena",
+        "sale_price": "Izpārdošanas cena",
+        "total_updated_label": "Atjauninātā kopējā cena:",
+        "order_total_updated_label": "Atjauninātā kopsumma",
+        "total_already_paid_label": "Apmaksāts",
+        "unit_price": {
+          "accessible_separator": "uz vienu",
+          "per_item": {
+            "single": "%{cena} katrs",
+            "one": "%{price} par %{count} vienību",
+            "other": "%{price} par %{count} precēm"
+          },
+          "per_unit": {
+            "single": "%{cena}/%{vienība}",
+            "plural": "%{cena}/%{skaits}%{vienība}"
+          }
+        },
+        "gift_card_ending": "Dāvanu karte, kas beidzas ar %{last_characters}",
+        "estimated_tax_label": "Paredzamais nodoklis",
+        "multiple_shipping_lines_label": "Piegādes kopsumma",
+        "recurring_subtotal_label": "Regulāra starpsumma",
+        "recurring_total_label": "Atkārtota kopsumma",
+        "recurring_total_tooltip": "Neietver piegādes izmaksas, nodokļus, muitas nodevas vai jebkādas piemērojamās atlaides.",
+        "confirmation_number_label": "Apstiprinājums #%{confirmation_number}",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> nevarēja izmantot kopā ar jūsu esošajām atlaidēm.",
+        "percent_off_shipping": "%{percent}% atlaide piegādei",
+        "amount_off_shipping": "%{amount} atlaide piegādei",
+        "deferred_payment_info": {
+          "title": "Maksājums %{amount_due} apmērā jāveic %{due_at}",
+          "description_html": "Ja jums ir jautājumi par pasūtījumu, sazinieties ar mums, izmantojot %{contact_us}.",
+          "paid_today": "Kopā samaksāts šodien",
+          "paid_today_next": "Apmaksāts šodien",
+          "due_on_fulfillment_title": "Maksājums %{amount_due} apmērā jāveic pēc pasūtījuma izpildes.",
+          "due_on_receipt_title": "Maksājums %{amount_due} apmērā jāveic saņemšanas brīdī"
+        },
+        "deferred_balance_info": {
+          "title": "Summa {{amount_due}} ir jāatmaksā {{due_at}}",
+          "due_on_fulfillment_title": "Atlikusī summa {{amount_due}} ir jāmaksā izpildes brīdī"
+        },
+        "payment_terms_totals": {
+          "due_today": "Kopā jāmaksā šodien",
+          "due_today_next": "Jāmaksā šodien"
+        }
+      }
+    }
+  }
 }
