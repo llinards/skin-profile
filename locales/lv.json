@@ -536,8 +536,48 @@
         },
         "payment_terms_totals": {
           "due_today": "Kopā jāmaksā šodien",
-          "due_today_next": "Jāmaksā šodien"
-        }
+          "due_today_next": "Jāmaksā šodien",
+          "due_later": "Kopā jāmaksā %{due_at}",
+          "due_on_fulfillment": "Kopējā summa, kas jāmaksā izpildes brīdī",
+          "due_on_fulfillment_next": "Jāmaksā izpildes brīdī",
+          "due_on_receipt": "Kopā jāmaksā saņemšanas brīdī",
+          "due_later_checkout_to_draft": "Kopā jāmaksā vēlāk",
+          "total_paid": "Kopā samaksāts"
+        },
+        "maximum_discount_code_limit_reached": "Jūs esat sasniedzis maksimālo atlaižu kodu skaitu. Lai izmantotu <strong style=\"text-transform:uppercase\">%{code},</strong> noņemiet kādu no esošajiem kodiem.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> pašlaik nedarbojas. Sazinieties ar mums, lai saņemtu palīdzību.",
+        "due_on_fulfillment": "Jāmaksā izpildes brīdī",
+        "gift_card_masked": "•••• %{pēdējās_rakstzīmes}",
+        "subscriptions": "Abonementi",
+        "duties_label": "Pienākumi",
+        "duties_and_taxes_label": "Nodevas un nodokļi",
+        "error_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts, tāpēc piegādes brīdī var tikt piemērotas nodevas un nodokļi.",
+        "may_be_charged_on_delivery": "Var tikt iekasēta maksa piegādes laikā",
+        "total_updated_label_with_price": "Atjauninātā kopējā cena: %{totalPrice}",
+        "updated_shipping_method": "Atjauninātā piegādes metode: %{shipping_method}",
+        "recurring_payments": "Regulāri maksājumi",
+        "recurring_total_multiple_label": "Šim pasūtījumam ir atkārtota maksa par vairākām precēm.",
+        "deferred_total_due_date_label": "Kopējais maksājums: {{date}}",
+        "deferred_total_due_date_label_next": "Jāizmaksā %{date}",
+        "full_price": "Pilna cena: %{price}",
+        "custom_discount": "Pielāgota atlaide",
+        "expand_component_information": {
+          "one": "Rādīt %{count} vienumu",
+          "other": "Rādīt %{count} vienumus"
+        },
+        "collapse_component_information": {
+          "one": "Slēpt %{count} vienumu",
+          "other": "Slēpt %{count} vienumus"
+        },
+        "component_quantity_title": "%{daudzums} × %{produkta_nosaukums}",
+        "discount_discovery": {
+          "add_code": "Pievienot atlaidi",
+          "merchandise_quantity_label": {
+            "one": "%{count} vienums",
+            "other": "%{count} vienības"
+          }
+        },
+        "alternative_payment_currency_total": "Iekasēta kā %{amount_due}"
       },
       "payment": {
         "store_credit": {
@@ -1919,6 +1959,105 @@
         "duplicate_variant_id": "Preces instrukcijai %{position} %{name} ir dublēts varianta ID %{variant_id}.",
         "invalid_variant_id_target": "Preces instrukcija %{name} atsaucas uz varianta ID %{variant_id}, bet šis variants nav iekļauts preču līnijās.",
         "invalid_price_override_target": "Cenas pārrakstīšanas instrukcija rindas vienībai %{stable_id} nav derīga, jo tā ir komplekta sastāvdaļa."
+      },
+      "shipping": {
+        "title": "Piegāde",
+        "delivery_title": "Piegāde",
+        "shipping_method_title": "Piegādes metode",
+        "shipping_method_rollup_accessibility_label": "Piegādes metodes iespējas",
+        "shipping_method_one_time_purchase_group_title": "Vienreizējs pirkums",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Pirmā piegāde",
+          "other": "Pirmās piegādes"
+        },
+        "shipping_method_subscription_group_title": "Abonements",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Regulāra piegāde",
+          "other": "Regulāri sūtījumi"
+        },
+        "subscription_shipping": "Abonementa piegāde",
+        "subscription_local_delivery": "Abonementa vietējā piegāde",
+        "subscription_pickup": "Abonementa saņemšana",
+        "waiting_on_rate_notice": "Notiek pieejamo piegādes likmju iegūšana…",
+        "waiting_on_pickup_location_notice": "Notiek pieejamo saņemšanas vietu iegūšana…",
+        "no_rates_for_cart_or_destination_notice": "Jūsu grozam vai adresei nav pieejamas piegādes metodes.",
+        "no_pickup_location_notice": "Vismaz viens no jūsu produktiem nav pieejams saņemšanai",
+        "no_rates_for_country_notice": "Šai adresei nav atrastas piegādes cenas.",
+        "no_rates_contact_notice": "Sazinieties ar mums, lai iegūtu vairāk informācijas",
+        "free_rate_label": "Bezmaksas",
+        "cheapest_rate_label": "Lētākais",
+        "please_enter_your_shipping_information_notice": "Lūdzu, ievadiet savu piegādes informāciju.",
+        "estimated_delivery_date": {
+          "one": "%{count} darba diena",
+          "other": "%{count} darba dienas"
+        },
+        "estimated_delivery_date_range": "%{minimum} līdz %{maximum} darba dienas",
+        "estimated_delivery_time": "Paredzamā piegāde %{time}",
+        "estimated_delivery_time_range": "Paredzamā piegāde %{min_time}–%{max_time}",
+        "delivery_today": "Piegāde tajā pašā dienā %{time}",
+        "delivery_tomorrow": "Piegāde nākamajā dienā %{time}",
+        "two_day_delivery": "Piegāde 2 dienu laikā %{time}",
+        "delivery": "Piegāde %{laiks}",
+        "arrives_time": "Ierodas %{time}",
+        "arrives_time_range": "Ierodas %{min_time}–%{max_time}",
+        "estimated_time": "Paredzamais %{time}",
+        "estimated_time_range": "Paredzamais %{min_time}–%{max_time}",
+        "default_description": "Piegāde 1 darba dienas laikā",
+        "unbranded_default_description": "Gatavs nosūtīšanai",
+        "shipping_line_phone_label": "Mobilā tālruņa numurs (obligāti)",
+        "shipping_line_phone": "Jūsu kurjers var izmantot šo numuru, lai sazinātos ar jums.",
+        "shipping_line_delivery_phone_label": "Mobilā tālruņa numurs",
+        "shipping_line_delivery_phone": "Ar jums var sazināties, lai sniegtu jaunāko informāciju par jūsu piegādi.",
+        "optional_shipping_line_delivery_instructions_label": "Piegādes instrukcijas (pēc izvēles)",
+        "shipping_line_delivery_instructions": "Ievadiet nepieciešamo informāciju, piemēram, durvju kodus vai piegādes instrukcijas.",
+        "other_method": {
+          "zero": "Citas metodes nav pieejamas",
+          "one": "%{count} cita metode pieejama vietnē",
+          "other": "%{count} citas metodes ir pieejamas, sākot no"
+        },
+        "shipping_rate_discounted_amount": "Bija: %{original_amount}. Tagad: %{amount}",
+        "local_delivery": "Vietējā piegāde",
+        "prime_not_available": {
+          "default": "Jūsu pasūtījumam nav pieejama galvenā piegāde. Jūsu piegādes iespējas ir atjauninātas."
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "Bezmaksas piegāde, ja pasūtījums pārsniedz %{count}",
+            "other": "Bezmaksas piegāde vēl %{count} piegādēm"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Bezmaksas piegāde, ja pasūtījums pārsniedz %{count}",
+            "other": "Bezmaksas piegāde %{count} piegādēm"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Bezmaksas piegāde, ja pasūtījums pārsniedz %{count}, tad %{recurring_order_shipping_price}",
+            "other": "Bezmaksas piegāde, ja pasūtījums pārsniedz %{count} piegādes, tad — %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Bezmaksas piegāde, ja pasūtījums pārsniedz %{count}, pēc tam — %{recurring_order_shipping_price}",
+            "other": "Bezmaksas piegāde %{count} piegādēm, pēc tam %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Par %{count} vairāk piegādes par %{shipping_price}",
+            "other": "Vēl %{count} piegādes par %{shipping_price} katra"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} piegāde par %{shipping_price}",
+            "other": "Vēl %{count} piegādes par %{shipping_price} katra"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Bezmaksas piegāde pirmajam %{cycle}, kam seko %{recurring_order_shipping_price}",
+            "other": "Bezmaksas piegāde pirmajam %{cycle}, kam seko %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} par %{count} lielāku piegādi",
+            "other": "%{shipping_price} par %{count} vairāk piegādēm (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} par %{count} piegādi",
+            "other": "%{shipping_price} par %{count} piegādēm (%{per_delivery_cost})"
+          }
+        }
       }
     },
     "notices": {
