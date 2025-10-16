@@ -1,0 +1,11 @@
+<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+  <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
+</div>
+
+{% schema %}
+{
+  "name": "Veikala produktu sadaļa",
+  "settings": [{ "type": "text", "id": "heading", "label": "Virsraksts", "default": "Kategorijas" }],
+  "presets": [{ "name": "Veikala produktu sadaļa" }]
+}
+{% endschema %}
