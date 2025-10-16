@@ -1679,6 +1679,136 @@
         },
         "return_to_store": "Atgriezties veikalā {{shopName}}",
         "return_to_store_simple": "Atgriezties veikalā"
+      },
+      "payment_errors": {
+        "expired_card": "Jūsu kartes derīguma termiņš ir beidzies. Izmantojiet citu maksājuma veidu.",
+        "payment_method_not_applicable": "Šī maksājuma metode nav piemērojama. Izmantojiet citu maksājuma metodi.",
+        "card_declined": "Jūsu karte tika noraidīta. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "processing_error": "Apstrādājot jūsu maksājumu, radās problēma. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "processing_error_checkout_as_guest": "Apstrādājot jūsu maksājumu, radās problēma. Mēģiniet vēlreiz, izmantojot citu maksājuma veidu vai {{checkout_as_guest_link}} .",
+        "selected_payment_method": "Radās problēma ar jūsu izvēlēto maksājuma veidu, un no jums netika iekasēta maksa. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "payment_method_billing_address": "Radās problēma ar jūsu izvēlētās maksājuma metodes norēķinu adresi, un no jums nav iekasēta maksa. Pārbaudiet adresi un mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "call_issuer": "Jūsu karte tika noraidīta. Izmantojiet citu maksājuma veidu vai sazinieties ar savu banku, lai iegūtu plašāku informāciju.",
+        "test_mode_live_card": "Šis veikals nepieņem īstus pasūtījumus vai īstus maksājumus.",
+        "test_mode_enabled_only_test_cards": "Testa režīms ir iespējots, var pievienot tikai testa kredītkartes.",
+        "transient_error": "Radās problēma, apstrādājot jūsu maksājumu. Mēģiniet atsvaidzināt šo lapu vai pārbaudiet interneta savienojumu.",
+        "missing_shipping_address": "Jūsu maksājumu nevarēja apstrādāt, jo trūkst piegādes adreses. Pievienojiet piegādes adresi un mēģiniet vēlreiz.",
+        "invalid_shipping_address": "Jūsu maksājumu nevarēja apstrādāt, jo mēs nevarējām atrast jūsu piegādes adresi. Pārbaudiet savu piegādes adresi un mēģiniet vēlreiz.",
+        "successful_offsite_with_gift_card_error": "Radās problēma, apstrādājot jūsu dāvanu kartes maksājumu. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "development_store_order_limit_reached": "Jūs esat sasniedzis izstrādes veikala pasūtījumu ierobežojumu, izmantojot šo maksājumu apstrādātāju. Lai veiktu citu pasūtījumu, jums būs jāizmanto testa maksājumu vārteja. Uzziniet vairāk par %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "Lai veiktu testa pasūtījumu, jums būs jāizmanto testa maksājumu vārteja. Uzziniet vairāk par %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "pasūtījumu testēšana izstrādes veikalos",
+        "payment_above_threshold": "Maksājuma summa pārsniedz šī reģiona naudas limitu. Samaziniet kopsummu un mēģiniet vēlreiz.",
+        "risky": "Apstrādājot jūsu maksājumu, radās problēma. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "expired_buyer_action": "Maksājuma metodei radās taimauts. Lūdzu, mēģiniet vēlreiz.",
+        "name_mismatch": "Lūdzu, pārbaudiet kartes datus. Vārds uz kartes un norēķinu adrese nesakrīt.",
+        "shop_pay_wallet_not_available": "Šim norēķināšanās veidam nav pieejams Shop Pay.",
+        "market_manager_blocks_wallet_payments": "Maksājuma metode jūsu valstī netiek atbalstīta.",
+        "paypal_over_capture": "Jūsu pasūtījuma kopsumma tika atjaunināta. Lai pabeigtu pasūtījumu, apmaksājiet ar {{walletName}} ."
+      },
+      "shipping_errors": {
+        "shipping_method": "Jūsu pasūtījuma piegādes iespējas ir mainījušās. Lūdzu, pārskatiet savu izvēli.",
+        "shipping_method_not_available": "Jūsu grozs ir atjaunināts, un pievienotās preces nevar tikt piegādātas uz jūsu adresi. Izņemiet preces, lai pabeigtu pasūtījumu.",
+        "shipping_method_not_available_generic": {
+          "one": "Jūsu pasūtījumu nevar piegādāt uz izvēlēto adresi. Pārbaudiet savu adresi, lai pārliecinātos, ka tā ir pareiza, un mēģiniet vēlreiz vai atlasiet citu adresi.",
+          "other": "Dažas preces jūsu grozā nevar tikt piegādātas uz ievadīto adresi. Pārbaudiet savu adresi, lai pārliecinātos, ka tā ir pareiza, un mēģiniet vēlreiz, vai arī atlasiet citu adresi."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Grozā esošās preces neatbilst cenas vai svara prasībām, lai tās varētu tikt piegādātas. Atjauniniet groza informāciju un mēģiniet vēlreiz.",
+        "shipping_method_not_available_updated": {
+          "one": "Pievienotā prece netiek piegādāta uz jūsu norādīto atrašanās vietu. Noņemiet to, lai norēķinātos, vai sazinieties ar veikalu.",
+          "other": "Viena vai vairākas pievienotās preces netiek piegādātas uz jūsu atrašanās vietu. Noņemiet tās, lai norēķinātos, vai sazinieties ar veikalu."
+        },
+        "payment_method_not_supported": "Šo maksājuma veidu nevar izmantot šādai valstij: %{country}. Lūdzu, izmantojiet citu maksājuma veidu, lai piegādātu uz šo valsti.",
+        "empty_state": "Ievadiet savu piegādes adresi, lai skatītu pieejamās piegādes metodes.",
+        "title": "Piegāde nav pieejama",
+        "invalid_selected_address": "Izvēlētā piegādes adrese nav derīga",
+        "invalid_selected_address_with_update_link": "Izvēlētā piegādes adrese nav derīga. %{update_address_link} vai atlasiet citu adresi.",
+        "unavailable_addresses_only_countries": "Jūsu pasūtījumu var piegādāt tikai uz šādām valstīm: {{countriesList}} . Lai turpinātu, pievienojiet jaunu adresi.",
+        "unavailable_selected_address": "Piegāde uz izvēlēto adresi nav pieejama",
+        "unavailable_selected_address_for_region": "Piegāde nav pieejama šim reģionam: {{region}} . Lai turpinātu, atlasiet citu adresi."
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Ātrā norēķināšanās",
+        "or": "VAI",
+        "or_pay_another_way": "Vai arī maksājiet citā veidā",
+        "or_check_out_another_way": "Vai arī pārbaudiet citu veidu",
+        "or_pay_with_credit_card": "Vai arī maksājiet ar kredītkarti",
+        "show_more_options": "Rādīt vairāk opciju",
+        "hide_more_options": "Slēpt vairāk opciju"
+      },
+      "post_purchase": {
+        "page_title": "Pēc pirkuma",
+        "title": "Pēc pirkuma",
+        "escape_confirmation": "Jūs esat apmaksājis savu pasūtījumu.",
+        "escape_action": "Skatīt pasūtījuma apstiprinājumu ›",
+        "components": {
+          "close": "Aizvērt",
+          "expand": "Skatīt vairāk",
+          "processing": "Notiek apstrāde…",
+          "submit": "Iesniegt"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Notiek pāradresācija…",
+        "redirecting_title": "Notiek pāradresācija…",
+        "redirecting_notice": "Pagaidiet, kamēr mēs jūs pāradresēsim.",
+        "redirecting_to_bank": "Pāradresācija uz {{bank}}",
+        "complete_your_purchase_title": "Pabeidziet pirkumu",
+        "continue_to_payment_gateway_notice": "Turpiniet maksājumu, lai pievienotu savu maksājuma informāciju.",
+        "continue_to_payment_gateway_button_label": "Turpināt ar maksājumu",
+        "complete_your_purchase_title_error": "Labojiet savu maksājuma informāciju",
+        "continue_to_payment_gateway_notice_error": "Jūsu maksājuma informāciju nevarēja verificēt.",
+        "continue_to_payment_gateway_button_label_error": "Atjaunināt maksājuma informāciju",
+        "page_title": "Apstrādā pasūtījumu",
+        "title": "Apstrādā pasūtījumu",
+        "your_order_has_been_received_title": "Paldies par jūsu pasūtījumu",
+        "you_will_receive_confirmation": "Šobrīd saņemam daudz pasūtījumu. Drīzumā saņemsiet apstiprinājumu pa e-pastu vai īsziņu. Ja to nesaņemsiet nākamās stundas laikā, lūdzu, paziņojiet mums.",
+        "you_will_not_be_charged": "No jums vēl netiks iekasēta maksa",
+        "wait": {
+          "short": "Jūsu pasūtījums tiek apstrādāts.",
+          "medium": {
+            "one": "Jūsu pasūtījums tiek apstrādāts. Paredzamais gaidīšanas laiks ir %{count} minūte.",
+            "other": "Jūsu pasūtījums tiek apstrādāts. Paredzamais gaidīšanas laiks ir %{count} minūtes."
+          },
+          "long": "Tiklīdz jūsu pasūtījums būs apstrādāts, jūs saņemsiet e-pastu. Pašlaik ir liels pasūtījumu apjoms.",
+          "no_auto_refresh_html": "Ja netiekat automātiski pāradresēts, %{link}.",
+          "refresh_this_page": "atsvaidzināt šo lapu"
+        },
+        "remote_shops_payments_processing": "Maksājumu apstrāde",
+        "action_required": "Nepieciešama darbība",
+        "modal_notice": "Mēs sazināmies ar {{paymentMethod}}",
+        "remote_checkout_count": "%{current} no %{total}"
+      },
+      "payment_challenge_modal": {
+        "instructions": "Pabeidziet pirkumu, izmantojot savu {{paymentMethod}} kodu",
+        "timer_message": "Jums ir jāmaksā {{timeLeft}}",
+        "copy_text": "Kopēt {{paymentMethod}} kodu",
+        "open_app_text": "Atveriet lietotni {{paymentMethod}}",
+        "header": "Maksājiet ar {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "Pabeidziet pirkumu, izmantojot savu {{paymentMethod}} kodu"
+        },
+        "external": {
+          "instructions": "Lai pabeigtu šo pirkumu, apstipriniet maksājumu savā lietotnē."
+        },
+        "close": "Aizvērt izaicinājumu"
+      },
+      "failed_payment": {
+        "page_title": "Maksājumu nevarēja apstrādāt",
+        "title": "Maksājumu nevarēja apstrādāt",
+        "payment_not_processed_title": "Jūsu maksājumu nevarēja apstrādāt",
+        "payment_not_processed_text": "No jums nav iekasēta maksa. Atgriezieties grozā, lai pabeigtu pirkumu.",
+        "return_to_cart_button_label": "Atgriezties grozā"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kredītkarte",
+        "bank_deposit_label": "Bankas depozīts",
+        "cash_on_delivery_label": "Apmaksa piegādes brīdī (COD)",
+        "money_order_label": "Pasta pārvedums",
+        "debit_card_label": "Debetkarte",
+        "deferred_payment_label": "Izvēlieties maksājuma veidu vēlāk",
+        "fixed_payment_label": "Jūsu maksājums būs jāveic {{dueDate}} .",
+        "generic_payment_terms": "Jūs esat saskaņā ar {{translatedName}} noteikumiem. Jūsu maksājums būs jāveic {{dueDate}} ."
       }
     },
     "notices": {
@@ -2159,7 +2289,8 @@
       "list_title_confirmed_orders_accessibility_label": "Pasūtījumi: apstiprināti",
       "list_title_pending_orders_accessibility_label": "Pasūtījumi: gaida apstiprinājumu",
       "switch_order_type_pending_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti neapstiprinātie pasūtījumi",
-      "switch_order_type_confirmed_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti apstiprinātie pasūtījumi"
+      "switch_order_type_confirmed_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti apstiprinātie pasūtījumi",
+      "group_title_label_with_parent": "Priekš: {{groupTitle}}"
     },
     "date": {
       "humanize": {
@@ -2275,6 +2406,143 @@
         }
       },
       "add_button": "Pievienot"
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Rādīt informāciju",
+        "expand_events_accessibility_label": "Rādīt pasūtījuma piegādes informāciju",
+        "hide_events_label": "Slēpt informāciju",
+        "hide_events_accessibility_label": "Slēpt pasūtījuma piegādes informāciju"
+      },
+      "addresses_section_title": "Norēķini un piegāde",
+      "order_details": "Pasūtījuma informācija",
+      "order_details_skeleton_accessibility_label": "Pierakstieties, lai skatītu visu pasūtījuma informāciju.",
+      "billing_address": "Rēķina adrese",
+      "card_ending_with": "beidzas ar {{lastDigits}}",
+      "contact_information": "Kontaktinformācija",
+      "company": "Uzņēmums",
+      "company_and_location": "Uzņēmums un atrašanās vieta",
+      "fully_refunded_label": "ATMAKSĀTS",
+      "group_title_label": "Daļa no: {{groupTitle}}",
+      "group_title_label_with_parent": "Priekš: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "Galerija",
+        "list": "Saraksts"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "Rādīt {{count}} vienumus",
+        "collapse_line_items": "Slēpt {{count}} vienumus",
+        "line_item_summary_list_accessibility_label": "Preces {{productTitle}} komplektā"
+      },
+      "discount": "Atlaide",
+      "hide_items": "Slēpt vienumus",
+      "loading": "Notiek pasūtījuma informācijas ielāde",
+      "loading_finished_accessibility_message": "Pasūtījuma informācija ir ielādēta",
+      "location": "Atrašanās vieta",
+      "image_gallery": {
+        "next": "Rādīt nākamos vienumus",
+        "previous": "Rādīt iepriekšējos vienumus",
+        "load_more_items": {
+          "one": "Ielādēt vēl {{count}} vienumus",
+          "other": "Ielādēt vēl {{count}} vienumus"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Rādīt pasūtījuma kopsavilkumu",
+        "closed": "Slēpt pasūtījuma kopsavilkumu"
+      },
+      "no_data": "Neviens",
+      "no_data_provided_accessibility_label": "{{fieldName}} ir tukšs",
+      "not_applicable": "Nav pieejams",
+      "paid_amount": "Apmaksāts",
+      "partially_refunded_label": "DAĻĒJI ATMAKSĀTS",
+      "payment": {
+        "status_in_review": "Maksājums jāveic pēc pārskatīšanas",
+        "status_unpaid": "Maksājuma termiņš: {{date}}",
+        "title": "Maksājums",
+        "payment_type": {
+          "gift_card": "Dāvanu karte",
+          "store_credit": "Veikala kredīts",
+          "money_order": "Pasta pārvedums",
+          "cash_on_delivery": "Apmaksa piegādes brīdī (COD)",
+          "bank_deposit": "Bankas depozīts",
+          "manual": "Manuāli"
+        },
+        "card_payment_details": "beidzas ar {{lastDigits}} — {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "beidzas ar {{lastDigits}} — {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Veikala kredīts — {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Apmaksāts ar Shop Pay maksājumiem",
+          "view_schedule": "Skatīt grafiku"
+        },
+        "manual_payment_methods": {
+          "money_order": "Pasta pārvedums — {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Apmaksa piegādes brīdī (COD) — {{formattedTransactionAmount}}",
+          "bank_deposit": "Bankas depozīts — {{formattedTransactionAmount}}",
+          "manual": "Manuāli — {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Rādīt visu",
+          "show_less": "Rādīt mazāk",
+          "details": "Sīkāka informācija",
+          "payment_details": "Maksājuma informācija"
+        },
+        "emv_details": {
+          "auth": "AUTORIZĀCIJA:",
+          "aid": "PALĪDZĪBA:",
+          "source": "AVOTS:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Apmaksāts ar Shop Pay nomaksas pakalpojumu",
+        "description": "Sekojiet līdzi savam maksājumu grafikam, izmantojot atgādinājumus lietotnē Veikals.",
+        "payment_reminders_button": "Saņemt maksājumu atgādinājumus",
+        "desktop_qr_code_content": {
+          "title": "Skenēt atgādinājumus",
+          "description": "Saņemiet atgādinājumus par saviem maksājumiem, izmantojot Shop."
+        }
+      },
+      "refunded_amount": "Atmaksāts",
+      "request_return_failed": "Apstrādājot jūsu pieprasījumu, radās problēma. Lūdzu, mēģiniet vēlreiz.",
+      "login_card": {
+        "resend_link_and_login": "Lai skatītu pasūtījuma informāciju, piesakieties vai nosūtiet jaunu saiti uz e-pasta adresi vai tālruņa numuru, kas tika izmantots, veicot pasūtījumu.",
+        "resend_link_only": "Lai skatītu pasūtījuma informāciju, nosūtiet jaunu saiti uz e-pasta adresi vai tālruņa numuru, kas tika izmantots, veicot pasūtījumu.",
+        "log_in": "Pierakstīties",
+        "resend_link": "Sūtīt jaunu saiti",
+        "link_expired": "Saite ir beigusies"
+      },
+      "remaining_amount": "Atlikušie",
+      "marketing_section_title": "Jaunumi un piedāvājumi",
+      "marketing_description": "Jūs saņemsiet mārketinga e-pastus. Jūs varat jebkurā laikā atteikties no abonēšanas.",
+      "marketing_checkbox_label": "Sūtiet man jaunumus un piedāvājumus pa e-pastu",
+      "marketing_checkmark_label": "Jūs esat abonējis jaunumu un piedāvājumu saņemšanu e-pastā",
+      "returns": {
+        "expand_events_label": "Rādīt informāciju",
+        "hide_events_label": "Slēpt informāciju",
+        "ineligible_return_message": "Neviena no šajā pasūtījumā esošajām precēm nav piemērota atgriešanai.",
+        "ineligible_return_message_when_returned": "Šajā pasūtījumā esošās papildu preces nevar atgriezt.",
+        "print_shipping_label": "Drukāt piegādes etiķeti",
+        "return_and_refund_modal_header": "Atmaksas politika",
+        "tracking_number": "Izsekošanas numurs:",
+        "exchange_header": "Apmaiņas preces",
+        "exchange_subheader": "Apmaiņas preces tiks pievienotas pasūtījumam, tiklīdz atgriešana būs pabeigta."
+      },
+      "shipping": {
+        "address": "Piegādes adrese",
+        "address_map_marker": "Piegādes adrese",
+        "method": "Piegādes metode",
+        "summary": "Piegāde",
+        "free": "Bezmaksas",
+        "free_shipping_discount": "Bezmaksas piegāde",
+        "one_time": "Vienreizēja piegāde",
+        "subscription": "Abonementa piegāde"
+      },
+      "pickup": {
+        "pickup": "Pikaps",
+        "pickup_location": "Saņemšanas vieta",
+        "pickup_point": "Saņemšanas punkts"
+      },
+      "show_items": "Rādīt vienumus"
     }
   }
 }
