@@ -5,9 +5,8 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/cart
 {% endcomment %}
 
-<div class="container mx-auto px-4 pb-12 transition-hide">
-  <h1>{{ 'cart.title' | t }}</h1>
-
+<div class="container mx-auto px-4 pt-24 pb-12 transition-hide">
+  {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: pages.veikals.url %}
   <form action="{{ routes.cart_url }}" method="post">
     <table>
       {% for item in cart.items %}
