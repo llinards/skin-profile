@@ -822,6 +822,160 @@
         "address_generic_invalid": "Nederīgs ieraksts",
         "address_generic_error": "Lauka kļūda"
       }
+    },
+    "notices": {
+      "cart": {
+        "only_one_added_to_cart": "Pieejamības dēļ jūsu grozam tika pievienota tikai 1 prece.",
+        "only_n_added_to_cart": "Jūsu grozam tika pievienotas tikai %{quantity} preces pieejamības dēļ.",
+        "maximum_available_quantity_reached": "Jūsu grozā jau ir maksimālais šīs preces daudzums.",
+        "less_than_minimum": "Šim vienumam ir vismaz %{min}.",
+        "more_than_maximum": "Šī vienuma maksimālais skaits ir %{max}.",
+        "not_respect_step": "Šo vienumu var pievienot tikai ar %{step} soli.",
+        "all_items_in_cart": "Visi %{count} %{name} ir jūsu grozā.",
+        "empty_update": "nevar atjaunināt tukšu grozu",
+        "missing_parameters": "nav derīga ID vai rindas parametra",
+        "generic_error": "Groza kļūda",
+        "invalid_input": "Parametrs %{parameter} nav derīgs.",
+        "product_not_available": "Produkts nav pieejams",
+        "too_many_line_items_error": "Jūsu grozā nedrīkst būt vairāk par %{max} precēm.",
+        "link_expired": "Saite ir beigusies",
+        "link_no_longer_exists": "Saite vairs nepastāv.",
+        "stock_problems_html": "Viena vai vairākas preces vairs nav pieejamas. Esam nodrošinājuši <a href=\"%{link}\">atjauninātu grozu</a> .",
+        "changed": "Grozs ir mainīts",
+        "items_changed": "Viens vai vairāki vienumi ir mainījušies.",
+        "product_sold_out": "Produkts '%{name}' jau ir izpārdots.",
+        "variant_not_found": "Nevar atrast variantu",
+        "variant_requires_selling_plan": "Variantu var iegādāties tikai ar pārdošanas plānu.",
+        "selling_plan_not_available_for_company_locations": "B2B pasūtījumiem ir pieejams tikai vienreizējs pirkums",
+        "digital_product_not_available_for_company_locations": "Šo preci nevar pievienot B2B pasūtījumam.",
+        "buyer_cannot_purchase_for_company_locations": "Šajā atrašanās vietā nevar veikt pirkumu",
+        "selling_plan_not_applicable": "Nevar piemērot pārdošanas plānu variantam",
+        "shipping_address_not_required": "Šim grozam nav nepieciešama piegāde",
+        "shipping_address_invalid": "Radās problēma, aprēķinot piegādes cenas. Turpiniet norēķināties, lai izvēlētos piegādes cenu, pirms pabeidzat pasūtījumu.",
+        "bundle_requires_components": "Komplektā iekļauto produktu '%{name}' nevar pievienot grozam.",
+        "gift_card_with_components_not_supported": "Komplektā iekļauto produktu '%{name}' nevar pievienot grozam.",
+        "gift_card_price_must_be_greater_than_zero": "Komplektā iekļauto produktu '%{name}' nevar pievienot grozam.",
+        "gift_card_recipient_validation_error": "Norādītais dāvanu kartes saņēmējs nav derīgs.",
+        "view_lines_limit_reached": "Rindu skaitam jābūt mazākam vai vienādam ar %{limit}",
+        "cart_too_large": "Grozs ir pārāk liels.",
+        "cart_attributes_error": "Groza atribūtos ir nederīgi dati.",
+        "merchandise_line_transformers": {
+          "run_error": "Jūsu grozā radās kļūda."
+        },
+        "merchandise_not_applicable": "Preci nevar iegādāties šādā konfigurācijā."
+      },
+      "storefront": {
+        "invalid_password": "Parole nepareiza, lūdzu, mēģiniet vēlreiz."
+      },
+      "tags": {
+        "add_articles": "Sašauriniet meklēšanu, lai atrastu rakstus ar tagu %{tag}",
+        "add_products": "Sašauriniet atlasi līdz produktiem, kas atbilst tagam %{tag}",
+        "remove_articles": "Paplašināt meklēšanu, iekļaujot rakstus, kas nav atzīmēti ar %{tag}",
+        "remove_products": "Noņemt tagu %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Paldies, ka abonējāt mūsu adresātu sarakstu.",
+        "disclaimer": "Jūs varat jebkurā laikā atteikties no abonēšanas.",
+        "unsubscribe": "Atcelt abonēšanu"
+      },
+      "unsubscribed": {
+        "confirmation": "Jūs esat atteicies no mūsu adresātu saraksta.",
+        "disclaimer": "Jūs vairs nesaņemsiet no mums mārketinga atjauninājumus. Jūs varat abonēt jebkurā laikā.",
+        "preview": "Jūs priekšskatāt, ko klienti redzēs pēc abonēšanas atcelšanas."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Jūs esat izvēlējies e-pasta atvēršanas izsekošanu.</b>",
+          "visibility": "E-pasta atvēršanas rādītāji tiks ziņoti anonīmi. Mēs redzēsim tikai to, vai esat atvēris e-pastu, kā daļu no apkopotā e-pasta atvēršanas rādītāja.",
+          "opt_out_html": "Ja nevēlaties kopīgot šo informāciju, varat <a style=\"text-decoration:underline;\" href=\"%{link}\">atteikties</a> no e-pasta atvēršanas izsekošanas.",
+          "preview_bar": "Jūs priekšskatāt, ko klienti redzēs, kad izvēlēsies e-pasta atvēršanas izsekošanu."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Jūs esat atteicies no e-pasta atvēršanas izsekošanas.</b>",
+          "visibility": "Mēs neredzēsim, vai esat atvēris mūsu e-pastus.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Pieteikties</a> e-pasta atvēršanas izsekošanai.",
+          "preview_bar": "Jūs priekšskatāt, ko klienti redzēs, kad atteiksies no e-pasta atvēršanas izsekošanas."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Mēs vairs nesekojam līdzi neviena e-pasta atvēršanai.</b>",
+          "privacy_policy": "Pēc šī e-pasta nosūtīšanas mēs atjauninājām savu privātuma politiku un vairs neizsekojam atvēršanas gadījumus."
+        },
+        "track": {
+          "status_html": "<b>Tiek ziņots par e-pasta atvēršanas izsekošanu.</b>",
+          "visibility": "Mēs redzēsim tikai to, vai esat atvēris e-pastu, kā daļu no kopējā e-pasta atvēršanas rādītāja."
+        },
+        "updated_policy": {
+          "status_html": "<b>Tiek ziņots par e-pasta atvēršanas izsekošanu.</b>",
+          "visibility": "Esam atjauninājuši savu politiku un tagad izsekojam e-pasta ziņojumu atvēršanas gadījumus. E-pasta ziņojumu atvēršanas rādītāji tiks ziņoti anonīmi. Kopējā e-pasta ziņojumu atvēršanas rādītājā mēs redzēsim tikai to, vai esat atvēris e-pastu.",
+          "opt_out_html": "Ja nevēlaties kopīgot šo informāciju, varat <a style=\"text-decoration:underline;\" href=\"%{link}\">atteikties no abonēšanas.</a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Noliktavā",
+          "out_of_stock": "Nav noliktavā"
+        }
+      },
+      "boolean": {
+        "true_label": "Jā",
+        "false_label": "Nē"
+      }
+    },
+    "search": {
+      "error": "Ielādējot meklēšanas rezultātus, radās problēma. Lūdzu, atsvaidziniet lapu vai mēģiniet vēlreiz vēlāk.",
+      "sorting": {
+        "relevance": "Atbilstība",
+        "price_ascending": "Cena, no zemākās uz augstāko",
+        "price_descending": "Cena no augstākās uz zemāko"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Kļūda — %{title}",
+      "products": "Produkti",
+      "shopping_cart": "Jūsu iepirkumu grozs",
+      "account": "Konts",
+      "create_account": "Izveidot kontu",
+      "reset_account": "Atiestatīt kontu",
+      "addresses": "Adreses",
+      "order": "Pasūtījums %{name}",
+      "search_results": {
+        "one": "Meklēšana: atrasts %{count} rezultāts vaicājumam \"%{terms}\"",
+        "other": "Meklēšana: atrasti %{count} rezultāti vaicājumam \"%{terms}\""
+      },
+      "collections": "Kolekcijas",
+      "not_found": "404 Nav atrasts",
+      "challenge": "Izaicinājums",
+      "checkpoint": "Kontrolpunkts"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} atlaides ir piemērotas"
+    },
+    "challenge": {
+      "message": "Lai turpinātu, dariet mums zināmu, ka neesat robots.",
+      "error": "Jūsu atbilde nebija pareiza, lūdzu, mēģiniet vēlreiz.",
+      "submit_button_text": "Iesniegt"
+    },
+    "checkpoint": {
+      "message": "Lai turpinātu, atrisiniet CAPTCHA",
+      "error": "CAPTCHA validācija neizdevās",
+      "submit_button_text": "Iesniegt"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Parasti gatavs 1 stundas laikā",
+        "two_hours": "Parasti gatavs 2 stundu laikā",
+        "four_hours": "Parasti gatavs 4 stundu laikā",
+        "twenty_four_hours": "Parasti gatavs 24 stundu laikā",
+        "two_to_four_days": "Parasti gatavs 2–4 dienu laikā",
+        "five_or_more_days": "Parasti gatavs 5+ dienu laikā",
+        "zero_to_two_hours": "Parasti gatavs 2 stundu laikā",
+        "two_to_four_hours": "Parasti gatavs 4 stundu laikā",
+        "immediately": "Gatavs saņemšanai tūlīt"
+      }
     }
   },
   "customer_accounts": {
@@ -932,6 +1086,148 @@
         "other": "{{count}} pieejamas preces"
       },
       "removeItem": "Noņemt {{label}}"
+    },
+    "orders": {
+      "order_list": {
+        "column_headers": {
+          "products_accessibility_label": "Produkti"
+        },
+        "delivered": "Piegādāts {{date}}",
+        "empty_state_order_source_description": "Šeit tiks rādīti tikai pasūtījumi, kas veikti, izmantojot {{email}} .",
+        "empty_state_subtitle": "Dodieties uz veikalu, lai veiktu pasūtījumu.",
+        "empty_state_title": "Vēl nav pasūtījumu",
+        "empty_state_with_location_title": "Nav pasūtījumu šai vietai: {{locationName}}",
+        "empty_state_title_for_pending_orders": "Nav neapstiprinātu pasūtījumu",
+        "no_order_banner": "Lai pārbaudītu paplašinājumu pasūtījuma statusa lapā, izveidojiet pasūtījumu.",
+        "estimated_shortform": "Aptuvenais datums: {{date}}",
+        "estimated_delivery": "Paredzēts {{date}}",
+        "one_images_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}}",
+        "two_images_accessibility_label": "Pasūtījums ietver {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Pasūtījums ietver {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Pasūtījums ietver {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Pasūtījumā ir iekļauti {{lineItemName1}} , {{lineItemName2}} un vēl {{numberOfAdditionalProducts}} produkti",
+        "more_than_four_products_accessibility_label": "Pasūtījumā iekļauti {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} un vēl {{numberOfAdditionalProducts}} produkti",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} produkti",
+        "carousel": {
+          "one_products_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}} daudzums {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Pasūtījumā iekļauts daudzums {{lineItemName1}} { {{lineItemQuantity1}} , daudzums { {{lineItemName2}} {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Pasūtījumā iekļauts daudzums {{lineItemName1}} { {{lineItemQuantity1}} , daudzums {{ {{lineItemName2}} { {{lineItemQuantity2}} , daudzums {{lineItemName3}} {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}} daudzums {{lineItemQuantity1}} , {{lineItemName2}} daudzums {{lineItemQuantity2}} , {{lineItemName3}} daudzums {{lineItemQuantity3}} , {{lineItemName4}} daudzums {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}} daudzums {{lineItemQuantity1}} , {{lineItemName2}} daudzums {{lineItemQuantity2}} , {{lineItemName3}} daudzums {{lineItemQuantity3}} , {{lineItemName4}} daudzums {{lineItemQuantity4}} , {{lineItemName5}} daudzums {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}} daudzums {{lineItemQuantity1}} , {{lineItemName2}} daudzums {{lineItemQuantity2}} , {{lineItemName3}} daudzums {{lineItemQuantity3}} , {{lineItemName4}} daudzums {{lineItemQuantity4}} , {{lineItemName5}} daudzums {{lineItemQuantity5}} , {{lineItemName6}} daudzums {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Pasūtījumā iekļauts {{lineItemName1}} daudzums {{lineItemQuantity1}} , {{lineItemName2}} daudzums {{lineItemQuantity2}} , {{lineItemName3}} daudzums {{lineItemQuantity3}} , {{lineItemName4}} daudzums {{lineItemQuantity4}} , {{lineItemName5}} daudzums {{lineItemQuantity5}} , {{lineItemName6}} daudzums {{lineItemQuantity6}} un citi.",
+          "view_order_details": "Skatīt pasūtījuma informāciju",
+          "previous": "Iepriekšējais",
+          "next": "Nākamais"
+        },
+        "items": {
+          "one": "{{count}} vienums",
+          "other": "{{count}} vienības"
+        },
+        "no_filtered_results_description": "Noņemiet vai pielāgojiet filtrus, lai skatītu savus pasūtījumus",
+        "no_filtered_results_title": "Nav filtrētu rezultātu",
+        "order_link": "Skatīt pasūtījumu {{name}}",
+        "order_number": "Pasūtījums {{name}}",
+        "orders_title": "Apstiprināts",
+        "pagination": {
+          "nav_accessibility_label": "Pasūtījumu navigācijas pogas",
+          "next": "Nākamais",
+          "next_accessibility_label": "Nākamie pasūtījumi",
+          "previous": "Iepriekšējais",
+          "previous_accessibility_label": "Iepriekšējie pasūtījumi",
+          "load_more": "Ielādēt vairāk",
+          "load_more_accessibility_label": "Ielādēt vairāk pasūtījumu"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Skatīt pasūtījumu, lai iegūtu sīkāku informāciju",
+            "estimated_delivery": "Paredzēts {{date}}",
+            "last_updated": "Pēdējoreiz atjaunināts {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Paredzamā piegādes datums {{date}}"
+          }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "Nokavēts maksājums",
+            "due": "Maksājuma termiņš: {{date}}",
+            "due_today": "Maksājums jāveic šodien",
+            "due_without_date": "Maksājuma termiņš",
+            "due_on_fulfillment": "Maksājums jāveic izpildes brīdī",
+            "pay_to_confirm": "Maksājiet, lai apstiprinātu",
+            "payment_not_due": "Maksājums vēl nav jāveic"
+          },
+          "list_view": {
+            "overdue": "Nokavēts",
+            "due": "Izpildes datums {{date}}",
+            "due_today": "Jāmaksā šodien",
+            "paid": "Apmaksāts",
+            "due_without_date": "Pienākas",
+            "due_on_fulfillment": "Jāmaksā izpildes brīdī",
+            "pay_to_confirm": "Maksājiet, lai apstiprinātu",
+            "payment_not_due": "Vēl nav pienācis termiņš"
+          }
+        },
+        "sort_by": "Kārtot pēc: {{option}}",
+        "sort_hide_options_accessibility_label": "Slēpt apstiprinātu pasūtījumu kārtošanas opcijas.",
+        "sort_show_options_accessibility_label": "Rādīt apstiprinātu pasūtījumu kārtošanas opcijas.",
+        "sort_currently_sorted_by_accessibility_label": "Pašlaik sakārtots pēc: {{option}}",
+        "sort_title": "Kārtot",
+        "sort": {
+          "date": {
+            "newest": "No jaunākā līdz vecākajam",
+            "oldest": "No vecākā līdz jaunākajam"
+          },
+          "location": {
+            "ascending": "Atrašanās vieta (AZ)",
+            "descending": "Atrašanās vieta (ZA)"
+          },
+          "order_number": {
+            "ascending": "Pasūtījuma numurs (no zemākā uz augstāko)",
+            "descending": "Pasūtījuma numurs (no augstākā uz zemāko)"
+          },
+          "order_total": {
+            "ascending": "Pasūtījuma kopsumma (no zemākās uz augstāko)",
+            "descending": "Pasūtījuma kopsumma (no augstākās uz zemāko)"
+          }
+        },
+        "location_filter_picker": {
+          "all_location": "Visas atrašanās vietas",
+          "current_location": "Pašreizējā atrašanās vieta",
+          "switch_view": "Pārslēgt skatu"
+        },
+        "filter_title": "Filtrs",
+        "filter": {
+          "clear_section": "Notīrīt sadaļu",
+          "clear_all": "Notīrīt visu",
+          "apply": "Pieteikties",
+          "date": {
+            "start_date": "Sākuma datums",
+            "end_date": "Beigu datums",
+            "title": "Pasūtījuma datums",
+            "today": "Šodien",
+            "last_7_days": "Pēdējās 7 dienas",
+            "last_30_days": "Pēdējās 30 dienas",
+            "last_90_days": "Pēdējās 90 dienas",
+            "last_365_days": "Pēdējo 12 mēnešu laikā",
+            "custom": "Pielāgots"
+          }
+        },
+        "show_order_actions_accessibility_label": "Rādīt pasūtījuma darbības pasūtījumam {{name}}"
+      },
+      "order_status": {
+        "attempted_delivery_label": "Piegādes mēģinājums",
+        "attempted_to_deliver_label": "Mēģināja piegādāt",
+        "preparing_for_shipping_label": "Gatavošanās nosūtīšanai",
+        "ready_for_pickup_label": "Gatavs saņemšanai",
+        "ready_for_pickup_description": "Šīs preces ir gatavas saņemšanai. Lūdzu, ņemiet līdzi pasūtījuma apstiprinājumu, saņemot pasūtījumu.",
+        "ready_for_pickup_location": "Jūsu pasūtījums ir gatavs saņemšanai norādītajā vietā",
+        "picked_up_label": "Paņemts",
+        "canceled_label": "Atcelts",
+        "canceled_title": "Jūsu pasūtījums ir atcelts"
+      }
     }
   }
 }
