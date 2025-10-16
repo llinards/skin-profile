@@ -591,7 +591,84 @@
         "bank_account_generic_error": "Nevarēja pievienot bankas kontu. Mēģiniet vēlreiz vēlāk.",
         "separate_payments_label": "Jūsu preces ir no vairākiem veikaliem. Maksa tiks iekasēta, izmantojot %{separate_payments_link}.",
         "separate_payments_text": "atsevišķi maksājumi",
-        "payments": "Maksājumi"
+        "payments": "Maksājumi",
+        "network_card_payment_options": "Izvēlieties karšu tīklu",
+        "network_card_persistence_description": "Atlasītais tīkls tiks saglabāts kopā ar jūsu maksājuma metodi turpmākajiem darījumiem.",
+        "amazon_payments_login_hint": "Jums tiks lūgts pierakstīties, izmantojot Amazon.",
+        "amazon_payments_logout": "Izrakstīties no Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Atlasīto maksājuma veidu nevarēja izmantot. Izvēlieties citu maksājuma veidu vai sazinieties ar savu banku vai kartes izdevēju.",
+        "amazon_payments_abandoned_mfa_challenge": "Jūsu maksājumu nevarēja pabeigt. Izmēģiniet citu maksājuma veidu vai sazinieties ar savu banku vai kartes izdevēju.",
+        "amazon_payments_could_not_enqueue_authorize": "Apstrādājot jūsu maksājumu, radās problēma. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+        "title": "Maksājums",
+        "amount_left_to_pay_label": "Maksājuma termiņš:",
+        "discount_button_action_label": "Lietot atlaižu kodu",
+        "discount_show_more_warnings": {
+          "one": "Rādīt vēl %{count}",
+          "other": "Rādīt vēl %{count}"
+        },
+        "gift_card_code_label": "Dāvanu kartes kods",
+        "apply_gift_card_button_label": "Pieteikties",
+        "gift_card_balance_label": "Atlikums:",
+        "supported_card_brands_more_label": "un vēl vairāk…",
+        "detected_card_brand": "Atrastais kartes zīmols: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Saglabājiet savu kredītkarti",
+        "credit_card_vaulting_sign_in_banner_info": "Piesakieties vai izveidojiet kontu, lai saglabātu kredītkartes datus turpmākajiem pirkumiem.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Pieslēgties",
+        "ftd_vault_credit_card_label": "Saglabāt šo kredītkarti manā kontā, lai ātrāk norēķinātos",
+        "card_number_label": "Kartes numurs",
+        "card_number_placeholder": "Kartes numurs",
+        "card_pay_with": "Maksāt ar:",
+        "card_security_notice": "Visi darījumi ir droši un šifrēti.",
+        "card_security_vault_notice": "Mums ir nepieciešami jūsu dati turpmākajiem maksājumiem. Visi darījumi ir droši un šifrēti.",
+        "card_information_notice": "Visi darījumi ir droši un šifrēti. Kredītkartes informācija nekad netiek saglabāta.",
+        "name_on_card_label": "Vārds uz kartes",
+        "name_on_card_placeholder": "Vārds uz kartes",
+        "card_nickname_label": "Segvārds (pēc izvēles)",
+        "card_expired": "Beidzies derīguma termiņš",
+        "card_expiry_label": "Derīguma termiņš (MM/GG)",
+        "card_expiry_placeholder": "Derīguma termiņš (MM/GG)",
+        "credit_card_start_month": "Sākuma mēnesis",
+        "credit_card_start_year": "Sākuma gads",
+        "delete_customer_mandate_modal_title": "Vai noņemt šo maksājumu karti?",
+        "delete_customer_mandate_modal_body": "Ja noņemsiet šo karti, tā būs jāpievieno vēlreiz, pirms varēsiet to izmantot maksājumiem.",
+        "delete_customer_mandate_modal_confirm": "Noņemt karti",
+        "delete_customer_mandate_modal_cancel": "Atcelt",
+        "card_verification_value_label": "Drošības kods",
+        "card_verification_value_placeholder": "Drošības kods",
+        "card_verification_confirm": "Verifikācijas nolūkos ievadiet kartes drošības kodu.",
+        "card_expiry_date_explanation": "Kartes derīguma termiņš formātā: mēnesis, mēnesis, gads, gads",
+        "card_expiration_month_label": "Derīguma termiņa mēnesis",
+        "card_expiration_year_label": "Derīguma termiņš",
+        "card_verification_value_explanation": "Trīsciparu drošības kods, kas parasti atrodas kartes aizmugurē. American Express kartēm ir četrciparu kods, kas atrodas priekšpusē.",
+        "card_verification_value_explanation_amex": "4 ciparu drošības kods jūsu kartes priekšpusē",
+        "card_verification_value_explanation_other": "3 ciparu drošības kods jūsu kartes aizmugurē",
+        "card_start_label": "Izdošanas datums (MM/GG)",
+        "card_start_placeholder": "Izdošanas datums (MM/GG)",
+        "card_issue_number_label": "Izdevuma numurs",
+        "card_issue_number_placeholder": "Izdevuma numurs",
+        "card_change_label": "Mainīt",
+        "card_update_label": "Atjaunināt karti",
+        "paypal_disconnect": "Atvienot",
+        "ends_with_label": "beidzas ar %{last_digits}",
+        "masked_digits_label": "•••• %{pēdējie_cigari}",
+        "payment_method_saved": "Maksājuma metode saglabāta",
+        "card_vaulted_company_location": "Karte saglabāta šai atrašanās vietai",
+        "bank_account_vaulted_company_location": "Šai atrašanās vietai saglabāts bankas konts",
+        "expiry_long": "(Derīguma termiņš beidzas %{mēnesis}/%{gads})",
+        "expiry_short": "(Derīgs līdz %{mēnesis}/%{gads})",
+        "crypto_payment_method": {
+          "description": "Droši izveidojiet savienojumu ar savu maku Base tīklā",
+          "tooltip": "Jūsu maka atlikums un adrese netiks kopīgoti, un tiks ieturēta tikai pieprasītā summa."
+        },
+        "crypto_modal": {
+          "header": "Maksājiet %{shop_name} %{total_price} USDC",
+          "error": {
+            "refresh": "Atsvaidzināt",
+            "close": "aizvērt",
+            "sandbox_error": "Kaut kas nogāja greizi",
+            "web_component_error": "Ielādējot šo lapu, radās problēma."
+          }
+        }
       },
       "thank_you": {
         "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
@@ -903,6 +980,17 @@
       "tooltip": {
         "accessibility_label_context": "Vairāk informācijas par %{context}",
         "additional_payment_methods": "Papildu maksājuma metodes"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "tax_credential_cr": "Identifikācijas numurs/RUT",
+          "shipping_credential_cr": "Identifikācijas numurs/RUT",
+          "tax_credential_my": "TIN/reģistrācijas numurs",
+          "shipping_credential_my": "TIN/reģistrācijas numurs",
+          "tax_credential_type_mx": "Fiskālais režīms",
+          "tax_credential_use_mx": "CFDI lietojums",
+          "shipping_credential_tw": "Valsts identifikācijas numurs/PVN maksātājs"
+        }
       }
     },
     "notices": {
