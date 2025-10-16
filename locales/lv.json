@@ -810,7 +810,36 @@
         "review_and_confirm_title": "Pārskatīt un apstiprināt",
         "checkout_as_guest": "Izrakstīties kā viesim",
         "account_more_actions": "Vairāk darbību šim kontam",
-        "checkout_a_different_way": "Pārbaudiet citā veidā"
+        "checkout_a_different_way": "Pārbaudiet citā veidā",
+        "blocks": {
+          "billing_address_title": "Norēķini",
+          "shipping_address_title": "Piegāde uz",
+          "shipping_method_title": "Piegādes metode",
+          "payment_method_title": "Maksājuma veids",
+          "change_link_label": "Mainīt",
+          "change_contact_method_link_label": "Mainīt kontaktinformāciju",
+          "change_billing_address_link_label": "Mainīt norēķinu adresi",
+          "change_company_location_link_label": "Mainīt uzņēmuma atrašanās vietu",
+          "change_shipping_address_link_label": "Mainīt piegādes adresi",
+          "change_shipping_method_link_label": "Mainīt piegādes metodi",
+          "change_payment_method_link_label": "Mainīt maksājuma veidu",
+          "pick_up_in_store_shipping_method_html": "Saņemšana veikalā · %{location_name}",
+          "purchase_order_number_title": "Pasūtījuma numurs",
+          "change_purchase_order_number_label": "Mainīt pasūtījuma numuru",
+          "change_delivery_method_link_label": "Mainīt piegādes metodi",
+          "no_address": "(Nav adreses)",
+          "no_purchase_order_number": "(Nav pasūtījuma numura)",
+          "due_after_order_reviewed_html": "Jāmaksā pēc pasūtījuma pārskatīšanas",
+          "review_title_free_order": "Pārskatiet un pabeidziet savu pasūtījumu",
+          "payment_method_saved_company_location": "Saglabāt karti šai atrašanās vietai",
+          "company_location": "Uzņēmuma atrašanās vieta"
+        },
+        "block_title": "Pārskatiet savu informāciju",
+        "item_header": {
+          "change_value": "Mainīt vērtību",
+          "section": "Sadaļa",
+          "value": "Vērtība"
+        }
       },
       "billing": {
         "billing_address_title": "Rēķina saņēmējs",
@@ -991,6 +1020,130 @@
           "tax_credential_use_mx": "CFDI lietojums",
           "shipping_credential_tw": "Valsts identifikācijas numurs/PVN maksātājs"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Sūtiet man jaunumus un piedāvājumus pa e-pastu",
+        "post_accept_marketing_checkbox_label": "Jūs esat abonējis jaunumu un piedāvājumu saņemšanu e-pastā",
+        "pending_accept_marketing_checkbox_label": "Pārbaudiet savu e-pastu, lai apstiprinātu jaunumu un piedāvājumu abonēšanu",
+        "accept_sms_checkbox_label": "Sūtiet man īsziņas ar jaunumiem un piedāvājumiem",
+        "disclaimer": {
+          "privacy_policy": "Privātuma politika",
+          "terms_of_service": "Pakalpojumu sniegšanas noteikumi"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Privātuma politika",
+            "terms_of_service": "Pakalpojumu sniegšanas noteikumi",
+            "description_html": "Reģistrējoties ar īsziņu, jūs piekrītat saņemt regulārus automatizētus mārketinga ziņojumus, tostarp atgādinājumus par pirkumu grozu, uz norādīto tālruņa numuru. Piekrišana nav pirkuma nosacījums. Lai atteiktos no abonēšanas, atbildiet ar STOP. Lai saņemtu palīdzību, atbildiet ar HELP. Ziņojumu sūtīšanas biežums ir atšķirīgs. Var tikt piemērota maksa par ziņojumu un datu pārraidi. Skatiet mūsu %{privacy_policy_link} un %{terms_of_service_link}.",
+            "description_transactional_html": "Jūs varat saņemt īsziņas par pasūtījuma apstiprinājumu un piegādes atjauninājumiem. Lai atteiktos no abonēšanas, atbildiet ar STOP. Lai saņemtu palīdzību, atbildiet ar HELP. Ziņojumu sūtīšanas biežums ir atšķirīgs. Var tikt piemērota maksa par ziņojumu un datu pārraidi. Skatiet mūsu %{privacy_policy_modal_link} un %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Mobilā tālruņa numurs",
+          "get_offers_by_text": "Saņemt piedāvājumus īsziņās"
+        },
+        "unsubscribe": {
+          "title": "Jūs esat anulējis abonementu",
+          "description": "Jūs vairs nesaņemsiet no mums atgādinājumus par grozu."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Pierakstīties jaunumiem un piedāvājumiem no šī veikala"
+      },
+      "shop_policies": {
+        "policy_label": "Politika",
+        "policies_label": "Politikas",
+        "select_policy_label": "Izvēlieties politiku",
+        "refund_policy": "Atmaksas politika",
+        "privacy_policy": "Privātuma politika",
+        "terms_of_service": "Pakalpojumu sniegšanas noteikumi",
+        "legal_notice": "Juridisks paziņojums",
+        "shipping_policy": "Piegāde",
+        "terms_of_sale": "Pārdošanas noteikumi",
+        "subscription_policy": "Atcelšana",
+        "purchase_options_policy": "Pirkšanas iespēju politika",
+        "purchase_options_cancellation_policy": "Atcelšana",
+        "cookie_preferences": "Sīkfaili"
+      },
+      "remote_policies": {
+        "unavailable_policy": "Šim veikalam nav norādīta %{policy_name}. Lai iegūtu plašāku informāciju, lūdzu, sazinieties tieši ar %{shop_name}."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Reģistrētā tirgotāja noteikumi un nosacījumi",
+        "privacy_policy": "Reģistrētā tirgotāja konfidencialitātes politika"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Pirms maksājuma veikšanas pārskatiet savu kontaktinformāciju"
+      },
+      "notifications": {
+        "title": "Paziņojumi"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Summa, kas jāmaksā par pasūtījumu %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Pievienots",
+            "other": "Pievienots %{count}"
+          },
+          "removed": "Noņemts",
+          "subtracted": "Noņemts %{count}",
+          "returned": "Atgriezts %{count}",
+          "return_line_item_removed": "No atgrieztās vērtības ir noņemts %{count}"
+        },
+        "additional_payment_requested": "Nepieciešams maksājums %{total_outstanding} apmērā",
+        "checkout_review_and_pay": "Jūsu pasūtījums %{order_name} tika atjaunināts. Pārskatiet šīs izmaiņas un pēc tam apmaksājiet, lai apstiprinātu pasūtījumu.",
+        "order_updated_on": "Jūsu pasūtījums tika atjaunināts %{last_edited_at}.",
+        "order_review_and_pay": "Jūsu pasūtījums tika atjaunināts. Apskatiet un apmaksājiet, lai apstiprinātu pasūtījumu.",
+        "pay_now": "Maksāt tūlīt"
+      },
+      "change_currency": {
+        "currency_button_label": "%{valūta} (%{valūtas_simbols})",
+        "credit_card_will_be_charged_html": "No jūsu kredītkartes tiks iekasēta summa %{amount}",
+        "payment_total_label": "Kopējais maksājums",
+        "conversion_rate": "1 %{from_currency_code} = %{likme} %{to_currency_code}",
+        "change_currency_link": "Mainīt uz %{currency_name}",
+        "card_provider_fx_charges_warning": "Jūsu kartes izsniedzējs var iekasēt maksu par %{currency_code} darījumiem.",
+        "currency_not_supported_by_shop": "Jūsu izvēlētā valūta vairs nav pieejama. Visas cenas tagad ir norādītas %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Jūsu grozs ir atjaunināts, pamatojoties uz jūsu piegādes valsti.",
+        "cart_and_currency_updated_based_on_country": "Jūsu grozs un valūta ir atjaunināti, pamatojoties uz jūsu piegādes valsti."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Jūsu valsts/reģions ir atjaunināts. Ievadiet savu piegādes adresi, lai turpinātu norēķināšanos."
+      },
+      "tips": {
+        "title": "Pievienot dzeramnaudu",
+        "description": "Parādiet savu atbalstu komandai veikalā %{shop_name}",
+        "presets_description": "Izvēlieties dzeramnaudas procentuālo daļu",
+        "custom_label": "Pielāgots padoms",
+        "add_tip": "Pievienot dzeramnaudu",
+        "update_tip": "Atjaunināšanas padoms",
+        "message": "Paldies, mēs to novērtējam.",
+        "no_tip_label": "Neviens"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Iegādājieties %{product_name}",
+          "one": "Iegādājieties %{product_name} un %{count} citu preci",
+          "other": "Iegādājieties %{product_name} un %{count} citas preces"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "diena",
+            "other": "%{count} dienas"
+          },
+          "week": {
+            "one": "nedēļa",
+            "other": "%{count} nedēļas"
+          },
+          "month": {
+            "one": "mēnesis",
+            "other": "%{count} mēneši"
+          },
+          "year": {
+            "one": "gads",
+            "other": "%{count} gadi"
+          }
+        }
       }
     },
     "notices": {
@@ -1144,7 +1297,8 @@
         "five_or_more_days": "Parasti gatavs 5+ dienu laikā",
         "zero_to_two_hours": "Parasti gatavs 2 stundu laikā",
         "two_to_four_hours": "Parasti gatavs 4 stundu laikā",
-        "immediately": "Gatavs saņemšanai tūlīt"
+        "immediately": "Gatavs saņemšanai tūlīt",
+        "next_day": "Gatavs saņemšanai nākamajā dienā"
       }
     },
     "pagination": {
@@ -1205,6 +1359,11 @@
       "discount_not_found": "Nevar atrast derīgu atlaidi, kas atbilst ievadītajam kodam.",
       "customer_already_used_once_per_customer_discount_notice": "Šī atlaide ir sasniegusi savu izmantošanas ierobežojumu",
       "gift_card_already_applied": "Kods jau ir piemērots jūsu norēķināšanās procesam"
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Šī prece ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
+      "buyer_consent_cart": "Viena vai vairākas preces jūsu grozā ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
+      "cancellation_policy": "atcelšanas politika"
     }
   },
   "customer_accounts": {
@@ -1319,7 +1478,10 @@
     "orders": {
       "order_list": {
         "column_headers": {
-          "products_accessibility_label": "Produkti"
+          "products_accessibility_label": "Produkti",
+          "order": "Pasūtījums",
+          "total": "Kopā",
+          "actions_accessibility_label": "Darbības"
         },
         "delivered": "Piegādāts {{date}}",
         "empty_state_order_source_description": "Šeit tiks rādīti tikai pasūtījumi, kas veikti, izmantojot {{email}} .",
@@ -1456,7 +1618,128 @@
         "picked_up_label": "Paņemts",
         "canceled_label": "Atcelts",
         "canceled_title": "Jūsu pasūtījums ir atcelts"
+      },
+      "list_layout_accessibility_label": "Izkārtojuma opcijas",
+      "list_title_with_pending_orders": "Pasūtījumi:",
+      "list_title_confirmed_orders_accessibility_label": "Pasūtījumi: apstiprināti",
+      "list_title_pending_orders_accessibility_label": "Pasūtījumi: gaida apstiprinājumu",
+      "switch_order_type_pending_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti neapstiprinātie pasūtījumi",
+      "switch_order_type_confirmed_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti apstiprinātie pasūtījumi"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "pirms {{count}} minūtes",
+          "other": "pirms {{count}} minūtēm"
+        },
+        "lessThanOneMinuteAgo": "Tikko",
+        "yesterday": "Vakar plkst. {{time}}",
+        "today": "Šodien plkst. {{time}}",
+        "tomorrow": "Rīt plkst. {{time}}"
       }
+    },
+    "enable_javascript": "Lai skatītu savu kontu, pārlūkprogrammas iestatījumos iespējojiet JavaScript vai piesakieties, izmantojot citu pārlūkprogrammu.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Slēpt konta izvēlni",
+        "label": "Konts",
+        "show_accessibility_label": "Rādīt konta izvēlni",
+        "nav_accessibility_label": "Konta navigācija",
+        "open_menu_accessibility_label": "Atvērt konta navigāciju",
+        "close_menu_accessibility_label": "Aizvērt konta navigāciju",
+        "loading_message": "Notiek konta navigācijas ielāde"
+      },
+      "action_menu_accessibility_label": "Vairāk darbību",
+      "close_menu_accessibility_label": "Aizvērt galveno navigāciju",
+      "contact_email_subject": "Sazinieties ar {{shopName}} tiešsaistes veikalu",
+      "contact_link": "Kontaktinformācija",
+      "delete_confirmation": {
+        "cancel": "Atcelt",
+        "delete": "Dzēst"
+      },
+      "dismiss_toast": "Noraidīt",
+      "document_title": "{{sectionName}} — {{shopName}} — konts",
+      "go_to_store_link": "Dodieties uz veikalu",
+      "loading_message": "Ielādēšana",
+      "loading_policy_content_accessibility_label": "Notiek politikas satura ielāde",
+      "log_out_link": "Izrakstīties",
+      "logout_overlay_label": "Izrakstīšanās...",
+      "nav_label_accessibility_label": "Galvenā navigācija",
+      "navigation_accessibility_message": "Jūs pārgājāt uz {{sectionName}}",
+      "open_menu_accessibility_label": "Atvērt galveno navigāciju",
+      "shop_logo_accessibility_label": "{{shopName}} logotips",
+      "subscriptions_link_label": "Abonementi",
+      "settings_link": "Iestatījumi",
+      "country_switcher_toast_message": "Valsts nomainīta uz {{countryName}}",
+      "switch_country": "Mainīt valsti",
+      "no_countries_found": "Nav atrasta neviena valsts",
+      "location_switcher_toast_message": "Atrašanās vieta mainīta uz {{locationName}}",
+      "switch_location": "Mainīt atrašanās vietu",
+      "no_locations_found": "Nav atrasta neviena atrašanās vieta",
+      "try_new_search": "Izmēģiniet jaunu meklēšanu",
+      "view_details": "Skatīt detalizētu informāciju",
+      "company_location": "Uzņēmuma atrašanās vieta",
+      "skip_to_content": "Pāriet uz saturu"
+    },
+    "announcement_bar": {
+      "expand_label": "Izvērst paziņojumu joslu",
+      "collapse_label": "Sakļaut paziņojumu joslu",
+      "close_label": "Aizvērt paziņojumu joslu"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Notiek konta informācijas ielāde",
+      "loading_finished_accessibility_message": "Konta informācija ir ielādēta",
+      "profile_card": {
+        "cancel": "Atcelt",
+        "cancel_accessibility_label": "Atcelt profila rediģēšanu",
+        "edit": "Rediģēt",
+        "edit_accessibility_label": "Rediģēt profilu",
+        "email_help_text": "E-pasta adresi nevar rediģēt",
+        "editable_email_help_text": "Šī e-pasta adrese tiek izmantota pieteikšanās un pasūtījumu atjauninājumiem.",
+        "first_name": "Vārds",
+        "last_name": "Uzvārds",
+        "email": "E-pasts",
+        "no_name_provided_accessibility_label": "Nav pievienots vārds",
+        "phone_number_help_text": "Tālruņa numuru nevar rediģēt",
+        "save": "Saglabāt",
+        "save_accessibility_label": "Saglabāt profilu",
+        "title": "Profils",
+        "errors": {
+          "name_too_long": "{{fieldName}} ir pārāk garš (maksimums ir 255 rakstzīmes)",
+          "name_cannot_contain_url": "{{fieldName}} nedrīkst saturēt URL",
+          "name_cannot_contain_html_tags": "{{fieldName}} nedrīkst saturēt HTML tagus",
+          "email_cant_be_blank": "E-pasta lauks nedrīkst būt tukšs",
+          "invalid_email_format": "Ievadiet derīgu e-pasta adresi"
+        }
+      },
+      "verify_new_email_modal": {
+        "title": "Verificēt e-pastu",
+        "description": "Ievadiet kodu, kas nosūtīts uz {{email}}",
+        "one_time_password_label": "6 ciparu kods",
+        "email_resend_button": "Nosūtīt kodu atkārtoti",
+        "email_resend_button_accessibility_label": "Atkārtoti nosūtīt verifikācijas kodu",
+        "verify_button": "Pārbaudīt",
+        "verify_button_accessibility_label": "Vienreizējās paroles pārbaude",
+        "cancel_button": "Atcelt",
+        "cancel_button_accessibility_label": "Atcelt e-pasta rediģēšanu",
+        "email_resend_button_success_toast_message": "Verifikācijas kods nosūtīts",
+        "email_resend_button_error_banner_message": "Nevarēja nosūtīt verifikācijas kodu"
+      },
+      "email_update_success_modal": {
+        "title": "Verificēt e-pastu",
+        "description": "E-pasts veiksmīgi atjaunināts. Notiek pāradresācija uz pieteikšanos."
+      },
+      "profile_update_confirmation_message": "Profils atjaunināts",
+      "email_update_confirmation_message": "E-pasta adrese atjaunināta uz {{email}}",
+      "title": "Profils",
+      "people": {
+        "pagination": {
+          "load_more": "Ielādēt vairāk",
+          "load_more_accessibility_label": "Ielādēt vairāk cilvēku",
+          "loading_accessibility_label": "Cilvēku iekraušana"
+        }
+      },
+      "add_button": "Pievienot"
     }
   }
 }
