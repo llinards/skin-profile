@@ -421,6 +421,292 @@
           "due_today": "Kopā jāmaksā šodien",
           "due_today_next": "Jāmaksā šodien"
         }
+      },
+      "payment": {
+        "store_credit": {
+          "no_fixed_selling_plans": "Veikala kredītu nevar izmantot ar atliktā pirkuma iespējām."
+        },
+        "clear": "Skaidrs",
+        "billing_must_match_shipping_notice": "Jūsu maksājuma veida norēķinu adresei ir jāsakrīt ar piegādes adresi.",
+        "same_billing_address_checkbox_label": "Izmantot piegādes adresi kā norēķinu adresi",
+        "location_billing_address_label": "Atrašanās vietas norēķinu adrese",
+        "fact_billing_address_label": "Rēķina adrese",
+        "location_shipping_address_label": "Atrašanās vietas piegādes adrese",
+        "use_order_billing_address_label": "Izmantot pasūtījuma norēķinu adresi",
+        "use_location_billing_address_label": "Izmantot atrašanās vietas norēķinu adresi",
+        "use_location_shipping_address_label": "Izmantot atrašanās vietas piegādes adresi",
+        "no_working_method_error": "Šis veikals šobrīd nevar pieņemt maksājumus. Atsvaidziniet šo lapu vai atgriezieties vēlāk.",
+        "brand_not_available": "Šis veikals nepieņem {{brand}} . Lūdzu, izmantojiet citu karti, lai norēķinātos.",
+        "shipping_rate_updated": "Pieejamās piegādes metodes ir atjauninātas. Pirms norēķināšanās apstipriniet savu izvēli.",
+        "billing_address_invalid_phone": "Lai turpinātu, atjauniniet tālruņa numuru savā norēķinu adresē, lai saņemtu pakalpojumu {{label}} {{last_digits}} .",
+        "billing_address_invalid_phone_no_card": "Lai turpinātu, atjauniniet tālruņa numuru savā norēķinu adresē.",
+        "preview_not_available": {
+          "title": "Priekšskatījums nav pieejams",
+          "content": "Neuztraucieties, šī ātrā norēķināšanās sistēma darbojas jūsu klientiem.",
+          "button": "Labi"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Ievadiet derīgu izdošanas datumu",
+              "issue_number": "Ievadiet derīgu izdošanas numuru"
+            },
+            "invalid": {
+              "verification_value": "Ievadiet derīgu CVV vai drošības kodu"
+            }
+          }
+        },
+        "simulated_checkout": "Priekšskatījums drīzumā būs pieejams",
+        "simulated_express_checkout": "Maki redaktora priekšskatījumā nav pieejami jūsu reģiona vai pārlūkprogrammas dēļ.",
+        "vaulting_agreement_label": "Saglabāt manu maksājuma informāciju pakalpojumā %{company} ātrākai norēķināšanās procesam.",
+        "business_customer_vaulting_payment_label": "Saglabājiet šo maksājuma veidu norēķinoties un autorizējiet %{company} iekasēt no tā maksu par turpmākajiem pirkumiem šajā atrašanās vietā. Visi kontakti, kas piešķirti šai atrašanās vietai, var izmantot šo maksājuma veidu.",
+        "business_customer_with_bank_account_vaulting_payment_label": "Saglabājiet šo maksājuma veidu norēķinoties un autorizējiet %{company} debetēt jūsu kontu par turpmākajiem pirkumiem, ko apstiprināsiet šajā atrašanās vietā, līdz atcelsiet. Visi šai atrašanās vietai piešķirtie kontakti var izmantot šo maksājuma veidu.",
+        "purchase_options_and_vaulting_agreement_label": "Viena vai vairākas preces jūsu grozā ir atlikts vai abonēts pirkums. Turpinot maksājumu, jūs piekrītat, ka no jūsu maksājuma veida automātiski tiks iekasēta maksa par šajā lapā norādīto cenu un biežumu, līdz tas beidzas vai jūs atcelsit abonementu. Visām atcelšanas prasībām ir piemērojama %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "atcelšanas politika",
+        "use_different_credit_card_label": "Izmantojiet citu karti",
+        "saved_credit_card": "Jūsu saglabātā kredītkarte",
+        "saved_credit_card_info": "Pēdējie četri cipari",
+        "saved_credit_card_cvv_verification": "Verifikācijas nolūkos, lūdzu, ievadiet savas kartes drošības kodu.",
+        "saved_credit_card_actions": {
+          "edit": "Rediģēt",
+          "delete": "Dzēst"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Skatīt visas saglabātās kartītes",
+          "done": "Pabeigts",
+          "cancel": "Atcelt"
+        },
+        "add_credit_card_modal": {
+          "title": "Pievienot karti",
+          "save": "Saglabāt",
+          "cancel": "Atcelt"
+        },
+        "delete_credit_card_modal": {
+          "title": "Dzēst karti",
+          "confirmation": "Vai tiešām vēlaties dzēst {{brandName}} kas beidzas ar {{lastDigits}} ?",
+          "cancel": "Atcelt",
+          "delete": "Dzēst"
+        },
+        "edit_credit_card_modal": {
+          "title": "Rediģēt karti",
+          "done": "Pabeigts",
+          "cancel": "Atcelt",
+          "description": "Jūs varat mainīt tikai savas kartes norēķinu adresi.",
+          "fields": {
+            "default": "Iestatīt kā noklusējuma vērtību",
+            "card_number": "Kartes numurs",
+            "expiry": "Derīguma termiņš",
+            "security_code": "Drošības kods",
+            "name": "Vārds uz kartes",
+            "billing": "Rēķina saņēmējs"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Ir %{count} derīguma termiņu zaudējusi karte, kuru varat apskatīt un rediģēt savā kontā.",
+          "other": "Savā kontā varat skatīt un rediģēt %{count} kartes, kuru derīguma termiņš ir beidzies."
+        },
+        "local_payment_method_receiver_notice": "Pēc pasūtījuma veikšanas jūs saņemsiet maksājuma informāciju. Veiciet maksājumu bankomātā vai tiešsaistē {{dueDays}} dienu laikā.",
+        "order_edit_banner_title": "Nepieciešams maksājums {{amount_owed}} apmērā",
+        "order_edit_banner_subtitle": "Jūsu pasūtījums {{order_number}} tika atjaunināts. Pārskatiet šīs izmaiņas un pēc tam apmaksājiet, lai apstiprinātu pasūtījumu.",
+        "order_edit_banner_items_added": {
+          "one": "Pievienots",
+          "other": "Pievienots %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Noņemts",
+          "with_quantities": "Noņemts {{delta}} no {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Atgriezts {{quantity}}",
+          "with_quantities": "Atgriezts {{delta}} no {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Noņemts no atgriešanas saraksta",
+          "with_quantities": "No atgriešanas vērtības ir noņemta {{delta}}"
+        },
+        "order_edit_banner_single_item_added": "Pievienots",
+        "order_edit_banner_multiple_items_added": "Pievienots {{amount}}",
+        "order_edit_banner_single_item_removed": "Noņemts",
+        "order_edit_banner_multiple_items_removed": "Noņemta {{amount}}",
+        "order_edit_banner_single_item_returned": "Atgriezts",
+        "order_edit_banner_multiple_items_returned": "Atgrieztā summa: {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Noņemts no atgriešanas saraksta",
+        "order_edit_banner_multiple_items_return_line_item_removed": "No atgriešanas summas noņemta {{amount}}",
+        "order_edit_banner_updated_order_label": "Atjaunināts pasūtījums",
+        "gift_card_wrapper": {
+          "heading": "Dāvanu karte",
+          "apply_gift_card_label": "Pielietot dāvanu karti",
+          "apply_another_gift_card_label": "Lietot citu dāvanu karti",
+          "gift_card_label": "Dāvanu karte %{identifier}",
+          "payment_tag": "Dāvanu karte",
+          "add_label": "Pievienot dāvanu karti",
+          "manage_label": "Dāvanu karšu pārvaldība"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Pievienot dāvanu karti vai veikala kredītu",
+          "manage_label": "Dāvanu karšu vai veikala kredīta pārvaldība"
+        },
+        "gift_card_checkbox_label": "Lietot dāvanu karti",
+        "custom_onsite_payment_method_modal": {
+          "title": "Pielāgots maksājuma apstiprinājums uz vietas"
+        },
+        "markets_pro_disclaimer_label": "Noklikšķinot zemāk un pabeidzot pasūtījumu, jūs piekrītat iegādāties preci(-es) no Global-e kā šī darījuma reģistrētais tirgotājs saskaņā ar Global-e %{markets_pro_terms} un %{privacy_policy}. Global-e ir starptautisks pasūtījumu izpildes pakalpojumu sniedzējs uzņēmumam %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Noteikumi un nosacījumi",
+        "markets_pro_disclaimer_privacy_policy": "Privātuma politika",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Reģistrētā tirgotāja noteikumi un nosacījumi",
+        "markets_pro_disclaimer_privacy_policy_title": "Reģistrētā tirgotāja konfidencialitātes politika",
+        "markets_pro_disclaimer_label_express_checkout": "Veicot pirkumu, jūs piekrītat mūsu starptautiskā pakalpojumu sniedzēja Global-e %{markets_pro_terms} un %{privacy_policy} noteikumiem.",
+        "markets_pro_disclaimer_express_terms_and_conditions": "termini",
+        "markets_pro_disclaimer_express_privacy_policy": "privātuma politika",
+        "purchase_order_number": {
+          "title": "Pasūtījuma numurs",
+          "label": "Pasūtījuma numurs (pēc izvēles)"
+        },
+        "alternative_payment_currency_total_notice": "Piezīme: no jums tiks iekasēta summa %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Piezīme: konvertētā kopsumma ir %{amount_due}.",
+        "waiting_on_taxes_message": "Ja jūsu nodokļi netiek aprēķināti nākamo dažu sekunžu laikā, atsvaidziniet lapu."
+      },
+      "thank_you": {
+        "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
+        "delivered_local_title": "Jūsu pasūtījums ir piegādāts",
+        "delivered_local_description_html": "Neesat saņēmis savu pasūtījumu? %{let_us_know}.",
+        "choose_payment_method_later": "Izvēlieties maksājuma veidu vēlāk",
+        "picked_up_title": "Jūsu pasūtījums ir saņemts",
+        "picked_up_description_html": "Jūsu pasūtījums tika saņemts %{location_name} šādā datumā: %{date}.",
+        "contact_us": "Sazinieties ar mums",
+        "contact_us_lowercase": "sazinieties ar mums",
+        "contact_us_html": "Vai nepieciešama palīdzība? %{contact_us}",
+        "updated_time": "Atjaunināts pirms %{time_ago}",
+        "failure": "Nav piegādāts",
+        "failed_title": "Jūsu pasūtījumu nevarēja piegādāt",
+        "failed_contact_merchant": "Sazinieties ar %{company}, lai vienotos par piegādi.",
+        "failed_contact_merchant_no_company": "Sazinieties ar mums, lai vienotos par piegādi.",
+        "non_shippable_title": "Jūsu pasūtījums ir pabeigts",
+        "let_us_know": "Paziņojiet mums",
+        "login_title": "Pierakstieties, lai skatītu visu pasūtījuma informāciju",
+        "login_description": "Savu pasūtījuma numuru varat atrast kvītī, ko saņēmāt pa e-pastu.",
+        "login_description_phone": "Savu pasūtījuma numuru varat atrast čekā, ko saņēmāt īsziņā.",
+        "login_not_customer_html": "Vai neesat %{name}? Jūs varat %{link}",
+        "login_reorder_link_text": {
+          "one": "iegādājieties arī šo produktu",
+          "other": "iegādājieties arī šos produktus"
+        },
+        "customer_information_hidden_fields_message": "Pierakstieties, lai skatītu visu klienta informāciju.",
+        "cancelled_title": "Jūsu pasūtījums ir atcelts",
+        "cancelled_description": "Jūsu pasūtījums tika atcelts %{date}. Sazinieties ar mums, ja jums ir kādi jautājumi.",
+        "order_number_label": "Pasūtījuma numurs",
+        "customer_validation_error": "Ievadiet derīgu e-pasta adresi vai pasūtījuma numuru.",
+        "customer_validation_error_phone": "Ievadiet derīgu tālruņa numuru vai pasūtījuma numuru.",
+        "login": "Pierakstīties",
+        "unfulfilled_items_title": "Gatavošanās nosūtīšanai",
+        "unfulfilled_items_description": "Pašlaik mēs gatavojam šīs preces nosūtīšanai.",
+        "marker": {
+          "current": "Pašreizējā piegādes vieta",
+          "shipping": "Piegādes adrese"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Pašreizējā piegādes vieta",
+          "shipping": "Saņemšanas vieta"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Šajā sūtījumā esošās preces",
+          "unfulfilled_table_title": "Preces tiek sagatavotas nosūtīšanai",
+          "product_image_label": "Produkta attēls",
+          "description_label": "Apraksts",
+          "quantity_label": "Daudzums"
+        },
+        "order_updates_description_missing": "Jūs nesaņemat piegādes atjauninājumus.",
+        "order_updates_subscribe_to_email_notifications": "Saņemiet piegādes atjauninājumus pa e-pastu",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Saņemiet piegādes atjauninājumus pa e-pastu vai īsziņu",
+        "order_updates_subscribe_to_phone_notifications": "Saņemiet piegādes atjauninājumus īsziņās",
+        "order_updates_submit_subscription": "Iesniegt",
+        "track_shipment": "Sūtījuma izsekošana",
+        "other_options": "Citas iespējas",
+        "delivery_information_label": "Piegādes informācija:",
+        "gift_card_sent_confirmation": "Dāvanu kartes nosūtītas",
+        "qr_code": {
+          "send_link_to_phone": "Vai arī nosūtiet saiti uz savu tālruni",
+          "title": "Izsekošana savā tālrunī"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Skenējiet ar savu tālruni"
+          },
+          "sms": {
+            "title": "Vai arī nosūtiet saiti uz savu tālruni"
+          }
+        },
+        "view_business_customer_account": "Skatīt kontu",
+        "breadcrumbs_submitted": "Iesniegts",
+        "breadcrumbs_in_review": "Pārskatā",
+        "breadcrumbs_confirmed": "Apstiprināts",
+        "missing_shipping_address_banner": {
+          "title": "Pasūtījumam nav piegādes adreses",
+          "text_html": "%{contact_us}, lai pievienotu savu adresi",
+          "contact_us": "Sazinieties ar mums"
+        },
+        "first_payment_complete": "Pirmais maksājums pabeigts",
+        "in_store_purchase": "Pirkums veikalā",
+        "company_location_section_title": "Uzņēmums un atrašanās vieta",
+        "thank_you_ready_for_picked_up": "Jūsu pasūtījums tika saņemts šeit: %{address}.",
+        "ready_for_delivery": "Gatavs piegādei",
+        "order_updates_subscribe_to_email_notifications_failed": "Mēs nevaram saglabāt šo e-pasta adresi atjauninājumiem. Lūdzu, mēģiniet vēlreiz vai izmantojiet citu e-pasta adresi.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Ievadītā e-pasta adrese jau pastāv.",
+        "subscriptions_management": {
+          "title": "Abonements",
+          "description": "Lai skatītu un pārvaldītu savus abonementus, turpiniet savu kontu.",
+          "button_label": "Pārvaldiet savu abonementu"
+        },
+        "manage_order_label": "Pārvaldiet savu pasūtījumu",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Pēc dažām minūtēm saņemsiet īsziņu ar dāvanu karti.",
+          "other": "Pēc dažām minūtēm saņemsiet īsziņu ar dāvanu kartēm."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Pēc dažām minūtēm saņemsiet e-pastu ar savu dāvanu karti.",
+          "other": "Pēc dažām minūtēm jūs saņemsiet e-pastu ar dāvanu kartēm."
+        },
+        "gift_card_email_title": {
+          "one": "Dāvanu karte tika nosūtīta pa e-pastu",
+          "other": "Dāvanu kartes tika nosūtītas pa e-pastu"
+        },
+        "gift_card_text_title": {
+          "one": "Dāvanu karte tika nosūtīta ar īsziņu",
+          "other": "Dāvanu kartes tika nosūtītas ar īsziņu"
+        },
+        "resend_gift_cards_by_email": "Nosūtīt e-pastu atkārtoti",
+        "resend_gift_cards_by_text": "Atkārtoti nosūtīt īsziņu",
+        "gift_card_resent_confirmation": {
+          "one": "Dāvanu karte tika nosūtīta atkārtoti.",
+          "other": "Dāvanu kartes tika nosūtītas atkārtoti."
+        },
+        "gift_card_resend_failure": {
+          "one": "Radās problēma, atkārtoti nosūtot jūsu dāvanu karti. Mēģiniet vēlreiz vai sazinieties ar mums.",
+          "other": "Radās problēma, atkārtoti nosūtot jūsu dāvanu kartes. Mēģiniet vēlreiz vai sazinieties ar mums."
+        },
+        "vat_invoices": {
+          "title": "PVN rēķini"
+        },
+        "verify_shop_account_title": "Verificējiet savu veikala kontu",
+        "verify_shop_account_message": "Jūsu informācija tika saglabāta pakalpojumā Shop. Verificējiet savu kontu, lai to automātiski izmantotu miljoniem veikalu.",
+        "verify_shop_account_cta": "Verificējiet savu kontu",
+        "verify_shop_account_confirmation": "Norēķināšanās informācija saglabāta",
+        "announcement": {
+          "close": "Aizvērt",
+          "expand": "Izvērst",
+          "collapse": "Sakļaut"
+        }
+      },
+      "vaulted": {
+        "change_button": "Mainīt"
+      },
+      "review": {
+        "title": "Atsauksme",
+        "review_title": "Pabeidziet pasūtījumu",
+        "review_and_confirm_title": "Pārskatīt un apstiprināt",
+        "checkout_as_guest": "Izrakstīties kā viesim",
+        "account_more_actions": "Vairāk darbību šim kontam",
+        "checkout_a_different_way": "Pārbaudiet citā veidā"
       }
     }
   }
