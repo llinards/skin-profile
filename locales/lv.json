@@ -2392,7 +2392,140 @@
         "ready_for_pickup_location": "Jūsu pasūtījums ir gatavs saņemšanai norādītajā vietā",
         "picked_up_label": "Paņemts",
         "canceled_label": "Atcelts",
-        "canceled_title": "Jūsu pasūtījums ir atcelts"
+        "canceled_title": "Jūsu pasūtījums ir atcelts",
+        "come_back": "Atgriezieties šajā lapā, lai skatītu jaunāko informāciju par jūsu sūtījuma statusu.",
+        "company_tracking_number": "{{company}} izsekošanas numurs:",
+        "confirmed_label": "Apstiprināts",
+        "confirmed_title": "Jūsu pasūtījums ir apstiprināts",
+        "confirmed_description_pickup": "Jūs saņemsiet e-pastu, kad jūsu pasūtījums būs gatavs saņemšanai.",
+        "confirmed_description_digital": "Kad jūsu pasūtījums būs gatavs, jūs saņemsiet e-pastu.",
+        "confirmed_description_gift_card_text": "Kad jūsu pasūtījums būs gatavs, jūs saņemsiet īsziņu.",
+        "complete_label": "Pabeigts",
+        "delivered_label": "Piegādāts",
+        "delivered_description_gift_card": {
+          "one": "Dāvanu karte tika nosūtīta pa e-pastu.",
+          "other": "Dāvanu kartes tika nosūtītas pa e-pastu."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Dāvanu karte tika nosūtīta ar īsziņu.",
+          "other": "Dāvanu kartes tika nosūtītas ar īsziņu."
+        },
+        "gift_card_label": {
+          "one": "Dāvanu karte",
+          "other": "Dāvanu kartes"
+        },
+        "gift_card_resend_button": {
+          "one": "Nosūtīt dāvanu karti atkārtoti",
+          "other": "Atkārtoti nosūtīt dāvanu kartes"
+        },
+        "gift_resend_success": {
+          "one": "Dāvanu karte nosūtīta atkārtoti",
+          "other": "Dāvanu kartes nosūtītas atkārtoti"
+        },
+        "gift_resend_failure": {
+          "one": "Radās problēma, atkārtoti nosūtot jūsu dāvanu karti. Mēģiniet vēlreiz vai sazinieties ar mums.",
+          "other": "Radās problēma, atkārtoti nosūtot jūsu dāvanu kartes. Mēģiniet vēlreiz vai sazinieties ar mums."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Dāvanu karte tiks nosūtīta atsevišķā e-pastā.",
+          "other": "Katra dāvanu karte tiks nosūtīta atsevišķā e-pastā."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Dāvanu karte tiks nosūtīta atsevišķā īsziņā.",
+          "other": "Katra dāvanu karte tiks nosūtīta atsevišķā īsziņā."
+        },
+        "status_timestamp": "Atjaunināts {{date}}",
+        "estimated_delivery": "Paredzēts {{date}}",
+        "expected_by": "Paredzēts līdz {{date}}",
+        "was_expected_by": "Bija paredzēts līdz {{date}}",
+        "delivered": "Ieradās {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Amazon Buy ar Prime logotipu",
+        "in_review_label": "Pārskatā",
+        "in_review_title": "Jūsu pasūtījums tiek pārskatīts",
+        "last_updated": "Pēdējoreiz atjaunināts {{date}}",
+        "multiple_shipments_label": "Vairāki sūtījumi",
+        "multiple_statuses_label": "Vairāki pasūtījumu statusi",
+        "no_tracking_number": "Šim sūtījumam nav izsekošanas numura.",
+        "tracking_number": {
+          "one": "Izsekošanas numurs",
+          "other": "Izsekošanas numuri"
+        },
+        "on_its_way_label": "Pa ceļam",
+        "out_for_delivery_label": "Piegādei paredzēts",
+        "resume_tracking": "CV izsekošana",
+        "submitted_label": "Iesniegts",
+        "submitted_description": "Pārskatiet pasūtījuma un maksājuma informāciju.",
+        "there_was_a_problem_label": "Radās problēma",
+        "track_shipment": "Sūtījuma izsekošana",
+        "request_return": "Pieprasīt atgriešanu",
+        "view_order_for_details": "Skatīt pasūtījumu, lai iegūtu sīkāku informāciju",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Pārvaldīt vietnē Amazon"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Pārvaldīt ar Amazon",
+            "new_window_disclaimer": "(atveras jaunā logā)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Piegādes garantija",
+            "external_promise_brand_label": "Piegāde līdz",
+            "not_delivered_by_label": "Piegādāts pēc {{date}}",
+            "delivery_guarantee_expired_label": "Piegādes garantijas termiņš beidzies",
+            "modal_accessibility_button_label": "Piegādes solījuma detaļas",
+            "download_shop_app_button_label": "Lejupielādēt Veikals izsekošanai",
+            "track_with_shop_button_label": "Izsekošana ar veikalu",
+            "claim_shop_cash_button_label": "Saņemt veikala skaidru naudu"
+          },
+          "details_modal": {
+            "title": "Piegādes garantija",
+            "active_delivery_guarantee_label": "Piegāde līdz {{date}}",
+            "expired_delivery_guarantee_description": "Šī pasūtījuma 30 dienu Shop Promise garantija ir beigusies.",
+            "expired_badge_label": "Beidzies derīguma termiņš",
+            "order_includes_guarantees_label": "Jūsu pasūtījums ietver {{deliveryAgreementsCount}} garantijas",
+            "order_includes_guarantees_description": "Shop Promise garantē ātru un uzticamu piegādi. Saņemiet Shop Cash, ja jūsu pasūtījums tiek piegādāts pēc {{date}} .",
+            "delivered_after_label": "Piegādāts pēc {{date}}",
+            "delivered_after_description": "Tā kā jūsu pasūtījums tika piegādāts ar nokavēšanos, jūs varat saņemt {{amount}} iepirkšanās skaidrā naudā.",
+            "claimed_shop_cash_description": "Tā kā šis pasūtījums tika piegādāts ar nokavēšanos, jūs pieprasījāt {{amount}} iepirkšanās skaidrā naudā.",
+            "eligible_to_claim_shop_cash_description": "Tā kā jūsu pasūtījums tika piegādāts ar nokavēšanos, jūs varat saņemt {{amount}} iepirkšanās skaidrā naudā.",
+            "learn_more_button_label": "Uzziniet vairāk",
+            "claim_shop_cash_button_label": "Saņemt veikala skaidru naudu",
+            "view_balance_in_shop_button_label": "Skatīt atlikumu veikalā",
+            "scan_to_claim_shop_cash_label": "Skenējiet, lai saņemtu {{amount}} Iepērcieties skaidrā naudā"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Piegādi nodrošina",
+            "mixed_brands_label": "Piegādes garantija",
+            "not_delivered_by_label": "Nav piegādāts līdz {{date}}",
+            "modal_accessibility_button_label": "Piegādes solījuma detaļas"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Saņemiet savu veikala naudu",
+            "no_shop_app_label": "{{appDownloadLink}} , lai saņemtu iepirkšanās naudu",
+            "download_shop_app_label": "Lejupielādēt veikalu"
+          },
+          "details_modal": {
+            "title": "Piegādi nodrošina",
+            "modal_accessiblity_label": "Piegādes solījuma detaļas",
+            "delivery_guarantee_label": "Piegādes garantija",
+            "delivery_by_label": "Piegāde līdz {{date}}",
+            "delivery_guaranteed_by_label": "Piegādes garantija līdz {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise garantē ātru un uzticamu piegādi. Saņemiet Shop Cash, ja jūsu pasūtījums tiek piegādāts ar nokavēšanos.",
+              "may_be_eligible_not_authorized_label": "Jums, iespējams, ir tiesības saņemt iepirkšanās skaidru naudu, jo šis pasūtījums tika piegādāts ar nokavēšanos. Pierakstieties, lai skatītu sīkāku informāciju.",
+              "redeemed_label": "Jūs jau esat pieprasījis Shop Cash, jo šis pasūtījums tika piegādāts ar nokavēšanos.",
+              "expired_label": "Šim pasūtījumam nevar piemērot nokavētas piegādes prasību, jo 30 dienu garantijas termiņš ir beidzies.",
+              "no_shop_cash_label": "Šim pasūtījumam nevar iesniegt novēlotas piegādes prasību, jo tas netika apmaksāts ar Shop Pay.",
+              "no_longer_guaranteed_label": "Šīm precēm vairs netiek piemērota piegādes garantija.",
+              "claim_shop_cash_title": "Skenējiet, lai saņemtu {{amount}} veikalā Shop Cash",
+              "claim_shop_cash_description": "Savu iepirkšanās naudu varat izmantot turpmākiem pirkumiem lietotnē Veikals."
+            }
+          }
+        }
       },
       "list_layout_accessibility_label": "Izkārtojuma opcijas",
       "list_title_with_pending_orders": "Pasūtījumi:",
@@ -2400,7 +2533,14 @@
       "list_title_pending_orders_accessibility_label": "Pasūtījumi: gaida apstiprinājumu",
       "switch_order_type_pending_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti neapstiprinātie pasūtījumi",
       "switch_order_type_confirmed_orders_accessibility_label": "Mainīt pasūtījuma veidu, pašlaik tiek skatīti apstiprinātie pasūtījumi",
-      "group_title_label_with_parent": "Priekš: {{groupTitle}}"
+      "group_title_label_with_parent": "Priekš: {{groupTitle}}",
+      "status_mark_as_delivered": "Atzīmēt kā piegādātu",
+      "fulfillment_status_title": "Izpildes statuss: {{status}}",
+      "buy_again": "Pirkt vēlreiz",
+      "buy_again_accessibility_label": "Pirkt vēlreiz pasūtījumam {{orderId}}",
+      "manage": "Pārvaldīt",
+      "manage_accessiblity_label": "Pārvaldīt pasūtījumu {{orderId}}",
+      "group_title_label": "Daļa no: {{groupTitle}}"
     },
     "date": {
       "humanize": {
