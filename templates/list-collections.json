@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-collections",
+      "type": "collections",
       "settings": {}
     }
   },

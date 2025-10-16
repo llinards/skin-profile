@@ -174,7 +174,7 @@
       }
     },
     "template_collections_ange6V": {
-      "type": "template-collections",
+      "type": "collections",
       "name": "Produkti",
       "settings": {
         "grid_item_width": "collections--full",
