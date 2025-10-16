@@ -2148,6 +2148,29 @@
           "text": "Maksājumi ar kredītkarti un debetkarti pašlaik nav pieejami.",
           "link_text": "Atsvaidzināt šo lapu",
           "suffix": "vai mēģiniet vēlreiz vēlāk."
+        },
+        "card_number_label": "Kartes numurs",
+        "card_number_placeholder": "Kartes numurs",
+        "name_on_card_label": "Vārds uz kartes",
+        "name_on_card_placeholder": "Vārds uz kartes",
+        "card_expiry_label": "Derīguma termiņš (MM/GG)",
+        "card_expiry_placeholder": "Derīguma termiņš (MM/GG)",
+        "card_verification_value_label": "Drošības kods",
+        "card_verification_value_placeholder": "Drošības kods",
+        "card_start_label": "Izdošanas datums (MM/GG)",
+        "card_start_placeholder": "Izdošanas datums (MM/GG)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Vairāk informācijas",
+          "card_verification_value_explanation_amex": "4 ciparu drošības kods jūsu kartes priekšpusē",
+          "card_verification_value_explanation_other": "3 ciparu drošības kods jūsu kartes aizmugurē",
+          "card_verification_value_explanation": "Trīsciparu drošības kods, kas parasti atrodas kartes aizmugurē. American Express kartēm ir četrciparu kods, kas atrodas priekšpusē.",
+          "card_security_notice": "Visi darījumi ir droši un šifrēti."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Ievadiet savu vārdu tieši tā, kā tas ir rakstīts jūsu kartē",
+          "credit_card_number_invalid": "Ievadiet derīgu kartes numuru",
+          "credit_card_expiry_invalid": "Ievadiet derīgu kartes derīguma termiņu",
+          "credit_card_verification_value_blank": "Ievadiet CVV vai drošības kodu uz savas kartes"
         }
       },
       "payment_delete": {
@@ -2188,6 +2211,109 @@
           "missing_billing_address_error_message": "Lūdzu, norādiet norēķinu adresi",
           "default_checkbox": "Iestatīt kā noklusējuma maksājuma veidu"
         }
+      },
+      "delete_payment_method_button_accessibility_label": "Dzēst {{paymentMethodName}}",
+      "back_button": "Atpakaļ",
+      "back_button_accessibility_label": "Atpakaļ uz {{paymentMethodStepTitle}}",
+      "default": "Noklusējuma",
+      "generic_card": "Karte",
+      "expiration_warning_button_accessibility_label": "Rādīt brīdinājumu par derīguma termiņa beigām maksājumam {{paymentMethodName}} kas beidzas ar {{lastDigits}}",
+      "expires_soon": "Šīs kartes derīguma termiņš drīz beigsies",
+      "expired": "Šīs kartes derīguma termiņš ir beidzies",
+      "card_update_consent": "Šī maksājuma metode tiks saglabāta turpmākajiem pirkumiem.",
+      "card_update_consent_subscriptions": "Šī maksājuma metode tiks saglabāta turpmākajiem pirkumiem un to varēs izmantot jebkuram atkārtotam vai atliktam pirkumam.",
+      "digital_wallet_title": "Digitālais maks",
+      "credit_or_debit_card_title": "Kredītkarte vai debetkarte",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Pievienot Google Pay maksājuma veidu",
+        "loading_accessibility_message": "Notiek Google Pay ielāde",
+        "loading": "Notiek Google Pay ielāde",
+        "errors": {
+          "generic": "Radās problēma ar Google Pay. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+          "missing_billing_address": "Pakalpojumam Google Pay ir nepieciešama norēķinu adrese. Lūdzu, pievienojiet to savam kontam."
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "Pievienot PayPal maksājuma metodi",
+        "loading_accessibility_message": "Notiek PayPal ielāde"
+      },
+      "apple_pay": {
+        "loading": "Apple Pay ielāde",
+        "errors": {
+          "generic": "Radās problēma ar Apple Pay. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu.",
+          "not_available": "Apple Pay nav pieejams šajā ierīcē.",
+          "missing_billing_address": "Pakalpojumam Apple Pay ir nepieciešama norēķinu adrese. Lūdzu, pievienojiet to savam kontam."
+        }
+      },
+      "store_credit": {
+        "label": "Veikala kredīts",
+        "accesibility_label": "Veikala kredīts — {{formattedBalance}}",
+        "expirable_amounts_button": "Skatīt derīguma termiņu ierobežojošās summas",
+        "expirable_amounts_label": "Derīguma termiņa summas",
+        "details_modal": {
+          "title": "Beidzams veikala kredīts",
+          "balance_label": "Līdzsvars",
+          "expiration_date_label": "Derīguma termiņš",
+          "amount_label": "Summa",
+          "date_label": "Datums",
+          "event_label": "Pasākums",
+          "events": {
+            "adjustment": "Pielāgošana",
+            "order_payment": "Pasūtījuma apmaksa",
+            "order_refund": "Pasūtījuma atmaksa",
+            "payment_failure": "Maksājuma kļūme",
+            "payment_returned": "Maksājums atgriezts",
+            "order_cancellation": "Pasūtījuma atcelšana",
+            "tax_finalization": "Nodokļu deklarācijas pabeigšana"
+          },
+          "expirable_balance_info": "Daļa no jūsu atlikuma beigsies nākotnē",
+          "expirable_amount_label": "Kopējā derīguma termiņa summa",
+          "expirable_amounts_info": "Summas, kuru derīguma termiņš beidzas ātrāk, vispirms tiek piemērotas norēķinoties.",
+          "expirable_amounts_button": "Skatīt",
+          "expired_amounts_button": "Skatīt summas, kas ir beigušās",
+          "pagination": {
+            "load_more_label": "Ielādēt vairāk",
+            "load_more_accessibility_label": "Ielādēt vairāk derīguma termiņu summu"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "Maksājuma metodes informācija",
+        "credit_card_details_accessibility_label": "beidzas ar {{lastDigits}}",
+        "billing_title": "Rēķina adrese",
+        "card_info_title": "Kartes informācija",
+        "payment_method_expiring_on": "Derīguma termiņš beidzas {{expiryDate}}",
+        "payment_method_expired_on": "Derīguma termiņš beidzās {{expiryDate}}",
+        "preauthorized_payments": "Iepriekš autorizēti maksājumi",
+        "close_payment_modal": "Aizvērt",
+        "close_payment_modal_accessibility_label": "Aizvērt maksājuma veida informācijas modālo logu",
+        "payment_method_not_found_error": "Nevar atrast maksājuma veidu",
+        "payment_details_loading": "Notiek maksājuma veida informācijas ielāde",
+        "pre_authorized_payments": "Iepriekš autorizēti maksājumi",
+        "total_amount_of_subscription_line_items_left": "un vēl {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "Kopā {{totalItems}} vienības, tiek rādītas {{totalItemsToDisplay}} vienības.",
+        "next_payment_due": "Nākamais maksājums jāveic {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Rediģēt",
+        "edit_payment_method_button_accessibility_label": "Rediģēt maksājuma veidu, kas beidzas ar {{lastDigits}}",
+        "loading_shop_pay": "Notiek veikala maksājuma ielāde",
+        "invalid_payment_method": "Nederīga maksājuma metode",
+        "invalid_payment_method_message": "Lai turpinātu saņemt gaidāmos pasūtījumus, izmantojiet jaunu kredītkarti.",
+        "replace_payment_method": "Aizstāt maksājuma veidu",
+        "checkout_card_banner": "Šo maksājuma veidu var izmantot tikai iepriekš autorizētiem maksājumiem. Tas netiks parādīts norēķinoties, ja esat pierakstījies šajā veikalā. ",
+        "default_checkbox": "Iestatīt kā noklusējuma vērtību",
+        "default_checkbox_accessibility_label": "Iestatīt šo maksājuma veidu kā noklusējuma maksājuma veidu",
+        "replace_payment_method_button": "Aizstāt"
+      },
+      "edit_payment_method": {
+        "title": "Rediģēt maksājuma veidu",
+        "save_payment_method_button": "Saglabāt",
+        "cancel_edit_payment_method_button": "Atcelt",
+        "payment_method_updated_toast": "Maksājuma metode ir atjaunināta",
+        "billing_address": "Rēķina adrese",
+        "billing_address_add_new": "Pievienot jaunu",
+        "billing_address_choose_from_list": "Izvēlieties no saraksta",
+        "future_purchases_notice": "Šī maksājuma metode tiks saglabāta turpmākajiem pirkumiem.",
+        "generic_error": "Atjaunināšanas laikā radās problēma. Lūdzu, mēģiniet vēlreiz."
       }
     },
     "payment_method_brands": {
