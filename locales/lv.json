@@ -821,6 +821,88 @@
         "address_generic_blank": "Obligāti aizpildāms lauks",
         "address_generic_invalid": "Nederīgs ieraksts",
         "address_generic_error": "Lauka kļūda"
+      },
+      "wallets": {
+        "errors": {
+          "missing": {
+            "address2": "Ieejiet dzīvoklī, apartamentā utt.",
+            "billing_address2": "Ievadiet norēķinu adresi — dzīvokli, apartamentu utt.",
+            "city": "Ievadiet pilsētu",
+            "billing_city": "Ievadiet norēķinu adreses pilsētu",
+            "province": "Izvēlieties štatu/provinci",
+            "billing_province": "Izvēlieties norēķinu adresi štatā/provincē",
+            "country": "Atlasiet valsti/reģionu",
+            "zip": "Ievadiet pasta indeksu",
+            "billing_zip": "Ievadiet norēķinu adresi un pasta indeksu",
+            "phone": "Ievadiet tālruņa numuru",
+            "contact_info": "Ievadiet kontaktinformāciju"
+          },
+          "formatting": {
+            "name_contains_emojis": "Dzēsiet emocijzīmi no sava vārda",
+            "postal_code_contains_emoji": "Dzēsiet emocijzīmi no pasta indeksa",
+            "first_name_too_long": "Vārds satur pārāk daudz burtu",
+            "last_name_too_long": "Uzvārds satur pārāk daudz burtu",
+            "address_too_long": "Adreses rinda ir pārāk gara"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Jūsu piegādes adrese nav derīga. Izvēlieties citu adresi vai izmantojiet jaunu."
+        },
+        "scrim": {
+          "continue_purchase_in_window": "Turpiniet pirkumu {{walletName}} logā",
+          "and_return_to_checkout": "un atgriezties pie norēķināšanās",
+          "cancel": "Atcelt"
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Samaziniet piezīmes lielumu līdz 5000 vai mazāk rakstzīmēm."
+      },
+      "offsite_payment_failed": {
+        "payment_not_processed_title": "Maksājums neizdevās",
+        "payment_not_processed_text": "Mēģiniet vēlreiz noskenēt QR kodu. Ja tas joprojām nedarbojas, informējiet mūsu darbiniekus un izmēģiniet citu maksājuma veidu.",
+        "payment_link_expired_title": "Maksājuma saite ir beigusies",
+        "payment_link_expired_text": "Mēģiniet vēlreiz skenēt QR kodu."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Dāvanu kartes cenai jābūt lielākai par 0.",
+            "gift_card_price_must_not_exceed_limit": "Dāvanu kartes cena nedrīkst pārsniegt %{gift_card_limit}.",
+            "subtotal_limit_reached": "Ir sasniegta rindu vienību maksimālā vērtība.",
+            "signature_mismatch": "Preces paraksta neatbilstība rindai %{stable_id}."
+          }
+        }
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "Norēķinā ir tikai attālināti iegādātas preces. Lai pabeigtu norēķināšanos, ir nepieciešama pāradresācija uz attālinātu veikalu.",
+          "currency_mismatch": "Šo preci nevar pievienot jūsu grozam, jo ​​tā ir no veikala, kurā tiek izmantota cita valūta.",
+          "max_remote_shops_exceeded": "Šo produktu nevar pievienot, jo jūsu grozā jau ir maksimālais daudzums no citiem veikaliem."
+        }
+      },
+      "units": {
+        "centiliter": "kl",
+        "ounce": "unces",
+        "pound": "mārciņas",
+        "fluid_ounce": "šķidrās unces",
+        "pint": "punkts",
+        "quart": "kvotu",
+        "gallon": "meitene",
+        "inch": "iekšā",
+        "foot": "pēdas",
+        "yard": "jards",
+        "item": "prece"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Adrese pašreizējai dalībai netiek atbalstīta.",
+        "items_split_across_locations_unsupported": "Jūsu pasūtījumam nav pieejama galvenā piegāde. Jūsu piegādes iespējas ir atjauninātas."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Dodieties uz tiešsaistes veikalu"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Vairāk informācijas par %{context}",
+        "additional_payment_methods": "Papildu maksājuma metodes"
       }
     },
     "notices": {
@@ -976,6 +1058,65 @@
         "two_to_four_hours": "Parasti gatavs 4 stundu laikā",
         "immediately": "Gatavs saņemšanai tūlīt"
       }
+    },
+    "pagination": {
+      "previous": "Iepriekšējais",
+      "next": "Nākamais"
+    },
+    "links": {
+      "powered_by_shopify": "Darbojas ar Shopify",
+      "learn_more": "Uzziniet vairāk"
+    },
+    "feed": {
+      "more": "Vairāk"
+    },
+    "attributes": {
+      "email": "e-pasts",
+      "password": "parole",
+      "password_confirmation": "Paroles apstiprināšana",
+      "first_name": "vārds",
+      "last_name": "uzvārds",
+      "body": "ķermenis",
+      "signature": "Adrese"
+    },
+    "addresses": {
+      "zip_code": "Pasta indekss",
+      "postal_code": "Pasta indekss",
+      "postcode": "Pasta indekss",
+      "pincode": "Pasta indekss",
+      "region": "Reģions",
+      "prefecture": "Prefektūra",
+      "state": "Štats",
+      "state_and_territory": "Štats/teritorija",
+      "county": "Apgabals",
+      "emirate": "Emirāts",
+      "governorate": "Guberņa",
+      "confirm": "Vai tiešām vēlaties dzēst šo adresi?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Piedāvātais",
+        "best_selling": "Vislabāk pārdotais",
+        "az": "Alfabētiskā secībā, AZ",
+        "za": "Alfabētiskā secībā, ZA",
+        "price_ascending": "Cena, no zemākās uz augstāko",
+        "price_descending": "Cena no augstākās uz zemāko",
+        "date_ascending": "Datums, no veca līdz jaunam",
+        "date_descending": "Datums, no jauna uz veco"
+      }
+    },
+    "errors": {
+      "blank": "nevar būt tukšs",
+      "blocked_address": "Šī atrašanās vieta netiek atbalstīta",
+      "credit_card_session_expired": "Kredītkartes autorizācijas termiņš ir beidzies, lūdzu, vēlreiz ievadiet maksājuma informāciju. No jūsu kartes nav iekasēta maksa.",
+      "empty": "nevar būt tukšs",
+      "invalid_email": "jābūt derīgai e-pasta adresei",
+      "discount_disabled": "Šī atlaide ir atspējota",
+      "discount_expired": "Šī atlaide vairs nav derīga",
+      "discount_limit_reached": "Šī atlaide ir sasniegusi savu izmantošanas ierobežojumu",
+      "discount_not_found": "Nevar atrast derīgu atlaidi, kas atbilst ievadītajam kodam.",
+      "customer_already_used_once_per_customer_discount_notice": "Šī atlaide ir sasniegusi savu izmantošanas ierobežojumu",
+      "gift_card_already_applied": "Kods jau ir piemērots jūsu norēķināšanās procesam"
     }
   },
   "customer_accounts": {
