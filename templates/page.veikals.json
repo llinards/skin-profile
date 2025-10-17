@@ -177,7 +177,16 @@
       "type": "collection",
       "name": "Produkti",
       "settings": {
-        "heading": "Produkti"
+        "custom_title": "",
+        "products_per_page": 12
+      }
+    },
+    "template_contact_us_8Nx3bz": {
+      "type": "template-contact-us",
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Virsraksts šeit",
+        "text": "<p>Jūsu teksts šeit.</p>"
       }
     }
   },
@@ -186,6 +195,7 @@
     "template_header_carousel_HgcMyT",
     "template_partners_brands_jywALt",
     "template_store_categories_Nap3ey",
-    "collection_3azwEE"
+    "collection_3azwEE",
+    "template_contact_us_8Nx3bz"
   ]
 }
