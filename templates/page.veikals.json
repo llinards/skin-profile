@@ -181,12 +181,52 @@
         "products_per_page": 12
       }
     },
-    "template_contact_us_8Nx3bz": {
+    "template_contact_us_TzFggr": {
       "type": "template-contact-us",
+      "blocks": {
+        "button_Fmg8Xn": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_WhGfeL": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt epastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_DM6FeB": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/#",
+            "new_tab": true
+          }
+        },
+        "button_8hdbQw": {
+          "type": "button",
+          "settings": {
+            "text": "Whatsapp",
+            "url": "https://wa.me/+37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_Fmg8Xn",
+        "button_WhGfeL",
+        "button_DM6FeB",
+        "button_8hdbQw"
+      ],
       "name": "Kontaktu sadaļa",
       "settings": {
-        "heading": "Virsraksts šeit",
-        "text": "<p>Jūsu teksts šeit.</p>"
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
     }
   },
@@ -196,6 +236,6 @@
     "template_partners_brands_jywALt",
     "template_store_categories_Nap3ey",
     "collection_3azwEE",
-    "template_contact_us_8Nx3bz"
+    "template_contact_us_TzFggr"
   ]
 }
