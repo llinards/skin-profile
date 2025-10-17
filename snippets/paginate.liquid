@@ -1,8 +1,8 @@
 {% if paginate.pages > 0 %}
-  <nav class="flex justify-center my-8" role="navigation">
+  <nav class="flex justify-center py-12 space-x-6" role="navigation">
     {% if paginate.previous %}
       <a
-        class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+        class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
         href="{{ paginate.previous.url }}"
       >
         {{ paginate.previous.title }}
@@ -12,13 +12,13 @@
     {% for part in paginate.parts %}
       {% if part.is_link %}
         <a
-          class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+          class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
           href="{{ part.url }}"
         >
           {{ part.title }}
         </a>
       {% else %}
-        <span class="border border-gray-600 text-gray-500 bg-gray-400  px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200">
+        <span class="bg-sp-light-brown px-6 py-3 rounded-xl transition-all duration-200">
           {{ part.title }}
         </span>
       {% endif %}
@@ -26,7 +26,7 @@
 
     {% if paginate.next %}
       <a
-        class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+        class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
         href="{{ paginate.next.url }}"
       >
         {{ paginate.next.title }}
@@ -48,7 +48,7 @@
         const pagination = this.$refs.pagination;
         if (!pagination) return;
 
-        const links = pagination.querySelectorAll('a');
+        const links = pagination.querySelectorAll('a.pagination-link');
         links.forEach((link) => {
           link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -59,6 +59,8 @@
 
       async loadPage(url) {
         if (this.loading) return;
+
+        // Start loading state
         this.loading = true;
 
         try {
@@ -66,6 +68,9 @@
           const html = await response.text();
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, 'text/html');
+
+          // Add a small delay for smooth transition (optional)
+          await new Promise((resolve) => setTimeout(resolve, 300));
 
           // Update product grid
           const newGrid = doc.querySelector('[x-ref="productGrid"]');
@@ -83,13 +88,19 @@
           // Update URL without refresh
           window.history.pushState({}, '', url);
 
-          // Scroll to top of products
-          this.$el.scrollIntoView({ behavior: 'smooth' });
+          // Smooth scroll to top of products
+          this.$refs.productGrid.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
         } catch (error) {
           console.error('Failed to load page:', error);
+          // Show error message (optional)
+          alert('Failed to load products. Please try again.');
           // Fallback to regular navigation
           window.location.href = url;
         } finally {
+          // End loading state
           this.loading = false;
         }
       },

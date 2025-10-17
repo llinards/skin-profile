@@ -34,6 +34,10 @@
         background-color: #E6DAC8;
     }
 
+    .bg-sp-light-brown-opacity {
+        background-color: #E6DAC84D;
+    }
+
     .hover\:bg-sp-brown:hover {
         background-color: #885642 !important;
     }
