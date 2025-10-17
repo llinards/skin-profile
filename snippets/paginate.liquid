@@ -60,7 +60,6 @@
       async loadPage(url) {
         if (this.loading) return;
 
-        // Start loading state
         this.loading = true;
 
         try {
@@ -69,38 +68,33 @@
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, 'text/html');
 
-          // Add a small delay for smooth transition (optional)
           await new Promise((resolve) => setTimeout(resolve, 300));
 
-          // Update product grid
           const newGrid = doc.querySelector('[x-ref="productGrid"]');
           if (newGrid) {
             this.$refs.productGrid.innerHTML = newGrid.innerHTML;
           }
 
-          // Update pagination
           const newPagination = doc.querySelector('[x-ref="pagination"]');
           if (newPagination && this.$refs.pagination) {
             this.$refs.pagination.innerHTML = newPagination.innerHTML;
             this.attachPaginationListeners();
           }
 
-          // Update URL without refresh
           window.history.pushState({}, '', url);
 
-          // Smooth scroll to top of products
-          this.$refs.productGrid.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
+          // Scroll to products section by ID
+          const productsSection = document.getElementById('products');
+          if (productsSection) {
+            productsSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
         } catch (error) {
           console.error('Failed to load page:', error);
-          // Show error message (optional)
-          alert('Failed to load products. Please try again.');
-          // Fallback to regular navigation
           window.location.href = url;
         } finally {
-          // End loading state
           this.loading = false;
         }
       },

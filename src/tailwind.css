@@ -45,6 +45,10 @@
     .bg-sp-brown-30 {
         background-color: rgb(136 86 66 / 0.3);
     }
+
+    .text-2xs {
+        font-size: 10px;
+    }
 }
 
 @layer base {
@@ -95,10 +99,6 @@
 
     h2 {
         @apply text-3xl md:text-5xl;
-    }
-
-    a {
-        @apply text-base;
     }
 
     body {
