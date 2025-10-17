@@ -365,6 +365,9 @@
   .inline-block {
     display: inline-block;
   }
+  .aspect-\[3\/4\] {
+    aspect-ratio: 3/4;
+  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
@@ -379,17 +382,38 @@
   .h-18 {
     height: calc(var(--spacing) * 18);
   }
+  .h-30 {
+    height: calc(var(--spacing) * 30);
+  }
   .h-36 {
     height: calc(var(--spacing) * 36);
+  }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-108 {
     height: calc(var(--spacing) * 108);
   }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
   .h-126 {
     height: calc(var(--spacing) * 126);
+  }
+  .h-156 {
+    height: calc(var(--spacing) * 156);
+  }
+  .h-178 {
+    height: calc(var(--spacing) * 178);
+  }
+  .h-180 {
+    height: calc(var(--spacing) * 180);
   }
   .h-192 {
     height: calc(var(--spacing) * 192);
@@ -435,6 +459,9 @@
   }
   .max-w-none {
     max-width: none;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -564,6 +591,12 @@
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
+  .gap-x-12 {
+    column-gap: calc(var(--spacing) * 12);
+  }
+  .gap-x-120 {
+    column-gap: calc(var(--spacing) * 120);
+  }
   .space-x-2 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -686,6 +719,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .object-bottom {
+    object-position: bottom;
+  }
   .object-bottom-right {
     object-position: right bottom;
   }
@@ -721,6 +757,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);

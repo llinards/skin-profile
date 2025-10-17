@@ -4,13 +4,13 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
 <div
-  class="container mx-auto px-4 pb-12 relative"
+  class="container mx-auto px-4 pb-12 relative transition-hide"
   x-data="collectionPagination()"
   x-init="init()"
 >
-  <h2 class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
+  <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
-  {% paginate collections.all.products by 4 %}
+  {% paginate collections.all.products by 12 %}
     <!-- Collection-only loading overlay -->
     <div
       x-show="loading"
@@ -33,38 +33,13 @@
     <div class="relative">
       <!-- Product grid -->
       <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 transition-opacity duration-300"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 transition-opacity duration-300 h-full"
         x-ref="productGrid"
         :class="{ 'opacity-30': loading }"
       >
         {% for product in collections.all.products %}
-          <div class="flex flex-col product-card">
-            {% if product.featured_image %}
-              {% render 'image',
-                image: product.featured_image,
-                url: product.url,
-                width: 400,
-                height: 400,
-                class: 'product-image'
-              %}
-            {% endif %}
-            <div class="flex flex-col space-y-3 items-center justify-center p-4">
-              <h3 class="body-font text-center text-sm font-bold">{{ product.title | escape }}</h3>
-              <p class="font-semibold text-lg">{{ product.price | money }}</p>
-
-              <form action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
-                {% if product.available %}
-                  <button type="submit" class="btn-add-to-cart" :disabled="loading">
-                    {{ 'products.add_to_cart' | t | default: 'Add to Cart' }}
-                  </button>
-                {% else %}
-                  <button type="button" disabled class="btn-sold-out">
-                    {{ 'products.sold_out' | t | default: 'Sold Out' }}
-                  </button>
-                {% endif %}
-              </form>
-            </div>
+          <div class="flex flex-col justify-between">
+            {% render 'product-card', product: product %}
           </div>
         {% endfor %}
       </div>
@@ -72,7 +47,7 @@
       <!-- Pagination with loading state -->
       {% if paginate.pages > 1 %}
         <div
-          class="flex flex-row justify-center transition-opacity duration-300 mt-8"
+          class="flex flex-row justify-center mt-8"
           x-ref="pagination"
           :class="{ 'opacity-30 pointer-events-none': loading }"
         >
@@ -103,28 +78,6 @@
     }
   }
 
-  /* Product card animations */
-  .product-card {
-    transition: transform 0.2s ease, opacity 0.3s ease;
-  }
-
-  .product-card:hover:not(.loading) {
-    transform: translateY(-2px);
-  }
-
-  /* Button styles */
-  .btn-add-to-cart {
-    @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 w-full;
-  }
-
-  .btn-add-to-cart:disabled {
-    @apply opacity-50 cursor-not-allowed;
-  }
-
-  .btn-sold-out {
-    @apply bg-gray-400 text-white px-6 py-2 rounded-lg cursor-not-allowed w-full;
-  }
-
   /* Loading state for images */
   .product-image {
     transition: opacity 0.3s ease;
@@ -151,12 +104,6 @@
 {
   "name": "All Products",
   "settings": [
-    {
-      "type": "text",
-      "id": "custom_title",
-      "label": "Custom page title",
-      "info": "Leave blank to use 'All Products'"
-    },
     {
       "type": "range",
       "id": "products_per_page",
