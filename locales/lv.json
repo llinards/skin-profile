@@ -2920,5 +2920,9 @@
       },
       "show_items": "Rādīt vienumus"
     }
+  },
+  "products": {
+    "add_to_cart": "Pievienot grozam",
+    "sold_out": "Izpārdots"
   }
 }

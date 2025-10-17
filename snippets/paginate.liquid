@@ -1,0 +1,98 @@
+{% if paginate.pages > 0 %}
+  <nav class="flex justify-center my-8" role="navigation">
+    {% if paginate.previous %}
+      <a
+        class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+        href="{{ paginate.previous.url }}"
+      >
+        {{ paginate.previous.title }}
+      </a>
+    {% endif %}
+
+    {% for part in paginate.parts %}
+      {% if part.is_link %}
+        <a
+          class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+          href="{{ part.url }}"
+        >
+          {{ part.title }}
+        </a>
+      {% else %}
+        <span class="border border-gray-600 text-gray-500 bg-gray-400  px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200">
+          {{ part.title }}
+        </span>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginate.next %}
+      <a
+        class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium transition-all duration-200"
+        href="{{ paginate.next.url }}"
+      >
+        {{ paginate.next.title }}
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
+
+<script>
+  function collectionPagination() {
+    return {
+      loading: false,
+
+      init() {
+        this.attachPaginationListeners();
+      },
+
+      attachPaginationListeners() {
+        const pagination = this.$refs.pagination;
+        if (!pagination) return;
+
+        const links = pagination.querySelectorAll('a');
+        links.forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.loadPage(link.href);
+          });
+        });
+      },
+
+      async loadPage(url) {
+        if (this.loading) return;
+        this.loading = true;
+
+        try {
+          const response = await fetch(url);
+          const html = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+
+          // Update product grid
+          const newGrid = doc.querySelector('[x-ref="productGrid"]');
+          if (newGrid) {
+            this.$refs.productGrid.innerHTML = newGrid.innerHTML;
+          }
+
+          // Update pagination
+          const newPagination = doc.querySelector('[x-ref="pagination"]');
+          if (newPagination && this.$refs.pagination) {
+            this.$refs.pagination.innerHTML = newPagination.innerHTML;
+            this.attachPaginationListeners();
+          }
+
+          // Update URL without refresh
+          window.history.pushState({}, '', url);
+
+          // Scroll to top of products
+          this.$el.scrollIntoView({ behavior: 'smooth' });
+        } catch (error) {
+          console.error('Failed to load page:', error);
+          // Fallback to regular navigation
+          window.location.href = url;
+        } finally {
+          this.loading = false;
+        }
+      },
+    };
+  }
+</script>

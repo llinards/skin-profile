@@ -68,16 +68,18 @@
     {% else %}
       {% render 'cart-counter' %}
     {% endif %}
-    <div class="language-switcher">
-      {% for locale in localization.available_languages %}
-        <a
-          href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
-          class="language-link {% if locale.iso_code == localization.language.iso_code %}active{% endif %}"
-        >
-          {{ locale.endonym_name }}
-        </a>
-      {% endfor %}
-    </div>
+    {% comment %}
+      <div>
+        {% for locale in localization.available_languages %}
+          <a
+            href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
+            class="language-link {% if locale.iso_code == localization.language.iso_code %}active{% endif %}"
+          >
+            {{ locale.endonym_name }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endcomment %}
   </div>
   <div
     id="mobile-menu"
