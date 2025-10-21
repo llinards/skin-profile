@@ -1,5 +1,4 @@
-{%- comment -%} Finds the filter by the LABEL you gave it in the Search & Discovery app {%- endcomment -%}
-{%- assign vendor_filter = collection.filters | where: 'label', 'Brand' | first -%}
+{%- assign vendor_filter = collection.filters | where: 'label', 'Ražotājs' | first -%}
 
 {%- assign current_vendor = 'Ražotājs' -%}
 {%- if vendor_filter.active_values.size > 0 -%}
