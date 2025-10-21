@@ -1,5 +1,5 @@
 {%- comment -%} Find the filter by its stable param_name for robustness {%- endcomment -%}
-{%- assign vendor_filter = collection.filters | where: 'label', 'Vendor' | first -%}
+{%- assign vendor_filter = collection.filters | where: 'label', 'Ražotājs' | first -%}
 
 {%- comment -%} Use a translation key for the default text {%- endcomment -%}
 {%- assign current_vendor = 'filters.vendor_default' | t -%}

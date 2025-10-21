@@ -1,5 +1,5 @@
 {%- comment -%} Set the label based on the current store language {%- endcomment -%}
-{%- assign category_filter = collection.filters | where: 'label', 'Category' | first -%}
+{%- assign category_filter = collection.filters | where: 'label', 'Kategorija' | first -%}
 
 {%- assign current_category = 'filters.category_default' | t -%}
 {%- if category_filter.active_values.size > 0 -%}
@@ -48,8 +48,6 @@
         {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
       </a>
     {%- endfor -%}
-  {%- else -%}
-    <div class="px-4 py-2 text-sm text-gray-500">"{{ category_label }}" filtrs nav atrasts.</div>
   {%- endif -%}
 {%- endcapture -%}
 
