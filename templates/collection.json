@@ -9,12 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "collection",
-      "settings": {
-        "products_per_page": 12
-      }
-    },
     "template_header_carousel_xPWPCi": {
       "type": "template-header-carousel",
       "blocks": {
@@ -62,10 +56,66 @@
         "heading": "Profesionāla sejas kopšana tavās mājās",
         "subtext": "<p>Izvēlies dermatologu un kosmetologu ieteiktus produktus no pasaules vadošajiem zīmoliem.</p>"
       }
+    },
+    "template_partners_brands_RyzTUA": {
+      "type": "template-partners-brands",
+      "blocks": {
+        "slide_TtH8qf": {
+          "type": "slide",
+          "name": "Schramec",
+          "settings": {
+            "image": "shopify://shop_images/schramec.png",
+            "alt": "schramec_logo",
+            "url": ""
+          }
+        },
+        "slide_8Q3djx": {
+          "type": "slide",
+          "name": "Biodroga",
+          "settings": {
+            "image": "shopify://shop_images/biodroga.png",
+            "alt": "Biodroga Logo",
+            "url": ""
+          }
+        },
+        "slide_etrgf3": {
+          "type": "slide",
+          "name": "Renew",
+          "settings": {
+            "image": "shopify://shop_images/renew.png",
+            "alt": "Renew Logo",
+            "url": ""
+          }
+        },
+        "slide_R8dHRj": {
+          "type": "slide",
+          "name": "Olaplex",
+          "settings": {
+            "image": "shopify://shop_images/olaplex.png",
+            "alt": "Olaplex Logo",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_TtH8qf",
+        "slide_8Q3djx",
+        "slide_etrgf3",
+        "slide_R8dHRj"
+      ],
+      "name": "Sadarbības partneri",
+      "settings": {}
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+        "products_per_page": 12
+      }
     }
   },
   "order": [
     "template_header_carousel_xPWPCi",
+    "template_partners_brands_RyzTUA",
     "main"
   ]
 }
