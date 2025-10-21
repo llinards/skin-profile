@@ -2924,5 +2924,9 @@
   "products": {
     "add_to_cart": "Pievienot grozam",
     "sold_out": "Izpārdots"
+  },
+  "filters": {
+    "vendor_default": "Vendor",
+    "category_default": "Category"
   }
 }

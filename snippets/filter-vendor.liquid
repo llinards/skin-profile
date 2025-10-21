@@ -2,7 +2,8 @@
 {%- assign vendor_param = 'filter.v.vendor' -%}
 {%- assign vendor_filter = collection.filters | where: 'param_name', vendor_param | first -%}
 
-{%- assign current_vendor = 'Ražotājs' -%}
+{%- comment -%} Use a translation key for the default text {%- endcomment -%}
+{%- assign current_vendor = 'filters.vendor_default' | t -%}
 {%- if vendor_filter.active_values.size > 0 -%}
   {%- assign current_vendor = vendor_filter.active_values.first.label -%}
 {%- endif -%}

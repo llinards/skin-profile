@@ -61,5 +61,9 @@
   "products": {
     "add_to_cart": "Add to Cart",
     "sold_out": "Sold Out"
+  },
+  "filters": {
+    "vendor_default": "Vendor",
+    "category_default": "Category"
   }
 }

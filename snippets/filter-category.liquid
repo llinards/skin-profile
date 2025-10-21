@@ -5,7 +5,7 @@
 {%- assign category_param = 'filter.p.product_category_id' -%}
 {%- assign category_filter = collection.filters | where: 'param_name', category_param | first -%}
 
-{%- assign current_category = 'Kategorija' -%}
+{%- assign current_category = 'filters.category_default' | t -%}
 {%- if category_filter.active_values.size > 0 -%}
   {%- assign current_category = category_filter.active_values.first.label -%}
 {%- endif -%}
