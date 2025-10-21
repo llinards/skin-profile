@@ -2,7 +2,8 @@
   This snippet now ONLY uses the Search & Discovery app filter.
   It will show "not found" if the filter isn't configured correctly in the admin.
 {%- endcomment -%}
-{%- assign category_filter = collection.filters | where: 'label', 'Kategorija' | first -%}
+{%- assign category_param = 'filter.p.product_category_id' -%}
+{%- assign category_filter = collection.filters | where: 'param_name', category_param | first -%}
 
 {%- assign current_category = 'Kategorija' -%}
 {%- if category_filter.active_values.size > 0 -%}
@@ -12,7 +13,7 @@
 {%- comment -%} --- Logic to preserve OTHER active filters (like Brand) --- {%- endcomment -%}
 {%- assign other_active_filters = '' -%}
 {%- for filter in collection.filters -%}
-  {%- if filter.label != category_label and filter.active_values.size > 0 -%}
+  {%- if filter.param_name != category_param and filter.active_values.size > 0 -%}
     {%- for value in filter.active_values -%}
       {%- assign other_active_filters = other_active_filters
         | append: '&'
@@ -32,7 +33,10 @@
 
 {%- capture dropdown_content -%}
   {%- if category_filter and category_filter.values.size > 0 -%}
-    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+    <a
+      href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}"
+      class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link"
+    >
       Visas kategorijas
     </a>
     {%- for value in category_filter.values -%}
@@ -52,7 +56,7 @@
       </a>
     {%- endfor -%}
   {%- else -%}
-    <div class="px-4 py-2 text-sm text-gray-500">"{{ category_label }}" filtrs nav atrasts. Lūdzu, pārbaudiet Search & Discovery lietotni.</div>
+    <div class="px-4 py-2 text-sm text-gray-500">Kategoriju filtrs nav pieejams. (Pārbaudiet priekšskatījumu admin panelī)</div>
   {%- endif -%}
 {%- endcapture -%}
 
