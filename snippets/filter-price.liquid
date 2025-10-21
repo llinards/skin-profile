@@ -1,0 +1,32 @@
+{%- assign sort_by = collection.sort_by | default: 'manual' -%}
+
+{%- assign active_filter_params = '' -%}
+{%- for filter in collection.filters -%}
+  {%- for value in filter.active_values -%}
+    {%- assign active_filter_params = active_filter_params
+      | append: '&'
+      | append: value.param_name
+      | append: '='
+      | append: value.value
+    -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign current_sort_label = 'Kārtot pēc' -%}
+{%- case sort_by -%}
+  {%- when 'price-ascending' -%}
+    {%- assign current_sort_label = 'Cena - Augošā' -%}
+  {%- when 'price-descending' -%}
+    {%- assign current_sort_label = 'Cena - Dilstošā' -%}
+{%- endcase -%}
+
+{%- capture dropdown_content -%}
+  <a href="{{ collection.url }}?sort_by=price-ascending{{ active_filter_params }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+    Cena: Augošā
+  </a>
+  <a href="{{ collection.url }}?sort_by=price-descending{{ active_filter_params }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+    Cena: Dilstošā
+  </a>
+{%- endcapture -%}
+
+{% render 'filter', filter_text: 'Kārtot pēc', current_value: current_sort_label, dropdown_content: dropdown_content %}

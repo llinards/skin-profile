@@ -1,0 +1,61 @@
+{%- comment -%}
+  This snippet now ONLY uses the Search & Discovery app filter.
+  It will show "not found" if the filter isn't configured correctly in the admin.
+{%- endcomment -%}
+
+{%- assign category_label = 'Category' -%}
+{%- assign category_filter = collection.filters | where: 'label', category_label | first -%}
+
+{%- assign current_category = 'Kategorija' -%}
+{%- if category_filter.active_values.size > 0 -%}
+  {%- assign current_category = category_filter.active_values.first.label -%}
+{%- endif -%}
+
+{%- comment -%} --- Logic to preserve OTHER active filters (like Brand) --- {%- endcomment -%}
+{%- assign other_active_filters = '' -%}
+{%- for filter in collection.filters -%}
+  {%- if filter.label != category_label and filter.active_values.size > 0 -%}
+    {%- for value in filter.active_values -%}
+      {%- assign other_active_filters = other_active_filters
+        | append: '&'
+        | append: value.param_name
+        | append: '='
+        | append: value.value
+      -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign sort_by_param = '' -%}
+{%- if request.query.sort_by -%}
+  {%- assign sort_by_param = '&sort_by=' | append: request.query.sort_by -%}
+{%- endif -%}
+{%- comment -%} ------------------------------------------------------- {%- endcomment -%}
+
+{%- capture dropdown_content -%}
+  {%- if category_filter and category_filter.values.size > 0 -%}
+    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+      Visas kategorijas
+    </a>
+    {%- for value in category_filter.values -%}
+      {%- assign new_url = collection.url
+        | append: '?'
+        | append: value.param_name
+        | append: '='
+        | append: value.value
+        | append: other_active_filters
+        | append: sort_by_param
+      -%}
+      <a
+        href="{{ new_url }}"
+        class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+      >
+        {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
+      </a>
+    {%- endfor -%}
+  {%- else -%}
+    <div class="px-4 py-2 text-sm text-gray-500">"{{ category_label }}" filtrs nav atrasts. Lūdzu, pārbaudiet Search & Discovery lietotni.</div>
+  {%- endif -%}
+{%- endcapture -%}
+
+{% render 'filter', filter_text: 'Kategorija', current_value: current_category, dropdown_content: dropdown_content %}

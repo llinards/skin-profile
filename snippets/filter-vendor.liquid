@@ -1,0 +1,56 @@
+{%- comment -%} Finds the filter by the LABEL you gave it in the Search & Discovery app {%- endcomment -%}
+{%- assign vendor_filter = collection.filters | where: 'label', 'Brand' | first -%}
+
+{%- assign current_vendor = 'Ražotājs' -%}
+{%- if vendor_filter.active_values.size > 0 -%}
+  {%- assign current_vendor = vendor_filter.active_values.first.label -%}
+{%- endif -%}
+
+{%- comment -%} --- Logic to preserve OTHER active filters (like Category) --- {%- endcomment -%}
+{%- assign other_active_filters = '' -%}
+{%- for filter in collection.filters -%}
+  {%- if filter.label != 'Brand' and filter.active_values.size > 0 -%}
+    {%- for value in filter.active_values -%}
+      {%- assign other_active_filters = other_active_filters
+        | append: '&'
+        | append: value.param_name
+        | append: '='
+        | append: value.value
+      -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign sort_by_param = '' -%}
+{%- if request.query.sort_by -%}
+  {%- assign sort_by_param = '&sort_by=' | append: request.query.sort_by -%}
+{%- endif -%}
+
+{%- capture dropdown_content -%}
+  {%- if vendor_filter -%}
+    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+      Visi ražotāji
+    </a>
+
+    {%- for value in vendor_filter.values -%}
+      {%- assign new_url = collection.url
+        | append: '?'
+        | append: value.param_name
+        | append: '='
+        | append: value.value
+        | append: other_active_filters
+        | append: sort_by_param
+      -%}
+      <a
+        href="{{ new_url }}"
+        class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+      >
+        {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
+      </a>
+    {%- endfor -%}
+  {%- else -%}
+    <div class="px-4 py-2 text-sm text-gray-500">"Brand" filtrs nav atrasts.</div>
+  {%- endif -%}
+{%- endcapture -%}
+
+{% render 'filter', filter_text: 'Ražotājs', current_value: current_vendor, dropdown_content: dropdown_content %}

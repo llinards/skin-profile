@@ -3,15 +3,48 @@
   listing all products within a collection.
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
+<div style="background-color: #fffbe6; border: 1px solid #facc15; padding: 15px; margin-bottom: 20px; color: #713f12; font-size: 14px;">
+  <h3 style="margin: 0 0 10px; font-weight: bold; font-size: 16px;">Debug: Available Filters</h3>
+  <p>
+    Look for your category filter in this list and copy its <strong>exact</strong> label. It might be "Product
+    category", "Product type", or something else.
+  </p>
+  {% if collection.filters.size > 0 %}
+    <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
+      {% for filter in collection.filters %}
+        <li>
+          Filter Label:
+          <code style="background: #fef3c7; padding: 2px 5px; border-radius: 4px; font-family: monospace;">
+            {{- filter.label -}}
+          </code>
+          (Type: {{ filter.type }})
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p style="font-weight: bold; margin-top: 10px;">
+      No filters found. Please go to the Search & Discovery app, ensure filters for "Brand" and "Product category" are
+      added, and click Save.
+    </p>
+  {% endif %}
+</div>
+
 <div
-  class="container mx-auto px-4 pb-12 relative transition-hide"
+  class="container mx-auto px-4 pb-12 relative"
   x-data="collectionPagination()"
   x-init="init()"
 >
   <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
-  {% paginate collections.all.products by 4 %}
-    <!-- Collection-only loading overlay -->
+  <!-- Filters Container -->
+  <div class="filters-container flex flex-wrap gap-4 mb-12">
+    {% render 'filter-category' %}
+    {% render 'filter-vendor' %}
+    {% render 'filter-price' %}
+  </div>
+
+  {% paginate collection.products by 12 %}
+    <!-- Loading Overlay -->
     <div
       x-show="loading"
       x-transition:enter="transition ease-out duration-300"
@@ -20,7 +53,7 @@
       x-transition:leave="transition ease-in duration-300"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
-      class="absolute inset-x-0 top-24 bottom-0 bg-white bg-opacity-90 flex items-center justify-center z-10 rounded-lg"
+      class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-20"
       style="display: none;"
     >
       <div class="flex flex-col items-center space-y-4">
@@ -29,22 +62,28 @@
       </div>
     </div>
 
-    <!-- Product grid wrapper for relative positioning -->
+    <!-- Product Grid Wrapper -->
     <div class="relative">
-      <!-- Product grid -->
       <div
         class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
         x-ref="productGrid"
         :class="{ 'opacity-30': loading }"
       >
-        {% for product in collections.all.products %}
+        {% for product in collection.products %}
           <div class="flex flex-col justify-between space-y-3">
             {% render 'product-card', product: product %}
+          </div>
+        {% else %}
+          <div class="col-span-full text-center py-12">
+            <p class="text-gray-600">Nav atrasti produkti ar šiem filtriem.</p>
+            <a href="{{ collection.url }}" class="text-sp-brown hover:underline mt-4 inline-block filter-link"
+              >Notīrīt filtrus</a
+            >
           </div>
         {% endfor %}
       </div>
 
-      <!-- Pagination with loading state -->
+      <!-- Pagination -->
       {% if paginate.pages > 1 %}
         <div
           class="flex flex-row justify-center mt-8"
@@ -116,3 +155,53 @@
   ]
 }
 {% endschema %}
+
+<script>
+  function collectionPagination() {
+    return {
+      loading: false,
+      init() {
+        this.attachListeners();
+      },
+      attachListeners() {
+        // Use this.$el to scope listeners to this specific section
+        const container = this.$el;
+        container.querySelectorAll('a.pagination-link, a.filter-link').forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.loadPage(link.href);
+          });
+        });
+      },
+      async loadPage(url) {
+        if (this.loading) return;
+        this.loading = true;
+
+        try {
+          const response = await fetch(url);
+          const html = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+
+          // Update content and re-attach listeners
+          const newGrid = doc.querySelector('[x-ref="productGrid"]');
+          const newPagination = doc.querySelector('[x-ref="pagination"]');
+          const newFilters = doc.querySelector('.filters-container');
+
+          if (newGrid) this.$refs.productGrid.innerHTML = newGrid.innerHTML;
+          if (newPagination) this.$refs.pagination.innerHTML = newPagination.innerHTML;
+          if (newFilters) this.$el.querySelector('.filters-container').innerHTML = newFilters.innerHTML;
+
+          this.attachListeners();
+
+          window.history.pushState({}, '', url);
+        } catch (error) {
+          console.error('Failed to load page:', error);
+          window.location.href = url; // Fallback to full page reload on error
+        } finally {
+          this.loading = false;
+        }
+      },
+    };
+  }
+</script>
