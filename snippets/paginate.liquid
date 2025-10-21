@@ -42,7 +42,6 @@
 
       init() {
         this.attachPaginationListeners();
-        this.attachFilterListeners();
       },
 
       attachPaginationListeners() {
@@ -51,16 +50,6 @@
 
         const links = pagination.querySelectorAll('a.pagination-link');
         links.forEach((link) => {
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            this.loadPage(link.href);
-          });
-        });
-      },
-
-      attachFilterListeners() {
-        const filterLinks = document.querySelectorAll('a.filter-link');
-        filterLinks.forEach((link) => {
           link.addEventListener('click', (e) => {
             e.preventDefault();
             this.loadPage(link.href);
@@ -92,17 +81,9 @@
             this.attachPaginationListeners();
           }
 
-          // Update filters
-          const newFilters = doc.querySelector('.filters-container');
-          const currentFilters = document.querySelector('.filters-container');
-          if (newFilters && currentFilters) {
-            currentFilters.innerHTML = newFilters.innerHTML;
-            this.attachFilterListeners();
-          }
-
           window.history.pushState({}, '', url);
 
-          // Scroll to products section
+          // Scroll to products section by ID
           const productsSection = document.getElementById('products');
           if (productsSection) {
             productsSection.scrollIntoView({
