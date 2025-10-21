@@ -1,0 +1,43 @@
+{% assign vendor_filter = null %}
+{% for filter in collection.filters %}
+  {% if filter.param_name == 'filter.v.vendor' %}
+    {% assign vendor_filter = filter %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign current_vendor = 'Visi ražotāji' %}
+{% if vendor_filter %}
+  {% for value in vendor_filter.values %}
+    {% if value.active %}
+      {% assign current_vendor = value.label %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% capture dropdown_content %}
+  {% if vendor_filter %}
+    <!-- Clear filter -->
+    <a
+      href="{{ vendor_filter.url_to_remove }}"
+      class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if current_vendor == 'Visi ražotāji' %}bg-gray-50 font-semibold{% endif %}"
+    >
+      Visi ražotāji
+    </a>
+
+    <!-- Filter values -->
+    {% for value in vendor_filter.values %}
+      <a
+        href="{{ value.url_to_add }}"
+        class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+      >
+        {{ value.label }}
+        <span class="text-gray-500 text-xs">({{ value.count }})</span>
+      </a>
+    {% endfor %}
+  {% else %}
+    <div class="px-4 py-2 text-sm text-gray-500">Nav ražotāju</div>
+  {% endif %}
+{% endcapture %}
+
+{% render 'filter', filter_text: 'Ražotājs', current_value: current_vendor, dropdown_content: dropdown_content %}

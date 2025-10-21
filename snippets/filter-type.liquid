@@ -1,0 +1,43 @@
+{% assign type_filter = null %}
+{% for filter in collection.filters %}
+  {% if filter.param_name == 'filter.p.product_type' %}
+    {% assign type_filter = filter %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign current_type = 'Visas kategorijas' %}
+{% if type_filter %}
+  {% for value in type_filter.values %}
+    {% if value.active %}
+      {% assign current_type = value.label %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% capture dropdown_content %}
+  {% if type_filter %}
+    <!-- Clear filter -->
+    <a
+      href="{{ type_filter.url_to_remove }}"
+      class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% unless current_type == 'Visas kategorijas' %}{% endunless %}{% if current_type == 'Visas kategorijas' %}bg-gray-50 font-semibold{% endif %}"
+    >
+      Visas kategorijas
+    </a>
+
+    <!-- Filter values -->
+    {% for value in type_filter.values %}
+      <a
+        href="{{ value.url_to_add }}"
+        class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+      >
+        {{ value.label }}
+        <span class="text-gray-500 text-xs">({{ value.count }})</span>
+      </a>
+    {% endfor %}
+  {% else %}
+    <div class="px-4 py-2 text-sm text-gray-500">Nav kategoriju</div>
+  {% endif %}
+{% endcapture %}
+
+{% render 'filter', filter_text: 'Kategorija', current_value: current_type, dropdown_content: dropdown_content %}
