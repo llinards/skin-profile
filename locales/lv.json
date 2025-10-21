@@ -2926,7 +2926,7 @@
     "sold_out": "Izpārdots"
   },
   "filters": {
-    "vendor_default": "Vendor",
-    "category_default": "Category"
+    "vendor_default": "Ražotājs",
+    "category_default": "Kategorija"
   }
 }

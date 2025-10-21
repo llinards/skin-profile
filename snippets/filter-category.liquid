@@ -1,12 +1,7 @@
 {%- comment -%} Set the label based on the current store language {%- endcomment -%}
-{%- assign category_label = 'Category' -%}
-{%- if request.locale.iso_code == 'lv' -%}
-  {%- assign category_label = 'Kategorija' -%}
-{%- endif -%}
+{%- assign category_filter = collection.filters | where: 'label', 'Category' | first -%}
 
-{%- assign category_filter = collection.filters | where: 'label', category_label | first -%}
-
-{%- assign current_category = 'Kategorija' -%}
+{%- assign current_category = 'filters.category_default' | t -%}
 {%- if category_filter.active_values.size > 0 -%}
   {%- assign current_category = category_filter.active_values.first.label -%}
 {%- endif -%}
