@@ -2,9 +2,7 @@
   This snippet now ONLY uses the Search & Discovery app filter.
   It will show "not found" if the filter isn't configured correctly in the admin.
 {%- endcomment -%}
-
-{%- assign category_label = 'Category' -%}
-{%- assign category_filter = collection.filters | where: 'label', category_label | first -%}
+{%- assign category_filter = collection.filters | where: 'label', 'Kategorija' | first -%}
 
 {%- assign current_category = 'Kategorija' -%}
 {%- if category_filter.active_values.size > 0 -%}
