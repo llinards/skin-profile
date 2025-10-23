@@ -1,26 +1,36 @@
+{%- comment -%} This is a sort dropdown, not a filter. It preserves active filters. {%- endcomment -%}
 {%- assign sort_by = collection.sort_by | default: 'manual' -%}
 
+{%- comment -%}
+  --- Logic to preserve ALL active filters (Brand, Category, etc.) ---
+  We manually check the request query parameters because collection.filters can be unreliable
+  when using fallback methods in other filter snippets.
+{%- endcomment -%}
 {%- assign active_filter_params = '' -%}
-{%- for filter in collection.filters -%}
-  {%- for value in filter.active_values -%}
-    {%- assign active_filter_params = active_filter_params
-      | append: '&'
-      | append: value.param_name
-      | append: '='
-      | append: value.value
-    -%}
-  {%- endfor -%}
+{%- for param in request.query -%}
+  {%- if param.first contains 'filter.' -%}
+    {%- for value in param.last -%}
+      {%- assign active_filter_params = active_filter_params
+        | append: '&'
+        | append: param.first
+        | append: '='
+        | append: value
+      -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endfor -%}
+{%- comment -%} -------------------------------------------------------------------- {%- endcomment -%}
 
 {%- assign current_sort_label = 'Kārtot pēc' -%}
 {%- case sort_by -%}
   {%- when 'price-ascending' -%}
-    {%- assign current_sort_label = 'Cena - Augošā' -%}
+    {%- assign current_sort_label = 'Cena: Augošā' -%}
   {%- when 'price-descending' -%}
-    {%- assign current_sort_label = 'Cena - Dilstošā' -%}
+    {%- assign current_sort_label = 'Cena: Dilstošā' -%}
 {%- endcase -%}
 
 {%- capture dropdown_content -%}
+  {%- comment -%} Manually build the URL: base + sort_param + active_filters {%- endcomment -%}
   <a href="{{ collection.url }}?sort_by=price-ascending{{ active_filter_params }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
     Cena: Augošā
   </a>

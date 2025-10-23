@@ -1,22 +1,21 @@
-{%- comment -%} Find the filter by its stable param_name for robustness {%- endcomment -%}
-{%- assign vendor_filter = collection.filters | where: 'label', 'Ražotājs' | first -%}
+{%- assign vendor_param = 'filter.v.vendor' -%}
+{%- assign vendor_filter = collection.filters | where: 'param_name', vendor_param | first -%}
 
-{%- comment -%} Use a translation key for the default text {%- endcomment -%}
-{%- assign current_vendor = 'filters.vendor_default' | t -%}
+{%- assign current_vendor = 'Ražotājs' -%}
 {%- if vendor_filter.active_values.size > 0 -%}
   {%- assign current_vendor = vendor_filter.active_values.first.label -%}
 {%- endif -%}
 
-{%- comment -%} --- Logic to preserve OTHER active filters --- {%- endcomment -%}
+{%- comment -%} --- Logic to preserve OTHER active filters (like Category or Price) --- {%- endcomment -%}
 {%- assign other_active_filters = '' -%}
-{%- for filter in collection.filters -%}
-  {%- if filter.param_name != vendor_param and filter.active_values.size > 0 -%}
-    {%- for value in filter.active_values -%}
+{%- for param in request.query -%}
+  {%- if param.first contains 'filter.' and param.first != vendor_param -%}
+    {%- for value in param.last -%}
       {%- assign other_active_filters = other_active_filters
         | append: '&'
-        | append: value.param_name
+        | append: param.first
         | append: '='
-        | append: value.value
+        | append: value
       -%}
     {%- endfor -%}
   {%- endif -%}
@@ -24,12 +23,13 @@
 
 {%- assign sort_by_param = '' -%}
 {%- if request.query.sort_by -%}
-  {%- assign sort_by_param = '&sort_by=' | append: request.query.sort_by -%}
+  {%- assign sort_by_param = 'sort_by=' | append: request.query.sort_by -%}
 {%- endif -%}
+{%- comment -%} -------------------------------------------------------------------- {%- endcomment -%}
 
 {%- capture dropdown_content -%}
-  {%- if vendor_filter -%}
-    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+  {%- if vendor_filter and vendor_filter.values.size > 0 -%}
+    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{% if sort_by_param %}&{{ sort_by_param }}{% endif %}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
       Visi ražotāji
     </a>
     {%- for value in vendor_filter.values -%}
@@ -39,8 +39,10 @@
         | append: '='
         | append: value.value
         | append: other_active_filters
-        | append: sort_by_param
       -%}
+      {%- if sort_by_param -%}
+        {%- assign new_url = new_url | append: '&' | append: sort_by_param -%}
+      {%- endif -%}
       <a
         href="{{ new_url }}"
         class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"

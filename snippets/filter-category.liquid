@@ -1,21 +1,22 @@
-{%- comment -%} Set the label based on the current store language {%- endcomment -%}
-{%- assign category_filter = collection.filters | where: 'label', 'Kategorija' | first -%}
+{%- comment -%}
+  This filter manually builds a list from the 'custom.produkta_kategorija' metafield.
+  This is the most reliable method and avoids app synchronization issues.
+{%- endcomment -%}
 
-{%- assign current_category = 'filters.category_default' | t -%}
-{%- if category_filter.active_values.size > 0 -%}
-  {%- assign current_category = category_filter.active_values.first.label -%}
-{%- endif -%}
+{%- assign metafield_param = 'filter.p.metafield.custom.produkta_kategorija' -%}
 
-{%- comment -%} --- Logic to preserve OTHER active filters (like Brand) --- {%- endcomment -%}
+{%- assign current_category = 'Kategorija' -%}
+
+{%- comment -%} --- Logic to preserve OTHER active filters (like Vendor or Price) --- {%- endcomment -%}
 {%- assign other_active_filters = '' -%}
-{%- for filter in collection.filters -%}
-  {%- if filter.label != category_label and filter.active_values.size > 0 -%}
-    {%- for value in filter.active_values -%}
+{%- for param in request.query -%}
+  {%- if param.first contains 'filter.' and param.first != metafield_param -%}
+    {%- for value in param.last -%}
       {%- assign other_active_filters = other_active_filters
         | append: '&'
-        | append: value.param_name
+        | append: param.first
         | append: '='
-        | append: value.value
+        | append: value
       -%}
     {%- endfor -%}
   {%- endif -%}
@@ -23,32 +24,46 @@
 
 {%- assign sort_by_param = '' -%}
 {%- if request.query.sort_by -%}
-  {%- assign sort_by_param = '&sort_by=' | append: request.query.sort_by -%}
+  {%- assign sort_by_param = 'sort_by=' | append: request.query.sort_by -%}
 {%- endif -%}
-{%- comment -%} ------------------------------------------------------- {%- endcomment -%}
+{%- comment -%} -------------------------------------------------------------------- {%- endcomment -%}
 
 {%- capture dropdown_content -%}
-  {%- if category_filter and category_filter.values.size > 0 -%}
-    <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{{ sort_by_param }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
-      Visas kategorijas
+  {%- comment -%}
+    THE FIX IS HERE: Use collection.all_products to prevent breaking the main paginate loop.
+  {%- endcomment -%}
+  {%- assign collection_meta_values = collection.all_products | map: 'metafields' | map: 'custom' | map: 'produkta_kategorija' | uniq -%}
+
+  <a href="{{ collection.url }}?{{ other_active_filters | remove_first: '&' }}{% if sort_by_param %}&{{ sort_by_param }}{% endif %}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+    Visas kategorijas
+  </a>
+
+  {%- for meta_value in collection_meta_values -%}
+    {%- if meta_value == blank %}{% continue %}{% endif -%}
+
+    {%- assign is_active = false -%}
+    {%- if request.query[metafield_param] == meta_value -%}
+      {%- assign is_active = true -%}
+      {%- assign current_category = meta_value -%}
+    {%- endif -%}
+
+    {%- assign new_url = collection.url
+      | append: '?'
+      | append: metafield_param
+      | append: '='
+      | append: meta_value
+      | append: other_active_filters
+    -%}
+    {%- if sort_by_param -%}
+      {%- assign new_url = new_url | append: '&' | append: sort_by_param -%}
+    {%- endif -%}
+    <a
+      href="{{ new_url }}"
+      class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if is_active %}bg-gray-50 font-semibold{% endif %}"
+    >
+      {{ meta_value }}
     </a>
-    {%- for value in category_filter.values -%}
-      {%- assign new_url = collection.url
-        | append: '?'
-        | append: value.param_name
-        | append: '='
-        | append: value.value
-        | append: other_active_filters
-        | append: sort_by_param
-      -%}
-      <a
-        href="{{ new_url }}"
-        class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
-      >
-        {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
-      </a>
-    {%- endfor -%}
-  {%- endif -%}
+  {%- endfor -%}
 {%- endcapture -%}
 
 {% render 'filter', filter_text: 'Kategorija', current_value: current_category, dropdown_content: dropdown_content %}
