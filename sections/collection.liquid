@@ -3,31 +3,6 @@
   listing all products within a collection.
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
-<div style="background-color: #fffbe6; border: 1px solid #facc15; padding: 15px; margin-bottom: 20px; color: #713f12; font-size: 14px;">
-  <h3 style="margin: 0 0 10px; font-weight: bold; font-size: 16px;">Debug: Available Filters</h3>
-  <p>
-    Look for your category filter in this list and copy its <strong>exact</strong> label. It might be "Product
-    category", "Product type", or something else.
-  </p>
-  {% if collection.filters.size > 0 %}
-    <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
-      {% for filter in collection.filters %}
-        <li>
-          Filter Label:
-          <code style="background: #fef3c7; padding: 2px 5px; border-radius: 4px; font-family: monospace;">
-            {{- filter.label -}}
-          </code>
-          (Type: {{ filter.type }})
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p style="font-weight: bold; margin-top: 10px;">
-      No filters found. Please go to the Search & Discovery app, ensure filters for "Brand" and "Product category" are
-      added, and click Save.
-    </p>
-  {% endif %}
-</div>
 
 <div
   class="container mx-auto px-4 pb-12 relative"
