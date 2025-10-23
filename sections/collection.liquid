@@ -12,57 +12,8 @@
 
   <!-- Filters as Dropdowns -->
   <div class="filters-container flex flex-wrap gap-4 mb-12" x-ref="filters">
-    {% for filter in collection.filters %}
-      {% if filter.type == 'list' or filter.type == 'price_range' %}
-        {%- assign current_value = filter.label -%}
-        {%- if filter.active_values.size > 0 -%}
-          {%- assign current_value = filter.active_values.first.label -%}
-        {%- endif -%}
-
-        {%- comment -%} Build base URL preserving OTHER filters {%- endcomment -%}
-        {%- assign base_params = '' -%}
-        {%- for other_filter in collection.filters -%}
-          {%- if other_filter.param_name != filter.param_name and other_filter.active_values.size > 0 -%}
-            {%- for active_value in other_filter.active_values -%}
-              {%- assign base_params = base_params
-                | append: '&'
-                | append: active_value.param_name
-                | append: '='
-                | append: active_value.value
-              -%}
-            {%- endfor -%}
-          {%- endif -%}
-        {%- endfor -%}
-        {%- if request.query.sort_by -%}
-          {%- assign base_params = base_params | append: '&sort_by=' | append: request.query.sort_by -%}
-        {%- endif -%}
-
-        {%- comment -%} Build dropdown content {%- endcomment -%}
-        {%- capture dropdown_content -%}
-          {%- comment -%} "Clear this filter" option {%- endcomment -%}
-          <a href="{{ collection.url }}?{{ base_params | remove_first: '&' }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if filter.active_values.size == 0 %}bg-gray-50 font-semibold{% endif %}">
-            Visi {{ filter.label | downcase }}
-          </a>
-
-          {%- comment -%} Filter values - each gets a clean URL with only THIS selection {%- endcomment -%}
-          {%- for value in filter.values -%}
-            {%- assign single_select_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | append: base_params -%}
-            <a
-              href="{{ single_select_url }}"
-              class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
-            >
-              {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
-            </a>
-          {%- endfor -%}
-        {%- endcapture -%}
-
-        {% render 'filter',
-          filter_text: filter.label,
-          current_value: current_value,
-          dropdown_content: dropdown_content
-        %}
-      {% endif %}
-    {% endfor %}
+    {% render 'filters' %}
+    {% render 'filter-sort-by' %}
   </div>
 
   {% paginate collection.products by 4 %}
