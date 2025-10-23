@@ -1,87 +1,105 @@
 {% comment %}
   This section is used in the collection template to render collection page
   listing all products within a collection.
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
 
 <div
   class="container mx-auto px-4 pb-12 relative"
+  x-data="collectionFilters()"
+  x-init="init()"
 >
   <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
-  <!-- Filters Container -->
-  <div class="filters-container flex flex-wrap gap-4 mb-12">
-    {% comment %}
-      {% render 'filter-category' %}
-      {% render 'filter-vendor' %}
-      {% render 'filter-price' %}
-    {% endcomment %}
+  <!-- Filters as Dropdowns -->
+  <div class="filters-container flex flex-wrap gap-4 mb-12" x-ref="filters">
+    {% for filter in collection.filters %}
+      {% if filter.type == 'list' or filter.type == 'price_range' %}
+        {%- assign current_value = filter.label -%}
+        {%- if filter.active_values.size > 0 -%}
+          {%- assign current_value = filter.active_values.first.label -%}
+        {%- endif -%}
+
+        {%- comment -%} Build dropdown content {%- endcomment -%}
+        {%- capture dropdown_content -%}
+          {%- comment -%} "Clear" option {%- endcomment -%}
+          {%- if filter.active_values.size > 0 -%}
+            <a href="{{ filter.url_to_remove }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link">
+              Visi {{ filter.label | downcase }}
+            </a>
+          {%- endif -%}
+
+          {%- comment -%} Filter values {%- endcomment -%}
+          {%- for value in filter.values -%}
+            <a
+              href="{% if value.active %}{{ value.url_to_remove }}{% else %}{{ value.url_to_add }}{% endif %}"
+              class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+            >
+              {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
+            </a>
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {% render 'filter',
+          filter_text: filter.label,
+          current_value: current_value,
+          dropdown_content: dropdown_content
+        %}
+      {% endif %}
+    {% endfor %}
   </div>
 
-  <div
-    x-data="collectionPagination()"
-    x-init="init()"
-  >
-    {% paginate collection.products by 4 %}
-      <!-- Product Grid Wrapper -->
-      <div class="relative">
-        {%- comment -%}
-          THE FIX: Move the loading overlay inside the relative wrapper.
-          This contains the overlay so it only covers the product grid.
-        {%- endcomment -%}
-        <div
-          x-show="loading"
-          x-transition:enter="transition ease-out duration-300"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="transition ease-in duration-300"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-          class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-20"
-          style="display: none;"
-        >
-          <div class="flex flex-col items-center space-y-4">
-            <div class="loading-spinner"></div>
-            <p>Ielādē...</p>
+  {% paginate collection.products by 4 %}
+    <!-- Product Grid Wrapper -->
+    <div class="relative">
+      <div
+        x-show="loading"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-20"
+        style="display: none;"
+      >
+        <div class="flex flex-col items-center space-y-4">
+          <div class="loading-spinner"></div>
+          <p>Ielādē...</p>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
+        x-ref="productGrid"
+        :class="{ 'opacity-30': loading }"
+      >
+        {% for product in collection.products %}
+          <div class="flex flex-col justify-between space-y-3">
+            {% render 'product-card', product: product %}
           </div>
-        </div>
+        {% else %}
+          <div class="col-span-full text-center py-12">
+            <p class="text-gray-600">Nav atrasti produkti ar šiem filtriem.</p>
+          </div>
+        {% endfor %}
+      </div>
 
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
-          x-ref="productGrid"
-          :class="{ 'opacity-30': loading }"
-        >
-          {% for product in collection.products %}
-            <div class="flex flex-col justify-between space-y-3">
-              {% render 'product-card', product: product %}
-            </div>
-          {% else %}
-            <div class="col-span-full text-center py-12">
-              <p class="text-gray-600">Nav atrasti produkti ar šiem filtriem.</p>
-              <a href="{{ collection.url }}" class="text-blue-600 hover:underline mt-4 inline-block filter-link"
-                >Notīrīt filtrus</a
-              >
-            </div>
-          {% endfor %}
-        </div>
-
-        <!-- Pagination -->
+      <!-- Pagination -->
+      <div x-ref="pagination">
         {% if paginate.pages > 1 %}
           <div
             class="flex flex-row justify-center mt-8"
-            x-ref="pagination"
             :class="{ 'opacity-30 pointer-events-none': loading }"
           >
             {% render 'paginate', paginate: paginate %}
           </div>
         {% endif %}
       </div>
-    {% endpaginate %}
-  </div>
+    </div>
+  {% endpaginate %}
 </div>
 
 {% stylesheet %}
-  /* Loading spinner animation */
   .loading-spinner {
     width: 40px;
     height: 40px;
@@ -97,27 +115,6 @@
     }
     100% {
       transform: rotate(360deg);
-    }
-  }
-
-  /* Loading state for images */
-  .product-image {
-    transition: opacity 0.3s ease;
-  }
-
-  /* Skeleton loader for product cards (optional) */
-  .skeleton {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: loading 1.5s infinite;
-  }
-
-  @keyframes loading {
-    0% {
-      background-position: 200% 0;
-    }
-    100% {
-      background-position: -200% 0;
     }
   }
 {% endstylesheet %}
@@ -140,31 +137,23 @@
 {% endschema %}
 
 <script>
-  function collectionPagination() {
+  function collectionFilters() {
     return {
       loading: false,
 
       init() {
-        this.attachPaginationListeners();
-      },
-
-      attachPaginationListeners() {
-        const pagination = this.$refs.pagination;
-        if (!pagination) return;
-
-        const links = pagination.querySelectorAll('a.pagination-link');
-        links.forEach((link) => {
-          link.addEventListener('click', (e) => {
+        // Use event delegation for pagination links AND filter links
+        this.$el.addEventListener('click', (e) => {
+          const link = e.target.closest('a.pagination-link, a.filter-link');
+          if (link) {
             e.preventDefault();
             this.loadPage(link.href);
-          });
+          }
         });
       },
 
       async loadPage(url) {
         if (this.loading) return;
-
-        // Start loading state
         this.loading = true;
 
         try {
@@ -172,9 +161,6 @@
           const html = await response.text();
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, 'text/html');
-
-          // Add a small delay for smooth transition (optional)
-          await new Promise((resolve) => setTimeout(resolve, 300));
 
           // Update product grid
           const newGrid = doc.querySelector('[x-ref="productGrid"]');
@@ -186,25 +172,26 @@
           const newPagination = doc.querySelector('[x-ref="pagination"]');
           if (newPagination && this.$refs.pagination) {
             this.$refs.pagination.innerHTML = newPagination.innerHTML;
-            this.attachPaginationListeners();
           }
 
-          // Update URL without refresh
+          // Update filters to show new active state
+          const newFilters = doc.querySelector('[x-ref="filters"]');
+          if (newFilters && this.$refs.filters) {
+            this.$refs.filters.innerHTML = newFilters.innerHTML;
+          }
+
+          // Update URL
           window.history.pushState({}, '', url);
 
-          // Smooth scroll to top of products
-          {% comment %} this.$refs.productGrid.scrollIntoView({
+          // Scroll to products
+          document.querySelector('#products')?.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
-          }); {% endcomment %}
+          });
         } catch (error) {
           console.error('Failed to load page:', error);
-          // Show error message (optional)
-          alert('Failed to load products. Please try again.');
-          // Fallback to regular navigation
           window.location.href = url;
         } finally {
-          // End loading state
           this.loading = false;
         }
       },
