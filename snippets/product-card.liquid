@@ -13,7 +13,7 @@
   <h3 class="body-font text-center text-xs sm:text-sm xl:text-base xl:px-6 font-bold">
     {{ product.title | escape | link_to: product.url }}
   </h3>
-
+  <p class="text-xs sm:text-sm">{{ product.price | money }}</p>
   <form class="w-full" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
     {% if product.available %}
