@@ -13,11 +13,7 @@
   <h3 class="body-font text-center text-xs sm:text-sm xl:text-base xl:px-6 font-bold">
     {{ product.title | escape | link_to: product.url }}
   </h3>
-  <p class="text-xs sm:text-sm">{{ product.price | money }}</p>
-  {%- comment -%} Renders the product's standard category {%- endcomment -%}
-  {%- if product.category -%}
-    <p class="text-sm text-gray-600">{{ product.category.name }}</p>
-  {%- endif -%}
+
   <form class="w-full" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
     {% if product.available %}
