@@ -27,7 +27,7 @@
         x-transition:leave="transition ease-in duration-300"
         x-transition:leave-start="opacity-100"
         x-transition:leave-end="opacity-0"
-        class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-20"
+        class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-5"
         style="display: none;"
       >
         <div class="flex flex-col items-center space-y-4">
@@ -152,10 +152,10 @@
           window.history.pushState({}, '', url);
 
           // Scroll to products
-          document.querySelector('#products')?.scrollIntoView({
+          {% comment %} document.querySelector('#products')?.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
-          });
+          }); {% endcomment %}
         } catch (error) {
           console.error('Failed to load page:', error);
           window.location.href = url;
