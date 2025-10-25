@@ -36,7 +36,11 @@
               | append: filter_value
             -%}
 
-            <a href="{{ category_url }}" aria-label="{{ block.settings.name | escape }}">
+            <a
+              href="{{ category_url }}"
+              aria-label="{{ block.settings.name | escape }}"
+              class="category-card"
+            >
               {%- if block.settings.photo -%}
                 <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
                   <img

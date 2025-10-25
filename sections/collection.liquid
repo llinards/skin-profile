@@ -136,11 +136,20 @@
       init() {
         this.updateSortByLabel();
 
-        this.$el.addEventListener('click', (e) => {
-          const link = e.target.closest('a.pagination-link, a.filter-link');
+        // Use document instead of this.$el to catch clicks anywhere on the page
+        document.addEventListener('click', (e) => {
+          const link = e.target.closest('a.pagination-link, a.filter-link, a.category-card');
           if (link) {
             e.preventDefault();
             this.loadPage(link.href);
+
+            // Scroll to products section after triggering the load
+            setTimeout(() => {
+              const productGridElement = document.getElementById('products');
+              if (productGridElement) {
+                productGridElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 100);
           }
         });
       },
