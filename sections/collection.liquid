@@ -109,10 +109,9 @@
     return {
       loading: false,
 
-      // NEW FUNCTION: Updates the sort-by label text based on the current URL.
       updateSortByLabel() {
         const sortLabels = {
-          manual: 'Izvēlēts',
+          manual: 'Kārtot pēc',
           'best-selling': 'Populārākie',
           'title-ascending': 'Nosaukums: A-Z',
           'title-descending': 'Nosaukums: Z-A',
@@ -121,13 +120,34 @@
           'created-ascending': 'Vecākais',
           'created-descending': 'Jaunākais',
         };
+        const activeClasses = ['bg-gray-50', 'font-semibold'];
 
         const urlParams = new URLSearchParams(window.location.search);
         const sortKey = urlParams.get('sort_by') || 'manual';
         const labelElement = document.getElementById('sort-by-label');
 
-        if (labelElement && sortLabels[sortKey]) {
-          labelElement.innerHTML = sortLabels[sortKey];
+        if (labelElement) {
+          // Part 1: Update the main button label (existing logic)
+          if (sortLabels[sortKey]) {
+            labelElement.innerHTML = sortLabels[sortKey];
+          }
+
+          // Part 2: Update the active item styling within the dropdown
+          const dropdownContainer = labelElement.closest('.relative');
+          if (dropdownContainer) {
+            const links = dropdownContainer.querySelectorAll('a.filter-link');
+            const activeLinkUrlPart = `sort_by=${sortKey}`;
+
+            links.forEach((link) => {
+              // Remove active classes from all links first
+              link.classList.remove(...activeClasses);
+
+              // Add active classes to the link that matches the current sort key
+              if (link.href.includes(activeLinkUrlPart)) {
+                link.classList.add(...activeClasses);
+              }
+            });
+          }
         }
       },
 
