@@ -26,26 +26,26 @@
 
     {%- comment -%} Build dropdown content {%- endcomment -%}
     {%- capture dropdown_content -%}
-          {%- comment -%} "Clear this filter" option {%- endcomment -%}
-          <a href="{{ collection.url }}?{{ base_params | remove_first: '&' }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if filter.active_values.size == 0 %}bg-gray-50 font-semibold{% endif %}">
-            {% if filter.label == 'Ražotājs' %}
-              Visi ražotāji
-              {% else %}
-              Visas kategorijas
-            {% endif %}
-          </a>
+      {%- comment -%} "Clear this filter" option {%- endcomment -%}
+      <a href="{{ collection.url }}?{{ base_params | remove_first: '&' }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if filter.active_values.size == 0 %}bg-gray-50 font-semibold{% endif %}">
+        {% if filter.label == 'Ražotājs' %}
+          Visi ražotāji
+        {% else %}
+          Visas kategorijas
+        {% endif %}
+      </a>
 
-          {%- comment -%} Filter values - each gets a clean URL with only THIS selection {%- endcomment -%}
-          {%- for value in filter.values -%}
-            {%- assign single_select_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | append: base_params -%}
-            <a
-              href="{{ single_select_url }}"
-              class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
-            >
-              {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
-            </a>
-          {%- endfor -%}
-        {%- endcapture -%}
+      {%- comment -%} Filter values - each gets a clean URL with only THIS selection {%- endcomment -%}
+      {%- for value in filter.values -%}
+        {%- assign single_select_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | append: base_params -%}
+          <a
+            href="{{ single_select_url }}"
+            class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
+          >
+          {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
+          </a>
+        {%- endfor -%}
+      {%- endcapture -%}
 
     {% render 'filter-dropdown',
       filter_text: filter.label,
