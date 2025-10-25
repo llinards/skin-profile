@@ -1,7 +1,15 @@
-<meta http-equiv="refresh" content="0;url={{ '/collections/all' | url }}">
-{% schema %}
-{
-  "name": "Redirect",
-  "presets": [{ "name": "Redirect" }]
-}
-{% endschema %}
+{% comment %}
+  <script>
+    if (window.location.pathname === '/collections') {
+      window.location.replace('{{ '/collections/all' }}');
+    }
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url={{ '/collections/all' }}"></noscript>
+
+  {% schema %}
+  {
+    "name": "Redirect",
+    "presets": [{ "name": "Redirect" }]
+  }
+  {% endschema %}
+{% endcomment %}
