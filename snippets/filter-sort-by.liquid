@@ -1,54 +1,38 @@
-{%- comment -%} Price Sort Dropdown {%- endcomment -%}
-{%- assign current_sort = 'Kārtot pēc' -%}
 {%- assign sort_options = 'manual,best-selling,title-ascending,title-descending,price-ascending,price-descending,created-ascending,created-descending'
   | split: ','
 -%}
 {%- assign sort_labels = 'Izvēlēts,Populārākie,Nosaukums: A-Z,Nosaukums: Z-A,Cena: Augošā,Cena: Dilstošā,Vecākais,Jaunākais'
   | split: ','
 -%}
+{%- assign selected_sort_key = request.query.sort_by | default: 'manual' -%}
 
-{%- if request.query.sort_by -%}
-  {%- for option in sort_options -%}
-    {%- if option == request.query.sort_by -%}
-      {%- assign current_sort = sort_labels[forloop.index0] -%}
-      {%- break -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endif -%}
-
-{%- comment -%} Build all active filter params (excluding sort_by) {%- endcomment -%}
 {%- assign filter_params = '' -%}
 {%- for filter in collection.filters -%}
-  {%- if filter.active_values.size > 0 -%}
-    {%- for active_value in filter.active_values -%}
-      {%- assign filter_params = filter_params
-        | append: '&'
-        | append: active_value.param_name
-        | append: '='
-        | append: active_value.value
-      -%}
-    {%- endfor -%}
-  {%- endif -%}
+  {%- for value in filter.active_values -%}
+    {%- assign filter_params = filter_params
+      | append: '&'
+      | append: value.param_name
+      | append: '='
+      | append: value.value
+    -%}
+  {%- endfor -%}
 {%- endfor -%}
 
-{%- capture sort_dropdown_content -%}
-      {%- for option in sort_options -%}
-        {%- assign sort_url = collection.url | append: '?sort_by=' | append: option | append: filter_params -%}
-        {%- assign is_active = false -%}
-        {%- if request.query.sort_by == option or request.query.sort_by == blank and option == 'manual' -%}
-          {%- assign is_active = true -%}
-        {%- endif -%}
-        <a
-          href="{{ sort_url }}"
-          class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if is_active %}bg-gray-50 font-semibold{% endif %}"
-        >
-          {{ sort_labels[forloop.index0] }}
-        </a>
-      {%- endfor -%}
-    {%- endcapture -%}
+{%- capture dropdown_content -%}
+  {%- for option in sort_options -%}
+    {%- assign sort_url = collection.url | append: '?sort_by=' | append: option | append: filter_params -%}
+    <a
+      href="{{ sort_url }}"
+      class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if selected_sort_key == option %}bg-gray-50 font-semibold{% endif %}"
+    >
+      {{ sort_labels[forloop.index0] }}
+    </a>
+  {%- endfor -%}
+{%- endcapture -%}
 
 {% render 'filter-dropdown',
-  filter_text: 'Kārtot',
-  current_value: current_sort,
-  dropdown_content: sort_dropdown_content
+  filter_text: 'Kārtot pēc',
+  current_value: 'Kārtot pēc',
+  label_id: 'sort-by-label',
+  dropdown_content: dropdown_content
 %}

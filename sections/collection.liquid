@@ -109,8 +109,31 @@
     return {
       loading: false,
 
+      // NEW FUNCTION: Updates the sort-by label text based on the current URL.
+      updateSortByLabel() {
+        const sortLabels = {
+          manual: 'Izvēlēts',
+          'best-selling': 'Populārākie',
+          'title-ascending': 'Nosaukums: A-Z',
+          'title-descending': 'Nosaukums: Z-A',
+          'price-ascending': 'Cena: Augošā',
+          'price-descending': 'Cena: Dilstošā',
+          'created-ascending': 'Vecākais',
+          'created-descending': 'Jaunākais',
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const sortKey = urlParams.get('sort_by') || 'manual';
+        const labelElement = document.getElementById('sort-by-label');
+
+        if (labelElement && sortLabels[sortKey]) {
+          labelElement.innerHTML = sortLabels[sortKey];
+        }
+      },
+
       init() {
-        // Use event delegation for pagination links AND filter links
+        this.updateSortByLabel();
+
         this.$el.addEventListener('click', (e) => {
           const link = e.target.closest('a.pagination-link, a.filter-link');
           if (link) {
@@ -125,6 +148,8 @@
         this.loading = true;
 
         try {
+          window.history.pushState({}, '', url);
+
           const response = await fetch(url);
           const html = await response.text();
           const parser = new DOMParser();
@@ -146,16 +171,8 @@
           const newFilters = doc.querySelector('[x-ref="filters"]');
           if (newFilters && this.$refs.filters) {
             this.$refs.filters.innerHTML = newFilters.innerHTML;
+            this.updateSortByLabel();
           }
-
-          // Update URL
-          window.history.pushState({}, '', url);
-
-          // Scroll to products
-          {% comment %} document.querySelector('#products')?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          }); {% endcomment %}
         } catch (error) {
           console.error('Failed to load page:', error);
           window.location.href = url;
