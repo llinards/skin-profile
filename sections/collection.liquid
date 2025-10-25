@@ -11,7 +11,7 @@
   <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
   <!-- Filters as Dropdowns -->
-  <div class="filters-container flex flex-wrap gap-4 mb-12" x-ref="filters">
+  <div class="filters-container flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filters">
     {% render 'filters' %}
     {% render 'filter-sort-by' %}
   </div>

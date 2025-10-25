@@ -1,9 +1,9 @@
 <div x-data="{ open: false }" class="relative">
   <button
     @click="open = !open"
-    class="flex py-2 px-4 items-center uppercase rounded-full border border-gray-300 w-72 justify-between cursor-pointer hover:bg-gray-50 transition-colors"
+    class="flex py-2 px-4 items-center uppercase rounded-full border border-gray-300 w-full sm:w-46 md:w-56 lg:w-72 justify-between cursor-pointer hover:bg-gray-50 transition-colors"
   >
-    <span class="tracking-wide text-sm">{{ current_value | default: filter_text }}</span>
+    <span class="tracking-wide text-xs md:text-sm">{{ current_value | default: filter_text }}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
