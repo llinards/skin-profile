@@ -178,10 +178,20 @@
             "name": "Sejas Kopšana",
             "category_name_for_filter": "Sejas Kopšana"
           }
+        },
+        "category_slide_GwBPd8": {
+          "type": "category_slide",
+          "name": "Ķermeņa kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_kopsana.jpg",
+            "name": "Ķermeņa kopšana",
+            "category_name_for_filter": "Ķermeņa kopšana"
+          }
         }
       },
       "block_order": [
-        "category_slide_zBNkrg"
+        "category_slide_zBNkrg",
+        "category_slide_GwBPd8"
       ],
       "name": "Test Karuselis",
       "settings": {
