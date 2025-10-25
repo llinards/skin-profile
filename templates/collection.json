@@ -117,10 +117,20 @@
             "name": "Sejas kopšana",
             "category_name_for_filter": "Sejas kopšana"
           }
+        },
+        "category_slide_WwWFyA": {
+          "type": "category_slide",
+          "name": "Matu kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/matu_kopsana.jpg",
+            "name": "Matu kopšana",
+            "category_name_for_filter": "Matu kopšana"
+          }
         }
       },
       "block_order": [
-        "category_slide_4CWkAw"
+        "category_slide_4CWkAw",
+        "category_slide_WwWFyA"
       ],
       "name": "Kategoriju Karuselis",
       "settings": {
