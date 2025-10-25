@@ -205,13 +205,23 @@
             "name": "Uztura bagātinātāji",
             "category_name_for_filter": "Uztura bagātinātājs"
           }
+        },
+        "category_slide_H3WGwA": {
+          "type": "category_slide",
+          "name": "Dāvanu kartes",
+          "settings": {
+            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "name": "Dāvanu kartes",
+            "category_name_for_filter": "Dāvanu kartes"
+          }
         }
       },
       "block_order": [
         "category_slide_zBNkrg",
         "category_slide_GwBPd8",
         "category_slide_aF6ntc",
-        "category_slide_3QVT9J"
+        "category_slide_3QVT9J",
+        "category_slide_H3WGwA"
       ],
       "name": "Test Karuselis",
       "settings": {
