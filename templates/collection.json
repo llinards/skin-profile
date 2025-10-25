@@ -167,6 +167,26 @@
         "heading": "Kategorijas"
       }
     },
+    "template_store_categories_test_KeAPYC": {
+      "type": "template-store-categories-test",
+      "blocks": {
+        "category_slide_zBNkrg": {
+          "type": "category_slide",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_kopsana.jpg",
+            "name": "Sejas kopšana",
+            "category_name_for_filter": "Sejas kopšana"
+          }
+        }
+      },
+      "block_order": [
+        "category_slide_zBNkrg"
+      ],
+      "name": "Test Karuselis",
+      "settings": {
+        "heading": "Shop by Category"
+      }
+    },
     "main": {
       "type": "collection",
       "settings": {
@@ -226,6 +246,7 @@
     "template_header_carousel_xPWPCi",
     "template_partners_brands_RyzTUA",
     "template_store_categories_VqpeRk",
+    "template_store_categories_test_KeAPYC",
     "main",
     "template_contact_us_QACdmJ"
   ]
