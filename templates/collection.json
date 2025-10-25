@@ -106,124 +106,23 @@
       "name": "Sadarbības partneri",
       "settings": {}
     },
-    "template_store_categories_VqpeRk": {
+    "template_store_categories_yBCVya": {
       "type": "template-store-categories",
       "blocks": {
-        "service_kF3LxR": {
-          "type": "service",
+        "category_slide_4CWkAw": {
+          "type": "category_slide",
           "name": "Sejas kopšana",
           "settings": {
             "photo": "shopify://shop_images/sejas_kopsana.jpg",
             "name": "Sejas kopšana",
-            "url": ""
-          }
-        },
-        "service_VqkP8y": {
-          "type": "service",
-          "name": "Ķermeņa kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/kermena_kopsana.jpg",
-            "name": "Ķermeņa kopšana",
-            "url": ""
-          }
-        },
-        "service_bqCtcN": {
-          "type": "service",
-          "name": "Matu kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu kopšana",
-            "url": ""
-          }
-        },
-        "service_czQ9Mj": {
-          "type": "service",
-          "name": "Uztura bagātinātāji",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
-            "name": "Uztura bagātinātāji",
-            "url": ""
-          }
-        },
-        "service_aTt6Kz": {
-          "type": "service",
-          "name": "Dāvanu kartes",
-          "settings": {
-            "photo": "shopify://shop_images/davanu_kartes.jpg",
-            "name": "Dāvanu kartes",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "service_kF3LxR",
-        "service_VqkP8y",
-        "service_bqCtcN",
-        "service_czQ9Mj",
-        "service_aTt6Kz"
-      ],
-      "name": "Veikala kategoriju sadaļa",
-      "settings": {
-        "heading": "Kategorijas"
-      }
-    },
-    "template_store_categories_test_KeAPYC": {
-      "type": "template-store-categories",
-      "blocks": {
-        "category_slide_zBNkrg": {
-          "type": "category_slide",
-          "name": "Sejas Kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/sejas_kopsana.jpg",
-            "name": "Sejas Kopšana",
             "category_name_for_filter": "Sejas kopšana"
           }
-        },
-        "category_slide_GwBPd8": {
-          "type": "category_slide",
-          "name": "Ķermeņa kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/kermena_kopsana.jpg",
-            "name": "Ķermeņa kopšana",
-            "category_name_for_filter": "Ķermeņa kopšana"
-          }
-        },
-        "category_slide_aF6ntc": {
-          "type": "category_slide",
-          "name": "Matu kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu kopšana",
-            "category_name_for_filter": "Matu kopšana"
-          }
-        },
-        "category_slide_3QVT9J": {
-          "type": "category_slide",
-          "name": "Uztura bagātinātājs",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
-            "name": "Uztura bagātinātāji",
-            "category_name_for_filter": "Uztura bagātinātājs"
-          }
-        },
-        "category_slide_H3WGwA": {
-          "type": "category_slide",
-          "name": "Dāvanu kartes",
-          "settings": {
-            "photo": "shopify://shop_images/davanu_kartes.jpg",
-            "name": "Dāvanu kartes",
-            "category_name_for_filter": "Dāvanu kartes"
-          }
         }
       },
       "block_order": [
-        "category_slide_zBNkrg",
-        "category_slide_GwBPd8",
-        "category_slide_aF6ntc",
-        "category_slide_3QVT9J",
-        "category_slide_H3WGwA"
+        "category_slide_4CWkAw"
       ],
-      "name": "Test Karuselis",
+      "name": "Kategoriju Karuselis",
       "settings": {
         "heading": "Kategorijas"
       }
@@ -286,8 +185,7 @@
   "order": [
     "template_header_carousel_xPWPCi",
     "template_partners_brands_RyzTUA",
-    "template_store_categories_VqpeRk",
-    "template_store_categories_test_KeAPYC",
+    "template_store_categories_yBCVya",
     "main",
     "template_contact_us_QACdmJ"
   ]
