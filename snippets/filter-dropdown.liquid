@@ -1,13 +1,13 @@
 <div x-data="{ open: false }" class="relative">
   <button
     @click="open = !open"
-    class="flex py-2 px-4 items-center uppercase rounded-full border border-gray-300 w-full sm:w-46 md:w-56 lg:w-72 justify-between cursor-pointer hover:bg-gray-50 transition-colors"
+    class="flex py-2 px-4 items-center uppercase sm:rounded-full border-b-1 sm:border border-gray-300 w-full sm:w-46 md:w-56 lg:w-72 justify-between cursor-pointer hover:bg-gray-50 transition-colors"
   >
     <span
       {% if label_id %}
         id="{{ label_id }}"
       {% endif %}
-      class="tracking-wide text-xs md:text-sm"
+      class="tracking-wide text-xs sm:text-sm"
     >
       {{ current_value | default: filter_text }}
     </span>
@@ -28,7 +28,7 @@
     x-show="open"
     @click.away="open = false"
     x-transition
-    class="absolute z-10 mt-2 w-72 bg-white border border-gray-300 rounded-lg shadow-lg"
+    class="w-full sm:absolute sm:z-6 sm:mt-2 sm:w-72 sm:bg-white sm:border sm:border-gray-300 sm:rounded-lg sm:shadow-lg"
     style="display: none;"
   >
     <div class="py-2 max-h-80 overflow-y-auto" @click="open = false">

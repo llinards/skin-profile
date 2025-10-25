@@ -10,30 +10,19 @@
 >
   <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
-  <!-- Filters as Dropdowns -->
-  <div class="filters-container flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filters">
-    {% render 'filters' %}
+  <!-- Filters as Dropdowns on Desktop -->
+  <div class="hidden filters-container md:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filtersDesktop">
+    {% render 'filter-regular' %}
+    {% render 'filter-sort-by' %}
   </div>
+
+  <!-- Mobile filters wrapped in a single dropdown -->
+  {% render 'mobile-filter-wrapper' %}
 
   {% paginate collection.products by 4 %}
     <!-- Product Grid Wrapper -->
     <div class="relative">
-      <div
-        x-show="loading"
-        x-transition:enter="transition ease-out duration-300"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"
-        x-transition:leave="transition ease-in duration-300"
-        x-transition:leave-start="opacity-100"
-        x-transition:leave-end="opacity-0"
-        class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-5"
-        style="display: none;"
-      >
-        <div class="flex flex-col items-center space-y-4">
-          <div class="loading-spinner"></div>
-          <p>Ielādē...</p>
-        </div>
-      </div>
+      {% render 'loading-screen' %}
 
       <div
         class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
@@ -52,16 +41,7 @@
       </div>
 
       <!-- Pagination -->
-      <div x-ref="pagination">
-        {% if paginate.pages > 1 %}
-          <div
-            class="flex flex-row justify-center mt-8"
-            :class="{ 'opacity-30 pointer-events-none': loading }"
-          >
-            {% render 'paginate', paginate: paginate %}
-          </div>
-        {% endif %}
-      </div>
+      {% render 'paginate', paginate: paginate %}
     </div>
   {% endpaginate %}
 </div>
@@ -123,26 +103,33 @@
 
         const urlParams = new URLSearchParams(window.location.search);
         const sortKey = urlParams.get('sort_by') || 'manual';
-        const labelElement = document.getElementById('sort-by-label');
 
-        if (labelElement) {
-          if (sortLabels[sortKey]) {
-            labelElement.innerHTML = sortLabels[sortKey];
+        // FIX: Select ALL elements with the ID, not just the first one.
+        const labelElements = document.querySelectorAll('#sort-by-label');
+
+        // Loop through each found element (one for desktop, one for mobile)
+        labelElements.forEach((labelElement) => {
+          if (labelElement) {
+            // Update the button's text
+            if (sortLabels[sortKey]) {
+              labelElement.innerHTML = sortLabels[sortKey];
+            }
+
+            // Update the active item styling within its dropdown
+            const dropdownContainer = labelElement.closest('.relative');
+            if (dropdownContainer) {
+              const links = dropdownContainer.querySelectorAll('a.filter-link');
+              const activeLinkUrlPart = `sort_by=${sortKey}`;
+
+              links.forEach((link) => {
+                link.classList.remove(...activeClasses);
+                if (link.href.includes(activeLinkUrlPart)) {
+                  link.classList.add(...activeClasses);
+                }
+              });
+            }
           }
-
-          const dropdownContainer = labelElement.closest('.relative');
-          if (dropdownContainer) {
-            const links = dropdownContainer.querySelectorAll('a.filter-link');
-            const activeLinkUrlPart = `sort_by=${sortKey}`;
-
-            links.forEach((link) => {
-              link.classList.remove(...activeClasses);
-              if (link.href.includes(activeLinkUrlPart)) {
-                link.classList.add(...activeClasses);
-              }
-            });
-          }
-        }
+        });
       },
 
       init() {
@@ -162,7 +149,7 @@
         this.loading = true;
 
         try {
-          // FIX: Update URL first so updateSortByLabel reads correct params
+          // Update URL first so updateSortByLabel reads correct params
           window.history.pushState({}, '', url);
 
           const response = await fetch(url);
@@ -182,19 +169,28 @@
             this.$refs.pagination.innerHTML = newPagination.innerHTML;
           }
 
-          // Update filters to show new active state
-          const newFilters = doc.querySelector('[x-ref="filters"]');
-          if (newFilters && this.$refs.filters) {
-            this.$refs.filters.innerHTML = newFilters.innerHTML;
+          // FIX: Update BOTH desktop and mobile filter containers
 
-            // FIX: Re-initialize AlpineJS on the new filter components
+          // Update DESKTOP filters
+          const newDesktopFilters = doc.querySelector('[x-ref="filtersDesktop"]');
+          if (newDesktopFilters && this.$refs.filtersDesktop) {
+            this.$refs.filtersDesktop.innerHTML = newDesktopFilters.innerHTML;
             if (window.Alpine) {
-              window.Alpine.initTree(this.$refs.filters);
+              window.Alpine.initTree(this.$refs.filtersDesktop);
             }
-
-            // Then update the sort label
-            this.updateSortByLabel();
           }
+
+          // Update MOBILE filters
+          const newMobileFilters = doc.querySelector('[x-ref="filtersMobile"]');
+          if (newMobileFilters && this.$refs.filtersMobile) {
+            this.$refs.filtersMobile.innerHTML = newMobileFilters.innerHTML;
+            if (window.Alpine) {
+              window.Alpine.initTree(this.$refs.filtersMobile);
+            }
+          }
+
+          // Then update the sort label for both views
+          this.updateSortByLabel();
         } catch (error) {
           console.error('Failed to load page:', error);
           window.location.href = url;

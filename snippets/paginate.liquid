@@ -1,36 +1,46 @@
-{% if paginate.pages > 0 %}
-  <nav class="flex justify-center py-12 space-x-6" role="navigation">
-    {% if paginate.previous %}
-      <a
-        class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
-        href="{{ paginate.previous.url }}"
-      >
-        {{ paginate.previous.title }}
-      </a>
-    {% endif %}
+<!-- Pagination -->
+<div x-ref="pagination">
+  {% if paginate.pages > 1 %}
+    <div
+      class="flex flex-row justify-center mt-8"
+      :class="{ 'opacity-30 pointer-events-none': loading }"
+    >
+      {% if paginate.pages > 0 %}
+        <nav class="flex justify-center py-12 space-x-6" role="navigation">
+          {% if paginate.previous %}
+            <a
+              class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+              href="{{ paginate.previous.url }}"
+            >
+              {{ paginate.previous.title }}
+            </a>
+          {% endif %}
 
-    {% for part in paginate.parts %}
-      {% if part.is_link %}
-        <a
-          class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
-          href="{{ part.url }}"
-        >
-          {{ part.title }}
-        </a>
-      {% else %}
-        <span class="bg-sp-light-brown px-6 py-3 rounded-xl transition-all duration-200">
-          {{ part.title }}
-        </span>
+          {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <a
+                class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
+                href="{{ part.url }}"
+              >
+                {{ part.title }}
+              </a>
+            {% else %}
+              <span class="bg-sp-light-brown px-6 py-3 rounded-xl transition-all duration-200">
+                {{ part.title }}
+              </span>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginate.next %}
+            <a
+              class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+              href="{{ paginate.next.url }}"
+            >
+              {{ paginate.next.title }}
+            </a>
+          {% endif %}
+        </nav>
       {% endif %}
-    {% endfor %}
-
-    {% if paginate.next %}
-      <a
-        class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
-        href="{{ paginate.next.url }}"
-      >
-        {{ paginate.next.title }}
-      </a>
-    {% endif %}
-  </nav>
-{% endif %}
+    </div>
+  {% endif %}
+</div>
