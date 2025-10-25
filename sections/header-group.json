@@ -16,58 +16,9 @@
       "settings": {
         "menu": ""
       }
-    },
-    "template_header_carousel_rLXPGy": {
-      "type": "template-header-carousel",
-      "blocks": {
-        "button_FQHe7D": {
-          "type": "button",
-          "settings": {
-            "text": "Iepirkties",
-            "url": "#store",
-            "style": "white"
-          }
-        },
-        "image_pCKnKX": {
-          "type": "image",
-          "name": "Biodroga Schwarzwald New Series",
-          "settings": {
-            "image": "shopify://shop_images/biodroga-schwarzwald-new-series-lg.jpg",
-            "alt_text": "Biodroga Schwarzwald New Series"
-          }
-        },
-        "image_niKhMg": {
-          "type": "image",
-          "name": "Schrammek Produkti",
-          "settings": {
-            "image": "shopify://shop_images/schrammek-produkti-lg.jpg",
-            "alt_text": "Schrammek Produkti"
-          }
-        },
-        "image_A776gk": {
-          "type": "image",
-          "name": "Biodroga Serum",
-          "settings": {
-            "image": "shopify://shop_images/biodroga-serum-lg.jpg",
-            "alt_text": "Biodroga Serum"
-          }
-        }
-      },
-      "block_order": [
-        "button_FQHe7D",
-        "image_pCKnKX",
-        "image_niKhMg",
-        "image_A776gk"
-      ],
-      "name": "Galvenes sadaļa ar karuseli",
-      "settings": {
-        "heading": "Profesionāla sejas kopšana tavās mājās",
-        "subtext": "<p>Izvēlies dermatologu un kosmetologu ieteiktus produktus no pasaules vadošajiem zīmoliem.</p>"
-      }
     }
   },
   "order": [
-    "header",
-    "template_header_carousel_rLXPGy"
+    "header"
   ]
 }
