@@ -172,6 +172,7 @@
       "blocks": {
         "category_slide_zBNkrg": {
           "type": "category_slide",
+          "name": "Sejas Kopšana",
           "settings": {
             "photo": "shopify://shop_images/sejas_kopsana.jpg",
             "name": "Sejas Kopšana",
