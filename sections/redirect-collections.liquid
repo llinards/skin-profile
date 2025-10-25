@@ -1,15 +1,13 @@
-{% comment %}
-  <script>
-    if (window.location.pathname === '/collections') {
-      window.location.replace('{{ '/collections/all' }}');
-    }
-  </script>
-  <noscript><meta http-equiv="refresh" content="0;url={{ '/collections/all' }}"></noscript>
-
-  {% schema %}
-  {
-    "name": "Redirect",
-    "presets": [{ "name": "Redirect" }]
+<script>
+  if (window.location.pathname === '/collections') {
+    window.location.replace('{{ '/collections/all' }}');
   }
-  {% endschema %}
-{% endcomment %}
+</script>
+<noscript><meta http-equiv="refresh" content="0;url={{ '/collections/all' }}"></noscript>
+
+{% schema %}
+{
+  "name": "Redirect",
+  "presets": [{ "name": "Redirect" }]
+}
+{% endschema %}
