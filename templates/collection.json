@@ -187,11 +187,21 @@
             "name": "Ķermeņa kopšana",
             "category_name_for_filter": "Ķermeņa kopšana"
           }
+        },
+        "category_slide_aF6ntc": {
+          "type": "category_slide",
+          "name": "Matu kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/matu_kopsana.jpg",
+            "name": "Matu kopšana",
+            "category_name_for_filter": "Matu kopšana"
+          }
         }
       },
       "block_order": [
         "category_slide_zBNkrg",
-        "category_slide_GwBPd8"
+        "category_slide_GwBPd8",
+        "category_slide_aF6ntc"
       ],
       "name": "Test Karuselis",
       "settings": {
