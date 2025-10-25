@@ -1,59 +1,111 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('categoryCarousel'), {
-      fill: true,
-      infinite: false,
-      plugins: [window.Dots],
-    }).init();
-  });
-</script>
+{% comment %}
+  This section renders a carousel of clickable category cards.
+  Each card links to the main collection page with a specific filter applied.
+{% endcomment %}
 
-<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
-  <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
-  <div>
-    <div class="f-carousel pb-6 md:pb-12" id="categoryCarousel">
-      {% for block in section.blocks %}
-        <div class="f-carousel__slide h-full rounded-4xl">
-          <a href="{{ block.settings.url }}" aria-label="{{ block.settings.name | escape }}">
-            {% if block.settings.photo %}
-              <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
-                <img
-                  src="{{ block.settings.photo | image_url }}"
-                  alt="{{ block.settings.name | escape }}"
-                  width="1080"
-                  height="1920"
-                  loading="lazy"
-                  class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                >
-                <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
-                  <h3 class="text-white text-xl body-font md:text-2xl 2xl:text-3xl px-6 leading-tight text-center w-full break-words line-clamp-2">
-                    {{ block.settings.name }}
-                  </h3>
+{%- if section.blocks.size > 0 -%}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = Carousel(document.getElementById('categoryCarousel'), {
+        fill: true,
+        infinite: false,
+        plugins: [window.Dots],
+      }).init();
+    });
+  </script>
+
+  <div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div>
+      <div class="f-carousel pb-6 md:pb-12" id="categoryCarousel">
+        {%- for block in section.blocks -%}
+          <div class="f-carousel__slide h-full rounded-4xl">
+            {%- comment -%}
+              Construct the URL:
+              1. Use the correct shorthand 'm' for metafield.
+              2. The value from the block settings MUST be case-sensitive.
+            {%- endcomment -%}
+            {%- assign filter_param = 'filter.p.m.custom.produkta_kategorija' -%}
+            {%- assign filter_value = block.settings.category_name_for_filter | url_encode -%}
+            {%- assign category_url = routes.all_products_collection_url
+              | append: '?'
+              | append: filter_param
+              | append: '='
+              | append: filter_value
+            -%}
+
+            <a
+              href="{{ category_url }}"
+              aria-label="{{ block.settings.name | escape }}"
+              class="category-card"
+            >
+              {%- if block.settings.photo -%}
+                <div class="relative overflow-hidden h-108 rounded-3xl cursor-pointer flex items-center justify-center group">
+                  <img
+                    src="{{ block.settings.photo | image_url }}"
+                    alt="{{ block.settings.name | escape }}"
+                    width="1080"
+                    height="1920"
+                    loading="lazy"
+                    class="h-108 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  >
+                  <div class="absolute inset-0 bg-black/30 w-full flex items-center justify-center px-4">
+                    <h3 class="text-white text-xl body-font md:text-2xl 2xl:text-3xl px-6 leading-tight text-center w-full break-words line-clamp-2">
+                      {{ block.settings.name }}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            {% endif %}
-          </a>
-        </div>
-      {% endfor %}
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
   </div>
-</div>
+{%- endif -%}
 
 {% schema %}
 {
-  "name": "Veikala kategoriju sadaļa",
-  "settings": [{ "type": "text", "id": "heading", "label": "Virsraksts", "default": "Kategorijas" }],
+  "name": "Kategoriju Karuselis",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Sadaļas nosaukums",
+      "default": "Kategorijas"
+    }
+  ],
   "blocks": [
     {
-      "type": "service",
-      "name": "Kategorija",
+      "type": "category_slide",
+      "name": "Category Slide",
       "settings": [
-        { "type": "image_picker", "id": "photo", "label": "Attēls" },
-        { "type": "text", "id": "name", "label": "Nosaukums" },
-        { "type": "url", "id": "url", "label": "Saite" }
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Kartes teksts",
+          "info": "Teksts parādās uz kartes"
+        },
+        {
+          "type": "text",
+          "id": "category_name_for_filter",
+          "label": "Kategorijas filtra nosaukums",
+          "info": "SVARĪGI: Tekstam obligāti jāsakrīt ar 'produkta_kategorija' meta lauka vērtību."
+        }
       ]
     }
   ],
-  "presets": [{ "name": "Veikala kategoriju sadaļa" }]
+  "presets": [
+    {
+      "name": "Kategoriju Karuselis"
+    }
+  ]
 }
 {% endschema %}
