@@ -13,7 +13,6 @@
   <!-- Filters as Dropdowns -->
   <div class="filters-container flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filters">
     {% render 'filters' %}
-    {% render 'filter-sort-by' %}
   </div>
 
   {% paginate collection.products by 4 %}
@@ -127,22 +126,17 @@
         const labelElement = document.getElementById('sort-by-label');
 
         if (labelElement) {
-          // Part 1: Update the main button label (existing logic)
           if (sortLabels[sortKey]) {
             labelElement.innerHTML = sortLabels[sortKey];
           }
 
-          // Part 2: Update the active item styling within the dropdown
           const dropdownContainer = labelElement.closest('.relative');
           if (dropdownContainer) {
             const links = dropdownContainer.querySelectorAll('a.filter-link');
             const activeLinkUrlPart = `sort_by=${sortKey}`;
 
             links.forEach((link) => {
-              // Remove active classes from all links first
               link.classList.remove(...activeClasses);
-
-              // Add active classes to the link that matches the current sort key
               if (link.href.includes(activeLinkUrlPart)) {
                 link.classList.add(...activeClasses);
               }
@@ -168,6 +162,7 @@
         this.loading = true;
 
         try {
+          // FIX: Update URL first so updateSortByLabel reads correct params
           window.history.pushState({}, '', url);
 
           const response = await fetch(url);
@@ -191,6 +186,13 @@
           const newFilters = doc.querySelector('[x-ref="filters"]');
           if (newFilters && this.$refs.filters) {
             this.$refs.filters.innerHTML = newFilters.innerHTML;
+
+            // FIX: Re-initialize AlpineJS on the new filter components
+            if (window.Alpine) {
+              window.Alpine.initTree(this.$refs.filters);
+            }
+
+            // Then update the sort label
             this.updateSortByLabel();
           }
         } catch (error) {
