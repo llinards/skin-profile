@@ -28,7 +28,11 @@
     {%- capture dropdown_content -%}
           {%- comment -%} "Clear this filter" option {%- endcomment -%}
           <a href="{{ collection.url }}?{{ base_params | remove_first: '&' }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if filter.active_values.size == 0 %}bg-gray-50 font-semibold{% endif %}">
-            Visi {{ filter.label | downcase }}
+            {% if filter.label == 'Ražotājs' %}
+              Visi ražotāji
+              {% else %}
+              Visas kategorijas
+            {% endif %}
           </a>
 
           {%- comment -%} Filter values - each gets a clean URL with only THIS selection {%- endcomment -%}
