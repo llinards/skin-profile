@@ -24,11 +24,10 @@
           <div class="f-carousel__slide h-full rounded-4xl">
             {%- comment -%}
               Construct the URL:
-              1. Start with the "All products" collection URL.
-              2. Add the metafield filter parameter name.
-              3. Add the category name from the block settings, ensuring it's URL-encoded.
+              1. Use the correct shorthand 'm' for metafield.
+              2. The value from the block settings MUST be case-sensitive.
             {%- endcomment -%}
-            {%- assign filter_param = 'filter.p.metafield.custom.produkta_kategorija' -%}
+            {%- assign filter_param = 'filter.p.m.custom.produkta_kategorija' -%}
             {%- assign filter_value = block.settings.category_name_for_filter | url_encode -%}
             {%- assign category_url = routes.all_products_collection_url
               | append: '?'
@@ -65,7 +64,7 @@
 
 {% schema %}
 {
-  "name": "Test Karuselis",
+  "name": "Category Carousel",
   "settings": [
     {
       "type": "text",
@@ -94,14 +93,14 @@
           "type": "text",
           "id": "category_name_for_filter",
           "label": "Category Name for Filter",
-          "info": "IMPORTANT: Must exactly match the 'produkta_kategorija' metafield value."
+          "info": "IMPORTANT: Must exactly match the 'produkta_kategorija' metafield value (case-sensitive)."
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Test Karuselis"
+      "name": "Category Carousel"
     }
   ]
 }
