@@ -5,42 +5,62 @@
       class="flex flex-row justify-center mt-8"
       :class="{ 'opacity-30 pointer-events-none': loading }"
     >
-      {% if paginate.pages > 0 %}
-        <nav class="flex justify-center py-12 space-x-6" role="navigation">
-          {% if paginate.previous %}
+      <nav class="flex justify-center items-center py-12 space-x-2 sm:space-x-4" role="navigation">
+        {%- comment -%} Previous Link {%- endcomment -%}
+        {% if paginate.previous %}
+          <a
+            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+            href="{{ paginate.previous.url }}"
+          >
+            &laquo;
+          </a>
+        {% endif %}
+
+        {%- comment -%}
+          Custom Pagination Logic:
+          Shows a maximum of 3 numbered buttons, centered on the current page.
+        {%- endcomment -%}
+        {%- assign first_page_to_show = paginate.current_page | minus: 1 -%}
+        {%- assign last_page_to_show = paginate.current_page | plus: 1 -%}
+
+        {%- if paginate.current_page == 1 -%}
+          {%- assign first_page_to_show = 1 -%}
+          {%- assign last_page_to_show = 3 -%}
+        {%- endif -%}
+
+        {%- if paginate.current_page == paginate.pages -%}
+          {%- assign first_page_to_show = paginate.pages | minus: 2 -%}
+          {%- assign last_page_to_show = paginate.pages -%}
+        {%- endif -%}
+
+        {% for i in (first_page_to_show..last_page_to_show) %}
+          {%- if i < 1 %}{% continue %}{% endif -%}
+          {%- if i > paginate.pages %}{% break %}{% endif -%}
+
+          {% if i == paginate.current_page %}
+            <span class="bg-sp-light-brown px-4 sm:px-6 py-3 rounded-xl transition-all duration-200">
+              {{ i }}
+            </span>
+          {% else %}
             <a
-              class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
-              href="{{ paginate.previous.url }}"
+              class="bg-sp-light-brown-opacity px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
+              href="{{ collection.url }}?page={{ i }}"
             >
-              {{ paginate.previous.title }}
+              {{ i }}
             </a>
           {% endif %}
+        {% endfor %}
 
-          {% for part in paginate.parts %}
-            {% if part.is_link %}
-              <a
-                class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
-                href="{{ part.url }}"
-              >
-                {{ part.title }}
-              </a>
-            {% else %}
-              <span class="bg-sp-light-brown px-6 py-3 rounded-xl transition-all duration-200">
-                {{ part.title }}
-              </span>
-            {% endif %}
-          {% endfor %}
-
-          {% if paginate.next %}
-            <a
-              class="bg-sp-light-brown-opacity px-6 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
-              href="{{ paginate.next.url }}"
-            >
-              {{ paginate.next.title }}
-            </a>
-          {% endif %}
-        </nav>
-      {% endif %}
+        {%- comment -%} Next Link {%- endcomment -%}
+        {% if paginate.next %}
+          <a
+            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+            href="{{ paginate.next.url }}"
+          >
+            &raquo;
+          </a>
+        {% endif %}
+      </nav>
     </div>
   {% endif %}
 </div>
