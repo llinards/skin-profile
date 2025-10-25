@@ -118,6 +118,15 @@
             "category_name_for_filter": "Sejas kopšana"
           }
         },
+        "category_slide_9jmN9K": {
+          "type": "category_slide",
+          "name": "Ķermeņa kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_kopsana.jpg",
+            "name": "Ķermeņa kopšana",
+            "category_name_for_filter": "Ķermeņa kopšana"
+          }
+        },
         "category_slide_WwWFyA": {
           "type": "category_slide",
           "name": "Matu kopšana",
@@ -130,6 +139,7 @@
       },
       "block_order": [
         "category_slide_4CWkAw",
+        "category_slide_9jmN9K",
         "category_slide_WwWFyA"
       ],
       "name": "Kategoriju Karuselis",
