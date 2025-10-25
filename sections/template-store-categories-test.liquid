@@ -6,7 +6,7 @@
 {%- if section.blocks.size > 0 -%}
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const carousel = Carousel(document.getElementById('categoryCarousel-{{ section.id }}'), {
+      const carousel = Carousel(document.getElementById('categoryCarousel'), {
         fill: true,
         infinite: false,
         plugins: [window.Dots],
@@ -19,7 +19,7 @@
       <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
     {%- endif -%}
     <div>
-      <div class="f-carousel pb-6 md:pb-12" id="categoryCarousel-{{ section.id }}">
+      <div class="f-carousel pb-6 md:pb-12" id="categoryCarousel">
         {%- for block in section.blocks -%}
           <div class="f-carousel__slide h-full rounded-4xl">
             {%- comment -%}
