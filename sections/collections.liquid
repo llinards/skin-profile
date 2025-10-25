@@ -4,7 +4,7 @@
 
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
-
+{% if collection.handle == null %} {% endif %}
 <h2>{{ 'collections.title' | t }}</h2>
 
 <div
