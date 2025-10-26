@@ -1,5 +1,5 @@
 <div class="flex items-center justify-end z-2 w-1/7">
-  <a href="{{ routes.cart_url }}">
+  <a href="{{ routes.cart_url }}" class="flex items-center">
     <svg
       width="24"
       height="24"
@@ -8,16 +8,17 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clip-path="url(#clip0_58_1469)">
-      <path d="M18.9998 10H15.9998V7C15.9998 4.794 14.2058 3 11.9998 3C9.79381 3 7.99981 4.794 7.99981 7V10H4.99981C4.44981 10 4.09181 10.441 4.20281 10.979L6.0818 20.021C6.1938 20.559 6.73581 21 7.2858 21H16.7148C17.2648 21 17.8068 20.559 17.9178 20.021L19.7968 10.979C19.9078 10.441 19.5498 10 18.9998 10ZM9.9998 7C9.9998 5.897 10.8968 5 11.9998 5C13.1028 5 13.9998 5.897 13.9998 7V10H9.9998V7ZM16.0868 19H7.91281L6.45781 12H17.7708L16.0868 19Z" />
+        <path d="M18.9998 10H15.9998V7C15.9998 4.794 14.2058 3 11.9998 3C9.79381 3 7.99981 4.794 7.99981 7V10H4.99981C4.44981 10 4.09181 10.441 4.20281 10.979L6.0818 20.021C6.1938 20.559 6.73581 21 7.2858 21H16.7148C17.2648 21 17.8068 20.559 17.9178 20.021L19.7968 10.979C19.9078 10.441 19.5498 10 18.9998 10ZM9.9998 7C9.9998 5.897 10.8968 5 11.9998 5C13.1028 5 13.9998 5.897 13.9998 7V10H9.9998V7ZM16.0868 19H7.91281L6.45781 12H17.7708L16.0868 19Z" />
       </g>
       <defs>
-      <clipPath id="clip0_58_1469">
-      <rect width="24" height="24" />
-      </clipPath>
+        <clipPath id="clip0_58_1469">
+          <rect width="24" height="24" />
+        </clipPath>
       </defs>
     </svg>
+
+    <p class="rounded-full ml-2 px-2 cart-count" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
+      {{ cart.item_count }}
+    </p>
   </a>
-  <p class="rounded-full ml-2 px-2 cart-count" :class="open ? 'bg-black text-white' : 'bg-white text-black'">
-    {{ cart.item_count }}
-  </p>
 </div>
