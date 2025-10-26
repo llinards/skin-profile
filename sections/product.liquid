@@ -4,6 +4,29 @@
 
   https://shopify.dev/docs/storefronts/themes/architecture/templates/product
 {% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const minusBtn = document.getElementById('minus-btn');
+    const quantity = document.getElementById('quantity');
+    const plusBtn = document.getElementById('plus-btn');
+
+    minusBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentValue = parseInt(quantity.value);
+      if (currentValue > 1) {
+        quantity.value = currentValue - 1;
+      }
+    });
+
+    plusBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentValue = parseInt(quantity.value);
+      quantity.value = currentValue + 1;
+    });
+  });
+</script>
+
 <div class="container mx-auto px-4 pt-24 pb-12 md:flex">
   <div class="product-images md:w-1/2">
     {% for image in product.images %}
@@ -13,9 +36,9 @@
 
   <div class="md:w-1/2">
     <div class="product-info mb-6">
-      <h1 class="text-4xl lg:text-5xl mb-4">{{ product.title }}</h1>
+      <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
       <span class="text-3xl header-font block mb-4">{{ product.price | money }}</span>
-      <p>{{ product.description }}</p>
+      <div class="space-y-4">{{ product.description }}</div>
     </div>
 
     <div class="product-form">
@@ -83,25 +106,3 @@
     -moz-appearance: textfield;
   }
 {% endstylesheet %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const minusBtn = document.getElementById('minus-btn');
-    const quantity = document.getElementById('quantity');
-    const plusBtn = document.getElementById('plus-btn');
-
-    minusBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentValue = parseInt(quantity.value);
-      if (currentValue > 1) {
-        quantity.value = currentValue - 1;
-      }
-    });
-
-    plusBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentValue = parseInt(quantity.value);
-      quantity.value = currentValue + 1;
-    });
-  });
-</script>
