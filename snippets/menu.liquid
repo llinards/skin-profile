@@ -63,7 +63,7 @@
         class="{{ invert_class }} w-48"
       >
     </div>
-    {% if page.metafields.custom.navigation_style == 'dark' %}
+    {% if template.name == 'cart' or template.name == 'product' or page.metafields.custom.navigation_style == 'dark' %}
       {% render 'cart-counter-dark' %}
     {% else %}
       {% render 'cart-counter' %}

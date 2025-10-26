@@ -17,21 +17,9 @@
   <form class="w-full" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
     {% if product.available %}
-      <button
-        type="submit"
-        class="w-full rounded-full bg-sp-light-brown py-2 uppercase cursor-pointer hover:bg-sp-brown hover:text-white duration-300 transform-all text-xs sm:text-sm xl:text-base"
-        :disabled="loading"
-      >
-        {{ 'products.add_to_cart' | t | default: 'Add to Cart' }}
-      </button>
+      {% render 'btn-add-to-cart' %}
     {% else %}
-      <button
-        type="button"
-        disabled
-        class="w-full rounded-full bg-sp-light-brown-opacity py-2 uppercase text-xs sm:text-sm xl:text-base"
-      >
-        {{ 'products.sold_out' | t | default: 'Sold Out' }}
-      </button>
+      {% render 'btn-sold-out' %}
     {% endif %}
   </form>
 </div>

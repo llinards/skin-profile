@@ -4,41 +4,61 @@
 
   https://shopify.dev/docs/storefronts/themes/architecture/templates/product
 {% endcomment %}
+<div class="container mx-auto px-4 pt-24 pb-12 md:flex">
+  <div class="product-images md:w-1/2">
+    {% for image in product.images %}
+      {% render 'image', class: 'product-image', image: image %}
+    {% endfor %}
+  </div>
 
-<div class="product-images">
-  {% for image in product.images %}
-    {% render 'image', class: 'product-image', image: image %}
-  {% endfor %}
-</div>
+  <div class="md:w-1/2">
+    <div class="product-info mb-6">
+      <h1 class="text-4xl lg:text-5xl mb-4">{{ product.title }}</h1>
+      <span class="text-3xl header-font block mb-4">{{ product.price | money }}</span>
+      <p>{{ product.description }}</p>
+    </div>
 
-<div class="product-info">
-  <h1>{{ product.title }}</h1>
-  <p>{{ product.price | money }}</p>
-  <p>{{ product.description }}</p>
-</div>
+    <div class="product-form">
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-<div class="product-form">
-  {% form 'product', product %}
-    {% assign current_variant = product.selected_or_first_available_variant %}
+        <div class="mb-6 flex flex-col sm:flex-row sm:items-center gap-6">
+          <label for="quantity" class="uppercase">Daudzums</label>
+          <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
+            <button
+              type="button"
+              id="minus-btn"
+              class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+            >
+              <span class="text-lg leading-none">−</span>
+            </button>
 
-    <select name="id">
-      {% for variant in product.variants %}
-        <option
-          value="{{ variant.id }}"
-          {% if variant == current_variant %}
-            selected="selected"
-          {% endif %}
-        >
-          {{ variant.title }} - {{ variant.price | money }}
-        </option>
-      {% endfor %}
-    </select>
+            <input
+              id="quantity"
+              type="number"
+              name="quantity"
+              min="1"
+              value="1"
+              class="w-8 text-center py-1.5 text-base focus:outline-none"
+              readonly
+            >
 
-    <input type="text" name="quantity" min="1" value="1">
+            <button
+              type="button"
+              id="plus-btn"
+              class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+            >
+              <span class="text-lg leading-none">+</span>
+            </button>
+          </div>
+          {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
+          <p class="inline-flex border rounded-2xl px-2.5 py-1.5 uppercase">Pieejami: {{ stock_quantity }}</p>
+        </div>
 
-    <input type="submit" value="Add to cart">
-    {{ form | payment_button }}
-  {% endform %}
+        {% render 'btn-add-to-cart' %}
+      {% endform %}
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -50,3 +70,38 @@
   }
 }
 {% endschema %}
+
+{% stylesheet %}
+  /* Hide number input spinners */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+{% endstylesheet %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const minusBtn = document.getElementById('minus-btn');
+    const quantity = document.getElementById('quantity');
+    const plusBtn = document.getElementById('plus-btn');
+
+    minusBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentValue = parseInt(quantity.value);
+      if (currentValue > 1) {
+        quantity.value = currentValue - 1;
+      }
+    });
+
+    plusBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentValue = parseInt(quantity.value);
+      quantity.value = currentValue + 1;
+    });
+  });
+</script>
