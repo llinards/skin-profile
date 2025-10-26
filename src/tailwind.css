@@ -71,6 +71,10 @@
         src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-Light.ttf?v=1758653989')
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: "Manrope-Light";
     }
