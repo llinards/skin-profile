@@ -179,8 +179,6 @@
             this.$refs.pagination.innerHTML = newPagination.innerHTML;
           }
 
-          // FIX: Update BOTH desktop and mobile filter containers
-
           // Update DESKTOP filters
           const newDesktopFilters = doc.querySelector('[x-ref="filtersDesktop"]');
           if (newDesktopFilters && this.$refs.filtersDesktop) {
@@ -190,12 +188,12 @@
             }
           }
 
-          // Update MOBILE filters
-          const newMobileFilters = doc.querySelector('[x-ref="filtersMobile"]');
-          if (newMobileFilters && this.$refs.filtersMobile) {
-            this.$refs.filtersMobile.innerHTML = newMobileFilters.innerHTML;
+          // Update MOBILE filters - now update the entire wrapper
+          const newMobileWrapper = doc.querySelector('[x-ref="mobileFilterWrapper"]');
+          if (newMobileWrapper && this.$refs.mobileFilterWrapper) {
+            this.$refs.mobileFilterWrapper.innerHTML = newMobileWrapper.innerHTML;
             if (window.Alpine) {
-              window.Alpine.initTree(this.$refs.filtersMobile);
+              window.Alpine.initTree(this.$refs.mobileFilterWrapper);
             }
           }
 

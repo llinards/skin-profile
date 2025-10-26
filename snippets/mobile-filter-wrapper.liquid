@@ -1,4 +1,4 @@
-<div class="md:hidden mb-12">
+<div class="md:hidden mb-12" x-ref="mobileFilterWrapper">
   <div x-data="{ open: false }" class="relative">
     <button
       @click="open = !open"
@@ -32,6 +32,7 @@
       >
         {% render 'filter-regular' %}
         {% render 'filter-sort-by' %}
+        {% render 'filter-clear-button' %}
       </div>
     </div>
   </div>
