@@ -7,7 +7,7 @@
       {% if label_id %}
         id="{{ label_id }}"
       {% endif %}
-      class="tracking-wide text-xs sm:text-sm"
+      class="tracking-wide text-xs sm:text-sm truncate"
     >
       {{ current_value | default: filter_text }}
     </span>
