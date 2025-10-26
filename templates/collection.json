@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "text": "Iepirkties",
-            "url": "#store",
+            "url": "#products",
             "style": "white"
           }
         },
