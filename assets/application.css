@@ -979,14 +979,29 @@
       margin-top: calc(var(--spacing) * 2);
     }
   }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
     }
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
   .sm\:max-h-96 {
     @media (width >= 40rem) {
       max-height: calc(var(--spacing) * 96);
+    }
+  }
+  .sm\:w-42 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 42);
     }
   }
   .sm\:w-46 {
@@ -1201,6 +1216,11 @@
   .md\:w-4\/7 {
     @media (width >= 48rem) {
       width: calc(4/7 * 100%);
+    }
+  }
+  .md\:w-52 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 52);
     }
   }
   .md\:w-56 {
