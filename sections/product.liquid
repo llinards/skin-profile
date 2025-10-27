@@ -105,11 +105,12 @@
         %}
       {%- endif -%}
 
-      {%- comment -%} Active Ingredients {%- endcomment -%}
-      {%- if product.metafields.shopify.active_ingredient != blank -%}
-        {% render 'dropdown-description',
+      {%- if product.metafields.shopify['active-ingredient'] != blank -%}
+        {% assign active_ingredients = product.metafields.shopify['active-ingredient'].value %}
+
+        {% render 'dropdown-active-ingredient',
           description_title: 'Aktīvās sastāvdaļas',
-          description_content: product.metafields.shopify.active_ingredient.value,
+          ingredients: active_ingredients,
           class: 'max-w-96'
         %}
       {%- endif -%}

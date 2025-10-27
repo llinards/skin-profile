@@ -1,7 +1,7 @@
 <div x-data="{ open: false }">
   <button
     @click="open = !open"
-    class="flex py-2 px-4 items-center uppercase border-b-1 w-full md:max-w-120 justify-between cursor-pointer  transition-colors tracking-widest text-base font-bold"
+    class="flex py-2 px-4 items-center uppercase border-b-1 w-full md:max-w-120 justify-between cursor-pointer transition-colors tracking-widest text-base font-bold"
     :class="open ? 'bg-sp-light-brown' : ''"
   >
     <span>
@@ -12,7 +12,7 @@
       class="inline-flex items-center justify-center"
     >
       <svg
-        class="bg-sp-light-brown rounded-full p-2 size-8 hover:bg-sp-brown stroke-black hover:stroke-white transform-all duration-300"
+        class="bg-sp-light-brown rounded-full p-2 size-8 hover:bg-sp-brown stroke-black hover:stroke-white transition-all duration-300"
         width="14"
         height="14"
         viewBox="0 0 14 14"
@@ -28,7 +28,7 @@
       class="inline-flex items-center justify-center"
     >
       <svg
-        class="bg-sp-brown rounded-full p-2 size-8 stroke-white transform-all duration-300"
+        class="bg-sp-brown rounded-full p-2 size-8 stroke-white transition-all duration-300"
         width="14"
         height="2"
         viewBox="0 0 14 2"
@@ -46,8 +46,15 @@
     class="max-w-120"
     style="display: none;"
   >
-    <div class="py-2 px-4 space-y-4 text-gray-500" @click="open = false">
-      {{ description_content | metafield_tag }}
+    <div class="py-4 px-4 space-y-4" @click="open = false">
+      {% for ingredient in ingredients %}
+        <div class="pb-3 border-b last:border-b-0">
+          <h4 class="font-bold mb-1 text-base text-black">{{ ingredient.name }}</h4>
+          {% if ingredient.description != blank %}
+            <p class="text-sm leading-relaxed text-gray-600">{{ ingredient.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
