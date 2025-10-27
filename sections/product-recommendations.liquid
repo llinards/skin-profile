@@ -27,7 +27,7 @@
       {% if recommendations.performed and recommendations.products_count > 0 %}
         <div
           id="productRecommendationCarousel"
-          class="f-carousel transition-opacity duration-300"
+          class="f-carousel transition-opacity duration-300 pb-12"
           :class="{ 'opacity-30': loading }"
         >
           {% for recommendation in recommendations.products %}

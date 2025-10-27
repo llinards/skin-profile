@@ -173,6 +173,10 @@
     color: #ffffff !important;
 }
 
+/* #productRecommendationCarousel .f-carousel__dots {
+    margin-top: 36px;
+} */
+
 
 @media screen and (max-width: 479px) {
     .f-carousel__slide {
