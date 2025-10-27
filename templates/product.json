@@ -60,10 +60,18 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
+    },
+    "product_recommendations_JKDVwU": {
+      "type": "product-recommendations",
+      "name": "Recommended Products",
+      "settings": {
+        "products_to_show": 4
+      }
     }
   },
   "order": [
     "main",
-    "template_contact_us_etDVeW"
+    "template_contact_us_etDVeW",
+    "product_recommendations_JKDVwU"
   ]
 }
