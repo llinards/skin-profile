@@ -60,10 +60,16 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
+    },
+    "product_recommendations_6NDbLT": {
+      "type": "product-recommendations",
+      "name": "Līdzīgi produkti",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "template_contact_us_etDVeW"
+    "template_contact_us_etDVeW",
+    "product_recommendations_6NDbLT"
   ]
 }
