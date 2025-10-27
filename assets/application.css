@@ -618,6 +618,9 @@
       margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .gap-x-1 {
+    column-gap: calc(var(--spacing) * 1);
+  }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
@@ -1034,10 +1037,66 @@
       }
     }
   }
+  .after\:content-\[\'\'\] {
+    &::after {
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\,\'\] {
+    &::after {
+      --tw-content: ',';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\,\*\'\] {
+    &::after {
+      --tw-content: ',*';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\,\\00a0\'\] {
+    &::after {
+      --tw-content: ',\00a0';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\,_\'\] {
+    &::after {
+      --tw-content: ', ';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'\\_\'\] {
+    &::after {
+      --tw-content: '_';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'_\'\] {
+    &::after {
+      --tw-content: ' ';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\'_\,_\'\] {
+    &::after {
+      --tw-content: ' , ';
+      content: var(--tw-content);
+    }
+  }
   .last\:border-b-0 {
     &:last-child {
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 0px;
+    }
+  }
+  .last\:after\:content-\[\'\'\] {
+    &:last-child {
+      &::after {
+        --tw-content: '';
+        content: var(--tw-content);
+      }
     }
   }
   .hover\:scale-105 {
@@ -2193,6 +2252,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2242,6 +2306,7 @@
       --tw-drop-shadow-size: initial;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-content: "";
     }
   }
 }
