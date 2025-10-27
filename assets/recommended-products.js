@@ -15,7 +15,7 @@ class RecommendedProducts extends HTMLElement {
 
             if (!response.ok) {
                 console.error('Failed to fetch recommendations:', response.status);
-                this.dispatchEvent(new CustomEvent('recommendations-loaded'));
+                this.dispatchEvent(new CustomEvent('recommendations-loaded', { bubbles: true }));
                 return;
             }
 
@@ -28,6 +28,9 @@ class RecommendedProducts extends HTMLElement {
             if (recommendations?.innerHTML.trim().length > 0) {
                 this.innerHTML = recommendations.innerHTML;
 
+                // Dispatch event that recommendations were found
+                this.dispatchEvent(new CustomEvent('recommendations-found', { bubbles: true }));
+
                 // Initialize carousel after content is loaded
                 setTimeout(() => {
                     const carouselElement = document.getElementById('productRecommendationCarousel');
@@ -38,15 +41,15 @@ class RecommendedProducts extends HTMLElement {
                             plugins: [window.Dots],
                         }).init();
                     }
-                }, 100); // Small delay to ensure DOM is ready
+                }, 100); // Small delay t
             }
 
             // Dispatch event to hide loading spinner
-            this.dispatchEvent(new CustomEvent('recommendations-loaded'));
+            this.dispatchEvent(new CustomEvent('recommendations-loaded', { bubbles: true }));
 
         } catch (error) {
             console.error('Error loading recommendations:', error);
-            this.dispatchEvent(new CustomEvent('recommendations-loaded'));
+            this.dispatchEvent(new CustomEvent('recommendations-loaded', { bubbles: true }));
         }
     }
 }
