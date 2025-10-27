@@ -323,6 +323,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -380,6 +383,10 @@
   .inline-flex {
     display: inline-flex;
   }
+  .size-4 {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
@@ -408,6 +415,9 @@
   }
   .h-192 {
     height: calc(var(--spacing) * 192);
+  }
+  .h-\[30px\] {
+    height: 30px;
   }
   .h-full {
     height: 100%;
@@ -442,6 +452,12 @@
   .w-58 {
     width: calc(var(--spacing) * 58);
   }
+  .w-120 {
+    width: calc(var(--spacing) * 120);
+  }
+  .w-\[30px\] {
+    width: 30px;
+  }
   .w-auto {
     width: auto;
   }
@@ -453,6 +469,15 @@
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
+  }
+  .max-w-86 {
+    max-width: calc(var(--spacing) * 86);
+  }
+  .max-w-96 {
+    max-width: calc(var(--spacing) * 96);
+  }
+  .max-w-120 {
+    max-width: calc(var(--spacing) * 120);
   }
   .max-w-lg {
     max-width: var(--container-lg);
@@ -718,6 +743,12 @@
   .fill-white {
     fill: var(--color-white);
   }
+  .stroke-black {
+    stroke: var(--color-black);
+  }
+  .stroke-white {
+    stroke: var(--color-white);
+  }
   .object-contain {
     object-fit: contain;
   }
@@ -864,6 +895,10 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
   .break-words {
     overflow-wrap: break-word;
   }
@@ -948,6 +983,10 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -1005,6 +1044,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:stroke-white {
+    &:hover {
+      @media (hover: hover) {
+        stroke: var(--color-white);
       }
     }
   }
@@ -1364,6 +1410,11 @@
   .md\:max-w-96 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 96);
+    }
+  }
+  .md\:max-w-120 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 120);
     }
   }
   .md\:max-w-lg {

@@ -1,0 +1,53 @@
+<div x-data="{ open: false }">
+  <button
+    @click="open = !open"
+    class="flex py-2 px-4 items-center uppercase border-b-1 w-full md:max-w-120 justify-between cursor-pointer  transition-colors tracking-widest text-base font-bold"
+    :class="open ? 'bg-sp-light-brown' : ''"
+  >
+    <span>
+      {{ description_title }}
+    </span>
+    <span
+      x-show="!open"
+      class="inline-flex items-center justify-center"
+    >
+      <svg
+        class="bg-sp-light-brown rounded-full p-2 size-8 hover:bg-sp-brown stroke-black hover:stroke-white transform-all duration-300"
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1 7H7M7 7H13M7 7V1M7 7V13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+
+    <span
+      x-show="open"
+      class="inline-flex items-center justify-center"
+    >
+      <svg
+        class="bg-sp-brown rounded-full p-2 size-8  stroke-white transform-all duration-300"
+        width="14"
+        height="2"
+        viewBox="0 0 14 2"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1 1H7H13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+  </button>
+
+  <div
+    x-show="open"
+    @click.away="open = false"
+    x-transition
+    class="max-w-120"
+    style="display: none;"
+  >
+    <div class="py-2 px-4" @click="open = false">
+      {{ description_content }}
+    </div>
+  </div>
+</div>

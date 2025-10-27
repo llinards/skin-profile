@@ -1,8 +1,6 @@
 {% comment %}
   This section is used in the product template to render product page with
   media, content, and add-to-cart form.
-
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/product
 {% endcomment %}
 
 <script>
@@ -35,7 +33,7 @@
   </div>
 
   <div class="md:w-1/2">
-    <div class="product-info mb-6">
+    <div class="mb-6">
       <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
       <span class="text-3xl md:text-4xl header-font block mb-4">{{ product.price | money }}</span>
       <div class="md:hidden">
@@ -45,13 +43,12 @@
       </div>
       <div class="space-y-4">{{ product.description }}</div>
     </div>
-
     <div class="product-form">
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
         <div class="mb-6 flex flex-row justify-center sm:justify-start items-center gap-4 md:gap-6">
-          <label for="quantity" class="uppercase font-bold text-sm">Daudzums</label>
+          <label for="quantity" class="uppercase font-bold text-sm tracking-widest">Daudzums</label>
           <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
             <button
               type="button"
@@ -83,19 +80,35 @@
 
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
-            <p class="inline-flex border rounded-2xl px-4 py-1.5 font-bold text-sm uppercase">
+            <p class="inline-flex border rounded-2xl px-4 py-1.5 font-bold text-sm tracking-widest uppercase">
               Pieejami: {{ stock_quantity }}
             </p>
           {% endif %}
         </div>
 
         {% if product.available %}
-          {% render 'btn-add-to-cart', class: 'w-full text-base md:max-w-96' %}
+          {% render 'btn-add-to-cart', class: 'w-full text-base md:max-w-96 tracking-widest' %}
         {% else %}
-          {% render 'btn-out-of-stock', class: 'w-full text-base md:max-w-96' %}
+          {% render 'btn-out-of-stock', class: 'w-full text-base md:max-w-96 tracking-widest' %}
         {% endif %}
       {% endform %}
     </div>
+
+    {%- comment -%} Dynamic dropdown descriptions from blocks {%- endcomment -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="mt-6">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'dropdown_description' -%}
+              {% render 'dropdown-description',
+                description_title: block.settings.title,
+                description_content: block.settings.content,
+                class: 'max-w-96'
+              %}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
@@ -103,6 +116,26 @@
 {
   "name": "t:general.product",
   "settings": [],
+  "blocks": [
+    {
+      "type": "dropdown_description",
+      "name": "Dropdown Description",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Description Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Add your description content here.</p>"
+        }
+      ]
+    }
+  ],
   "disabled_on": {
     "groups": ["header", "footer"]
   }
