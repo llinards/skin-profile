@@ -15,13 +15,15 @@
 
   <!-- LOGO -->
   <div>
-    <img
-      src="{{ "skin-profile-logo-white.svg" | asset_url }}"
-      alt="{{ shop.name }} logo"
-      height="1024"
-      width="1024"
-      class="w-58 h-18"
-    >
+    <a href="{{ routes.root_url }}">
+      <img
+        src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+        alt="{{ shop.name }} logo"
+        height="1024"
+        width="1024"
+        class="w-58 h-18 cursor-pointer"
+      >
+    </a>
   </div>
 
   <div class="flex space-x-8">
@@ -54,14 +56,16 @@
     </button>
 
     <div class="flex items-center justify-center z-2 w-5/7">
-      <img
-        src="{{ "skin-profile-logo-white.svg" | asset_url }}"
-        alt="{{ shop.name }} logo"
-        height="1024"
-        width="1024"
-        :class="open ? 'invert' : ''"
-        class="{{ invert_class }} w-48"
-      >
+      <a href="{{ routes.root_url }}">
+        <img
+          src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+          alt="{{ shop.name }} logo"
+          height="1024"
+          width="1024"
+          :class="open ? 'invert' : ''"
+          class="{{ invert_class }} w-48 cursor-pointer"
+        >
+      </a>
     </div>
     {% if template.name == 'cart' or template.name == 'product' or page.metafields.custom.navigation_style == 'dark' %}
       {% render 'cart-counter-dark' %}
