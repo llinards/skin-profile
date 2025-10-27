@@ -17,7 +17,7 @@
       "type": "product-recommendations",
       "name": "Recommended Products",
       "settings": {
-        "products_to_show": 4
+        "products_to_show": 10
       }
     },
     "template_contact_us_etDVeW": {
