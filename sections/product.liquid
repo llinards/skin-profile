@@ -28,7 +28,7 @@
 </script>
 
 <div class="container mx-auto px-4 pt-24 pb-12 md:flex">
-  <div class="product-images md:w-1/2">
+  <div class="hidden md:flex md:w-1/2">
     {% for image in product.images %}
       {% render 'image', class: 'product-image', image: image %}
     {% endfor %}
@@ -38,6 +38,11 @@
     <div class="product-info mb-6">
       <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
       <span class="text-3xl md:text-4xl header-font block mb-4">{{ product.price | money }}</span>
+      <div class="md:hidden">
+        {% for image in product.images %}
+          {% render 'image', class: 'product-image', image: image %}
+        {% endfor %}
+      </div>
       <div class="space-y-4">{{ product.description }}</div>
     </div>
 
