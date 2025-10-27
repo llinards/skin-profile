@@ -3,6 +3,10 @@ class RecommendedProducts extends HTMLElement {
         super();
     }
 
+    connectedCallback() {
+        this.loadRecommendations()
+    }
+
     async loadRecommendations() {
         const response = await fetch(`${this.dataset.url}&product_id=${this.dataset.productId}&section_id=${this.dataset.sectionId}`);
         const responseHTML = await response.text();

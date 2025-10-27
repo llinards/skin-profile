@@ -4,11 +4,11 @@
     data-product-id="{{ product.id }}"
     data-section-id="{{ section.id }}"
   >
-    {% if recommendations.performed and recommendations.products_count > 1 %}
+    {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2>Recommended Products</h2>
       <ul class="recommended-products-grid">
         {% for recommendation in recommendations.products %}
-          <li>{% render 'product-card', product: product %}</li>
+          <li>{% render 'product-card', product: recommendation %}</li>
         {% endfor %}
       </ul>
     {% endif %}
