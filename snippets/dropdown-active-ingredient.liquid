@@ -47,14 +47,23 @@
     style="display: none;"
   >
     <div class="py-4 px-4 space-y-4" @click="open = false">
-      {% for ingredient in ingredients %}
-        <div class="pb-3 border-b last:border-b-0">
-          <h4 class="font-bold mb-1 text-base text-black">{{ ingredient.name }}</h4>
-          {% if ingredient.description != blank %}
-            <p class="text-sm leading-relaxed text-gray-600">{{ ingredient.description }}</p>
-          {% endif %}
+      {% if product.metafields.shopify['active-ingredient'] %}
+        <div class="ingredients-section">
+          {% for ingredient in product.metafields.shopify['active-ingredient'].value %}
+            <div class="ingredient-item">
+              {% if [ingredient.label] %}
+                <h4 class="ingredient-name">{{ [ingredient.label.value] }}</h4>
+              {% endif %}
+
+              {% if ingredient.base_active_ingredient %}
+                <div class="ingredient-description">
+                  {{ [ingredient.base_active_ingredient.value] }}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+      {% endif %}
     </div>
   </div>
 </div>

@@ -1637,6 +1637,11 @@
       line-height: calc(var(--spacing) * 18);
     }
   }
+  .md\:text-gray-500 {
+    @media (width >= 48rem) {
+      color: var(--color-gray-500);
+    }
+  }
   .lg\:order-1 {
     @media (width >= 64rem) {
       order: 1;

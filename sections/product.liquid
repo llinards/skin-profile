@@ -41,7 +41,16 @@
           {% render 'image', class: 'product-image', image: image %}
         {% endfor %}
       </div>
-      <div class="space-y-4">{{ product.description }}</div>
+
+      <div class="hidden md:block space-y-4">{{ product.description }}</div>
+      <div class="md:hidden">
+        {% render 'dropdown-description',
+          description_title: 'Apraksts',
+          description_content: product.description,
+          use_metafield_tag: false,
+          class: 'max-w-96'
+        %}
+      </div>
     </div>
     <div class="product-form">
       {% form 'product', product %}
@@ -101,6 +110,7 @@
         {% render 'dropdown-description',
           description_title: 'Lietošana',
           description_content: product.metafields.custom.product_usage,
+          use_metafield_tag: true,
           class: 'max-w-96'
         %}
       {%- endif -%}
@@ -120,6 +130,7 @@
         {% render 'dropdown-description',
           description_title: 'Papildu informācija',
           description_content: product.metafields.custom.additional_information,
+          use_metafield_tag: true,
           class: 'max-w-96'
         %}
       {%- endif -%}
