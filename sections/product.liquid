@@ -41,7 +41,14 @@
           {% render 'image', class: 'product-image', image: image %}
         {% endfor %}
       </div>
-      <div class="space-y-4">{{ product.description }}</div>
+      <div class="md:hidden">
+        {% render 'dropdown-description',
+          description_title: 'Apraksts',
+          description_content: product.description,
+          class: 'max-w-96'
+        %}
+      </div>
+      <div class="hidden md:block space-y-4">{{ product.description }}</div>
     </div>
     <div class="product-form">
       {% form 'product', product %}
