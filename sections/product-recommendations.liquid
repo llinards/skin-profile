@@ -1,16 +1,18 @@
-<div class="page-width">
+<div class="container mx-auto px-4 pb-12 transition-hide">
   <recommended-products
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-product-id="{{ product.id }}"
     data-section-id="{{ section.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2>Recommended Products</h2>
-      <ul class="recommended-products-grid">
+      <h2>Līdzīgi produkti</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12">
         {% for recommendation in recommendations.products %}
-          <li>{% render 'product-card', product: recommendation %}</li>
+          <div class="flex flex-col justify-between space-y-3">
+            {% render 'product-card', product: recommendation %}
+          </div>
         {% endfor %}
-      </ul>
+      </div>
     {% endif %}
   </recommended-products>
 </div>
