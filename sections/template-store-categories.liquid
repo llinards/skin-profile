@@ -27,7 +27,7 @@
               1. Use the correct shorthand 'm' for metafield.
               2. The value from the block settings MUST be case-sensitive.
             {%- endcomment -%}
-            {%- assign filter_param = 'filter.p.m.custom.produkta_kategorija' -%}
+            {%- assign filter_param = 'filter.p.m.custom.product_category' -%}
             {%- assign filter_value = block.settings.category_name_for_filter | url_encode -%}
             {%- assign category_url = routes.all_products_collection_url
               | append: '?'
@@ -94,10 +94,29 @@
           "info": "Teksts parādās uz kartes"
         },
         {
-          "type": "text",
+          "type": "select",
           "id": "category_name_for_filter",
-          "label": "Kategorijas filtra nosaukums",
-          "info": "SVARĪGI: Tekstam obligāti jāsakrīt ar 'produkta_kategorija' meta lauka vērtību."
+          "label": "Produkta kategorija",
+          "info": "Izvēlies kategoriju no saraksta",
+          "options": [
+            {
+              "value": "Sejas Kopšana",
+              "label": "Sejas Kopšana"
+            },
+            {
+              "value": "Ķermeņa Kopšana",
+              "label": "Ķermeņa Kopšana"
+            },
+            {
+              "value": "Matu Kopšana",
+              "label": "Matu Kopšana"
+            },
+            {
+              "value": "Dāvanu kartes",
+              "label": "Dāvanu kartes"
+            }
+          ],
+          "default": "Sejas Kopšana"
         }
       ]
     }
