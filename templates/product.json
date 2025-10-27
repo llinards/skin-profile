@@ -12,9 +12,58 @@
     "main": {
       "type": "product",
       "settings": {}
+    },
+    "template_contact_us_8MbwRW": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_rJWF3Y": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_jxkKjW": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_mtVqiB": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_RHTQAJ": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_rJWF3Y",
+        "button_jxkKjW",
+        "button_mtVqiB",
+        "button_RHTQAJ"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Virsraksts šeit",
+        "text": "<p>Jūsu teksts šeit.</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_contact_us_8MbwRW"
   ]
 }
