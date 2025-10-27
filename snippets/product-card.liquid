@@ -17,9 +17,9 @@
   <form class="w-full" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
     {% if product.available %}
-      {% render 'btn-add-to-cart', class: 'w-full' %}
+      {% render 'btn-add-to-cart', class: 'w-full text-xs sm:text-sm xl:text-base' %}
     {% else %}
-      {% render 'btn-sold-out', class: 'w-full' %}
+      {% render 'btn-out-of-stock', class: 'w-full text-xs sm:text-sm xl:text-base' %}
     {% endif %}
   </form>
 </div>

@@ -37,7 +37,7 @@
   <div class="md:w-1/2">
     <div class="product-info mb-6">
       <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
-      <span class="text-3xl header-font block mb-4">{{ product.price | money }}</span>
+      <span class="text-3xl md:text-4xl header-font block mb-4">{{ product.price | money }}</span>
       <div class="space-y-4">{{ product.description }}</div>
     </div>
 
@@ -45,15 +45,15 @@
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-        <div class="mb-6 flex flex-col sm:flex-row sm:items-center gap-6">
-          <label for="quantity" class="uppercase font-bold">Daudzums</label>
+        <div class="mb-6 flex flex-row justify-center sm:justify-start items-center gap-4 md:gap-6">
+          <label for="quantity" class="uppercase font-bold text-sm">Daudzums</label>
           <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
             <button
               type="button"
               id="minus-btn"
               class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
             >
-              <span class="text-lg leading-none font-bold">−</span>
+              <span class="text-sm leading-none font-bold">−</span>
             </button>
 
             <input
@@ -62,7 +62,7 @@
               name="quantity"
               min="1"
               value="1"
-              class="w-8 text-center py-1.5 font-bold focus:outline-none"
+              class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
               readonly
             >
 
@@ -71,14 +71,24 @@
               id="plus-btn"
               class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
             >
-              <span class="text-lg leading-none font-bold">+</span>
+              <span class="text-sm leading-none font-bold">+</span>
             </button>
           </div>
           {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
-          <p class="inline-flex border rounded-2xl px-2.5 py-1.5 font-bold uppercase">Pieejami: {{ stock_quantity }}</p>
+
+          {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
+          {% else %}
+            <p class="inline-flex border rounded-2xl px-4 py-1.5 font-bold text-sm uppercase">
+              Pieejami: {{ stock_quantity }}
+            </p>
+          {% endif %}
         </div>
 
-        {% render 'btn-add-to-cart', class: 'w-full md:max-w-96' %}
+        {% if product.available %}
+          {% render 'btn-add-to-cart', class: 'w-full text-base md:max-w-96' %}
+        {% else %}
+          {% render 'btn-out-of-stock', class: 'w-full text-base md:max-w-96' %}
+        {% endif %}
       {% endform %}
     </div>
   </div>
