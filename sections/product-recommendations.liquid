@@ -2,34 +2,31 @@
   class="container mx-auto px-4 pb-12 relative"
   x-data="{ loading: true, hasRecommendations: false }"
   x-init="loading = true"
-  x-show="hasRecommendations"
   @recommendations-loaded="loading = false"
   @recommendations-found="hasRecommendations = true"
-  style="display: none;"
 >
-  <h2 class="text-3xl md:text-4xl font-bold mb-8">Līdzīgi produkti</h2>
+  <h2 class="text-3xl md:text-4xl font-bold mb-8" x-show="hasRecommendations || loading">Līdzīgi produkti</h2>
 
-  <div
-    x-show="loading"
-    x-transition
-    class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75 z-10"
-  >
-    <div class="loading-spinner"></div>
+  <!-- Skeleton Loader -->
+  <div x-show="loading && !hasRecommendations" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12">
+    <template x-for="i in 4">
+      <div class="animate-pulse">
+        <div class="bg-gray-200 aspect-square rounded-lg mb-3"></div>
+        <div class="h-4 bg-gray-200 rounded mb-2"></div>
+        <div class="h-4 bg-gray-200 rounded w-2/3"></div>
+      </div>
+    </template>
   </div>
 
-  <!-- Product Grid -->
-  <div class="pb-6 md:pb-12">
+  <!-- Actual Products -->
+  <div x-show="hasRecommendations" x-transition class="pb-6 md:pb-12">
     <recommended-products
       data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
       data-product-id="{{ product.id }}"
       data-section-id="{{ section.id }}"
     >
       {% if recommendations.performed and recommendations.products_count > 0 %}
-        <div
-          id="productRecommendationCarousel"
-          class="f-carousel transition-opacity duration-300 pb-12"
-          :class="{ 'opacity-30': loading }"
-        >
+        <div id="productRecommendationCarousel" class="f-carousel">
           {% for recommendation in recommendations.products %}
             <div class="f-carousel__slide flex flex-col justify-between space-y-3">
               {% render 'product-card', product: recommendation %}
