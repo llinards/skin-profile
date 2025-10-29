@@ -8,6 +8,7 @@
     const minusBtn = document.getElementById('minus-btn');
     const quantity = document.getElementById('quantity');
     const plusBtn = document.getElementById('plus-btn');
+    const maxStock = parseInt(quantity.getAttribute('max'));
 
     minusBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -20,7 +21,20 @@
     plusBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const currentValue = parseInt(quantity.value);
-      quantity.value = currentValue + 1;
+      if (currentValue < maxStock) {
+        quantity.value = currentValue + 1;
+      }
+    });
+
+    // Prevent manual input above stock
+    quantity.addEventListener('input', (e) => {
+      const value = parseInt(e.target.value);
+      if (value > maxStock) {
+        e.target.value = maxStock;
+      }
+      if (value < 1) {
+        e.target.value = 1;
+      }
     });
   });
 </script>
@@ -56,6 +70,8 @@
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
+        {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
+
         <div class="mb-6 flex flex-row justify-center sm:justify-start items-center gap-4 md:gap-6">
           <label for="quantity" class="uppercase font-bold text-sm tracking-widest">Daudzums</label>
           <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
@@ -72,6 +88,7 @@
               type="number"
               name="quantity"
               min="1"
+              max="{{ stock_quantity }}"
               value="1"
               class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
               readonly

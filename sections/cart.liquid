@@ -1,33 +1,145 @@
-{% comment %}
-  This section is used in the cart template to render /cart page with an
-  overview of the items in customer's cart.
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const quantityInputs = document.querySelectorAll('input[name="updates[]"]');
 
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/cart
-{% endcomment %}
+    quantityInputs.forEach((input) => {
+      const maxStock = parseInt(input.getAttribute('max'));
+      const container = input.closest('.quantity-container');
+      const errorSpan = container.querySelector('.error-message');
+
+      // Function to validate and show error
+      const validateQuantity = (value) => {
+        if (value > maxStock) {
+          console.log('Par daudz');
+          input.value = maxStock;
+          errorSpan.textContent = `Pieejami tikai ${maxStock} vienības`;
+          errorSpan.classList.remove('hidden');
+          setTimeout(() => {
+            errorSpan.classList.add('hidden');
+          }, 3000);
+          return false;
+        } else {
+          errorSpan.classList.add('hidden');
+          return true;
+        }
+      };
+
+      // Listen to input event (keyboard and spinner)
+      input.addEventListener('input', (e) => {
+        const value = parseInt(e.target.value);
+
+        // Enforce max stock limit
+        validateQuantity(value);
+
+        // Enforce minimum of 1
+        if (value < 1 || isNaN(value)) {
+          e.target.value = 1;
+        }
+      });
+
+      // Listen to change event (triggered after spinner click)
+      input.addEventListener('change', (e) => {
+        const value = parseInt(e.target.value);
+        validateQuantity(value);
+
+        if (value < 1 || isNaN(value)) {
+          e.target.value = 1;
+        }
+      });
+
+      // Prevent form submission if quantity exceeds stock
+      const form = input.closest('form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          const value = parseInt(input.value);
+          if (value > maxStock) {
+            e.preventDefault();
+            alert(`Pieejami tikai ${maxStock} vienības no šī produkta.`);
+            input.value = maxStock;
+            errorSpan.classList.add('hidden');
+          }
+        });
+      }
+    });
+  });
+</script>
 
 <div class="container mx-auto px-4 pt-24 pb-12">
-  {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: pages.veikals.url %}
-  <form action="{{ routes.cart_url }}" method="post">
-    <table>
-      {% for item in cart.items %}
-        <tr>
-          <td>
-            {% render 'image', image: item.image, url: item.url %}
-          </td>
-          <td>
-            <p>{{ item.product.title }}</p>
-            {{ 'cart.remove' | t | link_to: item.url_to_remove }}
-          </td>
-          <td>
-            <input type="text" name="updates[]" value="{{ item.quantity }}">
-            <input type="submit" value="{{ 'cart.update' | t }}">
-          </td>
-        </tr>
-      {% endfor %}
-    </table>
-
-    <input type="submit" name="checkout" value="{{ 'cart.checkout' | t }}">
-  </form>
+  {% if cart.item_count > 0 %}
+    {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+    <form class="mt-12" action="{{ routes.cart_url }}" method="post">
+      <table class="w-full table-auto border-collapse">
+        <thead class="text-left shadow-md">
+          <tr class="mb-12">
+            <th class="px-6 py-3">Produkts</th>
+            <th class="px-6 py-3 text-center">Cena</th>
+            <th class="px-6 py-3 text-center">Daudzums</th>
+            <th class="px-6 py-3 text-right">Starpsumma</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in cart.items %}
+            <tr class="shadow-md">
+              <td class="px-6 py-4">
+                <div class="flex items-center gap-4">
+                  {% render 'btn-remove-product', item: item %}
+                  <img
+                    src="{{ item.image | image_url: width: 100 }}"
+                    alt="{{ item.product.title }}"
+                    width="100"
+                    height="100"
+                    class="rounded"
+                  >
+                  <p class="font-medium">{{ item.product.title | truncatewords: 3 }}</p>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center">{{ item.price | money }}</td>
+              <td class="px-6 py-4">
+                <div class="quantity-container flex flex-col items-center">
+                  <input
+                    type="number"
+                    name="updates[]"
+                    value="{{ item.quantity }}"
+                    min="1"
+                    max="{{ item.variant.inventory_quantity }}"
+                    id="updates_{{ forloop.index }}"
+                    class="w-20 border p-2 text-center"
+                    data-product-title="{{ item.product.title }}"
+                  >
+                  <span class="error-message hidden text-xs text-red-600 mt-1"></span>
+                  <input
+                    type="submit"
+                    value="{{ 'cart.update' | t }}"
+                    class="mt-2 text-xs bg-sp-brown text-white px-3 py-1 rounded hover:bg-sp-light-brown transition cursor-pointer"
+                  >
+                </div>
+              </td>
+              <td class="px-6 py-4 text-right font-semibold">
+                {{ item.line_price | money }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="mt-8 flex justify-end">
+        <input
+          type="submit"
+          name="checkout"
+          value="{{ 'cart.checkout' | t }}"
+          class="bg-sp-brown text-white px-6 py-3 rounded-lg hover:bg-sp-light-brown transition cursor-pointer font-bold uppercase tracking-wider"
+        >
+      </div>
+    </form>
+  {% else %}
+    <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
+      <div class="text-center">
+        <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
+        <div class="my-4 py-4">
+          {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
