@@ -1,107 +1,125 @@
 {% form 'cart', cart %}
   <div class="container mx-auto px-4 pt-24 pb-12">
     {% if cart.item_count > 0 %}
-      {% render 'btn-brown', url: routes.all_products_collection_url, text: 'Atpakaļ uz veikalu' %}
-      <div class="flex items-center justify-between mb-6">
-        <h1 class="hidden">Iepirkumu grozs</h1>
-      </div>
+      <div data-cart-body>
+        {% render 'btn-brown', url: routes.all_products_collection_url, text: 'Atpakaļ uz veikalu' %}
+        <div class="flex items-center justify-between mb-6">
+          <h1 class="hidden">Iepirkumu grozs</h1>
+        </div>
 
-      <table class="w-full table-auto border-separate border-spacing-y-12">
-        <thead class="text-left shadow-md">
-          <tr>
-            <th class="px-6 py-3">Produkts</th>
-            <th class="px-6 py-3 text-center">Cena</th>
-            <th class="px-6 py-3 text-center">Daudzums</th>
-            <th class="px-6 py-3 text-right">Starpsumma</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for item in cart.items %}
-            <tr
-              class="shadow-md cart-line-item relative"
-              data-key="{{ item.key }}"
-              data-max="{{ item.variant.inventory_quantity | default: 9999 }}"
-            >
-              <td class="px-6 py-4">
-                <div class="flex items-center gap-4">
-                  {% render 'btn-remove-product', item: item %}
-                  <a href="{{ item.url }}" class="flex items-center gap-4">
-                    <img
-                      src="{{ item.image | image_url: width: 100 }}"
-                      alt="{{ item.product.title }}"
-                      width="100"
-                      height="100"
-                      class="rounded"
-                    >
-                    <p class="font-medium">{{ item.product.title | truncatewords: 3 }}</p>
-                  </a>
-                </div>
-                <!-- Moved error message here so it doesn't affect the quantity control layout -->
-                <div class="mt-2 min-h-5">
-                  <div
-                    data-error
-                    class="text-xs text-red-600 text-left max-w-[320px] opacity-0 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </td>
+        <div class="overflow-x-auto md:overflow-visible">
+          <table class="w-full table-auto border-separate border-spacing-y-12">
+            <thead class="text-left shadow-md hidden md:table-header-group">
+              <tr>
+                <th class="px-6 py-3">Produkts</th>
+                <th class="px-6 py-3 text-center">Cena</th>
+                <th class="px-6 py-3 text-center">Daudzums</th>
+                <th class="px-6 py-3 text-right">Starpsumma</th>
+              </tr>
+            </thead>
 
-              <td class="px-6 py-4 text-center">
-                {{ item.price | money }}
-              </td>
-
-              <td class="px-6 py-4">
-                <div class="quantity-container flex flex-col items-center">
-                  <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
-                    <a
-                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | minus: 1 }}"
-                      class="link--no-underline quantity__button button quantity-minus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-                      >−</a
-                    >
-                    <span data-qty class="w-8 text-center py-1.5 font-bold">{{ item.quantity }}</span>
-                    <a
-                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | plus: 1 }}"
-                      class="link--no-underline quantity__button button quantity-plus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-                      >+</a
-                    >
-                  </div>
-                  <!-- Removed the in-cell error to prevent misalignment -->
-                  <!-- <div class="mt-2 flex items-center gap-2 min-h-5"><div data-error ...></div></div> -->
-                </div>
-              </td>
-
-              <td class="px-6 py-4 text-right font-semibold" data-line-price>
-                <span data-line-price-amount>{{ item.final_line_price | money }}</span>
-                <!-- Row overlay (covers the whole <tr>) -->
-                <div
-                  data-row-overlay
-                  class="hidden absolute inset-0 bg-white/60 z-10 flex items-center justify-center"
-                  aria-hidden="true"
+            <tbody class="block md:table-row-group">
+              {% for item in cart.items %}
+                <tr
+                  class="relative overflow-hidden block md:table-row shadow-lg rounded-lg mb-4 md:mb-0 p-2 md:p-0 cart-line-item border border-gray-200 md:border-0"
+                  data-key="{{ item.key }}"
+                  data-max="{{ item.variant.inventory_quantity | default: 9999 }}"
                 >
-                  <span class="spinner"></span>
-                </div>
-              </td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+                  <!-- Product -->
+                  <td class="block md:table-cell px-6 py-4">
+                    <div class="flex items-center gap-4">
+                      {% render 'btn-remove-product', item: item %}
+                      <a href="{{ item.url }}" class="flex items-center gap-4">
+                        <img
+                          src="{{ item.image | image_url: width: 100 }}"
+                          alt="{{ item.product.title }}"
+                          width="100"
+                          height="100"
+                          class="rounded"
+                        >
+                        <p class="font-medium">{{ item.product.title | truncatewords: 3 }}</p>
+                      </a>
+                    </div>
+                    <div class="mt-2 min-h-5">
+                      <div
+                        data-error
+                        class="text-xs text-red-600 text-left max-w-[320px] opacity-0 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                  </td>
 
-      <div class="flex md:justify-end">
-        <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
-          <h2 class="text-2xl mb-4 text-sp-brown">Groza kopsumma</h2>
-          <div class="flex justify-between border-b-1 border-sp-brown py-4">
-            <p>Starpsumma:</p>
-            <p data-subtotal-amount>{{ cart.total_price | money }}</p>
-          </div>
-          <div class="flex justify-between border-b-1 border-sp-brown py-4">
-            <p>Piegāde:</p>
-            <p data-shipping-amount data-free-label="Bezmaksas"></p>
-          </div>
-          <div class="flex justify-between py-4">
-            <p>Kopā:</p>
-            <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
-          </div>
-          <div class="flex justify-center">
-            {% render 'btn-brown-submit', text: 'Turpināt uz apmaksu', name: 'checkout' %}
+                  <!-- Price -->
+                  <td class="block md:table-cell px-6 py-4 border-b border-gray-200">
+                    <div class="flex justify-between md:block">
+                      <span class="md:hidden">Cena</span>
+                      <span>{{ item.price | money }}</span>
+                    </div>
+                  </td>
+
+                  <!-- Quantity -->
+                  <td class="block md:table-cell px-6 py-4 border-b border-gray-200">
+                    <div class="flex items-center justify-between md:block">
+                      <span class="md:hidden">Daudzums</span>
+                      <div class="quantity-container flex justify-end md:justify-center">
+                        <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
+                          <a
+                            href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | minus: 1 }}"
+                            class="link--no-underline quantity__button button quantity-minus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                            >−</a
+                          >
+                          <span data-qty class="w-8 text-center py-1.5 font-bold">{{ item.quantity }}</span>
+                          <a
+                            href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | plus: 1 }}"
+                            class="link--no-underline quantity__button button quantity-plus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                            >+</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <!-- Subtotal + overlay -->
+                  <td class="block md:table-cell px-6 py-4 text-right" data-line-price>
+                    <div class="flex justify-between md:block">
+                      <span class="md:hidden">Starpsumma</span>
+                      <span data-line-price-amount>{{ item.final_line_price | money }}</span>
+                    </div>
+
+                    <!-- Row overlay (now covers the entire row because td is not relative) -->
+                    <div
+                      data-row-overlay
+                      class="hidden absolute inset-0 bg-white/60 z-10 flex items-center justify-center"
+                      aria-hidden="true"
+                    >
+                      <span
+                        class="inline-block h-4 w-4 rounded-full border-2 border-sp-brown border-t-transparent animate-spin"
+                      ></span>
+                    </div>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <div id="cart-total" class="flex md:justify-end">
+          <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
+            <h2 class="text-2xl mb-4 text-sp-brown">Groza kopsumma</h2>
+            <div class="flex justify-between border-b-1 border-sp-brown py-4">
+              <p>Starpsumma:</p>
+              <p data-subtotal-amount>{{ cart.total_price | money }}</p>
+            </div>
+            <div class="flex justify-between border-b-1 border-sp-brown py-4">
+              <p>Piegāde:</p>
+              <p data-shipping-amount data-free-label="Bezmaksas"></p>
+            </div>
+            <div class="flex justify-between py-4">
+              <p>Kopā:</p>
+              <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
+            </div>
+            <div class="flex justify-center">
+              {% render 'btn-brown-submit', text: 'Turpināt uz apmaksu', name: 'checkout' %}
+            </div>
           </div>
         </div>
       </div>
@@ -152,17 +170,17 @@
 {% endschema %}
 
 {% stylesheet %}
-  .spinner {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #e5e7eb; /* gray-200 */
-    border-top-color: #885642; /* theme brown */
-    border-radius: 50%;
-    animation: cartspin 1s linear infinite;
-  }
-  @keyframes cartspin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  /* Remove the old spinner + mobile table CSS block; Tailwind classes now handle it */
 {% endstylesheet %}
+
+<!-- Always-available empty template (used by JS when cart becomes empty) -->
+<template id="empty-cart-template">
+  <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
+    <div class="text-center">
+      <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
+      <div class="my-4 py-4">
+        {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+      </div>
+    </div>
+  </div>
+</template>

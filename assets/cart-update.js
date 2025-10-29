@@ -101,11 +101,27 @@
             // Update totals and header
             updateSummary(cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
+
+            if (cart.item_count === 0) {
+                showEmptyState();
+                document.querySelectorAll('.cart-count').forEach(el => { el.textContent = '0'; });
+                return;
+            }
         } catch (e) {
             console.error(e);
         } finally {
             setLoading(container, false);
             btns.forEach(b => b.removeAttribute('aria-disabled'));
+        }
+    }
+
+    function showEmptyState() {
+        const body = document.querySelector('[data-cart-body]');
+        const tpl = document.getElementById('empty-cart-template');
+        if (body && tpl) {
+            body.replaceWith(tpl.content.cloneNode(true));
+        } else {
+            window.location.reload(); // fallback
         }
     }
 
@@ -168,6 +184,12 @@
             const totalEl = document.querySelector('[data-cart-total]');
             if (totalEl) totalEl.textContent = formatMoney(cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
+
+            if (cart.item_count === 0) {
+                showEmptyState();
+                document.querySelectorAll('.cart-count').forEach(el => { el.textContent = '0'; });
+                return;
+            }
         } catch (err) {
             console.error(err);
         } finally {
