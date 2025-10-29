@@ -37,7 +37,8 @@ class RecommendedProducts extends HTMLElement {
                         const options = {
                             fill: true,
                             infinite: false,
-                            Dots: false,
+                            plugins: [window.Dots],
+
                         };
 
                         // Corrected syntax
