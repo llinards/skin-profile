@@ -38,10 +38,8 @@ class RecommendedProducts extends HTMLElement {
                             fill: true,
                             infinite: false,
                             plugins: [window.Dots],
-
                         };
 
-                        // Corrected syntax
                         Carousel(container, options).init();
 
                         setTimeout(() => {
