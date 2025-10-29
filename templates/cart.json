@@ -11,7 +11,10 @@
   "sections": {
     "main": {
       "type": "cart",
-      "settings": {}
+      "settings": {
+        "free_shipping_threshold": "50.00",
+        "flat_shipping": "5.99"
+      }
     },
     "template_text_image_wide_7Wy8Pq": {
       "type": "template-text-image-wide",
