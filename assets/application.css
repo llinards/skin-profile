@@ -1678,6 +1678,12 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .xl\:text-lg {
+    @media (width >= 80rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .\32 xl\:text-3xl {
     @media (width >= 96rem) {
       font-size: var(--text-3xl);
