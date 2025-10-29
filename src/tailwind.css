@@ -6,12 +6,20 @@
         color: #885642;
     }
 
+    .text-sp-brown {
+        color: #885642;
+    }
+
     .hover\:sp-brown:hover {
         color: #885642 !important;
     }
 
     .fill-sp-brown {
         fill: #885642;
+    }
+
+    .border-sp-brown {
+        border-color: #885642;
     }
 
     .hover\:fill-sp-brown:hover {

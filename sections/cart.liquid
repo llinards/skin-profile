@@ -85,14 +85,25 @@
         </tbody>
       </table>
 
-      <div class="p-6 border border-sp-brown">
-        <p>
-          Starpsumma <span data-subtotal-amount>{{ cart.total_price | money }}</span>
-        </p>
-        <p>Piegāde: <span data-shipping-amount data-free-label="Bezmaksas"></span></p>
-        <p>
-          Kopā <span data-grandtotal-amount>{{ cart.total_price | money }}</span>
-        </p>
+      <div class="flex md:justify-end">
+        <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
+          <h2 class="text-2xl mb-4 text-sp-brown">Groza kopsumma</h2>
+          <div class="flex justify-between border-b-1 border-sp-brown py-4">
+            <p>Starpsumma:</p>
+            <p data-subtotal-amount>{{ cart.total_price | money }}</p>
+          </div>
+          <div class="flex justify-between border-b-1 border-sp-brown py-4">
+            <p>Piegāde:</p>
+            <p data-shipping-amount data-free-label="Bezmaksas"></p>
+          </div>
+          <div class="flex justify-between py-4">
+            <p>Kopā:</p>
+            <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
+          </div>
+          <div class="flex justify-center">
+            {% render 'btn-brown-submit', text: 'Turpināt uz apmaksu', name: 'checkout' %}
+          </div>
+        </div>
       </div>
     {% else %}
       <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
