@@ -15,6 +15,7 @@ class RecommendedProducts extends HTMLElement {
 
             if (!response.ok) {
                 console.error('Failed to fetch recommendations:', response.status);
+                this.dispatchEvent(new CustomEvent('carousel-initialized', { bubbles: true }));
                 return;
             }
 
@@ -27,35 +28,35 @@ class RecommendedProducts extends HTMLElement {
             if (recommendations?.innerHTML.trim().length > 0) {
                 this.innerHTML = recommendations.innerHTML;
 
-                // Dispatch event that recommendations were found
                 this.dispatchEvent(new CustomEvent('recommendations-found', { bubbles: true }));
 
-                // Wait for DOM to update before initializing carousel
                 setTimeout(() => {
                     const container = document.getElementById('productRecommendationCarousel');
+
                     if (container && typeof Carousel !== 'undefined') {
                         const options = {
                             fill: true,
                             infinite: false,
-                            plugins: [window.Dots],
+                            Dots: false,
                         };
 
+                        // Corrected syntax
                         Carousel(container, options).init();
 
-                        // Dispatch event after carousel is initialized
                         setTimeout(() => {
-                            console.log('Carousel initialized!');
                             this.dispatchEvent(new CustomEvent('carousel-initialized', { bubbles: true }));
                         }, 200);
                     } else {
-                        console.log('Carousel element not found or Carousel library not loaded');
                         this.dispatchEvent(new CustomEvent('carousel-initialized', { bubbles: true }));
                     }
                 }, 200);
+            } else {
+                this.dispatchEvent(new CustomEvent('carousel-initialized', { bubbles: true }));
             }
 
         } catch (error) {
             console.error('Error loading recommendations:', error);
+            this.dispatchEvent(new CustomEvent('carousel-initialized', { bubbles: true }));
         }
     }
 }

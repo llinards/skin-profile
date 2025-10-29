@@ -1,47 +1,49 @@
 <script src="{{ 'recommended-products.js' | asset_url }}" defer></script>
 
 <div
-  class="container mx-auto px-4 pb-12 relative"
   x-data="{ loading: true, hasRecommendations: false }"
   x-init="loading = true"
   x-cloak
   @carousel-initialized="loading = false"
   @recommendations-found="hasRecommendations = true"
 >
-  <h2 class="text-3xl md:text-4xl font-bold mb-8" x-show="hasRecommendations || loading" x-cloak>Līdzīgi produkti</h2>
+  <div x-show="hasRecommendations" x-transition:enter>
+    <div class="container mx-auto px-4 pb-12 relative">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Līdzīgi produkti</h2>
 
-  <!-- Skeleton Loader -->
-  <div
-    x-show="loading"
-    x-cloak
-    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
-  >
-    <template x-for="i in 4">
-      <div class="animate-pulse">
-        <div class="bg-gray-200 aspect-square rounded-lg mb-3"></div>
-        <div class="h-4 bg-gray-200 rounded mb-2"></div>
-        <div class="h-4 bg-gray-200 rounded w-2/3"></div>
+      <!-- Skeleton Loader -->
+      <div
+        x-show="loading"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
+      >
+        <template x-for="i in 4">
+          <div class="animate-pulse">
+            <div class="bg-gray-200 aspect-square rounded-lg mb-3"></div>
+            <div class="h-4 bg-gray-200 rounded mb-2"></div>
+            <div class="h-4 bg-gray-200 rounded w-2/3"></div>
+          </div>
+        </template>
       </div>
-    </template>
-  </div>
 
-  <!-- Actual Products -->
-  <div x-show="!loading && hasRecommendations" x-transition x-cloak class="pb-6 md:pb-12">
-    <recommended-products
-      data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
-      data-product-id="{{ product.id }}"
-      data-section-id="{{ section.id }}"
-    >
-      {% if recommendations.performed and recommendations.products_count > 0 %}
-        <div id="productRecommendationCarousel" class="f-carousel">
-          {% for recommendation in recommendations.products %}
-            <div class="f-carousel__slide flex flex-col justify-between space-y-3">
-              {% render 'product-card', product: recommendation %}
+      <!-- Actual Products -->
+      <div x-show="!loading" class="pb-6 md:pb-12">
+        <recommended-products
+          data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
+          data-product-id="{{ product.id }}"
+          data-section-id="{{ section.id }}"
+        >
+          {% if recommendations.performed and recommendations.products_count > 0 %}
+            <div id="productRecommendationCarousel" class="f-carousel">
+              {% for recommendation in recommendations.products %}
+                <div class="f-carousel__slide flex flex-col justify-between space-y-3">
+                  {% render 'product-card', product: recommendation %}
+                </div>
+              {% endfor %}
             </div>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </recommended-products>
+          {% endif %}
+        </recommended-products>
+      </div>
+    </div>
   </div>
 </div>
 
