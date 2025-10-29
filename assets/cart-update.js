@@ -48,6 +48,29 @@
         container.classList.toggle('pointer-events-none', isLoading);
     }
 
+    function updateSummary(totalCents) {
+        const cfg = window.themeCart || {};
+        const threshold = Number(cfg.freeShippingThresholdCents || 0);
+        const flat = Number(cfg.flatShippingCents || 0);
+
+        const subtotalEl = document.querySelector('[data-subtotal-amount]');
+        const shippingEl = document.querySelector('[data-shipping-amount]');
+        const grandEl = document.querySelector('[data-grandtotal-amount]');
+
+        const shippingCents = totalCents >= threshold ? 0 : flat;
+        const grandCents = totalCents + shippingCents;
+
+        if (subtotalEl) subtotalEl.textContent = formatMoney(totalCents);
+        if (shippingEl) {
+            if (shippingCents === 0) {
+                shippingEl.textContent = shippingEl.dataset.freeLabel || 'Free';
+            } else {
+                shippingEl.textContent = formatMoney(shippingCents);
+            }
+        }
+        if (grandEl) grandEl.textContent = formatMoney(grandCents);
+    }
+
     async function changeLineQty(key, qty, container) {
         const btns = container.querySelectorAll('.quantity__button');
         btns.forEach(b => b.setAttribute('aria-disabled', 'true'));
@@ -67,16 +90,16 @@
 
             if (updated) {
                 const qtyEl = container.querySelector('[data-qty]');
-                const amountEl = container.querySelector('[data-line-price-amount]'); // changed
+                const amountEl = container.querySelector('[data-line-price-amount]');
                 if (qtyEl) qtyEl.textContent = updated.quantity;
-                if (amountEl) amountEl.textContent = formatMoney(updated.final_line_price); // changed
+                if (amountEl) amountEl.textContent = formatMoney(updated.final_line_price);
                 setButtonsState(container, updated.quantity, max);
             } else {
                 container.remove();
             }
 
-            const totalEl = document.querySelector('[data-cart-total]');
-            if (totalEl) totalEl.textContent = formatMoney(cart.total_price);
+            // Update totals and header
+            updateSummary(cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
         } catch (e) {
             console.error(e);
@@ -154,13 +177,16 @@
         }
     });
 
-    // Initialize disabled state on load
+    // Initialize disabled state + summary on load
     function initStates() {
         document.querySelectorAll('.cart-line-item').forEach(container => {
             const max = Number(container.dataset.max || '9999');
             const qty = parseInt(container.querySelector('[data-qty]')?.textContent, 10) || 1;
             setButtonsState(container, qty, max);
         });
+        if (window.themeCart?.initialCartTotalCents != null) {
+            updateSummary(window.themeCart.initialCartTotalCents);
+        }
     }
 
     if (document.readyState === 'loading') {

@@ -83,16 +83,17 @@
             </tr>
           {% endfor %}
         </tbody>
-
-        <tfoot>
-          <tr class="border-t-2">
-            <td colspan="3" class="px-6 py-4 text-right font-bold text-lg">Kopā:</td>
-            <td class="px-6 py-4 text-right font-bold text-lg" data-cart-total>
-              {{ cart.total_price | money }}
-            </td>
-          </tr>
-        </tfoot>
       </table>
+
+      <div class="p-6 border border-sp-brown">
+        <p>
+          Starpsumma <span data-subtotal-amount>{{ cart.total_price | money }}</span>
+        </p>
+        <p>Piegāde: <span data-shipping-amount data-free-label="Bezmaksas"></span></p>
+        <p>
+          Kopā <span data-grandtotal-amount>{{ cart.total_price | money }}</span>
+        </p>
+      </div>
     {% else %}
       <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
         <div class="text-center">
@@ -110,7 +111,11 @@
   window.themeCart = {
     moneyFormat: {{ shop.money_format | json }},
     locale: {{ shop.locale | default: 'lv' | json }},
-    currency: {{ shop.currency | json }}
+    currency: {{ shop.currency | json }},
+    // Shipping config (in cents)
+    freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }},
+    flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }},
+    initialCartTotalCents: {{ cart.total_price }}
   };
 </script>
 <script src="{{ 'cart-update.js' | asset_url }}" defer></script>
@@ -118,7 +123,20 @@
 {% schema %}
 {
   "name": "t:general.cart",
-  "settings": []
+  "settings": [
+    {
+      "type": "text",
+      "id": "free_shipping_threshold",
+      "label": "Free shipping from (e.g. 50.00)",
+      "default": "0"
+    },
+    {
+      "type": "text",
+      "id": "flat_shipping",
+      "label": "Flat delivery fee (e.g. 2.99)",
+      "default": "0"
+    }
+  ]
 }
 {% endschema %}
 
