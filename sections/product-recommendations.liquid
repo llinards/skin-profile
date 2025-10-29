@@ -1,14 +1,21 @@
+<script src="{{ 'recommended-products.js' | asset_url }}" defer></script>
+
 <div
   class="container mx-auto px-4 pb-12 relative"
   x-data="{ loading: true, hasRecommendations: false }"
   x-init="loading = true"
-  @recommendations-loaded="loading = false"
+  x-cloak
+  @carousel-initialized="loading = false"
   @recommendations-found="hasRecommendations = true"
 >
-  <h2 class="text-3xl md:text-4xl font-bold mb-8" x-show="hasRecommendations || loading">Līdzīgi produkti</h2>
+  <h2 class="text-3xl md:text-4xl font-bold mb-8" x-show="hasRecommendations || loading" x-cloak>Līdzīgi produkti</h2>
 
   <!-- Skeleton Loader -->
-  <div x-show="loading && !hasRecommendations" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12">
+  <div
+    x-show="loading"
+    x-cloak
+    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
+  >
     <template x-for="i in 4">
       <div class="animate-pulse">
         <div class="bg-gray-200 aspect-square rounded-lg mb-3"></div>
@@ -19,7 +26,7 @@
   </div>
 
   <!-- Actual Products -->
-  <div x-show="hasRecommendations" x-transition class="pb-6 md:pb-12">
+  <div x-show="!loading && hasRecommendations" x-transition x-cloak class="pb-6 md:pb-12">
     <recommended-products
       data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
       data-product-id="{{ product.id }}"
@@ -38,9 +45,11 @@
   </div>
 </div>
 
-<script src="{{ 'recommended-products.js' | asset_url }}" defer></script>
-
 {% stylesheet %}
+  [x-cloak] {
+    display: none !important;
+  }
+
   .loading-spinner {
     width: 40px;
     height: 40px;
