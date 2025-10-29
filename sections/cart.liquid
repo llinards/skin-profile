@@ -1,10 +1,14 @@
-<div class="container mx-auto px-4 pt-24 pb-12">
-  {% if cart.item_count > 0 %}
-    {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
-    <form class="mt-12" action="{{ routes.cart_url }}" method="post">
+{% form 'cart', cart %}
+  <div class="container mx-auto px-4 pt-24 pb-12">
+    {% if cart.item_count > 0 %}
+      {% render 'btn-brown', url: routes.all_products_collection_url, text: 'Atpakaļ uz veikalu' %}
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="hidden">Iepirkumu grozs</h1>
+      </div>
+
       <table class="w-full table-auto border-separate border-spacing-y-12">
         <thead class="text-left shadow-md">
-          <tr class="">
+          <tr>
             <th class="px-6 py-3">Produkts</th>
             <th class="px-6 py-3 text-center">Cena</th>
             <th class="px-6 py-3 text-center">Daudzums</th>
@@ -13,11 +17,15 @@
         </thead>
         <tbody>
           {% for item in cart.items %}
-            <tr class="shadow-md">
+            <tr
+              class="shadow-md cart-line-item relative"
+              data-key="{{ item.key }}"
+              data-max="{{ item.variant.inventory_quantity | default: 9999 }}"
+            >
               <td class="px-6 py-4">
                 <div class="flex items-center gap-4">
                   {% render 'btn-remove-product', item: item %}
-                  <a href="{{ item.url }}" class="flex items-center">
+                  <a href="{{ item.url }}" class="flex items-center gap-4">
                     <img
                       src="{{ item.image | image_url: width: 100 }}"
                       alt="{{ item.product.title }}"
@@ -28,55 +36,84 @@
                     <p class="font-medium">{{ item.product.title | truncatewords: 3 }}</p>
                   </a>
                 </div>
-              </td>
-              <td class="px-6 py-4 text-center">{{ item.price | money }}</td>
-              <td class="px-6 py-4">
-                <div class="quantity-container flex flex-col items-center">
-                  <input
-                    type="number"
-                    name="updates[]"
-                    value="{{ item.quantity }}"
-                    min="1"
-                    max="{{ item.variant.inventory_quantity }}"
-                    id="updates_{{ forloop.index }}"
-                    class="w-20 border p-2 text-center"
-                    data-product-title="{{ item.product.title }}"
-                  >
-                  <span class="error-message hidden text-xs text-red-600 mt-1"></span>
-                  <input
-                    type="submit"
-                    value="{{ 'cart.update' | t }}"
-                    class="mt-2 text-xs bg-sp-brown text-white px-3 py-1 rounded hover:bg-sp-light-brown transition cursor-pointer"
-                  >
+                <!-- Moved error message here so it doesn't affect the quantity control layout -->
+                <div class="mt-2 min-h-5">
+                  <div
+                    data-error
+                    class="text-xs text-red-600 text-left max-w-[320px] opacity-0 transition-opacity duration-300"
+                  ></div>
                 </div>
               </td>
-              <td class="px-6 py-4 text-right font-semibold">
-                {{ item.line_price | money }}
+
+              <td class="px-6 py-4 text-center">
+                {{ item.price | money }}
+              </td>
+
+              <td class="px-6 py-4">
+                <div class="quantity-container flex flex-col items-center">
+                  <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
+                    <a
+                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | minus: 1 }}"
+                      class="link--no-underline quantity__button button quantity-minus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                      >−</a
+                    >
+                    <span data-qty class="w-8 text-center py-1.5 font-bold">{{ item.quantity }}</span>
+                    <a
+                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | plus: 1 }}"
+                      class="link--no-underline quantity__button button quantity-plus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                      >+</a
+                    >
+                  </div>
+                  <!-- Removed the in-cell error to prevent misalignment -->
+                  <!-- <div class="mt-2 flex items-center gap-2 min-h-5"><div data-error ...></div></div> -->
+                </div>
+              </td>
+
+              <td class="px-6 py-4 text-right font-semibold" data-line-price>
+                <span data-line-price-amount>{{ item.final_line_price | money }}</span>
+                <!-- Row overlay (covers the whole <tr>) -->
+                <div
+                  data-row-overlay
+                  class="hidden absolute inset-0 bg-white/60 z-10 flex items-center justify-center"
+                  aria-hidden="true"
+                >
+                  <span class="spinner"></span>
+                </div>
               </td>
             </tr>
           {% endfor %}
         </tbody>
+
+        <tfoot>
+          <tr class="border-t-2">
+            <td colspan="3" class="px-6 py-4 text-right font-bold text-lg">Kopā:</td>
+            <td class="px-6 py-4 text-right font-bold text-lg" data-cart-total>
+              {{ cart.total_price | money }}
+            </td>
+          </tr>
+        </tfoot>
       </table>
-      <div class="mt-8 flex justify-end">
-        <input
-          type="submit"
-          name="checkout"
-          value="{{ 'cart.checkout' | t }}"
-          class="bg-sp-brown text-white px-6 py-3 rounded-lg hover:bg-sp-light-brown transition cursor-pointer font-bold uppercase tracking-wider"
-        >
-      </div>
-    </form>
-  {% else %}
-    <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
-      <div class="text-center">
-        <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
-        <div class="my-4 py-4">
-          {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+    {% else %}
+      <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
+        <div class="text-center">
+          <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
+          <div class="my-4 py-4">
+            {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+          </div>
         </div>
       </div>
-    </div>
-  {% endif %}
-</div>
+    {% endif %}
+  </div>
+{% endform %}
+
+<script>
+  window.themeCart = {
+    moneyFormat: {{ shop.money_format | json }},
+    locale: {{ shop.locale | default: 'lv' | json }},
+    currency: {{ shop.currency | json }}
+  };
+</script>
+<script src="{{ 'cart-update.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
@@ -84,3 +121,19 @@
   "settings": []
 }
 {% endschema %}
+
+{% stylesheet %}
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e5e7eb; /* gray-200 */
+    border-top-color: #885642; /* theme brown */
+    border-radius: 50%;
+    animation: cartspin 1s linear infinite;
+  }
+  @keyframes cartspin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+{% endstylesheet %}

@@ -1,12 +1,9 @@
-<script src="{{ 'collection-pagination.js' | asset_url }}" defer></script>
-
 <div
   class="container mx-auto px-4 pb-12 relative transition-hide"
-  x-data="collectionFilters()"
-  x-init="init()"
+  data-collection-root
   id="products"
 >
-  <h2 id="products" class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
+  <h2 class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
   <!-- Filters as Dropdowns on Desktop -->
   <div class="hidden filters-container sm:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filtersDesktop">
@@ -16,10 +13,11 @@
   </div>
 
   <!-- Mobile filters wrapped in a single dropdown -->
-  {% render 'mobile-filter-wrapper' %}
+  <div x-ref="mobileFilterWrapper">
+    {% render 'mobile-filter-wrapper' %}
+  </div>
 
   {% paginate collection.products by 12 %}
-    <!-- Product Grid Wrapper -->
     <div class="relative z-1">
       {% render 'loading-screen' %}
 
@@ -40,30 +38,14 @@
       </div>
 
       <!-- Pagination -->
-      {% render 'paginate', paginate: paginate %}
+      <div x-ref="pagination">
+        {% render 'paginate', paginate: paginate %}
+      </div>
     </div>
   {% endpaginate %}
 </div>
 
-{% stylesheet %}
-  .loading-spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #885642;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-{% endstylesheet %}
+<script src="{{ 'collection-pagination.js' | asset_url }}" defer></script>
 
 {% schema %}
 {

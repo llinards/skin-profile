@@ -14,12 +14,21 @@
     {{ product.title | escape | link_to: product.url }}
   </h3>
   <p class="text-xs sm:text-sm">{{ product.price | money }}</p>
-  <form class="w-full" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+  {% form 'product', product, class: 'w-full' %}
+    {% if product.has_only_default_variant %}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    {% else %}
+      <select name="id">
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}">{{ variant.title }}</option>
+        {% endfor %}
+      </select>
+    {% endif %}
+    <input type="hidden" name="quantity" value="1">
     {% if product.available %}
       {% render 'btn-add-to-cart', class: 'w-full text-xs sm:text-sm xl:text-base' %}
     {% else %}
       {% render 'btn-out-of-stock', class: 'w-full text-xs sm:text-sm xl:text-base' %}
     {% endif %}
-  </form>
+  {% endform %}
 </div>
