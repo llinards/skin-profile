@@ -12,9 +12,112 @@
     "main": {
       "type": "cart",
       "settings": {}
+    },
+    "template_text_image_wide_7Wy8Pq": {
+      "type": "template-text-image-wide",
+      "blocks": {
+        "button_Vxp834": {
+          "type": "button",
+          "settings": {
+            "text": "Uz veikalu",
+            "url": "shopify://pages/veikals",
+            "style": "brown"
+          }
+        },
+        "slide_HfYmUA": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-serum.jpg",
+            "alt": "Biodroga Serum",
+            "url": ""
+          }
+        },
+        "slide_6mnLaL": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/schrammek_produkti.jpg",
+            "alt": "schrammek produkti",
+            "url": ""
+          }
+        },
+        "slide_ykUXhC": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-schwarzwald-new-series.jpg",
+            "alt": "biodroga schwarzwald new series produkti",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_Vxp834",
+        "slide_HfYmUA",
+        "slide_6mnLaL",
+        "slide_ykUXhC"
+      ],
+      "name": "Teksts ar bildi",
+      "settings": {
+        "heading": "Skaistums sākas ar rūpēm",
+        "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
+        "photo": "shopify://shop_images/biodroga-serum.jpg",
+        "alt": "Biodroga serums"
+      }
+    },
+    "template_contact_us_LXH4h7": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_6CaMaF": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_CMyAHp": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_YgmWHH": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_FdjMiz": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_6CaMaF",
+        "button_CMyAHp",
+        "button_YgmWHH",
+        "button_FdjMiz"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_text_image_wide_7Wy8Pq",
+    "template_contact_us_LXH4h7"
   ]
 }
