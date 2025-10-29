@@ -33,13 +33,11 @@ class RecommendedProducts extends HTMLElement {
                 // Wait for DOM to update before initializing carousel
                 setTimeout(() => {
                     const container = document.getElementById('productRecommendationCarousel');
-
                     if (container && typeof Carousel !== 'undefined') {
-
                         const options = {
                             fill: true,
                             infinite: false,
-                            Dots: false,
+                            plugins: [window.Dots],
                         };
 
                         Carousel(container, options).init();

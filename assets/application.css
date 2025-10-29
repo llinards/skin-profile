@@ -426,9 +426,6 @@
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
   }
-  .min-h-\[400px\] {
-    min-height: 400px;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -1827,6 +1824,9 @@
   top: 90%;
   z-index: 4;
   color: #ffffff !important;
+}
+#productRecommendationCarousel .f-carousel__dots {
+  margin-top: 36px;
 }
 @media screen and (max-width: 479px) {
   .f-carousel__slide {
