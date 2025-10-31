@@ -125,6 +125,28 @@
         @apply text-base md:text-lg;
     }
 
+    .globo-form-app {
+        border: 1px solid #885642;;
+        border-radius: 0.5rem !important;
+    }
+
+    .appointment-form button {
+        border: none !important;
+        box-shadow: none !important;
+        text-transform: uppercase !important;
+        letter-spacing: var(--tracking-widest);
+    }
+
+    .appointment-form-input-field input {
+        border: 1px solid black !important;
+        box-shadow: none !important;
+    }
+
+    .appointment-form button:hover {
+        background-color: #885642 !important;
+        color: #ffffff !important;
+    }
+
     .transition-hide {
         opacity: 0;
         filter: blur(3px);
