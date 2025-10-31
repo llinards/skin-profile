@@ -1933,17 +1933,20 @@
     border: 1px solid #885642;
     border-radius: 0.5rem !important;
   }
-  .appointment-form button {
+  .globo-form-app h3 {
+    text-align: center !important;
+  }
+  .globo-form button {
     border: none !important;
     box-shadow: none !important;
     text-transform: uppercase !important;
     letter-spacing: var(--tracking-widest);
   }
-  .appointment-form-input-field input, .appointment-form-input-field select {
+  .globo-form input, .globo-form select {
     border: 1px solid lightgrey !important;
     box-shadow: none !important;
   }
-  .appointment-form button:hover {
+  .globo-form button:hover {
     background-color: #885642 !important;
     color: #ffffff !important;
   }
