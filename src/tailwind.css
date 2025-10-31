@@ -137,8 +137,9 @@
         letter-spacing: var(--tracking-widest);
     }
 
-    .appointment-form-input-field input {
-        border: 1px solid black !important;
+    .appointment-form-input-field input,
+    .appointment-form-input-field select {
+        border: 1px solid lightgrey !important;
         box-shadow: none !important;
     }
 
