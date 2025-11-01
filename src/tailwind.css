@@ -125,66 +125,7 @@
         @apply text-base md:text-lg;
     }
 
-    .globo-form {
-        display: flex !important;
-        justify-content: center !important;
-    }
-
-    .globo-form-app {
-        border: 1px solid #885642;
-        border-radius: 1rem !important;
-        margin-left: 1rem !important;
-        margin-right: 1rem !important;
-    }
-
-    .globo-form-app .g-container {
-        padding: 2rem !important;
-    }
-
-    .globo-form-app h3 {
-        text-align: center !important;
-    }
-
-    .globo-form button {
-        border: none !important;
-        box-shadow: none !important;
-        text-transform: uppercase !important;
-        letter-spacing: var(--tracking-widest);
-    }
-
-    .globo-form input,
-    .globo-form select {
-        border: 1px solid lightgrey !important;
-        box-shadow: none !important;
-        border-radius: 0.5rem !important;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-
-    .globo-form .label-content {
-        text-transform: uppercase !important;
-        letter-spacing: var(--tracking-widest);
-        font-weight: bold;
-    }
-
-    .globo-form button:hover {
-        background-color: #885642 !important;
-        color: #ffffff !important;
-    }
-
-    .globo-form .gfb-with-image-img {
-        width: 100%;
-    }
-
-    .globo-form .iti__flag-container {
-        background-color: #E6DAC8;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-    }
-
-    .globo-form input[data-type="phone"] {
-        padding-left: 90px !important;
-    }
+   
 
     .transition-hide {
         opacity: 0;
@@ -314,21 +255,5 @@
     #teamCarousel,
     #categoryCarousel {
         --f-carousel-slide-width: calc((100% - 96px) / 5);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .globo-form-app {
-        display: flex !important;
-        flex-direction: column-reverse !important; /* image goes below */
-    }
-
-    .gfb-with-image {
-        border-radius: 0 !important;
-    }
-
-    .gfb-with-image img {
-        border-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
     }
 }
