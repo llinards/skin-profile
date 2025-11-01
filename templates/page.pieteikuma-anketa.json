@@ -29,10 +29,16 @@
         "powerful_form_builder_app_block_VnXf3C"
       ],
       "settings": {}
+    },
+    "form_styling_YnqXq4": {
+      "type": "form-styling",
+      "name": "Formas dizains",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "form_styling_YnqXq4",
     "17619214747ae8c2b2"
   ]
 }
