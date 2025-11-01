@@ -1929,9 +1929,18 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .globo-form {
+    display: flex !important;
+    justify-content: center !important;
+  }
   .globo-form-app {
     border: 1px solid #885642;
-    border-radius: 0.5rem !important;
+    border-radius: 1rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .globo-form-app .g-container {
+    padding: 2rem !important;
   }
   .globo-form-app h3 {
     text-align: center !important;
@@ -2054,6 +2063,19 @@
 @media screen and (min-width: 1280px) {
   #teamCarousel, #categoryCarousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
+  }
+}
+@media screen and (max-width: 767px) {
+  .globo-form-app {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .gfb-with-image {
+    border-radius: 0 !important;
+  }
+  .gfb-with-image img {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 }
 @property --tw-border-spacing-x {
