@@ -62,6 +62,11 @@
         "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
       }
     },
+    "template_virtual_consultation_pX36xq": {
+      "type": "template-virtual-consultation",
+      "name": "Virtuālā konsutlācija",
+      "settings": {}
+    },
     "template_contact_us_BzVhrB": {
       "type": "template-contact-us",
       "blocks": {
@@ -109,18 +114,13 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
-    },
-    "template_virtual_consultation_pX36xq": {
-      "type": "template-virtual-consultation",
-      "name": "Virtuālā konsutlācija",
-      "settings": {}
     }
   },
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_contact_us_BzVhrB",
-    "template_virtual_consultation_pX36xq"
+    "template_virtual_consultation_pX36xq",
+    "template_contact_us_BzVhrB"
   ]
 }
