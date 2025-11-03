@@ -30,10 +30,10 @@
         },
         "image_atyRVU": {
           "type": "image",
-          "name": "Schrammek Produkti",
+          "name": "Dermatoloģija - Slaids 2",
           "settings": {
-            "image": "shopify://shop_images/schrammek-produkti-lg.jpg",
-            "alt_text": "Schrammek Produkti"
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids 2"
           }
         },
         "image_ryww6D": {
