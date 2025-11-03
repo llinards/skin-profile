@@ -61,11 +61,60 @@
         "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
         "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
       }
+    },
+    "template_contact_us_BzVhrB": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_MQRNxQ": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_QjQyxX": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_UWwgHq": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_jFjkaW": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_MQRNxQ",
+        "button_QjQyxX",
+        "button_UWwgHq",
+        "button_jFjkaW"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
     }
   },
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
-    "template_text_section_JPJC6T"
+    "template_text_section_JPJC6T",
+    "template_contact_us_BzVhrB"
   ]
 }
