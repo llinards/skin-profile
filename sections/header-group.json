@@ -38,10 +38,10 @@
         },
         "image_ryww6D": {
           "type": "image",
-          "name": "Biodroga Serum",
+          "name": "Dermatoloģija - Slaids 3",
           "settings": {
-            "image": "shopify://shop_images/biodroga-serum-lg.jpg",
-            "alt_text": "Biodroga Serum"
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids 3"
           }
         }
       },
