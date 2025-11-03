@@ -16,9 +16,49 @@
       "settings": {
         "menu": ""
       }
+    },
+    "template_header_carousel_yPrinn": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_zLExhf": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 1",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-1.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 1"
+          }
+        },
+        "image_3AGMLx": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 2",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 2"
+          }
+        },
+        "image_bUGrt6": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 3",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 3"
+          }
+        }
+      },
+      "block_order": [
+        "image_zLExhf",
+        "image_3AGMLx",
+        "image_bUGrt6"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Dermatoloģija",
+        "subtext": "<p>Āda ir mūsu vislielākais orgāns un dzīves laikā tā saskaras ar dažādām problēmām, kuras mums palīdz atrisināt dermatologs. Ja Jums ir radušās jebkādas izmaiņas ādas stāvoklī – nieze, izsitumi, iekaisumi, jaunveidojumi, izaugumi, nekavējoties vēršaties pie mums!</p>"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "template_header_carousel_yPrinn"
   ]
 }
