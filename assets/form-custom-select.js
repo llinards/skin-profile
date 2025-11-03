@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     panel.appendChild(list);
     wrap.appendChild(panel);
 
+    // Remember initial state
+    const initialIndex = select.selectedIndex >= 0 ? select.selectedIndex : 0;
+    const initialValue = select.options[initialIndex]?.value || '';
+    const initialText = select.options[initialIndex]?.text || 'Izvēlēties';
+
     // Items
     Array.from(select.options).forEach(opt => {
       const item = document.createElement('button');
@@ -76,6 +81,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       list.appendChild(item);
     });
+
+    // Reset helper
+    const resetSelect = () => {
+      select.selectedIndex = initialIndex;
+      select.value = initialValue;
+      label.textContent = initialText;
+      
+      list.querySelectorAll('.sp-select__item').forEach(el => {
+        const isInitial = el.dataset.value === initialValue;
+        el.classList.toggle('is-selected', isInitial);
+        if (isInitial) {
+          el.setAttribute('aria-selected', 'true');
+        } else {
+          el.removeAttribute('aria-selected');
+        }
+      });
+    };
+
+    // Expose reset on select element
+    select.spReset = resetSelect;
 
     const isOpen = () => !panel.classList.contains('hidden');
 
@@ -136,9 +161,37 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sel) el.setAttribute('aria-selected', 'true'); else el.removeAttribute('aria-selected');
       });
     });
+
+    // Hook into form reset event
+    const form = select.closest('form');
+    if (form && !form.dataset.spResetBound) {
+      form.dataset.spResetBound = '1';
+      form.addEventListener('reset', () => {
+        // Small delay to let native reset complete
+        setTimeout(() => {
+          form.querySelectorAll('select[data-enhanced="1"]').forEach(s => s.spReset?.());
+        }, 10);
+      });
+    }
   };
 
   const scan = () => document.querySelectorAll('.globo-form select:not([data-enhanced])').forEach(enhance);
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
+
+  // Fallback: detect successful AJAX submission and reset after a short delay
+  // (adjust timing/selector if your app fires a different event)
+  document.addEventListener('submit', (e) => {
+    const form = e.target?.closest?.('.globo-form form');
+    if (!form) return;
+    
+    // Wait for submit to complete (adjust 1000ms if needed)
+    setTimeout(() => {
+      // Check if success message appeared (indicates successful submission)
+      const hasSuccess = form.querySelector('.message.success, .gfb-success, .globo-form-success, .gfb__success-message, .gfb-alert.alert-success');
+      if (hasSuccess) {
+        form.querySelectorAll('select[data-enhanced="1"]').forEach(s => s.spReset?.());
+      }
+    }, 1000);
+  }, true);
 });
