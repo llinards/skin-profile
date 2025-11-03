@@ -13,19 +13,37 @@
     margin-right: 1rem !important;
   }
 
-  .globo-form-app .g-container {
-    padding: 2rem !important;
+  .globo-form-app .gfb__content-title {
+    font-family: 'Belleza-Regular' !important;
   }
 
-  .globo-form-app h3 {
+  .globo-form-app .content {
+    font-family: 'Manrope-Light' !important;
+  }
+
+  .globo-form-app .message {
+    margin-bottom: 24px !important;
+  }
+
+  .globo-form-control {
+    padding: 0px 0px !important;
+  }
+
+  .globo-form-app h1 {
     text-align: center !important;
+    font-size: 45px;
   }
 
   .globo-form button {
     border: none !important;
     box-shadow: none !important;
-    text-transform: uppercase !important;
     letter-spacing: var(--tracking-widest);
+    border-radius: 0.5rem !important;
+  }
+
+  .globo-form button[type='submit'] {
+    text-transform: uppercase !important;
+    padding: 16px 0px !important;
   }
 
   .globo-form input {
@@ -136,7 +154,7 @@
     } /* gray-50 */
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .globo-form-app {
       display: flex !important;
       flex-direction: column-reverse !important; /* image goes below */
@@ -149,6 +167,34 @@
     .gfb-with-image img {
       border-bottom-right-radius: 1rem;
       border-bottom-left-radius: 1rem;
+    }
+
+    .globo-form-app .g-container {
+      padding: 2rem !important;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .globo-form-app .g-container {
+      padding: 3rem !important;
+    }
+
+    .name-input {
+      padding: 0px 5px 0px 0px !important;
+    }
+
+    .phone-input {
+      padding: 0px 0px 0px 5px !important;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .globo-form-app .g-container {
+      padding: 5rem !important;
+    }
+    .globo-form-app {
+      max-width: 1280px !important;
+      max-height: 700px !important;
     }
   }
 {% endstylesheet %}

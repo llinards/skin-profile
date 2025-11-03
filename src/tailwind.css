@@ -110,6 +110,10 @@
         @apply uppercase text-3xl md:text-5xl lg:text-6xl
     }
 
+        .globo-form-app h1 {
+            @apply text-3xl md:text-5xl lg:text-6xl
+        }
+
     h1,
     h2,
     h3,
