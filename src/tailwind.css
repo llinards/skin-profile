@@ -65,6 +65,10 @@
     .text-2xs {
         font-size: 10px;
     }
+
+    ul {
+        @apply list-disc list-inside;
+    }
 }
 
 @layer base {
