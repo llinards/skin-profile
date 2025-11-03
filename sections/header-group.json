@@ -20,19 +20,11 @@
     "template_header_carousel_j9qWnL": {
       "type": "template-header-carousel",
       "blocks": {
-        "button_EBnJNe": {
-          "type": "button",
-          "settings": {
-            "text": "Iepirkties",
-            "url": "#products",
-            "style": "white"
-          }
-        },
         "image_DrijNt": {
           "type": "image",
           "name": "Biodroga Schwarzwald New Series",
           "settings": {
-            "image": "shopify://shop_images/biodroga-schwarzwald-new-series-lg.jpg",
+            "image": "shopify://shop_images/dermatology-slide-1_7138069f-d8bd-41a2-8c40-e3f40b28a611.jpg",
             "alt_text": "Biodroga Schwarzwald New Series"
           }
         },
@@ -54,15 +46,14 @@
         }
       },
       "block_order": [
-        "button_EBnJNe",
         "image_DrijNt",
         "image_atyRVU",
         "image_ryww6D"
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
-        "heading": "Profesionāla sejas kopšana tavās mājās",
-        "subtext": "<p>Izvēlies dermatologu un kosmetologu ieteiktus produktus no pasaules vadošajiem zīmoliem.</p>"
+        "heading": "DERMATOLOĢIJA",
+        "subtext": "<p>Āda ir mūsu vislielākais orgāns un dzīves laikā tā saskaras ar dažādām problēmām, kuras mums palīdz atrisināt dermatologs. Ja Jums ir radušās jebkādas izmaiņas ādas stāvoklī – nieze, izsitumi, iekaisumi, jaunveidojumi, izaugumi, nekavējoties vēršaties pie mums!</p>"
       }
     }
   },
