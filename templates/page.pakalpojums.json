@@ -9,20 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {
-        "add_top_padding": true
-      }
-    },
-    "template_text_section_JPJC6T": {
-      "type": "template-text-section",
-      "name": "Teksta sadaļa",
-      "settings": {
-        "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
-        "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
-      }
-    },
     "template_header_carousel_tpn6mQ": {
       "type": "template-header-carousel",
       "blocks": {
@@ -61,11 +47,25 @@
         "heading": "Dermatoloģija",
         "subtext": "<p>Āda ir mūsu vislielākais orgāns un dzīves laikā tā saskaras ar dažādām problēmām, kuras mums palīdz atrisināt dermatologs. Ja Jums ir radušās jebkādas izmaiņas ādas stāvoklī – nieze, izsitumi, iekaisumi, jaunveidojumi, izaugumi, nekavējoties vēršaties pie mums!</p>"
       }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_text_section_JPJC6T": {
+      "type": "template-text-section",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
+        "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
+      }
     }
   },
   "order": [
-    "main",
     "template_header_carousel_tpn6mQ",
+    "main",
     "template_text_section_JPJC6T"
   ]
 }
