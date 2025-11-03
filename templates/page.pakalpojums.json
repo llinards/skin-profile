@@ -11,10 +11,21 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_text_section_JPJC6T": {
+      "type": "template-text-section",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
+        "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_text_section_JPJC6T"
   ]
 }
