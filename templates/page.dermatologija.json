@@ -124,10 +124,10 @@
       "blocks": {
         "service_xbRTRt": {
           "type": "service",
-          "name": " 1 veidojuma noņemšana",
+          "name": "1 veidojuma apskate",
           "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "25 EUR"
+            "service_name": "1 veidojuma apskate",
+            "service_price": "20 EUR"
           }
         },
         "service_ULk4wY": {
