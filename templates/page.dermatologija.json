@@ -86,6 +86,17 @@
         "open_by_default": false
       }
     },
+    "template_services_section_mkKfqp": {
+      "type": "template-services-section",
+      "name": "Kriodestrukcija ar Šķidro Slāpekli",
+      "settings": {
+        "title": "Kriodestrukcija ar Šķidro Slāpekli",
+        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p><p>*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.</p>",
+        "left_label": "Pakalpojums",
+        "right_label": "Pakalpojuma cena",
+        "open_by_default": false
+      }
+    },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
       "name": "Virtuālā konsutlācija",
@@ -145,6 +156,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_services_section_TLNpDr",
+    "template_services_section_mkKfqp",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
