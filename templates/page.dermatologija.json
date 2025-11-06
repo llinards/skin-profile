@@ -88,6 +88,19 @@
     },
     "template_services_section_mkKfqp": {
       "type": "template-services-section",
+      "blocks": {
+        "service_eYaxkc": {
+          "type": "service",
+          "name": " 1 veidojuma noņemšana",
+          "settings": {
+            "service_name": "1 veidojuma noņemšana",
+            "service_price": "25 EUR"
+          }
+        }
+      },
+      "block_order": [
+        "service_eYaxkc"
+      ],
       "name": "Kriodestrukcija ar Šķidro Slāpekli",
       "settings": {
         "title": "Kriodestrukcija ar Šķidro Slāpekli",
