@@ -131,10 +131,18 @@
             "service_name": "1 veidojuma apskate",
             "service_price": "€20.00"
           }
+        },
+        "service_3qRRAc": {
+          "type": "service",
+          "settings": {
+            "service_name": "Katrs nākamais veidojums",
+            "service_price": "+€10"
+          }
         }
       },
       "block_order": [
-        "service_yfca67"
+        "service_yfca67",
+        "service_3qRRAc"
       ],
       "name": "Ādas Veidojumu Optiskā Dermatoskopija",
       "settings": {
