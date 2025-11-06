@@ -100,7 +100,7 @@
               {% endfor %}
             </tbody>
           </table>
-          <p class="text-gray-400">Atlaižu kupons ir iespējams pievienot apmaksas solī.</p>
+          <p class="text-gray-400">Atlaižu kuponu ir iespējams pievienot apmaksas solī.</p>
         </div>
 
         <div id="cart-total" class="flex md:justify-end">
@@ -110,10 +110,12 @@
               <p>Starpsumma:</p>
               <p data-subtotal-amount>{{ cart.total_price | money }}</p>
             </div>
-            <div class="flex justify-between border-b-1 border-sp-brown py-4">
-              <p>Piegāde:</p>
-              <p data-shipping-amount data-free-label="Bezmaksas"></p>
-            </div>
+            {% comment %}
+              <div class="flex justify-between border-b-1 border-sp-brown py-4">
+                <p>Piegāde:</p>
+                <p data-shipping-amount data-free-label="Bezmaksas"></p>
+              </div>
+            {% endcomment %}
             <div class="flex justify-between py-4">
               <p>Kopā:</p>
               <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
