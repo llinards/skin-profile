@@ -67,6 +67,7 @@
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
+          "name": "Atkārtota konsultācija 30 dienu laikā",
           "settings": {
             "service_name": "Atkārtota konsultācija 30 dienu laikā",
             "service_price": "€45.00"
@@ -76,7 +77,7 @@
       "block_order": [
         "service_kGdXVr"
       ],
-      "name": "Dropdown Teksts",
+      "name": "Pirmreizējā Konsultācija",
       "settings": {
         "title": "Pirmreizējā Konsultācija",
         "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
