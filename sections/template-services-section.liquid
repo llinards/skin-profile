@@ -11,19 +11,18 @@
     <button
       type="button"
       @click="open = !open"
-      class="w-full flex items-center justify-between px-2 py-4 text-left hover:bg-sp-light-brown/30 transition-colors"
+      class="relative w-full flex items-start gap-3 px-2 py-4 text-left hover:bg-sp-light-brown/30 transition-colors"
       :aria-expanded="open.toString()"
       :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
     >
-      <h3 class="text-2xl md:text-4xl">
+      <h3 class="text-xl md:text-4xl leading-tight pr-14">
         {{ section.settings.title }}
       </h3>
 
-      <!-- Icon: plus when closed, minus when open -->
+      <!-- Icon wrapper (absolute, keeps its size) -->
       <span
-        class="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-sp-light-brown text-sp-brown border border-[#E6DAC8] transition-colors hover:bg-sp-brown hover:text-white"
+        class="absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full bg-sp-light-brown text-sp-brown border border-sp-light-brown transition-colors hover:bg-sp-brown hover:text-white"
       >
-        <!-- Plus -->
         <svg
           x-cloak
           x-show="!open"
@@ -37,8 +36,6 @@
         >
           <path stroke-linecap="round" d="M12 5v14M5 12h14" />
         </svg>
-
-        <!-- Minus -->
         <svg
           x-cloak
           x-show="open"
