@@ -1,12 +1,24 @@
+{%- assign disclaimer = disclaimer | default: '' -%}
+{%- assign show_headers = show_headers | default: true -%}
+
 {%- assign services = services | default: section.blocks -%}
 <div class="space-y-2 my-6 md:my-12">
-  {%- if services and services.size > 0 -%}
-    {%- for item in services -%}
-      {%- assign name = item.settings.service_name | default: item.name | default: item.title -%}
-      {%- assign price = item.settings.service_price | default: item.price -%}
-      <div class="grid grid-cols-5 items-center py-2 border-b-1 border-sp-light-brown border-dotted font-bold">
-        <div class="col-span-3 text-left">{{ name }}</div>
-        <div class="col-span-2 text-right font-semibold">{{ price }}</div>
+  {%- if show_headers -%}
+    <div class="grid grid-cols-5 items-center py-2 border-b-1 border-sp-light-brown border-dotted font-bold">
+      <div class="col-span-3 text-left">{{ left_label }}</div>
+      <div class="col-span-2 text-right">{{ right_label }}</div>
+    </div>
+    {%- if disclaimer != blank -%}
+      <p class="text-xs text-gray-500 mt-1">{{ disclaimer }}</p>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- assign service_blocks = services | where: 'type', 'service' -%}
+  {%- if service_blocks.size > 0 -%}
+    {%- for b in service_blocks -%}
+      <div class="grid grid-cols-5 items-center py-2 border-b-1 border-sp-light-brown border-dotted">
+        <div class="col-span-3 text-left">{{ b.settings.service_name }}</div>
+        <div class="col-span-2 text-right font-semibold">{{ b.settings.service_price }}</div>
       </div>
     {%- endfor -%}
   {%- else -%}
