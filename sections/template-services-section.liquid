@@ -1,11 +1,11 @@
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8 transition-hide">
   {%- assign title = title | default: 'Dropdown Title' -%}
   {%- assign body = body | default: '<p>Add your content here.</p>' -%}
   {%- assign open_by_default = open_by_default | default: false -%}
 
   <div
     x-data="{ open: {{ section.settings.open_by_default | json }} }"
-    class="border border-gray-300 rounded-lg overflow-hidden bg-white max-w-3xl mx-auto"
+    class="overflow-hidden border-t-2"
   >
     <!-- Header -->
     <button
@@ -14,16 +14,16 @@
       class="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
       :aria-expanded="open.toString()"
     >
-      <span class="font-semibold text-base uppercase tracking-wide">
+      <h3 class="text-3xl md:text-4xl">
         {{ section.settings.title }}
-      </span>
+      </h3>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
-        class="w-6 h-6 text-[#885642] transition-transform"
+        class="w-6 h-6 text-sp-brown transition-transform"
         :class="{ 'rotate-180': open }"
       >
         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
@@ -40,11 +40,16 @@
       x-transition:leave="transition ease-in duration-150"
       x-transition:leave-start="opacity-100 translate-y-0"
       x-transition:leave-end="opacity-0 -translate-y-2"
-      class="px-4 py-3 border-t border-gray-200 bg-gray-50"
+      class="px-4 py-3"
     >
-      <div class="prose prose-sm max-w-none">
-        {{ section.settings.content }}
-      </div>
+      {{ section.settings.content }}
+
+      {% render 'services-table',
+        services: section.blocks,
+        left_label: section.settings.left_label,
+        right_label: section.settings.right_label,
+        show_headers: true
+      %}
     </div>
   </div>
 </div>
@@ -66,16 +71,34 @@
       "default": "<p>Jūsu teksts šeit.</p>"
     },
     {
+      "type": "text",
+      "id": "left_label",
+      "label": "Kreisā kolonna (virsraksts)",
+      "default": "Pakalpojums"
+    },
+    {
+      "type": "text",
+      "id": "right_label",
+      "label": "Labā kolonna (virsraksts)",
+      "default": "Pakalpojuma cena"
+    },
+    {
       "type": "checkbox",
       "id": "open_by_default",
       "label": "Atvērt pēc noklusējuma",
       "default": false
     }
   ],
-  "presets": [
+  "blocks": [
     {
-      "name": "Dropdown Teksts"
+      "type": "service",
+      "name": "Pakalpojums",
+      "settings": [
+        { "type": "text", "id": "service_name", "label": "Pakalpojuma nosaukums", "default": "Sejas tīrīšana" },
+        { "type": "text", "id": "service_price", "label": "Cena", "default": "€45" }
+      ]
     }
-  ]
+  ],
+  "presets": [{ "name": "Dropdown Teksts" }]
 }
 {% endschema %}

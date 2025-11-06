@@ -22,6 +22,10 @@
         border-color: #885642;
     }
 
+    .border-sp-light-brown {
+        border-color: #E6DAC8;
+    }
+
     .hover\:fill-sp-brown:hover {
         fill: #885642 !important;
     }
