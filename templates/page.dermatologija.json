@@ -96,10 +96,19 @@
             "service_name": "1 veidojuma noņemšana",
             "service_price": "25 EUR"
           }
+        },
+        "service_zB8wyX": {
+          "type": "service",
+          "name": "Vairāku veidojumu noņemšana",
+          "settings": {
+            "service_name": "Vairāku veidojumu noņemšana",
+            "service_price": "35 – 100 EUR (atkarībā no veidojumu daudzuma)"
+          }
         }
       },
       "block_order": [
-        "service_eYaxkc"
+        "service_eYaxkc",
+        "service_zB8wyX"
       ],
       "name": "Kriodestrukcija ar Šķidro Slāpekli",
       "settings": {
