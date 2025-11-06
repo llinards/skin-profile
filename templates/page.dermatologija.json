@@ -137,11 +137,20 @@
             "service_name": "Katrs nākamais veidojums",
             "service_price": "+10.00 EUR"
           }
+        },
+        "service_9xDb4w": {
+          "type": "service",
+          "name": "Visa ķermeņa veidojumu apskate ",
+          "settings": {
+            "service_name": "Visa ķermeņa veidojumu apskate ",
+            "service_price": "70.00 EUR"
+          }
         }
       },
       "block_order": [
         "service_xbRTRt",
-        "service_ULk4wY"
+        "service_ULk4wY",
+        "service_9xDb4w"
       ],
       "name": "Ādas Veidojumu Optiskā Dermatoskopija",
       "settings": {
