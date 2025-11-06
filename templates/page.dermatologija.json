@@ -67,6 +67,7 @@
       "blocks": {
         "service_aawB96": {
           "type": "service",
+          "name": "Atkārtota konsultācija 30 dienu laikā",
           "settings": {
             "service_name": "Atkārtota konsultācija 30 dienu laikā",
             "service_price": "45 EUR"
