@@ -3,16 +3,6 @@
 
 {%- assign services = services | default: section.blocks -%}
 <div class="space-y-2 my-6 md:my-12">
-  {%- if show_headers -%}
-    <div class="grid grid-cols-5 items-center py-2 border-b-1 border-sp-light-brown border-dotted font-bold">
-      <div class="col-span-3 text-left">{{ left_label }}</div>
-      <div class="col-span-2 text-right">{{ right_label }}</div>
-    </div>
-    {%- if disclaimer != blank -%}
-      <p class="text-xs text-gray-500 mt-1">{{ disclaimer }}</p>
-    {%- endif -%}
-  {%- endif -%}
-
   {%- assign service_blocks = services | where: 'type', 'service' -%}
   {%- if service_blocks.size > 0 -%}
     {%- for b in service_blocks -%}
@@ -23,5 +13,8 @@
     {%- endfor -%}
   {%- else -%}
     <div class="py-4 text-center text-gray-500 text-sm">Nav pievienotu pakalpojumu</div>
+  {%- endif -%}
+  {%- if disclaimer != blank -%}
+    <p class="text-xs text-gray-500 mt-1">{{ disclaimer }}</p>
   {%- endif -%}
 </div>
