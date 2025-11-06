@@ -150,8 +150,8 @@
         "service_e863kr": {
           "type": "service",
           "settings": {
-            "service_name": "Iesaiņošana",
-            "service_price": "€55"
+            "service_name": "1 veidojuma noņemšana",
+            "service_price": "€25.00"
           }
         }
       },
