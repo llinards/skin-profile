@@ -44,7 +44,13 @@
     >
       {{ section.settings.content }}
 
-      {% render 'services-table', services: section.blocks, show_headers: true %}
+      {% render 'services-table',
+        services: section.blocks,
+        show_headers: true,
+        left_label: section.settings.left_label,
+        right_label: section.settings.right_label,
+        disclaimer: section.settings.service_disclaimer
+      %}
     </div>
   </div>
 </div>
@@ -53,36 +59,18 @@
 {
   "name": "Dropdown Teksts",
   "settings": [
+    { "type": "text", "id": "title", "label": "Virsraksts", "default": "Noklikšķiniet, lai atvērtu" },
+    { "type": "richtext", "id": "content", "label": "Saturs", "default": "<p>Jūsu teksts šeit.</p>" },
+    { "type": "text", "id": "left_label", "label": "Kreisā kolonna (virsraksts)", "default": "Pakalpojums" },
+    { "type": "text", "id": "right_label", "label": "Labā kolonna (virsraksts)", "default": "Pakalpojuma cena" },
     {
       "type": "text",
-      "id": "title",
-      "label": "Virsraksts",
-      "default": "Noklikšķiniet, lai atvērtu"
+      "id": "service_disclaimer",
+      "label": "Atruna zem virsraksta",
+      "info": "Parādās zem pakalpojumu virsrakstiem.",
+      "default": "Apraksts"
     },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Saturs",
-      "default": "<p>Jūsu teksts šeit.</p>"
-    },
-    {
-      "type": "text",
-      "id": "left_label",
-      "label": "Kreisā kolonna (virsraksts)",
-      "default": "Pakalpojums"
-    },
-    {
-      "type": "text",
-      "id": "right_label",
-      "label": "Labā kolonna (virsraksts)",
-      "default": "Pakalpojuma cena"
-    },
-    {
-      "type": "checkbox",
-      "id": "open_by_default",
-      "label": "Atvērt pēc noklusējuma",
-      "default": false
-    },
+    { "type": "checkbox", "id": "open_by_default", "label": "Atvērt pēc noklusējuma", "default": false },
     {
       "type": "checkbox",
       "id": "space_bottom",
