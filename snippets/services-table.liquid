@@ -1,21 +1,31 @@
-{%- assign services = services | default: section.blocks -%}
+{%- assign left_label = left_label | default: 'Service' -%}
+{%- assign right_label = right_label | default: 'Service Price' -%}
+{%- assign show_headers = show_headers | default: true -%}
+
 <div class="space-y-2 border-b-2">
-  {%- if show_headers != false -%}
+  {%- if show_headers -%}
     <div class="grid grid-cols-2 py-2 font-bold border-b-1 border-sp-light-brown border-dotted">
-      <div class="text-left">{{ left_label | default: 'Pakalpojums' }}</div>
-      <div class="text-right">{{ right_label | default: 'Pakalpojumu cena' }}</div>
+      <div class="text-left">{{ left_label }}</div>
+      <div class="text-right">{{ right_label }}</div>
     </div>
   {%- endif -%}
 
-  {%- if services and services.size > 0 -%}
-    {%- for item in services -%}
-      {%- assign name = item.settings.service_name | default: item.name | default: item.title -%}
-      {%- assign price = item.settings.service_price | default: item.price -%}
-      <div class="grid grid-cols-2 py-2 border-b-1 border-sp-light-brown border-dotted">
-        <div class="text-left">{{ name }}</div>
-        <div class="text-right font-semibold">{{ price }}</div>
-      </div>
-    {%- endfor -%}
+  {%- if services != blank -%}
+    {%- assign lines = services | strip | split: '\n' -%}
+    {%- if lines.size > 0 -%}
+      {%- for line in lines -%}
+        {%- assign clean_line = line | strip -%}
+        {%- if clean_line != blank -%}
+          {%- assign parts = clean_line | split: '|' -%}
+          {%- assign name = parts[0] | strip -%}
+          {%- assign price = parts[1] | default: '' | strip -%}
+          <div class="grid grid-cols-2 py-2 border-b-1 border-sp-light-brown border-dotted">
+            <div class="text-left">{{ name }}</div>
+            <div class="text-right font-semibold">{{ price }}</div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
   {%- else -%}
     <div class="py-4 text-center text-gray-500 text-sm">Nav pievienotu pakalpojumu</div>
   {%- endif -%}
