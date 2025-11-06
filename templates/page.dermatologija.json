@@ -114,7 +114,7 @@
       "settings": {
         "title": "Kriodestrukcija ar Šķidro Slāpekli",
         "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-        "service_disclaimer": "Apraksts",
+        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
         "open_by_default": false,
         "space_bottom": false
       }
