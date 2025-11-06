@@ -1,4 +1,12 @@
-<div class="container mx-auto px-4 transition-hide max-w-7xl">
+{%- comment -%}
+  Check if this is the last section by comparing section.id with the last section in the order
+{%- endcomment -%}
+{%- assign is_last_section = false -%}
+{%- if section.id == template.sections.last.id -%}
+  {%- assign is_last_section = true -%}
+{%- endif -%}
+
+<div class="container mx-auto px-4 transition-hide max-w-7xl{% if is_last_section %} mb-12{% endif %}">
   <div>
     {%- assign title = title | default: 'Dropdown Title' -%}
     {%- assign body = body | default: '<p>Add your content here.</p>' -%}
@@ -45,7 +53,12 @@
       >
         {{ section.settings.content }}
 
-        {% render 'services-table', services: section.blocks, show_headers: true %}
+        {% render 'services-table',
+          services: section.blocks,
+          show_headers: true,
+          left_label: section.settings.left_label,
+          right_label: section.settings.right_label
+        %}
       </div>
     </div>
   </div>
