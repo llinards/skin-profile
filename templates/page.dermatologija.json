@@ -67,6 +67,15 @@
       "name": "Virtuālā konsutlācija",
       "settings": {}
     },
+    "template_services_section_TLNpDr": {
+      "type": "template-services-section",
+      "name": "Dropdown Teksts",
+      "settings": {
+        "title": "PIRMREIZĒJA KONSULTĀCIJA",
+        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p><p><strong>Atkārtota konsultācija 30 dienu laikā 45 EUR.</strong></p>",
+        "open_by_default": false
+      }
+    },
     "template_contact_us_BzVhrB": {
       "type": "template-contact-us",
       "blocks": {
@@ -113,15 +122,6 @@
       "settings": {
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
-      }
-    },
-    "template_services_section_TLNpDr": {
-      "type": "template-services-section",
-      "name": "Dropdown Teksts",
-      "settings": {
-        "title": "Noklikšķiniet, lai atvērtu",
-        "content": "<p>Jūsu teksts šeit.</p>",
-        "open_by_default": false
       }
     }
   },
