@@ -123,6 +123,19 @@
     },
     "template_services_section_kPR4ih": {
       "type": "template-services-section",
+      "blocks": {
+        "service_yfca67": {
+          "type": "service",
+          "name": "1 veidojuma apskate",
+          "settings": {
+            "service_name": "1 veidojuma apskate",
+            "service_price": "€20.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_yfca67"
+      ],
       "name": "Ādas Veidojumu Optiskā Dermatoskopija",
       "settings": {
         "title": "Ādas Veidojumu Optiskā Dermatoskopija",
