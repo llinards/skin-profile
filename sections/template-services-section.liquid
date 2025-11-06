@@ -48,12 +48,7 @@
           {% endif %}
 
           {% if block.settings.show_services %}
-            {% render 'services-table',
-              services: block.settings.services_list,
-              left_label: block.settings.left_label,
-              right_label: block.settings.right_label,
-              show_headers: true
-            %}
+            {% render 'services-table', services: block.settings.services_list %}
           {% endif %}
         </div>
       </div>
