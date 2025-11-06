@@ -62,19 +62,21 @@
         "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
       }
     },
+    "template_services_section_TLNpDr": {
+      "type": "template-services-section",
+      "name": "Pakalpojuma Dropdown",
+      "settings": {
+        "title": "PIRMREIZĒJA KONSULTĀCIJA",
+        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p><p><strong>Atkārtota konsultācija 30 dienu laikā 45 EUR.</strong></p>",
+        "left_label": "Pakalpojums",
+        "right_label": "Pakalpojuma cena",
+        "open_by_default": false
+      }
+    },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
       "name": "Virtuālā konsutlācija",
       "settings": {}
-    },
-    "template_services_section_TLNpDr": {
-      "type": "template-services-section",
-      "name": "Dropdown Teksts",
-      "settings": {
-        "title": "PIRMREIZĒJA KONSULTĀCIJA",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p><p><strong>Atkārtota konsultācija 30 dienu laikā 45 EUR.</strong></p>",
-        "open_by_default": false
-      }
     },
     "template_contact_us_BzVhrB": {
       "type": "template-contact-us",
@@ -129,8 +131,8 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_virtual_consultation_pX36xq",
     "template_services_section_TLNpDr",
+    "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
 }
