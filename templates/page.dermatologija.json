@@ -127,15 +127,15 @@
           "name": "1 veidojuma apskate",
           "settings": {
             "service_name": "1 veidojuma apskate",
-            "service_price": "20 EUR"
+            "service_price": "20.00 EUR"
           }
         },
         "service_ULk4wY": {
           "type": "service",
-          "name": "Vairāku veidojumu noņemšana",
+          "name": "Katrs nākamais veidojums ",
           "settings": {
-            "service_name": "Vairāku veidojumu noņemšana",
-            "service_price": "35 – 100 EUR (atkarībā no veidojumu daudzuma)"
+            "service_name": "Katrs nākamais veidojums",
+            "service_price": "+10.00 EUR"
           }
         }
       },
