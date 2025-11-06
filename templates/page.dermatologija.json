@@ -139,10 +139,10 @@
         "accordion_Bdq48K": {
           "type": "accordion",
           "settings": {
-            "title": "Ķermeņa procedūras",
-            "content": "<p>Jūsu teksts šeit.</p>",
+            "title": "Kriodestrukcija ar Šķidro Slāpekli",
+            "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
             "open_by_default": false,
-            "show_headers": true,
+            "show_headers": false,
             "left_label": "Pakalpojums",
             "right_label": "Pakalpojuma cena"
           }
