@@ -132,15 +132,8 @@
         "service_xEjcNp": {
           "type": "service",
           "settings": {
-            "service_name": "Dziļa tīrīšana",
-            "service_price": "€45"
-          }
-        },
-        "service_GLmqgd": {
-          "type": "service",
-          "settings": {
-            "service_name": "Hidratācija",
-            "service_price": "€55"
+            "service_name": "Atkārtota konsultācija 30 dienu laikā",
+            "service_price": "€45.00"
           }
         },
         "accordion_Bdq48K": {
@@ -165,7 +158,6 @@
       "block_order": [
         "accordion_fRkR6z",
         "service_xEjcNp",
-        "service_GLmqgd",
         "accordion_Bdq48K",
         "service_e863kr"
       ],
