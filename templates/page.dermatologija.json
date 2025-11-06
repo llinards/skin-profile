@@ -121,8 +121,8 @@
         "accordion_fRkR6z": {
           "type": "accordion",
           "settings": {
-            "title": "Sejas procedūras",
-            "content": "<p>Jūsu teksts šeit.</p>",
+            "title": "Pirmreizēja Konsultācija",
+            "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
             "open_by_default": false,
             "show_headers": true,
             "left_label": "Pakalpojums",
