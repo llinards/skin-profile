@@ -114,6 +114,63 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
+    },
+    "template_services_section_HrGzcj": {
+      "type": "template-services-section",
+      "blocks": {
+        "accordion_fRkR6z": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sejas procedūras",
+            "content": "<p>Jūsu teksts šeit.</p>",
+            "open_by_default": false,
+            "show_headers": true,
+            "left_label": "Pakalpojums",
+            "right_label": "Pakalpojuma cena"
+          }
+        },
+        "service_xEjcNp": {
+          "type": "service",
+          "settings": {
+            "service_name": "Dziļa tīrīšana",
+            "service_price": "€45"
+          }
+        },
+        "service_GLmqgd": {
+          "type": "service",
+          "settings": {
+            "service_name": "Hidratācija",
+            "service_price": "€55"
+          }
+        },
+        "accordion_Bdq48K": {
+          "type": "accordion",
+          "settings": {
+            "title": "Ķermeņa procedūras",
+            "content": "<p>Jūsu teksts šeit.</p>",
+            "open_by_default": false,
+            "show_headers": true,
+            "left_label": "Pakalpojums",
+            "right_label": "Pakalpojuma cena"
+          }
+        },
+        "service_e863kr": {
+          "type": "service",
+          "settings": {
+            "service_name": "Iesaiņošana",
+            "service_price": "€55"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_fRkR6z",
+        "service_xEjcNp",
+        "service_GLmqgd",
+        "accordion_Bdq48K",
+        "service_e863kr"
+      ],
+      "name": "Pakalpojumu akordeoni",
+      "settings": {}
     }
   },
   "order": [
@@ -121,6 +178,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_virtual_consultation_pX36xq",
-    "template_contact_us_BzVhrB"
+    "template_contact_us_BzVhrB",
+    "template_services_section_HrGzcj"
   ]
 }
