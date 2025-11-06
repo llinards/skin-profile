@@ -101,8 +101,8 @@
           "type": "service",
           "name": "Multiplu veidojumu noņemšana",
           "settings": {
-            "service_name": "Multiplu veidojumu noņemšana",
-            "service_price": "no €35.00 – €100.00 (atkarībā no veidojumu daudzuma)"
+            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
+            "service_price": "no €35.00 – €100.00"
           }
         }
       },
