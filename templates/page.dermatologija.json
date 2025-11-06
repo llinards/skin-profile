@@ -114,55 +114,6 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
-    },
-    "template_services_section_HrGzcj": {
-      "type": "template-services-section",
-      "blocks": {
-        "accordion_fRkR6z": {
-          "type": "accordion",
-          "settings": {
-            "title": "Pirmreizēja Konsultācija",
-            "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
-            "open_by_default": false,
-            "show_headers": false,
-            "left_label": "Pakalpojums",
-            "right_label": "Pakalpojuma cena"
-          }
-        },
-        "service_xEjcNp": {
-          "type": "service",
-          "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
-          }
-        },
-        "accordion_Bdq48K": {
-          "type": "accordion",
-          "settings": {
-            "title": "Kriodestrukcija ar Šķidro Slāpekli",
-            "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-            "open_by_default": false,
-            "show_headers": false,
-            "left_label": "Pakalpojums",
-            "right_label": "Pakalpojuma cena"
-          }
-        },
-        "service_e863kr": {
-          "type": "service",
-          "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25.00"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_fRkR6z",
-        "service_xEjcNp",
-        "accordion_Bdq48K",
-        "service_e863kr"
-      ],
-      "name": "Pakalpojumu akordeoni",
-      "settings": {}
     }
   },
   "order": [
@@ -170,7 +121,6 @@
     "main",
     "template_text_section_JPJC6T",
     "template_virtual_consultation_pX36xq",
-    "template_contact_us_BzVhrB",
-    "template_services_section_HrGzcj"
+    "template_contact_us_BzVhrB"
   ]
 }
