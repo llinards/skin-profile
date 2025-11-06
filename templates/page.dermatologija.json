@@ -64,6 +64,18 @@
     },
     "template_services_section_J6AXyp": {
       "type": "template-services-section",
+      "blocks": {
+        "service_kGdXVr": {
+          "type": "service",
+          "settings": {
+            "service_name": "Atkārtota konsultācija 30 dienu laikā",
+            "service_price": "€45.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_kGdXVr"
+      ],
       "name": "Dropdown Teksts",
       "settings": {
         "title": "Pirmreizējā Konsultācija",
