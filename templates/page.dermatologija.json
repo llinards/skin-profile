@@ -62,6 +62,18 @@
         "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
       }
     },
+    "template_services_section_J6AXyp": {
+      "type": "template-services-section",
+      "name": "Dropdown Teksts",
+      "settings": {
+        "title": "Pirmreizējā Konsultācija",
+        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "left_label": "Pakalpojums",
+        "right_label": "Pakalpojuma cena",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
       "name": "Virtuālā konsutlācija",
@@ -120,6 +132,7 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
+    "template_services_section_J6AXyp",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
