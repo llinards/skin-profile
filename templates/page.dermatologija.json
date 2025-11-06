@@ -77,9 +77,9 @@
       "block_order": [
         "service_aawB96"
       ],
-      "name": "Pakalpojuma Dropdown",
+      "name": "Pirmreizēja Konsultācija",
       "settings": {
-        "title": "PIRMREIZĒJA KONSULTĀCIJA",
+        "title": "Pirmreizēja Konsultācija",
         "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
         "left_label": "Pakalpojums",
         "right_label": "Pakalpojuma cena",
