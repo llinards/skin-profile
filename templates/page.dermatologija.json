@@ -64,102 +64,18 @@
     },
     "template_services_section_TLNpDr": {
       "type": "template-services-section",
-      "blocks": {
-        "service_aawB96": {
-          "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
-          "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "45 EUR"
-          }
-        }
-      },
-      "block_order": [
-        "service_aawB96"
-      ],
       "name": "Pirmreizēja Konsultācija",
-      "settings": {
-        "title": "Pirmreizēja Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
-        "left_label": "Pakalpojums",
-        "right_label": "Pakalpojuma cena",
-        "open_by_default": false
-      }
+      "settings": {}
     },
     "template_services_section_mkKfqp": {
       "type": "template-services-section",
-      "blocks": {
-        "service_eYaxkc": {
-          "type": "service",
-          "name": " 1 veidojuma noņemšana",
-          "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "25 EUR"
-          }
-        },
-        "service_zB8wyX": {
-          "type": "service",
-          "name": "Vairāku veidojumu noņemšana",
-          "settings": {
-            "service_name": "Vairāku veidojumu noņemšana",
-            "service_price": "35 – 100 EUR (atkarībā no veidojumu daudzuma)"
-          }
-        }
-      },
-      "block_order": [
-        "service_eYaxkc",
-        "service_zB8wyX"
-      ],
       "name": "Kriodestrukcija ar Šķidro Slāpekli",
-      "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p><p>*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.</p>",
-        "left_label": "Pakalpojums",
-        "right_label": "Pakalpojuma cena",
-        "open_by_default": false
-      }
+      "settings": {}
     },
     "template_services_section_DrTPpi": {
       "type": "template-services-section",
-      "blocks": {
-        "service_xbRTRt": {
-          "type": "service",
-          "name": "1 veidojuma apskate",
-          "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "20.00 EUR"
-          }
-        },
-        "service_ULk4wY": {
-          "type": "service",
-          "name": "Katrs nākamais veidojums ",
-          "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+10.00 EUR"
-          }
-        },
-        "service_9xDb4w": {
-          "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate ",
-          "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate ",
-            "service_price": "70.00 EUR"
-          }
-        }
-      },
-      "block_order": [
-        "service_xbRTRt",
-        "service_ULk4wY",
-        "service_9xDb4w"
-      ],
       "name": "Ādas Veidojumu Optiskā Dermatoskopija",
-      "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas: derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "left_label": "Pakalpojums",
-        "right_label": "Pakalpojuma cena",
-        "open_by_default": false
-      }
+      "settings": {}
     },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
@@ -213,6 +129,41 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
+    },
+    "template_services_section_7KhEcU": {
+      "type": "template-services-section",
+      "blocks": {
+        "accordion_f7yYX7": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sejas procedūras",
+            "content": "<p>Profesionāli sejas kopšanas pakalpojumi.</p>",
+            "open_by_default": false,
+            "show_services": true,
+            "left_label": "Pakalpojums",
+            "right_label": "Cena",
+            "services_list": "Dziļa tīrīšana | €45\nHidratācija | €55\nAnti-age masāža | €65"
+          }
+        },
+        "accordion_qzxQJx": {
+          "type": "accordion",
+          "settings": {
+            "title": "Ķermeņa procedūras",
+            "content": "<p>Relaksējošas ķermeņa procedūras.</p>",
+            "open_by_default": false,
+            "show_services": true,
+            "left_label": "Pakalpojums",
+            "right_label": "Cena",
+            "services_list": "Ķermeņa iesaiņošana | €55\nMasāža | €49"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_f7yYX7",
+        "accordion_qzxQJx"
+      ],
+      "name": "Akordeonu sadaļa",
+      "settings": {}
     }
   },
   "order": [
@@ -223,6 +174,7 @@
     "template_services_section_mkKfqp",
     "template_services_section_DrTPpi",
     "template_virtual_consultation_pX36xq",
-    "template_contact_us_BzVhrB"
+    "template_contact_us_BzVhrB",
+    "template_services_section_7KhEcU"
   ]
 }
