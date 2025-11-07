@@ -179,7 +179,7 @@
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
             "name": "Dermatoloģija",
-            "url": ""
+            "url": "shopify://pages/dermatologija"
           }
         },
         "service_q4TViX": {
@@ -211,6 +211,7 @@
         },
         "service_PTnLDR": {
           "type": "service",
+          "name": "Lāzerepilācija",
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
             "name": "Lāzerepilācija",
@@ -219,6 +220,7 @@
         },
         "service_UhXfgi": {
           "type": "service",
+          "name": "Ķermeņa procedūras",
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
             "name": "Ķermeņa procedūras",
@@ -227,6 +229,7 @@
         },
         "service_mQd9ie": {
           "type": "service",
+          "name": "Uztura speciālists",
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
             "name": "Uztura speciālists",
