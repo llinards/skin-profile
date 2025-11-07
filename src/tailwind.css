@@ -66,6 +66,30 @@
         background-color: rgb(136 86 66 / 0.3);
     }
 
+    .group:hover .group-hover\:bg-sp-brown {
+        background-color: #885642 !important;
+    }
+
+    .group:hover .group-hover\:text-white {
+        color: #ffffff !important;
+    }
+
+    .group:hover .group-hover\:fill-white {
+        fill: #ffffff !important;
+    }
+
+    .group:focus .group-focus\:bg-sp-brown {
+        background-color: #885642 !important;
+    }
+
+    .group:active .group-active\:bg-sp-brown {
+        background-color: #885642 !important;
+    }
+
+    .group:hover .group-hover\:bg-sp-light-brown {
+        background-color: #E6DAC8 !important;
+    }
+
     .text-2xs {
         font-size: 10px;
     }

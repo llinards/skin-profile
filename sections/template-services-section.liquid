@@ -1,8 +1,4 @@
 <div class="container mx-auto px-4 transition-hide max-w-7xl{% if section.settings.space_bottom %} mb-12{% endif %}">
-  {%- assign title = title | default: 'Dropdown Title' -%}
-  {%- assign body = body | default: '<p>Add your content here.</p>' -%}
-  {%- assign open_by_default = open_by_default | default: false -%}
-
   <div
     x-data="{ open: {{ section.settings.open_by_default | json }} }"
     class="overflow-hidden border-t-2"
@@ -11,7 +7,10 @@
     <button
       type="button"
       @click="open = !open"
-      class="relative w-full flex items-start gap-3 px-2 py-4 text-left hover:bg-sp-light-brown/30 transition-colors"
+      class="
+        group relative w-full flex items-start gap-3 px-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
+        rounded-md focus-visible:ring-1 focus-visible:ring-inset
+      "
       :aria-expanded="open.toString()"
       :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
     >
@@ -19,10 +18,16 @@
         {{ section.settings.title }}
       </h3>
 
-      <!-- Icon wrapper (absolute, keeps its size) -->
+      <!-- Icon wrapper -->
       <span
-        class="absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full bg-sp-light-brown text-sp-brown border border-sp-light-brown transition-colors hover:bg-sp-brown hover:text-white"
+        class="
+                    absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
+          group-hover:bg-sp-brown group-hover:text-white
+        "
+
+        :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
       >
+        <!-- Plus -->
         <svg
           x-cloak
           x-show="!open"
@@ -36,11 +41,13 @@
         >
           <path stroke-linecap="round" d="M12 5v14M5 12h14" />
         </svg>
+
+        <!-- Minus -->
         <svg
           x-cloak
           x-show="open"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
+          class="h-5 w-5 pointer-events-none"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
