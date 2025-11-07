@@ -2,7 +2,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const carousel = Carousel(document.getElementById('servicesCarousel'), {
       fill: true,
-      infinite: false,
+      infinite: {{ section.settings.infinite | default: false | json }},
       plugins: [window.Dots],
     }).init();
   });
@@ -67,7 +67,10 @@
 {% schema %}
 {
   "name": "Pakalpojumu sadaļa",
-  "settings": [{ "type": "text", "id": "heading", "label": "Virsraksts", "default": "Pakalpojumi" }],
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Virsraksts", "default": "Pakalpojumi" },
+    { "type": "checkbox", "id": "infinite", "label": "Bezgalīga karuseļa cilpa", "default": false }
+  ],
   "blocks": [
     {
       "type": "service",

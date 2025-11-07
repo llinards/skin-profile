@@ -1137,16 +1137,6 @@
       }
     }
   }
-  .group-focus\:text-white {
-    &:is(:where(.group):focus *) {
-      color: var(--color-white);
-    }
-  }
-  .group-active\:text-white {
-    &:is(:where(.group):active *) {
-      color: var(--color-white);
-    }
-  }
   .after\:content-\[\'\,\\00a0\'\] {
     &::after {
       --tw-content: ',\00a0';
