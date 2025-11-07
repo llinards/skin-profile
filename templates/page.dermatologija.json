@@ -184,6 +184,7 @@
         },
         "service_q4TViX": {
           "type": "service",
+          "name": "Lāzerdermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
             "name": "Lāzerdermatoloģija",
