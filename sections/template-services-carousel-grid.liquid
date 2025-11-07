@@ -8,11 +8,11 @@
   });
 </script>
 
-<div class="{% if section.settings.carousel_desktop == false %}container mx-auto{% endif %} px-4 pb-12 transition-hide text-center md:text-left">
-  <h2 class="container mx-auto pb-6 md:pb-12">{{ section.settings.heading }}</h2>
+<div class="{% if section.settings.carousel_desktop == false %}container mx-auto {% endif %} pb-12 transition-hide text-center md:text-left">
+  <h2 class="container mx-auto px-4 pb-6 md:pb-12">{{ section.settings.heading }}</h2>
 
   <!-- GRID -->
-  <div class="hidden {% if section.settings.carousel_desktop == false %}xl:flex{% endif %}">
+  <div class="hidden {% if section.settings.carousel_desktop == false %}xl:flex px-4{% endif %}">
     <div class="grid w-full justify-center items-center xl:grid-rows-2 xl:grid-cols-4 gap-8">
       {% for block in section.blocks %}
         {% if block.settings.photo %}
