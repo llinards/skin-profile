@@ -2136,13 +2136,18 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  #teamCarousel, #categoryCarousel, #productRecommendationCarousel {
+  #teamCarousel, #categoryCarousel, #productRecommendationCarousel, #servicesCarousel {
     --f-carousel-slide-width: calc((100% - 72px) / 4);
   }
 }
 @media screen and (min-width: 1280px) {
-  #teamCarousel, #categoryCarousel {
+  #teamCarousel, #categoryCarousel, #servicesCarousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
+  }
+}
+@media screen and (min-width: 1920px) {
+  #servicesCarousel {
+    --f-carousel-slide-width: calc((100% - 96px) / 6);
   }
 }
 @property --tw-border-spacing-x {

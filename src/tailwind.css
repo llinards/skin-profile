@@ -280,16 +280,24 @@
 
     #teamCarousel,
     #categoryCarousel,
-    #productRecommendationCarousel {
+    #productRecommendationCarousel,
+    #servicesCarousel {
         --f-carousel-slide-width: calc((100% - 72px) / 4);
     }
-
 }
 
 @media screen and (min-width: 1280px) {
 
     #teamCarousel,
-    #categoryCarousel {
+    #categoryCarousel,
+    #servicesCarousel {
         --f-carousel-slide-width: calc((100% - 96px) / 5);
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    #servicesCarousel {
+        --f-carousel-slide-width: calc((100% - 96px) / 6);
     }
 }
