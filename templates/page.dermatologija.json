@@ -193,6 +193,7 @@
         },
         "service_J8Czxe": {
           "type": "service",
+          "name": "Podologs",
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
             "name": "Podologs",
@@ -201,6 +202,7 @@
         },
         "service_xgkqQx": {
           "type": "service",
+          "name": "Sejas procedūras",
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
             "name": "Sejas procedūras",
