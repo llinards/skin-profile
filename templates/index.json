@@ -177,7 +177,7 @@
       }
     },
     "template_services_yTPcHr": {
-      "type": "template-services",
+      "type": "template-services-carousel-grid",
       "blocks": {
         "service_Pmbiyg": {
           "type": "service",

@@ -2,15 +2,15 @@
   document.addEventListener('DOMContentLoaded', function () {
     const carousel = Carousel(document.getElementById('servicesCarousel'), {
       fill: true,
-      infinite: {{ section.settings.infinite | default: false | json }},
+      infinite: {{ section.settings.carousel_desktop | default: false | json }},
       plugins: [window.Dots],
     }).init();
   });
 </script>
 
-<div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
+<div class="{% if section.settings.carousel_desktop == false %}container mx-auto{% endif %} px-4 pb-12 transition-hide text-center md:text-left">
   <h2 class="pb-6 md:pb-12">{{ section.settings.heading }}</h2>
-  <div class="hidden xl:flex">
+  <div class="hidden {% if section.settings.carousel_desktop == false %}xl:flex{% endif %}">
     <div class="grid w-full justify-center items-center xl:grid-rows-2 xl:grid-cols-4 gap-8">
       {% for block in section.blocks %}
         {% if block.settings.photo %}
@@ -35,7 +35,7 @@
       {% endfor %}
     </div>
   </div>
-  <div class="xl:hidden">
+  <div class="{% if section.settings.carousel_desktop == false %}xl:hidden{% endif %}">
     <div class="f-carousel pb-6 md:pb-12" id="servicesCarousel">
       {% for block in section.blocks %}
         <div class="f-carousel__slide h-full rounded-4xl">
@@ -69,7 +69,7 @@
   "name": "Pakalpojumu sadaļa",
   "settings": [
     { "type": "text", "id": "heading", "label": "Virsraksts", "default": "Pakalpojumi" },
-    { "type": "checkbox", "id": "infinite", "label": "Bezgalīga karuseļa cilpa", "default": false }
+    { "type": "checkbox", "id": "carousel_desktop", "label": "Pakalpojumu karuselis uz desktopa", "default": false }
   ],
   "blocks": [
     {
