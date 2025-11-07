@@ -161,6 +161,90 @@
         "space_bottom": true
       }
     },
+    "template_services_bN8zJK": {
+      "type": "template-services",
+      "blocks": {
+        "service_H4JTT9": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "Estētiskā medicīna",
+            "url": ""
+          }
+        },
+        "service_f9K83j": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "Dermatoloģija",
+            "url": ""
+          }
+        },
+        "service_q4TViX": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "Lāzerdermatoloģija",
+            "url": ""
+          }
+        },
+        "service_J8Czxe": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/podologs.jpg",
+            "name": "Podologs",
+            "url": ""
+          }
+        },
+        "service_xgkqQx": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "Sejas procedūras",
+            "url": ""
+          }
+        },
+        "service_PTnLDR": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "Lāzerepilācija",
+            "url": ""
+          }
+        },
+        "service_UhXfgi": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "Ķermeņa procedūras",
+            "url": ""
+          }
+        },
+        "service_mQd9ie": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "Uztura speciālists",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_H4JTT9",
+        "service_f9K83j",
+        "service_q4TViX",
+        "service_J8Czxe",
+        "service_xgkqQx",
+        "service_PTnLDR",
+        "service_UhXfgi",
+        "service_mQd9ie"
+      ],
+      "name": "Pakalpojumu sadaļa",
+      "settings": {
+        "heading": "Pakalpojumi",
+        "infinite": true
+      }
+    },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
       "name": "Virtuālā konsutlācija",
@@ -222,6 +306,7 @@
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
+    "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
