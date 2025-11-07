@@ -166,6 +166,7 @@
       "blocks": {
         "service_H4JTT9": {
           "type": "service",
+          "name": "Estētiskā medicīna",
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
             "name": "Estētiskā medicīna",
@@ -174,6 +175,7 @@
         },
         "service_f9K83j": {
           "type": "service",
+          "name": "Dermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
             "name": "Dermatoloģija",
