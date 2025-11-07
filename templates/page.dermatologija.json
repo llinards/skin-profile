@@ -242,7 +242,7 @@
       "name": "Pakalpojumu sadaļa",
       "settings": {
         "heading": "Pakalpojumi",
-        "infinite": true
+        "carousel_desktop": true
       }
     },
     "template_virtual_consultation_pX36xq": {
