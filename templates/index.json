@@ -98,6 +98,7 @@
         },
         "service_jF96NR": {
           "type": "service",
+          "name": "Ķermeņa procedūras",
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
             "name": "Ķermeņa procedūras",
