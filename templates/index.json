@@ -44,6 +44,7 @@
       "blocks": {
         "service_Pmbiyg": {
           "type": "service",
+          "name": "Estētiskā medicīna",
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
             "name": "Estētiskā medicīna",
@@ -52,6 +53,7 @@
         },
         "service_BjqD4V": {
           "type": "service",
+          "name": "Dermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
             "name": "Dermatoloģija",
