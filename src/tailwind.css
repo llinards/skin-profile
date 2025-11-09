@@ -263,7 +263,7 @@
     }
 
     #categoryCarousel {
-        --f-carousel-slide-width: calc((100% - 64px) / 3);
+        --f-carousel-slide-width: calc((100% - 64px) / 2);
     }
 }
 
@@ -286,7 +286,7 @@
     #categoryCarousel,
     #productRecommendationCarousel,
     #servicesCarousel {
-        --f-carousel-slide-width: calc((100% - 72px) / 4);
+        --f-carousel-slide-width: calc((100% - 72px) / 3);
     }
 }
 
@@ -295,10 +295,16 @@
     #teamCarousel,
     #categoryCarousel,
     #servicesCarousel {
-        --f-carousel-slide-width: calc((100% - 96px) / 5);
+        --f-carousel-slide-width: calc((100% - 96px) / 4);
     }
 }
 
+@media screen and (min-width: 1440px) {
+
+    #categoryCarousel {
+        --f-carousel-slide-width: calc((100% - 96px) / 5);
+    }
+}
 
 @media screen and (min-width: 1920px) {
     #servicesCarousel {

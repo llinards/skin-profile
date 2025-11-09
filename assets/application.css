@@ -592,9 +592,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -639,9 +636,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .gap-24 {
-    gap: calc(var(--spacing) * 24);
   }
   .space-y-1 {
     :where(& > :not(:last-child)) {
@@ -1249,12 +1243,6 @@
       object-position: center 10%;
     }
   }
-  .min-\[440px\]\:text-3xl {
-    @media (width >= 440px) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
   .min-\[460px\]\:text-3xl {
     @media (width >= 460px) {
       font-size: var(--text-3xl);
@@ -1379,18 +1367,6 @@
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
-    }
-  }
-  .sm\:text-2xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-  .sm\:text-3xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .sm\:text-sm {
@@ -1946,12 +1922,6 @@
       padding-inline: calc(var(--spacing) * 24);
     }
   }
-  .xl\:text-3xl {
-    @media (width >= 80rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
   .xl\:text-base {
     @media (width >= 80rem) {
       font-size: var(--text-base);
@@ -1962,12 +1932,6 @@
     @media (width >= 80rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .\32 xl\:text-3xl {
-    @media (width >= 96rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }
@@ -2186,7 +2150,7 @@
     --f-carousel-slide-width: calc((100% - 64px) / 2);
   }
   #categoryCarousel {
-    --f-carousel-slide-width: calc((100% - 64px) / 3);
+    --f-carousel-slide-width: calc((100% - 64px) / 2);
   }
 }
 @media screen and (min-width: 767px) {
@@ -2199,11 +2163,16 @@
 }
 @media screen and (min-width: 1024px) {
   #teamCarousel, #categoryCarousel, #productRecommendationCarousel, #servicesCarousel {
-    --f-carousel-slide-width: calc((100% - 72px) / 4);
+    --f-carousel-slide-width: calc((100% - 72px) / 3);
   }
 }
 @media screen and (min-width: 1280px) {
   #teamCarousel, #categoryCarousel, #servicesCarousel {
+    --f-carousel-slide-width: calc((100% - 96px) / 4);
+  }
+}
+@media screen and (min-width: 1440px) {
+  #categoryCarousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
   }
 }
