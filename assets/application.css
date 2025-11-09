@@ -1922,6 +1922,12 @@
       padding-inline: calc(var(--spacing) * 24);
     }
   }
+  .xl\:text-3xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .xl\:text-base {
     @media (width >= 80rem) {
       font-size: var(--text-base);
