@@ -1,19 +1,14 @@
 <header class="relative container mx-auto">
   <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
     <nav class="mx-auto px-4 w-full" role="navigation" aria-label="Main navigation">
-      {%- assign nav_style = section.settings.navigation_style | default: page.metafields.custom.navigation_style -%}
-      {%- assign is_dark = false -%}
-      {%- if template.name == 'cart' or template.name == 'product' -%}
-        {%- assign is_dark = true -%}
-      {%- elsif nav_style == 'dark' -%}
-        {%- assign is_dark = true -%}
-      {%- endif -%}
-
-      {%- if is_dark -%}
+      {% if template.name == 'cart'
+        or template.name == 'product'
+        or page.metafields.custom.navigation_style == 'dark'
+      %}
         {% render 'menu', invert_class: 'invert' %}
-      {%- else -%}
+      {% else %}
         {% render 'menu' %}
-      {%- endif -%}
+      {% endif %}
     </nav>
   </div>
 </header>
@@ -26,18 +21,6 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Logo"
-    },
-    {
-      "type": "select",
-      "id": "navigation_style",
-      "label": "Navigācijas krāsa",
-      "info": "Izvēlieties vai piesaistiet dinamisko avotu (Pages → custom.navigation_style).",
-      "options": [
-        { "value": "", "label": "Automātiski (no lapas/metafield)" },
-        { "value": "light", "label": "Gaiša" },
-        { "value": "dark", "label": "Tumša" }
-      ],
-      "default": ""
     },
     {
       "type": "link_list",
