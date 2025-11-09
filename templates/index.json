@@ -107,6 +107,7 @@
         },
         "service_PkbQ3h": {
           "type": "service",
+          "name": "Uztura speciālists",
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
             "name": "Uztura speciālists",
