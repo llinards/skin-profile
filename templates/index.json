@@ -62,6 +62,7 @@
         },
         "service_mNBbBe": {
           "type": "service",
+          "name": "Lāzerdermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
             "name": "Lāzerdermatoloģija",
@@ -70,6 +71,7 @@
         },
         "service_JMxV4A": {
           "type": "service",
+          "name": "Podologs",
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
             "name": "Podologs",
@@ -78,6 +80,7 @@
         },
         "service_N8cXR7": {
           "type": "service",
+          "name": "Sejas procedūras",
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
             "name": "Sejas procedūras",
@@ -86,6 +89,7 @@
         },
         "service_wYGgCW": {
           "type": "service",
+          "name": "Lāzerepilācija",
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
             "name": "Lāzerepilācija",
