@@ -459,14 +459,23 @@
   .h-full {
     height: 100%;
   }
+  .h-max {
+    height: max-content;
+  }
   .h-screen {
     height: 100vh;
   }
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
   }
+  .min-h-0 {
+    min-height: calc(var(--spacing) * 0);
+  }
   .min-h-5 {
     min-height: calc(var(--spacing) * 5);
+  }
+  .min-h-\[calc\(100svh-var\(--footer-h\,0px\)\)\] {
+    min-height: calc(100svh - var(--footer-h,0px));
   }
   .min-h-screen {
     min-height: 100vh;
@@ -521,6 +530,18 @@
   }
   .max-w-lg {
     max-width: var(--container-lg);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-3 {
+    flex: 3;
+  }
+  .flex-4 {
+    flex: 4;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .table-auto {
     table-layout: auto;
@@ -918,6 +939,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);

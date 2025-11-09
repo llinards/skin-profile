@@ -4,15 +4,17 @@
 
   https://shopify.dev/docs/storefronts/themes/architecture/templates/404
 {% endcomment %}
-<div class="container mx-auto h-full pb-12 pt-24 flex flex-col items-center justify-content space-y-6">
-  <h1>{{ '404.title' | t }}</h1>
+<div class="container mx-auto h-screen flex items-center justify-center py-24">
+  <div class="flex flex-col items-center justify-center space-y-6">
+    <h1>{{ '404.title' | t }}</h1>
 
-  <p>
-    {{ '404.not_found' | t }}
-  </p>
+    <p>
+      {{ '404.not_found' | t }}
+    </p>
 
-  {% assign back_label = '404.back_to_shopping' | t %}
-  {% render 'btn-brown', text: back_label, href: routes.all_products_collection_url %}
+    {% assign back_label = '404.back_to_shopping' | t %}
+    {% render 'btn-brown', text: back_label, url: routes.all_products_collection_url %}
+  </div>
 </div>
 
 {% schema %}

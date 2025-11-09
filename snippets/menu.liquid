@@ -67,7 +67,11 @@
         >
       </a>
     </div>
-    {% if template.name == 'cart' or template.name == 'product' or page.metafields.custom.navigation_style == 'dark' %}
+    {% if template.name == 'cart'
+      or template.name == 'product'
+      or template.name == '404'
+      or page.metafields.custom.navigation_style == 'dark'
+    %}
       {% render 'cart-counter-dark' %}
     {% else %}
       {% render 'cart-counter' %}

@@ -3,6 +3,7 @@
     <nav class="mx-auto px-4 w-full" role="navigation" aria-label="Main navigation">
       {% if template.name == 'cart'
         or template.name == 'product'
+        or template.name == '404'
         or page.metafields.custom.navigation_style == 'dark'
       %}
         {% render 'menu', invert_class: 'invert' %}
