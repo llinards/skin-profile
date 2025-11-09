@@ -55,7 +55,7 @@
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
             "name": "Dermatoloģija",
-            "url": ""
+            "url": "shopify://pages/dermatologija"
           }
         },
         "service_mNBbBe": {
@@ -121,14 +121,6 @@
       "settings": {
         "heading": "Pakalpojumi",
         "carousel_desktop": false
-      }
-    },
-    "text_section_BfGNQG": {
-      "type": "template-text-section",
-      "name": "Teksta sadaļa",
-      "settings": {
-        "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
-        "text": "<p>Dibināts 2019. gadā, Skin Profile īsā laikā ir kļuvis par uzticamu veselības un skaistuma centru Vidzemē. Mūsu mērķis ir uzlabot Siguldas un apkārtējo novadu iedzīvotāju dzīves kvalitāti, piedāvājot inovatīvus, uz jaunākajām tehnoloģijām balstītus dermatoloģijas, lāzerdermatoloģijas un kosmetoloģijas pakalpojumus.</p><p>Mēs ticam, ka skaistums sākas ar veselību – tāpēc katrs mūsu pakalpojums ir veidots, lai sniegtu redzamus, ilgtermiņa rezultātus profesionālu speciālistu uzraudzībā. Mūsu komanda rūpējas par katru pacientu individuāli, meklējot precīzākos un efektīvākos risinājumus ādas veselības atjaunošanai.</p><p>Mūsu vīzija – kļūt par vadošo estētiskās medicīnas un dermatoloģijas centru reģionā, kas apvieno tehnoloģiju iespējas ar cilvēcīgu un iejūtīgu attieksmi.</p><p>Mūsu misija – palīdzēt cilvēkiem justies labi savā ādā – gan fiziski, gan emocionāli.</p>"
       }
     },
     "team_section_WTmffT": {
@@ -311,6 +303,14 @@
         "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
         "photo": "shopify://shop_images/biodroga-serum.jpg",
         "alt": "Biodroga serums"
+      }
+    },
+    "text_section_BfGNQG": {
+      "type": "template-text-section",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
+        "text": "<p>Dibināts 2019. gadā, Skin Profile īsā laikā ir kļuvis par uzticamu veselības un skaistuma centru Vidzemē. Mūsu mērķis ir uzlabot Siguldas un apkārtējo novadu iedzīvotāju dzīves kvalitāti, piedāvājot inovatīvus, uz jaunākajām tehnoloģijām balstītus dermatoloģijas, lāzerdermatoloģijas un kosmetoloģijas pakalpojumus.</p><p>Mēs ticam, ka skaistums sākas ar veselību – tāpēc katrs mūsu pakalpojums ir veidots, lai sniegtu redzamus, ilgtermiņa rezultātus profesionālu speciālistu uzraudzībā. Mūsu komanda rūpējas par katru pacientu individuāli, meklējot precīzākos un efektīvākos risinājumus ādas veselības atjaunošanai.</p><p>Mūsu vīzija – kļūt par vadošo estētiskās medicīnas un dermatoloģijas centru reģionā, kas apvieno tehnoloģiju iespējas ar cilvēcīgu un iejūtīgu attieksmi.</p><p>Mūsu misija – palīdzēt cilvēkiem justies labi savā ādā – gan fiziski, gan emocionāli.</p>"
       }
     },
     "template_partners_RUpUhn": {
