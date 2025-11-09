@@ -169,7 +169,7 @@
           "name": "Estētiskā medicīna",
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
-            "name": "Estētiskā medicīna",
+            "name": "<p>Estētiskā medicīna</p>",
             "url": ""
           }
         },
@@ -178,7 +178,7 @@
           "name": "Dermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/dermatologija.jpg",
-            "name": "Dermatoloģija",
+            "name": "<p>Dermatoloģija</p>",
             "url": "shopify://pages/dermatologija"
           }
         },
@@ -187,7 +187,7 @@
           "name": "Lāzerdermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
-            "name": "Lāzerdermatoloģija",
+            "name": "<p>Lāzer-dermatoloģija</p>",
             "url": ""
           }
         },
@@ -196,7 +196,7 @@
           "name": "Podologs",
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
-            "name": "Podologs",
+            "name": "<p>Podologs</p>",
             "url": ""
           }
         },
@@ -205,7 +205,7 @@
           "name": "Sejas procedūras",
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
-            "name": "Sejas procedūras",
+            "name": "<p>Sejas procedūras</p>",
             "url": ""
           }
         },
@@ -214,7 +214,7 @@
           "name": "Lāzerepilācija",
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
-            "name": "Lāzerepilācija",
+            "name": "<p>Lāzerepilācija</p>",
             "url": ""
           }
         },
@@ -223,7 +223,7 @@
           "name": "Ķermeņa procedūras",
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
-            "name": "Ķermeņa procedūras",
+            "name": "<p>Ķermeņa procedūras</p>",
             "url": ""
           }
         },
@@ -232,7 +232,7 @@
           "name": "Uztura speciālists",
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
-            "name": "Uztura speciālists",
+            "name": "<p>Uztura speciālists</p>",
             "url": ""
           }
         }
