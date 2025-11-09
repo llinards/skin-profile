@@ -12,26 +12,34 @@
     {% if section.settings.is_page_title %}
       <h1 class="mb-6 md:mb-12">{{ section.settings.heading }}</h1>
     {% else %}
-      <h2 class="mb-6 md:mb-12">{{ section.settings.heading }}</h2>
+      <div class="flex flex-row justify-between mb-6 md:mb-12 ">
+        <h2>{{ section.settings.heading }}</h2>
+        <div class="group flex items-center justify-end cursor-pointer border-b border-transparent hover:border-sp-brown transition-colors duration-150">
+          <a class="text-gray-500 pr-2" href="{{ pages['komanda'].url }}">Skatīt visu</a>
+          <span class="pointer-events-none">
+            {% render 'icon-arrow' %}
+          </span>
+        </div>
+      </div>
     {% endif %}
 
     {% if section.settings.use_grid_layout %}
       <!-- Grid Layout -->
-      <div class="hidden md:grid grid-cols-3 gap-6 pb-12">
+      <div class="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 pb-12">
         {% for block in section.blocks %}
           <div
             class="h-full rounded-4xl cursor-pointer"
             @click="activeModal = '{{ block.id }}'; document.body.style.overflow = 'hidden'"
           >
             {% if block.settings.photo %}
-              <div class="overflow-hidden h-108 rounded-4xl">
+              <div class="overflow-hidden h-156 rounded-4xl">
                 <img
                   src="{{ block.settings.photo | image_url }}"
                   alt="{{ block.settings.name | escape }}"
                   width="1080"
                   height="1920"
                   loading="lazy"
-                  class="rounded-4xl h-108 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                  class="rounded-4xl h-156 object-top object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 >
               </div>
             {% endif %}

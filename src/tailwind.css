@@ -22,6 +22,10 @@
         border-color: #885642;
     }
 
+    .hover\:border-sp-brown:hover {
+        border-color: #885642 !important;
+    }
+
     .border-sp-light-brown {
         border-color: #E6DAC8;
     }
