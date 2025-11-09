@@ -14,7 +14,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "navigation_style": "dark",
+        "navigation_style": "",
         "menu": ""
       }
     }
