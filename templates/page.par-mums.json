@@ -9,12 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {
-        "add_top_padding": true
-      }
-    },
     "template_header_pfbGCR": {
       "type": "template-header",
       "name": "Galvenes sadaļa",
@@ -23,10 +17,16 @@
         "heading": "Skin Profile ir vieta, kur mūsdienīga dermatoloģija un estētiskā medicīna satiekas ar rūpēm un individuālu pieeju.",
         "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
       }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": true
+      }
     }
   },
   "order": [
-    "main",
-    "template_header_pfbGCR"
+    "template_header_pfbGCR",
+    "main"
   ]
 }
