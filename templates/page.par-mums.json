@@ -15,8 +15,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/par-mums.jpg",
         "heading": "Skin Profile ir vieta, kur mūsdienīga dermatoloģija un estētiskā medicīna satiekas ar rūpēm un individuālu pieeju.",
-        "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>",
-        "content_width": 2
+        "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
       }
     },
     "main": {
@@ -24,10 +23,59 @@
       "settings": {
         "add_top_padding": true
       }
+    },
+    "template_contact_us_QTGFLn": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_xJ7XTb": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_Yfqr4e": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_QqerMp": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_DeM8Cz": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_xJ7XTb",
+        "button_Yfqr4e",
+        "button_QqerMp",
+        "button_DeM8Cz"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
     }
   },
   "order": [
     "template_header_pfbGCR",
-    "main"
+    "main",
+    "template_contact_us_QTGFLn"
   ]
 }
