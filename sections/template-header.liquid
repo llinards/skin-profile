@@ -3,7 +3,7 @@
   style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 10%), linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2)), url('{{ section.settings.bg_image | image_url: width: 2000 }}');"
 >
   <div class="container mx-auto px-4 sm:px-6 h-full flex">
-    <div class="flex flex-col justify-center h-full md:w-{{ section.settings.content_width }}/5 lg:items-start">
+    <div class="flex flex-col justify-center h-full md:w-3/5 lg:items-start">
       <div class="space-y-6">
         {% render 'social-icons' %}
         <h1 class="flex md:leading-18 text-white">
@@ -53,16 +53,6 @@
       "id": "subtext",
       "label": "Teksts",
       "default": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
-    },
-    {
-      "type": "range",
-      "id": "content_width",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "unit": "/5",
-      "label": "Satura platums (1/5 = 20%, 2/5 = 40%, utt.)",
-      "default": 3
     }
   ],
   "blocks": [
