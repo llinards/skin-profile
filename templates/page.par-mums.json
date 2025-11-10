@@ -11,10 +11,22 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_header_pfbGCR": {
+      "type": "template-header",
+      "name": "Galvenes sadaļa",
+      "settings": {
+        "bg_image": "shopify://shop_images/par-mums.jpg",
+        "heading": "Skin Profile ir vieta, kur mūsdienīga dermatoloģija un estētiskā medicīna satiekas ar rūpēm un individuālu pieeju.",
+        "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_header_pfbGCR"
   ]
 }
