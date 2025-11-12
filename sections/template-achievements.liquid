@@ -1,0 +1,45 @@
+<div class="container mx-auto transition hide flex flex-col md:flex-row md:justify-between">
+  <div class="text-center text-4xl">
+    <p id="yearsOfExperience" class="header-font">{{ section.settings.years_of_experience }}</p>
+    <p class="uppercase">Gadu pieredze</p>
+  </div>
+  <div id="numberOfServices" class="text-center text-4xl">
+    <p class="header-font">{{ section.settings.number_of_services }}</p>
+    <p class="uppercase">Pakalapojumi</p>
+  </div>
+  <div id="teamMembers" class="text-center text-4xl">
+    <p class="header-font">{{ section.settings.team_members.value }}</p>
+    <p class="uppercase">Pieredzējuši speciālisti</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Kategoriju Karuselis",
+  "settings": [
+    {
+      "type": "text",
+      "id": "years_of_experience",
+      "label": "Gadu pieredze",
+      "default": "10+"
+    },
+    {
+      "type": "text",
+      "id": "number_of_services",
+      "label": "Pakalpojumu skaits",
+      "default": "20+"
+    },
+    {
+      "type": "number",
+      "id": "team_members",
+      "label": "Pieredzējuši speciālisti",
+      "default": 18
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kategoriju Karuselis"
+    }
+  ]
+}
+{% endschema %}
