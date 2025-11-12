@@ -18,10 +18,13 @@
         "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
       }
     },
-    "main": {
-      "type": "page",
+    "template_achievements_9ngQDJ": {
+      "type": "template-achievements",
+      "name": "Sasniegumi/Par mums",
       "settings": {
-        "add_top_padding": true
+        "years_of_experience": "10+",
+        "number_of_services": "20+",
+        "team_members": 18
       }
     },
     "template_contact_us_QTGFLn": {
@@ -72,13 +75,10 @@
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
       }
     },
-    "template_achievements_9ngQDJ": {
-      "type": "template-achievements",
-      "name": "Sasniegumi/Par mums",
+    "main": {
+      "type": "page",
       "settings": {
-        "years_of_experience": "10+",
-        "number_of_services": "20+",
-        "team_members": 18
+        "add_top_padding": false
       }
     }
   },
