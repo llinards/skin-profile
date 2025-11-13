@@ -1593,6 +1593,12 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .md\:-translate-y-3\.5 {
+    @media (width >= 48rem) {
+      --tw-translate-y: calc(var(--spacing) * -3.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
