@@ -2,16 +2,16 @@
   class="
     relative bg-cover h-screen md:h-256 mb-12 transition-hide
     {% case section.settings.bg_pos_mobile %}
-      {% when 'left-15' %} bg-position-[-15%]
+      {% when 'left-15' %} -bg-position-[15%]
       {% when 'left' %} bg-right
       {% when 'right-15' %} bg-position-[15%]
       {% when 'right' %} bg-left
       {% when 'center' %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
-      {% when 'left-50' %} md:bg-position-[-15%]
+      {% when 'left-15' %} md:-bg-position-[15%]
       {% when 'left' %} md:bg-right
-      {% when 'right-50' %} md:bg-position-[15%]
+      {% when 'right-15' %} md:bg-position-[15%]
       {% when 'right' %} md:bg-left
       {% when 'center' %} md:bg-center
     {% endcase %}
@@ -108,9 +108,11 @@
       "id": "bg_pos_mobile",
       "label": "Pozīcija (mobilajās)",
       "options": [
-        { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" },
-        { "value": "center", "label": "Centrēt bildi" }
+        { "value": "left", "label": "Pa kreisi (stingri)" },
+        { "value": "left-15", "label": "Pa kreisi (pussolis)" },
+        { "value": "center", "label": "Centrēt" },
+        { "value": "right-15", "label": "Pa labi (pussolis)" },
+        { "value": "right", "label": "Pa labi (stingri)" }
       ],
       "default": "center"
     },
