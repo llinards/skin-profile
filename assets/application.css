@@ -889,6 +889,12 @@
   .bg-position-\[-15\%\] {
     background-position: -15%;
   }
+  .bg-position-\[-15\] {
+    background-position: -15;
+  }
+  .bg-position-\[1asdasdasd\] {
+    background-position: 1asdasdasd;
+  }
   .bg-position-\[15\%\] {
     background-position: 15%;
   }
