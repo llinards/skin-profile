@@ -4,12 +4,12 @@
     {% case section.settings.bg_pos_mobile %}
       {% when 'left' %} bg-left
       {% when 'right' %} bg-right
-      {% else %} bg-center
+      {% when 'center' %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
       {% when 'left' %} md:bg-left
       {% when 'right' %} md:bg-right
-      {% else %} md:bg-center
+      {% when 'center' %} md:bg-center
     {% endcase %}
   "
   style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 10%), linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2)), url('{{ section.settings.bg_image | image_url: width: 2000 }}');"
@@ -74,9 +74,10 @@
       "label": "Pozīcija (mobilajās)",
       "options": [
         { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" }
+        { "value": "right", "label": "Pabīdīt bildi pa labi" },
+        { "value": "center", "label": "Centrēt bildi" }
       ],
-      "default": "right"
+      "default": "center"
     },
     {
       "type": "select",
@@ -84,9 +85,10 @@
       "label": "Pozīcija (dators)",
       "options": [
         { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" }
+        { "value": "right", "label": "Pabīdīt bildi pa labi" },
+        { "value": "center", "label": "Centrēt bildi" }
       ],
-      "default": "right"
+      "default": "center"
     },
 
     {
