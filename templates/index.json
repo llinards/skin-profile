@@ -39,7 +39,7 @@
         "heading": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija",
         "subtext": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>",
         "bg_pos_mobile": "right-15",
-        "bg_pos_desktop": "right",
+        "bg_pos_desktop": "center",
         "heading_align": "left",
         "button_align_mobile": "center",
         "button_align_desktop": "start"
