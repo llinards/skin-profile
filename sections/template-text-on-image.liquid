@@ -1,6 +1,6 @@
 <div
   class="
-    relative bg-cover h-screen mb-12
+    relative bg-cover h-screen md:h-256 mb-12 transition-hide
     {% case section.settings.bg_pos_mobile %}
       {% when 'left' %} bg-right
       {% when 'right' %} bg-left
@@ -24,7 +24,7 @@
     height="1080"
   >
 
-  <div class="container mx-auto px-4 h-full flex">
+  <div class="container mx-auto px-4 screen flex h-full">
     <div class="flex flex-col justify-center h-full items-center">
       <div class="space-y-6">
         {%- comment -%} Heading alignment: left/center/right -> Tailwind classes {%- endcomment -%}
@@ -38,7 +38,7 @@
             {%- assign heading_align_class = 'text-center' -%}
         {%- endcase -%}
 
-        <h2 class="text-white normal-case {{ heading_align_class }}">
+        <h2 class="text-white normal-case {{ heading_align_class }} text-4xl md:text-7xl xl:text-8xl">
           {{ section.settings.heading }}
         </h2>
         {% if section.settings.subtext %}
