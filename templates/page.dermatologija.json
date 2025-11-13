@@ -55,7 +55,7 @@
       }
     },
     "template_text_section_JPJC6T": {
-      "type": "template-text-section",
+      "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
