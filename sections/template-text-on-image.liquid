@@ -1,0 +1,95 @@
+<div
+  class="relative bg-cover h-screen mb-12"
+  style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 10%), linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2)), url('{{ section.settings.bg_image | image_url: width: 2000 }}');"
+>
+  <div class="container mx-auto px-4 h-full flex">
+    <div class="flex flex-col justify-center h-full items-center">
+      <div class="space-y-6">
+        <h2 class="text-white">
+          {{ section.settings.heading }}
+        </h2>
+        {% if section.settings.subtext %}
+          <div class="text-white">
+            {{ section.settings.subtext }}
+          </div>
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {% if block.type == 'button' %}
+            <div class="flex justify-center md:justify-start w-full">
+              {% case block.settings.style %}
+                {% when 'white' %}
+                  {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
+                {% when 'brown' %}
+                  {% render 'btn-brown', text: block.settings.text, url: block.settings.url %}
+                {% when 'ai' %}
+                  {% render 'btn-brown-ai', text: block.settings.text, url: block.settings.url %}
+              {% endcase %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Teksts uz bildes",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Fona bilde"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Virsraksts",
+      "default": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Teksts",
+      "default": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Poga",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Uzzināt vairāk",
+          "default": "Button"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Pogas veids",
+          "options": [
+            { "value": "white", "label": "Balta" },
+            { "value": "brown", "label": "Brūna" },
+            { "value": "ai", "label": "AI" }
+          ],
+          "default": "white"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 2,
+  "presets": [
+    {
+      "name": "Teksts uz bildes"
+    }
+  ]
+}
+{% endschema %}
