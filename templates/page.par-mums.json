@@ -14,6 +14,7 @@
       "name": "Galvenes sadaļa",
       "settings": {
         "bg_image": "shopify://shop_images/par-mums.jpg",
+        "bg_alt": "",
         "heading": "Skin Profile ir vieta, kur mūsdienīga dermatoloģija un estētiskā medicīna satiekas ar rūpēm un individuālu pieeju.",
         "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
       }
@@ -52,6 +53,9 @@
       "name": "Teksts uz bildes",
       "settings": {
         "bg_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "bg_alt": "Sieviete pēc Skin Profile apmeklējuma",
+        "bg_pos_mobile": "center",
+        "bg_pos_desktop": "center",
         "heading": "Profesionalitāte, uzticēšanās, kvalitāte un harmonija starp iekšējo un ārējo skaistumu.",
         "subtext": ""
       }

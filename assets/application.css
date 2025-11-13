@@ -650,9 +650,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .justify-start {
-    justify-content: flex-start;
-  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -1120,9 +1117,6 @@
   }
   .capitalize {
     text-transform: capitalize;
-  }
-  .normal-case {
-    text-transform: none;
   }
   .uppercase {
     text-transform: uppercase;
