@@ -1,21 +1,29 @@
-<section class="container mx-auto px-4">
-  <div class="mx-auto max-w-3xl divide-y divide-neutral-200">
+<section class="container mx-auto px-4 mb-12">
+  <h2 class="text-center mb-12">{{ section.settings.heading }}</h2>
+  <div class="mx-auto max-w-3xl space-y-6">
     {% for block in section.blocks %}
       {% if block.type == 'dropdown' %}
-        <div {{ block.shopify_attributes }} x-data="{ open: {{ block.settings.open | json }} }" class="py-2">
+        <div
+          {{ block.shopify_attributes }}
+          x-data="{ open: {{ block.settings.open | json }} }"
+          class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer"
+          @click="open = !open"
+          :class="open ? 'bg-sp-light-brown text-white' : ''"
+        >
           <button
             type="button"
-            @click="open = !open"
-            class="w-full flex items-center justify-between gap-3 px-2 py-4 text-left hover:bg-sp-light-brown/30 transition-colors rounded-md"
+
+            class="w-full flex items-center justify-between gap-3 px-2 py-2 text-left cursor-pointer"
             :aria-expanded="open.toString()"
             :aria-controls="'panel-{{ block.id }}'"
             id="accordion-header-{{ block.id }}"
           >
-            <h3 class="text-xl md:text-2xl">{{ block.settings.title }}</h3>
+            <h3 class="flex-1 min-w-0 text-sm tracking-wider font-bold body-font">
+              {{ block.settings.title }}
+            </h3>
 
             <span
-              class="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-sp-light-brown text-sp-brown border border-[#E6DAC8] transition-colors"
-              :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
+              class="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-sp-brown text-white transition-colors"
             >
               <!-- Plus -->
               <svg
@@ -67,7 +75,7 @@
 {% schema %}
 {
   "name": "BUJ",
-  "settings": [],
+  "settings": [{ "type": "text", "id": "heading", "label": "Virsraksts", "default": "Virsraksts šeit" }],
   "blocks": [
     {
       "type": "dropdown",
