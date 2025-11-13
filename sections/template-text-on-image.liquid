@@ -4,23 +4,11 @@
     {% case section.settings.bg_pos_mobile %}
       {% when 'left' %} bg-left
       {% when 'right' %} bg-right
-      {% when 'top' %} bg-top
-      {% when 'bottom' %} bg-bottom
-      {% when 'left-top' %} bg-left-top
-      {% when 'left-bottom' %} bg-left-bottom
-      {% when 'right-top' %} bg-right-top
-      {% when 'right-bottom' %} bg-right-bottom
       {% else %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
       {% when 'left' %} md:bg-left
       {% when 'right' %} md:bg-right
-      {% when 'top' %} md:bg-top
-      {% when 'bottom' %} md:bg-bottom
-      {% when 'left-top' %} md:bg-left-top
-      {% when 'left-bottom' %} md:bg-left-bottom
-      {% when 'right-top' %} md:bg-right-top
-      {% when 'right-bottom' %} md:bg-right-bottom
       {% else %} md:bg-center
     {% endcase %}
   "
@@ -86,18 +74,9 @@
       "label": "Pozīcija (mobilajās)",
       "options": [
         { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" },
-        { "value": "center", "label": "Centrs" },
-        { "value": "top", "label": "Augšā" },
-        { "value": "bottom", "label": "Apakšā" },
-        { "value": "left-top", "label": "Pa kreisi augšā" },
-        { "value": "left-center", "label": "Pa kreisi centrā (= pa kreisi)" },
-        { "value": "left-bottom", "label": "Pa kreisi apakšā" },
-        { "value": "right-top", "label": "Pa labi augšā" },
-        { "value": "right-center", "label": "Pa labi centrā (= pa labi)" },
-        { "value": "right-bottom", "label": "Pa labi apakšā" }
+        { "value": "right", "label": "Pabīdīt bildi pa labi" }
       ],
-      "default": "center"
+      "default": "right"
     },
     {
       "type": "select",
@@ -105,16 +84,9 @@
       "label": "Pozīcija (dators)",
       "options": [
         { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" },
-        { "value": "center", "label": "Centrs" },
-        { "value": "top", "label": "Augšā" },
-        { "value": "bottom", "label": "Apakšā" },
-        { "value": "left-top", "label": "Pa kreisi augšā" },
-        { "value": "left-bottom", "label": "Pa kreisi apakšā" },
-        { "value": "right-top", "label": "Pa labi augšā" },
-        { "value": "right-bottom", "label": "Pa labi apakšā" }
+        { "value": "right", "label": "Pabīdīt bildi pa labi" }
       ],
-      "default": "center"
+      "default": "right"
     },
 
     {
