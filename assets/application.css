@@ -863,6 +863,9 @@
   .\[background-position\:15\%_50\%\] {
     background-position: 15% 50%;
   }
+  .bg-position-\[15\%_50\%\] {
+    background-position: 15% 50%;
+  }
   .fill-black {
     fill: var(--color-black);
   }

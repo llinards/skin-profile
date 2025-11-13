@@ -17,7 +17,7 @@
       }
     },
     "template_text_image_wide_7Wy8Pq": {
-      "type": "template-text-image-wide",
+      "type": "template-text-with-image-wide",
       "blocks": {
         "button_Vxp834": {
           "type": "button",

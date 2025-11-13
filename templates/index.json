@@ -261,7 +261,7 @@
       }
     },
     "template_text_image_fyDtEG": {
-      "type": "template-text-image-wide",
+      "type": "template-text-with-image-wide",
       "blocks": {
         "button_iknHre": {
           "type": "button",
@@ -314,7 +314,7 @@
       }
     },
     "text_section_BfGNQG": {
-      "type": "template-text-section",
+      "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
