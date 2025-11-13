@@ -101,14 +101,6 @@
     ul {
         @apply list-disc list-inside;
     }
-
-    .bg-left-50 {
-        background-position: 25% center;
-    }
-    
-    .bg-right-50 {
-        background-position: 75% center;
-    }
 }
 
 @layer base {

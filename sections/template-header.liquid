@@ -2,18 +2,18 @@
   class="
     relative bg-cover h-screen mb-12
     {% case section.settings.bg_pos_mobile %}
+      {% when 'left-15' %} -bg-position-[15%]
       {% when 'left' %} bg-right
-      {% when 'left-50' %} bg-right-50
-      {% when 'right-50' %} bg-left-50
+      {% when 'right-15' %} bg-position-[15%]
       {% when 'right' %} bg-left
-      {% else %} bg-center
+      {% when 'center' %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
+      {% when 'left-50' %} md:-bg-position-[15%]
       {% when 'left' %} md:bg-right
-      {% when 'left-50' %} md:bg-right-50
-      {% when 'right-50' %} md:bg-left-50
+      {% when 'right-50' %} md:bg-position-[15%]
       {% when 'right' %} md:bg-left
-      {% else %} md:bg-center
+      {% when 'center' %} md:bg-center
     {% endcase %}
   "
   style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 10%), linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2)), url('{{ section.settings.bg_image | image_url: width: 2000 }}');"
@@ -130,9 +130,9 @@
       "label": "Pozīcija (mobilajās)",
       "options": [
         { "value": "left", "label": "Pa kreisi (stingri)" },
-        { "value": "left-50", "label": "Pa kreisi (pussolis)" },
+        { "value": "left-15", "label": "Pa kreisi (pussolis)" },
         { "value": "center", "label": "Centrēt" },
-        { "value": "right-50", "label": "Pa labi (pussolis)" },
+        { "value": "right-15", "label": "Pa labi (pussolis)" },
         { "value": "right", "label": "Pa labi (stingri)" }
       ],
       "default": "center"
@@ -143,9 +143,7 @@
       "label": "Pozīcija (dators)",
       "options": [
         { "value": "left", "label": "Pa kreisi (stingri)" },
-        { "value": "left-50", "label": "Pa kreisi (pussolis)" },
         { "value": "center", "label": "Centrēt" },
-        { "value": "right-50", "label": "Pa labi (pussolis)" },
         { "value": "right", "label": "Pa labi (stingri)" }
       ],
       "default": "center"

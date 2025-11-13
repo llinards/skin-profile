@@ -269,11 +269,17 @@
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
+  .right-15 {
+    right: calc(var(--spacing) * 15);
+  }
   .right-50 {
     right: calc(var(--spacing) * 50);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-15 {
+    left: calc(var(--spacing) * 15);
   }
   .left-50 {
     left: calc(var(--spacing) * 50);
@@ -879,6 +885,18 @@
   }
   .bg-left {
     background-position: left;
+  }
+  .bg-position-\[15\%\] {
+    background-position: 15%;
+  }
+  .bg-position-\[15\%_50\%\] {
+    background-position: 15% 50%;
+  }
+  .bg-position-\[left_1rem\] {
+    background-position: left 1rem;
+  }
+  .bg-position-\[right_1rem\] {
+    background-position: right 1rem;
   }
   .bg-right {
     background-position: right;
@@ -1739,6 +1757,21 @@
       background-position: left;
     }
   }
+  .md\:bg-position-\[15\%\] {
+    @media (width >= 48rem) {
+      background-position: 15%;
+    }
+  }
+  .md\:bg-position-\[left_1rem\] {
+    @media (width >= 48rem) {
+      background-position: left 1rem;
+    }
+  }
+  .md\:bg-position-\[right_1rem\] {
+    @media (width >= 48rem) {
+      background-position: right 1rem;
+    }
+  }
   .md\:bg-right {
     @media (width >= 48rem) {
       background-position: right;
@@ -2094,12 +2127,6 @@
   ul {
     list-style-position: inside;
     list-style-type: disc;
-  }
-  .bg-left-50 {
-    background-position: 25% center;
-  }
-  .bg-right-50 {
-    background-position: 75% center;
   }
 }
 @layer base {
