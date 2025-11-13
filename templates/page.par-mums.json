@@ -55,6 +55,33 @@
         "heading_align": "center"
       }
     },
+    "template_accordion_4wnPMn": {
+      "type": "template-accordion",
+      "blocks": {
+        "dropdown_yhktkd": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Kā pieteikties vizītei Skin Profile klīnikā?",
+            "content": "<p>Vizītei iespējams pieteikties, zvanot uz +37127841111 vai aizpildot pieteikuma formu mājaslapā, vai pie mums uz vietas klīnikā.</p>",
+            "open": true
+          }
+        },
+        "dropdown_AmKQHh": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai pie jums var pierakstīties bez ģimenes ārsta nosūtījuma?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_yhktkd",
+        "dropdown_AmKQHh"
+      ],
+      "name": "BUJ",
+      "settings": {}
+    },
     "template_contact_us_QTGFLn": {
       "type": "template-contact-us",
       "blocks": {
@@ -109,6 +136,7 @@
     "main",
     "template_achievements_9ngQDJ",
     "template_text_on_image_bFCVjQ",
+    "template_accordion_4wnPMn",
     "template_contact_us_QTGFLn"
   ]
 }
