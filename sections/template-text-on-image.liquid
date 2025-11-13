@@ -27,7 +27,18 @@
   <div class="container mx-auto px-4 h-full flex">
     <div class="flex flex-col justify-center h-full items-center">
       <div class="space-y-6">
-        <h2 class="text-white">
+        {%- comment -%} Heading alignment: left/center/right -> Tailwind classes {%- endcomment -%}
+        {%- assign heading_align = section.settings.heading_align | default: 'center' -%}
+        {%- case heading_align -%}
+          {%- when 'left' -%}
+            {%- assign heading_align_class = 'text-left' -%}
+          {%- when 'right' -%}
+            {%- assign heading_align_class = 'text-right' -%}
+          {%- else -%}
+            {%- assign heading_align_class = 'text-center' -%}
+        {%- endcase -%}
+
+        <h2 class="text-white normal-case {{ heading_align_class }}">
           {{ section.settings.heading }}
         </h2>
         {% if section.settings.subtext %}
@@ -36,9 +47,29 @@
           </div>
         {% endif %}
 
+        {%- comment -%} Compute button alignment classes {%- endcomment -%}
+        {%- assign btn_m = section.settings.button_align_mobile | default: 'center' -%}
+        {%- assign btn_d = section.settings.button_align_desktop | default: 'start' -%}
+        {%- case btn_m -%}
+          {%- when 'start' -%}
+            {%- assign btn_class_m = 'justify-start' -%}
+          {%- when 'end' -%}
+            {%- assign btn_class_m = 'justify-end' -%}
+          {%- else -%}
+            {%- assign btn_class_m = 'justify-center' -%}
+        {%- endcase -%}
+        {%- case btn_d -%}
+          {%- when 'start' -%}
+            {%- assign btn_class_d = 'md:justify-start' -%}
+          {%- when 'end' -%}
+            {%- assign btn_class_d = 'md:justify-end' -%}
+          {%- else -%}
+            {%- assign btn_class_d = 'md:justify-center' -%}
+        {%- endcase -%}
+
         {% for block in section.blocks %}
           {% if block.type == 'button' %}
-            <div class="flex justify-center md:justify-start w-full">
+            <div class="flex {{ btn_class_m }} {{ btn_class_d }} w-full">
               {% case block.settings.style %}
                 {% when 'white' -%}
                   {%- render 'btn-white', text: block.settings.text, url: block.settings.url %}
@@ -102,6 +133,39 @@
       "id": "subtext",
       "label": "Teksts",
       "default": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+    },
+    {
+      "type": "select",
+      "id": "button_align_mobile",
+      "label": "Pogu novietojums (mobilajās)",
+      "options": [
+        { "value": "start", "label": "Pa kreisi (justify-start)" },
+        { "value": "center", "label": "Centrā (justify-center)" },
+        { "value": "end", "label": "Pa labi (justify-end)" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "button_align_desktop",
+      "label": "Pogu novietojums (dators)",
+      "options": [
+        { "value": "start", "label": "Pa kreisi (justify-start)" },
+        { "value": "center", "label": "Centrā (justify-center)" },
+        { "value": "end", "label": "Pa labi (justify-end)" }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Virsraksta izlīdzinājums",
+      "options": [
+        { "value": "left", "label": "Pa kreisi (text-left)" },
+        { "value": "center", "label": "Centrā (text-center)" },
+        { "value": "right", "label": "Pa labi (text-right)" }
+      ],
+      "default": "center"
     }
   ],
   "blocks": [
