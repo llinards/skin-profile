@@ -229,6 +229,17 @@
   .visible {
     visibility: visible;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
   .absolute {
     position: absolute;
   }
@@ -863,8 +874,47 @@
   .\[background-position\:15\%_50\%\] {
     background-position: 15% 50%;
   }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-left {
+    background-position: left;
+  }
+  .bg-left-bottom {
+    background-position: left bottom;
+  }
+  .bg-left-top {
+    background-position: left top;
+  }
+  .bg-position-\[-50\%\] {
+    background-position: -50%;
+  }
   .bg-position-\[15\%_50\%\] {
     background-position: 15% 50%;
+  }
+  .bg-position-\[30\%_50\%\] {
+    background-position: 30% 50%;
+  }
+  .bg-position-\[50\%\] {
+    background-position: 50%;
+  }
+  .bg-position-\[50\%_50\%\] {
+    background-position: 50% 50%;
+  }
+  .bg-right {
+    background-position: right;
+  }
+  .bg-right-bottom {
+    background-position: right bottom;
+  }
+  .bg-right-top {
+    background-position: right top;
+  }
+  .bg-top {
+    background-position: top;
   }
   .fill-black {
     fill: var(--color-black);
@@ -1704,9 +1754,49 @@
       border-width: 0px;
     }
   }
+  .md\:bg-bottom {
+    @media (width >= 48rem) {
+      background-position: bottom;
+    }
+  }
   .md\:bg-center {
     @media (width >= 48rem) {
       background-position: center;
+    }
+  }
+  .md\:bg-left {
+    @media (width >= 48rem) {
+      background-position: left;
+    }
+  }
+  .md\:bg-left-bottom {
+    @media (width >= 48rem) {
+      background-position: left bottom;
+    }
+  }
+  .md\:bg-left-top {
+    @media (width >= 48rem) {
+      background-position: left top;
+    }
+  }
+  .md\:bg-right {
+    @media (width >= 48rem) {
+      background-position: right;
+    }
+  }
+  .md\:bg-right-bottom {
+    @media (width >= 48rem) {
+      background-position: right bottom;
+    }
+  }
+  .md\:bg-right-top {
+    @media (width >= 48rem) {
+      background-position: right top;
+    }
+  }
+  .md\:bg-top {
+    @media (width >= 48rem) {
+      background-position: top;
     }
   }
   .md\:fill-black {

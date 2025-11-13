@@ -2,6 +2,16 @@
   class="relative bg-cover bg-position-[15%_50%] md:bg-center h-screen mb-12"
   style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 10%), linear-gradient(rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2)), url('{{ section.settings.bg_image | image_url: width: 2000 }}');"
 >
+  {%- if section.settings.bg_image != blank -%}
+    <img
+      src="{{ section.settings.bg_image | image_url: width: 2000 }}"
+      alt="{{ section.settings.bg_alt | escape }}"
+      class="sr-only"
+      loading="lazy"
+      width="1920"
+      height="1080"
+    >
+  {%- endif -%}
   <div class="container mx-auto px-4 sm:px-6 h-full flex">
     <div class="flex flex-col justify-center h-full md:w-3/5 lg:items-start">
       <div class="space-y-6">
@@ -41,6 +51,12 @@
       "type": "image_picker",
       "id": "bg_image",
       "label": "Fona bilde"
+    },
+    {
+      "type": "text",
+      "id": "bg_alt",
+      "label": "Alt teksts fona bildei",
+      "info": "Ja attēls ir dekoratīvs, atstājiet tukšu."
     },
     {
       "type": "text",
