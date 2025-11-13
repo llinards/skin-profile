@@ -42,19 +42,6 @@
     },
     "template_text_on_image_bFCVjQ": {
       "type": "template-text-on-image",
-      "blocks": {
-        "button_YTn8m3": {
-          "type": "button",
-          "settings": {
-            "text": "Button",
-            "url": "",
-            "style": "white"
-          }
-        }
-      },
-      "block_order": [
-        "button_YTn8m3"
-      ],
       "name": "Teksts uz bildes",
       "settings": {
         "bg_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
