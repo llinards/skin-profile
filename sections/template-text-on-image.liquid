@@ -2,14 +2,14 @@
   class="
     relative bg-cover h-screen md:h-256 mb-12 transition-hide
     {% case section.settings.bg_pos_mobile %}
-      {% when 'left-15' %} -bg-position-[15%]
+      {% when 'left-15' %} bg-position-[85%]
       {% when 'left' %} bg-right
       {% when 'right-15' %} bg-position-[15%]
       {% when 'right' %} bg-left
       {% when 'center' %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
-      {% when 'left-15' %} md:-bg-position-[15%]
+      {% when 'left-15' %} md:bg-position-[85%]
       {% when 'left' %} md:bg-right
       {% when 'right-15' %} md:bg-position-[15%]
       {% when 'right' %} md:bg-left
@@ -29,7 +29,7 @@
   >
   <div class="-bg-position-"></div>
 
-  <div class="container mx-auto px-4 screen flex h-full">
+  <div class="container mx-auto px-4 flex h-full">
     <div class="flex flex-col justify-center h-full items-center">
       <div class="space-y-6">
         {%- comment -%} Heading alignment: left/center/right -> Tailwind classes {%- endcomment -%}

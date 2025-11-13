@@ -1,0 +1,89 @@
+<section class="container mx-auto px-4">
+  <div class="mx-auto max-w-3xl divide-y divide-neutral-200">
+    {% for block in section.blocks %}
+      {% if block.type == 'dropdown' %}
+        <div {{ block.shopify_attributes }} x-data="{ open: {{ block.settings.open | json }} }" class="py-2">
+          <button
+            type="button"
+            @click="open = !open"
+            class="w-full flex items-center justify-between gap-3 px-2 py-4 text-left hover:bg-sp-light-brown/30 transition-colors rounded-md"
+            :aria-expanded="open.toString()"
+            :aria-controls="'panel-{{ block.id }}'"
+            id="accordion-header-{{ block.id }}"
+          >
+            <h3 class="text-xl md:text-2xl">{{ block.settings.title }}</h3>
+
+            <span
+              class="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-sp-light-brown text-sp-brown border border-[#E6DAC8] transition-colors"
+              :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
+            >
+              <!-- Plus -->
+              <svg
+                x-cloak
+                x-show="!open"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+              </svg>
+              <!-- Minus -->
+              <svg
+                x-cloak
+                x-show="open"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" d="M5 12h14" />
+              </svg>
+            </span>
+          </button>
+
+          <div
+            id="panel-{{ block.id }}"
+            role="region"
+            aria-labelledby="accordion-header-{{ block.id }}"
+            x-show="open"
+            x-transition
+            class="px-2 pb-4 text-neutral-700"
+          >
+            {{ block.settings.content }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BUJ",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "dropdown",
+      "name": "Jautājums",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Virsraksts", "default": "Biežāk uzdotais jautājums" },
+        { "type": "richtext", "id": "content", "label": "Saturs", "default": "<p>Atbilde uz jautājumu.</p>" },
+        { "type": "checkbox", "id": "open", "label": "Atvērt pēc noklusējuma", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BUJ",
+      "blocks": [{ "type": "dropdown" }, { "type": "dropdown" }]
+    }
+  ]
+}
+{% endschema %}
