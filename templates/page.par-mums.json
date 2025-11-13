@@ -152,7 +152,9 @@
         "dropdown_WykMRd"
       ],
       "name": "BUJ",
-      "settings": {}
+      "settings": {
+        "heading": "Biežāk uzdotie jautājumi"
+      }
     },
     "template_contact_us_QTGFLn": {
       "type": "template-contact-us",
