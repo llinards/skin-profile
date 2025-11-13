@@ -886,6 +886,9 @@
   .bg-left {
     background-position: left;
   }
+  .bg-position-\[-15\%\] {
+    background-position: -15%;
+  }
   .bg-position-\[15\%\] {
     background-position: 15%;
   }
@@ -1755,6 +1758,11 @@
   .md\:bg-left {
     @media (width >= 48rem) {
       background-position: left;
+    }
+  }
+  .md\:bg-position-\[-15\%\] {
+    @media (width >= 48rem) {
+      background-position: -15%;
     }
   }
   .md\:bg-position-\[15\%\] {
