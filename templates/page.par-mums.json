@@ -30,7 +30,30 @@
       "settings": {
         "years_of_experience": "10",
         "number_of_services": "20",
-        "team_members": 18
+        "team_members": 18,
+        "plus_sign": true
+      }
+    },
+    "template_text_on_image_bFCVjQ": {
+      "type": "template-text-on-image",
+      "blocks": {
+        "button_YTn8m3": {
+          "type": "button",
+          "settings": {
+            "text": "Button",
+            "url": "",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "button_YTn8m3"
+      ],
+      "name": "Teksts uz bildes",
+      "settings": {
+        "bg_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "heading": "Profesionalitāte, uzticēšanās, kvalitāte un harmonija starp iekšējo un ārējo skaistumu.",
+        "subtext": ""
       }
     },
     "template_contact_us_QTGFLn": {
@@ -86,6 +109,7 @@
     "template_header_pfbGCR",
     "main",
     "template_achievements_9ngQDJ",
+    "template_text_on_image_bFCVjQ",
     "template_contact_us_QTGFLn"
   ]
 }
