@@ -15,8 +15,11 @@
       "settings": {
         "bg_image": "shopify://shop_images/par-mums.jpg",
         "bg_alt": "",
-        "heading": "Skin Profile ir vieta, kur mūsdienīga dermatoloģija un estētiskā medicīna satiekas ar rūpēm un individuālu pieeju.",
-        "subtext": "<p>Mēs palīdzam atklāt un saglabāt skaistu, veselīgu ādu, piedāvājot gan ikdienas kopšanas risinājumus, gan inovatīvas procedūras.</p>"
+        "bg_pos_mobile": "center",
+        "bg_pos_desktop": "center",
+        "heading_align": "center",
+        "button_align_mobile": "center",
+        "button_align_desktop": "start"
       }
     },
     "main": {
@@ -57,7 +60,10 @@
         "bg_pos_mobile": "center",
         "bg_pos_desktop": "center",
         "heading": "Profesionalitāte, uzticēšanās, kvalitāte un harmonija starp iekšējo un ārējo skaistumu.",
-        "subtext": ""
+        "subtext": "",
+        "button_align_mobile": "center",
+        "button_align_desktop": "start",
+        "heading_align": "left"
       }
     },
     "template_contact_us_QTGFLn": {
