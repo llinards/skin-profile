@@ -2095,6 +2095,12 @@
     list-style-position: inside;
     list-style-type: disc;
   }
+  .bg-left-50 {
+    background-position: 25% center;
+  }
+  .bg-right-50 {
+    background-position: 75% center;
+  }
 }
 @layer base {
   @font-face {
@@ -2262,14 +2268,6 @@
 @media screen and (min-width: 1920px) {
   #servicesCarousel {
     --f-carousel-slide-width: calc((100% - 96px) / 6);
-  }
-}
-@layer utilities {
-  .bg-left-50 {
-    background-position: 25% center;
-  }
-  .bg-right-50 {
-    background-position: 75% center;
   }
 }
 @property --tw-border-spacing-x {
