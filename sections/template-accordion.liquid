@@ -8,7 +8,7 @@
           x-data="{ open: {{ block.settings.open | json }} }"
           class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer rounded-md"
           @click="open = !open"
-          :class="open ? 'bg-sp-light-brown text-white' : ''"
+          :class="open ? 'bg-sp-light-brown ' : ''"
         >
           <button
             type="button"
@@ -23,7 +23,7 @@
             </h3>
 
             <span
-              class="ml-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-sp-brown text-white transition-colors"
+              class="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-sp-brown text-white transition-colors"
             >
               <!-- Plus -->
               <svg
@@ -62,7 +62,7 @@
             aria-labelledby="accordion-header-{{ block.id }}"
             x-show="open"
             x-transition
-            class="px-2 pb-4 text-neutral-700"
+            class="px-2 pb-4"
           >
             {{ block.settings.content }}
           </div>
