@@ -30,7 +30,6 @@
       <div class="space-y-6">
         {% render 'social-icons' %}
 
-        {%- comment -%} Heading alignment (text-left/center/right) {%- endcomment -%}
         {%- assign heading_align = section.settings.heading_align | default: 'center' -%}
         {%- case heading_align -%}
           {%- when 'left' -%}
@@ -41,13 +40,17 @@
             {%- assign heading_align_class = 'text-center' -%}
         {%- endcase -%}
 
-        <h1 class="flex md:leading-18 text-white {{ heading_align_class }}">
-          {{ section.settings.heading }}
+        <!-- H1 from settings -->
+        <h1 class="text-white flex md:leading-18 {{ heading_align_class }}">
+          {{ section.settings.heading | default: 'Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija' }}
         </h1>
 
-        <div class="text-white prose prose-invert">
-          {{ section.settings.subtext }}
-        </div>
+        <!-- Subtext from settings -->
+        {% if section.settings.subtext != blank %}
+          <div class="text-white prose prose-invert">
+            {{ section.settings.subtext }}
+          </div>
+        {% endif %}
 
         {%- comment -%} Button placement (justify-start/center/end on mobile and desktop) {%- endcomment -%}
         {%- assign btn_m = section.settings.button_align_mobile | default: 'center' -%}
@@ -94,38 +97,37 @@
 {
   "name": "Galvenes sadaļa",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "bg_image",
-      "label": "Fona bilde"
-    },
+    { "type": "image_picker", "id": "bg_image", "label": "Fona bilde" },
     {
       "type": "text",
       "id": "bg_alt",
       "label": "Alt teksts fona bildei",
       "info": "Ja attēls ir dekoratīvs, atstājiet tukšu."
     },
+
+    { "type": "header", "content": "Virsraksts un teksts" },
     {
-      "type": "header",
-      "content": "Fona pozīcija"
+      "type": "text",
+      "id": "heading",
+      "label": "Virsraksts (H1)",
+      "default": "Medicīniskā estētika, lāzerdermatoloģija, dermatoloģija"
     },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Apraksts (zem virsraksta)",
+      "default": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+    },
+
+    { "type": "header", "content": "Fona pozīcija" },
     {
       "type": "select",
       "id": "bg_pos_mobile",
       "label": "Pozīcija (mobilajās)",
       "options": [
-        {
-          "value": "left",
-          "label": "Pabīdīt bildi pa kreisi"
-        },
-        {
-          "value": "right",
-          "label": "Pabīdīt bildi pa labi"
-        },
-        {
-          "value": "center",
-          "label": "Centrēt bildi"
-        }
+        { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
+        { "value": "right", "label": "Pabīdīt bildi pa labi" },
+        { "value": "center", "label": "Centrēt bildi" }
       ],
       "default": "center"
     },
@@ -134,66 +136,35 @@
       "id": "bg_pos_desktop",
       "label": "Pozīcija (dators)",
       "options": [
-        {
-          "value": "left",
-          "label": "Pabīdīt bildi pa kreisi"
-        },
-        {
-          "value": "right",
-          "label": "Pabīdīt bildi pa labi"
-        },
-        {
-          "value": "center",
-          "label": "Centrēt bildi"
-        }
+        { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
+        { "value": "right", "label": "Pabīdīt bildi pa labi" },
+        { "value": "center", "label": "Centrēt bildi" }
       ],
       "default": "center"
     },
-    {
-      "type": "header",
-      "content": "Virsraksts"
-    },
+
+    { "type": "header", "content": "Virsraksta izlīdzinājums" },
     {
       "type": "select",
       "id": "heading_align",
       "label": "Virsraksta izlīdzinājums",
       "options": [
-        {
-          "value": "left",
-          "label": "Pa kreisi (text-left)"
-        },
-        {
-          "value": "center",
-          "label": "Centrā (text-center)"
-        },
-        {
-          "value": "right",
-          "label": "Pa labi (text-right)"
-        }
+        { "value": "left", "label": "Pa kreisi (text-left)" },
+        { "value": "center", "label": "Centrā (text-center)" },
+        { "value": "right", "label": "Pa labi (text-right)" }
       ],
-      "default": "center"
+      "default": "left"
     },
-    {
-      "type": "header",
-      "content": "Pogu novietojums"
-    },
+
+    { "type": "header", "content": "Pogu novietojums" },
     {
       "type": "select",
       "id": "button_align_mobile",
       "label": "Mobilajās",
       "options": [
-        {
-          "value": "start",
-          "label": "Pa kreisi (justify-start)"
-        },
-        {
-          "value": "center",
-          "label": "Centrā (justify-center)"
-        },
-        {
-          "value": "end",
-          "label": "Pa labi (justify-end)"
-        }
+        { "value": "start", "label": "Pa kreisi (justify-start)" },
+        { "value": "center", "label": "Centrā (justify-center)" },
+        { "value": "end", "label": "Pa labi (justify-end)" }
       ],
       "default": "center"
     },
@@ -202,18 +173,9 @@
       "id": "button_align_desktop",
       "label": "Dators",
       "options": [
-        {
-          "value": "start",
-          "label": "Pa kreisi (md:justify-start)"
-        },
-        {
-          "value": "center",
-          "label": "Centrā (md:justify-center)"
-        },
-        {
-          "value": "end",
-          "label": "Pa labi (md:justify-end)"
-        }
+        { "value": "start", "label": "Pa kreisi (md:justify-start)" },
+        { "value": "center", "label": "Centrā (md:justify-center)" },
+        { "value": "end", "label": "Pa labi (md:justify-end)" }
       ],
       "default": "start"
     }
