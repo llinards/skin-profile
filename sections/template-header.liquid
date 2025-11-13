@@ -2,14 +2,14 @@
   class="
     relative bg-cover h-screen mb-12
     {% case section.settings.bg_pos_mobile %}
-      {% when 'left-15' %} bg-position-[-15%]
+      {% when 'left-15' %} bg-position-[85%]
       {% when 'left' %} bg-right
       {% when 'right-15' %} bg-position-[15%]
       {% when 'right' %} bg-left
       {% when 'center' %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
-      {% when 'left-15' %} md:bg-position-[-15%]
+      {% when 'left-15' %} md:bg-position-[85%]
       {% when 'left' %} md:bg-right
       {% when 'right-15' %} md:bg-position-[15%]
       {% when 'right' %} md:bg-left
