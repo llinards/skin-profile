@@ -73,11 +73,83 @@
             "content": "<p>Atbilde uz jautājumu.</p>",
             "open": false
           }
+        },
+        "dropdown_LVce3q": {
+          "type": "dropdown",
+          "settings": {
+            "title": "⁠Kādas procedūras pieejamas Skin Profile?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_ENPK8q": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai procedūras ir piemērotas visiem ādas tipiem?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_bRhTBX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Cik ilgi iepriekš jārezervē vizīte?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_gBijMn": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai piedāvājat dāvanu kartes?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_8mrKjp": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai procedūras ir drošas?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_mziTCz": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai ir pieejama stāvvieta klientiem?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_agLp4M": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai pieņemiet arī bērnus un pusaudžus?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
+        },
+        "dropdown_WykMRd": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Vai klīnika ir pieejama cilvēkiem ar kustību traucējumiem?",
+            "content": "<p>Atbilde uz jautājumu.</p>",
+            "open": false
+          }
         }
       },
       "block_order": [
         "dropdown_yhktkd",
-        "dropdown_AmKQHh"
+        "dropdown_AmKQHh",
+        "dropdown_LVce3q",
+        "dropdown_ENPK8q",
+        "dropdown_bRhTBX",
+        "dropdown_gBijMn",
+        "dropdown_8mrKjp",
+        "dropdown_mziTCz",
+        "dropdown_agLp4M",
+        "dropdown_WykMRd"
       ],
       "name": "BUJ",
       "settings": {}
