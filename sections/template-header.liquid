@@ -3,11 +3,15 @@
     relative bg-cover h-screen mb-12
     {% case section.settings.bg_pos_mobile %}
       {% when 'left' %} bg-right
+      {% when 'left-50' %} bg-right-50
+      {% when 'right-50' %} bg-left-50
       {% when 'right' %} bg-left
       {% else %} bg-center
     {% endcase %}
     {% case section.settings.bg_pos_desktop %}
       {% when 'left' %} md:bg-right
+      {% when 'left-50' %} md:bg-right-50
+      {% when 'right-50' %} md:bg-left-50
       {% when 'right' %} md:bg-left
       {% else %} md:bg-center
     {% endcase %}
@@ -125,9 +129,11 @@
       "id": "bg_pos_mobile",
       "label": "Pozīcija (mobilajās)",
       "options": [
-        { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" },
-        { "value": "center", "label": "Centrēt bildi" }
+        { "value": "left", "label": "Pa kreisi (stingri)" },
+        { "value": "left-50", "label": "Pa kreisi (pussolis)" },
+        { "value": "center", "label": "Centrēt" },
+        { "value": "right-50", "label": "Pa labi (pussolis)" },
+        { "value": "right", "label": "Pa labi (stingri)" }
       ],
       "default": "center"
     },
@@ -136,9 +142,11 @@
       "id": "bg_pos_desktop",
       "label": "Pozīcija (dators)",
       "options": [
-        { "value": "left", "label": "Pabīdīt bildi pa kreisi" },
-        { "value": "right", "label": "Pabīdīt bildi pa labi" },
-        { "value": "center", "label": "Centrēt bildi" }
+        { "value": "left", "label": "Pa kreisi (stingri)" },
+        { "value": "left-50", "label": "Pa kreisi (pussolis)" },
+        { "value": "center", "label": "Centrēt" },
+        { "value": "right-50", "label": "Pa labi (pussolis)" },
+        { "value": "right", "label": "Pa labi (stingri)" }
       ],
       "default": "center"
     },
