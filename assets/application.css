@@ -886,6 +886,9 @@
   .bg-left {
     background-position: left;
   }
+  .bg-position-\[\%\] {
+    background-position: %;
+  }
   .bg-position-\[-15\%\] {
     background-position: -15%;
   }
@@ -900,6 +903,12 @@
   }
   .bg-position-\[15\%_50\%\] {
     background-position: 15% 50%;
+  }
+  .bg-position-\[50\%\] {
+    background-position: 50%;
+  }
+  .bg-position-\[80\%\] {
+    background-position: 80%;
   }
   .bg-position-\[85\%\] {
     background-position: 85%;
