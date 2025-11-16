@@ -1,6 +1,6 @@
-const yearsOfExperienceNum = document.getElementById('yearsOfExperienceNum');
-const numberOfServicesNum = document.getElementById('numberOfServicesNum');
-const teamMembersNum = document.getElementById('teamMembersNum');
+const yearsOfExperienceNum = document.getElementById('years-of-experience-num');
+const numberOfServicesNum = document.getElementById('number-of-services-num');
+const teamMembersNum = document.getElementById('team-members-num');
 
 
 const createOdometer = (el, value) => {

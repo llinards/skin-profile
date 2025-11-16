@@ -31,7 +31,7 @@ class RecommendedProducts extends HTMLElement {
                 this.dispatchEvent(new CustomEvent('recommendations-found', { bubbles: true }));
 
                 setTimeout(() => {
-                    const container = document.getElementById('productRecommendationCarousel');
+                    const container = document.getElementById('product-recommendation-carousel');
 
                     if (container && typeof Carousel !== 'undefined') {
                         const options = {

@@ -1,6 +1,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('servicesCarousel'), {
+    const carousel = Carousel(document.getElementById('services-carousel'), {
       fill: true,
       infinite: {{ section.settings.carousel_desktop | default: false | json }},
       plugins: [window.Dots],
@@ -40,7 +40,7 @@
 
   <!-- CAROUSEL -->
   <div class="{% if section.settings.carousel_desktop == false %}xl:hidden{% endif %}">
-    <div class="f-carousel pb-6 md:pb-12" id="servicesCarousel">
+    <div class="f-carousel pb-6 md:pb-12" id="services-carousel">
       {% for block in section.blocks %}
         <div class="f-carousel__slide h-full rounded-4xl">
           <a href="{{ block.settings.url }}" aria-label="{{ block.settings.name | escape }}">

@@ -33,7 +33,7 @@
           data-section-id="{{ section.id }}"
         >
           {% if recommendations.performed and recommendations.products_count > 0 %}
-            <div id="productRecommendationCarousel" class="f-carousel">
+            <div id="product-recommendation-carousel" class="f-carousel">
               {% for recommendation in recommendations.products %}
                 <div class="f-carousel__slide flex flex-col justify-between space-y-3">
                   {% render 'product-card', product: recommendation %}

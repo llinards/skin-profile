@@ -1,6 +1,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('productBannerCarousel'), {
+    const carousel = Carousel(document.getElementById('product-banner-carousel'), {
       gestures: false,
       infinite: true,
       plugins: [window.Autoplay],
@@ -39,7 +39,7 @@
     </div>
 
     <div class="h-96 md:h-126 w-full absolute md:inset-y-0 left-0 md:left-auto md:right-0 md:w-3/7">
-      <div class="f-carousel p-0" id="productBannerCarousel">
+      <div class="f-carousel p-0" id="product-banner-carousel">
         {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
         {% if slide_blocks.size > 0 %}
           {% for block in slide_blocks %}

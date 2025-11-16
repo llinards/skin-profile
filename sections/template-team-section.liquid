@@ -1,6 +1,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('teamCarousel'), {
+    const carousel = Carousel(document.getElementById('team-carousel'), {
       fill: true,
       infinite: false,
       plugins: [window.Dots],
@@ -56,7 +56,7 @@
         {% endfor %}
       </div>
       <div class="md:hidden">
-        <div class="f-carousel pb-6 md:pb-12" id="teamCarousel">
+        <div class="f-carousel pb-6 md:pb-12" id="team-carousel">
           {% for block in section.blocks %}
             <div
               class="f-carousel__slide h-full rounded-4xl cursor-pointer"
@@ -89,7 +89,7 @@
       </div>
     {% else %}
       <!-- Carousel Layout -->
-      <div class="f-carousel pb-6 md:pb-12" id="teamCarousel">
+      <div class="f-carousel pb-6 md:pb-12" id="team-carousel">
         {% for block in section.blocks %}
           <div
             class="f-carousel__slide h-full rounded-4xl cursor-pointer"

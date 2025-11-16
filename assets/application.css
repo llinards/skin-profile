@@ -1010,9 +1010,6 @@
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
-  .pr-14 {
-    padding-right: calc(var(--spacing) * 14);
-  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -2276,22 +2273,22 @@
   min-height: -webkit-fill-available;
   min-height: 100svh;
 }
-#teamCarousel, #servicesCarousel, #categoryCarousel, #productRecommendationCarousel {
+#team-carousel, #services-carousel, #category-carousel, #product-recommendation-carousel {
   --f-carousel-slide-width: calc((100%) / 1.5);
   --f-carousel-gap: 24px;
 }
-#teamCarousel .f-carousel__dot, #servicesCarousel .f-carousel__dot, #categoryCarousel .f-carousel__dot, #productRecommendationCarousel .f-carousel__dot {
+#team-carousel .f-carousel__dot, #services-carousel .f-carousel__dot, #category-carousel .f-carousel__dot, #product-recommendation-carousel .f-carousel__dot {
   color: #885642 !important;
 }
 .f-carousel__dot::after {
   padding: 8px;
 }
-#headerCarousel .f-carousel__dots {
+#header-carousel .f-carousel__dots {
   top: 90%;
   z-index: 4;
   color: #ffffff !important;
 }
-#productRecommendationCarousel .f-carousel__dots {
+#product-recommendation-carousel .f-carousel__dots {
   margin-top: 36px;
 }
 @media screen and (max-width: 479px) {
@@ -2311,43 +2308,43 @@
   }
 }
 @media screen and (min-width: 480px) {
-  #teamCarousel, #categoryCarousel, #productRecommendationCarousel {
+  #team-carousel, #category-carousel, #product-recommendation-carousel {
     --f-carousel-slide-width: calc((100% - 32px) / 2);
   }
 }
 @media screen and (min-width: 640px) {
-  #servicesCarousel {
+  #services-carousel {
     --f-carousel-slide-width: calc((100% - 64px) / 2);
   }
-  #categoryCarousel {
+  #category-carousel {
     --f-carousel-slide-width: calc((100% - 64px) / 2);
   }
 }
 @media screen and (min-width: 767px) {
-  #teamCarousel, #productRecommendationCarousel {
+  #team-carousel, #product-recommendation-carousel {
     --f-carousel-slide-width: calc((100% - 64px) / 3);
   }
-  #servicesCarousel {
+  #services-carousel {
     --f-carousel-slide-width: calc((100% - 64px) / 2.5);
   }
 }
 @media screen and (min-width: 1024px) {
-  #teamCarousel, #categoryCarousel, #productRecommendationCarousel, #servicesCarousel {
+  #team-carousel, #category-carousel, #product-recommendation-carousel, #services-carousel {
     --f-carousel-slide-width: calc((100% - 72px) / 3);
   }
 }
 @media screen and (min-width: 1280px) {
-  #teamCarousel, #categoryCarousel, #servicesCarousel {
+  #team-carousel, #category-carousel, #services-carousel {
     --f-carousel-slide-width: calc((100% - 96px) / 4);
   }
 }
 @media screen and (min-width: 1440px) {
-  #categoryCarousel {
+  #category-carousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
   }
 }
 @media screen and (min-width: 1920px) {
-  #servicesCarousel {
+  #services-carousel {
     --f-carousel-slide-width: calc((100% - 96px) / 6);
   }
 }
