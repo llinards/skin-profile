@@ -70,7 +70,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai pie jums var pierakstīties bez ģimenes ārsta nosūtījuma?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Jā, pie mums iespējams vērsties gan ar nosūtījumu, gan bez tā.</p>",
             "open": false
           }
         },
