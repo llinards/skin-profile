@@ -11,10 +11,42 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_header_carousel_wTTrcH": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_XNhjFU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Skin_profile_tehnologijas.jpg",
+            "alt_text": ""
+          }
+        },
+        "button_nFLLek": {
+          "type": "button",
+          "settings": {
+            "text": "Pakalpojumi",
+            "url": "/pages/services",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "image_XNhjFU",
+        "button_nFLLek"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Sadarbība ar eiropasprojektiem",
+        "subtext": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "template_header_carousel_wTTrcH"
   ]
 }
