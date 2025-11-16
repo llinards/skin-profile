@@ -55,7 +55,8 @@
             "project_title": "“LEADER” projekts,",
             "project_reference": "Nr. 22-04-AL32-A019.2101-000006",
             "content": "<p>Jūsu teksts šeit.</p>",
-            "open": true
+            "open": true,
+            "inline_layout": true
           }
         },
         "project_dropdown_yKifXW": {
@@ -64,8 +65,10 @@
           "settings": {
             "project_title": "“DEKA TETRA PRO” projekts,",
             "project_reference": "Nr. 24-04-CL24-C0LA19.2101-000001",
+            "content_image": "shopify://shop_images/finanse_eiropas_savieniba.png",
             "content": "<p>2024. gada augusts līdz decembris tika realizēts <strong>projekts Nr. 24-04-CL24-C0LA19.2101-000001</strong>. <strong>Tika iegādāta inovatīva CO2 lāzera sistēma DEKA TETRA Pro ādas veselības uzlabošanai.</strong> Tā ļauj novada iedzīvotājiem un viesiem atbrīvoties no nevēlamiem ādas veidojumiem, tādiem kā dzimumzīmes, keratomas, virspusēji ādas audzēji, papilomas, kārpas, rētu un striju slīpēšana un vispārēja ādas atjaunošana ar Co2 frakcionēto cool peel tehnoloģiju. Iekārtas iegāde piedāvās jaunu pakalpojuma veidu, papildinās esošo pakalpojumu klāstu, kā arī veicinās uzņēmuma rentabilitāti.</p>",
-            "open": false
+            "open": false,
+            "inline_layout": true
           }
         },
         "project_dropdown_x6kEbf": {
@@ -75,7 +78,8 @@
             "project_title": "Smart Medical",
             "project_reference": "",
             "content": "<p>Jūsu teksts šeit.</p>",
-            "open": false
+            "open": false,
+            "inline_layout": true
           }
         },
         "project_dropdown_QzLqa3": {
@@ -85,7 +89,8 @@
             "project_title": "Deka Motus AX",
             "project_reference": "",
             "content": "<p>Jūsu teksts šeit.</p>",
-            "open": false
+            "open": false,
+            "inline_layout": true
           }
         }
       },
@@ -96,9 +101,7 @@
         "project_dropdown_QzLqa3"
       ],
       "name": "Dropdown - Projekti",
-      "settings": {
-        "wrapper_heading": "Projekti"
-      }
+      "settings": {}
     },
     "template_contact_us_cMNwtA": {
       "type": "template-contact-us",
