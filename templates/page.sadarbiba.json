@@ -45,6 +45,37 @@
         "spacing": true
       }
     },
+    "template_dropdown_project_GLTNWR": {
+      "type": "template-dropdown-project",
+      "blocks": {
+        "project_dropdown_8UDfyN": {
+          "type": "project_dropdown",
+          "settings": {
+            "project_title": "“LEADER” projekts,",
+            "project_reference": "Nr. 22-04-AL32-A019.2101-000006",
+            "content": "<p>Jūsu teksts šeit.</p>",
+            "open": false
+          }
+        },
+        "project_dropdown_yKifXW": {
+          "type": "project_dropdown",
+          "settings": {
+            "project_title": "Projekta nosaukums",
+            "project_reference": "Projekta atsauces numurs / cita info",
+            "content": "<p>Jūsu teksts šeit.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "project_dropdown_8UDfyN",
+        "project_dropdown_yKifXW"
+      ],
+      "name": "Dropdown - Projekti",
+      "settings": {
+        "wrapper_heading": "Projekti"
+      }
+    },
     "template_contact_us_cMNwtA": {
       "type": "template-contact-us",
       "blocks": {
@@ -97,6 +128,7 @@
   "order": [
     "main",
     "template_header_carousel_wTTrcH",
+    "template_dropdown_project_GLTNWR",
     "template_contact_us_cMNwtA"
   ]
 }
