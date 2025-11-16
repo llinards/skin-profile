@@ -98,12 +98,16 @@
     x-transition:leave="transition-all duration-300 ease-in"
     x-transition:leave-start="translate-x-0 opacity-100"
     x-transition:leave-end="-translate-x-full opacity-0"
-    class="bg-white text-black h-screen fixed inset-0 z-0 flex flex-col items-center justify-center space-y-6 lg:hidden"
+    class="
+      bg-white text-black fixed inset-0 h-screen z-0 lg:hidden
+      flex flex-col items-stretch justify-start
+      overflow-y-auto overscroll-contain
+    "
   >
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col gap-4 w-full p-6 mt-12 items-center">
       {% for link in links %}
         {% if link.links != blank %}
-          {% render 'dropdown-menu-link', link: link %}
+          {% render 'dropdown-menu-link', link: link, mobile: true %}
         {% else %}
           {% render 'menu-link', link: link %}
         {% endif %}
