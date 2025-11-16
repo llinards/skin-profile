@@ -134,7 +134,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai klīnika ir pieejama cilvēkiem ar kustību traucējumiem?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Jā, mūsu telpas ir pielāgotas cilvēkiem ar funkcionāliem traucējumiem.</p>",
             "open": false
           }
         }
