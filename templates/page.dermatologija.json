@@ -82,8 +82,8 @@
       "settings": {
         "title": "Pirmreizējā Konsultācija",
         "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
-        "service_disclaimer": "test",
-        "service_url": "",
+        "service_disclaimer": "",
+        "service_url": "shopify://pages/pieteikuma-anketa",
         "open_by_default": false,
         "space_bottom": false
       }
