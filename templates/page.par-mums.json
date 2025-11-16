@@ -62,7 +62,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Kā pieteikties vizītei Skin Profile klīnikā?",
-            "content": "<p>Vizītei iespējams pieteikties, zvanot uz +37127841111 vai aizpildot pieteikuma formu mājaslapā, vai pie mums uz vietas klīnikā.</p>",
+            "content": "<p>Vizītei iespējams pieteikties, zvanot uz <a href=\"tel:+37127841111\" title=\"tel:+37127841111\">+37127841111</a> vai aizpildot pieteikuma formu mājaslapā, vai pie mums uz vietas klīnikā.</p>",
             "open": true
           }
         },
