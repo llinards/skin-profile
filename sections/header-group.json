@@ -16,9 +16,31 @@
       "settings": {
         "menu": ""
       }
+    },
+    "template_header_carousel_HDDPcn": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "button_EiNrnk": {
+          "type": "button",
+          "settings": {
+            "text": "Pakalpojumi",
+            "url": "/pages/services",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "button_EiNrnk"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Sadarbība ar eiropasprojektiem",
+        "subtext": ""
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "template_header_carousel_HDDPcn"
   ]
 }
