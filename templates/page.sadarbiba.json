@@ -60,9 +60,9 @@
         "project_dropdown_yKifXW": {
           "type": "project_dropdown",
           "settings": {
-            "project_title": "Projekta nosaukums",
-            "project_reference": "Projekta atsauces numurs / cita info",
-            "content": "<p>Jūsu teksts šeit.</p>",
+            "project_title": "“DEKA TETRA PRO” projekts,",
+            "project_reference": "Nr. 24-04-CL24-C0LA19.2101-000001",
+            "content": "<p>2024. gada augusts līdz decembris tika realizēts <strong>projekts Nr. 24-04-CL24-C0LA19.2101-000001</strong>. <strong>Tika iegādāta inovatīva CO2 lāzera sistēma DEKA TETRA Pro ādas veselības uzlabošanai.</strong> Tā ļauj novada iedzīvotājiem un viesiem atbrīvoties no nevēlamiem ādas veidojumiem, tādiem kā dzimumzīmes, keratomas, virspusēji ādas audzēji, papilomas, kārpas, rētu un striju slīpēšana un vispārēja ādas atjaunošana ar Co2 frakcionēto cool peel tehnoloģiju. Iekārtas iegāde piedāvās jaunu pakalpojuma veidu, papildinās esošo pakalpojumu klāstu, kā arī veicinās uzņēmuma rentabilitāti.</p>",
             "open": false
           }
         }
