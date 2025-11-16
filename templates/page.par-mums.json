@@ -118,7 +118,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai ir pieejama stāvvieta klientiem?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Jā, pie klīnikas ir bezmaksas autostāvvieta mūsu klientiem, taču ir jānorāda stāvēšanas laiks.</p>",
             "open": false
           }
         },
