@@ -103,6 +103,34 @@
       "name": "Dropdown - Projekti",
       "settings": {}
     },
+    "template_image_row_UiBNcT": {
+      "type": "template-image-row",
+      "blocks": {
+        "slide_aMrpEW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/finanse_eiropas_savieniba.png",
+            "alt": "Alt teksts",
+            "url": ""
+          }
+        },
+        "slide_U3V3qz": {
+          "type": "slide",
+          "name": "Nacionālās attīstības fonds",
+          "settings": {
+            "image": "shopify://shop_images/nacionalais_attistibas_fonds.png",
+            "alt": "Nacionālās attīstības fonds",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_aMrpEW",
+        "slide_U3V3qz"
+      ],
+      "name": "Eiropas Projektu Logo",
+      "settings": {}
+    },
     "template_contact_us_cMNwtA": {
       "type": "template-contact-us",
       "blocks": {
@@ -156,6 +184,7 @@
     "main",
     "template_header_carousel_wTTrcH",
     "template_dropdown_project_GLTNWR",
+    "template_image_row_UiBNcT",
     "template_contact_us_cMNwtA"
   ]
 }
