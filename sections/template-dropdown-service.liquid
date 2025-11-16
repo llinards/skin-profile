@@ -77,7 +77,7 @@
         </div>
         <div class="md:w-1/6">
           {% if section.settings.service_url %}
-            {% render 'btn-brown', url: section.settings.service_url %}
+            {% render 'btn-brown', text: section.settings.service_url_cta, url: section.settings.service_url %}
           {% endif %}
         </div>
       </div>
@@ -104,7 +104,8 @@
       "label": "Atruna zem virsraksta",
       "info": "Parādās zem pakalpojumu virsrakstiem."
     },
-    { "type": "url", "id": "service_url", "label": "P saite (URL)" },
+    { "type": "url", "id": "service_url", "label": "Pakalpojuma saite (URL)" },
+    { "type": "text", "id": "service_url_cta", "label": "CTA Poga", "default": "Pieteikt" },
     { "type": "checkbox", "id": "open_by_default", "label": "Atvērt pēc noklusējuma", "default": false },
     {
       "type": "checkbox",
