@@ -20,6 +20,13 @@
     "template_header_carousel_HDDPcn": {
       "type": "template-header-carousel",
       "blocks": {
+        "image_mexyjy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Skin_profile_tehnologijas.jpg",
+            "alt_text": ""
+          }
+        },
         "button_EiNrnk": {
           "type": "button",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "image_mexyjy",
         "button_EiNrnk"
       ],
       "name": "Galvenes sadaļa ar karuseli",
