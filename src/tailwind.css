@@ -194,6 +194,17 @@
     }
 }
 
+.faq-link a {
+    text-decoration: 2px solid underline;
+    transition: all;
+    transition-duration: 300ms;
+    font-weight: bold;
+}
+
+.faq-link a:hover {
+    color: #885642;
+}
+
 .home-introduction {
     min-height: 100vh;
     min-height: -webkit-fill-available;
