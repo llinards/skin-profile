@@ -110,7 +110,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai procedūras ir drošas?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Visas mūsu procedūras tiek veiktas ar sertificētu aprīkojumu un drošām metodēm, ievērojot medicīniskos standartus.</p>",
             "open": false
           }
         },
