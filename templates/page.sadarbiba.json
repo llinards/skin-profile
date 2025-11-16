@@ -28,8 +28,8 @@
         "button_nFLLek": {
           "type": "button",
           "settings": {
-            "text": "Pakalpojumi",
-            "url": "/pages/services",
+            "text": "Uzzināt vairāk",
+            "url": "#europeProjects",
             "style": "white"
           }
         }
