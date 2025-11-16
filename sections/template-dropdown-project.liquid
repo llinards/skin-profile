@@ -14,12 +14,14 @@
             :aria-expanded="open.toString()"
             :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
           >
-            <h2>
-              <span class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</span>
-            </h2>
-            {% if block.settings.project_reference %}
-              <h3 class="text-base md:text-lg leading-tight body-font">{{ block.settings.project_reference }}</h3>
-            {% endif %}
+            <div class="flex flex-col md:flex-row md:items-end flex-1 min-w-0">
+              <h2 class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</h2>
+              {% if block.settings.project_reference %}
+                <h3 class="text-base md:text-lg leading-tight body-font mt-1 md:mt-0 md:ml-4">
+                  {{ block.settings.project_reference }}
+                </h3>
+              {% endif %}
+            </div>
 
             <span
               class="absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none group-hover:bg-sp-brown group-hover:text-white"
@@ -66,9 +68,17 @@
             <div class="{% if block.settings.inline_layout %}md:w-5/6{% endif %}">
               {{ block.settings.content }}
             </div>
-            <div class="{% if block.settings.inline_layout %}md:w-1/6{% endif %}">
-              {{ block.settings.content_image }}
-            </div>
+            {% if block.settings.content_image %}
+              <div class="flex items-centers justify-center {% if block.settings.inline_layout %}md:w-1/6{% endif %}">
+                <img
+                  src="{{ block.settings.content_image | image_url: width: 300}}"
+                  alt=""
+                  width="150px"
+                  height="150px"
+                  class="max-w-full h-auto py-6 {% if block.settings.inline_layout %}md:py-0{% endif %}"
+                >
+              </div>
+            {% endif %}
           </div>
         </div>
       {% endif %}
