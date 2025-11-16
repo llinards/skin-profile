@@ -86,7 +86,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai procedūras ir piemērotas visiem ādas tipiem?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Jā, mūsu speciālisti izvērtē katra klienta ādas stāvokli un piemeklē drošāko un efektīvāko risinājumu.</p>",
             "open": false
           }
         },
@@ -94,7 +94,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Cik ilgi iepriekš jārezervē vizīte?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Parasti vizīti iespējams rezervēt pāris dienas iepriekš, taču populārākajiem speciālistiem pieraksts var būt aizpildīts vairākas nedēļas uz priekšu.</p>",
             "open": false
           }
         },
