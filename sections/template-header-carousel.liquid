@@ -13,7 +13,7 @@
   });
 </script>
 <div
-  class="home-introduction relative flex justify-center min-h-screen"
+  class="home-introduction relative flex justify-center min-h-screen {% if section.settings.spacing %} mb-12 {% endif %}"
 >
   <div class="absolute inset-0">
     <div class="f-carousel" id="headerCarousel">
@@ -84,6 +84,12 @@
       "id": "subtext",
       "label": "Teksts",
       "default": "<p>Mūsdienīgs dermatoloģijas un estētiskās medicīnas centrs Siguldā – ar jaunākajām tehnoloģijām, profesionālu aprūpi un individuālu pieeju katram pacientam.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "spacing",
+      "label": "Ielikt atstarpi starp galveni un saturu",
+      "default": false
     }
   ],
   "blocks": [
