@@ -1,8 +1,4 @@
 <div class="container mx-auto px-4 transition-hide max-w-8xl mb-12">
-  {% if section.settings.wrapper_heading != blank %}
-    <h2 class="mb-6">{{ section.settings.wrapper_heading }}</h2>
-  {% endif %}
-
   <div class="space-y-2">
     {% for block in section.blocks %}
       {% if block.type == 'project_dropdown' %}
@@ -18,12 +14,12 @@
             :aria-expanded="open.toString()"
             :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
           >
-            <h3>
+            <h2>
               <span class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</span>
-              {% if block.settings.project_reference %}
-                <span class="block text-sm mt-1">{{ block.settings.project_reference }}</span>
-              {% endif %}
-            </h3>
+            </h2>
+            {% if block.settings.project_reference %}
+              <h3 class="text-base md:text-lg leading-tight">{{ block.settings.project_reference }}</h3>
+            {% endif %}
 
             <span
               class="absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none group-hover:bg-sp-brown group-hover:text-white"
