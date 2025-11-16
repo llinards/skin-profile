@@ -102,7 +102,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai piedāvājat dāvanu kartes?",
-            "content": "<p>Jā, pie mums iespējams i<a href=\"/products/50-davanu-karte\" title=\"€50 Dāvanu Karte\">egādāties dāvanu kartes</a> jebkurai summai un procedūrai.</p>",
+            "content": "<p>Jā, pie mums iespējams <a href=\"/products/50-davanu-karte\" title=\"€50 Dāvanu Karte\">iegādāties dāvanu kartes </a>jebkurai summai un procedūrai.</p>",
             "open": false
           }
         },
