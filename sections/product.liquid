@@ -53,6 +53,7 @@
               value="1"
               class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
               readonly
+              aria-describedby="quantity-error"
             >
 
             <button
@@ -63,7 +64,6 @@
               <span class="text-sm leading-none font-bold">+</span>
             </button>
           </div>
-          {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
 
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
@@ -72,6 +72,11 @@
             </p>
           {% endif %}
         </div>
+        <div
+          id="quantity-error"
+          class="text-base text-red-600 h-4 opacity-0 transition-opacity duration-300 mb-12"
+          aria-live="polite"
+        ></div>
 
         {% if product.available %}
           {% render 'btn-add-to-cart', class: 'w-full text-base md:max-w-96 tracking-widest' %}

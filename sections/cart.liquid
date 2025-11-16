@@ -43,7 +43,7 @@
                     <div class="mt-2 min-h-5">
                       <div
                         data-error
-                        class="text-xs text-red-600 text-left max-w-[320px] opacity-0 transition-opacity duration-300"
+                        class="text-base text-red-600 text-left max-w-[320px] opacity-0 transition-opacity duration-300"
                       ></div>
                     </div>
                   </td>
@@ -106,12 +106,12 @@
         <div id="cart-total" class="flex md:justify-end">
           <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
             <h2 class="text-2xl mb-4 text-sp-brown">Groza kopsumma</h2>
-            <div class="flex justify-between border-b-1 border-sp-brown py-4">
+            <div class="flex justify-between border-b border-sp-brown py-4">
               <p>Starpsumma:</p>
               <p data-subtotal-amount>{{ cart.total_price | money }}</p>
             </div>
             {% comment %}
-              <div class="flex justify-between border-b-1 border-sp-brown py-4">
+              <div class="flex justify-between border-b border-sp-brown py-4">
                 <p>Piegāde:</p>
                 <p data-shipping-amount data-free-label="Bezmaksas"></p>
               </div>

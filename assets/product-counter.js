@@ -1,33 +1,46 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const minusBtn = document.getElementById('minus-btn');
-    const quantity = document.getElementById('quantity');
-    const plusBtn = document.getElementById('plus-btn');
-    const maxStock = parseInt(quantity.getAttribute('max'));
+document.addEventListener('DOMContentLoaded', () => {
+  const qty = document.getElementById('quantity');
+  const plus = document.getElementById('plus-btn');
+  const minus = document.getElementById('minus-btn');
+  const err = document.getElementById('quantity-error');
+  if (!qty || !plus || !minus || !err) return;
 
-    minusBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const currentValue = parseInt(quantity.value);
-        if (currentValue > 1) {
-            quantity.value = currentValue - 1;
-        }
-    });
+  const max = parseInt(qty.getAttribute('max'), 10) || 1;
+  let hideTimer = null;
 
-    plusBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const currentValue = parseInt(quantity.value);
-        if (currentValue < maxStock) {
-            quantity.value = currentValue + 1;
-        }
-    });
+  const showError = (msg) => {
+    clearTimeout(hideTimer);
+    err.textContent = msg;
+    err.classList.remove('opacity-0');
+    err.classList.add('opacity-100');
+    hideTimer = setTimeout(() => {
+      err.classList.remove('opacity-100');
+      err.classList.add('opacity-0');
+      // Optional: clear text after fade
+      setTimeout(() => { err.textContent = ''; }, 300);
+    }, 3000);
+  };
 
-    // Prevent manual input above stock
-    quantity.addEventListener('input', (e) => {
-        const value = parseInt(e.target.value);
-        if (value > maxStock) {
-            e.target.value = maxStock;
-        }
-        if (value < 1) {
-            e.target.value = 1;
-        }
-    });
+  const clearError = () => {
+    clearTimeout(hideTimer);
+    err.classList.remove('opacity-100');
+    err.classList.add('opacity-0');
+    err.textContent = '';
+  };
+
+  plus.addEventListener('click', () => {
+    const val = parseInt(qty.value, 10);
+    if (val < max) {
+      qty.value = val + 1;
+      clearError();
+    } else {
+      showError('Nav vairāk vienību noliktavā.');
+    }
+  });
+
+  minus.addEventListener('click', () => {
+    const val = parseInt(qty.value, 10);
+    if (val > 1) qty.value = val - 1;
+    clearError();
+  });
 });
