@@ -2,7 +2,7 @@
 {%- assign show_headers = show_headers | default: true -%}
 
 {%- assign services = services | default: section.blocks -%}
-<div class="space-y-2 my-6 md:my-12">
+<div class="space-y-2 mb-6 md:my-12">
   {%- assign service_blocks = services | where: 'type', 'service' -%}
   {%- if service_blocks.size > 0 -%}
     {%- for b in service_blocks -%}
