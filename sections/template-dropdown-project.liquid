@@ -1,5 +1,5 @@
 <div class="container mx-auto px-4 transition-hide max-w-8xl mb-12">
-  <div class="space-y-2">
+  <div>
     {% for block in section.blocks %}
       {% if block.type == 'project_dropdown' %}
         <div
@@ -10,7 +10,7 @@
           <button
             type="button"
             @click="open = !open"
-            class="group relative w-full flex items-start gap-3 px-2 md:px-0 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer rounded-md focus-visible:ring-1 focus-visible:ring-inset"
+            class="group relative w-full flex items-end gap-3 px-2 md:px-0 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer rounded-md focus-visible:ring-1 focus-visible:ring-inset"
             :aria-expanded="open.toString()"
             :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
           >
@@ -18,7 +18,7 @@
               <span class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</span>
             </h2>
             {% if block.settings.project_reference %}
-              <h3 class="text-base md:text-lg leading-tight">{{ block.settings.project_reference }}</h3>
+              <h3 class="text-base md:text-lg leading-tight body-font">{{ block.settings.project_reference }}</h3>
             {% endif %}
 
             <span
