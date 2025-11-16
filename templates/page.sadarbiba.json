@@ -41,7 +41,8 @@
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
         "heading": "Sadarbība ar eiropasprojektiem",
-        "subtext": ""
+        "subtext": "",
+        "spacing": true
       }
     },
     "template_contact_us_cMNwtA": {
