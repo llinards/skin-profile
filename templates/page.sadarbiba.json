@@ -77,12 +77,23 @@
             "content": "<p>Jūsu teksts šeit.</p>",
             "open": false
           }
+        },
+        "project_dropdown_QzLqa3": {
+          "type": "project_dropdown",
+          "name": "Deka Motus AX",
+          "settings": {
+            "project_title": "Deka Motus AX",
+            "project_reference": "",
+            "content": "<p>Jūsu teksts šeit.</p>",
+            "open": false
+          }
         }
       },
       "block_order": [
         "project_dropdown_8UDfyN",
         "project_dropdown_yKifXW",
-        "project_dropdown_x6kEbf"
+        "project_dropdown_x6kEbf",
+        "project_dropdown_QzLqa3"
       ],
       "name": "Dropdown - Projekti",
       "settings": {
