@@ -1790,11 +1790,6 @@
       }
     }
   }
-  .md\:gap-x-6 {
-    @media (width >= 48rem) {
-      column-gap: calc(var(--spacing) * 6);
-    }
-  }
   .md\:gap-x-12 {
     @media (width >= 48rem) {
       column-gap: calc(var(--spacing) * 12);
@@ -2220,6 +2215,8 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
   }
   body {
     font-family: "Manrope-Light";

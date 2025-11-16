@@ -117,6 +117,8 @@
 
     html {
         scroll-behavior: smooth;
+        scroll-snap-align: start;
+        scroll-snap-type: y mandatory;
     }
 
     body {
