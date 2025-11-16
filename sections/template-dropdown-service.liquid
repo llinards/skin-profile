@@ -71,7 +71,16 @@
       x-transition:leave-end="opacity-0 -translate-y-2"
       class="px-2 my-4 space-y-2"
     >
-      {{ section.settings.content }}
+      <div class="flex flex-col">
+        <div class="md:w-5/6">
+          {{ section.settings.content }}
+        </div>
+        <div class="md:w-1/6">
+          {% if section.settings.service_url %}
+            {% render 'btn-brown', url: section.settings.service_url %}
+          {% endif %}
+        </div>
+      </div>
 
       {% render 'services-table',
         services: section.blocks,
@@ -88,12 +97,14 @@
   "settings": [
     { "type": "text", "id": "title", "label": "Virsraksts", "default": "Noklikšķiniet, lai atvērtu" },
     { "type": "richtext", "id": "content", "label": "Saturs", "default": "<p>Jūsu teksts šeit.</p>" },
+
     {
       "type": "text",
       "id": "service_disclaimer",
       "label": "Atruna zem virsraksta",
       "info": "Parādās zem pakalpojumu virsrakstiem."
     },
+    { "type": "url", "id": "service_url", "label": "P saite (URL)" },
     { "type": "checkbox", "id": "open_by_default", "label": "Atvērt pēc noklusējuma", "default": false },
     {
       "type": "checkbox",
