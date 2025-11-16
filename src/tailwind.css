@@ -102,8 +102,16 @@
         @apply list-disc list-inside;
     }
 }
-
 @layer base {
+
+    :root {
+            --tw-ring-color: #885642;
+        }
+    
+    :focus-visible {
+        outline: 2px solid #885642;
+        outline-offset: 2px;
+    }
 
     @font-face {
         font-family: "Belleza-Regular";
@@ -323,5 +331,12 @@
     #services-carousel {
         --f-carousel-slide-width: calc((100% - 96px) / 6);
     }
+}
+
+/* Optional utility for consistent focus */
+@layer utilities {
+  .focus-ring {
+    @apply ring-2 ring-offset-2;
+  }
 }
 
