@@ -78,7 +78,7 @@
           "type": "dropdown",
           "settings": {
             "title": "⁠Kādas procedūras pieejamas Skin Profile?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Piedāvājam dermatoloģiskās konsultācijas, estētiskās un lāzerprocedūras, kosmetoloģiju, lāzerepilāciju, podoloģiju, uztura speciālista pakalpojumus un citas ādas kopšanas procedūras.</p>",
             "open": false
           }
         },
