@@ -63,7 +63,7 @@
       }
     },
     "template_services_section_J6AXyp": {
-      "type": "template-services-accordion",
+      "type": "template-dropdown-service",
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
@@ -87,7 +87,7 @@
       }
     },
     "template_services_section_qjdJcX": {
-      "type": "template-services-accordion",
+      "type": "template-dropdown-service",
       "blocks": {
         "service_4HgD7c": {
           "type": "service",
@@ -120,7 +120,7 @@
       }
     },
     "template_services_section_kPR4ih": {
-      "type": "template-services-accordion",
+      "type": "template-dropdown-service",
       "blocks": {
         "service_yfca67": {
           "type": "service",

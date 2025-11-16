@@ -7,25 +7,22 @@
           {{ block.shopify_attributes }}
           x-data="{ open: {{ block.settings.open | json }} }"
           class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer rounded-md"
-          @click="open = !open"
-          :class="open ? 'bg-sp-light-brown ' : ''"
+          :class="open ? 'bg-sp-light-brown' : ''"
         >
           <button
             type="button"
-
+            @click="open = !open"
             class="w-full flex items-center justify-between gap-3 px-2 py-2 text-left cursor-pointer"
             :aria-expanded="open.toString()"
             :aria-controls="'panel-{{ block.id }}'"
+            :aria-label="open ? 'Aizvērt jautājuma atbildi' : 'Atvērt jautājuma atbildi'"
             id="accordion-header-{{ block.id }}"
           >
             <h3 class="flex-1 min-w-0 text-sm tracking-wider font-bold body-font">
               {{ block.settings.title }}
             </h3>
 
-            <span
-              class="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-sp-brown text-white transition-colors"
-            >
-              <!-- Plus -->
+            <span class="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-sp-brown text-white transition-colors">
               <svg
                 x-cloak
                 x-show="!open"
@@ -35,11 +32,9 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.8"
-                aria-hidden="true"
               >
                 <path stroke-linecap="round" d="M12 5v14M5 12h14" />
               </svg>
-              <!-- Minus -->
               <svg
                 x-cloak
                 x-show="open"
@@ -49,7 +44,6 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.8"
-                aria-hidden="true"
               >
                 <path stroke-linecap="round" d="M5 12h14" />
               </svg>
@@ -74,7 +68,7 @@
 
 {% schema %}
 {
-  "name": "BUJ",
+  "name": "Dropdown - BUJ",
   "settings": [{ "type": "text", "id": "heading", "label": "Virsraksts", "default": "Virsraksts šeit" }],
   "blocks": [
     {
@@ -87,11 +81,6 @@
       ]
     }
   ],
-  "presets": [
-    {
-      "name": "BUJ",
-      "blocks": [{ "type": "dropdown" }, { "type": "dropdown" }]
-    }
-  ]
+  "presets": [{ "name": "Dropdown - BUJ", "blocks": [{ "type": "dropdown" }, { "type": "dropdown" }] }]
 }
 {% endschema %}

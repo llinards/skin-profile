@@ -56,7 +56,7 @@
       }
     },
     "template_accordion_4wnPMn": {
-      "type": "template-accordion",
+      "type": "template-dropdown-faq",
       "blocks": {
         "dropdown_yhktkd": {
           "type": "dropdown",
