@@ -50,15 +50,17 @@
       "blocks": {
         "project_dropdown_8UDfyN": {
           "type": "project_dropdown",
+          "name": "“LEADER” projekts",
           "settings": {
             "project_title": "“LEADER” projekts,",
             "project_reference": "Nr. 22-04-AL32-A019.2101-000006",
             "content": "<p>Jūsu teksts šeit.</p>",
-            "open": false
+            "open": true
           }
         },
         "project_dropdown_yKifXW": {
           "type": "project_dropdown",
+          "name": "“DEKA TETRA PRO” projekts",
           "settings": {
             "project_title": "“DEKA TETRA PRO” projekts,",
             "project_reference": "Nr. 24-04-CL24-C0LA19.2101-000001",
