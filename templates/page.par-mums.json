@@ -126,7 +126,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Vai pieņemiet arī bērnus un pusaudžus?",
-            "content": "<p>Atbilde uz jautājumu.</p>",
+            "content": "<p>Jā, pie mums iespējamas arī bērnu un pusaudžu dermatologa konsultācijas.</p>",
             "open": false
           }
         },
