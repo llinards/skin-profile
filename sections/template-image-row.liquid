@@ -1,0 +1,38 @@
+<div class="container mx-auto px-4 mb-12 transition-hide">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-16 md:h-full items-center justify-between py-6 md:py-12">
+    {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
+    {% if slide_blocks.size > 0 %}
+      {% for block in slide_blocks %}
+        {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
+        <img
+          src="{{ block.settings.image | image_url }}"
+          alt="{{ block.settings.alt | escape }}"
+          width="350"
+          height="350"
+          loading="lazy"
+          class="w-full h-18 object-contain md:h-32"
+        >
+        {% if block.settings.url != blank %}</a>{% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Eiropas Projektu Logo",
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Eiropas Projektu Logo",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Attēls" },
+        { "type": "text", "id": "alt", "label": "Alt teksts", "default": "Alt teksts" },
+        { "type": "url", "id": "url", "label": "Saite (neobligāti)" }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [{ "name": "Eiropas Projektu Logo" }]
+}
+{% endschema %}
