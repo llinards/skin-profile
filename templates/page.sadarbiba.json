@@ -108,9 +108,10 @@
       "blocks": {
         "slide_aMrpEW": {
           "type": "slide",
+          "name": "Finansē Eiropas Savienība Logo",
           "settings": {
             "image": "shopify://shop_images/finanse_eiropas_savieniba.png",
-            "alt": "Alt teksts",
+            "alt": "Finansē Eiropas Savienība Logo",
             "url": ""
           }
         },
