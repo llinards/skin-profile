@@ -84,6 +84,7 @@
         },
         "service_necEBB": {
           "type": "service",
+          "name": "Nucleofill Strong",
           "settings": {
             "service_name": "Nucleofill Strong",
             "service_price": "€180.00"
@@ -116,19 +117,10 @@
             "service_name": "Mezoterapija",
             "service_price": "€80.00 – €120.00"
           }
-        },
-        "service_jzXAD9": {
-          "type": "service",
-          "name": "Multiplu veidojumu noņemšana",
-          "settings": {
-            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35.00 – €100.00"
-          }
         }
       },
       "block_order": [
-        "service_4HgD7c",
-        "service_jzXAD9"
+        "service_4HgD7c"
       ],
       "name": "Mezoterapija",
       "settings": {
