@@ -54,7 +54,7 @@
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
             "name": "<p>Estētiskā medicīna</p>",
-            "url": ""
+            "url": "shopify://pages/estetiska-medicina-1"
           }
         },
         "service_BjqD4V": {
@@ -72,7 +72,7 @@
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
             "name": "<p>Lāzer-dermatoloģija</p>",
-            "url": ""
+            "url": "shopify://pages/lazerdermatologija"
           }
         },
         "service_JMxV4A": {
@@ -81,7 +81,7 @@
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
             "name": "<p>Podologs</p>",
-            "url": ""
+            "url": "shopify://pages/podologs"
           }
         },
         "service_N8cXR7": {
@@ -90,7 +90,7 @@
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
             "name": "<p>Sejas procedūras</p>",
-            "url": ""
+            "url": "shopify://pages/proceduras-sejai"
           }
         },
         "service_wYGgCW": {
@@ -117,7 +117,7 @@
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
             "name": "<p>Uztura speciālists</p>",
-            "url": ""
+            "url": "shopify://pages/uztura-specialists"
           }
         }
       },
