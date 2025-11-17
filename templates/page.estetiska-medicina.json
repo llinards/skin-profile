@@ -362,6 +362,19 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_mRxjF3": {
+      "type": "template-dropdown-service",
+      "name": "Sejas liftings ar Radiesse",
+      "settings": {
+        "title": "Sejas liftings ar Radiesse",
+        "content": "<p>Radiesse filleris palīdz atjaunot sejas ovālu, samazināt noslīdējušus vaigus un krunciņas, atjaunot apjomu sejā, kaklā un rokās.</p><p>Preparāts stimulē kolagēna sintēzi, nodrošinot dabisku un ilgstošu rezultātu – līdz 24 mēnešiem.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -519,6 +532,7 @@
     "template_dropdown_service_VeALwy",
     "template_dropdown_service_efLzGb",
     "template_dropdown_service_rHtTmM",
+    "template_dropdown_service_mRxjF3",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
