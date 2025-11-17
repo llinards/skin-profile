@@ -79,7 +79,7 @@
           "name": "Nucleofill Medium",
           "settings": {
             "service_name": "Sejas tīrīšana",
-            "service_price": "€180.00"
+            "service_price": "€180"
           }
         },
         "service_necEBB": {
@@ -87,7 +87,7 @@
           "name": "Nucleofill Strong",
           "settings": {
             "service_name": "Nucleofill Strong",
-            "service_price": "€180.00"
+            "service_price": "€180"
           }
         }
       },
@@ -115,7 +115,7 @@
           "name": "Mezoterapija",
           "settings": {
             "service_name": "Mezoterapija",
-            "service_price": "€80.00 – €120.00"
+            "service_price": "€80 – €120"
           }
         }
       },
@@ -141,7 +141,7 @@
           "name": "Neuvia HydroDelux (2,5 ml)",
           "settings": {
             "service_name": "Neuvia HydroDelux (2,5 ml)",
-            "service_price": "€180.00"
+            "service_price": "€180"
           }
         },
         "service_3qRRAc": {
@@ -149,7 +149,7 @@
           "name": "Hyacell Electri (acu zonai, 0,55 % 1,5 ml)",
           "settings": {
             "service_name": "Hyacell Electri (acu zonai, 0,55 % 1,5 ml)",
-            "service_price": "€160.00"
+            "service_price": "€160"
           }
         },
         "service_WTbY8x": {
@@ -157,7 +157,7 @@
           "name": "Xela REDERM 1.8% (2 ml)",
           "settings": {
             "service_name": "Xela REDERM 1.8% (2 ml)",
-            "service_price": "€180.00"
+            "service_price": "€180"
           }
         },
         "service_qcjc9U": {
@@ -165,7 +165,7 @@
           "name": "Xela REDERM 2.0% (2 ml)",
           "settings": {
             "service_name": "Xela REDERM 2.0% (2 ml)",
-            "service_price": "€200.00"
+            "service_price": "€200"
           }
         },
         "service_73XJ4V": {
@@ -173,7 +173,7 @@
           "name": "PROFHILO (2 ml)",
           "settings": {
             "service_name": "PROFHILO (2 ml)",
-            "service_price": "€250.00"
+            "service_price": "€250"
           }
         },
         "service_eXK9R7": {
@@ -181,7 +181,7 @@
           "name": "PROFHILO (2 ml) - 2 Iepakojumi",
           "settings": {
             "service_name": "PROFHILO (2 ml) - 2 Iepakojumi",
-            "service_price": "€450.00"
+            "service_price": "€450"
           }
         }
       },
@@ -212,7 +212,7 @@
           "name": "Juviderm 4 (1 ml) - 1 iepakojums",
           "settings": {
             "service_name": "Juviderm 4 (1 ml) - 1 iepakojums",
-            "service_price": "€280.00"
+            "service_price": "€280"
           }
         },
         "service_ctCqip": {
@@ -220,7 +220,7 @@
           "name": "Juviderm 4 (1 ml) - 2 iepakojumi",
           "settings": {
             "service_name": "Juviderm 4 (1 ml) - 2 iepakojumi",
-            "service_price": "€520.00"
+            "service_price": "€520"
           }
         },
         "service_CwMQgA": {
@@ -228,7 +228,7 @@
           "name": "Dusmu rievas aizpildīšana Belotero",
           "settings": {
             "service_name": "Dusmu rievas aizpildīšana Belotero",
-            "service_price": "€260.00"
+            "service_price": "€260"
           }
         }
       },
@@ -256,7 +256,7 @@
           "name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
           "settings": {
             "service_name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
-            "service_price": "€300.00"
+            "service_price": "€300"
           }
         }
       },
@@ -282,7 +282,7 @@
           "name": "APTOS vai Silhouette Soft diegi",
           "settings": {
             "service_name": "APTOS vai Silhouette Soft diegi (atkarībā no pacienta anatomijas)",
-            "service_price": "€1000.00 - €1500.00"
+            "service_price": "€1000 - €1500"
           }
         }
       },
