@@ -485,12 +485,21 @@
             "service_name": "Acu zona",
             "service_price": "€150 - €180"
           }
+        },
+        "service_MFyHFj": {
+          "type": "service",
+          "name": "Acu zona un piere",
+          "settings": {
+            "service_name": "Acu zona un piere",
+            "service_price": "€350 - €400"
+          }
         }
       },
       "block_order": [
         "service_tfFAQk",
         "service_wL6RdJ",
-        "service_BYgLJc"
+        "service_BYgLJc",
+        "service_MFyHFj"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
