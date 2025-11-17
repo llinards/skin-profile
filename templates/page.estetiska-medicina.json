@@ -175,6 +175,14 @@
             "service_name": "PROFHILO (2 ml)",
             "service_price": "€250.00"
           }
+        },
+        "service_eXK9R7": {
+          "type": "service",
+          "name": "PROFHILO (2 ml) - 2 Iepakojumi",
+          "settings": {
+            "service_name": "PROFHILO (2 ml) - 2 Iepakojumi",
+            "service_price": "€450.00"
+          }
         }
       },
       "block_order": [
@@ -182,7 +190,8 @@
         "service_3qRRAc",
         "service_WTbY8x",
         "service_qcjc9U",
-        "service_73XJ4V"
+        "service_73XJ4V",
+        "service_eXK9R7"
       ],
       "name": "Biorevitalizācija",
       "settings": {
@@ -193,6 +202,32 @@
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": true
+      }
+    },
+    "template_dropdown_service_kn964N": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_YUJr6H": {
+          "type": "service",
+          "name": "Juviderm 4 (1 ml) - 1 iepakojums",
+          "settings": {
+            "service_name": "Juviderm 4 (1 ml) - 1 iepakojums",
+            "service_price": "€280.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_YUJr6H"
+      ],
+      "name": "Sejas konturēšana ar filleriem",
+      "settings": {
+        "title": "Sejas konturēšana ar filleriem",
+        "content": "<p>Jūsu teksts šeit.</p>",
+        "service_disclaimer": "Hialuronskābes injekcijas palīdz atjaunot sejas harmoniju, uzlabot ovālu, izlīdzināt krunciņas (piemēram, pieres, nasolabialajā zonā), koriģēt vaigu, žokļa līnijas un zoda izskatu, kā arī veidot lūpu kontūras.",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
       }
     },
     "template_services_bN8zJK": {
@@ -348,6 +383,7 @@
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
+    "template_dropdown_service_kn964N",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
