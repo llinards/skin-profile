@@ -214,10 +214,19 @@
             "service_name": "Juviderm 4 (1 ml) - 1 iepakojums",
             "service_price": "€280.00"
           }
+        },
+        "service_ctCqip": {
+          "type": "service",
+          "name": "Juviderm 4 (1 ml) - 2 iepakojumi",
+          "settings": {
+            "service_name": "Juviderm 4 (1 ml) - 2 iepakojumi",
+            "service_price": "€520.00"
+          }
         }
       },
       "block_order": [
-        "service_YUJr6H"
+        "service_YUJr6H",
+        "service_ctCqip"
       ],
       "name": "Sejas konturēšana ar filleriem",
       "settings": {
