@@ -571,6 +571,41 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_hc8Bcp": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_KdDpMc": {
+          "type": "service",
+          "name": "Viena naga apstrāde",
+          "settings": {
+            "service_name": "Viena naga apstrāde",
+            "service_price": "€20"
+          }
+        },
+        "service_GgFDWB": {
+          "type": "service",
+          "name": "Visu nagu apstrāde",
+          "settings": {
+            "service_name": "Visu nagu apstrāde",
+            "service_price": "€70"
+          }
+        }
+      },
+      "block_order": [
+        "service_KdDpMc",
+        "service_GgFDWB"
+      ],
+      "name": "Nagu sēnīšu apstrāde ar Nd:YAG lāzeri",
+      "settings": {
+        "title": "Nagu sēnīšu apstrāde ar Nd:YAG lāzeri",
+        "content": "<p>Procedūra paredzēta bojātu roku un kāju nagu ārstēšanai. Lai sasniegtu efektu, nepieciešamas vairākas procedūras atkarībā no sēnītes smaguma un ārstēšanas gaitas.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -726,6 +761,7 @@
     "template_services_section_kPR4ih",
     "template_dropdown_service_cXwMpw",
     "template_dropdown_service_eaMTaQ",
+    "template_dropdown_service_hc8Bcp",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
