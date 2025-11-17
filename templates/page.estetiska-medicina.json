@@ -130,11 +130,11 @@
         "service_4HgD7c",
         "service_jzXAD9"
       ],
-      "name": "Kriodestrukcija ar Šķidro Slāpekli",
+      "name": "Mezoterapija",
       "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
+        "title": "Mezoterapija",
+        "content": "<p>Invazīva metode, kuras laikā ādā tiek ievadītas bioloģiski aktīvas vielas ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam, kā arī rozācijas, aknes un citu ādas problēmu risināšanai. </p><p>Procedūrā izmanto Aprilline Skin line vai Age line preparātus.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
