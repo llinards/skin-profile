@@ -493,13 +493,22 @@
             "service_name": "Acu zona un piere",
             "service_price": "€350 - €400"
           }
+        },
+        "service_mEXUrf": {
+          "type": "service",
+          "name": "Padušu pastiprināta svīšana",
+          "settings": {
+            "service_name": "Padušu pastiprināta svīšana",
+            "service_price": "€350"
+          }
         }
       },
       "block_order": [
         "service_tfFAQk",
         "service_wL6RdJ",
         "service_BYgLJc",
-        "service_MFyHFj"
+        "service_MFyHFj",
+        "service_mEXUrf"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
