@@ -331,6 +331,14 @@
             "service_name": "Nucleofill Medium",
             "service_price": "€180"
           }
+        },
+        "service_iyHFwC": {
+          "type": "service",
+          "name": "Nucleofill Strong",
+          "settings": {
+            "service_name": "Nucleofill Strong",
+            "service_price": "€200"
+          }
         }
       },
       "block_order": [
@@ -338,7 +346,8 @@
         "service_LD7cXc",
         "service_VkN6Le",
         "service_t7BwDW",
-        "service_7CxKEy"
+        "service_7CxKEy",
+        "service_iyHFwC"
       ],
       "name": "Biorevitalizācija",
       "settings": {
