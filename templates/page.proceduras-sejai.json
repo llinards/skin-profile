@@ -448,6 +448,110 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_xhkBRw": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_rPr48m": {
+          "type": "service",
+          "name": "Radiofrekvence sejas ādas liftingam",
+          "settings": {
+            "service_name": "Radiofrekvence sejas ādas liftingam",
+            "service_price": "€65"
+          }
+        }
+      },
+      "block_order": [
+        "service_rPr48m"
+      ],
+      "name": "Radiofrekvence sejas ādas liftingam",
+      "settings": {
+        "title": "Radiofrekvence sejas ādas liftingam",
+        "content": "<p>Āda tiek sasildīta līdz 43°C, stimulējot kolagēna šķiedru saīsināšanos un jaunu šķiedru sintēzi. Rezultāts – tūlītējs liftinga efekts un tvirtāka āda.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_8i43Re": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_rPhDti": {
+          "type": "service",
+          "name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
+          "settings": {
+            "service_name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
+            "service_price": "€80"
+          }
+        }
+      },
+      "block_order": [
+        "service_rPhDti"
+      ],
+      "name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
+      "settings": {
+        "title": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
+        "content": "<p>Uzlabota asins mikrocirkulācija, tonuss un sejas ovāls. Samazinās tūska, tiek stimulēta kolagēna un elastāna sintēze, nodrošinot intensīvāku efektu.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_XjhaAb": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_Lajmfx": {
+          "type": "service",
+          "name": "Lukss klases programma sejas ādas atjaunošanai",
+          "settings": {
+            "service_name": "Lukss klases programma sejas ādas atjaunošanai",
+            "service_price": "€100"
+          }
+        }
+      },
+      "block_order": [
+        "service_Lajmfx"
+      ],
+      "name": "Lukss klases programma sejas ādas atjaunošanai",
+      "settings": {
+        "title": "Lukss klases programma sejas ādas atjaunošanai",
+        "content": "<p>Divu aparātmetožu apvienojums ādas atjaunošanai, svaiguma un tūlītēja liftinga efekta iegūšanai.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_wLkRQN": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_WaqYaV": {
+          "type": "service",
+          "name": "Endodermālā masāža vai Endosfēras masāža",
+          "settings": {
+            "service_name": "Endodermālā masāža vai Endosfēras masāža",
+            "service_price": "€50"
+          }
+        }
+      },
+      "block_order": [
+        "service_WaqYaV"
+      ],
+      "name": "Endodermālā masāža vai Endosfēras masāža",
+      "settings": {
+        "title": "Endodermālā masāža vai Endosfēras masāža",
+        "content": "<p>Masāža, kas uzlabo limfas atteci, mazina tūsku un maisiņus zem acīm, veicina ādas elastību un tonusu.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -609,6 +713,10 @@
     "template_dropdown_service_GCjiiP",
     "template_dropdown_service_788iPN",
     "template_dropdown_service_bcFrAa",
+    "template_dropdown_service_xhkBRw",
+    "template_dropdown_service_8i43Re",
+    "template_dropdown_service_XjhaAb",
+    "template_dropdown_service_wLkRQN",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
