@@ -255,39 +255,111 @@
       "blocks": {
         "service_yfca67": {
           "type": "service",
-          "name": "1 veidojuma apskate",
+          "name": "Veidojums līdz 10 mm",
           "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20.00"
+            "service_name": "Veidojums līdz 10 mm",
+            "service_price": "€55"
           }
         },
         "service_3qRRAc": {
           "type": "service",
-          "name": "Katrs nākamais veidojums",
+          "name": "Veidojums līdz 20 mm",
           "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10.00"
+            "service_name": "Veidojums līdz 20 mm",
+            "service_price": "€70"
           }
         },
         "service_WTbY8x": {
           "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
+          "name": "Veidojums virs 20 mm",
           "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70.00"
+            "service_name": "Veidojums virs 20 mm",
+            "service_price": "€100"
+          }
+        },
+        "service_CCXQaU": {
+          "type": "service",
+          "name": "Papillomu noņemšana",
+          "settings": {
+            "service_name": "Papillomu noņemšana",
+            "service_price": "€35 - €75"
+          }
+        },
+        "service_8Tz43c": {
+          "type": "service",
+          "name": "Papillomu segments",
+          "settings": {
+            "service_name": "Papillomu segments",
+            "service_price": "€100 – €150"
+          }
+        },
+        "service_jJQJgj": {
+          "type": "service",
+          "name": "Keratomas (līdz 10 gab.)",
+          "settings": {
+            "service_name": "Keratomas (līdz 10 gab.)",
+            "service_price": "€80"
+          }
+        },
+        "service_tDHcYg": {
+          "type": "service",
+          "name": "Kandilomu noņemšana",
+          "settings": {
+            "service_name": "Kandilomu noņemšana",
+            "service_price": "€150"
+          }
+        },
+        "service_jN4iAY": {
+          "type": "service",
+          "name": "Ksantelazma",
+          "settings": {
+            "service_name": "Ksantelazma",
+            "service_price": "€80"
+          }
+        },
+        "service_W6w4yW": {
+          "type": "service",
+          "name": "Kārpa (viena)",
+          "settings": {
+            "service_name": "Kārpa (viena)",
+            "service_price": "€35"
+          }
+        },
+        "service_aNfbVD": {
+          "type": "service",
+          "name": "Kārpas (divas)",
+          "settings": {
+            "service_name": "Kārpas (divas)",
+            "service_price": "€50"
+          }
+        },
+        "service_H6HKL4": {
+          "type": "service",
+          "name": "Vairākas kārpas",
+          "settings": {
+            "service_name": "Vairākas kārpas",
+            "service_price": "€100"
           }
         }
       },
       "block_order": [
         "service_yfca67",
         "service_3qRRAc",
-        "service_WTbY8x"
+        "service_WTbY8x",
+        "service_CCXQaU",
+        "service_8Tz43c",
+        "service_jJQJgj",
+        "service_tDHcYg",
+        "service_jN4iAY",
+        "service_W6w4yW",
+        "service_aNfbVD",
+        "service_H6HKL4"
       ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
+      "name": "CO2 veidojumu noņemšana",
       "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
+        "title": "CO2 veidojumu noņemšana",
+        "content": "<p>Procedūra paredzēta labdabīgu ādas jaunveidojumu noņemšanai (piemēram, papilomas, keratomas, fibromas, seborejiskas keratozes, kārpas), kā arī parasto dzimumzīmju likvidēšanai.</p><p>To izmanto arī rētu koriģēšanai, lai atjaunotu rētaudu funkcionēšanu.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
