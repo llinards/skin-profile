@@ -14,17 +14,16 @@
       :aria-expanded="open.toString()"
       :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
     >
-      <h3 class="text-xl md:text-4xl leading-tight">
+      <h3 class="flex-1 min-w-0 text-xl md:text-4xl leading-tight break-words">
         {{ section.settings.title }}
       </h3>
 
-      <!-- Icon wrapper -->
+      <!-- Icon wrapper: inline on all breakpoints -->
       <span
         class="
-                    absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
+          flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
           group-hover:bg-sp-brown group-hover:text-white
         "
-
         :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
       >
         <!-- Plus -->
@@ -41,7 +40,6 @@
         >
           <path stroke-linecap="round" d="M12 5v14M5 12h14" />
         </svg>
-
         <!-- Minus -->
         <svg
           x-cloak
