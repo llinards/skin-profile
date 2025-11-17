@@ -84,6 +84,7 @@
         "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false
       }
@@ -96,7 +97,7 @@
           "name": "1 veidojuma noņemšana",
           "settings": {
             "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25.00"
+            "service_price": "€25"
           }
         },
         "service_jzXAD9": {
@@ -104,7 +105,7 @@
           "name": "Multiplu veidojumu noņemšana",
           "settings": {
             "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35.00 – €100.00"
+            "service_price": "no €35 – €100"
           }
         }
       },
@@ -118,6 +119,7 @@
         "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
         "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
         "service_url": "",
+        "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false
       }
@@ -130,7 +132,7 @@
           "name": "1 veidojuma apskate",
           "settings": {
             "service_name": "1 veidojuma apskate",
-            "service_price": "€20.00"
+            "service_price": "€20"
           }
         },
         "service_3qRRAc": {
@@ -138,7 +140,7 @@
           "name": "Katrs nākamais veidojums",
           "settings": {
             "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10.00"
+            "service_price": "+€10"
           }
         },
         "service_WTbY8x": {
@@ -161,6 +163,7 @@
         "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
         "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
         "service_url": "",
+        "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": true
       }
