@@ -407,10 +407,19 @@
             "service_name": "Visa seja",
             "service_price": "€180"
           }
+        },
+        "service_MMDiQT": {
+          "type": "service",
+          "name": "Seja un kakls",
+          "settings": {
+            "service_name": "Seja un kakls",
+            "service_price": "€220"
+          }
         }
       },
       "block_order": [
-        "service_Gi9hzU"
+        "service_Gi9hzU",
+        "service_MMDiQT"
       ],
       "name": "I-PRF injekcijas",
       "settings": {
