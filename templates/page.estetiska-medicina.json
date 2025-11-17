@@ -73,10 +73,19 @@
             "service_name": "Nucleofill Soft",
             "service_price": "€180"
           }
+        },
+        "service_tDn8zY": {
+          "type": "service",
+          "name": "Nucleofill Medium",
+          "settings": {
+            "service_name": "Sejas tīrīšana",
+            "service_price": "€180.00"
+          }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "service_kGdXVr",
+        "service_tDn8zY"
       ],
       "name": "Pirmreizējā Konsultācija",
       "settings": {
