@@ -477,11 +477,20 @@
             "service_name": "Visa piere (horizontālās + vertikālās rievas)",
             "service_price": "€250"
           }
+        },
+        "service_BYgLJc": {
+          "type": "service",
+          "name": "Acu zona",
+          "settings": {
+            "service_name": "Acu zona",
+            "service_price": "€150 - €180"
+          }
         }
       },
       "block_order": [
         "service_tfFAQk",
-        "service_wL6RdJ"
+        "service_wL6RdJ",
+        "service_BYgLJc"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
