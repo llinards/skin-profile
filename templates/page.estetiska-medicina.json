@@ -248,6 +248,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_VeALwy": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_KrphhX": {
+          "type": "service",
+          "name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
+          "settings": {
+            "service_name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
+            "service_price": "€300.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_KrphhX"
+      ],
+      "name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
+      "settings": {
+        "title": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
+        "content": "<p>Dermāla pildviela tiek izmantota asaru rievas aizpildīšanai, kas palīdz mazināt tumšos lokus un noguruša izskata efektu.</p><p>Rezultāts parādās 2–3 nedēļu laikā.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -402,6 +428,7 @@
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
     "template_dropdown_service_kn964N",
+    "template_dropdown_service_VeALwy",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
