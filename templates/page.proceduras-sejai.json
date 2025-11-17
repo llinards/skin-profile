@@ -289,6 +289,68 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_GCjiiP": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_wP8dqB": {
+          "type": "service",
+          "name": "Neuvia Hydro Delux",
+          "settings": {
+            "service_name": "Neuvia Hydro Delux",
+            "service_price": "€180"
+          }
+        },
+        "service_LD7cXc": {
+          "type": "service",
+          "name": "Electri acu zonai",
+          "settings": {
+            "service_name": "Electri acu zonai",
+            "service_price": "€160"
+          }
+        },
+        "service_VkN6Le": {
+          "type": "service",
+          "name": "Xela Rederm 1,8%",
+          "settings": {
+            "service_name": "Xela Rederm 1,8%",
+            "service_price": "€180"
+          }
+        },
+        "service_t7BwDW": {
+          "type": "service",
+          "name": "Xela Rederm 2,0%",
+          "settings": {
+            "service_name": "Xela Rederm 2,0%",
+            "service_price": "€200"
+          }
+        },
+        "service_7CxKEy": {
+          "type": "service",
+          "name": "Nucleofill Medium",
+          "settings": {
+            "service_name": "Nucleofill Medium",
+            "service_price": "€180"
+          }
+        }
+      },
+      "block_order": [
+        "service_wP8dqB",
+        "service_LD7cXc",
+        "service_VkN6Le",
+        "service_t7BwDW",
+        "service_7CxKEy"
+      ],
+      "name": "Biorevitalizācija",
+      "settings": {
+        "title": "Biorevitalizācija",
+        "content": "<p>Hialuronskābes ievadīšana ādā dziļai mitrināšanai, grumbu aizpildīšanai, ādas kvalitātes uzlabošanai un kolagēna sintēzes stimulēšanai.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -447,6 +509,7 @@
     "template_dropdown_service_AtYwty",
     "template_dropdown_service_nYUEGQ",
     "template_dropdown_service_aTUKmP",
+    "template_dropdown_service_GCjiiP",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
