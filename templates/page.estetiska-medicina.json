@@ -334,13 +334,22 @@
             "service_name": "Juviderm 3 (1 ml)",
             "service_price": "€280"
           }
+        },
+        "service_QmacAj": {
+          "type": "service",
+          "name": "Pildvielu šķīdināšana",
+          "settings": {
+            "service_name": "Pildvielu šķīdināšana",
+            "service_price": "€180 – €250"
+          }
         }
       },
       "block_order": [
         "service_MHRyYp",
         "service_pM8aBw",
         "service_CVDfQy",
-        "service_x9hBgr"
+        "service_x9hBgr",
+        "service_QmacAj"
       ],
       "name": "Lūpu apjoma palielināšana",
       "settings": {
