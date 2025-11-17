@@ -509,6 +509,68 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_eaMTaQ": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_xdrzFe": {
+          "type": "service",
+          "name": "Deguna asinsvadi ",
+          "settings": {
+            "service_name": "Deguna asinsvadi",
+            "service_price": "€50"
+          }
+        },
+        "service_HWLMMw": {
+          "type": "service",
+          "name": "Viena zvaigznīte",
+          "settings": {
+            "service_name": "Viena zvaigznīte",
+            "service_price": "€20"
+          }
+        },
+        "service_8Bd9fx": {
+          "type": "service",
+          "name": "Vaigu asinsvadu apstrāde",
+          "settings": {
+            "service_name": "Vaigu asinsvadu apstrāde",
+            "service_price": "€80"
+          }
+        },
+        "service_gfeEBA": {
+          "type": "service",
+          "name": "Kāju asinsvadu apstrāde (5 kv.cm.)  ",
+          "settings": {
+            "service_name": "Kāju asinsvadu apstrāde (5 kv.cm.) ",
+            "service_price": "€50"
+          }
+        },
+        "service_WWrwf6": {
+          "type": "service",
+          "name": "1 impulss ",
+          "settings": {
+            "service_name": "1 impulss",
+            "service_price": "€20"
+          }
+        }
+      },
+      "block_order": [
+        "service_xdrzFe",
+        "service_HWLMMw",
+        "service_8Bd9fx",
+        "service_gfeEBA",
+        "service_WWrwf6"
+      ],
+      "name": "Asinsvadu likvidācija ar Nd:YAG lāzeri",
+      "settings": {
+        "title": "Asinsvadu likvidācija ar Nd:YAG lāzeri",
+        "content": "<p>Procedūra paredzēta efektīvai asinsvadu likvidācijai problemātiskajās zonās, iedarbojoties uz hemoglobīnu asinsvados, nebojājot apkārtējos audus.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -663,6 +725,7 @@
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
     "template_dropdown_service_cXwMpw",
+    "template_dropdown_service_eaMTaQ",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
