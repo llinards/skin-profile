@@ -318,11 +318,20 @@
             "service_name": "Belotero Soft (0,6 ml)",
             "service_price": "€240"
           }
+        },
+        "service_CVDfQy": {
+          "type": "service",
+          "name": "Belotero Lips (0,6 ml)",
+          "settings": {
+            "service_name": "Belotero Lips (0,6 ml)",
+            "service_price": "€240"
+          }
         }
       },
       "block_order": [
         "service_MHRyYp",
-        "service_pM8aBw"
+        "service_pM8aBw",
+        "service_CVDfQy"
       ],
       "name": "Lūpu apjoma palielināšana",
       "settings": {
