@@ -660,6 +660,12 @@
   .resize {
     resize: both;
   }
+  .list-\[circle\] {
+    list-style-type: circle;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
   .list-none {
     list-style-type: none;
   }
@@ -1064,6 +1070,9 @@
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
   .text-center {
     text-align: center;
   }
@@ -1288,6 +1297,30 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .before\:absolute {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .before\:top-1\.5 {
+    &::before {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 1.5);
+    }
+  }
+  .before\:left-0 {
+    &::before {
+      content: var(--tw-content);
+      left: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:content-\[\'✓\'\] {
+    &::before {
+      --tw-content: '✓';
+      content: var(--tw-content);
     }
   }
   .after\:content-\[\'\,\\00a0\'\] {
@@ -1969,6 +2002,11 @@
   .md\:pb-12 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:pl-8 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 8);
     }
   }
   .md\:text-left {
