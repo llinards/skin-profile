@@ -222,11 +222,20 @@
             "service_name": "Juviderm 4 (1 ml) - 2 iepakojumi",
             "service_price": "€520.00"
           }
+        },
+        "service_CwMQgA": {
+          "type": "service",
+          "name": "Dusmu rievas aizpildīšana Belotero",
+          "settings": {
+            "service_name": "Dusmu rievas aizpildīšana Belotero",
+            "service_price": "€260.00"
+          }
         }
       },
       "block_order": [
         "service_YUJr6H",
-        "service_ctCqip"
+        "service_ctCqip",
+        "service_CwMQgA"
       ],
       "name": "Sejas konturēšana ar filleriem",
       "settings": {
