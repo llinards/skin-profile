@@ -274,6 +274,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_efLzGb": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_brxBa3": {
+          "type": "service",
+          "name": "APTOS vai Silhouette Soft diegi",
+          "settings": {
+            "service_name": "APTOS vai Silhouette Soft diegi (atkarībā no pacienta anatomijas)",
+            "service_price": "€1000.00 - €1500.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_brxBa3"
+      ],
+      "name": "APTOS vai Silhouette Soft diegi",
+      "settings": {
+        "title": "APTOS vai Silhouette Soft diegi",
+        "content": "<p>Procedūras laikā zem ādas tiek ievadīti diegi, kas nostiprina audus un nodrošina liftinga efektu bez operācijas.</p><p>Tie palīdz uzlabot ādas tvirtumu, mazināt noslīdējumu un atjaunot sejas kontūras. Efekts ir ilgnoturīgs – līdz 18 mēnešiem.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -429,6 +455,7 @@
     "template_services_section_kPR4ih",
     "template_dropdown_service_kn964N",
     "template_dropdown_service_VeALwy",
+    "template_dropdown_service_efLzGb",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
