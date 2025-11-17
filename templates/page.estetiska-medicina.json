@@ -159,12 +159,21 @@
             "service_name": "Xela REDERM 1.8% (2 ml)",
             "service_price": "€180.00"
           }
+        },
+        "service_qcjc9U": {
+          "type": "service",
+          "name": "Xela REDERM 2.0% (2 ml)",
+          "settings": {
+            "service_name": "Xela REDERM 2.0% (2 ml)",
+            "service_price": "€200.00"
+          }
         }
       },
       "block_order": [
         "service_yfca67",
         "service_3qRRAc",
-        "service_WTbY8x"
+        "service_WTbY8x",
+        "service_qcjc9U"
       ],
       "name": "Biorevitalizācija",
       "settings": {
