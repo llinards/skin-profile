@@ -469,10 +469,19 @@
             "service_name": "Pieres vertikālās (dusmu) krunkas",
             "service_price": "€150"
           }
+        },
+        "service_wL6RdJ": {
+          "type": "service",
+          "name": "Visa piere (horizontālās + vertikālās rievas) ",
+          "settings": {
+            "service_name": "Visa piere (horizontālās + vertikālās rievas)",
+            "service_price": "€250"
+          }
         }
       },
       "block_order": [
-        "service_tfFAQk"
+        "service_tfFAQk",
+        "service_wL6RdJ"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
