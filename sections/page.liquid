@@ -5,7 +5,11 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/page
 {% endcomment %}
 
-<div class="{% if section.settings.add_top_padding %}pt-24{% endif %}">
+<script src="{{ 'policy-redirect.js' | asset_url }}" defer></script>
+
+<div
+  class="{% if section.settings.add_top_padding %}pt-24{% endif %}"
+>
   {{ page.content }}
 </div>
 

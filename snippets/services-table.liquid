@@ -6,7 +6,7 @@
   {%- assign service_blocks = services | where: 'type', 'service' -%}
   {%- if service_blocks.size > 0 -%}
     {%- for b in service_blocks -%}
-      <div class="grid grid-cols-5 font-bold items-center py-2 border-b-1 border-sp-light-brown border-dotted">
+      <div class="grid grid-cols-5 font-bold items-center py-2 border-b border-sp-light-brown border-dotted">
         <div class="col-span-3 text-left">{{ b.settings.service_name }}</div>
         <div class="col-span-2 text-right">{{ b.settings.service_price }}</div>
       </div>
