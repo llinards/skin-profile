@@ -372,10 +372,19 @@
             "service_name": "1 Radiesse iepakojums",
             "service_price": "€350"
           }
+        },
+        "service_EqKcUe": {
+          "type": "service",
+          "name": "2 Radiesse iepakojumi",
+          "settings": {
+            "service_name": "2 Radiesse iepakojumi",
+            "service_price": "€600"
+          }
         }
       },
       "block_order": [
-        "service_YJGzdR"
+        "service_YJGzdR",
+        "service_EqKcUe"
       ],
       "name": "Sejas liftings ar Radiesse",
       "settings": {
