@@ -68,20 +68,92 @@
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
+          "name": "Kāju ādas mitrināšana ar masāžu",
           "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
+            "service_name": "Kāju ādas mitrināšana ar masāžu",
+            "service_price": "€30"
+          }
+        },
+        "service_b6ERpF": {
+          "type": "service",
+          "name": "Silikona masas ortozes izgatavošana",
+          "settings": {
+            "service_name": "Silikona masas ortozes izgatavošana",
+            "service_price": "€50"
+          }
+        },
+        "service_TyL4Kb": {
+          "type": "service",
+          "name": "Nagu korekcija ar stiepļu tehnoloģiju",
+          "settings": {
+            "service_name": "Nagu korekcija ar stiepļu tehnoloģiju",
+            "service_price": "€45"
+          }
+        },
+        "service_UN6RLw": {
+          "type": "service",
+          "name": "Nesošā naga aizstāšana ar modelēšanu",
+          "settings": {
+            "service_name": "Nesošā naga aizstāšana ar modelēšanu",
+            "service_price": "€15"
+          }
+        },
+        "service_ebDE36": {
+          "type": "service",
+          "name": "Pilna pēdu aprūpe ar ārstnieciskā gēla pārklāšanu",
+          "settings": {
+            "service_name": "Pilna pēdu aprūpe ar ārstnieciskā gēla pārklāšanu",
+            "service_price": "€65"
+          }
+        },
+        "service_6YWKiH": {
+          "type": "service",
+          "name": "Pilna pēdu aprūpe",
+          "settings": {
+            "service_name": "Pilna pēdu aprūpe",
+            "service_price": "€40"
+          }
+        },
+        "service_dJ4UPd": {
+          "type": "service",
+          "name": "Ieaugusā vai traumētā naga pārsiešana",
+          "settings": {
+            "service_name": "Ieaugusā vai traumētā naga pārsiešana",
+            "service_price": "€15"
+          }
+        },
+        "service_3DPntN": {
+          "type": "service",
+          "name": "Pilna kāju nagu aprūpe",
+          "settings": {
+            "service_name": "Pilna kāju nagu aprūpe",
+            "service_price": "€30"
+          }
+        },
+        "service_YP7ybR": {
+          "type": "service",
+          "name": "Ieaugusā naga korekcija",
+          "settings": {
+            "service_name": "Ieaugusā naga korekcija",
+            "service_price": "€15"
           }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "service_kGdXVr",
+        "service_b6ERpF",
+        "service_TyL4Kb",
+        "service_UN6RLw",
+        "service_ebDE36",
+        "service_6YWKiH",
+        "service_dJ4UPd",
+        "service_3DPntN",
+        "service_YP7ybR"
       ],
-      "name": "Pirmreizējā Konsultācija",
+      "name": "Pēdu un roku procedūras",
       "settings": {
-        "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "title": "Pēdu un roku procedūras",
+        "content": "<p>Regulāra pēdu un roku kopšana palīdz uzturēt ādas un nagu veselību, novērst diskomfortu un nodrošināt estētiski koptu izskatu. Procedūras ietver mitrināšanu, masāžu un pilnu pēdu vai nagu aprūpi, kas piemērota gan ikdienas kopšanai, gan profilaksei.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
         "service_url_cta": "Pieteikt",
