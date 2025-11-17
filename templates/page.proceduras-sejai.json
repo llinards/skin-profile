@@ -578,6 +578,50 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_APWEFi": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_QAcK6n": {
+          "type": "service",
+          "name": "PRX pīlings",
+          "settings": {
+            "service_name": "PRX pīlings",
+            "service_price": "€80"
+          }
+        },
+        "service_yPKqcN": {
+          "type": "service",
+          "name": "Karbona pīlings VS Carbon",
+          "settings": {
+            "service_name": "Karbona pīlings VS Carbon",
+            "service_price": "€80"
+          }
+        },
+        "service_immC4N": {
+          "type": "service",
+          "name": "Kopējais diapazons",
+          "settings": {
+            "service_name": "Kopējais diapazons",
+            "service_price": "€80 - €100"
+          }
+        }
+      },
+      "block_order": [
+        "service_QAcK6n",
+        "service_yPKqcN",
+        "service_immC4N"
+      ],
+      "name": "Ķīmiskais pīlings sejas ādas atjaunošanai",
+      "settings": {
+        "title": "Ķīmiskais pīlings sejas ādas atjaunošanai",
+        "content": "<p>Āda iegūst mirdzumu, tiek izlīdzinātas sīkās grumbiņas, mazināta pigmentācija un aknes rētas. Procedūra sniedz liftinga efektu un risina dažādas ādas problēmas.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": true
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -744,6 +788,7 @@
     "template_dropdown_service_XjhaAb",
     "template_dropdown_service_wLkRQN",
     "template_dropdown_service_bcgYAY",
+    "template_dropdown_service_APWEFi",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
