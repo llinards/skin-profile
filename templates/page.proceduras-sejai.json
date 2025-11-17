@@ -552,6 +552,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_bcgYAY": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_MitMT7": {
+          "type": "service",
+          "name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
+          "settings": {
+            "service_name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
+            "service_price": "€65"
+          }
+        }
+      },
+      "block_order": [
+        "service_MitMT7"
+      ],
+      "name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
+      "settings": {
+        "title": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
+        "content": "<p>Procedūra nostiprina sejas ovālu, mazina tūsku, uzlabo ādas apasiņošanu un vispārējo stāvokli.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -717,6 +743,7 @@
     "template_dropdown_service_8i43Re",
     "template_dropdown_service_XjhaAb",
     "template_dropdown_service_wLkRQN",
+    "template_dropdown_service_bcgYAY",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
