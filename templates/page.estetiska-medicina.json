@@ -509,6 +509,22 @@
             "service_name": "Manganas smaida korekcija",
             "service_price": "€90"
           }
+        },
+        "service_kfeTWb": {
+          "type": "service",
+          "name": "Košļāšanas muskuļu hiperaktivitāte",
+          "settings": {
+            "service_name": "Košļāšanas muskuļu hiperaktivitāte",
+            "service_price": "€280"
+          }
+        },
+        "service_GebWgT": {
+          "type": "service",
+          "name": "Smēķētāju krunciņu korekcija",
+          "settings": {
+            "service_name": "Smēķētāju krunciņu korekcija",
+            "service_price": "€70"
+          }
         }
       },
       "block_order": [
@@ -517,7 +533,9 @@
         "service_BYgLJc",
         "service_MFyHFj",
         "service_mEXUrf",
-        "service_MaiXwx"
+        "service_MaiXwx",
+        "service_kfeTWb",
+        "service_GebWgT"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
