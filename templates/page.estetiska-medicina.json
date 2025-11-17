@@ -138,10 +138,10 @@
       "blocks": {
         "service_yfca67": {
           "type": "service",
-          "name": "1 veidojuma apskate",
+          "name": "Neuvia HydroDelux (2,5 ml)",
           "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20.00"
+            "service_name": "Neuvia HydroDelux (2,5 ml)",
+            "service_price": "€180.00"
           }
         },
         "service_3qRRAc": {
