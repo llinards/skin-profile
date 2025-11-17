@@ -73,10 +73,91 @@
             "service_name": "Visa seja",
             "service_price": "€150"
           }
+        },
+        "service_7mPYeg": {
+          "type": "service",
+          "name": "Sejas centrs",
+          "settings": {
+            "service_name": "Sejas centrs",
+            "service_price": "€100"
+          }
+        },
+        "service_a4KmFd": {
+          "type": "service",
+          "name": "Deguns",
+          "settings": {
+            "service_name": "Deguns",
+            "service_price": "€50"
+          }
+        },
+        "service_9DQVfY": {
+          "type": "service",
+          "name": "Vaigi",
+          "settings": {
+            "service_name": "Vaigi",
+            "service_price": "€80"
+          }
+        },
+        "service_PrGEGN": {
+          "type": "service",
+          "name": "Seja + kakls",
+          "settings": {
+            "service_name": "Seja + kakls",
+            "service_price": "€250"
+          }
+        },
+        "service_ygeVDQ": {
+          "type": "service",
+          "name": "Seja + kakls + dekoltē",
+          "settings": {
+            "service_name": "Seja + kakls + dekoltē",
+            "service_price": "€320"
+          }
+        },
+        "service_VGfTfp": {
+          "type": "service",
+          "name": "Dekoltē",
+          "settings": {
+            "service_name": "Dekoltē",
+            "service_price": "€150"
+          }
+        },
+        "service_hTyCH7": {
+          "type": "service",
+          "name": "Plaukstu virspuses",
+          "settings": {
+            "service_name": "Plaukstu virspuses",
+            "service_price": "€60"
+          }
+        },
+        "service_7RhzwE": {
+          "type": "service",
+          "name": "Roku atjaunošana",
+          "settings": {
+            "service_name": "Roku atjaunošana",
+            "service_price": "€190"
+          }
+        },
+        "service_Je8BGq": {
+          "type": "service",
+          "name": "1 impulss (1 kv.cm.) rētu un striju korekcijai ",
+          "settings": {
+            "service_name": "1 impulss (1 kv.cm.) rētu un striju korekcijai",
+            "service_price": "€25"
+          }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "service_kGdXVr",
+        "service_7mPYeg",
+        "service_a4KmFd",
+        "service_9DQVfY",
+        "service_PrGEGN",
+        "service_ygeVDQ",
+        "service_VGfTfp",
+        "service_hTyCH7",
+        "service_7RhzwE",
+        "service_Je8BGq"
       ],
       "name": "Fotoatjaunošana ar ALMA Dye_VL",
       "settings": {
