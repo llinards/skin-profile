@@ -459,6 +459,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_Akzmca": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_tfFAQk": {
+          "type": "service",
+          "name": "Pieres vertikālās (dusmu) krunkas ",
+          "settings": {
+            "service_name": "Pieres vertikālās (dusmu) krunkas",
+            "service_price": "€150"
+          }
+        }
+      },
+      "block_order": [
+        "service_tfFAQk"
+      ],
+      "name": "Botulīna injekcijas",
+      "settings": {
+        "title": "Botulīna injekcijas",
+        "content": "<p>Botulīna toksīns tiek ievadīts problēmzonās, lai samazinātu mīmisko muskulatūru darbību un izlīdzinātu grumbas.</p><p>Efekts iestājas 1–2 nedēļu laikā un saglabājas līdz 4 mēnešiem.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -618,6 +644,7 @@
     "template_dropdown_service_rHtTmM",
     "template_dropdown_service_mRxjF3",
     "template_dropdown_service_CzzXek",
+    "template_dropdown_service_Akzmca",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
