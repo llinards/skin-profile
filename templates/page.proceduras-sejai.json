@@ -395,6 +395,59 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_bcFrAa": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_rgeGxA": {
+          "type": "service",
+          "name": "Uzacu korekcija",
+          "settings": {
+            "service_name": "Uzacu korekcija",
+            "service_price": "€12"
+          }
+        },
+        "service_JQxdt3": {
+          "type": "service",
+          "name": "Uzacu krāsošana",
+          "settings": {
+            "service_name": "Uzacu krāsošana",
+            "service_price": "€12"
+          }
+        },
+        "service_MHVynp": {
+          "type": "service",
+          "name": "Skropstu krāsošana",
+          "settings": {
+            "service_name": "Skropstu krāsošana",
+            "service_price": "€12"
+          }
+        },
+        "service_G7h8hM": {
+          "type": "service",
+          "name": "Uzacu korekcija un krāsošana",
+          "settings": {
+            "service_name": "Uzacu korekcija un krāsošana",
+            "service_price": "€20"
+          }
+        }
+      },
+      "block_order": [
+        "service_rgeGxA",
+        "service_JQxdt3",
+        "service_MHVynp",
+        "service_G7h8hM"
+      ],
+      "name": "Uzacu korekcija",
+      "settings": {
+        "title": "Uzacu korekcija",
+        "content": "<p>Pareizi veidota uzacu forma un krāsa akcentē acu izteiksmīgumu un skatienu.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -555,6 +608,7 @@
     "template_dropdown_service_aTUKmP",
     "template_dropdown_service_GCjiiP",
     "template_dropdown_service_788iPN",
+    "template_dropdown_service_bcFrAa",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
