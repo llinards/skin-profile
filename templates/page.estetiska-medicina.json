@@ -80,8 +80,8 @@
       ],
       "name": "Pirmreizējā Konsultācija",
       "settings": {
-        "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "title": "Polinukleotīdu injekcijas",
+        "content": "<p>Efektīvs un inovatīvs risinājums sejas ādas reģenerācijai. Samazina tūsku un maisiņus zem acīm, mīmiskās grumbas, izlīdzina ādas toni un stimulē kolagēna un elastīna sintēzi.</p><p>Īpaši ieteicams kursa veidā pirms plastiskajām operācijām un pēcoperāciju periodā, lai mazinātu rētu risku, iekaisumu un veicinātu dzīšanu. Nepieciešams kurss 2 reizes ar 3–4 nedēļu intervālu.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
         "service_url_cta": "Pieteikt",
