@@ -326,12 +326,21 @@
             "service_name": "Belotero Lips (0,6 ml)",
             "service_price": "€240"
           }
+        },
+        "service_x9hBgr": {
+          "type": "service",
+          "name": "Juviderm 3 (1 ml)",
+          "settings": {
+            "service_name": "Juviderm 3 (1 ml)",
+            "service_price": "€280"
+          }
         }
       },
       "block_order": [
         "service_MHRyYp",
         "service_pM8aBw",
-        "service_CVDfQy"
+        "service_CVDfQy",
+        "service_x9hBgr"
       ],
       "name": "Lūpu apjoma palielināšana",
       "settings": {
