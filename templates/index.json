@@ -383,7 +383,7 @@
           "type": "button",
           "settings": {
             "text": "Pakalpojumi",
-            "url": "shopify://pages/pakalpojumi",
+            "url": "shopify://pages/dermatologija",
             "style": "brown"
           }
         }
