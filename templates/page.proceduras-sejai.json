@@ -99,19 +99,10 @@
             "service_name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
             "service_price": "€65"
           }
-        },
-        "service_jzXAD9": {
-          "type": "service",
-          "name": "Multiplu veidojumu noņemšana",
-          "settings": {
-            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35 – €100"
-          }
         }
       },
       "block_order": [
-        "service_4HgD7c",
-        "service_jzXAD9"
+        "service_4HgD7c"
       ],
       "name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
       "settings": {
@@ -129,39 +120,21 @@
       "blocks": {
         "service_yfca67": {
           "type": "service",
-          "name": "1 veidojuma apskate",
+          "name": "GENEO X sejai",
           "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20"
-          }
-        },
-        "service_3qRRAc": {
-          "type": "service",
-          "name": "Katrs nākamais veidojums",
-          "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10"
-          }
-        },
-        "service_WTbY8x": {
-          "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
-          "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70"
+            "service_name": "GENEO X sejai",
+            "service_price": "€130"
           }
         }
       },
       "block_order": [
-        "service_yfca67",
-        "service_3qRRAc",
-        "service_WTbY8x"
+        "service_yfca67"
       ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
+      "name": "GENEO X sejai",
       "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
+        "title": "GENEO X sejai",
+        "content": "<p>Procedūra ietver četras dermālās aparāttehnoloģijas vienā sesijā: Tripollar RF, CO2 burbuļu dermālo oksigenāciju, Ultrasound un Neo Massage. Mērķis – attīrīt ādu un veicināt kolagēna un elastāna sintēzi.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
