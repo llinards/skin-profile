@@ -501,6 +501,14 @@
             "service_name": "Padušu pastiprināta svīšana",
             "service_price": "€350"
           }
+        },
+        "service_MaiXwx": {
+          "type": "service",
+          "name": "Manganas smaida korekcija",
+          "settings": {
+            "service_name": "Manganas smaida korekcija",
+            "service_price": "€90"
+          }
         }
       },
       "block_order": [
@@ -508,7 +516,8 @@
         "service_wL6RdJ",
         "service_BYgLJc",
         "service_MFyHFj",
-        "service_mEXUrf"
+        "service_mEXUrf",
+        "service_MaiXwx"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
