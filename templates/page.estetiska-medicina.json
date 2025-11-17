@@ -525,6 +525,30 @@
             "service_name": "Smēķētāju krunciņu korekcija",
             "service_price": "€70"
           }
+        },
+        "service_T3rXgY": {
+          "type": "service",
+          "name": "Zoda muskuļu korekcija",
+          "settings": {
+            "service_name": "Zoda muskuļu korekcija",
+            "service_price": "€70"
+          }
+        },
+        "service_qMBkkz": {
+          "type": "service",
+          "name": "Visa seja",
+          "settings": {
+            "service_name": "Visa seja",
+            "service_price": "€420"
+          }
+        },
+        "service_8VHDpg": {
+          "type": "service",
+          "name": "Visa seja + kakls",
+          "settings": {
+            "service_name": "Visa seja + kakls",
+            "service_price": "€500"
+          }
         }
       },
       "block_order": [
@@ -535,7 +559,10 @@
         "service_mEXUrf",
         "service_MaiXwx",
         "service_kfeTWb",
-        "service_GebWgT"
+        "service_GebWgT",
+        "service_T3rXgY",
+        "service_qMBkkz",
+        "service_8VHDpg"
       ],
       "name": "Botulīna injekcijas",
       "settings": {
