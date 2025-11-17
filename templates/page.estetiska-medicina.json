@@ -68,10 +68,10 @@
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
+          "name": "Nucleofill Soft",
           "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
+            "service_name": "Nucleofill Soft",
+            "service_price": "€180"
           }
         }
       },
