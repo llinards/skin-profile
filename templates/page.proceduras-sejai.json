@@ -339,6 +339,14 @@
             "service_name": "Nucleofill Strong",
             "service_price": "€200"
           }
+        },
+        "service_qmrXka": {
+          "type": "service",
+          "name": "Profhilo (2 ml)",
+          "settings": {
+            "service_name": "Profhilo (2 ml)",
+            "service_price": "€250"
+          }
         }
       },
       "block_order": [
@@ -347,7 +355,8 @@
         "service_VkN6Le",
         "service_t7BwDW",
         "service_7CxKEy",
-        "service_iyHFwC"
+        "service_iyHFwC",
+        "service_qmrXka"
       ],
       "name": "Biorevitalizācija",
       "settings": {
