@@ -175,30 +175,75 @@
       "blocks": {
         "service_4HgD7c": {
           "type": "service",
-          "name": "1 veidojuma noņemšana",
+          "name": "Visa seja",
           "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25.00"
+            "service_name": "Visa seja",
+            "service_price": "€180"
           }
         },
         "service_jzXAD9": {
           "type": "service",
-          "name": "Multiplu veidojumu noņemšana",
+          "name": "Seja un pazode",
           "settings": {
-            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35.00 – €100.00"
+            "service_name": "Seja un pazode",
+            "service_price": "€200"
+          }
+        },
+        "service_98JJjQ": {
+          "type": "service",
+          "name": "Kakls",
+          "settings": {
+            "service_name": "Kakls",
+            "service_price": "€180"
+          }
+        },
+        "service_LyHghw": {
+          "type": "service",
+          "name": "Dekoltē",
+          "settings": {
+            "service_name": "Dekoltē",
+            "service_price": "€180"
+          }
+        },
+        "service_g9CFp6": {
+          "type": "service",
+          "name": "Seja + kakls + dekoltē",
+          "settings": {
+            "service_name": "Seja + kakls + dekoltē",
+            "service_price": "€300"
+          }
+        },
+        "service_DKBzn6": {
+          "type": "service",
+          "name": "Acu zona",
+          "settings": {
+            "service_name": "Acu zona",
+            "service_price": "€100"
+          }
+        },
+        "service_qPzf7R": {
+          "type": "service",
+          "name": "Akcija sejas zonai",
+          "settings": {
+            "service_name": "Akcija sejas zonai",
+            "service_price": "€150"
           }
         }
       },
       "block_order": [
         "service_4HgD7c",
-        "service_jzXAD9"
+        "service_jzXAD9",
+        "service_98JJjQ",
+        "service_LyHghw",
+        "service_g9CFp6",
+        "service_DKBzn6",
+        "service_qPzf7R"
       ],
-      "name": "Kriodestrukcija ar Šķidro Slāpekli",
+      "name": "Efektīva ādas atjaunošana ar Clear Lift",
       "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
+        "title": "Efektīva ādas atjaunošana ar Clear Lift",
+        "content": "<p>Procedūras laikā ādā tiek radīti mikroskopiski ievainojumi, kas izraisa kolagēna šķiedru atjaunošanos un jauna kolagēna veidošanos.</p><p>Rezultātā mazinās fotonovecošanās pazīmes, uzlabojas ādas tonis un tiek nodrošināts liftinga efekts. Nepieciešams veikt 3–6 procedūras ar 3–4 nedēļu intervālu.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
