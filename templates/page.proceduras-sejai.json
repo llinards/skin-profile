@@ -369,6 +369,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_788iPN": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_nVf6YV": {
+          "type": "service",
+          "name": "Polinukleotīdi",
+          "settings": {
+            "service_name": "Polinukleotīdi",
+            "service_price": "€180 – €200"
+          }
+        }
+      },
+      "block_order": [
+        "service_nVf6YV"
+      ],
+      "name": "Polinukleotīdi",
+      "settings": {
+        "title": "Polinukleotīdi",
+        "content": "<p>Invazīva procedūra ādas bioreģenerācijai, tvirtuma atjaunošanai, elastības uzlabošanai, smalko grumbu un rētu mazināšanai, kā arī rozācijas un aknes ārstēšanai.</p><p>Ieteicama arī pirms operācijām un pēcoperāciju periodā.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -528,6 +554,7 @@
     "template_dropdown_service_nYUEGQ",
     "template_dropdown_service_aTUKmP",
     "template_dropdown_service_GCjiiP",
+    "template_dropdown_service_788iPN",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
