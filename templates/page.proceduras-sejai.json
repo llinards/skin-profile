@@ -138,7 +138,85 @@
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
-        "space_bottom": true
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_WVT8jP": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_BiE74w": {
+          "type": "service",
+          "name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
+          "settings": {
+            "service_name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
+            "service_price": "€150"
+          }
+        }
+      },
+      "block_order": [
+        "service_BiE74w"
+      ],
+      "name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
+      "settings": {
+        "title": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
+        "content": "<p>Četras dermālās aparāttehnoloģijas vienā sesijā: Tripollar RF, CO2 oksigenācija, Ultrasound un Neo Massage. Procedūras mērķis – ādas attīrīšana un kolagēna sintēzes aktivizēšana plašākā zonā.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_9dWycV": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_JPQQbE": {
+          "type": "service",
+          "name": "GENEO X divu aparātmetožu kopums",
+          "settings": {
+            "service_name": "GENEO X divu aparātmetožu kopums",
+            "service_price": "€100"
+          }
+        }
+      },
+      "block_order": [
+        "service_JPQQbE"
+      ],
+      "name": "GENEO X divu aparātmetožu kopums",
+      "settings": {
+        "title": "GENEO X divu aparātmetožu kopums",
+        "content": "<p>Procedūra apvieno ādas attīrīšanu, Tripollar radiofrekvenci un ultraskaņu, lai stimulētu kolagēna sintēzi, aktivizētu aktīvo vielu uzsūkšanos un mazinātu novecošanās pazīmes.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_AtYwty": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_c9Whit": {
+          "type": "service",
+          "name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
+          "settings": {
+            "service_name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
+            "service_price": "€65"
+          }
+        }
+      },
+      "block_order": [
+        "service_c9Whit"
+      ],
+      "name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
+      "settings": {
+        "title": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
+        "content": "<p>Mūsdienīga, neinvazīva metode aktīvo vielu ievadīšanai ādā grumbu mazināšanai, pigmentācijas korekcijai un dziļai mitrināšanai.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
       }
     },
     "template_services_bN8zJK": {
@@ -294,6 +372,9 @@
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
+    "template_dropdown_service_WVT8jP",
+    "template_dropdown_service_9dWycV",
+    "template_dropdown_service_AtYwty",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
