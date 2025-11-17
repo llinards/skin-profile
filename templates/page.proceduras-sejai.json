@@ -219,6 +219,76 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_nYUEGQ": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_rQFRDH": {
+          "type": "service",
+          "name": "Fresh Up",
+          "settings": {
+            "service_name": "Fresh Up",
+            "service_price": "€90"
+          }
+        },
+        "service_mbUyzC": {
+          "type": "service",
+          "name": "Energy",
+          "settings": {
+            "service_name": "Energy",
+            "service_price": "€120"
+          }
+        },
+        "service_aX3RVG": {
+          "type": "service",
+          "name": "Classic",
+          "settings": {
+            "service_name": "Classic",
+            "service_price": "€230"
+          }
+        }
+      },
+      "block_order": [
+        "service_rQFRDH",
+        "service_mbUyzC",
+        "service_aX3RVG"
+      ],
+      "name": "Green Peel",
+      "settings": {
+        "title": "Green Peel",
+        "content": "<p>Bioloģiska ādas atjaunošanas procedūra, kas balstīta uz Dr. Christine Schrammek izstrādāto fitopīlingu – augu maisījumu, kas stimulē ādas dabīgo reģenerāciju.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_dropdown_service_aTUKmP": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_HMWkgE": {
+          "type": "service",
+          "name": "Mikroadatu terapija",
+          "settings": {
+            "service_name": "Mikroadatu terapija",
+            "service_price": "€80"
+          }
+        }
+      },
+      "block_order": [
+        "service_HMWkgE"
+      ],
+      "name": "Mikroadatu terapija",
+      "settings": {
+        "title": "Mikroadatu terapija",
+        "content": "<p>Pretnovecošanās procedūra, kuras laikā zemādā tiek ievadītas bioloģiski aktīvās vielas. </p><p>Mikroskopiskas traumas stimulē ādas dabīgo atjaunošanos. Izmanto vienreizējus mikroadata uzgaļus.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -375,6 +445,8 @@
     "template_dropdown_service_WVT8jP",
     "template_dropdown_service_9dWycV",
     "template_dropdown_service_AtYwty",
+    "template_dropdown_service_nYUEGQ",
+    "template_dropdown_service_aTUKmP",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
