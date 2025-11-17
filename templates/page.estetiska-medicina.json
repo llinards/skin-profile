@@ -166,11 +166,11 @@
         "service_3qRRAc",
         "service_WTbY8x"
       ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
+      "name": "Biorevitalizācija",
       "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
+        "title": "Biorevitalizācija",
+        "content": "<p>Hialuronskābes injekcijas ādas mitrināšanai, grumbu aizpildīšanai, kvalitātes uzlabošanai un kolagēna stimulēšanai.</p><p>Procedūra palīdz ādai uzturēt barības vielu līdzsvaru, elastību un tvirtumu.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
