@@ -166,78 +166,70 @@
       "blocks": {
         "service_4HgD7c": {
           "type": "service",
-          "name": "1 veidojuma noņemšana",
+          "name": "Viena inficēta naga apstrāde",
           "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25"
+            "service_name": "Viena inficēta naga apstrāde",
+            "service_price": "€15"
           }
         },
         "service_jzXAD9": {
           "type": "service",
-          "name": "Multiplu veidojumu noņemšana",
+          "name": "Vairāku varžacu apstrāde",
           "settings": {
-            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35 – €100"
+            "service_name": "Vairāku varžacu apstrāde",
+            "service_price": "€30"
+          }
+        },
+        "service_kYKeUW": {
+          "type": "service",
+          "name": "Vienas varžacsapstrāde",
+          "settings": {
+            "service_name": "Vienas varžacsapstrāde",
+            "service_price": "€12"
+          }
+        },
+        "service_U9KxPh": {
+          "type": "service",
+          "name": "Vairāku kārpu apstrāde",
+          "settings": {
+            "service_name": "Vairāku kārpu apstrāde",
+            "service_price": "€35"
+          }
+        },
+        "service_LAdqQm": {
+          "type": "service",
+          "name": "Vienas kārpas apstrāde",
+          "settings": {
+            "service_name": "Vienas kārpas apstrāde",
+            "service_price": "€15"
+          }
+        },
+        "service_Fxm9WV": {
+          "type": "service",
+          "name": "Roku ādas mitrināšana ar masāžu",
+          "settings": {
+            "service_name": "Roku ādas mitrināšana ar masāžu",
+            "service_price": "€20"
           }
         }
       },
       "block_order": [
         "service_4HgD7c",
-        "service_jzXAD9"
+        "service_jzXAD9",
+        "service_kYKeUW",
+        "service_U9KxPh",
+        "service_LAdqQm",
+        "service_Fxm9WV"
       ],
-      "name": "Kriodestrukcija ar Šķidro Slāpekli",
+      "name": "Nagu un ādas problēmu apstrāde",
       "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
+        "title": "Nagu un ādas problēmu apstrāde",
+        "content": "<p>Podologs nodrošina efektīvu ārstēšanu ieaugušiem nagiem, kārpām, varžacīm un infekcijām. Procedūras palīdz mazināt sāpes, atjaunot ādas un nagu veselību un novērst problēmu atkārtošanos, nodrošinot ilgtermiņa komfortu.</p>",
+        "service_disclaimer": "",
         "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false
-      }
-    },
-    "template_services_section_kPR4ih": {
-      "type": "template-dropdown-service",
-      "blocks": {
-        "service_yfca67": {
-          "type": "service",
-          "name": "1 veidojuma apskate",
-          "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20"
-          }
-        },
-        "service_3qRRAc": {
-          "type": "service",
-          "name": "Katrs nākamais veidojums",
-          "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10"
-          }
-        },
-        "service_WTbY8x": {
-          "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
-          "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70"
-          }
-        }
-      },
-      "block_order": [
-        "service_yfca67",
-        "service_3qRRAc",
-        "service_WTbY8x"
-      ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
-      "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": true
       }
     },
     "template_services_bN8zJK": {
@@ -392,7 +384,6 @@
     "template_text_section_JPJC6T",
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
-    "template_services_section_kPR4ih",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
