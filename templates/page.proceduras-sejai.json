@@ -68,20 +68,20 @@
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
+          "name": "Sejas ādas dziļā tīrīšana",
           "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
+            "service_name": "Atkārtota konSejas ādas dziļā tīrīšanasultācija 30 dienu laikā",
+            "service_price": "€60"
           }
         }
       },
       "block_order": [
         "service_kGdXVr"
       ],
-      "name": "Pirmreizējā Konsultācija",
+      "name": "Sejas ādas dziļā tīrīšana",
       "settings": {
-        "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "title": "Sejas ādas dziļā tīrīšana",
+        "content": "<p>Procedūras mērķis ir nodrošināt ādas efektīvu un dziļu attīrīšanu visiem ādas tipiem.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
         "service_url_cta": "Pieteikt",
