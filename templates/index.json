@@ -273,7 +273,7 @@
           "type": "button",
           "settings": {
             "text": "Uz veikalu",
-            "url": "shopify://pages/veikals",
+            "url": "shopify://collections",
             "style": "brown"
           }
         },
