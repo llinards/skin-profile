@@ -68,101 +68,22 @@
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
+          "name": "Konstultācija",
           "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
+            "service_name": "Konstultācija",
+            "service_price": ""
           }
         }
       },
       "block_order": [
         "service_kGdXVr"
       ],
-      "name": "Pirmreizējā Konsultācija",
+      "name": "Konstultācija",
       "settings": {
-        "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "title": "Konstultācija",
+        "content": "<p>Balstoties uz rezultātiem, uztura speciālists izstrādā piemērotu ēdienkarti un sniedz ieteikumus fiziskajām aktivitātēm, kas palīdzēs sasniegt vēlamo rezultātu efektīvāk. Konsultācija ir noderīga visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_qjdJcX": {
-      "type": "template-dropdown-service",
-      "blocks": {
-        "service_4HgD7c": {
-          "type": "service",
-          "name": "1 veidojuma noņemšana",
-          "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25"
-          }
-        },
-        "service_jzXAD9": {
-          "type": "service",
-          "name": "Multiplu veidojumu noņemšana",
-          "settings": {
-            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "no €35 – €100"
-          }
-        }
-      },
-      "block_order": [
-        "service_4HgD7c",
-        "service_jzXAD9"
-      ],
-      "name": "Kriodestrukcija ar Šķidro Slāpekli",
-      "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_kPR4ih": {
-      "type": "template-dropdown-service",
-      "blocks": {
-        "service_yfca67": {
-          "type": "service",
-          "name": "1 veidojuma apskate",
-          "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20"
-          }
-        },
-        "service_3qRRAc": {
-          "type": "service",
-          "name": "Katrs nākamais veidojums",
-          "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10"
-          }
-        },
-        "service_WTbY8x": {
-          "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
-          "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70"
-          }
-        }
-      },
-      "block_order": [
-        "service_yfca67",
-        "service_3qRRAc",
-        "service_WTbY8x"
-      ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
-      "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
-        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
-        "service_url": "",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": true
@@ -319,8 +240,6 @@
     "main",
     "template_text_section_JPJC6T",
     "template_services_section_J6AXyp",
-    "template_services_section_qjdJcX",
-    "template_services_section_kPR4ih",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
