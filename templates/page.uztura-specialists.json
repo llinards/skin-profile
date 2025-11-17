@@ -60,7 +60,8 @@
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "Individuāla pieeja veselīgam dzīvesveidam",
-        "text": "<ul><li>Palīdz normalizēt ēšanas paradumus, svaru un uzlabot pašsajūtu.</li><li>Konsultācijas laikā izstrādā individuālu ēšanas programmu un svara korekcijas plānu.</li><li>Izmanto bioimpedances metodi, lai noteiktu:</li><li>vielmaiņas ātrumu;</li><li>ķermeņa tauku, kaulu un ūdens proporcijas;</li><li>muskuļu daudzumu;</li><li>ķermeņa masas indeksu;</li><li>bioloģisko vecumu.</li><li>Balstoties uz rezultātiem, izstrādā piemērotu ēdienkarti un iesaka fiziskās aktivitātes.</li><li>Konsultācija piemērota visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</li></ul>"
+        "text": "",
+        "text_html": "<ul>\n    <li>Palīdz normalizēt ēšanas paradumus, svaru un uzlabot pašsajūtu.\n    </li>\n    <li>Konsultācijas laikā izstrādā individuālu ēšanas programmu un svara korekcijas plānu.\n    </li>\n    <li>Izmanto bioimpedances metodi, lai noteiktu:\n        <ul>\n            <li>vielmaiņas ātrumu;\n            </li>\n            <li>ķermeņa tauku, kaulu un ūdens proporcijas;\n            </li>\n            <li>muskuļu daudzumu;ķermeņa masas indeksu;\n            </li>\n            <li>bioloģisko vecumu.</li>\n        </ul>\n    </li>\n    <li>Balstoties uz rezultātiem, izstrādā piemērotu ēdienkarti un iesaka fiziskās aktivitātes.</li>\n    <li>Konsultācija piemērota visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</li>\n</ul>"
       }
     },
     "template_services_section_J6AXyp": {
