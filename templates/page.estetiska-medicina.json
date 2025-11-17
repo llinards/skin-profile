@@ -575,19 +575,19 @@
         "space_bottom": true
       }
     },
-    "template_services_bN8zJK": {
+    "template_services_carousel_grid_cwjP3x": {
       "type": "template-services-carousel-grid",
       "blocks": {
-        "service_H4JTT9": {
+        "service_qGYpKD": {
           "type": "service",
           "name": "Estētiskā medicīna",
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
             "name": "<p>Estētiskā medicīna</p>",
-            "url": ""
+            "url": "shopify://pages/estetiska-medicina-1"
           }
         },
-        "service_f9K83j": {
+        "service_cDKehU": {
           "type": "service",
           "name": "Dermatoloģija",
           "settings": {
@@ -596,34 +596,34 @@
             "url": "shopify://pages/dermatologija"
           }
         },
-        "service_q4TViX": {
+        "service_yrmgEN": {
           "type": "service",
           "name": "Lāzerdermatoloģija",
           "settings": {
             "photo": "shopify://shop_images/lazerdermatologija.jpg",
             "name": "<p>Lāzer-dermatoloģija</p>",
-            "url": ""
+            "url": "shopify://pages/lazerdermatologija"
           }
         },
-        "service_J8Czxe": {
+        "service_GLzaRM": {
           "type": "service",
           "name": "Podologs",
           "settings": {
             "photo": "shopify://shop_images/podologs.jpg",
             "name": "<p>Podologs</p>",
-            "url": ""
+            "url": "shopify://pages/podologs"
           }
         },
-        "service_xgkqQx": {
+        "service_nMbTUh": {
           "type": "service",
           "name": "Sejas procedūras",
           "settings": {
             "photo": "shopify://shop_images/sejas_proceduras.jpg",
             "name": "<p>Sejas procedūras</p>",
-            "url": ""
+            "url": "shopify://pages/proceduras-sejai"
           }
         },
-        "service_PTnLDR": {
+        "service_GRTpLe": {
           "type": "service",
           "name": "Lāzerepilācija",
           "settings": {
@@ -632,7 +632,7 @@
             "url": ""
           }
         },
-        "service_UhXfgi": {
+        "service_gJctMq": {
           "type": "service",
           "name": "Ķermeņa procedūras",
           "settings": {
@@ -641,27 +641,27 @@
             "url": ""
           }
         },
-        "service_mQd9ie": {
+        "service_PQgdpc": {
           "type": "service",
           "name": "Uztura speciālists",
           "settings": {
             "photo": "shopify://shop_images/uztura_specialists.jpg",
             "name": "<p>Uztura speciālists</p>",
-            "url": ""
+            "url": "shopify://pages/uztura-specialists"
           }
         }
       },
       "block_order": [
-        "service_H4JTT9",
-        "service_f9K83j",
-        "service_q4TViX",
-        "service_J8Czxe",
-        "service_xgkqQx",
-        "service_PTnLDR",
-        "service_UhXfgi",
-        "service_mQd9ie"
+        "service_qGYpKD",
+        "service_cDKehU",
+        "service_yrmgEN",
+        "service_GLzaRM",
+        "service_nMbTUh",
+        "service_GRTpLe",
+        "service_gJctMq",
+        "service_PQgdpc"
       ],
-      "name": "Pakalpojumu karuselis",
+      "name": "Pakalpojumu sadaļa",
       "settings": {
         "heading": "Citi pakalpojumi",
         "carousel_desktop": true
@@ -735,7 +735,7 @@
     "template_dropdown_service_mRxjF3",
     "template_dropdown_service_CzzXek",
     "template_dropdown_service_Akzmca",
-    "template_services_bN8zJK",
+    "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
