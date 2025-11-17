@@ -368,6 +368,136 @@
     },
     "template_dropdown_service_cXwMpw": {
       "type": "template-dropdown-service",
+      "blocks": {
+        "service_BFXzic": {
+          "type": "service",
+          "name": "Visa seja",
+          "settings": {
+            "service_name": "Visa seja",
+            "service_price": "€350"
+          }
+        },
+        "service_iQp68H": {
+          "type": "service",
+          "name": "Acu zona",
+          "settings": {
+            "service_name": "Acu zona",
+            "service_price": "€150"
+          }
+        },
+        "service_X4HBMe": {
+          "type": "service",
+          "name": "Plakstiņu apstrāde",
+          "settings": {
+            "service_name": "Plakstiņu apstrāde",
+            "service_price": "€110"
+          }
+        },
+        "service_3m3wXp": {
+          "type": "service",
+          "name": "Pieres apstrāde",
+          "settings": {
+            "service_name": "Pieres apstrāde",
+            "service_price": "€200"
+          }
+        },
+        "service_qhX3Ud": {
+          "type": "service",
+          "name": "Vaigu zona",
+          "settings": {
+            "service_name": "Vaigu zona",
+            "service_price": "€120"
+          }
+        },
+        "service_pPrxYw": {
+          "type": "service",
+          "name": "Zoda zona",
+          "settings": {
+            "service_name": "Zoda zona",
+            "service_price": "€110"
+          }
+        },
+        "service_qpfhi6": {
+          "type": "service",
+          "name": "Kakla zona",
+          "settings": {
+            "service_name": "Kakla zona",
+            "service_price": "€150"
+          }
+        },
+        "service_wXYfUH": {
+          "type": "service",
+          "name": "Dekoltē zona",
+          "settings": {
+            "service_name": "Dekoltē zona",
+            "service_price": "€170"
+          }
+        },
+        "service_iHCTce": {
+          "type": "service",
+          "name": "Visas sejas apstrāde",
+          "settings": {
+            "service_name": "Visas sejas apstrāde",
+            "service_price": "€350"
+          }
+        },
+        "service_7UwFWC": {
+          "type": "service",
+          "name": "Seja + kakls + dekoltē",
+          "settings": {
+            "service_name": "Seja + kakls + dekoltē",
+            "service_price": "€580"
+          }
+        },
+        "service_fNxCjJ": {
+          "type": "service",
+          "name": "Rētu slīpēšana (1 cm²)",
+          "settings": {
+            "service_name": "Rētu slīpēšana (1 cm²)",
+            "service_price": "€25"
+          }
+        },
+        "service_WjNWDG": {
+          "type": "service",
+          "name": "Striju slīpēšana (5×10 cm²)",
+          "settings": {
+            "service_name": "Striju slīpēšana (5×10 cm²)",
+            "service_price": "€100"
+          }
+        },
+        "service_Q3EJGE": {
+          "type": "service",
+          "name": "Keizargrieziena rēta",
+          "settings": {
+            "service_name": "Keizargrieziena rēta",
+            "service_price": "€130 - €150"
+          }
+        },
+        "service_YnMMkQ": {
+          "type": "service",
+          "name": "Aknes rētu slīpēšana sejai",
+          "settings": {
+            "service_name": "Aknes rētu slīpēšana sejai",
+            "service_price": "€350"
+          }
+        }
+      },
+      "block_order": [
+        "service_BFXzic",
+        "service_iQp68H",
+        "service_X4HBMe",
+        "service_3m3wXp",
+        "service_qhX3Ud",
+        "service_pPrxYw",
+        "service_qpfhi6",
+        "service_wXYfUH",
+        "service_iHCTce",
+        "service_7UwFWC",
+        "service_fNxCjJ",
+        "service_WjNWDG",
+        "service_Q3EJGE",
+        "service_YnMMkQ"
+      ],
       "name": "Frakcionēta ādas atjaunošana ar CO2 lāzeri",
       "settings": {
         "title": "Frakcionēta ādas atjaunošana ar CO2 lāzeri",
