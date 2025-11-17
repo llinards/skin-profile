@@ -167,13 +167,22 @@
             "service_name": "Xela REDERM 2.0% (2 ml)",
             "service_price": "€200.00"
           }
+        },
+        "service_73XJ4V": {
+          "type": "service",
+          "name": "PROFHILO (2 ml)",
+          "settings": {
+            "service_name": "PROFHILO (2 ml)",
+            "service_price": "€250.00"
+          }
         }
       },
       "block_order": [
         "service_yfca67",
         "service_3qRRAc",
         "service_WTbY8x",
-        "service_qcjc9U"
+        "service_qcjc9U",
+        "service_73XJ4V"
       ],
       "name": "Biorevitalizācija",
       "settings": {
