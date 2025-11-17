@@ -111,10 +111,10 @@
       "blocks": {
         "service_4HgD7c": {
           "type": "service",
-          "name": "1 veidojuma noņemšana",
+          "name": "Mezoterapija",
           "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25.00"
+            "service_name": "Mezoterapija",
+            "service_price": "€80.00 – €120.00"
           }
         },
         "service_jzXAD9": {
