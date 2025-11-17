@@ -300,6 +300,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_rHtTmM": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_MHRyYp": {
+          "type": "service",
+          "name": "Teosyal RHA Kiss (0,7 ml)",
+          "settings": {
+            "service_name": "Teosyal RHA Kiss (0,7 ml)",
+            "service_price": "€250"
+          }
+        }
+      },
+      "block_order": [
+        "service_MHRyYp"
+      ],
+      "name": "Lūpu apjoma palielināšana",
+      "settings": {
+        "title": "Lūpu apjoma palielināšana",
+        "content": "<p>Hialuronskābes preparāti piešķir lūpām svaigumu un apjomu, veido kontūru un koriģē asimetriju.</p><p>Efekts ir redzams uzreiz un saglabājas līdz 1 gadam.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -456,6 +482,7 @@
     "template_dropdown_service_kn964N",
     "template_dropdown_service_VeALwy",
     "template_dropdown_service_efLzGb",
+    "template_dropdown_service_rHtTmM",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
