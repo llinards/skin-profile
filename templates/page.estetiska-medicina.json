@@ -397,6 +397,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_CzzXek": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_Gi9hzU": {
+          "type": "service",
+          "name": "Visa seja",
+          "settings": {
+            "service_name": "Visa seja",
+            "service_price": "€180"
+          }
+        }
+      },
+      "block_order": [
+        "service_Gi9hzU"
+      ],
+      "name": "I-PRF injekcijas",
+      "settings": {
+        "title": "I-PRF injekcijas",
+        "content": "<p>Procedūrā izmanto pacienta asins šūnu koncentrātu, lai atjaunotu ādu, ārstētu grumbas, rētas un problemātisku ādu. Palīdz arī matu augšanas stimulēšanai.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -555,6 +581,7 @@
     "template_dropdown_service_efLzGb",
     "template_dropdown_service_rHtTmM",
     "template_dropdown_service_mRxjF3",
+    "template_dropdown_service_CzzXek",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
