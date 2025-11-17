@@ -415,11 +415,20 @@
             "service_name": "Seja un kakls",
             "service_price": "€220"
           }
+        },
+        "service_YXaTPN": {
+          "type": "service",
+          "name": "Seja, kakls, dekoltē",
+          "settings": {
+            "service_name": "Seja, kakls, dekoltē",
+            "service_price": "€230"
+          }
         }
       },
       "block_order": [
         "service_Gi9hzU",
-        "service_MMDiQT"
+        "service_MMDiQT",
+        "service_YXaTPN"
       ],
       "name": "I-PRF injekcijas",
       "settings": {
