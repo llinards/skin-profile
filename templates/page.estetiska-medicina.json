@@ -423,12 +423,21 @@
             "service_name": "Seja, kakls, dekoltē",
             "service_price": "€230"
           }
+        },
+        "service_jLxdr9": {
+          "type": "service",
+          "name": "Matu atjaunošana",
+          "settings": {
+            "service_name": "Matu atjaunošana",
+            "service_price": "€170"
+          }
         }
       },
       "block_order": [
         "service_Gi9hzU",
         "service_MMDiQT",
-        "service_YXaTPN"
+        "service_YXaTPN",
+        "service_jLxdr9"
       ],
       "name": "I-PRF injekcijas",
       "settings": {
