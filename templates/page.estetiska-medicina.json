@@ -154,10 +154,10 @@
         },
         "service_WTbY8x": {
           "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
+          "name": "Xela REDERM 1.8% (2 ml)",
           "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70.00"
+            "service_name": "Xela REDERM 1.8% (2 ml)",
+            "service_price": "€180.00"
           }
         }
       },
