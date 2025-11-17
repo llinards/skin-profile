@@ -70,7 +70,7 @@
           "type": "service",
           "name": "Sejas ādas dziļā tīrīšana",
           "settings": {
-            "service_name": "Atkārtota konSejas ādas dziļā tīrīšanasultācija 30 dienu laikā",
+            "service_name": "Sejas ādas dziļā tīrīšana",
             "service_price": "€60"
           }
         }
