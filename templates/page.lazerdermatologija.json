@@ -606,6 +606,77 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_yJFxLA": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_AN9Pkj": {
+          "type": "service",
+          "name": "Laukums 1×1 kv.cm.",
+          "settings": {
+            "service_name": "Laukums 1×1 kv.cm.",
+            "service_price": "€40"
+          }
+        },
+        "service_ynyN39": {
+          "type": "service",
+          "name": "Laukums 2×2 kv.cm.",
+          "settings": {
+            "service_name": "Laukums 2×2 kv.cm.",
+            "service_price": "€45"
+          }
+        },
+        "service_nrNLhp": {
+          "type": "service",
+          "name": "Laukums 5×5 kv.cm.",
+          "settings": {
+            "service_name": "Laukums 5×5 kv.cm.",
+            "service_price": "€140"
+          }
+        },
+        "service_WHmhQE": {
+          "type": "service",
+          "name": "Laukums 10×10 kv.cm.",
+          "settings": {
+            "service_name": "Laukums 10×10 kv.cm.",
+            "service_price": "€240"
+          }
+        },
+        "service_phqYHA": {
+          "type": "service",
+          "name": "Laukums 20×20 kv.cm.",
+          "settings": {
+            "service_name": "Laukums 20×20 kv.cm.",
+            "service_price": "€320"
+          }
+        },
+        "service_RURq4k": {
+          "type": "service",
+          "name": "Permanentā grima dzēšana no",
+          "settings": {
+            "service_name": "Permanentā grima dzēšana no",
+            "service_price": "€50"
+          }
+        }
+      },
+      "block_order": [
+        "service_AN9Pkj",
+        "service_ynyN39",
+        "service_nrNLhp",
+        "service_WHmhQE",
+        "service_phqYHA",
+        "service_RURq4k"
+      ],
+      "name": "Tetovējumu likvidēšana ar ALMA QS KTP (532nm)",
+      "settings": {
+        "title": "Tetovējumu likvidēšana ar ALMA QS KTP (532nm)",
+        "content": "<p>Ar Alma QS KTP lāzera palīdzību iespējams likvidēt melnas, zilas, pelēkas, sarkanas un oranžas krāsas pigmentus, kas tiek izmantoti permanentajā grimmā un tetovējumos.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -762,6 +833,7 @@
     "template_dropdown_service_cXwMpw",
     "template_dropdown_service_eaMTaQ",
     "template_dropdown_service_hc8Bcp",
+    "template_dropdown_service_yJFxLA",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
