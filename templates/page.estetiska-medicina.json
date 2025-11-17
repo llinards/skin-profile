@@ -431,13 +431,22 @@
             "service_name": "Matu atjaunošana",
             "service_price": "€170"
           }
+        },
+        "service_zqmqT9": {
+          "type": "service",
+          "name": "Mazām zonām",
+          "settings": {
+            "service_name": "Mazām zonām",
+            "service_price": "€50 – €100"
+          }
         }
       },
       "block_order": [
         "service_Gi9hzU",
         "service_MMDiQT",
         "service_YXaTPN",
-        "service_jLxdr9"
+        "service_jLxdr9",
+        "service_zqmqT9"
       ],
       "name": "I-PRF injekcijas",
       "settings": {
