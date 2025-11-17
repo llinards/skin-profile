@@ -1,0 +1,328 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "template_header_carousel_tpn6mQ": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_y3Kxa9": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 1",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-1.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 1"
+          }
+        },
+        "image_rAEJjb": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 2",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 2"
+          }
+        },
+        "image_7r36tB": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 3",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 3"
+          }
+        }
+      },
+      "block_order": [
+        "image_y3Kxa9",
+        "image_rAEJjb",
+        "image_7r36tB"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Dermatoloģija",
+        "subtext": "<p>Āda ir mūsu vislielākais orgāns un dzīves laikā tā saskaras ar dažādām problēmām, kuras mums palīdz atrisināt dermatologs. Ja Jums ir radušās jebkādas izmaiņas ādas stāvoklī – nieze, izsitumi, iekaisumi, jaunveidojumi, izaugumi, nekavējoties vēršaties pie mums!</p>",
+        "spacing": false
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_text_section_JPJC6T": {
+      "type": "template-text-only",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Jums palīdzēs pieredzējuši ārsti dermatologi",
+        "text": "<ul><li>Mūsu ārsti sniegs profesionālas konsultācijas par ādas slimībām un nodrošinās ārstēšanu visai ģimenei.</li><li>Ārstu komanda izstrādās individuāli pielāgotu procedūru kompleksu, piemērotu tieši Jūsu vajadzībām.</li><li>Pielietojot jaunākās tehnoloģijas, ārsti palīdzēs risināt vai mazināt dažādus ādas stāvokļus.</li></ul>"
+      }
+    },
+    "template_services_section_J6AXyp": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_kGdXVr": {
+          "type": "service",
+          "name": "Atkārtota konsultācija 30 dienu laikā",
+          "settings": {
+            "service_name": "Atkārtota konsultācija 30 dienu laikā",
+            "service_price": "€45.00"
+          }
+        }
+      },
+      "block_order": [
+        "service_kGdXVr"
+      ],
+      "name": "Pirmreizējā Konsultācija",
+      "settings": {
+        "title": "Pirmreizējā Konsultācija",
+        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "service_disclaimer": "",
+        "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_services_section_qjdJcX": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_4HgD7c": {
+          "type": "service",
+          "name": "1 veidojuma noņemšana",
+          "settings": {
+            "service_name": "1 veidojuma noņemšana",
+            "service_price": "€25"
+          }
+        },
+        "service_jzXAD9": {
+          "type": "service",
+          "name": "Multiplu veidojumu noņemšana",
+          "settings": {
+            "service_name": "Multiplu veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
+            "service_price": "no €35 – €100"
+          }
+        }
+      },
+      "block_order": [
+        "service_4HgD7c",
+        "service_jzXAD9"
+      ],
+      "name": "Kriodestrukcija ar Šķidro Slāpekli",
+      "settings": {
+        "title": "Kriodestrukcija ar Šķidro Slāpekli",
+        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p>",
+        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_services_section_kPR4ih": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_yfca67": {
+          "type": "service",
+          "name": "1 veidojuma apskate",
+          "settings": {
+            "service_name": "1 veidojuma apskate",
+            "service_price": "€20"
+          }
+        },
+        "service_3qRRAc": {
+          "type": "service",
+          "name": "Katrs nākamais veidojums",
+          "settings": {
+            "service_name": "Katrs nākamais veidojums",
+            "service_price": "+€10"
+          }
+        },
+        "service_WTbY8x": {
+          "type": "service",
+          "name": "Visa ķermeņa veidojumu apskate",
+          "settings": {
+            "service_name": "Visa ķermeņa veidojumu apskate",
+            "service_price": "€70"
+          }
+        }
+      },
+      "block_order": [
+        "service_yfca67",
+        "service_3qRRAc",
+        "service_WTbY8x"
+      ],
+      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
+      "settings": {
+        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
+        "content": "<p>Dermatoskopija ir svarīgākā izmeklēšanas metode dermatoloģijā. Tulkojumā no latīņu valodas:derma – āda, skopos – skatīties. Tas nozīmē apskatīt, izpētīt ādu.</p><p>Izmeklējumu veic ar nelielu, lupai līdzīgu ierīci. Tai ir speciāls apgaismojums un 20 reižu palielinājums, kas ļauj ātri pārbaudīt visus ādas veidojumus. Ja ir pilnīgi skaidrs, kas tas par veidojumu, piemēram, papiloma, fibroma u.c., papildus izmeklēšana nav vajadzīga.</p>",
+        "service_disclaimer": "*Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": true
+      }
+    },
+    "template_services_bN8zJK": {
+      "type": "template-services-carousel-grid",
+      "blocks": {
+        "service_H4JTT9": {
+          "type": "service",
+          "name": "Estētiskā medicīna",
+          "settings": {
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "<p>Estētiskā medicīna</p>",
+            "url": ""
+          }
+        },
+        "service_f9K83j": {
+          "type": "service",
+          "name": "Dermatoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "<p>Dermatoloģija</p>",
+            "url": "shopify://pages/dermatologija"
+          }
+        },
+        "service_q4TViX": {
+          "type": "service",
+          "name": "Lāzerdermatoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "<p>Lāzer-dermatoloģija</p>",
+            "url": ""
+          }
+        },
+        "service_J8Czxe": {
+          "type": "service",
+          "name": "Podologs",
+          "settings": {
+            "photo": "shopify://shop_images/podologs.jpg",
+            "name": "<p>Podologs</p>",
+            "url": ""
+          }
+        },
+        "service_xgkqQx": {
+          "type": "service",
+          "name": "Sejas procedūras",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "<p>Sejas procedūras</p>",
+            "url": ""
+          }
+        },
+        "service_PTnLDR": {
+          "type": "service",
+          "name": "Lāzerepilācija",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "<p>Lāzerepilācija</p>",
+            "url": ""
+          }
+        },
+        "service_UhXfgi": {
+          "type": "service",
+          "name": "Ķermeņa procedūras",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "<p>Ķermeņa procedūras</p>",
+            "url": ""
+          }
+        },
+        "service_mQd9ie": {
+          "type": "service",
+          "name": "Uztura speciālists",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "<p>Uztura speciālists</p>",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_H4JTT9",
+        "service_f9K83j",
+        "service_q4TViX",
+        "service_J8Czxe",
+        "service_xgkqQx",
+        "service_PTnLDR",
+        "service_UhXfgi",
+        "service_mQd9ie"
+      ],
+      "name": "Pakalpojumu sadaļa",
+      "settings": {
+        "heading": "Citi pakalpojumi",
+        "carousel_desktop": true
+      }
+    },
+    "template_virtual_consultation_pX36xq": {
+      "type": "template-virtual-consultation",
+      "name": "Virtuālā konsutlācija",
+      "settings": {}
+    },
+    "template_contact_us_BzVhrB": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_MQRNxQ": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_QjQyxX": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_UWwgHq": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_jFjkaW": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_MQRNxQ",
+        "button_QjQyxX",
+        "button_UWwgHq",
+        "button_jFjkaW"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
+    }
+  },
+  "order": [
+    "template_header_carousel_tpn6mQ",
+    "main",
+    "template_text_section_JPJC6T",
+    "template_services_section_J6AXyp",
+    "template_services_section_qjdJcX",
+    "template_services_section_kPR4ih",
+    "template_services_bN8zJK",
+    "template_virtual_consultation_pX36xq",
+    "template_contact_us_BzVhrB"
+  ]
+}
