@@ -131,7 +131,7 @@
           "name": "13. UZŅĒMUMA REKVIZĪTI",
           "settings": {
             "title": "13. UZŅĒMUMA REKVIZĪTI",
-            "text": "<p>Nosaukums: SIA „PIECAS DIENAS”</p><p>Juridiskā adrese: Siguldas nov., Sigulda, Krišjāņa Barona iela 4 – 24, LV-2150</p><p>Reģistrācijas numurs: 44103127212</p><p>Banka: Swedbank LV56HABA0551048992836</p><p>E-veikala adrese: <a href=\"https://www.skinprofile.lv\" title=\"https://www.skinprofile.lv\">www.skinprofile.lv</a></p><p>Tālrunis: +371 26444554</p><p>E-pasta adrese: toskinprofile@gmail.com</p>",
+            "text": "<p>Nosaukums: SIA „PIECAS DIENAS”</p><p>Juridiskā adrese: Siguldas nov., Sigulda, Krišjāņa Barona iela 4 – 24, LV-2150</p><p>Reģistrācijas numurs: 44103127212</p><p>Banka: Swedbank LV56HABA0551048992836</p><p>E-veikala adrese: <a href=\"https://www.skinprofile.lv\" title=\"https://www.skinprofile.lv\">www.skinprofile.lv</a></p><p>Tālrunis: <a href=\"tel:+37126444554\" target=\"_blank\" title=\"tel:+37126444554\">+371 26444554</a></p><p>E-pasta adrese: <a href=\"mailto:toskinprofile@gmail.com\" target=\"_blank\" title=\"mailto:toskinprofile@gmail.com\">toskinprofile@gmail.com</a></p>",
             "text_html": ""
           }
         }
