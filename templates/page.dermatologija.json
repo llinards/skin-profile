@@ -204,6 +204,41 @@
         "space_bottom": true
       }
     },
+    "template_dropdown_service_jncnJR": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_jxXgAc": {
+          "type": "service",
+          "name": "Ādas punch biopsija lokālā anestēzijā",
+          "settings": {
+            "service_name": "Ādas punch biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
+            "service_price": "€55"
+          }
+        },
+        "service_dqhzkb": {
+          "type": "service",
+          "name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
+          "settings": {
+            "service_name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
+            "service_price": "€80"
+          }
+        }
+      },
+      "block_order": [
+        "service_jxXgAc",
+        "service_dqhzkb"
+      ],
+      "name": "Ādas histoloģiskā izmeklēšana (biopsija)",
+      "settings": {
+        "title": "Ādas histoloģiskā izmeklēšana (biopsija)",
+        "content": "<p>Ādas audu gabaliņa paņemšana, kam seko histoloģiska izmeklēšana ar mikroskopu. Būtiska daudzu slimību diagnostikai un veidojumu izņemšanas izvērtēšanai.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_bN8zJK": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -358,6 +393,7 @@
     "template_services_section_qjdJcX",
     "template_dropdown_service_7F6BhF",
     "template_services_section_kPR4ih",
+    "template_dropdown_service_jncnJR",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
