@@ -104,7 +104,7 @@
           "name": "10. CITI NOTEIKUMI",
           "settings": {
             "title": "10. CITI NOTEIKUMI",
-            "text": "<p>Atbilde uz jautājumu.</p>",
+            "text": "<p>10.1. Ievadot nepieciešamo informāciju, noformējot pasūtījumu, Pircējs apliecina, ka ir iepazinies un piekrīt, ka viņa sniegtie dati tiek izmantoti, lai Uzņēmums varētu pieņemt Pircēja pasūtījumu un veikt Preču piegādi saskaņā ar Latvijas Republikas normatīvo aktu prasībām. Ievadot informāciju, Pircējs piekrīt, ka tam uz norādīto e-pasta adresi tiks izsūtīti paziņojumi, kas saistīti ar Pircēja pasūtījuma apstrādi, un citi ziņojumi un piedāvājumi no Uzņēmuma.</p><p>10.2. Uzņēmumam ir tiesības jebkurā laikā labot un precizēt lietošanas noteikumus, publicējot attiecīgās izmaiņas e-veikalā. Jebkuras šajos noteikumos veiktās izmaiņas stājas spēkā uzreiz pēc to publicēšanas.</p>",
             "text_html": ""
           }
         },
@@ -113,7 +113,7 @@
           "name": "11. LĪGUMA DARBĪBAS TERMIŅŠ",
           "settings": {
             "title": "11. LĪGUMA DARBĪBAS TERMIŅŠ",
-            "text": "<p>Atbilde uz jautājumu.</p>",
+            "text": "<p>11.1. Līgums stājas spēkā brīdī, kad Pircējs veicis Preces pasūtījumu un ir spēkā līdz brīdim, kamēr Pircējs un Uzņēmums pilnībā izpildījuši savas saistības viens pret otru.</p>",
             "text_html": ""
           }
         },
