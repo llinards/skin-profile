@@ -202,14 +202,14 @@
     }
 }
 
-.faq-link a {
+.sp-link a {
     text-decoration: 2px solid underline;
     transition: all;
     transition-duration: 300ms;
     font-weight: bold;
 }
 
-.faq-link a:hover {
+.sp-link a:hover {
     color: #885642;
 }
 

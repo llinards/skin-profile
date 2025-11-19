@@ -1,18 +1,36 @@
-<div class="container mx-auto transition-hide mb-12">
-  <h1>{{ section.settings.title }}</h1>
-  <div class="space-y-2">{{ section.settings.content }}</div>
+<div class="container mx-auto transition-hide px-4 mb-12">
+  <h1 class="mb-6 md:mb-12">{{ section.settings.title }}</h1>
+
+  {% for block in section.blocks %}
+    {% if block.type == 'text' %}
+      <h2>{{ block.settings.title }}</h2>
+      {% if block.settings.text_html != blank %}
+        {{ block.settings.text_html }}
+      {% else %}
+        {{ block.settings.text }}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  <div class="space-y-6 sp-link">{{ section.settings.content }}</div>
 </div>
 {% schema %}
 {
   "name": "Teksts sadaļa - 1 kolona",
-  "settings": [
-    { "type": "text", "id": "title", "label": "Virsraksts", "default": "Virsraksts" },
-    { "type": "richtext", "id": "content", "label": "Teksts", "default": "<p>Jūsu teksts šeit.</p>" },
+  "settings": [{ "type": "text", "id": "title", "label": "Virsraksts", "default": "Virsraksts" }],
+  "blocks": [
     {
-      "type": "textarea",
-      "id": "text_html",
-      "label": "Teksts (HTML – atļauj apakšpunktus)",
-      "info": "Ievadiet pilnu HTML (piemēram <ul><li>Punkts<ul><li>Apakšpunkts</li></ul></li></ul>)"
+      "type": "text",
+      "name": "Teksts",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Virsraksts", "default": "Biežāk uzdotais jautājums" },
+        { "type": "richtext", "id": "content", "label": "Saturs", "default": "<p>Atbilde uz jautājumu.</p>" },
+        {
+          "type": "textarea",
+          "id": "text_html",
+          "label": "Teksts (HTML – atļauj apakšpunktus)",
+          "info": "Ievadiet pilnu HTML (piemēram <ul><li>Punkts<ul><li>Apakšpunkts</li></ul></li></ul>)"
+        }
+      ]
     }
   ],
   "presets": [{ "name": "Teksts sadaļa - 1 kolona" }]
