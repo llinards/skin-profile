@@ -32,7 +32,7 @@
           "name": "2. NOTEIKUMI PAR PRECES PASŪTĪŠANU",
           "settings": {
             "title": "2. NOTEIKUMI PAR PRECES PASŪTĪŠANU",
-            "text": "<p>Atbilde uz jautājumu.</p>",
+            "text": "<p>2.1. Lai veiktu Preces pirkumu e-veikalā, Pircējam nav nepieciešama reģistrācija.<br/>2.2. Preces pasūtījuma veikšanas kārtība:</p><ul><li>Pircējam jānospiež poga “Add to Cart”.</li><li>Lai pasūtītu izvēlēto Preci, jānospiež poga „Proceed to checkout” Pircēja iepirkuma groza apakšējā kreisajā pusē, kurā tiek attēlota informācija par groza saturu.</li><li>Pircējam jāievada visa nepieciešamā informācija, lai veiktu pirkumu un Uzņēmums varētu nodrošināt Preces piegādi.<br/></li></ul>",
             "text_html": ""
           }
         },
