@@ -2,6 +2,7 @@
 <html lang="{{ request.locale.iso_code }}">
   <head>
     {% # Load and preload the critical CSS %}
+
     {{ 'application.css' | asset_url | stylesheet_tag: preload: true }}
 
     <!-- Carousel -->
@@ -37,6 +38,10 @@
     <style>
       [x-cloak] {
         display: none !important;
+      }
+      :root {
+        --color-brand-primary: {{ shop.brand.colors.primary[0].background }};
+        --color-brand-secondary: {{ shop.brand.colors.secondary[0].background }}
       }
     </style>
   </head>

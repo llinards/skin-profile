@@ -3,35 +3,35 @@
 
 @layer components {
     .sp-brown {
-        color: #885642;
+        color: var(--color-brand-primary);
     }
 
     .text-sp-brown {
-        color: #885642;
+        color: var(--color-brand-primary);
     }
 
     .hover\:sp-brown:hover {
-        color: #885642 !important;
+        color: var(--color-brand-primary) !important;
     }
 
     .fill-sp-brown {
-        fill: #885642;
+        fill: var(--color-brand-primary);
     }
 
     .border-sp-brown {
-        border-color: #885642;
+        border-color: var(--color-brand-primary);
     }
 
     .hover\:border-sp-brown:hover {
-        border-color: #885642 !important;
+        border-color: var(--color-brand-primary) !important;
     }
 
     .border-sp-light-brown {
-        border-color: #E6DAC8;
+        border-color: var(--color-brand-secondary);
     }
 
     .hover\:fill-sp-brown:hover {
-        fill: #885642 !important;
+        fill: var(--color-brand-primary) !important;
     }
 
     .sp-dark {
@@ -43,27 +43,27 @@
     }
 
     .bg-sp-brown {
-        background-color: #885642;
+        background-color: var(--color-brand-primary);
     }
 
     .bg-sp-light-brown {
-        background-color: #E6DAC8;
+        background-color: var(--color-brand-secondary);
     }
 
     .hover\:bg-sp-light-brown:hover {
-        background-color: #E6DAC8 !important;
+        background-color: var(--color-brand-secondary) !important;
     }
 
     .hover\:fill-sp-light-brown:hover {
-        background-color: #E6DAC8 !important;
+        background-color: var(--color-brand-secondary) !important;
     }
 
     .bg-sp-light-brown-opacity {
-        background-color: #E6DAC84D;
+        background-color: var(--color-brand-secondary)4D;
     }
 
     .hover\:bg-sp-brown:hover {
-        background-color: #885642 !important;
+        background-color: var(--color-brand-primary) !important;
     }
 
     .bg-sp-brown-30 {
@@ -71,7 +71,7 @@
     }
 
     .group:hover .group-hover\:bg-sp-brown {
-        background-color: #885642 !important;
+        background-color: var(--color-brand-primary) !important;
     }
 
     .group:hover .group-hover\:text-white {
@@ -83,15 +83,15 @@
     }
 
     .group:focus .group-focus\:bg-sp-brown {
-        background-color: #885642 !important;
+        background-color: var(--color-brand-primary) !important;
     }
 
     .group:active .group-active\:bg-sp-brown {
-        background-color: #885642 !important;
+        background-color: var(--color-brand-primary) !important;
     }
 
     .group:hover .group-hover\:bg-sp-light-brown {
-        background-color: #E6DAC8 !important;
+        background-color: var(--color-brand-secondary) !important;
     }
 
     .text-2xs {
@@ -105,11 +105,11 @@
 @layer base {
 
     :root {
-            --tw-ring-color: #885642;
+            --tw-ring-color: var(--color-brand-primary);
         }
     
     :focus-visible {
-        outline: 2px solid #885642;
+        outline: 2px solid var(--color-brand-primary);
         outline-offset: 2px;
     }
 
@@ -172,6 +172,7 @@
     }
 
     body {
+        color: #14160D;
         @apply text-base md:text-lg;
     }
 
@@ -210,7 +211,7 @@
 }
 
 .sp-link a:hover {
-    color: #885642;
+    color: var(--color-brand-primary);
 }
 
 .sp-bullet-point li {
@@ -235,7 +236,7 @@
 #services-carousel .f-carousel__dot,
 #category-carousel .f-carousel__dot,
 #product-recommendation-carousel .f-carousel__dot {
-    color: #885642 !important;
+    color: var(--color-brand-primary) !important;
 }
 
 .f-carousel__dot::after {
