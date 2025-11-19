@@ -41,7 +41,7 @@
           "name": "3. PASŪTĪJUMA APMAKSAS NOTEIKUMI",
           "settings": {
             "title": "3. PASŪTĪJUMA APMAKSAS NOTEIKUMI",
-            "text": "<p>Atbilde uz jautājumu.</p>",
+            "text": "<p>3.1. Tiešsaistē norēķinoties ar karti.</p><p>Apmaksa notiek pasūtījuma noformēšanas laikā, ievadot norēķinu kartes numuru.</p><p>Apmaksu ir iespējams veikt ar VISA un MasterCard kredītkartēm un debetkartēm.</p>",
             "text_html": ""
           }
         },
