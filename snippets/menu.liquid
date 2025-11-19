@@ -17,7 +17,7 @@
   <div>
     <a href="{{ routes.root_url }}">
       <img
-        src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+        src="{{ shop.brand.logo | image_url }}"
         alt="{{ shop.name }} logo"
         height="1024"
         width="1024"
@@ -58,7 +58,7 @@
     <div class="flex items-center justify-center z-2 w-5/7">
       <a href="{{ routes.root_url }}">
         <img
-          src="{{ "skin-profile-logo-white.svg" | asset_url }}"
+          src="{{ shop.brand.logo | image_url }}"
           alt="{{ shop.name }} logo"
           height="1024"
           width="1024"
