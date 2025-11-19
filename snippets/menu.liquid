@@ -36,6 +36,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    {% render 'menu-language' %}
     {% render 'cart-counter' %}
   </div>
 </div>
@@ -76,18 +77,6 @@
     {% else %}
       {% render 'cart-counter' %}
     {% endif %}
-    {% comment %}
-      <div>
-        {% for locale in localization.available_languages %}
-          <a
-            href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
-            class="language-link {% if locale.iso_code == localization.language.iso_code %}active{% endif %}"
-          >
-            {{ locale.endonym_name }}
-          </a>
-        {% endfor %}
-      </div>
-    {% endcomment %}
   </div>
   <div
     id="mobile-menu"
@@ -112,6 +101,7 @@
           {% render 'menu-link', link: link %}
         {% endif %}
       {% endfor %}
+      {% render 'menu-language', mobile: true %}
     </div>
   </div>
 </div>

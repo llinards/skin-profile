@@ -1,0 +1,107 @@
+{%- assign languages = localization.available_languages -%}
+{%- if languages.size > 1 -%}
+  {%- assign current = localization.language.iso_code -%}
+  {%- assign is_mobile = mobile | default: false -%}
+
+  {% if is_mobile %}
+    <div
+      x-data="
+        {
+          open: false,
+          h: 0,
+          toggle() {
+            this.open = !this.open;
+            this.$nextTick(() => { this.h = this.open ? (this.$refs.panel?.scrollHeight || 0) : 0; });
+          }
+        }
+      "
+      class="w-full max-w-sm mx-auto flex flex-col items-center"
+    >
+      <button
+        type="button"
+        @click="toggle()"
+        class="w-full inline-flex items-center justify-center gap-2 py-2 text-center"
+        :aria-expanded="open.toString()"
+        aria-haspopup="true"
+      >
+        <span class="truncate">
+          {{ localization.language.endonym_name }}
+        </span>
+        <svg
+          class="h-5 w-5 transition-transform duration-200"
+          :class="open ? 'rotate-180' : ''"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div
+        x-ref="panel"
+        :style="`max-height:${h}px`"
+        class="w-full overflow-hidden transition-[max-height] duration-300 ease-out"
+        role="region"
+        :aria-hidden="(!open).toString()"
+      >
+        <ul class="mt-2 space-y-2 list-none text-center bg-sp-light-brown rounded-md py-2">
+          {% for locale in languages %}
+            <li>
+              <a
+                href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
+                class="inline-block px-3 py-2 rounded hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+              >
+                {{ locale.endonym_name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% else %}
+    <div
+      x-data="
+        {
+          isOpen: false,
+          t: null,
+          enter() { clearTimeout(this.t); this.isOpen = true },
+          leave() { this.t = setTimeout(()=> this.isOpen = false,120) }
+        }
+      "
+      @mouseenter="enter()"
+      @mouseleave="leave()"
+      class="relative"
+    >
+      <button
+        type="button"
+        class="flex lg:text-white text-base xl:text-lg items-center py-2 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap"
+        :aria-expanded="isOpen.toString()"
+        aria-haspopup="true"
+      >
+        {{ localization.language.endonym_name }}
+        {% render 'icon-arrow-down' %}
+      </button>
+      <div
+        x-show="isOpen"
+        x-transition.opacity.duration.150ms
+        class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50"
+      >
+        <div class="w-40 rounded-md bg-white shadow-xl ring-1 ring-black/5 overflow-hidden">
+          <ul class="py-2 text-center list-none">
+            {% for locale in languages %}
+              <li>
+                <a
+                  href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
+                  class=" block px-3 py-2 text-sm hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+                >
+                  {{ locale.endonym_name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{%- endif -%}
