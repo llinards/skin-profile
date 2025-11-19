@@ -869,10 +869,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -882,10 +878,6 @@
     border-top-width: 2px;
   }
   .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
-  .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
@@ -1297,30 +1289,6 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
-    }
-  }
-  .before\:absolute {
-    &::before {
-      content: var(--tw-content);
-      position: absolute;
-    }
-  }
-  .before\:top-1\.5 {
-    &::before {
-      content: var(--tw-content);
-      top: calc(var(--spacing) * 1.5);
-    }
-  }
-  .before\:left-0 {
-    &::before {
-      content: var(--tw-content);
-      left: calc(var(--spacing) * 0);
-    }
-  }
-  .before\:content-\[\'✓\'\] {
-    &::before {
-      --tw-content: '✓';
-      content: var(--tw-content);
     }
   }
   .after\:content-\[\'\,\\00a0\'\] {
@@ -2002,11 +1970,6 @@
   .md\:pb-12 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:pl-8 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 8);
     }
   }
   .md\:text-left {
