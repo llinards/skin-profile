@@ -1,0 +1,20 @@
+<div class="container mx-auto transition-hide mb-12">
+  <h1>{{ section.settings.title }}</h1>
+  <div class="space-y-2">{{ section.settings.content }}</div>
+</div>
+{% schema %}
+{
+  "name": "Teksts sadaļa -1 kolona",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Virsraksts", "default": "Virsraksts" },
+    { "type": "richtext", "id": "content", "label": "Teksts", "default": "Jūsu teksts šeit." },
+    {
+      "type": "textarea",
+      "id": "text_html",
+      "label": "Teksts (HTML – atļauj apakšpunktus)",
+      "info": "Ievadiet pilnu HTML (piemēram <ul><li>Punkts<ul><li>Apakšpunkts</li></ul></li></ul>)"
+    }
+  ],
+  "presets": [{ "name": "Teksta sadaļa" }]
+}
+{% endschema %}
