@@ -134,6 +134,32 @@
         "space_bottom": false
       }
     },
+    "template_dropdown_service_7F6BhF": {
+      "type": "template-dropdown-service",
+      "blocks": {
+        "service_YWF9dz": {
+          "type": "service",
+          "name": "Analīzes uz sēnīti (materiāla paņemšana)",
+          "settings": {
+            "service_name": "Analīzes uz sēnīti (materiāla paņemšana)",
+            "service_price": "€10"
+          }
+        }
+      },
+      "block_order": [
+        "service_YWF9dz"
+      ],
+      "name": "Analīzes uz sēnīti (materiāla paņemšana)",
+      "settings": {
+        "title": "Analīzes uz sēnīti (materiāla paņemšana)",
+        "content": "<p>Dermatologs novērtē ādas/nagu stāvokli un nozīmē nepieciešamās analīzes, kas apstiprina vai noliedz sēnīšu infekcijas klātbūtni un precizē sēnīšu veidu.</p><p>Atkarībā no rezultātiem dermatologs sastāda ārstēšanas plānu, nosaka vajadzīgo lāzerprocedūru skaitu un, ja nepieciešams, nozīmē medikamentus.</p>",
+        "service_disclaimer": "",
+        "service_url": "",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_section_kPR4ih": {
       "type": "template-dropdown-service",
       "blocks": {
@@ -330,6 +356,7 @@
     "template_text_section_JPJC6T",
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
+    "template_dropdown_service_7F6BhF",
     "template_services_section_kPR4ih",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
