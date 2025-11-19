@@ -74,11 +74,8 @@
           {{ section.settings.content }}
         </div>
         <div class="w-full md:w-auto md:ml-auto">
-          {% render 'btn-brown',
-            text: section.settings.service_url_cta,
-            url: section.settings.service_url,
-            full_width: true
-          %}
+          {%- assign service_url_fallback = section.settings.service_url | default: '/pages/pieteikuma-anketa' -%}
+          {% render 'btn-brown', text: section.settings.service_url_cta, url: service_url_fallback, full_width: true %}
         </div>
       </div>
 
@@ -97,13 +94,18 @@
   "settings": [
     { "type": "text", "id": "title", "label": "Virsraksts", "default": "Noklikšķiniet, lai atvērtu" },
     { "type": "richtext", "id": "content", "label": "Saturs", "default": "<p>Jūsu teksts šeit.</p>" },
+
     {
       "type": "text",
       "id": "service_disclaimer",
       "label": "Atruna zem virsraksta",
       "info": "Parādās zem pakalpojumu virsrakstiem."
     },
-    { "type": "url", "id": "service_url", "label": "Pakalpojuma saite (URL)", "default": "/pages/pieteikuma-anketa" },
+    {
+      "type": "url",
+      "id": "service_url",
+      "label": "Pakalpojuma saite (URL)"
+    },
     { "type": "text", "id": "service_url_cta", "label": "CTA Poga", "default": "Pieteikt" },
     { "type": "checkbox", "id": "open_by_default", "label": "Atvērt pēc noklusējuma", "default": false },
     {
