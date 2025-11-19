@@ -10,7 +10,39 @@
   <div class="md:w-1/2">
     <div class="mb-6">
       <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
-      <span class="text-3xl md:text-4xl header-font block mb-4">{{ product.price | money }}</span>
+
+      {%- assign variant = product.selected_or_first_available_variant -%}
+
+      {% if variant.compare_at_price > variant.price %}
+        {%- comment -%} Product is on sale {%- endcomment -%}
+        <div class="mb-4 space-y-2">
+          <div class="flex items-baseline gap-3 flex-wrap">
+            <span class="text-3xl md:text-4xl header-font font-semibold text-sp-brown">
+              {{ variant.price | money }}
+            </span>
+            <span class="text-xl md:text-2xl line-through opacity-60">
+              {{ variant.compare_at_price | money }}
+            </span>
+            {%- assign discount_pct = variant.compare_at_price
+              | minus: variant.price
+              | times: 100.0
+              | divided_by: variant.compare_at_price
+              | round
+            -%}
+            <span class="inline-flex items-center text-sm font-bold tracking-widest uppercase bg-sp-brown text-white px-3 py-1 rounded-xl">
+              -{{ discount_pct }}%
+            </span>
+          </div>
+          {%- assign saved = variant.compare_at_price | minus: variant.price -%}
+          <p class="text-sm opacity-75">
+            Ietaupījums: <span class="font-semibold">{{ saved | money }}</span>
+          </p>
+        </div>
+      {% else %}
+        {%- comment -%} Regular price {%- endcomment -%}
+        <span class="text-3xl md:text-4xl header-font block mb-4">{{ variant.price | money }}</span>
+      {% endif %}
+
       <div class="md:hidden">
         {% for image in product.images %}
           {% render 'image', class: 'product-image', image: image %}

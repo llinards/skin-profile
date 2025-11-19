@@ -1,4 +1,4 @@
-<div class="transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
+<div class="transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer relative">
   {% if product.featured_image %}
     {% render 'image',
       image: product.featured_image,
@@ -8,12 +8,37 @@
       class: 'h-full object-bottom object-cover'
     %}
   {% endif %}
+
+  {%- comment -%} Discount badge {%- endcomment -%}
+  {%- assign variant = product.selected_or_first_available_variant -%}
+  {%- if variant.compare_at_price > variant.price -%}
+    {%- assign discount_pct = variant.compare_at_price
+      | minus: variant.price
+      | times: 100.0
+      | divided_by: variant.compare_at_price
+      | round
+    -%}
+    <div class="absolute top-2 right-2 bg-sp-brown text-white text-xs font-bold tracking-wider uppercase px-2 py-1 rounded-lg shadow-md">
+      -{{ discount_pct }}%
+    </div>
+  {%- endif -%}
 </div>
+
 <div class="flex flex-col space-y-3 items-center justify-center">
   <h3 class="body-font text-center text-xs sm:text-sm xl:text-base xl:px-6 font-bold">
     {{ product.title | escape | link_to: product.url }}
   </h3>
-  <p class="text-xs sm:text-sm">{{ product.price | money }}</p>
+
+  {%- comment -%} Price with discount {%- endcomment -%}
+  {%- if variant.compare_at_price > variant.price -%}
+    <div class="flex items-baseline gap-2 flex-wrap justify-center">
+      <p class="text-xs sm:text-sm font-semibold text-sp-brown">{{ variant.price | money }}</p>
+      <p class="text-xs line-through opacity-60">{{ variant.compare_at_price | money }}</p>
+    </div>
+  {%- else -%}
+    <p class="text-xs sm:text-sm">{{ product.price | money }}</p>
+  {%- endif -%}
+
   {% form 'product', product, class: 'w-full' %}
     {% if product.has_only_default_variant %}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
