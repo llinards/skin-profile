@@ -67,6 +67,14 @@
     "template_services_section_J6AXyp": {
       "type": "template-dropdown-service",
       "blocks": {
+        "service_FLCgdG": {
+          "type": "service",
+          "name": "Pirmreizējā Konsultācija",
+          "settings": {
+            "service_name": "Pirmreizējā Konsultācija",
+            "service_price": "€55"
+          }
+        },
         "service_kGdXVr": {
           "type": "service",
           "name": "Atkārtota konsultācija 30 dienu laikā",
@@ -77,12 +85,13 @@
         }
       },
       "block_order": [
+        "service_FLCgdG",
         "service_kGdXVr"
       ],
       "name": "Pirmreizējā Konsultācija",
       "settings": {
         "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā nodrošināsim anamnēzes ievākšanu un pacientam traucējošo ādas problēmu novēršanu.  Klīnikas pieredzejušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko to ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
+        "content": "<p>Konsultācijas laikā tiek nodrošināta anamnēzes ievākšana un pacientam traucējošo ādas problēmu novēršana. </p><p>Klīnikas pieredzējušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
         "service_disclaimer": "",
         "service_url": "shopify://pages/pieteikuma-anketa",
         "service_url_cta": "Pieteikt",
