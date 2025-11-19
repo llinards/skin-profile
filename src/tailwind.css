@@ -213,6 +213,10 @@
     color: #885642;
 }
 
+.sp-bullet-point li {
+    padding-left: 1.5rem;
+}
+
 .home-introduction {
     min-height: 100vh;
     min-height: -webkit-fill-available;

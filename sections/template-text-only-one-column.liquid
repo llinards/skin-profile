@@ -4,7 +4,7 @@
   {% for block in section.blocks %}
     {% if block.type == 'text' %}
       <h2 class="mb-6">{{ block.settings.title }}</h2>
-      <div class="space-y-6 mb-6 sp-link">
+      <div class="space-y-6 mb-6 sp-link sp-bullet-point">
         {% if block.settings.text_html != blank %}
           {{ block.settings.text_html }}
         {% else %}
