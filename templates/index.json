@@ -320,7 +320,7 @@
       }
     },
     "text_section_BfGNQG": {
-      "type": "template-text-2-columns",
+      "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
