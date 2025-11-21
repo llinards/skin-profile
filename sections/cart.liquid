@@ -149,7 +149,7 @@
 
             {%- if total_savings > 0 -%}
               <div class="flex justify-between border-b border-sp-brown py-4 text-sp-brown">
-                <p>Ietaupījums:</p>
+                <p>Atlaide:</p>
                 <p class="font-semibold">-{{ total_savings | money }}</p>
               </div>
             {%- endif -%}
@@ -189,8 +189,8 @@
     moneyFormat: {{ shop.money_format | json }},
     locale: {{ shop.locale | default: 'lv' | json }},
     currency: {{ shop.currency | json }},
-    freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }},
-    flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }},
+    {% comment %} freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }}, {% endcomment %}
+    {% comment %} flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }}, {% endcomment %}
     initialCartTotalCents: {{ cart.total_price }}
   };
 </script>
@@ -199,25 +199,25 @@
 {% schema %}
 {
   "name": "t:general.cart",
-  "settings": [
-    {
-      "type": "text",
-      "id": "free_shipping_threshold",
-      "label": "Free shipping from (e.g. 50.00)",
-      "default": "0"
-    },
-    {
-      "type": "text",
-      "id": "flat_shipping",
-      "label": "Flat delivery fee (e.g. 2.99)",
-      "default": "0"
-    }
-  ]
+  "settings": []
 }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+{% comment %}
+  Insert the below settings if needed.
+  {
+   "type": "text",
+   "id": "free_shipping_threshold",
+   "label": "Free shipping from (e.g. 50.00)",
+   "default": "0"
+   },
+   {
+     "type": "text",
+     "id": "flat_shipping",
+     "label": "Flat delivery fee (e.g. 2.99)",
+     "default": "0"
+   }
+{% endcomment %}
 
 <template id="empty-cart-template">
   <div class="h-60 md:h-120 mx-auto flex items-center justify-center">

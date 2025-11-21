@@ -1,5 +1,5 @@
 (function () {
-    if (window.__cartAjaxInit) return; // prevent double init
+    if (window.__cartAjaxInit) return;
     window.__cartAjaxInit = true;
 
     function formatMoney(cents) {
@@ -28,10 +28,10 @@
         const el = container.querySelector('[data-error]');
         if (!el) return;
         el.textContent = msg;
-        el.classList.remove('opacity-0'); // fade in
+        el.classList.remove('opacity-0');
         clearTimeout(el._to);
         el._to = setTimeout(() => {
-            el.classList.add('opacity-0');  // fade out
+            el.classList.add('opacity-0');
         }, 3500);
     }
 
@@ -43,31 +43,31 @@
             const loader = container.querySelector('[data-loading]');
             if (loader) loader.classList.toggle('hidden', !isLoading);
         }
-        // Dim and block interactions on the row while loading
         container.classList.toggle('opacity-40', isLoading);
         container.classList.toggle('pointer-events-none', isLoading);
     }
 
     function updateSummary(totalCents) {
-        const cfg = window.themeCart || {};
-        const threshold = Number(cfg.freeShippingThresholdCents || 0);
-        const flat = Number(cfg.flatShippingCents || 0);
-
+        // Shipping logic commented out
+        // const cfg = window.themeCart || {};
+        // const threshold = Number(cfg.freeShippingThresholdCents || 0);
+        // const flat = Number(cfg.flatShippingCents || 0);
         const subtotalEl = document.querySelector('[data-subtotal-amount]');
-        const shippingEl = document.querySelector('[data-shipping-amount]');
+        // const shippingEl = document.querySelector('[data-shipping-amount]');
         const grandEl = document.querySelector('[data-grandtotal-amount]');
 
-        const shippingCents = totalCents >= threshold ? 0 : flat;
-        const grandCents = totalCents + shippingCents;
+        // const shippingCents = totalCents >= threshold ? 0 : flat;
+        // const grandCents = totalCents + shippingCents;
+        const grandCents = totalCents; // no shipping added
 
         if (subtotalEl) subtotalEl.textContent = formatMoney(totalCents);
-        if (shippingEl) {
-            if (shippingCents === 0) {
-                shippingEl.textContent = shippingEl.dataset.freeLabel || 'Free';
-            } else {
-                shippingEl.textContent = formatMoney(shippingCents);
-            }
-        }
+        // if (shippingEl) {
+        //     if (shippingCents === 0) {
+        //         shippingEl.textContent = shippingEl.dataset.freeLabel || 'Free';
+        //     } else {
+        //         shippingEl.textContent = formatMoney(shippingCents);
+        //     }
+        // }
         if (grandEl) grandEl.textContent = formatMoney(grandCents);
     }
 
@@ -98,7 +98,6 @@
                 container.remove();
             }
 
-            // Update totals and header
             updateSummary(cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
 
@@ -121,15 +120,13 @@
         if (body && tpl) {
             body.replaceWith(tpl.content.cloneNode(true));
         } else {
-            window.location.reload(); // fallback
+            window.location.reload();
         }
     }
 
-    // Quantity +/- (block exceeding stock)
     document.addEventListener('click', function (e) {
         const btn = e.target.closest('.quantity__button');
         if (!btn) return;
-
         e.preventDefault();
 
         const container = btn.closest('.cart-line-item');
@@ -155,11 +152,9 @@
         changeLineQty(key, qty, container);
     });
 
-    // Remove item (no refresh)
     document.addEventListener('click', async function (e) {
         const link = e.target.closest('[data-remove]');
         if (!link) return;
-
         e.preventDefault();
 
         const row = link.closest('.cart-line-item');
@@ -167,7 +162,7 @@
 
         const key = row.dataset.key;
         link.setAttribute('aria-disabled', 'true');
-        setLoading(row, true); // show spinner
+        setLoading(row, true);
 
         try {
             const res = await fetch('/cart/change.js', {
@@ -178,7 +173,6 @@
             if (!res.ok) throw new Error('Remove failed');
 
             const cart = await res.json();
-
             row.remove();
 
             const totalEl = document.querySelector('[data-cart-total]');
@@ -193,13 +187,11 @@
         } catch (err) {
             console.error(err);
         } finally {
-            // row may be removed; safe to try hide
             setLoading(row, false);
             link.removeAttribute('aria-disabled');
         }
     });
 
-    // Initialize disabled state + summary on load
     function initStates() {
         document.querySelectorAll('.cart-line-item').forEach(container => {
             const max = Number(container.dataset.max || '9999');
