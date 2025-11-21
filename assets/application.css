@@ -891,12 +891,6 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
-  .border-\[\#885642\] {
-    border-color: #885642;
-  }
-  .border-\[--color-brand-primary\] {
-    border-color: --color-brand-primary;
-  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }

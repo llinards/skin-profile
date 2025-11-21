@@ -25,7 +25,7 @@
         aria-haspopup="true"
       >
         <span class="truncate">
-          {{ localization.language.endonym_name }}
+          {{ localization.language.endonym_name | capitalize }}
         </span>
         <svg
           class="h-5 w-5 transition-transform duration-200"
@@ -52,7 +52,7 @@
                 href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
                 class="inline-block px-3 py-2 rounded hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
               >
-                {{ locale.endonym_name }}
+                {{ locale.endonym_name | capitalize }}
               </a>
             </li>
           {% endfor %}
@@ -79,7 +79,7 @@
         :aria-expanded="isOpen.toString()"
         aria-haspopup="true"
       >
-        {{ localization.language.endonym_name }}
+        {{ localization.language.endonym_name | capitalize }}
         {% render 'icon-arrow-down' %}
       </button>
       <div
@@ -95,7 +95,7 @@
                   href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
                   class=" block px-3 py-2 text-sm hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
                 >
-                  {{ locale.endonym_name }}
+                  {{ locale.endonym_name | capitalize }}
                 </a>
               </li>
             {% endfor %}
