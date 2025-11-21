@@ -906,12 +906,6 @@
   .border-b-black {
     border-bottom-color: var(--color-black);
   }
-  .border-b-transparent {
-    border-bottom-color: transparent;
-  }
-  .border-b-white {
-    border-bottom-color: var(--color-white);
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -2272,7 +2266,7 @@
     background-color: var(--color-brand-secondary) !important;
   }
   .bg-sp-light-brown-opacity {
-    background-color: var(--color-brand-secondary)4D;
+    background-color: var(--color-brand-secondary-light);
   }
   .hover\:bg-sp-brown:hover {
     background-color: var(--color-brand-primary) !important;

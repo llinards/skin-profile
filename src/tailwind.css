@@ -59,7 +59,7 @@
     }
 
     .bg-sp-light-brown-opacity {
-        background-color: var(--color-brand-secondary)4D;
+        background-color: var(--color-brand-secondary-light);
     }
 
     .hover\:bg-sp-brown:hover {
