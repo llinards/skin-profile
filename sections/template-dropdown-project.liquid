@@ -10,21 +10,21 @@
           <button
             type="button"
             @click="open = !open"
-            class="group relative w-full flex items-end gap-3 px-2 md:px-0 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer rounded-md focus-visible:ring-1 focus-visible:ring-inset"
+            class="group relative w-full flex items-center gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer focus-visible:ring-1 focus-visible:ring-inset"
             :aria-expanded="open.toString()"
             :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
           >
             <div class="flex flex-col md:flex-row md:items-end flex-1 min-w-0">
               <h2 class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</h2>
               {% if block.settings.project_reference %}
-                <h3 class="text-base md:text-lg leading-tight body-font mt-1 md:mt-0 md:ml-4">
+                <h3 class="text-base md:text-lg leading-tight body-font mt-1 md:mt-0 md:mb-1.5 md:ml-4">
                   {{ block.settings.project_reference }}
                 </h3>
               {% endif %}
             </div>
 
             <span
-              class="absolute top-4 right-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none group-hover:bg-sp-brown group-hover:text-white"
+              class="inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none group-hover:bg-sp-brown group-hover:text-white"
               :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
             >
               <svg

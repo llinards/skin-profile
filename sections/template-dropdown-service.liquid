@@ -1,4 +1,4 @@
-<div class="container mx-auto px-4 transition-hide max-w-8xl{% if section.settings.space_bottom %} mb-12{% endif %}">
+<div class="container mx-auto px-4 transition-hide max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
   <div
     x-data="{ open: {{ section.settings.open_by_default | json }} }"
     class="overflow-hidden border-t-2"
@@ -8,8 +8,8 @@
       type="button"
       @click="open = !open"
       class="
-        group relative w-full flex items-start gap-3 px-2 md:px-0 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
-        rounded-md focus-visible:ring-1 focus-visible:ring-inset
+         group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
+        focus-visible:ring-1 focus-visible:ring-inset
       "
       :aria-expanded="open.toString()"
       :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
