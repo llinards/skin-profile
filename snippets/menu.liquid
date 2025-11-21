@@ -3,7 +3,7 @@
 <div class="hidden lg:flex items-center justify-between space-x-10 py-4 {{ invert_class }}">
   <div class="flex flex-row space-x-8">
     {% for link in links %}
-      {% if forloop.index <= 3 %}
+      {% if forloop.index <= 4 %}
         {% if link.links != blank %}
           {% render 'dropdown-menu-link', link: link %}
         {% else %}
@@ -28,7 +28,7 @@
 
   <div class="flex space-x-8">
     {% for link in links %}
-      {% if forloop.index > 3 %}
+      {% if forloop.index > 4 %}
         {% if link.links != blank %}
           {% render 'dropdown-menu-link', link: link %}
         {% else %}
