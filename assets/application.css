@@ -903,6 +903,12 @@
   .border-t-transparent {
     border-top-color: transparent;
   }
+  .border-b-black {
+    border-bottom-color: var(--color-black);
+  }
+  .border-b-transparent {
+    border-bottom-color: transparent;
+  }
   .border-b-white {
     border-bottom-color: var(--color-white);
   }
@@ -2128,6 +2134,11 @@
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:border-b-white {
+    @media (width >= 64rem) {
+      border-bottom-color: var(--color-white);
     }
   }
   .lg\:px-18 {
