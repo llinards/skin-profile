@@ -2,6 +2,10 @@
 
 
 @layer components {
+    .accent-sp-brown {
+        accent-color: var(--color-brand-primary);
+    }
+
     .sp-brown {
         color: var(--color-brand-primary);
     }
@@ -97,6 +101,7 @@
     .text-2xs {
         font-size: 10px;
     }
+    
 
     ul {
         @apply list-disc list-inside;

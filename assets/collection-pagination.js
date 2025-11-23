@@ -1,6 +1,7 @@
 function collectionFilters() {
     return {
         loading: false,
+
         updateSortByLabel() {
             const sortLabels = {
                 manual: 'Kārtot pēc',
@@ -12,64 +13,115 @@ function collectionFilters() {
                 'created-ascending': 'Vecākais',
                 'created-descending': 'Jaunākais',
             };
+
             const activeClasses = ['bg-gray-50', 'font-semibold'];
-            const params = new URLSearchParams(window.location.search);
-            const sortKey = params.get('sort_by') || 'manual';
-            document.querySelectorAll('#sort-by-label').forEach((el) => {
-                if (sortLabels[sortKey]) el.innerHTML = sortLabels[sortKey];
-                const dropdown = el.closest('.relative');
+            const sortKey = new URLSearchParams(window.location.search).get('sort_by') || 'manual';
+
+            document.querySelectorAll('#sort-by-label').forEach((labelEl) => {
+                labelEl.innerHTML = sortLabels[sortKey] ?? labelEl.innerHTML;
+
+                const dropdown = labelEl.closest('.relative');
                 if (!dropdown) return;
+
                 dropdown.querySelectorAll('a.filter-link').forEach((a) => {
-                    a.classList.remove(...activeClasses);
-                    if (a.href.includes(`sort_by=${sortKey}`)) a.classList.add(...activeClasses);
+                    const isActive = a.href.includes(`sort_by=${sortKey}`);
+                    a.classList.toggle(activeClasses[0], isActive);
+                    a.classList.toggle(activeClasses[1], isActive);
                 });
             });
         },
-        init() {
-            this.updateSortByLabel();
-            document.addEventListener('click', (e) => {
-                const link = e.target.closest('a.pagination-link, a.filter-link, a.category-card');
-                if (!link) return;
-                e.preventDefault();
-                this.loadPage(link.href);
-                setTimeout(() => {
-                    const el = document.getElementById('products');
-                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
+
+        handleFilterChange(event) {
+            if (event?.target) {
+                const { name, value, checked } = event.target;
+
+                // sync checkboxes with same name/value
+                document.querySelectorAll(`.filter-checkbox[name="${name}"][value="${value}"]`)
+                    .forEach((box) => (box !== event.target ? (box.checked = checked) : null));
+            }
+
+            setTimeout(() => {
+                const params = new URLSearchParams(window.location.search);
+                const newParams = new URLSearchParams();
+
+                // keep non-filter params but remove "page"
+                for (const [key, value] of params.entries()) {
+                    if (!key.startsWith('filter.') && key !== 'page') {
+                        newParams.append(key, value);
+                    }
+                }
+
+                // append active filters
+                document.querySelectorAll('.filter-checkbox:checked').forEach((box) => {
+                    newParams.append(box.name, box.value);
+                });
+
+                const qs = newParams.toString();
+                const newUrl = qs ? `${location.pathname}?${qs}` : location.pathname;
+
+                this.loadPage(newUrl);
             });
         },
+
+        clearFilterGroup(paramName) {
+            document.querySelectorAll(`.filter-checkbox[data-param="${paramName}"]`)
+                .forEach((box) => (box.checked = false));
+            this.handleFilterChange(null);
+        },
+
+        init() {
+            this.updateSortByLabel();
+
+            window.clearFilterGroup = this.clearFilterGroup.bind(this);
+
+            this.$el.addEventListener('click', (e) => {
+                const link = e.target.closest('a.pagination-link, a.filter-link, a.category-card');
+                if (!link) return;
+
+                e.preventDefault();
+                this.loadPage(link.href);
+
+                setTimeout(() => {
+                    document.getElementById('products')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }, 100);
+            });
+
+            this.$el.addEventListener('change', (e) => {
+                if (e.target.classList.contains('filter-checkbox')) {
+                    this.handleFilterChange(e);
+                }
+            });
+        },
+
         async loadPage(url) {
             if (this.loading) return;
             this.loading = true;
+
             try {
-                window.history.pushState({}, '', url);
+                history.pushState({}, '', url);
                 const html = await (await fetch(url)).text();
                 const doc = new DOMParser().parseFromString(html, 'text/html');
 
-                const newGrid = doc.querySelector('[x-ref="productGrid"]');
-                if (newGrid) this.$refs.productGrid.innerHTML = newGrid.innerHTML;
+                const replaceEl = (ref) => {
+                    const newContent = doc.querySelector(`[x-ref="${ref}"]`);
+                    if (newContent && this.$refs[ref]) {
+                        this.$refs[ref].innerHTML = newContent.innerHTML;
+                        if (window.Alpine) window.Alpine.initTree(this.$refs[ref]);
+                    }
+                };
 
-                const newPagination = doc.querySelector('[x-ref="pagination"]');
-                if (newPagination && this.$refs.pagination) {
-                    this.$refs.pagination.innerHTML = newPagination.innerHTML;
-                }
-
-                const newDesktopFilters = doc.querySelector('[x-ref="filtersDesktop"]');
-                if (newDesktopFilters && this.$refs.filtersDesktop) {
-                    this.$refs.filtersDesktop.innerHTML = newDesktopFilters.innerHTML;
-                    if (window.Alpine) window.Alpine.initTree(this.$refs.filtersDesktop);
-                }
-
-                const newMobileWrapper = doc.querySelector('[x-ref="mobileFilterWrapper"]');
-                if (newMobileWrapper && this.$refs.mobileFilterWrapper) {
-                    this.$refs.mobileFilterWrapper.innerHTML = newMobileWrapper.innerHTML;
-                    if (window.Alpine) window.Alpine.initTree(this.$refs.mobileFilterWrapper);
-                }
+                replaceEl('productGrid');
+                replaceEl('pagination');
+                replaceEl('filtersDesktop');
+                replaceEl('mobileFilterWrapper');
 
                 this.updateSortByLabel();
             } catch (err) {
                 console.error('Failed to load page:', err);
-                window.location.href = url;
+                location.href = url;
             } finally {
                 this.loading = false;
             }
@@ -77,7 +129,6 @@ function collectionFilters() {
     };
 }
 
-// Mount after Alpine is ready, even if Alpine already started
 (function () {
     if (typeof window === 'undefined') return;
 
@@ -88,26 +139,20 @@ function collectionFilters() {
             if (el.__collectionMounted) return;
             el.setAttribute('x-data', 'collectionFilters');
             el.setAttribute('x-init', 'init()');
-            if (window.Alpine) window.Alpine.initTree(el);
+            window.Alpine?.initTree(el);
             el.__collectionMounted = true;
         });
     }
 
     function register() {
-        if (window.Alpine && window.Alpine.data) {
+        if (window.Alpine?.data) {
             window.Alpine.data('collectionFilters', collectionFilters);
         }
         mountCollectionFilters();
     }
 
-    if (window.Alpine) {
-        // Alpine already on page
-        register();
-    } else {
-        document.addEventListener('alpine:init', register, { once: true });
-    }
+    window.Alpine ? register() : document.addEventListener('alpine:init', register, { once: true });
 
-    // In case DOM finishes later (or on back/forward)
     document.addEventListener('DOMContentLoaded', mountCollectionFilters, { once: true });
     window.addEventListener('popstate', mountCollectionFilters);
 })();

@@ -1,52 +1,46 @@
-{%- comment -%} Regular Filters {%- endcomment -%}
+{%- comment -%} Regular Filters (Multi-Select) {%- endcomment -%}
 {% for filter in collection.filters %}
   {% if filter.type == 'list' or filter.type == 'price_range' %}
     {%- assign current_value = filter.label -%}
+
+    {%- comment -%} Show count if active {%- endcomment -%}
     {%- if filter.active_values.size > 0 -%}
-      {%- assign current_value = filter.active_values.first.label -%}
+      {%- assign current_value = filter.label | append: ' (' | append: filter.active_values.size | append: ')' -%}
     {%- endif -%}
 
-    {%- comment -%} Build base URL preserving OTHER filters and sort_by {%- endcomment -%}
-    {%- assign base_params = '' -%}
-    {%- for other_filter in collection.filters -%}
-      {%- if other_filter.param_name != filter.param_name and other_filter.active_values.size > 0 -%}
-        {%- for active_value in other_filter.active_values -%}
-          {%- assign base_params = base_params
-            | append: '&'
-            | append: active_value.param_name
-            | append: '='
-            | append: active_value.value
-          -%}
-        {%- endfor -%}
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- comment -%} IMPORTANT: Always append sort_by at the end - use collection.sort_by instead {%- endcomment -%}
-    {%- if collection.sort_by -%}
-      {%- assign base_params = base_params | append: '&sort_by=' | append: collection.sort_by -%}
-    {%- endif -%}
-
-    {%- comment -%} Build dropdown content {%- endcomment -%}
     {%- capture dropdown_content -%}
-      {%- comment -%} "Clear this filter" option {%- endcomment -%}
-      <a href="{{ collection.url }}?{{ base_params | remove_first: '&' }}" class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if filter.active_values.size == 0 %}bg-gray-50 font-semibold{% endif %}">
-        {% if filter.label == 'Zīmols' %}
-          Visi zīmoli
-        {% else %}
-          Visas kategorijas
-        {% endif %}
-      </a>
+      <div class="filter-group-container">
+        {%- comment -%} "Clear this filter" option {%- endcomment -%}
+        <div class="px-4 py-2 border-b border-gray-100">
+          <button 
+            type="button" 
+            class="text-xs text-gray-500 hover:text-sp-brown underline cursor-pointer w-full text-left"
+            @click="clearFilterGroup('{{ filter.param_name | escape }}')"
+          >
+            Notīrīt
+          </button>
+        </div>
 
-      {%- comment -%} Filter values - each gets cleaned URL with THIS selection + other filters + sort {%- endcomment -%}
-      {%- for value in filter.values -%}
-        {%- assign single_select_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | append: base_params -%}
-        <a
-          href="{{ single_select_url }}"
-          class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if value.active %}bg-gray-50 font-semibold{% endif %}"
-        >
-          {{ value.label }} <span class="text-gray-500 text-xs">({{ value.count }})</span>
-        </a>
-      {%- endfor -%}
+        {%- comment -%} Filter values as Checkboxes {%- endcomment -%}
+        <div class="max-h-60 overflow-y-auto">
+          {%- for value in filter.values -%}
+            <label class="flex items-center px-4 py-2 hover:bg-gray-50 cursor-pointer transition-colors">
+              <input 
+                type="checkbox" 
+                name="{{ value.param_name }}" 
+                value="{{ value.value }}"
+                class="filter-checkbox accent-sp-brown rounded border-gray-300 text-sp-brown focus:ring-sp-brown mr-3 size-4"
+                {% if value.active %}checked{% endif %}
+                data-param="{{ filter.param_name | escape }}"
+              >
+              <span class="text-sm ml-3 {% if value.active %}font-semibold{% endif %}">
+                {{ value.label }}
+              </span>
+              <span class="ml-auto text-xs text-gray-400 pl-2">({{ value.count }})</span>
+            </label>
+          {%- endfor -%}
+        </div>
+      </div>
     {%- endcapture -%}
 
     {% render 'filter-dropdown',
