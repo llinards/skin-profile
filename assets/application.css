@@ -263,9 +263,6 @@
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
-  .top-4 {
-    top: calc(var(--spacing) * 4);
-  }
   .top-10 {
     top: calc(var(--spacing) * 10);
   }
@@ -308,8 +305,14 @@
   .z-10 {
     z-index: 10;
   }
+  .z-19 {
+    z-index: 19;
+  }
   .z-20 {
     z-index: 20;
+  }
+  .z-40 {
+    z-index: 40;
   }
   .z-50 {
     z-index: 50;
@@ -542,9 +545,6 @@
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
-  .w-36 {
-    width: calc(var(--spacing) * 36);
-  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -569,12 +569,6 @@
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
-  .max-w-36 {
-    max-width: calc(var(--spacing) * 36);
-  }
-  .max-w-42 {
-    max-width: calc(var(--spacing) * 42);
-  }
   .max-w-96 {
     max-width: calc(var(--spacing) * 96);
   }
@@ -595,18 +589,6 @@
   }
   .min-w-0 {
     min-width: calc(var(--spacing) * 0);
-  }
-  .min-w-12 {
-    min-width: calc(var(--spacing) * 12);
-  }
-  .min-w-36 {
-    min-width: calc(var(--spacing) * 36);
-  }
-  .min-w-40 {
-    min-width: calc(var(--spacing) * 40);
-  }
-  .min-w-42 {
-    min-width: calc(var(--spacing) * 42);
   }
   .flex-1 {
     flex: 1;
@@ -1038,9 +1020,6 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1284,6 +1263,12 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+  .delay-300 {
+    transition-delay: 300ms;
   }
   .duration-150 {
     --tw-duration: 150ms;
@@ -1628,19 +1613,9 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .md\:mb-1 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 1);
-    }
-  }
   .md\:mb-1\.5 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 1.5);
-    }
-  }
-  .md\:mb-2 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 2);
     }
   }
   .md\:mb-12 {
@@ -2137,11 +2112,6 @@
   .lg\:max-w-5xl {
     @media (width >= 64rem) {
       max-width: var(--container-5xl);
-    }
-  }
-  .lg\:min-w-40 {
-    @media (width >= 64rem) {
-      min-width: calc(var(--spacing) * 40);
     }
   }
   .lg\:grid-cols-3 {

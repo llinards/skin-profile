@@ -43,7 +43,11 @@
 
 <!-- MOBILE MENU -->
 <div>
-  <div class="lg:hidden flex items-center justify-between py-4 w-full">
+  <div
+    id="menu-header"
+    class="lg:hidden flex items-center justify-between py-4 w-full relative z-50 "
+    :class="open ? 'bg-white delay-300' : ''"
+  >
     <button
       x-on:click="open = !open"
       type="button"
