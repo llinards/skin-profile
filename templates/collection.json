@@ -171,6 +171,15 @@
     "main": {
       "type": "collection",
       "blocks": {
+        "category_slide_aRNYmm": {
+          "type": "category_slide",
+          "name": "Uztura bagātinātāji",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
+            "name": "Uztura bagātinātāji",
+            "category_name_for_filter": "Uztura bagātinātāji"
+          }
+        },
         "category_slide_8HkcUd": {
           "type": "category_slide",
           "name": "Matu kopšana",
@@ -200,6 +209,7 @@
         }
       },
       "block_order": [
+        "category_slide_aRNYmm",
         "category_slide_8HkcUd",
         "category_slide_ErxAz3",
         "category_slide_TmPDec"
