@@ -125,6 +125,28 @@
             "open": false,
             "inline_layout": true
           }
+        },
+        "project_dropdown_8hhWFN": {
+          "type": "project_dropdown",
+          "name": "Deka Motus AX aleksandrīta lāzers",
+          "settings": {
+            "project_title": "Deka Motus AX aleksandrīta lāzers",
+            "project_reference": "",
+            "content": "<p>2021. gadā ar LEADER projekta Nr. 21-04-AL32-A019.2101-000012 atbalstu iegādāts Deka<br/>Motus AX lāzers.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_dzbKRx": {
+          "type": "project_dropdown",
+          "name": "Skin Profile stāsts – sākums",
+          "settings": {
+            "project_title": "Skin Profile stāsts – sākums",
+            "project_reference": "",
+            "content": "<p>2020. gadā ar LEADER projekta Nr. 20-04-AL32-A019.2101-000008 atbalstu izveidots<br/>pirmais kabinets un iegādātas divas Overline iekārtas.</p>",
+            "open": false,
+            "inline_layout": true
+          }
         }
       },
       "block_order": [
@@ -134,7 +156,9 @@
         "project_dropdown_QzLqa3",
         "project_dropdown_twqHTw",
         "project_dropdown_t46ERg",
-        "project_dropdown_gieiDJ"
+        "project_dropdown_gieiDJ",
+        "project_dropdown_8hhWFN",
+        "project_dropdown_dzbKRx"
       ],
       "name": "Dropdown - Projekti",
       "settings": {}
