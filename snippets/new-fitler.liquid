@@ -1,0 +1,77 @@
+<collection-filters class="collection-filters" data-section-id="{{ section.id }}">
+  <div class="collection-filters__content sm:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12">
+    {% for filter in collection.filters %}
+      <div class="collection-filter">
+        <div class="collection-filter__options cursor-pointer">
+          {% if filter.type == 'list' %}
+            {% for value in filter.values %}
+              <div class="collection-filter__option cursor-pointer transition-colors duration-300 py-2 px-3">
+                <input
+                  class="accent-sp-brown cursor-pointer"
+                  type="checkbox"
+                  id="{{ filter.label | handle }}-{{ value.value | handle }}"
+                  name="{{ filter.label | handle }}"
+                  value="{{ value.value | handle }}"
+                  data-add-url="{{ value.url_to_add }}"
+                  data-remove-url="{{ value.url_to_remove }}"
+                  {% if value.active %}
+                    checked
+                  {% endif %}
+                >
+                <label
+                  class="ml-0.5 cursor-pointer text-sm"
+                  for="{{ filter.label | handle }}-{{ value.value | handle }}"
+                >
+                  {{- value.label -}}
+                </label>
+              </div>
+            {% endfor %}
+          {% else %}
+
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</collection-filters>
+
+<script>
+  class CollectionFilters extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    get sectionId() {
+      return this.dataset.sectionId;
+    }
+
+    connectedCallback() {
+      this.filterInputs = this.querySelectorAll('input');
+      this.handleClick = this.handleClick.bind(this);
+
+      this.filterInputs.forEach((input) => {
+        input.addEventListener('change', this.handleClick);
+      });
+    }
+
+    handleClick(event) {
+      const input = event.currentTarget;
+      const url = new URL(input.checked ? input.dataset.addUrl : input.dataset.removeUrl, window.location.origin);
+
+      url.searchParams.set('section_id', this.sectionId);
+
+      fetch(url.toString())
+        .then((response) => {
+          return response.text();
+        })
+        .then((html) => {
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = html;
+
+          document.querySelector('.collection-inner').innerHTML = tempDiv.querySelector('.collection-inner').innerHTML;
+        });
+    }
+  }
+
+  customElements.define('collection-filters', CollectionFilters);
+</script>
