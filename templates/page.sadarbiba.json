@@ -103,6 +103,17 @@
             "open": false,
             "inline_layout": true
           }
+        },
+        "project_dropdown_t46ERg": {
+          "type": "project_dropdown",
+          "name": "Alma Harmony Pro lāzerplatforma",
+          "settings": {
+            "project_title": "Alma Harmony Pro lāzerplatforma",
+            "project_reference": "",
+            "content": "<p>Projekta Nr. 23-04-AL32-A019.2101-000004 ietvaros iegādāta Alma Harmony Pro<br/>lāzerplatforma ar Clear Lift, ND:Yag un IPL tehnoloģijām.</p>",
+            "open": false,
+            "inline_layout": true
+          }
         }
       },
       "block_order": [
@@ -110,7 +121,8 @@
         "project_dropdown_yKifXW",
         "project_dropdown_x6kEbf",
         "project_dropdown_QzLqa3",
-        "project_dropdown_twqHTw"
+        "project_dropdown_twqHTw",
+        "project_dropdown_t46ERg"
       ],
       "name": "Dropdown - Projekti",
       "settings": {}
