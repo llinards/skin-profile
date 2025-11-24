@@ -92,13 +92,25 @@
             "open": false,
             "inline_layout": true
           }
+        },
+        "project_dropdown_twqHTw": {
+          "type": "project_dropdown",
+          "name": "DEKA TETRA Pro CO₂ lāzera sistēma",
+          "settings": {
+            "project_title": "DEKA TETRA Pro CO₂ lāzera sistēma",
+            "project_reference": "",
+            "content": "<p>Projekta Nr. 24-04-CL24-C0LA19.2101-000001 ietvaros iegādāta DEKA TETRA Pro CO₂<br/>sistēma ādas veselības uzlabošanai un frakcionētai atjaunošanai.</p>",
+            "open": false,
+            "inline_layout": true
+          }
         }
       },
       "block_order": [
         "project_dropdown_8UDfyN",
         "project_dropdown_yKifXW",
         "project_dropdown_x6kEbf",
-        "project_dropdown_QzLqa3"
+        "project_dropdown_QzLqa3",
+        "project_dropdown_twqHTw"
       ],
       "name": "Dropdown - Projekti",
       "settings": {}
