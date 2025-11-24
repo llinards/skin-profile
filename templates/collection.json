@@ -171,31 +171,13 @@
     "main": {
       "type": "collection",
       "blocks": {
-        "category_slide_WUnGtg": {
+        "category_slide_TmPDec": {
           "type": "category_slide",
-          "name": "Dāvanu kartes",
+          "name": "Sejas kopšana",
           "settings": {
-            "photo": "shopify://shop_images/davanu_kartes.jpg",
-            "name": "Dāvanu kartes",
-            "category_name_for_filter": "Dāvanu kartes"
-          }
-        },
-        "category_slide_aRNYmm": {
-          "type": "category_slide",
-          "name": "Uztura bagātinātāji",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
-            "name": "Uztura bagātinātāji",
-            "category_name_for_filter": "Uztura bagātinātāji"
-          }
-        },
-        "category_slide_8HkcUd": {
-          "type": "category_slide",
-          "name": "Matu kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu kopšana",
-            "category_name_for_filter": "Matu kopšana"
+            "photo": "shopify://shop_images/g-form-116866-appearance.imageUrl-mhg4og54-sejas_kopsana.jpg",
+            "name": "Sejas kopšana",
+            "category_name_for_filter": "Sejas kopšana"
           }
         },
         "category_slide_ErxAz3": {
@@ -207,25 +189,44 @@
             "category_name_for_filter": "Ķermeņa kopšana"
           }
         },
-        "category_slide_TmPDec": {
+        "category_slide_8HkcUd": {
           "type": "category_slide",
-          "name": "Sejas kopšana",
+          "name": "Matu kopšana",
           "settings": {
-            "photo": "shopify://shop_images/g-form-116866-appearance.imageUrl-mhg4og54-sejas_kopsana.jpg",
-            "name": "Sejas kopšana",
-            "category_name_for_filter": "Sejas kopšana"
+            "photo": "shopify://shop_images/matu_kopsana.jpg",
+            "name": "Matu kopšana",
+            "category_name_for_filter": "Matu kopšana"
+          }
+        },
+        "category_slide_aRNYmm": {
+          "type": "category_slide",
+          "name": "Uztura bagātinātāji",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
+            "name": "Uztura bagātinātāji",
+            "category_name_for_filter": "Uztura bagātinātāji"
+          }
+        },
+        "category_slide_WUnGtg": {
+          "type": "category_slide",
+          "name": "Dāvanu kartes",
+          "settings": {
+            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "name": "Dāvanu kartes",
+            "category_name_for_filter": "Dāvanu kartes"
           }
         }
       },
       "block_order": [
-        "category_slide_WUnGtg",
-        "category_slide_aRNYmm",
-        "category_slide_8HkcUd",
+        "category_slide_TmPDec",
         "category_slide_ErxAz3",
-        "category_slide_TmPDec"
+        "category_slide_8HkcUd",
+        "category_slide_aRNYmm",
+        "category_slide_WUnGtg"
       ],
+      "name": "Produkti",
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 8,
         "heading": "Kategorijas",
         "category_cards": true
       }
