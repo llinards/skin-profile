@@ -173,6 +173,7 @@
       "blocks": {
         "category_slide_TmPDec": {
           "type": "category_slide",
+          "name": "Sejas kopšana",
           "settings": {
             "photo": "shopify://shop_images/g-form-116866-appearance.imageUrl-mhg4og54-sejas_kopsana.jpg",
             "name": "Sejas kopšana",
@@ -185,7 +186,8 @@
       ],
       "settings": {
         "products_per_page": 12,
-        "heading": "Kategorijas"
+        "heading": "Kategorijas",
+        "category_cards": true
       }
     },
     "template_contact_us_QACdmJ": {
