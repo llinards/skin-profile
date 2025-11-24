@@ -170,8 +170,22 @@
     },
     "main": {
       "type": "collection",
+      "blocks": {
+        "category_slide_TmPDec": {
+          "type": "category_slide",
+          "settings": {
+            "photo": "shopify://shop_images/g-form-116866-appearance.imageUrl-mhg4og54-sejas_kopsana.jpg",
+            "name": "Sejas kopšana",
+            "category_name_for_filter": "Sejas kopšana"
+          }
+        }
+      },
+      "block_order": [
+        "category_slide_TmPDec"
+      ],
       "settings": {
-        "products_per_page": 12
+        "products_per_page": 12,
+        "heading": "Kategorijas"
       }
     },
     "template_contact_us_QACdmJ": {
