@@ -171,6 +171,15 @@
     "main": {
       "type": "collection",
       "blocks": {
+        "category_slide_ErxAz3": {
+          "type": "category_slide",
+          "name": "Ķermeņa kopšana",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_kopsana.jpg",
+            "name": "Ķermeņa kopšana",
+            "category_name_for_filter": "Ķermeņa kopšana"
+          }
+        },
         "category_slide_TmPDec": {
           "type": "category_slide",
           "name": "Sejas kopšana",
@@ -182,6 +191,7 @@
         }
       },
       "block_order": [
+        "category_slide_ErxAz3",
         "category_slide_TmPDec"
       ],
       "settings": {
