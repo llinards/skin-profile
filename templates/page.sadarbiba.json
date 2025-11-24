@@ -50,7 +50,7 @@
       "blocks": {
         "project_dropdown_8UDfyN": {
           "type": "project_dropdown",
-          "name": "“LEADER” projekts",
+          "name": "Digitālā transformācija",
           "settings": {
             "project_title": "Digitālā transformācija",
             "project_reference": "",
@@ -61,12 +61,12 @@
         },
         "project_dropdown_yKifXW": {
           "type": "project_dropdown",
-          "name": "“DEKA TETRA PRO” projekts",
+          "name": "CRM un medicīnas sistēmu integrācija",
           "settings": {
-            "project_title": "“DEKA TETRA PRO” projekts,",
-            "project_reference": "Nr. 24-04-CL24-C0LA19.2101-000001",
+            "project_title": "CRM un medicīnas sistēmu integrācija",
+            "project_reference": "",
             "content_image": "shopify://shop_images/finanse_eiropas_savieniba.png",
-            "content": "<p>2024. gada augusts līdz decembris tika realizēts <strong>projekts Nr. 24-04-CL24-C0LA19.2101-000001</strong>. <strong>Tika iegādāta inovatīva CO2 lāzera sistēma DEKA TETRA Pro ādas veselības uzlabošanai.</strong> Tā ļauj novada iedzīvotājiem un viesiem atbrīvoties no nevēlamiem ādas veidojumiem, tādiem kā dzimumzīmes, keratomas, virspusēji ādas audzēji, papilomas, kārpas, rētu un striju slīpēšana un vispārēja ādas atjaunošana ar Co2 frakcionēto cool peel tehnoloģiju. Iekārtas iegāde piedāvās jaunu pakalpojuma veidu, papildinās esošo pakalpojumu klāstu, kā arī veicinās uzņēmuma rentabilitāti.</p>",
+            "content": "<p>Ar Atveseļošanas fonda atbalstu ieviesta CRM sistēma, kas automatizē klientu apkalpošanu,<br/>rezervācijas, norēķinus un datu glabāšanu. Tā integrēta ar e-veselības, NVD, VVIS un VID<br/>sistēmām. Risinājums: SMART MEDICAL ieviešana SKIN PROFILE estētikas centrā.</p>",
             "open": false,
             "inline_layout": true
           }
