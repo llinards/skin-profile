@@ -73,22 +73,22 @@
         },
         "project_dropdown_x6kEbf": {
           "type": "project_dropdown",
-          "name": "Smart Medical",
+          "name": "Skin Profile šodien",
           "settings": {
-            "project_title": "Smart Medical",
+            "project_title": "Skin Profile šodien",
             "project_reference": "",
-            "content": "<p>Jūsu teksts šeit.</p>",
+            "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un<br/>diagnostikas klāstu reģionā.</p>",
             "open": false,
             "inline_layout": true
           }
         },
         "project_dropdown_QzLqa3": {
           "type": "project_dropdown",
-          "name": "Deka Motus AX",
+          "name": "Geneo X un Deka Vizia 3D diagnostika",
           "settings": {
-            "project_title": "Deka Motus AX",
+            "project_title": "Geneo X un Deka Vizia 3D diagnostika",
             "project_reference": "",
-            "content": "<p>Jūsu teksts šeit.</p>",
+            "content": "<p>Ar projekta Nr. 25-04-CoLA19.2101-000006 atbalstu iegādāta Geneo X procedūru iekārta<br/>un Deka Vizia 3D ādas diagnostikas sistēma.</p>",
             "open": false,
             "inline_layout": true
           }
