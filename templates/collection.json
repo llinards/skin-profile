@@ -171,6 +171,15 @@
     "main": {
       "type": "collection",
       "blocks": {
+        "category_slide_WUnGtg": {
+          "type": "category_slide",
+          "name": "Dāvanu kartes",
+          "settings": {
+            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "name": "Dāvanu kartes",
+            "category_name_for_filter": "Dāvanu kartes"
+          }
+        },
         "category_slide_aRNYmm": {
           "type": "category_slide",
           "name": "Uztura bagātinātāji",
@@ -209,6 +218,7 @@
         }
       },
       "block_order": [
+        "category_slide_WUnGtg",
         "category_slide_aRNYmm",
         "category_slide_8HkcUd",
         "category_slide_ErxAz3",
