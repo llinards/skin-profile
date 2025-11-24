@@ -114,6 +114,17 @@
             "open": false,
             "inline_layout": true
           }
+        },
+        "project_dropdown_gieiDJ": {
+          "type": "project_dropdown",
+          "name": "Seši kabineti, IPL tehnoloģija un PRF",
+          "settings": {
+            "project_title": "Seši kabineti, IPL tehnoloģija un PRF",
+            "project_reference": "",
+            "content": "<p>2022. gadā ar LEADER projekta Nr. 22-04-AL32-A019.2101-000006 atbalstu izveidoti seši<br/>kabineti un iegādāta Overline IPL un PRF centrifūga.</p>",
+            "open": false,
+            "inline_layout": true
+          }
         }
       },
       "block_order": [
@@ -122,7 +133,8 @@
         "project_dropdown_x6kEbf",
         "project_dropdown_QzLqa3",
         "project_dropdown_twqHTw",
-        "project_dropdown_t46ERg"
+        "project_dropdown_t46ERg",
+        "project_dropdown_gieiDJ"
       ],
       "name": "Dropdown - Projekti",
       "settings": {}
