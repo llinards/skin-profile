@@ -5,7 +5,7 @@
     {% for link in links %}
       {% if forloop.index <= 3 %}
         {% if link.links != blank %}
-          {% render 'dropdown-menu-link', link: link %}
+          {% render 'dropdown-menu-link', link: link, class: {{ invert_class }} %}
         {% else %}
           {% render 'menu-link', link: link %}
         {% endif %}

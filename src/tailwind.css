@@ -250,7 +250,7 @@
 
 #header-carousel .f-carousel__dots {
     top: 90%;
-    z-index: 4;
+    z-index: 0;
     color: #ffffff !important;
 }
 

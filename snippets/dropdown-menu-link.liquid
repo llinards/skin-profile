@@ -6,12 +6,8 @@
     x-data="
       {
         open: false,
-        h: 0,
         toggle() {
           this.open = !this.open;
-          this.$nextTick(() => {
-            this.h = this.open ? (this.$refs.panel?.scrollHeight || 0) : 0;
-          });
         }
       }
     "
@@ -20,20 +16,20 @@
     <button
       type="button"
       @click="toggle()"
-      class="w-full inline-flex items-center justify-center gap-2 py-2 text-center"
+      class="w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
       :aria-expanded="open.toString()"
       :aria-controls="'{{ submenu_id }}'"
       aria-haspopup="true"
     >
       <span class="truncate">{{- link.title -}}</span>
       <svg
-        class="h-5 w-5 transition-transform duration-200"
+        class="h-5 w-5 transition-transform duration-300 ease-in-out"
         :class="open ? 'rotate-180' : ''"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        stroke-width="1.8"
+        stroke-width="2"
         aria-hidden="true"
       >
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
@@ -43,18 +39,99 @@
     {% if link.links and link.links.size > 0 %}
       <div
         id="{{ submenu_id }}"
-        x-ref="panel"
-        :style="`max-height:${h}px`"
-        class="w-full overflow-hidden transition-[max-height] duration-300 ease-out"
+        x-show="open"
+        x-collapse
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="w-full"
         role="region"
         :aria-hidden="(!open).toString()"
       >
-        <ul class="mt-2 space-y-2 list-none text-center bg-sp-light-brown">
+        <ul class="mt-2 space-y-1 list-none text-center bg-sp-light-brown rounded-lg py-2 ">
           {% for child in link.links %}
             <li>
-              <a href="{{ child.url }}" class="inline-block px-3 py-4 hover:bg-neutral-100 rounded">
-                {{ child.title }}
-              </a>
+              {% if child.links and child.links.size > 0 %}
+                {%- assign child_submenu_id = 'submenu-' | append: child.title | handleize -%}
+                <!-- Nested dropdown -->
+                <div
+                  x-data="
+                    {
+                      childOpen: false,
+                      toggleChild() {
+                        this.childOpen = !this.childOpen;
+                      }
+                    }
+                  "
+                  class="w-full"
+                >
+                  <button
+                    type="button"
+                    @click="toggleChild()"
+                    class="w-full inline-flex items-center justify-center gap-2 px-3 py-3 text-sm hover:bg-white/30 transition-all duration-200 rounded"
+                    :aria-expanded="childOpen.toString()"
+                    :aria-controls="'{{ child_submenu_id }}'"
+                    aria-haspopup="true"
+                  >
+                    <span class="truncate">{{ child.title }}</span>
+                    <svg
+                      class="h-4 w-4 transition-transform duration-300 ease-in-out"
+                      :class="childOpen ? 'rotate-180' : ''"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+
+                  <div
+                    id="{{ child_submenu_id }}"
+                    x-show="childOpen"
+                    x-collapse
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-95"
+                    x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition ease-in duration-200"
+                    x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-95"
+                    class="w-full"
+                    role="region"
+                    :aria-hidden="(!childOpen).toString()"
+                  >
+                    <ul class="mt-2 space-y-1 list-none text-center bg-sp-light-brown-opacity rounded-lg py-2 mx-3 ">
+                      {% for grandchild in child.links %}
+                        <li>
+                          <a
+                            href="{{ grandchild.url }}"
+                            class="inline-block w-full px-3 py-2 text-sm hover:bg-white/30 transition-all duration-200 rounded"
+                          >
+                            {{ grandchild.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% else %}
+                <!-- Simple link without children -->
+
+                <a
+                  href="{{ child.url }}"
+                  class="
+                    inline-block w-full px-3 py-3 text-sm hover:bg-white/30 transition-all
+                    duration-200 rounded
+                  "
+                >
+                  {{ child.title }}
+                </a>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
@@ -66,13 +143,14 @@
     x-data="
       {
         isOpen: false,
-        t: null,
-        enter() { clearTimeout(this.t); this.isOpen = true },
-        leave() { this.t = setTimeout(() => this.isOpen = false, 120) }
+        activeChild: null,
+        openMain() { this.isOpen = true },
+        closeMain() { this.isOpen = false; this.activeChild = null },
+        openChild(i) { this.activeChild = i }
       }
     "
-    @mouseenter="enter()"
-    @mouseleave="leave()"
+    @mouseenter="openMain()"
+    @mouseleave="closeMain()"
     class="relative"
   >
     <a
@@ -81,29 +159,59 @@
       aria-haspopup="true"
       :aria-expanded="isOpen.toString()"
     >
-      {{- link.title -}}
+      {{ link.title }}
       {% render 'icon-arrow-down' %}
     </a>
 
     {% if link.links and link.links.size > 0 %}
+      <!-- FIRST PANEL (main children) -->
       <div
         x-show="isOpen"
         x-transition.opacity.duration.150ms
         class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50"
       >
-        <div class="rounded-md bg-white shadow-xl ring-1 ring-black/5 overflow-hidden">
-          <ul class="py-2 text-center list-none">
+        <div class="relative flex rounded-md bg-white shadow-xl ring-1 ring-black/5 overflow-visible">
+          <!-- LEFT SIDE — Level 1 -->
+          <ul class="py-2 text-center list-none min-w-[200px]">
             {% for child in link.links %}
-              <li>
+              <li
+                @mouseenter="openChild({{ forloop.index0 }})"
+                class="relative group"
+              >
                 <a
                   href="{{ child.url }}"
-                  class="wrap-break-word block px-6 py-2 text-sm hover:bg-neutral-100 whitespace-nowrap"
+                  class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-sm hover:bg-neutral-100 whitespace-nowrap"
                 >
                   {{ child.title }}
+                  {% if child.links and child.links.size > 0 %}
+                    {% render 'icon-arrow-down', class: 'rotate-270' %}
+                  {% endif %}
                 </a>
               </li>
             {% endfor %}
           </ul>
+
+          <!-- RIGHT SIDE — Level 2 (child.links) -->
+          {% for child in link.links %}
+            {% if child.links and child.links.size > 0 %}
+              <ul
+                x-show="activeChild === {{ forloop.index0 }}"
+                x-transition.opacity.duration.150ms
+                class="absolute left-full top-0 ml-1 bg-white shadow-xl ring-1 ring-black/5 py-2 min-w-[200px] text-center rounded-md list-none"
+              >
+                {% for sub in child.links %}
+                  <li>
+                    <a
+                      href="{{ sub.url }}"
+                      class="block px-6 py-2 text-sm hover:bg-neutral-100 whitespace-nowrap"
+                    >
+                      {{ sub.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     {% endif %}
