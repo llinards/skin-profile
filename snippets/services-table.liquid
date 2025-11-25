@@ -5,10 +5,18 @@
 <div class="space-y-2 mb-6 md:my-12">
   {%- assign service_blocks = services | where: 'type', 'service' -%}
   {%- if service_blocks.size > 0 -%}
+    <div class="grid grid-cols-6 font-bold items-center py-2 border-b-2 border-sp-light-brown">
+      <div class="col-span-3 text-left text-base">Pakalpojums</div>
+      <div class="col-span-1 text-right text-base">Ilgums</div>
+      <div class="col-span-2 text-right">Cena</div>
+    </div>
     {%- for b in service_blocks -%}
-      <div class="grid grid-cols-5 font-bold items-center py-2 border-b border-sp-light-brown border-dotted">
-        <div class="col-span-3 text-left">{{ b.settings.service_name }}</div>
-        <div class="col-span-2 text-right">{{ b.settings.service_price }}</div>
+      <div class="grid grid-cols-6 font-bold items-center py-2 border-b border-sp-light-brown border-dotted">
+        <div class="col-span-3 text-left text-base">{{ b.settings.service_name }}</div>
+        <div class="col-span-1 text-right text-base text-gray-500">
+          {{ b.settings.service_length | default: '60' }} min
+        </div>
+        <div class="col-span-2 text-right text-base">{{ b.settings.service_price }}</div>
       </div>
     {%- endfor -%}
   {%- else -%}

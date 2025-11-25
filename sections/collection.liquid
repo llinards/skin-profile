@@ -5,48 +5,52 @@
   {% if section.settings.category_cards %}
     {% render 'store-category-cards' %}
   {% endif %}
+  <div id="products">
+    <div class="relative transition-hide">
+      <h2 class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
 
-  <div class="relative transition-hide">
-    <h2 class="pb-12">{{ collection.title | default: 'Produkti' }}</h2>
-
-    <!-- Filters as Dropdowns on Desktop -->
-    <div class="hidden filters-container sm:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12" x-ref="filtersDesktop">
-      {% render 'filter-regular' %}
-      {% render 'filter-sort-by' %}
-      {% render 'btn-clear-filter' %}
-    </div>
-
-    <!-- Mobile filters wrapped in a single dropdown -->
-    <div x-ref="mobileFilterWrapper">
-      {% render 'mobile-filter-wrapper' %}
-    </div>
-
-    {% paginate collection.products by 12 %}
-      <div class="relative z-1">
-        {% render 'loading-screen' %}
-
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
-          x-ref="productGrid"
-          :class="{ 'opacity-30': loading }"
-        >
-          {% for product in collection.products %}
-            <div class="flex flex-col justify-between space-y-3">
-              {% render 'product-card', product: product %}
-            </div>
-          {% else %}
-            <div class="col-span-full text-center py-12">
-              <p class="text-gray-600">Nav atrasti produkti ar šiem filtriem.</p>
-            </div>
-          {% endfor %}
-        </div>
-
-        <!-- Pagination -->
-        <div x-ref="pagination">
-          {% render 'paginate', paginate: paginate %}
-        </div>
+      <!-- Filters as Dropdowns on Desktop -->
+      <div
+        class="hidden filters-container sm:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12"
+        x-ref="filtersDesktop"
+      >
+        {% render 'filter-regular' %}
+        {% render 'filter-sort-by' %}
+        {% render 'btn-clear-filter' %}
       </div>
-    {% endpaginate %}
+
+      <!-- Mobile filters wrapped in a single dropdown -->
+      <div x-ref="mobileFilterWrapper">
+        {% render 'mobile-filter-wrapper' %}
+      </div>
+
+      {% paginate collection.products by 12 %}
+        <div class="relative z-1">
+          {% render 'loading-screen' %}
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12 transition-opacity duration-300 h-full"
+            x-ref="productGrid"
+            :class="{ 'opacity-30': loading }"
+          >
+            {% for product in collection.products %}
+              <div class="flex flex-col justify-between space-y-3">
+                {% render 'product-card', product: product %}
+              </div>
+            {% else %}
+              <div class="col-span-full text-center py-12">
+                <p class="text-gray-600">Nav atrasti produkti ar šiem filtriem.</p>
+              </div>
+            {% endfor %}
+          </div>
+
+          <!-- Pagination -->
+          <div x-ref="pagination">
+            {% render 'paginate', paginate: paginate %}
+          </div>
+        </div>
+      {% endpaginate %}
+    </div>
   </div>
 </div>
 <script src="{{ 'collection-pagination.js' | asset_url }}" defer></script>
