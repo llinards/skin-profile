@@ -72,7 +72,8 @@
           "name": "Konstultācija",
           "settings": {
             "service_name": "Konstultācija",
-            "service_price": ""
+            "service_price": "",
+            "service_length": "60"
           }
         }
       },
@@ -120,15 +121,6 @@
             "url": "shopify://pages/lazerdermatologija"
           }
         },
-        "service_Fqxj6Q": {
-          "type": "service",
-          "name": "Podologs",
-          "settings": {
-            "photo": "shopify://shop_images/podologs.jpg",
-            "name": "<p>Podologs</p>",
-            "url": "shopify://pages/podologs"
-          }
-        },
         "service_a89Azd": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -170,7 +162,6 @@
         "service_ntPz4G",
         "service_KHPgrF",
         "service_jWyfPH",
-        "service_Fqxj6Q",
         "service_a89Azd",
         "service_BLxeLX",
         "service_xGwa3T",
