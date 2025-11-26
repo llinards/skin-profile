@@ -60,7 +60,8 @@
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "PIE MUMS PROCEDŪRAS VEIC AR JAUNĀKĀS PAAUDZES LĀZERTEHNOLOĢIJĀM",
-        "text": "<h3><strong>ALMA Harmony XL PRO (Izraēla)</strong></h3><ul><li>Multifunkcionāla platforma ar plašu procedūru klāstu</li><li>Saudzējošas un efektīvas metodes</li><li>Lieto: kuperozes un rozācijas ārstēšanai/profilaksei, poru sašaurināšanai, liftingam, sēnīšu profilaksei, asins kapilāru noņemšanai</li></ul><h3><strong>Deka Tetra Pro (Itālija)</strong></h3><ul><li>Frakcionētais CO2 lāzers jaunākās paaudzes tehnoloģijā</li><li>Veidojumu noņemšana un ķirurģiskas procedūras</li><li>Rētu slīpēšana un ādas atjaunošana</li></ul><p>* Pirms jebkuras lāzerprocedūras obligāta ir dermatologa konsultācija un dermatoskopiskā apskate.</p>"
+        "text": "<h3><strong>ALMA Harmony XL PRO (Izraēla)</strong></h3><ul><li>Multifunkcionāla platforma ar plašu procedūru klāstu</li><li>Saudzējošas un efektīvas metodes</li><li>Lieto: kuperozes un rozācijas ārstēšanai/profilaksei, poru sašaurināšanai, liftingam, sēnīšu profilaksei, asins kapilāru noņemšanai</li></ul><h3><strong>Deka Tetra Pro (Itālija)</strong></h3><ul><li>Frakcionētais CO2 lāzers jaunākās paaudzes tehnoloģijā</li><li>Veidojumu noņemšana un ķirurģiskas procedūras</li><li>Rētu slīpēšana un ādas atjaunošana</li></ul><p>* Pirms jebkuras lāzerprocedūras obligāta ir dermatologa konsultācija un dermatoskopiskā apskate.</p>",
+        "text_html": ""
       }
     },
     "template_services_section_J6AXyp": {
@@ -71,7 +72,8 @@
           "name": "Visa seja",
           "settings": {
             "service_name": "Visa seja",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         },
         "service_7mPYeg": {
@@ -79,7 +81,8 @@
           "name": "Sejas centrs",
           "settings": {
             "service_name": "Sejas centrs",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         },
         "service_a4KmFd": {
@@ -87,7 +90,8 @@
           "name": "Deguns",
           "settings": {
             "service_name": "Deguns",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         },
         "service_9DQVfY": {
@@ -95,7 +99,8 @@
           "name": "Vaigi",
           "settings": {
             "service_name": "Vaigi",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_PrGEGN": {
@@ -103,7 +108,8 @@
           "name": "Seja + kakls",
           "settings": {
             "service_name": "Seja + kakls",
-            "service_price": "€250"
+            "service_price": "€250",
+            "service_length": "60"
           }
         },
         "service_ygeVDQ": {
@@ -111,7 +117,8 @@
           "name": "Seja + kakls + dekoltē",
           "settings": {
             "service_name": "Seja + kakls + dekoltē",
-            "service_price": "€320"
+            "service_price": "€320",
+            "service_length": "60"
           }
         },
         "service_VGfTfp": {
@@ -119,7 +126,8 @@
           "name": "Dekoltē",
           "settings": {
             "service_name": "Dekoltē",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         },
         "service_hTyCH7": {
@@ -127,7 +135,8 @@
           "name": "Plaukstu virspuses",
           "settings": {
             "service_name": "Plaukstu virspuses",
-            "service_price": "€60"
+            "service_price": "€60",
+            "service_length": "60"
           }
         },
         "service_7RhzwE": {
@@ -135,7 +144,8 @@
           "name": "Roku atjaunošana",
           "settings": {
             "service_name": "Roku atjaunošana",
-            "service_price": "€190"
+            "service_price": "€190",
+            "service_length": "60"
           }
         },
         "service_Je8BGq": {
@@ -143,7 +153,8 @@
           "name": "1 impulss (1 kv.cm.) rētu un striju korekcijai ",
           "settings": {
             "service_name": "1 impulss (1 kv.cm.) rētu un striju korekcijai",
-            "service_price": "€25"
+            "service_price": "€25",
+            "service_length": "60"
           }
         }
       },
@@ -178,7 +189,8 @@
           "name": "Visa seja",
           "settings": {
             "service_name": "Visa seja",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_jzXAD9": {
@@ -186,7 +198,8 @@
           "name": "Seja un pazode",
           "settings": {
             "service_name": "Seja un pazode",
-            "service_price": "€200"
+            "service_price": "€200",
+            "service_length": "60"
           }
         },
         "service_98JJjQ": {
@@ -194,7 +207,8 @@
           "name": "Kakls",
           "settings": {
             "service_name": "Kakls",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_LyHghw": {
@@ -202,7 +216,8 @@
           "name": "Dekoltē",
           "settings": {
             "service_name": "Dekoltē",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_g9CFp6": {
@@ -210,7 +225,8 @@
           "name": "Seja + kakls + dekoltē",
           "settings": {
             "service_name": "Seja + kakls + dekoltē",
-            "service_price": "€300"
+            "service_price": "€300",
+            "service_length": "60"
           }
         },
         "service_DKBzn6": {
@@ -218,7 +234,8 @@
           "name": "Acu zona",
           "settings": {
             "service_name": "Acu zona",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         },
         "service_qPzf7R": {
@@ -226,7 +243,8 @@
           "name": "Akcija sejas zonai",
           "settings": {
             "service_name": "Akcija sejas zonai",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         }
       },
@@ -258,7 +276,8 @@
           "name": "Veidojums līdz 10 mm",
           "settings": {
             "service_name": "Veidojums līdz 10 mm",
-            "service_price": "€55"
+            "service_price": "€55",
+            "service_length": "60"
           }
         },
         "service_3qRRAc": {
@@ -266,7 +285,8 @@
           "name": "Veidojums līdz 20 mm",
           "settings": {
             "service_name": "Veidojums līdz 20 mm",
-            "service_price": "€70"
+            "service_price": "€70",
+            "service_length": "60"
           }
         },
         "service_WTbY8x": {
@@ -274,7 +294,8 @@
           "name": "Veidojums virs 20 mm",
           "settings": {
             "service_name": "Veidojums virs 20 mm",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         },
         "service_CCXQaU": {
@@ -282,7 +303,8 @@
           "name": "Papillomu noņemšana",
           "settings": {
             "service_name": "Papillomu noņemšana",
-            "service_price": "€35 - €75"
+            "service_price": "€35 - €75",
+            "service_length": "60"
           }
         },
         "service_8Tz43c": {
@@ -290,7 +312,8 @@
           "name": "Papillomu segments",
           "settings": {
             "service_name": "Papillomu segments",
-            "service_price": "€100 – €150"
+            "service_price": "€100 – €150",
+            "service_length": "60"
           }
         },
         "service_jJQJgj": {
@@ -298,7 +321,8 @@
           "name": "Keratomas (līdz 10 gab.)",
           "settings": {
             "service_name": "Keratomas (līdz 10 gab.)",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_tDHcYg": {
@@ -306,7 +330,8 @@
           "name": "Kandilomu noņemšana",
           "settings": {
             "service_name": "Kandilomu noņemšana",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         },
         "service_jN4iAY": {
@@ -314,7 +339,8 @@
           "name": "Ksantelazma",
           "settings": {
             "service_name": "Ksantelazma",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_W6w4yW": {
@@ -322,7 +348,8 @@
           "name": "Kārpa (viena)",
           "settings": {
             "service_name": "Kārpa (viena)",
-            "service_price": "€35"
+            "service_price": "€35",
+            "service_length": "60"
           }
         },
         "service_aNfbVD": {
@@ -330,7 +357,8 @@
           "name": "Kārpas (divas)",
           "settings": {
             "service_name": "Kārpas (divas)",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         },
         "service_H6HKL4": {
@@ -338,7 +366,8 @@
           "name": "Vairākas kārpas",
           "settings": {
             "service_name": "Vairākas kārpas",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         }
       },
@@ -374,7 +403,8 @@
           "name": "Visa seja",
           "settings": {
             "service_name": "Visa seja",
-            "service_price": "€350"
+            "service_price": "€350",
+            "service_length": "60"
           }
         },
         "service_iQp68H": {
@@ -382,7 +412,8 @@
           "name": "Acu zona",
           "settings": {
             "service_name": "Acu zona",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         },
         "service_X4HBMe": {
@@ -390,7 +421,8 @@
           "name": "Plakstiņu apstrāde",
           "settings": {
             "service_name": "Plakstiņu apstrāde",
-            "service_price": "€110"
+            "service_price": "€110",
+            "service_length": "60"
           }
         },
         "service_3m3wXp": {
@@ -398,7 +430,8 @@
           "name": "Pieres apstrāde",
           "settings": {
             "service_name": "Pieres apstrāde",
-            "service_price": "€200"
+            "service_price": "€200",
+            "service_length": "60"
           }
         },
         "service_qhX3Ud": {
@@ -406,7 +439,8 @@
           "name": "Vaigu zona",
           "settings": {
             "service_name": "Vaigu zona",
-            "service_price": "€120"
+            "service_price": "€120",
+            "service_length": "60"
           }
         },
         "service_pPrxYw": {
@@ -414,7 +448,8 @@
           "name": "Zoda zona",
           "settings": {
             "service_name": "Zoda zona",
-            "service_price": "€110"
+            "service_price": "€110",
+            "service_length": "60"
           }
         },
         "service_qpfhi6": {
@@ -422,7 +457,8 @@
           "name": "Kakla zona",
           "settings": {
             "service_name": "Kakla zona",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         },
         "service_wXYfUH": {
@@ -430,7 +466,8 @@
           "name": "Dekoltē zona",
           "settings": {
             "service_name": "Dekoltē zona",
-            "service_price": "€170"
+            "service_price": "€170",
+            "service_length": "60"
           }
         },
         "service_iHCTce": {
@@ -438,7 +475,8 @@
           "name": "Visas sejas apstrāde",
           "settings": {
             "service_name": "Visas sejas apstrāde",
-            "service_price": "€350"
+            "service_price": "€350",
+            "service_length": "60"
           }
         },
         "service_7UwFWC": {
@@ -446,7 +484,8 @@
           "name": "Seja + kakls + dekoltē",
           "settings": {
             "service_name": "Seja + kakls + dekoltē",
-            "service_price": "€580"
+            "service_price": "€580",
+            "service_length": "60"
           }
         },
         "service_fNxCjJ": {
@@ -454,7 +493,8 @@
           "name": "Rētu slīpēšana (1 cm²)",
           "settings": {
             "service_name": "Rētu slīpēšana (1 cm²)",
-            "service_price": "€25"
+            "service_price": "€25",
+            "service_length": "60"
           }
         },
         "service_WjNWDG": {
@@ -462,7 +502,8 @@
           "name": "Striju slīpēšana (5×10 cm²)",
           "settings": {
             "service_name": "Striju slīpēšana (5×10 cm²)",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         },
         "service_Q3EJGE": {
@@ -470,7 +511,8 @@
           "name": "Keizargrieziena rēta",
           "settings": {
             "service_name": "Keizargrieziena rēta",
-            "service_price": "€130 - €150"
+            "service_price": "€130 - €150",
+            "service_length": "60"
           }
         },
         "service_YnMMkQ": {
@@ -478,7 +520,8 @@
           "name": "Aknes rētu slīpēšana sejai",
           "settings": {
             "service_name": "Aknes rētu slīpēšana sejai",
-            "service_price": "€350"
+            "service_price": "€350",
+            "service_length": "60"
           }
         }
       },
@@ -517,7 +560,8 @@
           "name": "Deguna asinsvadi ",
           "settings": {
             "service_name": "Deguna asinsvadi",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         },
         "service_HWLMMw": {
@@ -525,7 +569,8 @@
           "name": "Viena zvaigznīte",
           "settings": {
             "service_name": "Viena zvaigznīte",
-            "service_price": "€20"
+            "service_price": "€20",
+            "service_length": "60"
           }
         },
         "service_8Bd9fx": {
@@ -533,7 +578,8 @@
           "name": "Vaigu asinsvadu apstrāde",
           "settings": {
             "service_name": "Vaigu asinsvadu apstrāde",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_gfeEBA": {
@@ -541,7 +587,8 @@
           "name": "Kāju asinsvadu apstrāde (5 kv.cm.)  ",
           "settings": {
             "service_name": "Kāju asinsvadu apstrāde (5 kv.cm.) ",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         },
         "service_WWrwf6": {
@@ -549,7 +596,8 @@
           "name": "1 impulss ",
           "settings": {
             "service_name": "1 impulss",
-            "service_price": "€20"
+            "service_price": "€20",
+            "service_length": "60"
           }
         }
       },
@@ -579,7 +627,8 @@
           "name": "Viena naga apstrāde",
           "settings": {
             "service_name": "Viena naga apstrāde",
-            "service_price": "€20"
+            "service_price": "€20",
+            "service_length": "60"
           }
         },
         "service_GgFDWB": {
@@ -587,7 +636,8 @@
           "name": "Visu nagu apstrāde",
           "settings": {
             "service_name": "Visu nagu apstrāde",
-            "service_price": "€70"
+            "service_price": "€70",
+            "service_length": "60"
           }
         }
       },
@@ -614,7 +664,8 @@
           "name": "Laukums 1×1 kv.cm.",
           "settings": {
             "service_name": "Laukums 1×1 kv.cm.",
-            "service_price": "€40"
+            "service_price": "€40",
+            "service_length": "60"
           }
         },
         "service_ynyN39": {
@@ -622,7 +673,8 @@
           "name": "Laukums 2×2 kv.cm.",
           "settings": {
             "service_name": "Laukums 2×2 kv.cm.",
-            "service_price": "€45"
+            "service_price": "€45",
+            "service_length": "60"
           }
         },
         "service_nrNLhp": {
@@ -630,7 +682,8 @@
           "name": "Laukums 5×5 kv.cm.",
           "settings": {
             "service_name": "Laukums 5×5 kv.cm.",
-            "service_price": "€140"
+            "service_price": "€140",
+            "service_length": "60"
           }
         },
         "service_WHmhQE": {
@@ -638,7 +691,8 @@
           "name": "Laukums 10×10 kv.cm.",
           "settings": {
             "service_name": "Laukums 10×10 kv.cm.",
-            "service_price": "€240"
+            "service_price": "€240",
+            "service_length": "60"
           }
         },
         "service_phqYHA": {
@@ -646,7 +700,8 @@
           "name": "Laukums 20×20 kv.cm.",
           "settings": {
             "service_name": "Laukums 20×20 kv.cm.",
-            "service_price": "€320"
+            "service_price": "€320",
+            "service_length": "60"
           }
         },
         "service_RURq4k": {
@@ -654,7 +709,8 @@
           "name": "Permanentā grima dzēšana no",
           "settings": {
             "service_name": "Permanentā grima dzēšana no",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         }
       },
@@ -707,15 +763,6 @@
             "url": "shopify://pages/lazerdermatologija"
           }
         },
-        "service_FCiLf3": {
-          "type": "service",
-          "name": "Podologs",
-          "settings": {
-            "photo": "shopify://shop_images/podologs.jpg",
-            "name": "<p>Podologs</p>",
-            "url": "shopify://pages/podologs"
-          }
-        },
         "service_pgmKtH": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -757,7 +804,6 @@
         "service_B7pcgc",
         "service_YtK4zB",
         "service_WQVEgL",
-        "service_FCiLf3",
         "service_pgmKtH",
         "service_btakyC",
         "service_dKFLgh",
