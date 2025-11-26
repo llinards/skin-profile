@@ -124,7 +124,7 @@
       "name": "Pakalpojumu sadaļa",
       "settings": {
         "heading": "Pakalpojumi",
-        "carousel_desktop": false
+        "carousel_desktop": true
       }
     },
     "team_section_WTmffT": {
