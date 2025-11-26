@@ -48,6 +48,17 @@
     "template_dropdown_project_GLTNWR": {
       "type": "template-dropdown-project",
       "blocks": {
+        "project_dropdown_x6kEbf": {
+          "type": "project_dropdown",
+          "name": "Skin Profile",
+          "settings": {
+            "project_title": "Skin Profile",
+            "project_reference": "",
+            "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un diagnostikas klāstu reģionā.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
         "project_dropdown_8UDfyN": {
           "type": "project_dropdown",
           "name": "Digitālā transformācija",
@@ -66,17 +77,6 @@
             "project_title": "CRM un medicīnas sistēmu integrācija",
             "project_reference": "",
             "content": "<p>Ar Atveseļošanas fonda atbalstu ieviesta CRM sistēma, kas automatizē klientu apkalpošanu, rezervācijas, norēķinus un datu glabāšanu. Tā integrēta ar e-veselības, NVD, VVIS un VID sistēmām. Risinājums: SMART MEDICAL ieviešana SKIN PROFILE estētikas centrā.</p>",
-            "open": false,
-            "inline_layout": true
-          }
-        },
-        "project_dropdown_x6kEbf": {
-          "type": "project_dropdown",
-          "name": "Skin Profile šodien",
-          "settings": {
-            "project_title": "Skin Profile šodien",
-            "project_reference": "",
-            "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un diagnostikas klāstu reģionā.</p>",
             "open": false,
             "inline_layout": true
           }
@@ -149,9 +149,9 @@
         }
       },
       "block_order": [
+        "project_dropdown_x6kEbf",
         "project_dropdown_8UDfyN",
         "project_dropdown_yKifXW",
-        "project_dropdown_x6kEbf",
         "project_dropdown_QzLqa3",
         "project_dropdown_twqHTw",
         "project_dropdown_t46ERg",
