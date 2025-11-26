@@ -311,6 +311,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-11 {
+    z-index: 11;
+  }
   .z-20 {
     z-index: 20;
   }
@@ -2206,6 +2209,12 @@
       padding-inline: calc(var(--spacing) * 18);
     }
   }
+  .lg\:text-2xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .lg\:text-3xl {
     @media (width >= 64rem) {
       font-size: var(--text-3xl);
@@ -2267,6 +2276,12 @@
   .xl\:px-24 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:text-2xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .xl\:text-8xl {
