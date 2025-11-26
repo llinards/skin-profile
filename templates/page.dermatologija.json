@@ -72,7 +72,8 @@
           "name": "Pirmreizējā Konsultācija",
           "settings": {
             "service_name": "Pirmreizējā Konsultācija",
-            "service_price": "€55"
+            "service_price": "€55",
+            "service_length": "60"
           }
         },
         "service_kGdXVr": {
@@ -80,7 +81,8 @@
           "name": "Atkārtota konsultācija 30 dienu laikā",
           "settings": {
             "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00"
+            "service_price": "€45.00",
+            "service_length": "60"
           }
         }
       },
@@ -107,7 +109,8 @@
           "name": "1 veidojuma noņemšana",
           "settings": {
             "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25"
+            "service_price": "€25",
+            "service_length": "60"
           }
         },
         "service_jzXAD9": {
@@ -115,7 +118,8 @@
           "name": "Vairāku veidojumu noņemšana",
           "settings": {
             "service_name": "Vairāku veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "€35 – €100"
+            "service_price": "€35 – €100",
+            "service_length": "60"
           }
         }
       },
@@ -142,7 +146,8 @@
           "name": "Analīzes uz sēnīti (materiāla paņemšana)",
           "settings": {
             "service_name": "Analīzes uz sēnīti (materiāla paņemšana)",
-            "service_price": "€10"
+            "service_price": "€10",
+            "service_length": "60"
           }
         }
       },
@@ -168,7 +173,8 @@
           "name": "1 veidojuma apskate",
           "settings": {
             "service_name": "1 veidojuma apskate",
-            "service_price": "€20"
+            "service_price": "€20",
+            "service_length": "60"
           }
         },
         "service_3qRRAc": {
@@ -176,7 +182,8 @@
           "name": "Katrs nākamais veidojums",
           "settings": {
             "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10"
+            "service_price": "+€10",
+            "service_length": "60"
           }
         },
         "service_WTbY8x": {
@@ -184,7 +191,8 @@
           "name": "Visa ķermeņa veidojumu apskate",
           "settings": {
             "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70"
+            "service_price": "€70",
+            "service_length": "60"
           }
         }
       },
@@ -212,7 +220,8 @@
           "name": "Ādas punch biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
           "settings": {
             "service_name": "Ādas punch biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€55"
+            "service_price": "€55",
+            "service_length": "60"
           }
         },
         "service_dqhzkb": {
@@ -220,7 +229,8 @@
           "name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
           "settings": {
             "service_name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_9xz8R4": {
@@ -228,7 +238,8 @@
           "name": "Ādas ekscīzijas biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
           "settings": {
             "service_name": "Ādas ekscīzijas biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€130 - €200"
+            "service_price": "€130 - €200",
+            "service_length": "60"
           }
         }
       },
@@ -278,15 +289,6 @@
             "url": "shopify://pages/lazerdermatologija"
           }
         },
-        "service_J8Czxe": {
-          "type": "service",
-          "name": "Podologs",
-          "settings": {
-            "photo": "shopify://shop_images/podologs.jpg",
-            "name": "<p>Podologs</p>",
-            "url": "shopify://pages/podologs"
-          }
-        },
         "service_xgkqQx": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -328,7 +330,6 @@
         "service_H4JTT9",
         "service_f9K83j",
         "service_q4TViX",
-        "service_J8Czxe",
         "service_xgkqQx",
         "service_PTnLDR",
         "service_UhXfgi",
