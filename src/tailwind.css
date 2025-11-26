@@ -208,6 +208,10 @@
     }
 }
 
+[x-cloak] {
+    display: none !important;
+}
+
 .sp-link a {
     text-decoration: 2px solid underline;
     transition: all;
