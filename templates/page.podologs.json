@@ -64,7 +64,7 @@
       }
     },
     "template_services_section_J6AXyp": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_kGdXVr": {
           "type": "service",
@@ -162,7 +162,7 @@
       }
     },
     "template_services_section_qjdJcX": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_4HgD7c": {
           "type": "service",

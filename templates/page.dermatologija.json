@@ -65,7 +65,7 @@
       }
     },
     "template_services_section_J6AXyp": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_FLCgdG": {
           "type": "service",
@@ -102,7 +102,7 @@
       }
     },
     "template_services_section_qjdJcX": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_4HgD7c": {
           "type": "service",
@@ -139,7 +139,7 @@
       }
     },
     "template_dropdown_service_7F6BhF": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_YWF9dz": {
           "type": "service",
@@ -166,7 +166,7 @@
       }
     },
     "template_services_section_kPR4ih": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_yfca67": {
           "type": "service",
@@ -213,7 +213,7 @@
       }
     },
     "template_dropdown_service_jncnJR": {
-      "type": "template-dropdown-service",
+      "type": "template-dropdown-procedure",
       "blocks": {
         "service_jxXgAc": {
           "type": "service",
