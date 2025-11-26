@@ -275,17 +275,26 @@
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
+  .right-8 {
+    right: calc(var(--spacing) * 8);
+  }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
   .right-15 {
     right: calc(var(--spacing) * 15);
   }
+  .bottom-8 {
+    bottom: calc(var(--spacing) * 8);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-8 {
+    left: calc(var(--spacing) * 8);
   }
   .left-15 {
     left: calc(var(--spacing) * 15);
@@ -1438,6 +1447,11 @@
       }
     }
   }
+  .focus\:bg-white {
+    &:focus {
+      background-color: var(--color-white);
+    }
+  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
@@ -1453,6 +1467,11 @@
   .focus-visible\:ring-inset {
     &:focus-visible {
       --tw-ring-inset: inset;
+    }
+  }
+  .active\:bg-white {
+    &:active {
+      background-color: var(--color-white);
     }
   }
   .min-\[440px\]\:object-\[center_10\%\] {

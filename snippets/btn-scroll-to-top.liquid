@@ -1,0 +1,26 @@
+<div
+  x-data="{ show: false }"
+  x-init="
+    const check = () => show = window.scrollY > window.innerHeight;
+    window.addEventListener('scroll', check);
+    setTimeout(check, 50);
+  "
+>
+  <button
+    x-show="show"
+    @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    x-transition.opacity.duration.300ms
+    class="
+      fixed bottom-8 left-8 z-50
+      bg-sp-brown border border-sp-brown text-white
+      px-4 py-2 rounded-md shadow-lg cursor-pointer
+      hover:bg-white hover:sp-brown
+      focus:bg-white focus:sp-brown
+      active:bg-white active:sp-brown
+      transition-all duration-300
+    "
+    aria-label="Atpakaļ uz lapas sākumu"
+  >
+    ↑
+  </button>
+</div>

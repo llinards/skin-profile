@@ -16,7 +16,7 @@
     <button
       type="button"
       @click="toggle()"
-      class="w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
+      class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
       :aria-expanded="open.toString()"
       :aria-controls="'{{ submenu_id }}'"
       aria-haspopup="true"
@@ -71,7 +71,7 @@
                   <button
                     type="button"
                     @click="toggleChild()"
-                    class="w-full inline-flex items-center justify-center gap-2 px-3 py-3 text-sm hover:bg-white/30 transition-all duration-200 rounded"
+                    class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 px-3 py-3 text-sm hover:bg-white/30 transition-all duration-200 rounded"
                     :aria-expanded="childOpen.toString()"
                     :aria-controls="'{{ child_submenu_id }}'"
                     aria-haspopup="true"
