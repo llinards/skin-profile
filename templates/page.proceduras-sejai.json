@@ -60,7 +60,8 @@
       "name": "Teksta sadaļa",
       "settings": {
         "heading": "Dabisks skaistums ar medicīnisku precizitāti",
-        "text": "<ul><li>Atjaunojam ādas tonusu un elastību, mazinot novecošanās pazīmes.</li><li>Piedāvājam risinājumus pigmentācijas, rētu un ādas problēmu korekcijai.</li><li>Nodrošinām drošas un efektīvas procedūras ar jaunākajām tehnoloģijām.</li></ul>"
+        "text": "<ul><li>Atjaunojam ādas tonusu un elastību, mazinot novecošanās pazīmes.</li><li>Piedāvājam risinājumus pigmentācijas, rētu un ādas problēmu korekcijai.</li><li>Nodrošinām drošas un efektīvas procedūras ar jaunākajām tehnoloģijām.</li></ul>",
+        "text_html": ""
       }
     },
     "template_services_section_J6AXyp": {
@@ -71,7 +72,8 @@
           "name": "Sejas ādas dziļā tīrīšana",
           "settings": {
             "service_name": "Sejas ādas dziļā tīrīšana",
-            "service_price": "€60"
+            "service_price": "€60",
+            "service_length": "60"
           }
         }
       },
@@ -97,7 +99,8 @@
           "name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
           "settings": {
             "service_name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
-            "service_price": "€65"
+            "service_price": "€65",
+            "service_length": "60"
           }
         }
       },
@@ -123,7 +126,8 @@
           "name": "GENEO X sejai",
           "settings": {
             "service_name": "GENEO X sejai",
-            "service_price": "€130"
+            "service_price": "€130",
+            "service_length": "60"
           }
         }
       },
@@ -149,7 +153,8 @@
           "name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
           "settings": {
             "service_name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
-            "service_price": "€150"
+            "service_price": "€150",
+            "service_length": "60"
           }
         }
       },
@@ -175,7 +180,8 @@
           "name": "GENEO X divu aparātmetožu kopums",
           "settings": {
             "service_name": "GENEO X divu aparātmetožu kopums",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         }
       },
@@ -201,7 +207,8 @@
           "name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
           "settings": {
             "service_name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
-            "service_price": "€65"
+            "service_price": "€65",
+            "service_length": "60"
           }
         }
       },
@@ -227,7 +234,8 @@
           "name": "Fresh Up",
           "settings": {
             "service_name": "Fresh Up",
-            "service_price": "€90"
+            "service_price": "€90",
+            "service_length": "60"
           }
         },
         "service_mbUyzC": {
@@ -235,7 +243,8 @@
           "name": "Energy",
           "settings": {
             "service_name": "Energy",
-            "service_price": "€120"
+            "service_price": "€120",
+            "service_length": "60"
           }
         },
         "service_aX3RVG": {
@@ -243,7 +252,8 @@
           "name": "Classic",
           "settings": {
             "service_name": "Classic",
-            "service_price": "€230"
+            "service_price": "€230",
+            "service_length": "60"
           }
         }
       },
@@ -271,7 +281,8 @@
           "name": "Mikroadatu terapija",
           "settings": {
             "service_name": "Mikroadatu terapija",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         }
       },
@@ -297,7 +308,8 @@
           "name": "Neuvia Hydro Delux",
           "settings": {
             "service_name": "Neuvia Hydro Delux",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_LD7cXc": {
@@ -305,7 +317,8 @@
           "name": "Electri acu zonai",
           "settings": {
             "service_name": "Electri acu zonai",
-            "service_price": "€160"
+            "service_price": "€160",
+            "service_length": "60"
           }
         },
         "service_VkN6Le": {
@@ -313,7 +326,8 @@
           "name": "Xela Rederm 1,8%",
           "settings": {
             "service_name": "Xela Rederm 1,8%",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_t7BwDW": {
@@ -321,7 +335,8 @@
           "name": "Xela Rederm 2,0%",
           "settings": {
             "service_name": "Xela Rederm 2,0%",
-            "service_price": "€200"
+            "service_price": "€200",
+            "service_length": "60"
           }
         },
         "service_7CxKEy": {
@@ -329,7 +344,8 @@
           "name": "Nucleofill Medium",
           "settings": {
             "service_name": "Nucleofill Medium",
-            "service_price": "€180"
+            "service_price": "€180",
+            "service_length": "60"
           }
         },
         "service_iyHFwC": {
@@ -337,7 +353,8 @@
           "name": "Nucleofill Strong",
           "settings": {
             "service_name": "Nucleofill Strong",
-            "service_price": "€200"
+            "service_price": "€200",
+            "service_length": "60"
           }
         },
         "service_qmrXka": {
@@ -345,7 +362,8 @@
           "name": "Profhilo (2 ml)",
           "settings": {
             "service_name": "Profhilo (2 ml)",
-            "service_price": "€250"
+            "service_price": "€250",
+            "service_length": "60"
           }
         }
       },
@@ -377,7 +395,8 @@
           "name": "Polinukleotīdi",
           "settings": {
             "service_name": "Polinukleotīdi",
-            "service_price": "€180 – €200"
+            "service_price": "€180 – €200",
+            "service_length": "60"
           }
         }
       },
@@ -403,7 +422,8 @@
           "name": "Uzacu korekcija",
           "settings": {
             "service_name": "Uzacu korekcija",
-            "service_price": "€12"
+            "service_price": "€12",
+            "service_length": "60"
           }
         },
         "service_JQxdt3": {
@@ -411,7 +431,8 @@
           "name": "Uzacu krāsošana",
           "settings": {
             "service_name": "Uzacu krāsošana",
-            "service_price": "€12"
+            "service_price": "€12",
+            "service_length": "60"
           }
         },
         "service_MHVynp": {
@@ -419,7 +440,8 @@
           "name": "Skropstu krāsošana",
           "settings": {
             "service_name": "Skropstu krāsošana",
-            "service_price": "€12"
+            "service_price": "€12",
+            "service_length": "60"
           }
         },
         "service_G7h8hM": {
@@ -427,7 +449,8 @@
           "name": "Uzacu korekcija un krāsošana",
           "settings": {
             "service_name": "Uzacu korekcija un krāsošana",
-            "service_price": "€20"
+            "service_price": "€20",
+            "service_length": "60"
           }
         }
       },
@@ -456,7 +479,8 @@
           "name": "Radiofrekvence sejas ādas liftingam",
           "settings": {
             "service_name": "Radiofrekvence sejas ādas liftingam",
-            "service_price": "€65"
+            "service_price": "€65",
+            "service_length": "60"
           }
         }
       },
@@ -482,7 +506,8 @@
           "name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
           "settings": {
             "service_name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         }
       },
@@ -508,7 +533,8 @@
           "name": "Lukss klases programma sejas ādas atjaunošanai",
           "settings": {
             "service_name": "Lukss klases programma sejas ādas atjaunošanai",
-            "service_price": "€100"
+            "service_price": "€100",
+            "service_length": "60"
           }
         }
       },
@@ -534,7 +560,8 @@
           "name": "Endodermālā masāža vai Endosfēras masāža",
           "settings": {
             "service_name": "Endodermālā masāža vai Endosfēras masāža",
-            "service_price": "€50"
+            "service_price": "€50",
+            "service_length": "60"
           }
         }
       },
@@ -560,7 +587,8 @@
           "name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
           "settings": {
             "service_name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
-            "service_price": "€65"
+            "service_price": "€65",
+            "service_length": "60"
           }
         }
       },
@@ -586,7 +614,8 @@
           "name": "PRX pīlings",
           "settings": {
             "service_name": "PRX pīlings",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_yPKqcN": {
@@ -594,7 +623,8 @@
           "name": "Karbona pīlings VS Carbon",
           "settings": {
             "service_name": "Karbona pīlings VS Carbon",
-            "service_price": "€80"
+            "service_price": "€80",
+            "service_length": "60"
           }
         },
         "service_immC4N": {
@@ -602,7 +632,8 @@
           "name": "Kopējais diapazons",
           "settings": {
             "service_name": "Kopējais diapazons",
-            "service_price": "€80 - €100"
+            "service_price": "€80 - €100",
+            "service_length": "60"
           }
         }
       },
@@ -652,15 +683,6 @@
             "url": "shopify://pages/lazerdermatologija"
           }
         },
-        "service_hb9CLz": {
-          "type": "service",
-          "name": "Podologs",
-          "settings": {
-            "photo": "shopify://shop_images/podologs.jpg",
-            "name": "<p>Podologs</p>",
-            "url": "shopify://pages/podologs"
-          }
-        },
         "service_CiKxQC": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -702,7 +724,6 @@
         "service_mhLaFU",
         "service_YVkFqj",
         "service_LFL3BB",
-        "service_hb9CLz",
         "service_CiKxQC",
         "service_jVYWyn",
         "service_iJtMHF",
