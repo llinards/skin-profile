@@ -1529,6 +1529,16 @@
       background-color: var(--color-white);
     }
   }
+  .focus\:fill-white {
+    &:focus {
+      fill: var(--color-white);
+    }
+  }
+  .focus\:text-white {
+    &:focus {
+      color: var(--color-white);
+    }
+  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
