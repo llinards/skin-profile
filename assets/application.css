@@ -1551,6 +1551,16 @@
       background-color: var(--color-white);
     }
   }
+  .active\:fill-white {
+    &:active {
+      fill: var(--color-white);
+    }
+  }
+  .active\:text-white {
+    &:active {
+      color: var(--color-white);
+    }
+  }
   .min-\[440px\]\:object-\[center_10\%\] {
     @media (width >= 440px) {
       object-position: center 10%;
