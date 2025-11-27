@@ -71,7 +71,7 @@
                   <button
                     type="button"
                     @click="toggleChild()"
-                    class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 px-3 py-3 text-sm hover:bg-white/30 transition-all duration-200 rounded"
+                    class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 px-3 py-3 hover:bg-white/30 transition-all duration-200 rounded"
                     :aria-expanded="childOpen.toString()"
                     :aria-controls="'{{ child_submenu_id }}'"
                     aria-haspopup="true"
@@ -160,7 +160,7 @@
       :aria-expanded="isOpen.toString()"
     >
       {{ link.title }}
-      {% render 'icon-arrow-down' %}
+      {% render 'icon-chevron-down' %}
     </a>
 
     {% if link.links and link.links.size > 0 %}
@@ -184,7 +184,7 @@
                 >
                   {{ child.title }}
                   {% if child.links and child.links.size > 0 %}
-                    {% render 'icon-arrow-down', class: 'rotate-270' %}
+                    {% render 'icon-chevron-down', class: 'rotate-270' %}
                   {% endif %}
                 </a>
               </li>
