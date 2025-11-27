@@ -344,6 +344,9 @@
   .z-50 {
     z-index: 50;
   }
+  .z-51 {
+    z-index: 51;
+  }
   .order-1 {
     order: 1;
   }
