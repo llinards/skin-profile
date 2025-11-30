@@ -659,7 +659,7 @@
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
             "name": "<p>Lāzerepilācija</p>",
-            "url": ""
+            "url": "shopify://pages/lazerepilacija"
           }
         },
         "service_gJctMq": {
@@ -668,7 +668,7 @@
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
             "name": "<p>Ķermeņa procedūras</p>",
-            "url": ""
+            "url": "shopify://pages/kermena-proceduras"
           }
         },
         "service_PQgdpc": {
