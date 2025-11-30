@@ -1535,6 +1535,16 @@
       background-color: var(--color-white);
     }
   }
+  .focus\:fill-white {
+    &:focus {
+      fill: var(--color-white);
+    }
+  }
+  .focus\:text-white {
+    &:focus {
+      color: var(--color-white);
+    }
+  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
@@ -1555,6 +1565,16 @@
   .active\:bg-white {
     &:active {
       background-color: var(--color-white);
+    }
+  }
+  .active\:fill-white {
+    &:active {
+      fill: var(--color-white);
+    }
+  }
+  .active\:text-white {
+    &:active {
+      color: var(--color-white);
     }
   }
   .min-\[440px\]\:object-\[center_10\%\] {
