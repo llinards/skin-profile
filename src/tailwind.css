@@ -140,6 +140,11 @@
         src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-Light.ttf?v=1758653989')
     }
 
+    @font-face {
+        font-family: "Manrope-SemiBold";
+        src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-SemiBold.ttf?v=1758653988')
+    }
+
     html {
         scroll-behavior: smooth;
         scroll-snap-align: start;
@@ -156,6 +161,14 @@
 
     .body-font {
         font-family: "Manrope-Light";
+    }
+
+    .body-font-semi-bold {
+        font-family: "Manrope-SemiBold";
+    }
+
+    .font-bold {
+        font-family: "Manrope-SemiBold" !important;
     }
 
     h2,

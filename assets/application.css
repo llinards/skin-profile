@@ -993,9 +993,6 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
-  .border-gray-500 {
-    border-color: var(--color-gray-500);
-  }
   .border-transparent {
     border-color: transparent;
   }
@@ -1257,9 +1254,6 @@
   }
   .text-black {
     color: var(--color-black);
-  }
-  .text-gray-300 {
-    color: var(--color-gray-300);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -2384,11 +2378,6 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
-  .\32 xl\:p-0 {
-    @media (width >= 96rem) {
-      padding: calc(var(--spacing) * 0);
-    }
-  }
 }
 @layer components {
   .accent-sp-brown {
@@ -2496,6 +2485,10 @@
     font-family: "Manrope-Light";
     src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-Light.ttf?v=1758653989');
   }
+  @font-face {
+    font-family: "Manrope-SemiBold";
+    src: url('https://cdn.shopify.com/s/files/1/0973/6998/1260/files/Manrope-SemiBold.ttf?v=1758653988');
+  }
   html {
     scroll-behavior: smooth;
     scroll-snap-align: start;
@@ -2509,6 +2502,12 @@
   }
   .body-font {
     font-family: "Manrope-Light";
+  }
+  .body-font-semi-bold {
+    font-family: "Manrope-SemiBold";
+  }
+  .font-bold {
+    font-family: "Manrope-SemiBold" !important;
   }
   h2, h3, h4, h5, h6 {
     font-family: "Belleza-Regular";

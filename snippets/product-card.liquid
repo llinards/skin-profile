@@ -25,14 +25,14 @@
 </div>
 
 <div class="flex flex-col space-y-3 items-center justify-center">
-  <h3 class="body-font text-center text-xs sm:text-sm xl:text-base xl:px-6 font-bold">
+  <h3 class="font-bold tracking-wider text-center text-xs sm:text-sm xl:px-6">
     {{ product.title | escape | link_to: product.url }}
   </h3>
 
   {%- comment -%} Price with discount {%- endcomment -%}
   {%- if variant.compare_at_price > variant.price -%}
     <div class="flex items-baseline gap-2 flex-wrap justify-center">
-      <p class="text-xs sm:text-sm font-semibold sp-brown">{{ variant.price | money }}</p>
+      <p class="text-xs sm:text-sm font-bold sp-brown">{{ variant.price | money }}</p>
       <p class="text-xs line-through opacity-60">{{ variant.compare_at_price | money }}</p>
     </div>
   {%- else -%}
