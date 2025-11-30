@@ -121,6 +121,7 @@
         "service_jF96NR",
         "service_PkbQ3h"
       ],
+      "disabled": true,
       "name": "Pakalpojumu sadaļa",
       "settings": {
         "heading": "Pakalpojumi",
