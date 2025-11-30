@@ -152,9 +152,18 @@
         <div class="p-6 md:flex items-center relative">
           <button
             @click="activeModal = null; document.body.style.overflow = 'auto'"
-            class="absolute top-10 right-10 md:top-8 md:right-8 text-2xl leading-none z-10"
+            class="
+              absolute top-8 right-8 w-8 h-8 rounded-full bg-sp-brown flex items-center justify-center group
+              text-white border border-sp-brown
+              hover:bg-white hover:sp-brown
+              active:bg-white active:sp-brown
+              transition-all duration-300 z-50
+            "
+            aria-label="Close modal"
           >
-            {% render 'icon-mobile-menu-close', class: 'fill-white hover:fill-sp-brown md:fill-black' %}
+            {% render 'icon-mobile-menu-close',
+              class: 'size-6 fill-white group-hover:fill-sp-brown group-active:fill-sp-brown'
+            %}
           </button>
           {% if block.settings.photo %}
             <div class="md:w-3/7">
@@ -177,7 +186,11 @@
             {% if block.settings.specialities != blank %}
               <div class="space-y-1">
                 <p class="uppercase font-bold">Specializācija</p>
-                {{ block.settings.specialities }}
+                <div class="overflow-y-auto max-h-32 md:max-h-40 pr-2">
+                  <p>
+                    {{ block.settings.specialities }}
+                  </p>
+                </div>
               </div>
             {% endif %}
 

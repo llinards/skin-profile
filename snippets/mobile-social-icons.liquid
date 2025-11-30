@@ -6,20 +6,20 @@
         class="
           p-2 rounded-full bg-sp-brown flex items-center justify-center group
           text-white border border-sp-brown
-          hover:bg-white hover:text-sp-brown
-          active:bg-white active:text-sp-brown
+          hover:bg-white hover:sp-brown
+          active:bg-white active:sp-brown
           transition-all duration-300
         "
       >
         <!-- Closed Icon -->
         <span x-show="!open">
-          {% render 'icon-question-mark', class: 'size-6 group-hover:fill-sp-brown group-active:fill-sp-brown' %}
+          {% render 'icon-question-mark', class: 'size-6' %}
         </span>
 
         <!-- Open/Close Icon -->
         <span x-show="open">
           {% render 'icon-mobile-menu-close',
-            class: 'size-6 fill-white group-hover:fill-sp-brown group-active:fill-sp-brown'
+            class: 'size-6 fill-white group-active:sp-brown group-hover:sp-brown group-hover:fill-sp-brown group-active:fill-sp-brown'
           %}
         </span>
       </div>

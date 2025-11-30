@@ -78,6 +78,10 @@
         background-color: var(--color-brand-primary) !important;
     }
 
+    .group:hover .group-hover\:fill-sp-brown {
+        fill: var(--color-brand-primary) !important;
+    }
+
     .group:hover .group-hover\:text-white {
         color: #ffffff !important;
     }
