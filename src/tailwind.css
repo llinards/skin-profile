@@ -342,8 +342,6 @@
     }
 }
 
-
-
 /* Optional utility for consistent focus */
 @layer utilities {
   .focus-ring {
