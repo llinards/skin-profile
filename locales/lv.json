@@ -484,7 +484,7 @@
         "price_label": "Cena",
         "price_per_item": {
           "accessibility_label": "%{price} par vienību",
-          "label": "%{cena}/gab."
+          "label": "%{price}/gab."
         },
         "quantity_label": "Daudzums",
         "product_change_label": "Mainīt",
@@ -503,7 +503,7 @@
         "unit_price": {
           "accessible_separator": "uz vienu",
           "per_item": {
-            "single": "%{cena} katrs",
+            "single": "%{price} katrs",
             "one": "%{price} par %{count} vienību",
             "other": "%{price} par %{count} precēm"
           },
