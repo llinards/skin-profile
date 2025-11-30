@@ -66,6 +66,10 @@
         background-color: var(--color-brand-secondary-light);
     }
 
+    .hover\:bg-sp-light-brown-opacity:hover {
+        background-color: var(--color-brand-secondary-light);
+    }
+
     .hover\:bg-sp-brown:hover {
         background-color: var(--color-brand-primary) !important;
     }
@@ -100,6 +104,10 @@
 
     .group:hover .group-hover\:bg-sp-light-brown {
         background-color: var(--color-brand-secondary) !important;
+    }
+    
+    .stroke-sp-brown {
+        stroke: var(--color-brand-primary) !important;;
     }
 
     .text-2xs {

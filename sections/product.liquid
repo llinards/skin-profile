@@ -65,37 +65,94 @@
 
         {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
 
-        <div class="mb-6 flex flex-row justify-center sm:justify-start items-center gap-4 md:gap-6">
-          <label for="quantity" class="uppercase font-bold text-sm tracking-widest">Daudzums</label>
-          <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
-            <button
-              type="button"
-              id="minus-btn"
-              class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-            >
-              <span class="text-sm leading-none font-bold">−</span>
-            </button>
+        <div class="mb-6 flex flex-col gap-4 md:gap-6">
+          <div class="inline-flex items-center">
+            <label for="quantity" class="uppercase font-bold text-sm tracking-widest">Daudzums</label>
+            <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4">
+              <button
+                type="button"
+                id="minus-btn"
+                class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+              >
+                <span class="text-sm leading-none font-bold">−</span>
+              </button>
 
-            <input
-              id="quantity"
-              type="number"
-              name="quantity"
-              min="1"
-              max="{{ stock_quantity }}"
-              value="1"
-              class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
-              readonly
-              aria-describedby="quantity-error"
-            >
+              <input
+                id="quantity"
+                type="number"
+                name="quantity"
+                min="1"
+                max="{{ stock_quantity }}"
+                value="1"
+                class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
+                readonly
+                aria-describedby="quantity-error"
+              >
 
-            <button
-              type="button"
-              id="plus-btn"
-              class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-            >
-              <span class="text-sm leading-none font-bold">+</span>
-            </button>
+              <button
+                type="button"
+                id="plus-btn"
+                class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+              >
+                <span class="text-sm leading-none font-bold">+</span>
+              </button>
+            </div>
           </div>
+          {%- if product.variants.size > 1 -%}
+            <div x-data="{ open: false }" class="relative w-full flex items-center justify-start max-w-xs">
+              <label class="uppercase font-bold text-sm tracking-widest block">Variants</label>
+              <button
+                type="button"
+                @click="open = !open"
+                class="flex py-2 px-4 ml-4 items-center uppercase rounded-full border border-gray-300 w-full justify-between cursor-pointer hover:bg-gray-50 transition-colors min-w-48"
+                aria-haspopup="listbox"
+                :aria-expanded="open.toString()"
+              >
+                <span class="tracking-wide text-sm truncate">
+                  {{ product.selected_or_first_available_variant.title }}
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 bg-gray-300 rounded-full p-1 transition-transform"
+                  :class="{ 'rotate-180': open }"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <!-- Dropdown menu below the button -->
+              <div
+                x-show="open"
+                @click.away="open = false"
+                x-transition
+                class="absolute left-0 top-full z-10 mt-2 w-full bg-white border text-base border-gray-300 rounded-lg shadow-lg"
+                style="display: none;"
+              >
+                <ul class="py-2 max-h-60 overflow-y-auto list-none">
+                  {% for variant in product.variants %}
+                    <li>
+                      <button
+                        type="button"
+                        class="w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-all duration-300"
+                        @click="
+                          $el.closest('[x-data]').querySelector('input[name=id]').value = '{{ variant.id }}';
+                          open = false;
+                          $el.closest('[x-data]').querySelector('span').textContent = '{{ variant.title | escape }}';
+                        "
+                      >
+                        {{ variant.title -}}
+                        {%- if variant.available == false %} (Nav pieejams){% endif %}
+                      </button>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            </div>
+          {%- endif -%}
 
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
@@ -106,7 +163,7 @@
         </div>
         <div
           id="quantity-error"
-          class="text-base text-red-600 h-4 opacity-0 transition-opacity duration-300 mb-12"
+          class="text-base text-red-600 h-4 opacity-0 transition-opacity duration-300 mb-4"
           aria-live="polite"
         ></div>
 

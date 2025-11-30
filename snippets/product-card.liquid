@@ -32,7 +32,7 @@
   {%- comment -%} Price with discount {%- endcomment -%}
   {%- if variant.compare_at_price > variant.price -%}
     <div class="flex items-baseline gap-2 flex-wrap justify-center">
-      <p class="text-xs sm:text-sm font-semibold text-sp-brown">{{ variant.price | money }}</p>
+      <p class="text-xs sm:text-sm font-semibold">{{ variant.price | money }}</p>
       <p class="text-xs line-through opacity-60">{{ variant.compare_at_price | money }}</p>
     </div>
   {%- else -%}
@@ -43,11 +43,7 @@
     {% if product.has_only_default_variant %}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
     {% else %}
-      <select name="id">
-        {% for variant in product.variants %}
-          <option value="{{ variant.id }}">{{ variant.title }}</option>
-        {% endfor %}
-      </select>
+      {% render 'product-variant-dropdown', product: product %}
     {% endif %}
     <input type="hidden" name="quantity" value="1">
     {% if product.available %}
