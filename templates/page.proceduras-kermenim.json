@@ -44,7 +44,7 @@
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
-        "heading": "Lāzerepilācija",
+        "heading": "Procedūra ķermenim",
         "subtext": "",
         "spacing": true
       }
@@ -59,7 +59,7 @@
       "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
-        "heading": "Lāzerepilācija",
+        "heading": "Procedūra ķermenim",
         "text": "",
         "text_html": ""
       }
