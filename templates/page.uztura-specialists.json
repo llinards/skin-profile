@@ -72,7 +72,7 @@
           "name": "Konstultācija",
           "settings": {
             "service_name": "Konstultācija",
-            "service_price": "",
+            "service_price": "60",
             "service_length": "60"
           }
         }
