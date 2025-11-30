@@ -349,6 +349,81 @@
       "type": "teamplate-btn-scroll-to-top",
       "name": "Atpakaļ uz lapas sākumu",
       "settings": {}
+    },
+    "template_services_carousel_grid_qK9jj3": {
+      "type": "template-services-carousel-grid",
+      "blocks": {
+        "service_ApaGcD": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "<p>Estētiskā medicīna</p>",
+            "url": "shopify://pages/estetiska-medicina-1"
+          }
+        },
+        "service_JErbya": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "<p>Dermatoloģija</p>",
+            "url": "shopify://pages/dermatologija"
+          }
+        },
+        "service_YhTizL": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "<p>Lāzer-dermatoloģija</p>",
+            "url": "shopify://pages/lazerdermatologija"
+          }
+        },
+        "service_rMefHP": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "<p>Sejas procedūras</p>",
+            "url": "shopify://pages/proceduras-sejai"
+          }
+        },
+        "service_JUJnPG": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "<p>Lāzerepilācija</p>",
+            "url": "shopify://pages/lazerepilacija"
+          }
+        },
+        "service_bqj3aR": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "<p>Ķermeņa procedūras</p>",
+            "url": "shopify://pages/kermena-proceduras"
+          }
+        },
+        "service_dKtPH8": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "<p>Uztura speciālists</p>",
+            "url": "shopify://pages/uztura-specialists"
+          }
+        }
+      },
+      "block_order": [
+        "service_ApaGcD",
+        "service_JErbya",
+        "service_YhTizL",
+        "service_rMefHP",
+        "service_JUJnPG",
+        "service_bqj3aR",
+        "service_dKtPH8"
+      ],
+      "name": "Pakalpojumu sadaļa",
+      "settings": {
+        "heading": "Citi pakalpojumi",
+        "carousel_desktop": true
+      }
     }
   },
   "order": [
@@ -360,6 +435,7 @@
     "template_partners_RUpUhn",
     "template_before_after_k3ACH6",
     "template_contact_us_wXe9dp",
-    "teamplate_btn_scroll_to_top_B9MAxk"
+    "teamplate_btn_scroll_to_top_B9MAxk",
+    "template_services_carousel_grid_qK9jj3"
   ]
 }
