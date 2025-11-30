@@ -1,0 +1,239 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "template_header_carousel_tpn6mQ": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_y3Kxa9": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 1",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-1.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 1"
+          }
+        },
+        "image_rAEJjb": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 2",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 2"
+          }
+        },
+        "image_7r36tB": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 3",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 3"
+          }
+        }
+      },
+      "block_order": [
+        "image_y3Kxa9",
+        "image_rAEJjb",
+        "image_7r36tB"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Uzture Speciālists",
+        "subtext": "<p>Uztura speciālists ir augsti kvalificēta ārstniecības persona, kas palīdz normalizēt ēšanas paradumus, svaru un uzlabot vispārējo pašsajūtu. Konsultācijas laikā tiek izstrādāta individuāla ēšanas programma un svara korekcijas plāns, ņemot vērā katra pacienta vajadzības un veselības stāvokli.</p>",
+        "spacing": true
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": false
+      }
+    },
+    "template_text_section_JPJC6T": {
+      "type": "template-text-only",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Individuāla pieeja veselīgam dzīvesveidam",
+        "text": "",
+        "text_html": "<ul class=\"list-disc\">\n    <li>Palīdz normalizēt ēšanas paradumus, svaru un uzlabot pašsajūtu.\n    </li>\n    <li>Konsultācijas laikā izstrādā individuālu ēšanas programmu un svara korekcijas plānu.\n    </li>\n    <li>Izmanto bioimpedances metodi, lai noteiktu:\n        <ul>\n            <li class=\"pl-6 list-[circle]\">vielmaiņas ātrumu;\n            </li>\n            <li class=\"pl-6 list-[circle]\">ķermeņa tauku, kaulu un ūdens proporcijas;\n            </li>\n            <li class=\"pl-6 list-[circle]\">muskuļu daudzumu;\n            </li>\n<li class=\"pl-6 list-[circle]\">ķermeņa masas indeksu;</li>\n            <li class=\"pl-6 list-[circle]\">bioloģisko vecumu.</li>\n        </ul>\n    </li>\n    <li>Balstoties uz rezultātiem, izstrādā piemērotu ēdienkarti un iesaka fiziskās aktivitātes.</li>\n    <li>Konsultācija piemērota visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</li>\n</ul>"
+      }
+    },
+    "template_services_section_J6AXyp": {
+      "type": "template-dropdown-procedure",
+      "blocks": {
+        "service_kGdXVr": {
+          "type": "service",
+          "name": "Konstultācija",
+          "settings": {
+            "service_name": "Konstultācija",
+            "service_price": "60",
+            "service_length": "60"
+          }
+        }
+      },
+      "block_order": [
+        "service_kGdXVr"
+      ],
+      "name": "Konstultācija",
+      "settings": {
+        "title": "Konstultācija",
+        "content": "<p>Balstoties uz rezultātiem, uztura speciālists izstrādā piemērotu ēdienkarti un sniedz ieteikumus fiziskajām aktivitātēm, kas palīdzēs sasniegt vēlamo rezultātu efektīvāk. Konsultācija ir noderīga visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</p>",
+        "service_disclaimer": "",
+        "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url_cta": "Pieteikt",
+        "open_by_default": false,
+        "space_bottom": true
+      }
+    },
+    "template_services_carousel_grid_N7bVQt": {
+      "type": "template-services-carousel-grid",
+      "blocks": {
+        "service_ntPz4G": {
+          "type": "service",
+          "name": "Estētiskā medicīna",
+          "settings": {
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "<p>Estētiskā medicīna</p>",
+            "url": "shopify://pages/estetiska-medicina-1"
+          }
+        },
+        "service_KHPgrF": {
+          "type": "service",
+          "name": "Dermatoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "<p>Dermatoloģija</p>",
+            "url": "shopify://pages/dermatologija"
+          }
+        },
+        "service_jWyfPH": {
+          "type": "service",
+          "name": "Lāzerdermatoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "<p>Lāzer-dermatoloģija</p>",
+            "url": "shopify://pages/lazerdermatologija"
+          }
+        },
+        "service_a89Azd": {
+          "type": "service",
+          "name": "Sejas procedūras",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "<p>Sejas procedūras</p>",
+            "url": "shopify://pages/proceduras-sejai"
+          }
+        },
+        "service_BLxeLX": {
+          "type": "service",
+          "name": "Lāzerepilācija",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "<p>Lāzerepilācija</p>",
+            "url": ""
+          }
+        },
+        "service_xGwa3T": {
+          "type": "service",
+          "name": "Ķermeņa procedūras",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "<p>Ķermeņa procedūras</p>",
+            "url": ""
+          }
+        },
+        "service_VfRKwK": {
+          "type": "service",
+          "name": "Uztura speciālists",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "<p>Uztura speciālists</p>",
+            "url": "shopify://pages/uztura-specialists"
+          }
+        }
+      },
+      "block_order": [
+        "service_ntPz4G",
+        "service_KHPgrF",
+        "service_jWyfPH",
+        "service_a89Azd",
+        "service_BLxeLX",
+        "service_xGwa3T",
+        "service_VfRKwK"
+      ],
+      "name": "Pakalpojumu sadaļa",
+      "settings": {
+        "heading": "Citi pakalpojumi",
+        "carousel_desktop": true
+      }
+    },
+    "template_virtual_consultation_pX36xq": {
+      "type": "template-virtual-consultation",
+      "name": "Virtuālā konsutlācija",
+      "settings": {}
+    },
+    "template_contact_us_BzVhrB": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_MQRNxQ": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_QjQyxX": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_UWwgHq": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_jFjkaW": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_MQRNxQ",
+        "button_QjQyxX",
+        "button_UWwgHq",
+        "button_jFjkaW"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
+    }
+  },
+  "order": [
+    "template_header_carousel_tpn6mQ",
+    "main",
+    "template_text_section_JPJC6T",
+    "template_services_section_J6AXyp",
+    "template_services_carousel_grid_N7bVQt",
+    "template_virtual_consultation_pX36xq",
+    "template_contact_us_BzVhrB"
+  ]
+}
