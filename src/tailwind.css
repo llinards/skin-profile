@@ -336,16 +336,13 @@
 
 @media screen and (min-width: 1440px) {
 
-    #category-carousel {
+    #category-carousel,
+    #services-carousel {
         --f-carousel-slide-width: calc((100% - 96px) / 5);
     }
 }
 
-@media screen and (min-width: 1920px) {
-    #services-carousel {
-        --f-carousel-slide-width: calc((100% - 96px) / 6);
-    }
-}
+
 
 /* Optional utility for consistent focus */
 @layer utilities {
