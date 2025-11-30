@@ -72,8 +72,8 @@
 {
   "name": "Pakalpojumu sadaļa",
   "settings": [
-    { "type": "text", "id": "heading", "label": "Virsraksts", "default": "Pakalpojumi" },
-    { "type": "checkbox", "id": "carousel_desktop", "label": "Pakalpojumu karuselis uz desktopa", "default": false }
+    { "type": "text", "id": "heading", "label": "Virsraksts", "default": "Citi pakalpojumi" },
+    { "type": "checkbox", "id": "carousel_desktop", "label": "Pakalpojumu karuselis uz desktopa", "default": true }
   ],
   "blocks": [
     {
@@ -86,6 +86,72 @@
       ]
     }
   ],
-  "presets": [{ "name": "Pakalpojumu sadaļa" }]
+  "presets": [
+    {
+      "name": "Pakalpojumu sadaļa",
+      "settings": {
+        "heading": "Citi pakalpojumi",
+        "carousel_desktop": true
+      },
+      "blocks": [
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "<p>Estētiskā medicīna</p>",
+            "url": "shopify://pages/estetiska-medicina-1"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "<p>Dermatoloģija</p>",
+            "url": "shopify://pages/dermatologija"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "<p>Lāzer-dermatoloģija</p>",
+            "url": "shopify://pages/lazerdermatologija"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "<p>Sejas procedūras</p>",
+            "url": "shopify://pages/proceduras-sejai"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "<p>Lāzerepilācija</p>",
+            "url": "shopify://pages/lazerepilacija"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "<p>Ķermeņa procedūras</p>",
+            "url": "shopify://pages/kermena-proceduras"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "<p>Uztura speciālists</p>",
+            "url": "shopify://pages/uztura-specialists"
+          }
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
