@@ -10,6 +10,14 @@
         color: var(--color-brand-primary);
     }
 
+    .active\:sp-brown:active {
+        color: var(--color-brand-primary) !important;
+    }
+
+    .focus\:sp-brown:focus {
+        color: var(--color-brand-primary) !important;
+    }
+
     .text-sp-brown {
         color: var(--color-brand-primary);
     }
