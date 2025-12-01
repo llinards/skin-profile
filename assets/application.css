@@ -1558,12 +1558,6 @@
       object-position: center 10%;
     }
   }
-  .min-\[460px\]\:text-3xl {
-    @media (width >= 460px) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
   .sm\:absolute {
     @media (width >= 40rem) {
       position: absolute;
@@ -2158,12 +2152,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-  .md\:text-3xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .md\:text-4xl {

@@ -1,13 +1,13 @@
 {% assign links = linklists['main-menu'].links %}
 <!-- DESKTOP MENU -->
-<div class="hidden lg:flex items-center justify-between space-x-10 py-4 {{ invert_class }}">
+<div class="hidden lg:flex items-center justify-between space-x-10 py-4">
   <div class="flex flex-row space-x-8">
     {% for link in links %}
       {% if forloop.index <= 3 %}
         {% if link.links != blank %}
-          {% render 'dropdown-menu-link', link: link, class: {{ invert_class }} %}
+          {% render 'dropdown-menu-link', link: link, invert_class: invert_class %}
         {% else %}
-          {% render 'menu-link', link: link %}
+          {% render 'menu-link', link: link, invert_class: invert_class %}
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -21,7 +21,7 @@
         alt="{{ shop.name }} logo"
         height="1024"
         width="1024"
-        class="w-58 h-18 cursor-pointer"
+        class="w-58 h-18 cursor-pointer {{ invert_class }}"
       >
     </a>
   </div>
@@ -30,14 +30,14 @@
     {% for link in links %}
       {% if forloop.index > 3 %}
         {% if link.links != blank %}
-          {% render 'dropdown-menu-link', link: link %}
+          {% render 'dropdown-menu-link', link: link, invert_class: invert_class %}
         {% else %}
-          {% render 'menu-link', link: link %}
+          {% render 'menu-link', link: link, invert_class: invert_class %}
         {% endif %}
       {% endif %}
     {% endfor %}
-    {% render 'menu-language' %}
-    {% render 'cart-counter' %}
+    {% render 'menu-language', invert_class: invert_class %}
+    {% render 'cart-counter', invert_class: invert_class %}
   </div>
 </div>
 

@@ -2,7 +2,6 @@
 {%- if languages.size > 1 -%}
   {%- assign current = localization.language.iso_code -%}
   {%- assign is_mobile = mobile | default: false -%}
-
   {% if is_mobile %}
     <div
       x-data="
@@ -45,18 +44,22 @@
         role="region"
         :aria-hidden="(!open).toString()"
       >
-        <ul class="mt-2 space-y-2 list-none text-center bg-sp-light-brown rounded-md py-2">
-          {% for locale in languages %}
-            <li>
-              <a
-                href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
-                class="inline-block px-3 py-2 rounded hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
-              >
-                {{ locale.endonym_name | capitalize }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+        {% form 'localization', id: 'localization_form_mobile' %}
+          <ul class="mt-2 space-y-2 list-none text-center bg-sp-light-brown rounded-md py-2">
+            {% for locale in languages %}
+              <li>
+                <a
+                  href="#"
+                  data-locale="{{ locale.iso_code }}"
+                  class="locale-link inline-block px-3 py-2 rounded hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+                >
+                  {{ locale.endonym_name | capitalize }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <input type="hidden" name="locale_code" value="{{ current }}" id="locale-code-mobile">
+        {% endform %}
       </div>
     </div>
   {% else %}
@@ -75,7 +78,7 @@
     >
       <button
         type="button"
-        class="text-base xl:text-lg flex lg:text-white text-base xl:text-lg items-center py-1 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap"
+        class="text-base xl:text-lg flex lg:text-white items-center py-1 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap {{ invert_class }}"
         :aria-expanded="isOpen.toString()"
         aria-haspopup="true"
       >
@@ -88,20 +91,36 @@
         class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50"
       >
         <div class="w-40 rounded-md bg-white shadow-xl ring-1 ring-black/5 overflow-hidden">
-          <ul class="py-2 text-center list-none">
-            {% for locale in languages %}
-              <li>
-                <a
-                  href="{{ request.path | append: '?locale=' | append: locale.iso_code }}"
-                  class=" block px-3 py-2 text-sm hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
-                >
-                  {{ locale.endonym_name | capitalize }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+          {% form 'localization', id: 'localization_form_desktop' %}
+            <ul class="py-2 text-center list-none {{ invert_class }}">
+              {% for locale in languages %}
+                <li>
+                  <a
+                    href="#"
+                    data-locale="{{ locale.iso_code }}"
+                    class="locale-link block px-3 py-2 text-sm hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
+                  >
+                    {{ locale.endonym_name | capitalize }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+            <input type="hidden" name="locale_code" value="{{ current }}" id="locale-code-desktop">
+          {% endform %}
         </div>
       </div>
     </div>
   {% endif %}
+
+  <script>
+    document.querySelectorAll('.locale-link').forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const form = item.closest('form');
+        const hiddenInput = form.querySelector('input[name="locale_code"]');
+        hiddenInput.value = item.getAttribute('data-locale');
+        form.submit();
+      });
+    });
+  </script>
 {%- endif -%}

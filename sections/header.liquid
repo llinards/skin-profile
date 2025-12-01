@@ -1,14 +1,13 @@
 <header class="relative container mx-auto">
   <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
     <nav class="mx-auto px-4 w-full" role="navigation" aria-label="Main navigation">
-      {% if template.name == 'cart'
-        or template.name == 'product'
-        or template.name == '404'
-        or page.metafields.custom.navigation_style == 'dark'
+      {% if template.name == 'index'
+        or template.name == 'collection'
+        or page.metafields.custom.navigation_style == 'light'
       %}
-        {% render 'menu', invert_class: 'invert' %}
-      {% else %}
         {% render 'menu' %}
+      {% else %}
+        {% render 'menu', invert_class: 'invert' %}
       {% endif %}
     </nav>
   </div>
