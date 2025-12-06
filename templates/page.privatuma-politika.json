@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": true
+      }
+    },
+    "template_text_only_one_column_xrgh63": {
+      "type": "template-text-only-one-column",
+      "blocks": {
+        "text_DgzeXL": {
+          "type": "text",
+          "name": "1. VISPĀRĪGIE NOTEIKUMI",
+          "settings": {
+            "title": "1. VISPĀRĪGIE NOTEIKUMI",
+            "text": "<p>1.1. Pārdevējs ir SIA “PIECAS DIENAS”, reģistrācijas Nr. 44103127212, juridiskā adrese: Siguldas nov., Sigulda, Krišjāņa Barona iela 4 – 24, LV-2150; e-pasta adrese: <a href=\"mailto:toskinprofile@gmail.com\" title=\"mailto:toskinprofile@gmail.com\">toskinprofile@gmail.com</a>  ; tālr. <a href=\"tel:+37126444554\" target=\"_blank\" title=\"tel:+37126444554\">+371 26444554</a>; (turpmāk – Uzņēmums), interneta veikala tīmekļa vietnē www.skinprofile.lv (turpmāk – e-veikals).</p><p>1.2. Pircējs ir fiziska vai juridiska persona (turpmāk – Pircējs), kas veic preču (turpmāk – Prece) pirkumu Uzņēmuma e-veikalā.</p><p>1.3. Pircējam, veicot pirkumu e-veikalā, ir pienākums norādīt savu vārdu, uzvārdu/nosaukumu, mobilā tālruņa numuru, e-pasta adresi un piegādes adresi. Veicot pasūtījumu, Pircējs apliecina, ka tam nav tiesisku šķēršļu noslēgt līgumu ar Uzņēmumu par e-veikala izmantošanu.</p><p>1.4.  Brīdī, kad Pircējs ar interneta starpniecību iegādājas Preci e-veikalā,  šāda savstarpējā vienošanās tiek uzskatīta par Distances līgumu un ir pakļauta tiesību normām, kas regulē Distances līgumu tai skaitā, bet ne tikai, Patērētāju tiesību aizsardzības likumam, 2014.gada 20.maija Ministru Kabineta noteikumiem  Nr.255 „Noteikumi par distances līgumu”. Distances līgums par Preces pirkumu uzskatāms par noslēgtu ar Preces apmaksas brīdi<br/></p>",
+            "text_html": ""
+          }
+        },
+        "text_DUQGL3": {
+          "type": "text",
+          "name": "2. NOTEIKUMI PAR PRECES PASŪTĪŠANU",
+          "settings": {
+            "title": "2. NOTEIKUMI PAR PRECES PASŪTĪŠANU",
+            "text": "<p>2.1. Lai veiktu Preces pirkumu e-veikalā, Pircējam nav nepieciešama reģistrācija.</p><p>2.2. Preces pasūtījuma veikšanas kārtība:</p><ul><li>Pircējam jānospiež poga “Add to Cart”.</li><li>Lai pasūtītu izvēlēto Preci, jānospiež poga „Proceed to checkout” Pircēja iepirkuma groza apakšējā kreisajā pusē, kurā tiek attēlota informācija par groza saturu.</li><li>Pircējam jāievada visa nepieciešamā informācija, lai veiktu pirkumu un Uzņēmums varētu nodrošināt Preces piegādi.<br/></li></ul>",
+            "text_html": ""
+          }
+        },
+        "text_XjN8Wb": {
+          "type": "text",
+          "name": "3. PASŪTĪJUMA APMAKSAS NOTEIKUMI",
+          "settings": {
+            "title": "3. PASŪTĪJUMA APMAKSAS NOTEIKUMI",
+            "text": "<p>3.1. Tiešsaistē norēķinoties ar karti. Apmaksa notiek pasūtījuma noformēšanas laikā, ievadot norēķinu kartes numuru. Apmaksu ir iespējams veikt ar VISA un MasterCard kredītkartēm un debetkartēm.</p>",
+            "text_html": ""
+          }
+        },
+        "text_bUmRDN": {
+          "type": "text",
+          "name": "4. PIEGĀDES NOTEIKUMI",
+          "settings": {
+            "title": "4. PIEGĀDES NOTEIKUMI",
+            "text": "<p><strong> </strong>4.1. Preces piegādi nodrošina SIA „OMNIVA”, Reģ. nr.: 40103527192 Dzirnieku iela 24, Mārupe, LV-2167 (turpmāk – OMNIVA) un SIA “DPD Latvija”  Reģ. nr.: 40003393255 Uriekstes iela 8A, Rīga, LV-1005 (turpmāk – DPD) . Veicot pirkumu, Pircējs pirms apmaksas par Preci,  norāda, kurā OMNIVA vai DPD pakomātā  vēlas saņemt Preci. Pēc pirkuma apstiprinājuma, Pircējs saņem Preci pakomātā 5 darbdienu laikā, ja prece ir Uzņēmuma noliktavā. Pircējs par to tiek informēts ar īsziņu brīdī, kad Prece tiek nogādāta uz Pircēja norādīto OMNIVA vai DPD pakomātu.  Mobilā tālruņa norādīšana ir nepieciešama īsziņas saņemšanai. Ja Pircējs neizņem Preci no norādītā pakomāta pēc īsziņas saņemšanas 7 dienu laikā, Prece tiek nogādāta atpakaļ Uzņēmumam, un tādējādi Pircējam netiek atgriezta samaksa par piegādi 3 eur apmērā, kas ir iekļauta iekļauta cenā.</p><p>4.2. Par piegādi ārpus Latvijas teritorijas Eiropā Pircējam jāsazinās ar Uzņēmumu pa e-pastu info@skinprofile.lv norādot piegādes adresi ārpus Latvijas. Atkarībā no adresāta, tiek noteikta piegādes maksa un termiņi saskaņā ar OMNIVA vai AS „Latvijas Pasta” noteikumiem par starptautiskajiem sūtījumiem no Latvijas uz ārvalstīm.</p>",
+            "text_html": ""
+          }
+        },
+        "text_9fhd6t": {
+          "type": "text",
+          "name": "5. VISPĀRĪGIE LĪGUMA NOTEIKUMI PAR E-VEIKALA LIETOŠANU UN PIRKUMU VEIKŠANU",
+          "settings": {
+            "title": "5. VISPĀRĪGIE LĪGUMA NOTEIKUMI PAR E-VEIKALA LIETOŠANU UN PIRKUMU VEIKŠANU",
+            "text": "<p>5.1. Pirms pasūtījuma veikšanas Pircējam ir pienākums iepazīties ar šiem noteikumiem.</p><p>5.2. Veicot pasūtījumu, Pircējs apliecina, ka ir pilnībā iepazinies ar šiem noteikumiem, šie noteikumi Pircējam ir saprotami, tie Pircēju apmierina, Pircējs tiem piekrīt un, ka Pircējs tos pildīs.</p><p>5.3. Pircējs, noslēdzot līgumu ar Uzņēmumu, apliecina, ka ir iepazinies ar piedāvātās Preces aprakstu un īpašībām.</p><p>5.4. Pirkuma līgums stājas spēkā ar brīdi, kad Uzņēmums ir saņēmis samaksu par Pircēja veikto pasūtījumu un izbeidzas Preces piegādes brīdī vai ar pilnīgu tā izpildi.</p><p>5.5. Pircējs pērk, bet Uzņēmums pārdod Preces, ko Pircējs ir pasūtījis, ievērojot e-veikalā norādīto kārtību un noteikumus, balstoties uz kuriem, starp Pircēju un uzņēmumu tiek noslēgts Distances pirkuma līgums.</p><p>5.6. Katru reizi veicot Preču pasūtījumu, Pircējs izsaka piedāvājumu noslēgt attiecīgo Preču Distances pirkuma līgumu saskaņā ar pasūtījumu un šiem noteikumiem. Uzņēmums apstiprina attiecīgo Preču Distances pirkuma līguma noslēgšanu vai atsakās to noslēgt. Ja Preču Distances pirkuma līgums starp Pircēju un Uzņēmumu ir noslēgts, uz Pircēja norādīto e-pasta adresi tiek nosūtīts apstiprinājums. Katrs Pircēja Preču pasūtījums ir pamats atsevišķam Distances pirkuma līgumam.</p><p>5.7. Noslēdzot Preču Distances pirkuma līgumu, Pircējs uzņemas saistības veikt attiecīgās Preces, kā arī tās piegādes apmaksu.</p><p>5.8. Preces raksturojums un cena EUR (ieskaitot visus nodokļus) tiek norādīta e-veikala tīmekļa vietnē un Pircējam ir tiesības ar to iepazīties pirms katra Preču pirkuma. Uzņēmums patur sev tiesības vienpusēji jebkurā brīdī mainīt Preces cenu. Uz konkrētām Precēm, par kurām starp Pircēju un Uzņēmumu jau ir noslēgts Distances pirkuma līgums, cenu izmaiņas nav pieļaujamas.</p>",
+            "text_html": ""
+          }
+        },
+        "text_4Wykir": {
+          "type": "text",
+          "name": "6. GARANTIJAS",
+          "settings": {
+            "title": "6. GARANTIJAS",
+            "text": "<p>6.1. Uzņēmuma e-veikalā piedāvātās Preces garantija ir 2 gadi.</p><p>6.2. Ja garantijas laikā ir radušās pretenzijas par iegādātās Preces kvalitāti, ar Preci un apmaksu apliecinošiem dokumentiem Pircējs var vērsties Uzņēmumā. Ja tiek konstatēts ražošanas brāķis, Uzņēmums apņemas apmainīt Preci pret identisku Preci. Ja tiek konstatēts defekts, ko Precei lietošanas laikā radījis pats Pircējs, prece netiek mainīta.</p><p>6.3. Garantijas saistības tiek anulētas gadījumos, ja:</p><ul><li>Prece tikusi lietota neatbilstoši tās pamatfunkcijai – lasīšanai;</li><li>Prece patvaļīgi līmēta, labota, pārveidota vai citādi izmainīta;</li><li>Prece tikusi sazīmēta, sakrāsota, salīmēta, salocīta, tajā veiktas piezīmes, griezumi vai citi bojājumi;</li><li>Precei ir radušies bojājumi dabas stihiju (ugunsgrēks, plūdi, vētra u.c.) rezultātā;</li><li>Precei ir radušies bojājumi svešķermeņiem, kukaiņiem, šķidrumiem vai citām vielām nokļūstot Preces iekšienē;</li><li>Precei ir radušies bojājumi piegādes brīdī, par kuriem jūs neesat informējis Uzņēmumu uzreiz pēc tās saņemšanas, bet ne vēlāk kā 14 dienu laikā.</li></ul><p>6.4. Gadījumā, ja pasūtītājai Precei, atverot iepakojumu, tiek konstatēti slēpti trūkumi (bojājumi), Pircējs šādu Preci nosūta atpakaļ Uzņēmumam, kur tiek veikta Preces apmaiņa. Ja Preces apmaiņa nav iespējama, Pircējs ir tiesīgs atteikties no pasūtījuma un saņemt atpakaļ pilnu Preces cenu un ar pasūtījuma piegādi un atpakaļ nosūtīšanu saistītos izdevumus.</p>",
+            "text_html": ""
+          }
+        },
+        "text_mV9BWd": {
+          "type": "text",
+          "name": "7. DISTANCES LĪGUMA IZPILDES LAIKS",
+          "settings": {
+            "title": "7. DISTANCES LĪGUMA IZPILDES LAIKS",
+            "text": "<p>7.1. Uzņēmums apņemas izpildīt Distances līguma noteikumus Latvijas Republikas teritorijā ne vēlāk kā 30 dienas pēc pasūtījuma saņemšanas no Pircēja vai atbilstoši e-veikala noteiktiem termiņiem ārpus Latvijas Republikas teritorijas.</p><p>7.2. Ja Uzņēmums nevar izpildīt līgumu Pircēja pasūtītās Preces iztrūkuma dēļ, Uzņēmums informē par to Pircēju. Tādā gadījumā Uzņēmums veic 100% naudas atgriešanu Pircējam.</p>",
+            "text_html": ""
+          }
+        },
+        "text_HiMLEy": {
+          "type": "text",
+          "name": "8. PREČU ATTEIKUMA UN ATGRIEŠANAS KĀRTĪBA",
+          "settings": {
+            "title": "8. PREČU ATTEIKUMA UN ATGRIEŠANAS KĀRTĪBA",
+            "text": "<p>8.1. Pircējam saskaņā ar Patērētāju tiesību aizsardzības likumu ir tiesības atteikties no iegādātās Preces un vienpusēji atkāpties no Distances pirkuma līguma 14 kalendāro dienu laikā, un atgriezt Uzņēmuma e-veikalā iegādāto Preci. Atteikuma tiesību izmantošanas termiņu skaita no dienas, kad Pircējs ir saņēmis Preci. Izmantojot atteikuma tiesības, Preci Pircējam ir jāatgriež par saviem līdzekļiem 14 dienu laikā no dienas, kad tas nosūtījis atteikumu.</p><p>8.2. Lai izmantotu atteikuma tiesības, ir jāaizpilda atteikuma paziņojuma veidlapa, ko Pārdevējs nosūta Pircējam pa e-pastu pēc Pircēja pieprasījuma. Pircēja pienākums ir 7 dienu laikā pēc atteikuma vēstules nosūtīšanas atdot preci Pārdevējam.</p><p>8.3. Uzņēmums veiks naudas atgriešanu par iegādāto Preci uz Pircēja pirkuma brīdī izmantoto kontu 30 dienu laikā no dienas, kad būs saņemta informācija par atkāpšanos no līguma kopā ar pirkuma apstiprinošu dokumentu (internetbankas maksājuma uzdevuma izdruka)  un Prece tiks atgriezta uz Uzņēmuma adresi tās pilnā komplektācijā vai saņemts apliecinājums par to, ka prece nosūtīta atpakaļ uz e-pastu info@skinprofile.lv, atkarībā no tā, kura darbība ir veikta agrāk.</p><p>8.4. Uzņēmums patur tiesības Pircējam atteikt izmantot atteikuma tiesības vai ieturēt kompensācijas maksu gadījumā, ja Prece ir bojāta, ja ir nozaudēts Preces oriģinālais iepakojums vai, ja tās iepakojums ir būtiski bojāts. Prece nedrīkst būt lietota un tai jāatrodas tās oriģinālajā iepakojumā.</p>",
+            "text_html": ""
+          }
+        },
+        "text_Mjtke8": {
+          "type": "text",
+          "name": "9. KONFIDENCIALITĀTE",
+          "settings": {
+            "title": "9. KONFIDENCIALITĀTE",
+            "text": "<p>9.1. Uzņēmums nodod informāciju par Pircēju Preču piegādātājam OMNIVA, kas tam nepieciešama pasūtījuma apstrādei. Uzņēmums apņemas neizpaust un nenodot informāciju par Pircēju citām trešajām pusēm bez Pircēja rakstiskas piekrišanas, izņemot gadījumus, kad tiek pārkāpti Latvijas Republikas normatīvie akti vai šis Distances līgums.</p>",
+            "text_html": ""
+          }
+        },
+        "text_LNQnLr": {
+          "type": "text",
+          "name": "10. CITI NOTEIKUMI",
+          "settings": {
+            "title": "10. CITI NOTEIKUMI",
+            "text": "<p>10.1. Ievadot nepieciešamo informāciju, noformējot pasūtījumu, Pircējs apliecina, ka ir iepazinies un piekrīt, ka viņa sniegtie dati tiek izmantoti, lai Uzņēmums varētu pieņemt Pircēja pasūtījumu un veikt Preču piegādi saskaņā ar Latvijas Republikas normatīvo aktu prasībām. Ievadot informāciju, Pircējs piekrīt, ka tam uz norādīto e-pasta adresi tiks izsūtīti paziņojumi, kas saistīti ar Pircēja pasūtījuma apstrādi, un citi ziņojumi un piedāvājumi no Uzņēmuma.</p><p>10.2. Uzņēmumam ir tiesības jebkurā laikā labot un precizēt lietošanas noteikumus, publicējot attiecīgās izmaiņas e-veikalā. Jebkuras šajos noteikumos veiktās izmaiņas stājas spēkā uzreiz pēc to publicēšanas.</p>",
+            "text_html": ""
+          }
+        },
+        "text_3fgYWg": {
+          "type": "text",
+          "name": "11. LĪGUMA DARBĪBAS TERMIŅŠ",
+          "settings": {
+            "title": "11. LĪGUMA DARBĪBAS TERMIŅŠ",
+            "text": "<p>11.1. Līgums stājas spēkā brīdī, kad Pircējs veicis Preces pasūtījumu un ir spēkā līdz brīdim, kamēr Pircējs un Uzņēmums pilnībā izpildījuši savas saistības viens pret otru.</p>",
+            "text_html": ""
+          }
+        },
+        "text_LjADCY": {
+          "type": "text",
+          "name": "12. STRĪDU IZSKATĪŠANA",
+          "settings": {
+            "title": "12. STRĪDU IZSKATĪŠANA",
+            "text": "<p>12.1. Strīdi, kas izriet no Distances pirkuma līguma vai saskaņā ar to noslēgtajiem līgumiem, izskatāmi Latvijas Republikas tiesību aizsardzības iestādēs saskaņā ar Latvijas Republikas tiesībās noteikto kārtību. Distance pirkuma līgumam un saskaņā ar to noslēgtajiem līgumiem, piemērojama Latvijas Republikas likumdošana.</p>",
+            "text_html": ""
+          }
+        },
+        "text_fn3nK3": {
+          "type": "text",
+          "name": "13. UZŅĒMUMA REKVIZĪTI",
+          "settings": {
+            "title": "13. UZŅĒMUMA REKVIZĪTI",
+            "text": "<p>Nosaukums: SIA „PIECAS DIENAS”</p><p>Juridiskā adrese: Siguldas nov., Sigulda, Krišjāņa Barona iela 4 – 24, LV-2150</p><p>Reģistrācijas numurs: 44103127212</p><p>Banka: Swedbank LV56HABA0551048992836</p><p>E-veikala adrese: <a href=\"https://www.skinprofile.lv\" title=\"https://www.skinprofile.lv\">www.skinprofile.lv</a></p><p>Tālrunis: <a href=\"tel:+37126444554\" target=\"_blank\" title=\"tel:+37126444554\">+371 26444554</a></p><p>E-pasta adrese: <a href=\"mailto:toskinprofile@gmail.com\" target=\"_blank\" title=\"mailto:toskinprofile@gmail.com\">toskinprofile@gmail.com</a></p>",
+            "text_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_DgzeXL",
+        "text_DUQGL3",
+        "text_XjN8Wb",
+        "text_bUmRDN",
+        "text_9fhd6t",
+        "text_4Wykir",
+        "text_mV9BWd",
+        "text_HiMLEy",
+        "text_Mjtke8",
+        "text_LNQnLr",
+        "text_3fgYWg",
+        "text_LjADCY",
+        "text_fn3nK3"
+      ],
+      "name": "Sadarbības noteikumi",
+      "settings": {
+        "title": "Sadarbības noteikumi"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "template_text_only_one_column_xrgh63"
+  ]
+}
