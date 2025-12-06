@@ -1252,9 +1252,6 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
-  .text-\(--color-brand-primary\) {
-    color: var(--color-brand-primary);
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -1417,23 +1414,11 @@
       }
     }
   }
-  .group-hover\:text-\(--color-brand-primary\) {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-brand-primary);
-      }
-    }
-  }
   .group-hover\:text-white {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-white);
       }
-    }
-  }
-  .group-active\:text-\(--color-brand-primary\) {
-    &:is(:where(.group):active *) {
-      color: var(--color-brand-primary);
     }
   }
   .after\:content-\[\'\,\\00a0\'\] {
@@ -1505,20 +1490,6 @@
       }
     }
   }
-  .hover\:fill-\(--color-brand-primary\) {
-    &:hover {
-      @media (hover: hover) {
-        fill: var(--color-brand-primary);
-      }
-    }
-  }
-  .hover\:fill-\[var\(--color-brand-primary\)\] {
-    &:hover {
-      @media (hover: hover) {
-        fill: var(--color-brand-primary);
-      }
-    }
-  }
   .hover\:fill-white {
     &:hover {
       @media (hover: hover) {
@@ -1533,30 +1504,11 @@
       }
     }
   }
-  .hover\:text-\(--color-brand-primary\) {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-brand-primary);
-      }
-    }
-  }
-  .hover\:text-\[var\(--color-brand-primary\)\] {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-brand-primary);
-      }
-    }
-  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
       }
-    }
-  }
-  .focus\:bg-white {
-    &:focus {
-      background-color: var(--color-white);
     }
   }
   .focus\:outline-none {
@@ -2226,44 +2178,12 @@
       }
     }
   }
-  .md\:hover\:fill-\(--color-brand-primary\) {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          fill: var(--color-brand-primary);
-        }
-      }
-    }
-  }
   .md\:hover\:text-\(--color-brand-primary\) {
     @media (width >= 48rem) {
       &:hover {
         @media (hover: hover) {
           color: var(--color-brand-primary);
         }
-      }
-    }
-  }
-  .md\:hover\:text-\[var\(--color-brand-primary\)\] {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-brand-primary);
-        }
-      }
-    }
-  }
-  .md\:focus\:bg-white {
-    @media (width >= 48rem) {
-      &:focus {
-        background-color: var(--color-white);
-      }
-    }
-  }
-  .md\:active\:bg-white {
-    @media (width >= 48rem) {
-      &:active {
-        background-color: var(--color-white);
       }
     }
   }
