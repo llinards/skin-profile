@@ -149,8 +149,8 @@
           "name": "Kontaktinformācija",
           "settings": {
             "title": "Kontaktinformācija",
-            "text": "<p>Atbilde uz jautājumu.</p>",
-            "text_html": "Ja jums ir jautājumi par šo Privātuma politiku vai vēlaties izmantot savas tiesības, lūdzu, rakstiet vai zvaniet mums: linards@slmedia.lv Enerģētikas iela 2-5, Mālpils, 2152, Latvija Saskaņā ar piemērojamiem datu aizsardzības likumiem mēs esam jūsu personas datu pārzinis."
+            "text": "<p>Ja jums ir jautājumi par šo Privātuma politiku vai vēlaties izmantot savas tiesības, lūdzu, rakstiet vai zvaniet mums:</p><ul><li><a href=\"tel: +37127841111 \" title=\"tel: +37127841111 \">+371 27841111 </a></li><li><a href=\"mailto:linards@slmedia.lv\" title=\"mailto:linards@slmedia.lv\">linards@slmedia.lv</a></li><li>Enerģētikas iela 2-5, </li><li>Mālpils, 2152, Latvija </li></ul><p>Saskaņā ar piemērojamiem datu aizsardzības likumiem mēs esam jūsu personas datu pārzinis.</p>",
+            "text_html": ""
           }
         }
       },
