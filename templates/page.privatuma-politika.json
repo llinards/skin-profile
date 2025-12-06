@@ -62,6 +62,96 @@
             "text": "<p>Atkarībā no tā, kā izmantojat Pakalpojumus, mēs varam izmantot jūsu personas informāciju šādiem mērķiem:<br/></p><ul><li><strong>Pakalpojumu nodrošināšana, personalizēšana un uzlabošana.</strong> Mēs izmantojam jūsu informāciju, lai izpildītu līgumsaistības, apstrādātu maksājumus, izpildītu pasūtījumus, atcerētos jūsu preferences, sūtītu paziņojumus par kontu, apstrādātu pirkumus, atgriešanas, apmaiņas un citus darījumus, organizētu piegādi, nodrošinātu atsauksmju publicēšanu un sniegtu personalizētu iepirkšanās pieredzi.</li><li><strong>Mārketings un reklāma.</strong> Jūsu informāciju izmantojam mārketinga nolūkiem – reklāmu un piedāvājumu sūtīšanai pa e-pastu, SMS vai pastu, kā arī tiešsaistes reklāmu rādīšanai, tostarp balstoties uz jūsu aktivitāti.</li><li><strong>Drošība un krāpšanas novēršana.</strong> Jūsu informācija tiek izmantota, lai autentificētu kontus, nodrošinātu drošus maksājumus, atklātu un novērstu krāpniecisku vai nelikumīgu darbību, aizsargātu pakalpojumus un sabiedrisko drošību.</li><li><strong>Saziņa ar jums.</strong> Mēs izmantojam jūsu informāciju klientu atbalstam un efektīvai sadarbībai.</li><li><strong>Juridiski iemesli.</strong> Mēs varam apstrādāt jūsu personas informāciju, lai ievērotu likumus, atbildētu uz tiesībsargājošo iestāžu pieprasījumiem, izmeklētu pārkāpumus vai piedalītos tiesvedībā.</li></ul>",
             "text_html": ""
           }
+        },
+        "text_Q46UBF": {
+          "type": "text",
+          "name": "Personas informācijas izpaušana",
+          "settings": {
+            "title": "Personas informācijas izpaušana",
+            "text": "<p>Mēs varam izpaust jūsu personas informāciju:</p><ul><li>Shopify un citiem pakalpojumu sniedzējiem (piem., IT pārvaldība, maksājumu apstrāde, datu analītika, piegāde).<br/></li><li>Biznesa un mārketinga partneriem, kas sniedz mārketinga pakalpojumus vai rādīs reklāmas.<br/></li><li>Trešajām personām pēc jūsu norādījuma vai piekrišanas (piem., piegādei, sociālo tīklu integrācijām).<br/></li><li>Mūsu saistītajiem uzņēmumiem.<br/></li><li>Biznesa darījumu kontekstā (piem., apvienošana, maksātnespēja), kā arī juridisku pienākumu dēļ.</li></ul>",
+            "text_html": ""
+          }
+        },
+        "text_Mg8EBa": {
+          "type": "text",
+          "name": "Attiecības ar Shopify",
+          "settings": {
+            "title": "Attiecības ar Shopify",
+            "text": "<p>Pakalpojumus hostē Shopify, kas vāks un apstrādās jūsu informāciju, tostarp sniedzot uzlabotas funkcijas. Shopify ir atsevišķs personas datu pārzinis attiecībā uz noteiktiem datu apstrādes aspektiem. Par jūsu tiesībām un informācijas izmantošanu skatiet Shopify Privātuma politiku un Shopify privātuma portālu.</p>",
+            "text_html": ""
+          }
+        },
+        "text_kG9bUn": {
+          "type": "text",
+          "name": "Trešo pušu tīmekļa vietnes un saites",
+          "settings": {
+            "title": "Trešo pušu tīmekļa vietnes un saites",
+            "text": "<p>Pakalpojumos var būt saites uz trešo pušu vietnēm. Mēs neesam atbildīgi par to privātuma vai drošības praksi. Informācija, ko publicējat publiskās vai daļēji publiskās vietnēs (ieskaitot sociālos tīklus), var būt redzama citiem lietotājiem.</p>",
+            "text_html": ""
+          }
+        },
+        "text_HkKaxB": {
+          "type": "text",
+          "name": "Bērnu dati",
+          "settings": {
+            "title": "Bērnu dati",
+            "text": "<p>Pakalpojumi nav paredzēti bērniem, un mēs apzināti nevācam informāciju no nepilngadīgajiem. Ja esat vecāks vai aizbildnis un uzskatāt, ka bērns ir sniedzis mums savus datus, lūdzu, sazinieties ar mums, lai tos dzēstu. Šobrīd mums nav zināms, ka mēs “koplietotu” vai “pārdotu” nepilngadīgo līdz 16 gadu vecumam personas informāciju.</p>",
+            "text_html": ""
+          }
+        },
+        "text_G73cbg": {
+          "type": "text",
+          "name": "Informācijas drošība un glabāšana",
+          "settings": {
+            "title": "Informācijas drošība un glabāšana",
+            "text": "<p>Mēs nevaram garantēt absolūtu drošību. Informācija, ko nosūtāt, pārsūtīšanas laikā var nebūt aizsargāta. Mēs iesakām nesūtīt konfidenciālu informāciju, izmantojot nedrošus kanālus.</p><p>Datu glabāšanas ilgums ir atkarīgs no nepieciešamības uzturēt kontu, sniegt pakalpojumus, ievērot likumus vai risināt strīdus.</p>",
+            "text_html": ""
+          }
+        },
+        "text_8QpPaL": {
+          "type": "text",
+          "name": "Jūsu tiesības un izvēles",
+          "settings": {
+            "title": "Jūsu tiesības un izvēles",
+            "text": "<p>Atkarībā no jūsu dzīvesvietas jums var būt tiesības:</p><ul><li><strong>Tiesības piekļūt </strong>– pieprasīt jūsu personas datu kopiju.</li><li><strong>Tiesības dzēst </strong>– lūgt dzēst jūsu personas informāciju.</li><li><strong>Tiesības labot</strong> – labot neprecīzus datus.</li><li><strong>Datu pārnesamība</strong> – saņemt vai nodot jūsu datus trešai pusei.</li><li><strong>Paziņojumu pārvaldība</strong> – atteikties no mārketinga ziņojumiem.</li></ul><p>EEA/UK iedzīvotājiem ir papildu tiesības:</p><ul><li><strong>Iebilst pret apstrādi</strong> vai ierobežot to.</li><li><strong>Atsaukt piekrišanu</strong> turpmākai apstrādei.</li></ul><p>Mums var būt nepieciešams pārbaudīt jūsu identitāti. Jūs varat arī pilnvarot pārstāvi.</p>",
+            "text_html": ""
+          }
+        },
+        "text_gTDwAJ": {
+          "type": "text",
+          "name": "Sūdzības",
+          "settings": {
+            "title": "Sūdzības",
+            "text": "<p>Ja jums ir sūdzības par jūsu personas datu apstrādi, sazinieties ar mums. Jums var būt tiesības iesniegt sūdzību datu aizsardzības iestādē.</p>",
+            "text_html": ""
+          }
+        },
+        "text_FfrFQj": {
+          "type": "text",
+          "name": "Starptautiski datu pārsūtījumi",
+          "settings": {
+            "title": "Starptautiski datu pārsūtījumi",
+            "text": "<p>Jūsu informācija var tikt pārsūtīta uz valstīm ārpus jūsu dzīvesvietas. Ja dati tiek pārsūtīti uz EEA vai Apvienotās Karalistes ārpusē esošām valstīm, mēs izmantojam atzītus pārsūtīšanas mehānismus, piemēram, ES standarta līguma klauzulas.</p>",
+            "text_html": ""
+          }
+        },
+        "text_AeQyWD": {
+          "type": "text",
+          "name": "Izmaiņas šajā Privātuma politikā",
+          "settings": {
+            "title": "Izmaiņas šajā Privātuma politikā",
+            "text": "<p>Mēs varam šo politiku periodiski atjaunināt. Izmaiņas tiks publicētas, norādot atjaunināšanas datumu, un, ja nepieciešams, tiks sniegts paziņojums.</p>",
+            "text_html": ""
+          }
+        },
+        "text_FXEwGm": {
+          "type": "text",
+          "name": "Kontaktinformācija",
+          "settings": {
+            "title": "Kontaktinformācija",
+            "text": "<p>Atbilde uz jautājumu.</p>",
+            "text_html": "Ja jums ir jautājumi par šo Privātuma politiku vai vēlaties izmantot savas tiesības, lūdzu, rakstiet vai zvaniet mums: linards@slmedia.lv Enerģētikas iela 2-5, Mālpils, 2152, Latvija Saskaņā ar piemērojamiem datu aizsardzības likumiem mēs esam jūsu personas datu pārzinis."
+          }
         }
       },
       "block_order": [
@@ -69,7 +159,17 @@
         "text_FmUcMH",
         "text_ntGW7x",
         "text_cDqnjj",
-        "text_9hph3L"
+        "text_9hph3L",
+        "text_Q46UBF",
+        "text_Mg8EBa",
+        "text_kG9bUn",
+        "text_HkKaxB",
+        "text_G73cbg",
+        "text_8QpPaL",
+        "text_gTDwAJ",
+        "text_FfrFQj",
+        "text_AeQyWD",
+        "text_FXEwGm"
       ],
       "name": "Privātuma politika",
       "settings": {
