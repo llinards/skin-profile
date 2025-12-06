@@ -20,16 +20,56 @@
       "blocks": {
         "text_DgzeXL": {
           "type": "text",
-          "name": "Pēdējās izmaiņas",
+          "name": "Pēdējo reizi atjaunināts",
           "settings": {
             "title": "",
-            "text": "<p>Pēdējās izmaiņas: 2025. gada 6. decembris</p>",
+            "text": "<p>Pēdējo reizi atjaunināts: 2025. gada 6. decembrī</p>",
+            "text_html": ""
+          }
+        },
+        "text_FmUcMH": {
+          "type": "text",
+          "name": "Ievads",
+          "settings": {
+            "title": "",
+            "text": "<p>Skin Profile darbojas šis veikals un tīmekļa vietne, tostarp visa saistītā informācija, saturs, funkcijas, rīki, produkti un pakalpojumi, lai nodrošinātu jums – klientam – atlasītu iepirkšanās pieredzi (turpmāk – “Pakalpojumi”). Skin Profile darbību nodrošina Shopify, kas mums ļauj sniegt jums Pakalpojumus. Šajā Privātuma politikā ir aprakstīts, kā mēs vācām, izmantojam un izpaužam jūsu personas informāciju, kad apmeklējat, izmantojat vai veicat pirkumu vai citu darījumu, izmantojot Pakalpojumus, vai citādi sazināties ar mums. Ja šīs Privātuma politikas un mūsu Pakalpojumu sniegšanas noteikumu starpā pastāv pretrunas, attiecībā uz jūsu personas informācijas vākšanu, apstrādi un izpaušanu noteicošā ir šī Privātuma politika.</p><p>Lūdzu, rūpīgi izlasiet šo Privātuma politiku. Izmantojot jebkurus Pakalpojumus, jūs apliecināt, ka esat izlasījis šo Privātuma politiku un saprotat tajā aprakstīto jūsu informācijas vākšanu, izmantošanu un izpaušanu.</p>",
+            "text_html": ""
+          }
+        },
+        "text_ntGW7x": {
+          "type": "text",
+          "name": "Personas informācija, ko mēs vācam vai apstrādājam",
+          "settings": {
+            "title": "Personas informācija, ko mēs vācam vai apstrādājam",
+            "text": "<p>Termins “personas informācija” attiecas uz informāciju, kas identificē vai var pamatoti tikt sasaistīta ar jums vai citu personu. Personas informācijā neietilpst anonīmi apkopota vai deidentificēta informācija, ko nav iespējams sasaistīt ar jums. Atkarībā no tā, kā izmantojat Pakalpojumus, kur dzīvojat un ko atļauj vai pieprasa piemērojamie tiesību akti, mēs varam vākt vai apstrādāt šādas kategorijas:</p><ul><li><strong>Kontaktinformācija,</strong> tostarp jūsu vārds, adrese, norēķinu adrese, piegādes adrese, tālruņa numurs un e-pasta adrese.<br/></li><li><strong>Finansiālā informācija</strong>, tostarp kredītkaršu, debetkaršu un kontu numuri, maksājumu kartes dati, konta dati, darījumu informācija, maksājuma veids, maksājuma apstiprinājums un cita maksājumu informācija.<br/></li><li><strong>Konta informācija</strong>, tostarp lietotājvārds, parole, drošības jautājumi, preferences un iestatījumi.<br/></li><li><strong>Darījumu informācija</strong>, tostarp apskatītās preces, grozā ievietotās preces, vēlmju sarakstā pievienotās preces, iegādātās, atgrieztās, apmainītās vai atceltās preces, kā arī iepriekšējie darījumi.<br/></li><li><strong>Saziņa ar mums</strong>, tostarp informācija, ko sniedzat, piemēram, klientu atbalsta pieprasījumos.<br/></li><li><strong>Ierīces informācija</strong>, tostarp informācija par jūsu ierīci, pārlūku vai tīkla savienojumu, IP adrese un citi unikāli identifikatori.<br/></li><li><strong>Lietošanas informācija</strong> par to, kā mijiedarbojaties ar Pakalpojumiem, tostarp to, kā un kad pārlūkojat Pakalpojumus.</li></ul>",
+            "text_html": ""
+          }
+        },
+        "text_cDqnjj": {
+          "type": "text",
+          "name": "Personas informācijas avoti",
+          "settings": {
+            "title": "Personas informācijas avoti",
+            "text": "<p>Mēs varam vākt personas informāciju:</p><ul><li><strong>Tieši no jums</strong>, piemēram, kad izveidojat kontu, izmantojat Pakalpojumus, sazināties ar mums vai citādi sniedzat informāciju;</li><li><strong>Automātiski, izmantojot Pakalpojumus un jūsu ierīci</strong>, tostarp izmantojot sīkfailus un līdzīgas tehnoloģijas;</li><li><strong>No mūsu pakalpojumu sniedzējiem</strong>, kas apstrādā personas informāciju mūsu vārdā;</li><li><strong>No partneriem vai citiem trešajiem uzņēmumiem.</strong></li></ul>",
+            "text_html": ""
+          }
+        },
+        "text_9hph3L": {
+          "type": "text",
+          "name": "Kā mēs izmantojam jūsu personas informāciju",
+          "settings": {
+            "title": "Kā mēs izmantojam jūsu personas informāciju",
+            "text": "<p>Atkarībā no tā, kā izmantojat Pakalpojumus, mēs varam izmantot jūsu personas informāciju šādiem mērķiem:<br/></p><ul><li><strong>Pakalpojumu nodrošināšana, personalizēšana un uzlabošana.</strong> Mēs izmantojam jūsu informāciju, lai izpildītu līgumsaistības, apstrādātu maksājumus, izpildītu pasūtījumus, atcerētos jūsu preferences, sūtītu paziņojumus par kontu, apstrādātu pirkumus, atgriešanas, apmaiņas un citus darījumus, organizētu piegādi, nodrošinātu atsauksmju publicēšanu un sniegtu personalizētu iepirkšanās pieredzi.</li><li><strong>Mārketings un reklāma.</strong> Jūsu informāciju izmantojam mārketinga nolūkiem – reklāmu un piedāvājumu sūtīšanai pa e-pastu, SMS vai pastu, kā arī tiešsaistes reklāmu rādīšanai, tostarp balstoties uz jūsu aktivitāti.</li><li><strong>Drošība un krāpšanas novēršana.</strong> Jūsu informācija tiek izmantota, lai autentificētu kontus, nodrošinātu drošus maksājumus, atklātu un novērstu krāpniecisku vai nelikumīgu darbību, aizsargātu pakalpojumus un sabiedrisko drošību.</li><li><strong>Saziņa ar jums.</strong> Mēs izmantojam jūsu informāciju klientu atbalstam un efektīvai sadarbībai.</li><li><strong>Juridiski iemesli.</strong> Mēs varam apstrādāt jūsu personas informāciju, lai ievērotu likumus, atbildētu uz tiesībsargājošo iestāžu pieprasījumiem, izmeklētu pārkāpumus vai piedalītos tiesvedībā.</li></ul>",
             "text_html": ""
           }
         }
       },
       "block_order": [
-        "text_DgzeXL"
+        "text_DgzeXL",
+        "text_FmUcMH",
+        "text_ntGW7x",
+        "text_cDqnjj",
+        "text_9hph3L"
       ],
       "name": "Privātuma politika",
       "settings": {
