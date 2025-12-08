@@ -1,6 +1,6 @@
-if (window.location.pathname === '/policies/privacy-policy') {
-  window.location.replace('/pages/privacy-policy');
-}
+// if (window.location.pathname === '/policies/privacy-policy') {
+//   window.location.replace('/pages/privacy-policy');
+// }
 if (window.location.pathname === '/policies/shipping-policy') {
   window.location.replace('/pages/shipping-policy');
 }
