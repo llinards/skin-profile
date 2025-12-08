@@ -2,7 +2,7 @@
 {%- assign sort_options = 'manual,best-selling,title-ascending,title-descending,price-ascending,price-descending,created-ascending,created-descending'
   | split: ','
 -%}
-{%- assign sort_labels = 'Kārtot pēc,Populārākie,Nosaukums: A-Z,Nosaukums: Z-A,Cena: Augošā,Cena: Dilstošā,Vecākais,Jaunākais'
+{%- assign sort_labels = 'collections.sort.label,collections.sort.popular,collections.sort.name_asc,collections.sort.name_desc,collections.sort.price_asc,collections.sort.price_desc,collections.sort.oldest,collections.sort.newest'
   | split: ','
 -%}
 {%- assign selected_sort_key = collection.sort_by | default: collection.default_sort_by -%}
@@ -26,14 +26,15 @@
       href="{{ sort_url }}"
       class="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors filter-link {% if selected_sort_key == option %}bg-gray-50 font-semibold{% endif %}"
     >
-      {{ sort_labels[forloop.index0] }}
+      {{ sort_labels[forloop.index0] | t }}
     </a>
   {%- endfor -%}
 {%- endcapture -%}
 
-{% render 'filter-dropdown',
-  filter_text: 'Kārtot pēc',
-  current_value: 'Kārtot pēc',
+{%
+  render 'filter-dropdown',
+  filter_text: 'collections.sort.label' | t,
+  current_value: 'collections.sort.label' | t,
   label_id: 'sort-by-label',
   dropdown_content: dropdown_content
 %}

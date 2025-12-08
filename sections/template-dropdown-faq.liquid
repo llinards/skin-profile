@@ -15,7 +15,7 @@
             class="w-full flex items-center justify-between gap-3 px-2 py-2 text-left cursor-pointer"
             :aria-expanded="open.toString()"
             :aria-controls="'panel-{{ block.id }}'"
-            :aria-label="open ? 'Aizvērt jautājuma atbildi' : 'Atvērt jautājuma atbildi'"
+            :aria-label="open ? '{{ 'general.accordion.close' | t }}' : '{{ 'general.accordion.open' | t }}'"
             id="accordion-header-{{ block.id }}"
           >
             <h3 class="flex-1 min-w-0 text-sm tracking-wider font-bold">

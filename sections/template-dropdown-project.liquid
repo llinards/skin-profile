@@ -12,7 +12,7 @@
             @click="open = !open"
             class="group relative w-full flex items-center gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer focus-visible:ring-1 focus-visible:ring-inset"
             :aria-expanded="open.toString()"
-            :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
+            :aria-label="open ? '{{ 'general.accordion.close_section' | t }}' : '{{ 'general.accordion.open_section' | t }}'"
           >
             <div class="flex flex-col md:flex-row md:items-end flex-1 min-w-0">
               <h2 class="text-xl md:text-4xl leading-tight">{{ block.settings.project_title }}</h2>

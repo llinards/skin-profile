@@ -26,7 +26,22 @@
     "checkout": "Checkout",
     "title": "Cart",
     "update": "Update",
-    "remove": "Remove"
+    "remove": "Remove",
+    "heading": "Shopping Cart",
+    "back_to_store": "Back to store",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "discount_note": "Discount codes can be added at checkout.",
+    "cart_total": "Cart Total",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "total": "Total",
+    "continue_to_checkout": "Continue to checkout",
+    "empty": "Your cart is empty.",
+    "empty_button": "Back to store",
+    "remove_product": "Remove product"
   },
   "customers": {
     "login": {
@@ -37,7 +52,24 @@
     }
   },
   "collections": {
-    "title": "Collections"
+    "title": "Collections",
+    "all_products": "Products",
+    "no_products": "No products found with these filters.",
+    "filters": {
+      "clear": "Clear filters",
+      "clear_all": "Clear all filters",
+      "label": "Filters"
+    },
+    "sort": {
+      "label": "Sort by",
+      "popular": "Most Popular",
+      "name_asc": "Name: A-Z",
+      "name_desc": "Name: Z-A",
+      "price_asc": "Price: Low to High",
+      "price_desc": "Price: High to Low",
+      "oldest": "Oldest",
+      "newest": "Newest"
+    }
   },
   "gift_card": {
     "add_to_apple_wallet": "Add to Apple Wallet",
@@ -60,7 +92,17 @@
   },
   "products": {
     "add_to_cart": "Add to Cart",
-    "sold_out": "Sold Out"
+    "sold_out": "Sold Out",
+    "recommended": "Similar Products",
+    "savings": "Savings:",
+    "quantity": "Quantity",
+    "variant": "Variant",
+    "available": "Available:",
+    "not_available": "Not available",
+    "description": "Description",
+    "usage": "Usage",
+    "active_ingredients": "Active Ingredients",
+    "additional_info": "Additional Information"
   },
   "filters": {
     "vendor_default": "Vendor",
@@ -76,6 +118,47 @@
       "visit_facebook": "Visit our Facebook page",
       "visit_instagram": "Visit our Instagram page",
       "book_online": "Book online"
-    }
+    },
+    "footer": {
+      "menu": "Menu",
+      "information": "Information",
+      "contacts": "Contacts",
+      "follow": "Follow",
+      "hours": "Monday - Friday",
+      "hours_time": "09:00 - 18:00",
+      "rights": "All rights reserved"
+    },
+    "achievements": {
+      "years_experience": "Years of Experience",
+      "services": "Services",
+      "specialists": "Experienced Specialists"
+    },
+    "image_disclaimer": "Image is for illustrative purposes only",
+    "new_window": "opens in new window",
+    "accordion": {
+      "open": "Open answer",
+      "close": "Close answer",
+      "open_section": "Open section",
+      "close_section": "Close section"
+    },
+    "modal": {
+      "close": "Close modal"
+    },
+    "team": {
+      "specialization": "Specialization",
+      "medical_identifier": "Medical practitioner identifier:"
+    },
+    "virtual_consultation": {
+      "description": "Find the right service for you using our virtual consultant!",
+      "button": "Start virtual consultation"
+    },
+    "procedure_table": {
+      "procedure": "Procedure",
+      "duration": "Duration",
+      "price": "Price",
+      "no_services": "No services added"
+    },
+    "view_all": "View all",
+    "loading": "Loading..."
   }
 }

@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="order-1 lg:order-2">
-      <h3 class="text-2xl capitalize text-white pb-2">Menu</h3>
+      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.menu' | t }}</h3>
       <ul class="list-none space-y-2">
         {% assign links = linklists['main-menu'].links %}
         {% for link in links %}
@@ -49,7 +49,7 @@
       </ul>
     </div>
     <div class="order-2 sm:order-3">
-      <h3 class="text-2xl capitalize text-white pb-2">Informācija</h3>
+      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.information' | t }}</h3>
       {% assign links = linklists['information-menu'].links %}
       <ul class="list-none space-y-2">
         {% for link in links %}
@@ -60,7 +60,7 @@
       </ul>
     </div>
     <div class="order-3 sm:order-2 lg:order-4">
-      <h3 class="text-2xl capitalize text-white pb-2">Kontakti</h3>
+      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.contacts' | t }}</h3>
       <ul class="text-base xl:text-lg list-none space-y-2">
         <li>
           <a
@@ -130,14 +130,15 @@
               <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
             </svg>
 
-            Pirmdiena - Piektdiena<br>
-            09:00 - 18:00
+            {{ 'general.footer.hours' | t -}}
+            <br>
+            {{ 'general.footer.hours_time' | t }}
           </span>
         </li>
       </ul>
     </div>
     <div class="order-4 lg:order-5">
-      <h3 class="text-2xl capitalize text-white pb-2">Pieseko</h3>
+      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.follow' | t }}</h3>
       <div class="flex flex-row fill-white space-x-6">
         {% render 'icon-facebook' %}
         {% render 'icon-instagram' %}
@@ -147,7 +148,7 @@
 
   <p class="text-white container flex md:justify-center lg:justify-end mx-auto px-8 space-x-2">
     &copy; {{ 'now' | date: '%Y' }}
-    {{ shop.name }} - Visas tiesības rezervētas
+    {{ shop.name }} - {{ 'general.footer.rights' | t }}
   </p>
 </footer>
 

@@ -2,19 +2,19 @@
   <div class="container mx-auto px-4 pt-24 pb-12">
     {% if cart.item_count > 0 %}
       <div data-cart-body>
-        {% render 'btn-brown', url: routes.all_products_collection_url, text: 'Atpakaļ uz veikalu' %}
+        {% render 'btn-brown', url: routes.all_products_collection_url, text: 'cart.back_to_store' | t %}
         <div class="flex items-center justify-between mb-6">
-          <h1 class="hidden">Iepirkumu grozs</h1>
+          <h1 class="hidden">{{ 'cart.heading' | t }}</h1>
         </div>
 
         <div class="overflow-x-auto md:overflow-visible">
           <table class="w-full table-auto border-separate border-spacing-y-12">
             <thead class="text-left shadow-md hidden md:table-header-group">
               <tr>
-                <th class="px-6 py-3">Produkts</th>
-                <th class="px-6 py-3 text-center">Cena</th>
-                <th class="px-6 py-3 text-center">Daudzums</th>
-                <th class="px-6 py-3 text-right">Starpsumma</th>
+                <th class="px-6 py-3">{{ 'cart.product' | t }}</th>
+                <th class="px-6 py-3 text-center">{{ 'cart.price' | t }}</th>
+                <th class="px-6 py-3 text-center">{{ 'cart.quantity' | t }}</th>
+                <th class="px-6 py-3 text-right">{{ 'cart.subtotal' | t }}</th>
               </tr>
             </thead>
 
@@ -58,7 +58,7 @@
                   <!-- Price with discount -->
                   <td class="block md:table-cell px-6 py-4 border-b border-gray-200">
                     <div class="flex justify-between md:block">
-                      <span class="md:hidden">Cena</span>
+                      <span class="md:hidden">{{ 'cart.price' | t }}</span>
                       <div class="text-right md:text-center">
                         {%- if item.variant.compare_at_price > item.variant.price -%}
                           <div class="flex flex-col items-end md:items-center gap-1">
@@ -77,7 +77,7 @@
                   <!-- Quantity -->
                   <td class="block md:table-cell px-6 py-4 border-b border-gray-200">
                     <div class="flex items-center justify-between md:block">
-                      <span class="md:hidden">Daudzums</span>
+                      <span class="md:hidden">{{ 'cart.quantity' | t }}</span>
                       <div class="quantity-container flex justify-end md:justify-center">
                         <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
                           <a
@@ -99,7 +99,7 @@
                   <!-- Subtotal with discount -->
                   <td class="block md:table-cell px-6 py-4 text-right" data-line-price>
                     <div class="flex justify-between md:block">
-                      <span class="md:hidden">Starpsumma</span>
+                      <span class="md:hidden">{{ 'cart.subtotal' | t }}</span>
                       <div>
                         {%- assign line_compare_price = item.variant.compare_at_price | times: item.quantity -%}
                         {%- if item.variant.compare_at_price > item.variant.price -%}
@@ -130,12 +130,12 @@
               {% endfor %}
             </tbody>
           </table>
-          <p class="text-gray-400">Atlaižu kuponu ir iespējams pievienot apmaksas solī.</p>
+          <p class="text-gray-400">{{ 'cart.discount_note' | t }}</p>
         </div>
 
         <div id="cart-total" class="flex md:justify-end">
           <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
-            <h2 class="text-2xl mb-4 text-sp-brown">Groza kopsumma</h2>
+            <h2 class="text-2xl mb-4 text-sp-brown">{{ 'cart.cart_total' | t }}</h2>
 
             {%- comment -%} Calculate total savings {%- endcomment -%}
             {%- assign total_savings = 0 -%}
@@ -150,30 +150,30 @@
             {%- endfor -%}
 
             <div class="flex justify-between border-b border-sp-brown py-4">
-              <p>Starpsumma:</p>
+              <p>{{ 'cart.subtotal' | t }}:</p>
               <p data-subtotal-amount>{{ cart.total_price | money }}</p>
             </div>
 
             {%- if total_savings > 0 -%}
               <div class="flex justify-between border-b border-sp-brown py-4 text-sp-brown">
-                <p>Atlaide:</p>
+                <p>{{ 'cart.discount' | t }}:</p>
                 <p class="font-semibold">-{{ total_savings | money }}</p>
               </div>
             {%- endif -%}
 
             {% comment %}
               <div class="flex justify-between border-b border-sp-brown py-4">
-                <p>Piegāde:</p>
+                <p>{{ 'cart.shipping' | t }}:</p>
                 <p data-shipping-amount data-free-label="Bezmaksas"></p>
               </div>
             {% endcomment %}
 
             <div class="flex justify-between py-4">
-              <p>Kopā:</p>
+              <p>{{ 'cart.total' | t }}:</p>
               <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
             </div>
             <div class="flex justify-center">
-              {% render 'btn-brown-submit', text: 'Turpināt uz apmaksu', name: 'checkout' %}
+              {% render 'btn-brown-submit', text: 'cart.continue_to_checkout' | t, name: 'checkout' %}
             </div>
           </div>
         </div>
@@ -181,9 +181,9 @@
     {% else %}
       <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
         <div class="text-center">
-          <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
+          <h2 class="text-3xl my-4">{{ 'cart.empty' | t }}</h2>
           <div class="my-4 py-4">
-            {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+            {% render 'btn-brown', text: 'cart.empty_button' | t, url: routes.all_products_collection_url %}
           </div>
         </div>
       </div>
@@ -229,9 +229,9 @@
 <template id="empty-cart-template">
   <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
     <div class="text-center">
-      <h2 class="text-3xl my-4">Jūsu grozs ir tukšs.</h2>
+      <h2 class="text-3xl my-4">{{ 'cart.empty' | t }}</h2>
       <div class="my-4 py-4">
-        {% render 'btn-brown', text: 'Atpakaļ uz veikalu', url: routes.all_products_collection_url %}
+        {% render 'btn-brown', text: 'cart.empty_button' | t, url: routes.all_products_collection_url %}
       </div>
     </div>
   </div>

@@ -35,7 +35,8 @@
           </div>
           {%- assign saved = variant.compare_at_price | minus: variant.price -%}
           <p class="text-sm opacity-75">
-            Ietaupījums: <span class="font-semibold">{{ saved | money }}</span>
+            {{ 'products.savings' | t }}
+            <span class="font-semibold">{{ saved | money }}</span>
           </p>
         </div>
       {% else %}
@@ -51,8 +52,9 @@
 
       <div class="hidden md:block space-y-4">{{ product.description }}</div>
       <div class="md:hidden">
-        {% render 'dropdown-description',
-          description_title: 'Apraksts',
+        {%
+          render 'dropdown-description',
+          description_title: 'products.description' | t,
           description_content: product.description,
           use_metafield_tag: false,
           class: 'max-w-96'
@@ -67,7 +69,9 @@
 
         <div class="mb-6 flex flex-col gap-4 md:gap-6">
           <div class="inline-flex items-center">
-            <label for="quantity" class="uppercase font-bold text-sm tracking-widest">Daudzums</label>
+            <label for="quantity" class="uppercase font-bold text-sm tracking-widest">
+              {{- 'products.quantity' | t -}}
+            </label>
             <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4">
               <button
                 type="button"
@@ -100,7 +104,7 @@
           </div>
           {%- if product.variants.size > 1 -%}
             <div x-data="{ open: false }" class="relative w-full flex items-center justify-start max-w-xs">
-              <label class="uppercase font-bold text-sm tracking-widest block">Variants</label>
+              <label class="uppercase font-bold text-sm tracking-widest block">{{ 'products.variant' | t }}</label>
               <button
                 type="button"
                 @click="open = !open"
@@ -144,7 +148,7 @@
                         "
                       >
                         {{ variant.title -}}
-                        {%- if variant.available == false %} (Nav pieejams){% endif %}
+                        {%- if variant.available == false %} ({{ 'products.not_available' | t }}){% endif %}
                       </button>
                     </li>
                   {% endfor %}
@@ -157,7 +161,8 @@
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
             <p class="inline-flex border rounded-2xl px-4 py-1.5 font-bold text-sm tracking-widest uppercase">
-              Pieejami: {{ stock_quantity }}
+              {{ 'products.available' | t }}
+              {{ stock_quantity }}
             </p>
           {% endif %}
         </div>
@@ -179,8 +184,9 @@
     <div class="mt-6">
       {%- comment -%} Product Usage {%- endcomment -%}
       {%- if product.metafields.custom.product_usage != blank -%}
-        {% render 'dropdown-description',
-          description_title: 'Lietošana',
+        {%
+          render 'dropdown-description',
+          description_title: 'products.usage' | t,
           description_content: product.metafields.custom.product_usage,
           use_metafield_tag: true,
           class: 'max-w-96'
@@ -190,8 +196,9 @@
       {%- if product.metafields.shopify['active-ingredient'] != blank -%}
         {% assign active_ingredients = product.metafields.shopify['active-ingredient'].value %}
 
-        {% render 'dropdown-active-ingredient',
-          description_title: 'Aktīvās sastāvdaļas',
+        {%
+          render 'dropdown-active-ingredient',
+          description_title: 'products.active_ingredients' | t,
           ingredients: active_ingredients,
           class: 'max-w-96'
         %}
@@ -199,8 +206,9 @@
 
       {%- comment -%} Additional Information {%- endcomment -%}
       {%- if product.metafields.custom.additional_information != blank -%}
-        {% render 'dropdown-description',
-          description_title: 'Papildu informācija',
+        {%
+          render 'dropdown-description',
+          description_title: 'products.additional_info' | t,
           description_content: product.metafields.custom.additional_information,
           use_metafield_tag: true,
           class: 'max-w-96'

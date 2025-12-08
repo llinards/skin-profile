@@ -12,7 +12,7 @@
         focus-visible:ring-1 focus-visible:ring-inset
       "
       :aria-expanded="open.toString()"
-      :aria-label="open ? 'Aizvērt sadaļu' : 'Atvērt sadaļu'"
+      :aria-label="open ? '{{ 'general.accordion.close_section' | t }}' : '{{ 'general.accordion.open_section' | t }}'"
     >
       <h3 class="flex-1 min-w-0 text-xl md:text-4xl leading-tight wrap-break-words">
         {{ section.settings.title }}

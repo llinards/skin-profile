@@ -26,7 +26,22 @@
     "checkout": "Apmaksāt",
     "title": "Grozs",
     "update": "Atjaunināt",
-    "remove": "Noņemt"
+    "remove": "Noņemt",
+    "heading": "Iepirkumu grozs",
+    "back_to_store": "Atpakaļ uz veikalu",
+    "product": "Produkts",
+    "price": "Cena",
+    "quantity": "Daudzums",
+    "subtotal": "Starpsumma",
+    "discount_note": "Atlaižu kuponu ir iespējams pievienot apmaksas solī.",
+    "cart_total": "Groza kopsumma",
+    "discount": "Atlaide",
+    "shipping": "Piegāde",
+    "total": "Kopā",
+    "continue_to_checkout": "Turpināt uz apmaksu",
+    "empty": "Jūsu grozs ir tukšs.",
+    "empty_button": "Atpakaļ uz veikalu",
+    "remove_product": "Noņemt produktu"
   },
   "customers": {
     "login": {
@@ -37,7 +52,24 @@
     }
   },
   "collections": {
-    "title": "Kolekcijas"
+    "title": "Kolekcijas",
+    "all_products": "Produkti",
+    "no_products": "Nav atrasti produkti ar šiem filtriem.",
+    "filters": {
+      "clear": "Notīrīt filtrus",
+      "clear_all": "Notīrīt visus filtrus",
+      "label": "Filtri"
+    },
+    "sort": {
+      "label": "Kārtot pēc",
+      "popular": "Populārākie",
+      "name_asc": "Nosaukums: A-Z",
+      "name_desc": "Nosaukums: Z-A",
+      "price_asc": "Cena: Augosā",
+      "price_desc": "Cena: Dilstosā",
+      "oldest": "Vecākais",
+      "newest": "Jaunākais"
+    }
   },
   "gift_card": {
     "add_to_apple_wallet": "Pievienot Apple Wallet",
@@ -2923,7 +2955,17 @@
   },
   "products": {
     "add_to_cart": "Pievienot grozam",
-    "sold_out": "Izpārdots"
+    "sold_out": "Izpārdots",
+    "recommended": "Līdzīgi produkti",
+    "savings": "Ietaupījums:",
+    "quantity": "Daudzums",
+    "variant": "Variants",
+    "available": "Pieejami:",
+    "not_available": "Nav pieejams",
+    "description": "Apraksts",
+    "usage": "Lietošana",
+    "active_ingredients": "Aktīvās sastāvdaļas",
+    "additional_info": "Papildu informācija"
   },
   "filters": {
     "vendor_default": "Ražotājs",
@@ -2939,6 +2981,47 @@
       "visit_facebook": "Apmeklēt mūsu Facebook lapu",
       "visit_instagram": "Apmeklēt mūsu Instagram lapu",
       "book_online": "Pieteikties internetā"
-    }
+    },
+    "footer": {
+      "menu": "Menu",
+      "information": "Informācija",
+      "contacts": "Kontakti",
+      "follow": "Pieseko",
+      "hours": "Pirmdiena - Piektdiena",
+      "hours_time": "09:00 - 18:00",
+      "rights": "Visas tiesības rezervētas"
+    },
+    "achievements": {
+      "years_experience": "Gadu pieredze",
+      "services": "Pakalpojumi",
+      "specialists": "Pieredzējuši speciālisti"
+    },
+    "image_disclaimer": "Attēlam ir ilustratīva nozīme",
+    "new_window": "atveras jaunā logā",
+    "accordion": {
+      "open": "Atvērt jautājuma atbildi",
+      "close": "Aizvērt jautājuma atbildi",
+      "open_section": "Atvērt sadaļu",
+      "close_section": "Aizvērt sadaļu"
+    },
+    "modal": {
+      "close": "Aizvērt logu"
+    },
+    "team": {
+      "specialization": "Specializācija",
+      "medical_identifier": "Ārstniecības personas identifikators:"
+    },
+    "virtual_consultation": {
+      "description": "Atrodiet sev piemērotu pakalpojumu, izmantojot virtuālo konsultantu!",
+      "button": "Sākt virtuālo konsultāciju"
+    },
+    "procedure_table": {
+      "procedure": "Procedūra",
+      "duration": "Ilgums",
+      "price": "Cena",
+      "no_services": "Nav pievienotu pakalpojumu"
+    },
+    "view_all": "Skatīt visu",
+    "loading": "Ielādē..."
   }
 }
