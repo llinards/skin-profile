@@ -1,7 +1,8 @@
 <div class="transition-hide bg-sp-light-brown mb-12 py-12 ">
   <div class="container mx-auto px-4 text-center flex flex-col justify-center items-center">
     <p class="pb-6">{{ 'general.virtual_consultation.description' | t }}</p>
-    {% render 'btn-brown', text: 'general.virtual_consultation.button' | t %}
+    {%- assign button_text = 'general.virtual_consultation.button' | t -%}
+    {% render 'btn-brown', text: button_text %}
   </div>
 </div>
 
