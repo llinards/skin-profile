@@ -2928,5 +2928,17 @@
   "filters": {
     "vendor_default": "Ražotājs",
     "category_default": "Kategorija"
+  },
+  "general": {
+    "accessibility": {
+      "scroll_to_top": "Atpakaļ uz lapas sākumu",
+      "toggle_mobile_menu": "Atvērt vai aizvērt mobilā izvēlni",
+      "open_contacts": "Atvērt kontaktus",
+      "call_us": "Zvanīt mums",
+      "email_us": "Nosūtīt e-pastu",
+      "visit_facebook": "Apmeklēt mūsu Facebook lapu",
+      "visit_instagram": "Apmeklēt mūsu Instagram lapu",
+      "book_online": "Pieteikties internetā"
+    }
   }
 }

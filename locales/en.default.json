@@ -65,5 +65,17 @@
   "filters": {
     "vendor_default": "Vendor",
     "category_default": "Category"
+  },
+  "general": {
+    "accessibility": {
+      "scroll_to_top": "Back to top",
+      "toggle_mobile_menu": "Toggle mobile menu",
+      "open_contacts": "Open contacts",
+      "call_us": "Call us",
+      "email_us": "Email us",
+      "visit_facebook": "Visit our Facebook page",
+      "visit_instagram": "Visit our Instagram page",
+      "book_online": "Book online"
+    }
   }
 }

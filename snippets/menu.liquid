@@ -51,7 +51,7 @@
     <button
       x-on:click="open = !open"
       type="button"
-      aria-label="Toggle mobile menu"
+      aria-label="{{ 'general.accessibility.toggle_mobile_menu' | t }}"
       aria-controls="mobile-menu"
       :aria-expanded="open.toString()"
       class="flex items-center justify-left cursor-pointer z-2 w-1/7"
@@ -72,14 +72,13 @@
         >
       </a>
     </div>
-    {% if template.name == 'cart'
-      or template.name == 'product'
-      or template.name == '404'
-      or page.metafields.custom.navigation_style == 'dark'
+    {% if template.name == 'index'
+      or template.name == 'collection'
+      or page.metafields.custom.navigation_style == 'light'
     %}
-      {% render 'cart-counter-dark' %}
-    {% else %}
       {% render 'cart-counter' %}
+    {% else %}
+      {% render 'cart-counter-dark' %}
     {% endif %}
   </div>
   <div

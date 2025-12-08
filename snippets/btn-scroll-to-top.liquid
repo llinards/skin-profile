@@ -12,8 +12,7 @@
     @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
     x-transition.opacity.duration.300ms
     class="p-2 rounded-full border border-sp-brown bg-sp-brown text-white md:hover:text-(--color-brand-primary) md:hover:bg-white"
-
-    aria-label="Atpakaļ uz lapas sākumu"
+    aria-label="{{ 'general.accessibility.scroll_to_top' | t }}"
   >
     {% render 'icon-arrow-up', class: 'size-6' %}
   </button>
