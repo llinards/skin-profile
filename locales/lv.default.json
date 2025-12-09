@@ -570,7 +570,12 @@
           "due_today": "Kopā jāmaksā šodien",
           "due_today_next": "Jāmaksā šodien"
         },
-        "enter_shipping_address": "Ievadīt piegādes adresi"
+        "enter_shipping_address": "Ievadīt piegādes adresi",
+        "discount_label": "Atlaižu kods",
+        "discount_placeholder": "Atlaižu kods",
+        "discount_code_applied": "Atlaižu kods pievienots",
+        "discount_code_applied_with_code": "Atlaižu kods {{ code }} ir ticis pievienots",
+        "discount_code_removed": "Atlaižu kods {{ code }} ir noņemts"
       },
       "payment": {
         "store_credit": {
