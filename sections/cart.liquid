@@ -2,7 +2,8 @@
   <div class="container mx-auto px-4 pt-24 pb-12">
     {% if cart.item_count > 0 %}
       <div data-cart-body>
-        {% render 'btn-brown', url: routes.all_products_collection_url, text: 'cart.back_to_store' | t %}
+        {%- assign back_to_store_text = 'cart.back_to_store' | t -%}
+        {% render 'btn-brown', url: routes.all_products_collection_url, text: back_to_store_text %}
         <div class="flex items-center justify-between mb-6">
           <h1 class="hidden">{{ 'cart.heading' | t }}</h1>
         </div>
@@ -172,8 +173,9 @@
               <p>{{ 'cart.total' | t }}:</p>
               <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
             </div>
+            {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
             <div class="flex justify-center">
-              {% render 'btn-brown-submit', text: 'cart.continue_to_checkout' | t, name: 'checkout' %}
+              {% render 'btn-brown-submit', text: checkout_text, name: 'checkout' %}
             </div>
           </div>
         </div>
