@@ -23,70 +23,75 @@
     </div>
 
     <!-- Right column: Image -->
-    {% comment %}
-      <div class="w-full md:w-1/2 h-full">
-        <div
-          class="relative"
-          x-data="
-            {
-                value: 50,
-                beforeSrc: {{ section.settings.before_image | image_url }},
-                afterSrc: {{ section.settings.after_image | image_url }}
-            }
-          "
+    <div class="w-full md:w-1/2 h-full">
+      <div
+        class="relative overflow-hidden"
+        x-data="
+          {
+            value: 50,
+            beforeSrc: '{{ section.settings.before_image | image_url: width: 1024 }}',
+            afterSrc: '{{ section.settings.after_image | image_url: width: 1024 }}'
+          }
+        "
+      >
+        <!-- Before Image (base layer) -->
+        <img
+          :src="beforeSrc"
+          alt="{{ section.settings.alt_text }}"
+          class="w-full block"
+          width="1024"
+          height="1024"
+          loading="lazy"
         >
-          <img
-            :src="{{ section.settings.image | image_url }}"
-            alt=""
-            class="w-full"
-            width="1024"
-            height="1024"
-            loading="lazy"
-          >
-          <div
-            class="absolute bottom-0 left-0 top-0 z-10 bg-size-[auto_100%]"
-            x-bind:style="`width: ${value}%; background-image: url(${afterSrc})`"
-          ></div>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            x-model="value"
-            class="absolute inset-0 z-20 cursor-ew-resize opacity-0 outline-0"
-          >
-          <div
-            class="pointer-events-none absolute bottom-0 left-0 top-0 z-30 flex -translate-x-1/2 items-center justify-center"
-            x-bind:style="'left: '+value+'%'"
-          >
-            <div class="absolute left-1/2 h-full w-1 -translate-x-1/2 bg-gray-100"></div>
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="h-4 w-4"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="h-4 w-4"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-            </div>
+
+        <!-- After Image (clipped overlay) -->
+        <div
+          class="absolute bottom-0 left-0 top-0 z-10 bg-cover bg-left"
+          x-bind:style="`width: ${value}%; background-image: url('${afterSrc}');`"
+        ></div>
+
+        <!-- Range Input Slider -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          x-model="value"
+          class="absolute inset-0 z-20 cursor-ew-resize opacity-0 outline-0 w-full h-full"
+        >
+
+        <!-- Slider Handle -->
+        <div
+          class="pointer-events-none absolute bottom-0 top-0 z-30 flex items-center justify-center"
+          x-bind:style="`left: ${value}%; transform: translateX(-50%);`"
+        >
+          <div class="absolute left-1/2 h-full w-1 -translate-x-1/2 bg-white shadow-lg"></div>
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
           </div>
         </div>
-
-        <p class="uppercase text-sm text-gray-400 text-center mt-2 pb-6 md:pb-0">*{{ 'general.image_disclaimer' | t }}</p>
       </div>
-    {% endcomment %}
+
+      <p class="uppercase text-sm text-gray-400 text-center mt-2 pb-6 md:pb-0">*{{ 'general.image_disclaimer' | t }}</p>
+    </div>
 
     <div class="md:hidden">
       {% for block in section.blocks %}
