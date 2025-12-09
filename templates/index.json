@@ -374,8 +374,8 @@
       "settings": {
         "heading": "Tavs skaistums sākas šeit",
         "text": "<p>Mēs ar lepnumu nodrošinām augstas kvalitātes estētisko aprūpi ātri un profesionāli. Jūsu drošība un komforts vienmēr būs mūsu augstākā prioritāte.</p>",
-        "before_image": "shopify://shop_images/kermena_kopsana.jpg",
-        "after_image": "shopify://shop_images/matu_kopsana.jpg",
+        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "after_image": "shopify://shop_images/skin-profile-background-image.jpg",
         "alt_text": "Pirms un pēc"
       }
     },
