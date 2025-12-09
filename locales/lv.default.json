@@ -1968,7 +1968,8 @@
         "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
       },
       "shipping": {
-        "shipping_method_title": "Piegādes metode"
+        "shipping_method_title": "Piegādes metode",
+        "delivery_title": "Piegāde"
       }
     },
     "notices": {
