@@ -1,4 +1,4 @@
-<header class="relative container mx-auto">
+<header class="relative container mx-auto" x-data="{ showContactModal: null }">
   <div class="flex justify-center absolute z-3 w-full" x-data="handleMobileMenu()" x-cloak>
     <nav class="mx-auto px-4 w-full" role="navigation" aria-label="Main navigation">
       {% if template.name == 'index'
@@ -10,6 +10,11 @@
         {% render 'menu', invert_class: 'invert' %}
       {% endif %}
     </nav>
+  </div>
+
+  <!-- Contact Modal -->
+  <div x-show="showContactModal === 'contact'" style="display: none;">
+    {% render 'menu-contact-modal' %}
   </div>
 </header>
 
