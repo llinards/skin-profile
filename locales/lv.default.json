@@ -1966,6 +1966,9 @@
       },
       "customer_account": {
         "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
+      },
+      "shipping": {
+        "shipping_method_title": "Piegādes metode"
       }
     },
     "notices": {
