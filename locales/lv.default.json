@@ -3011,6 +3011,9 @@
       "hours_time": "09:00 - 18:00",
       "rights": "Visas tiesības rezervētas"
     },
+    "header": {
+      "contacts": "Kontakti"
+    },
     "achievements": {
       "years_experience": "Gadu pieredze",
       "services": "Pakalpojumi",
