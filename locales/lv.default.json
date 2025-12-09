@@ -1951,6 +1951,11 @@
         "duplicate_variant_id": "Preces instrukcijai %{position} %{name} ir dublēts varianta ID %{variant_id}.",
         "invalid_variant_id_target": "Preces instrukcija %{name} atsaucas uz varianta ID %{variant_id}, bet šis variants nav iekļauts preču līnijās.",
         "invalid_price_override_target": "Cenas pārrakstīšanas instrukcija rindas vienībai %{stable_id} nav derīga, jo tā ir komplekta sastāvdaļa."
+      },
+      "delivery_options": {
+        "free_total_label": "Bezmaksas",
+        "ship_to_address": "Piegādāt uz adresi",
+        "shipping_address": "Piegādes adrese"
       }
     },
     "notices": {
