@@ -1963,6 +1963,9 @@
         "free_total_label": "Bezmaksas",
         "ship_to_address": "Piegādāt uz adresi",
         "shipping_address": "Piegādes adrese"
+      },
+      "customer_account": {
+        "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
       }
     },
     "notices": {
