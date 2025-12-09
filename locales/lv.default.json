@@ -1424,7 +1424,8 @@
         "subscription_policy": "Atcelšana",
         "purchase_options_policy": "Pirkšanas iespēju politika",
         "purchase_options_cancellation_policy": "Atcelšana",
-        "cookie_preferences": "Sīkfaili"
+        "cookie_preferences": "Sīkfaili",
+        "contact_information": "Kontakinformācija"
       },
       "remote_policies": {
         "unavailable_policy": "Šim veikalam nav norādīta %{policy_name}. Lai iegūtu plašāku informāciju, lūdzu, sazinieties tieši ar %{shop_name}."
