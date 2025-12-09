@@ -363,6 +363,12 @@
   .col-span-full {
     grid-column: 1 / -1;
   }
+  .row-1 {
+    grid-row: 1;
+  }
+  .row-3 {
+    grid-row: 3;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -967,6 +973,10 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-8 {
+    border-style: var(--tw-border-style);
+    border-width: 8px;
   }
   .border-t-2 {
     border-top-style: var(--tw-border-style);

@@ -31,10 +31,34 @@
   {%- endfor -%}
 {%- endcapture -%}
 
-{%
-  render 'filter-dropdown',
-  filter_text: 'collections.sort.label' | t,
-  current_value: 'collections.sort.label' | t,
+{%- assign sort_label_text = 'collections.sort.label' | t -%}
+
+{%- comment -%} Find the currently selected sort option and translate it {%- endcomment -%}
+{%- assign current_sort_label = sort_label_text -%}
+{%- for option in sort_options -%}
+  {%- if selected_sort_key == option -%}
+    {%- assign current_sort_label = sort_labels[forloop.index0] | t -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} Create JSON object with translated labels for JavaScript {%- endcomment -%}
+<script>
+  window.sortLabelsTranslated = {
+    'manual': {{ 'collections.sort.label' | t | json }},
+    'best-selling': {{ 'collections.sort.popular' | t | json }},
+    'title-ascending': {{ 'collections.sort.name_asc' | t | json }},
+    'title-descending': {{ 'collections.sort.name_desc' | t | json }},
+    'price-ascending': {{ 'collections.sort.price_asc' | t | json }},
+    'price-descending': {{ 'collections.sort.price_desc' | t | json }},
+    'created-ascending': {{ 'collections.sort.oldest' | t | json }},
+    'created-descending': {{ 'collections.sort.newest' | t | json }}
+  };
+</script>
+
+{% render 'filter-dropdown',
+  filter_text: sort_label_text,
+  current_value: current_sort_label,
   label_id: 'sort-by-label',
   dropdown_content: dropdown_content
 %}

@@ -7,7 +7,9 @@
   {% endif %}
   <div id="products">
     <div class="relative transition-hide">
-      <h2 class="pb-12">{{ collection.title | default: 'collections.all_products' | t }}</h2>
+      <h2 class="pb-12">
+        {% if collection.title %}{{ collection.title }}{% else %}{{ 'collections.all_products' | t }}{% endif %}
+      </h2>
       <!-- Filters as Dropdowns on Desktop -->
       <div
         class="hidden filters-container sm:flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-12"

@@ -3,7 +3,8 @@ function collectionFilters() {
         loading: false,
 
         updateSortByLabel() {
-            const sortLabels = {
+            // Use translated labels from Liquid if available, fallback to Latvian
+            const sortLabels = window.sortLabelsTranslated || {
                 manual: 'Kārtot pēc',
                 'best-selling': 'Populārākie',
                 'title-ascending': 'Nosaukums: A-Z',
