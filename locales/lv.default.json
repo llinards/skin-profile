@@ -569,7 +569,8 @@
         "payment_terms_totals": {
           "due_today": "Kopā jāmaksā šodien",
           "due_today_next": "Jāmaksā šodien"
-        }
+        },
+        "enter_shipping_address": "Ievadīt piegādes adresi"
       },
       "payment": {
         "store_credit": {
