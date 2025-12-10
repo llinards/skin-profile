@@ -413,11 +413,13 @@
         },
         "tab_fDqTj6": {
           "type": "tab",
+          "name": "Ādas analīze",
           "settings": {
-            "tab_label": "Tab 1",
-            "heading": "First Tab",
-            "text": "<p>Content for the first tab.</p>",
-            "alt_text": "Tab image",
+            "tab_label": "Ādas analīze",
+            "heading": "Ādas analīze",
+            "text": "<p>Uzlabojiet komunikāciju ar pacientiem, izmantojot detalizētu 3D ādas analīzi un<br/>personalizētus pārskatus. Sistēma ļauj precīzi novērtēt - grumbas, poras, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju.</p>",
+            "image": "shopify://shop_images/Mini_preOp_skincare-ezgif.com-optimize.gif",
+            "alt_text": "Ādas analīzes animācija",
             "button_text": "Learn More",
             "button_url": "",
             "button_style": "brown"
