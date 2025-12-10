@@ -358,26 +358,37 @@
     "template_before_after_k3ACH6": {
       "type": "template-before-after",
       "blocks": {
-        "button_Ac3wXh": {
-          "type": "button",
+        "tab_Y77txq": {
+          "type": "tab",
           "settings": {
-            "text": "Pakalpojumi",
-            "url": "shopify://pages/dermatologija",
-            "style": "brown"
+            "tab_label": "3D",
+            "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
+            "text": "<p>LifeViz sistēma nodrošina augstas precizitātes 3D sejas un ķermeņa vizualizāciju, kas ļauj detalizēti novērtēt ādas stāvokli, sejas proporcijas un estētiskās izmaiņas. Tā ir droša, neinvazīva diagnostikas metode, ko izmanto gan skaistumkopšanas speciālisti, gan ārsti, lai precīzi plānotu procedūras un sekotu rezultātiem dinamikā.</p><p>LifeViz piedāvā:</p><ul><li>Reālistisku 3D attēlojumu ar augstu izšķirtspēju</li><li>Precīzu mērījumu sistēmu simetrijas, apjoma un struktūras analīzei</li><li>Progresu salīdzināšanu “pirms un pēc” formātā</li><li>Ādas virsmas, tekstūras un reljefa novērtēšanu</li></ul><p>Šī tehnoloģija palīdz pieņemt pārdomātus lēmumus un sniedz klientam skaidru, vizuāli saprotamu priekšstatu par gaidāmajiem uzlabojumiem un rekomendējamām<br/>procedūrām.</p>",
+            "alt_text": "Before and After",
+            "button_text": "Uzzināt vairāk",
+            "button_url": "",
+            "button_style": "brown"
+          }
+        },
+        "tab_LkEiGa": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Tab",
+            "heading": "Virsraksts šeit",
+            "text": "<p>Jūsu teksts šeit.</p>",
+            "alt_text": "Before and After",
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_style": "brown"
           }
         }
       },
       "block_order": [
-        "button_Ac3wXh"
+        "tab_Y77txq",
+        "tab_LkEiGa"
       ],
       "name": "Pirms un Pēc Sadaļa",
-      "settings": {
-        "heading": "Tavs skaistums sākas šeit",
-        "text": "<p>Mēs ar lepnumu nodrošinām augstas kvalitātes estētisko aprūpi ātri un profesionāli. Jūsu drošība un komforts vienmēr būs mūsu augstākā prioritāte.</p>",
-        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
-        "after_image": "shopify://shop_images/skin-profile-background-image.jpg",
-        "alt_text": "Pirms un pēc"
-      }
+      "settings": {}
     },
     "template_contact_us_wXe9dp": {
       "type": "template-contact-us",
