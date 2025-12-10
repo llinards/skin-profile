@@ -385,11 +385,13 @@
         },
         "tab_Kc7MJQ": {
           "type": "tab",
+          "name": "Mērījumi",
           "settings": {
-            "tab_label": "Tab",
-            "heading": "Tab Heading",
-            "text": "<p>Your content here.</p>",
-            "alt_text": "Tab image",
+            "tab_label": "Mērījumi",
+            "heading": "Mērījumi",
+            "text": "<p>Uzlabojiet estētiskās konsultācijas, izmantojot modernu, pārnēsājamu 3D sistēmu. Izvērtējiet<br/>pacienta morfoloģiju, lai pārliecinātu un veicinātu ātrāku lēmumu pieņemšanu par<br/>procedūrām.</p>",
+            "image": "shopify://shop_images/Mini_preOp_measurements.gif",
+            "alt_text": "Mērijumu animācija",
             "button_text": "Learn More",
             "button_url": "",
             "button_style": "brown"
