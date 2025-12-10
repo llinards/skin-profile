@@ -396,12 +396,26 @@
             "button_url": "",
             "button_style": "brown"
           }
+        },
+        "tab_R9VYxT": {
+          "type": "tab",
+          "name": "Simulācija",
+          "settings": {
+            "tab_label": "Simulācija",
+            "heading": "Simulācija",
+            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
+            "alt_text": "Before and After",
+            "button_text": "Uzzināt vairāk",
+            "button_url": "",
+            "button_style": "brown"
+          }
         }
       },
       "block_order": [
         "tab_Y77txq",
         "tab_LkEiGa",
-        "tab_yN8YTh"
+        "tab_yN8YTh",
+        "tab_R9VYxT"
       ],
       "name": "Pirms un Pēc Sadaļa",
       "settings": {}
