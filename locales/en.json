@@ -145,7 +145,8 @@
       "close_section": "Close section"
     },
     "modal": {
-      "close": "Close modal"
+      "close": "Close modal",
+      "contacts_title": "Contacts"
     },
     "team": {
       "specialization": "Specialization",
