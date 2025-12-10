@@ -66,7 +66,7 @@
           <li>
             <a
               href="tel:{{ shop.phone }}"
-              class="items-center lg:text-white py-2 border border-transparent hover:border-b-white transition-all duration-300"
+              class="items-center lg:text-white py-1 border border-transparent hover:border-b-white transition-all duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@
           <li>
             <a
               href="mailto:{{ shop.email }}"
-              class="items-center lg:text-white py-2 border border-transparent hover:border-b-white transition-all duration-300"
+              class="items-center lg:text-white py-1 border border-transparent hover:border-b-white transition-all duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,11 +100,42 @@
             </a>
           </li>
         {%- endif -%}
-        {%- if section.settings.address != blank and section.settings.map_link != blank -%}
+        {%- if shop.address != blank -%}
           <li>
-            <a
-              href="{{ section.settings.map_link }}"
-              class="items-center lg:text-white py-2 border border-transparent hover:border-b-white transition-all duration-300"
+            {% if shop.address %}
+              {% assign map_query = shop.address.street
+                | append: ', '
+                | append: shop.address.city
+                | append: ', '
+                | append: shop.address.province
+                | append: ' '
+                | append: shop.address.zip
+                | append: ', '
+                | append: shop.address.country
+              %}
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query={{ map_query | url_encode }}"
+                class="items-center lg:text-white py-1 border border-transparent hover:border-b-white transition-all duration-300"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="inline-block size-4 mr-1"
+                >
+                  <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                </svg>
+                {{ shop.address.address1 }}, {{ shop.address.city }}, {{ shop.address.country }}
+              </a>
+            {% endif %}
+          </li>
+        {%- endif -%}
+        {% if shop.metafields.custom.working_days and shop.metafields.custom.working_hours %}
+          <li>
+            <span
+              class="items-center lg:text-white py-1 border border-transparent transition-all duration-300"
               target="_blank"
               rel="noopener"
             >
@@ -114,33 +145,15 @@
                 fill="currentColor"
                 class="inline-block size-4 mr-1"
               >
-                <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
               </svg>
 
-              {{ section.settings.address }}
-            </a>
+              {{ shop.metafields.custom.working_days }}
+              <br>
+              {{ shop.metafields.custom.working_hours }}
+            </span>
           </li>
         {%- endif -%}
-        <li>
-          <span
-            class="items-center lg:text-white py-2 border border-transparent transition-all duration-300"
-            target="_blank"
-            rel="noopener"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="inline-block size-4 mr-1"
-            >
-              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
-            </svg>
-
-            {{ 'general.footer.hours' | t -}}
-            <br>
-            {{ 'general.footer.hours_time' | t }}
-          </span>
-        </li>
       </ul>
     </div>
     <div class="order-4 lg:order-5">
