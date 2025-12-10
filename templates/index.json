@@ -357,68 +357,14 @@
     },
     "template_before_after_k3ACH6": {
       "type": "template-before-after",
-      "blocks": {
-        "tab_Y77txq": {
-          "type": "tab",
-          "name": "3D",
-          "settings": {
-            "tab_label": "3D",
-            "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
-            "text": "<p>LifeViz sistēma nodrošina augstas precizitātes 3D sejas un ķermeņa vizualizāciju, kas ļauj detalizēti novērtēt ādas stāvokli, sejas proporcijas un estētiskās izmaiņas. Tā ir droša, neinvazīva diagnostikas metode, ko izmanto gan skaistumkopšanas speciālisti, gan ārsti, lai precīzi plānotu procedūras un sekotu rezultātiem dinamikā.</p><p>LifeViz piedāvā:</p><ul><li>Reālistisku 3D attēlojumu ar augstu izšķirtspēju</li><li>Precīzu mērījumu sistēmu simetrijas, apjoma un struktūras analīzei</li><li>Progresu salīdzināšanu “pirms un pēc” formātā</li><li>Ādas virsmas, tekstūras un reljefa novērtēšanu</li></ul><p>Šī tehnoloģija palīdz pieņemt pārdomātus lēmumus un sniedz klientam skaidru, vizuāli saprotamu priekšstatu par gaidāmajiem uzlabojumiem un rekomendējamām<br/>procedūrām.</p>",
-            "alt_text": "Before and After",
-            "button_text": "Uzzināt vairāk",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_LkEiGa": {
-          "type": "tab",
-          "name": "3D attēlojums",
-          "settings": {
-            "tab_label": "3D attēlojums",
-            "heading": "3D attēlojums",
-            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem<br/>atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un<br/>salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma<br/>izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
-            "alt_text": "Before and After",
-            "button_text": "Uzzināt vairāk",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_yN8YTh": {
-          "type": "tab",
-          "name": "Mērījumi",
-          "settings": {
-            "tab_label": "Mērījumi",
-            "heading": "Mērījumi",
-            "text": "<p>Uzlabojiet estētiskās konsultācijas, izmantojot modernu, pārnēsājamu 3D sistēmu. Izvērtējiet<br/>pacienta morfoloģiju, lai pārliecinātu un veicinātu ātrāku lēmumu pieņemšanu par<br/>procedūrām.</p>",
-            "alt_text": "Before and After",
-            "button_text": "Uzzināt vairāk",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_R9VYxT": {
-          "type": "tab",
-          "name": "Simulācija",
-          "settings": {
-            "tab_label": "Simulācija",
-            "heading": "Simulācija",
-            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
-            "alt_text": "Before and After",
-            "button_text": "Uzzināt vairāk",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        }
-      },
-      "block_order": [
-        "tab_Y77txq",
-        "tab_LkEiGa",
-        "tab_yN8YTh",
-        "tab_R9VYxT"
-      ],
       "name": "Pirms un Pēc Sadaļa",
-      "settings": {}
+      "settings": {
+        "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
+        "text": "<p>LifeViz sistēma nodrošina augstas precizitātes 3D sejas un ķermeņa vizualizāciju, kas ļauj detalizēti novērtēt ādas stāvokli, sejas proporcijas un estētiskās izmaiņas. Tā ir<br/>droša, neinvazīva diagnostikas metode, ko izmanto gan skaistumkopšanas speciālisti, gan ārsti, lai precīzi plānotu procedūras un sekotu rezultātiem dinamikā.</p><ul><li>LifeViz piedāvā:</li><li>Reālistisku 3D attēlojumu ar augstu izšķirtspēju</li><li>Precīzu mērījumu sistēmu simetrijas, apjoma un struktūras analīzei</li><li>Progresu salīdzināšanu “pirms un pēc” formātā</li><li>Ādas virsmas, tekstūras un reljefa novērtēšanu</li></ul><p><br/>Šī tehnoloģija palīdz pieņemt pārdomātus lēmumus un sniedz klientam skaidru, vizuāli saprotamu priekšstatu par gaidāmajiem uzlabojumiem un rekomendējamām<br/>procedūrām.</p>",
+        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "after_image": "shopify://shop_images/dermatology-slide-1.jpg",
+        "alt_text": "Attēls"
+      }
     },
     "template_contact_us_wXe9dp": {
       "type": "template-contact-us",
