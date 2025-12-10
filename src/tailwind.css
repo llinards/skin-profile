@@ -26,32 +26,6 @@
         color: var(--color-brand-primary) !important;
     }
 
-    @media (hover: hover) {
-        .hover-device\:hover\:sp-brown:hover {
-            color: var(--color-brand-primary) !important;
-        }
-
-        .hover-device\:hover\:text-sp-brown:hover {
-            color: var(--color-brand-primary) !important;
-        }
-
-        .hover-device\:hover\:bg-sp-brown:hover {
-            background-color: var(--color-brand-primary) !important;
-        }
-
-        .hover-device\:hover\:bg-white:hover {
-            background-color: #ffffff !important;
-        }
-
-        .hover-device\:hover\:text-white:hover {
-            color: #ffffff !important;
-        }
-
-        .hover-device\:hover\:fill-sp-brown:hover {
-            fill: var(--color-brand-primary) !important;
-        }
-    }
-
     .fill-sp-brown {
         fill: var(--color-brand-primary);
     }
