@@ -360,6 +360,7 @@
       "blocks": {
         "tab_Y77txq": {
           "type": "tab",
+          "name": "3D",
           "settings": {
             "tab_label": "3D",
             "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
