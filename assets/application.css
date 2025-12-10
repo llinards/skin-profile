@@ -1439,6 +1439,14 @@
       }
     }
   }
+  .hover\:border-b {
+    &:hover {
+      @media (hover: hover) {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 1px;
+      }
+    }
+  }
   .hover\:border-b-white {
     &:hover {
       @media (hover: hover) {

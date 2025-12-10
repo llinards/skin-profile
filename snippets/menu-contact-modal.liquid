@@ -48,7 +48,10 @@
             <h3 class="text-2xl md:text-3xl">{{ shop.name }}</h3>
           </li>
           <li>
-            <a href="tel:{{ shop.phone }}" class="sp-link">
+            <a
+              href="tel:{{ shop.phone }}"
+              class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -61,7 +64,10 @@
             </a>
           </li>
           <li>
-            <a href="mailto:{{ shop.email }}" class="sp-link">
+            <a
+              href="mailto:{{ shop.email }}"
+              class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -87,7 +93,11 @@
                 | append: ', '
                 | append: shop.address.country
               %}
-              <a href="https://www.google.com/maps/search/?api=1&query={{ map_query | url_encode }}" target="_blank">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query={{ map_query | url_encode }}"
+                class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
