@@ -399,11 +399,13 @@
         },
         "tab_wtY7kB": {
           "type": "tab",
+          "name": "Simulācija",
           "settings": {
-            "tab_label": "Tab",
-            "heading": "Tab Heading",
-            "text": "<p>Your content here.</p>",
-            "alt_text": "Tab image",
+            "tab_label": "Simulācija",
+            "heading": "Simulācija",
+            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
+            "image": "shopify://shop_images/Mini_preOp_simu.gif",
+            "alt_text": "Simulācijas animācija",
             "button_text": "Learn More",
             "button_url": "",
             "button_style": "brown"
