@@ -177,6 +177,7 @@
               <li
                 @mouseenter="openChild({{ forloop.index0 }})"
                 class="relative group"
+                x-ref="item{{ forloop.index0 }}"
               >
                 <a
                   href="{{ child.url }}"
@@ -196,8 +197,14 @@
             {% if child.links and child.links.size > 0 %}
               <ul
                 x-show="activeChild === {{ forloop.index0 }}"
-                x-transition.opacity.duration.150ms
-                class="absolute left-full top-0 ml-2 bg-white shadow-xl ring-1 ring-black/5 py-2 min-w-[200px] text-center rounded-md list-none"
+                x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="absolute left-full -ml-2 bg-white shadow-xl ring-1 ring-black/5 py-2 min-w-[200px] text-center rounded-md list-none transition-all duration-150"
+                x-init="$watch('activeChild', value => { if(value === {{ forloop.index0 }}) { $el.style.top = $refs.item{{ forloop.index0 }}.offsetTop + 'px' } })"
               >
                 {% for sub in child.links %}
                   <li>

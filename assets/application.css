@@ -270,6 +270,9 @@
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
   .top-full {
     top: 100%;
   }
@@ -437,6 +440,9 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .-ml-2 {
+    margin-left: calc(var(--spacing) * -2);
   }
   .ml-0\.5 {
     margin-left: calc(var(--spacing) * 0.5);
