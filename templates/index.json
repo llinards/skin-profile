@@ -383,11 +383,25 @@
             "button_url": "",
             "button_style": "brown"
           }
+        },
+        "tab_yN8YTh": {
+          "type": "tab",
+          "name": "Mērījumi",
+          "settings": {
+            "tab_label": "Mērījumi",
+            "heading": "Mērījumi",
+            "text": "<p>Uzlabojiet estētiskās konsultācijas, izmantojot modernu, pārnēsājamu 3D sistēmu. Izvērtējiet<br/>pacienta morfoloģiju, lai pārliecinātu un veicinātu ātrāku lēmumu pieņemšanu par<br/>procedūrām.</p>",
+            "alt_text": "Before and After",
+            "button_text": "Uzzināt vairāk",
+            "button_url": "",
+            "button_style": "brown"
+          }
         }
       },
       "block_order": [
         "tab_Y77txq",
-        "tab_LkEiGa"
+        "tab_LkEiGa",
+        "tab_yN8YTh"
       ],
       "name": "Pirms un Pēc Sadaļa",
       "settings": {}
