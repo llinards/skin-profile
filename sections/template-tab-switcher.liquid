@@ -1,44 +1,82 @@
-<div class="container mx-auto px-4 pb-12 transition-hide" x-data="{ activeTab: 0 }">
-  <!-- Tabs Navigation -->
-  {% if section.blocks.size > 0 %}
-    <div class="flex justify-center mb-8 md:mb-12">
-      <div class="inline-flex flex-wrap justify-center gap-2 md:gap-4">
-        {% for block in section.blocks %}
-          {% if block.type == 'tab' %}
-            <button
-              @click="activeTab = {{ forloop.index0 }}"
-              :class="activeTab === {{ forloop.index0 }} ? 'bg-sp-brown text-white' : 'bg-white text-sp-brown border-2 border-sp-brown'"
-              class="px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 hover:bg-sp-brown hover:text-white"
-            >
-              {{ block.settings.tab_label }}
-            </button>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-
-  <!-- Tab Content -->
+<div class="bg-sp-light-brown py-12 mb-12">
+  <!-- Preload all tab images -->
   {% for block in section.blocks %}
-    {% if block.type == 'tab' %}
-      <div
-        x-show="activeTab === {{ forloop.index0 }}"
-        x-transition:enter="transition ease-out duration-300"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"
-        {{ block.shopify_attributes }}
-      >
-        <div class="md:flex md:gap-x-24 md:items-center">
-          <!-- Left column: Text content -->
-          <div class="flex flex-col md:w-1/2 items-center md:items-start justify-center space-y-6 md:space-y-12 mb-8 md:mb-0">
-            <h2 class="text-center md:text-left">{{ block.settings.heading }}</h2>
-            <div class="space-y-2 text-center md:text-left sp-link">
-              {{ block.settings.text }}
+    {% if block.type == 'tab' and block.settings.image != blank %}
+      <link rel="preload" as="image" href="{{ block.settings.image | image_url }}">
+    {% endif %}
+  {% endfor %}
+
+  <div class="container mx-auto px-4 transition-hide" x-data="{ activeTab: 0 }">
+    <!-- Tabs Navigation -->
+    {% if section.blocks.size > 0 %}
+      <div class="flex justify-center mb-8 md:mb-12">
+        <div class="inline-flex flex-wrap justify-center gap-2 md:gap-4">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab' %}
+              <button
+                @click="activeTab = {{ forloop.index0 }}"
+                :class="activeTab === {{ forloop.index0 }} ? 'bg-sp-brown text-white border-sp-brown' : 'bg-white text-sp-brown border-sp-brown'"
+                class="cursor-pointer inline-block border hover:bg-sp-brown hover:text-white transition-all duration-300 uppercase rounded-xl py-3 px-4 tracking-wider text-sm md:text-base"
+              >
+                {{ block.settings.tab_label }}
+              </button>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- Tab Content -->
+    {% for block in section.blocks %}
+      {% if block.type == 'tab' %}
+        <div
+          x-show="activeTab === {{ forloop.index0 }}"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          {{ block.shopify_attributes }}
+        >
+          <div class="md:flex md:gap-x-24 md:items-center">
+            <!-- Left column: Text content -->
+            <div class="flex flex-col md:w-1/2 items-center md:items-start justify-center space-y-6 md:space-y-12 mb-8 md:mb-0">
+              <h2 class="text-center md:text-left">{{ block.settings.heading }}</h2>
+              <div class="space-y-2 text-left sp-link">
+                {{ block.settings.text }}
+              </div>
+
+              <!-- Desktop Button -->
+              {% if block.settings.button_text != blank and block.settings.button_url != blank %}
+                <div class="hidden md:flex w-full justify-center md:justify-start">
+                  {% case block.settings.button_style %}
+                    {% when 'white' %}
+                      {% render 'btn-white', text: block.settings.button_text, url: block.settings.button_url %}
+                    {% when 'brown' %}
+                      {% render 'btn-brown', text: block.settings.button_text, url: block.settings.button_url %}
+                  {% endcase %}
+                </div>
+              {% endif %}
             </div>
 
-            <!-- Desktop Button -->
+            <!-- Right column: Image -->
+            <div class="w-full md:w-1/2">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt="{{ block.settings.alt_text }}"
+                  class="w-full h-auto rounded-lg"
+                  width="1024"
+                  height="1024"
+                  loading="eager"
+                >
+              {% else %}
+                <div class="w-full aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+                  <p class="text-gray-400">{{ 'general.image_placeholder' | t }}</p>
+                </div>
+              {% endif %}
+            </div>
+            <!-- Mobile Button -->
             {% if block.settings.button_text != blank and block.settings.button_url != blank %}
-              <div class="hidden md:flex w-full justify-center md:justify-start">
+              <div class="md:hidden flex justify-center w-full mt-6">
                 {% case block.settings.button_style %}
                   {% when 'white' %}
                     {% render 'btn-white', text: block.settings.button_text, url: block.settings.button_url %}
@@ -48,42 +86,11 @@
               </div>
             {% endif %}
           </div>
-
-          <!-- Right column: Image -->
-          <div class="w-full md:w-1/2">
-            {% if block.settings.image != blank %}
-              <img
-                src="{{ block.settings.image | image_url: width: 1024 }}"
-                alt="{{ block.settings.alt_text }}"
-                class="w-full h-auto rounded-lg"
-                width="1024"
-                height="1024"
-                loading="lazy"
-              >
-            {% else %}
-              <div class="w-full aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
-                <p class="text-gray-400">{{ 'general.image_placeholder' | t | default: 'Image placeholder' }}</p>
-              </div>
-            {% endif %}
-          </div>
-
-          <!-- Mobile Button -->
-          {% if block.settings.button_text != blank and block.settings.button_url != blank %}
-            <div class="md:hidden flex justify-center w-full mt-6">
-              {% case block.settings.button_style %}
-                {% when 'white' %}
-                  {% render 'btn-white', text: block.settings.button_text, url: block.settings.button_url %}
-                {% when 'brown' %}
-                  {% render 'btn-brown', text: block.settings.button_text, url: block.settings.button_url %}
-              {% endcase %}
-            </div>
-          {% endif %}
         </div>
-      </div>
-    {% endif %}
-  {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
-
 {% schema %}
 {
   "name": "Tab Switcher Section",
@@ -121,27 +128,27 @@
         {
           "type": "text",
           "id": "alt_text",
-          "label": "Image Alt Text",
-          "default": "Tab image"
+          "label": "Attēla alt teksts",
+          "default": "Cilnes bilde"
         },
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button Text",
-          "default": "Learn More"
+          "label": "Pogas teksts",
+          "default": "Uzzināt vairāk"
         },
         {
           "type": "url",
           "id": "button_url",
-          "label": "Button Link"
+          "label": "Pogas saites"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button Style",
+          "label": "Pogas stils",
           "options": [
-            { "value": "white", "label": "White" },
-            { "value": "brown", "label": "Brown" }
+            { "value": "white", "label": "Balta" },
+            { "value": "brown", "label": "Brūna" }
           ],
           "default": "brown"
         }
@@ -156,10 +163,10 @@
         {
           "type": "tab",
           "settings": {
-            "tab_label": "Tab 1",
-            "heading": "First Tab",
-            "text": "<p>Content for the first tab.</p>",
-            "button_text": "Learn More"
+            "tab_label": "Cilne 1",
+            "heading": "Pirmā cilne",
+            "text": "<p>Cilnes saturs</p>",
+            "button_text": "Uzzināt vairāk"
           }
         }
       ]
