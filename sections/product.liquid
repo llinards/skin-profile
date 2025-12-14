@@ -67,7 +67,7 @@
 
         {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
 
-        <div class="mb-6 flex flex-col gap-4 md:gap-6">
+        <div class="mb-6 flex flex-row gap-4 md:gap-6">
           <div class="inline-flex items-center">
             <label for="quantity" class="uppercase font-bold text-sm tracking-widest">
               {{- 'products.quantity' | t -}}
@@ -160,7 +160,7 @@
 
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
-            <p class="inline-flex border rounded-2xl px-4 py-1.5 font-bold text-sm tracking-widest uppercase">
+            <p class="flex items-center border rounded-2xl px-4 py-1.5 font-bold text-sm tracking-widest uppercase">
               {{ 'products.available' | t }}
               {{ stock_quantity }}
             </p>
@@ -184,9 +184,9 @@
     <div class="mt-6">
       {%- comment -%} Product Usage {%- endcomment -%}
       {%- if product.metafields.custom.product_usage != blank -%}
-        {%
-          render 'dropdown-description',
-          description_title: 'products.usage' | t,
+        {% assign products_usage = 'products.usage' | t %}
+        {% render 'dropdown-description',
+          description_title: products_usage,
           description_content: product.metafields.custom.product_usage,
           use_metafield_tag: true,
           class: 'max-w-96'
@@ -195,10 +195,9 @@
 
       {%- if product.metafields.shopify['active-ingredient'] != blank -%}
         {% assign active_ingredients = product.metafields.shopify['active-ingredient'].value %}
-
-        {%
-          render 'dropdown-active-ingredient',
-          description_title: 'products.active_ingredients' | t,
+        {% assign products_active_ingredients = 'products.active_ingredients' | t %}
+        {% render 'dropdown-active-ingredient',
+          description_title: products_active_ingredients,
           ingredients: active_ingredients,
           class: 'max-w-96'
         %}
@@ -206,9 +205,9 @@
 
       {%- comment -%} Additional Information {%- endcomment -%}
       {%- if product.metafields.custom.additional_information != blank -%}
-        {%
-          render 'dropdown-description',
-          description_title: 'products.additional_info' | t,
+        {% assign products_additional_info = 'products.additional_info' | t %}
+        {% render 'dropdown-description',
+          description_title: products_additional_info,
           description_content: product.metafields.custom.additional_information,
           use_metafield_tag: true,
           class: 'max-w-96'
