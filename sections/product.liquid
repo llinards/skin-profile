@@ -51,10 +51,10 @@
       </div>
 
       <div class="hidden md:block space-y-4">{{ product.description }}</div>
+      {% assign products_usage = 'products.usage' | t %}
       <div class="md:hidden">
-        {%
-          render 'dropdown-description',
-          description_title: 'products.description' | t,
+        {% render 'dropdown-description',
+          description_title: products_usage,
           description_content: product.description,
           use_metafield_tag: false,
           class: 'max-w-96'
