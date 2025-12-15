@@ -1,12 +1,5 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('team-carousel'), {
-      fill: true,
-      infinite: false,
-      plugins: [window.Dots],
-    }).init();
-  });
-</script>
+<script src="{{ 'team-carousel.js' | asset_url }}" defer></script>
+
 <div x-data="{ activeModal: null }">
   <div class="container mx-auto px-4 pb-12 transition-hide text-center md:text-left">
     {% if section.settings.is_page_title %}

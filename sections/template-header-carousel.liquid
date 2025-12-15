@@ -1,17 +1,4 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('header-carousel'), {
-      infinite: true,
-      plugins: [window.Autoplay, window.Dots],
-      Autoplay: {
-        timeout: 5000,
-      },
-      style: {
-        '--f-progressbar-height': '0px',
-      },
-    }).init();
-  });
-</script>
+<script src="{{ 'header-carousel.js' | asset_url}}" defer></script>
 <div
   class="home-introduction relative flex justify-center min-h-screen {% if section.settings.spacing %} mb-12 {% endif %}"
 >

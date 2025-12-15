@@ -1,12 +1,4 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = Carousel(document.getElementById('services-carousel'), {
-      fill: true,
-      infinite: false,
-      plugins: [window.Dots],
-    }).init();
-  });
-</script>
+<script src="{{ 'services-carousel.js' | asset_url }}" defer></script>
 
 <div class="{% if section.settings.carousel_desktop == false %}container mx-auto {% endif %} pb-12 transition-hide text-center md:text-left">
   <h2 class="container mx-auto px-4 pb-6 md:pb-12">{{ section.settings.heading }}</h2>

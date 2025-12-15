@@ -1,18 +1,18 @@
 <script src="{{ 'product-counter.js' | asset_url }}" defer></script>
+<script src="{{ 'product-carousel.js' | asset_url }}" defer></script>
 
-<div class="container mx-auto px-4 pt-24 pb-12 md:flex">
-  <div class="hidden md:flex md:w-1/2">
-    {% for image in product.images %}
-      {% render 'image', class: 'product-image', image: image %}
-    {% endfor %}
-  </div>
+<div class="container mx-auto px-4 pt-24 pb-12 gap-x-4 md:flex">
+  <!-- PRODUCT IMAGE DESKTOP -->
+  {% render 'product-image-desktop' %}
 
+  <!-- PRODUCT INFORMATION BLOCK -->
   <div class="md:w-1/2">
     <div class="mb-6">
       <h1 class="text-4xl lg:text-5xl mb-4 md:pt-12">{{ product.title }}</h1>
 
       {%- assign variant = product.selected_or_first_available_variant -%}
 
+      <!-- PRODUCT PRICE -->
       {% if variant.compare_at_price > variant.price %}
         {%- comment -%} Product is on sale {%- endcomment -%}
         <div class="mb-4 space-y-2">
@@ -44,12 +44,10 @@
         <span class="text-3xl md:text-4xl header-font block mb-4">{{ variant.price | money }}</span>
       {% endif %}
 
-      <div class="md:hidden">
-        {% for image in product.images %}
-          {% render 'image', class: 'product-image', image: image %}
-        {% endfor %}
-      </div>
+      <!-- PRODUCT IMAGE MOBILE -->
+      {% render 'product-image-mobile' %}
 
+      <!-- PRODUCT DESCRIPTION -->
       <div class="hidden md:block space-y-4">{{ product.description }}</div>
       {% assign products_usage = 'products.usage' | t %}
       <div class="md:hidden">
@@ -61,6 +59,8 @@
         %}
       </div>
     </div>
+
+    <!-- QUANTITY INPUT -->
     <div class="product-form">
       {% form 'product', product %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -72,7 +72,7 @@
             <label for="quantity" class="uppercase font-bold text-sm tracking-widest">
               {{- 'products.quantity' | t -}}
             </label>
-            <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4">
+            <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4 md:ml-6">
               <button
                 type="button"
                 id="minus-btn"
@@ -88,7 +88,7 @@
                 min="1"
                 max="{{ stock_quantity }}"
                 value="1"
-                class="w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
+                class="w-4 md:w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
                 readonly
                 aria-describedby="quantity-error"
               >
@@ -102,70 +102,70 @@
               </button>
             </div>
           </div>
-          {%- if product.variants.size > 1 -%}
-            <div x-data="{ open: false }" class="relative w-full flex items-center justify-start max-w-xs">
-              <label class="uppercase font-bold text-sm tracking-widest block">{{ 'products.variant' | t }}</label>
-              <button
-                type="button"
-                @click="open = !open"
-                class="flex py-2 px-4 ml-4 items-center uppercase rounded-full border border-gray-300 w-full justify-between cursor-pointer hover:bg-gray-50 transition-colors min-w-48"
-                aria-haspopup="listbox"
-                :aria-expanded="open.toString()"
-              >
-                <span class="tracking-wide text-sm truncate">
-                  {{ product.selected_or_first_available_variant.title }}
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6 bg-gray-300 rounded-full p-1 transition-transform"
-                  :class="{ 'rotate-180': open }"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              <!-- Dropdown menu below the button -->
-              <div
-                x-show="open"
-                @click.away="open = false"
-                x-transition
-                class="absolute left-0 top-full z-10 mt-2 w-full bg-white border text-base border-gray-300 rounded-lg shadow-lg"
-                style="display: none;"
-              >
-                <ul class="py-2 max-h-60 overflow-y-auto list-none">
-                  {% for variant in product.variants %}
-                    <li>
-                      <button
-                        type="button"
-                        class="w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-all duration-300"
-                        @click="
-                          $el.closest('[x-data]').querySelector('input[name=id]').value = '{{ variant.id }}';
-                          open = false;
-                          $el.closest('[x-data]').querySelector('span').textContent = '{{ variant.title | escape }}';
-                        "
-                      >
-                        {{ variant.title -}}
-                        {%- if variant.available == false %} ({{ 'products.not_available' | t }}){% endif %}
-                      </button>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-            </div>
-          {%- endif -%}
 
           {% if product.metafields.custom.produkta_kategorija == 'Dāvanu kartes' %}
           {% else %}
-            <p class="flex items-center border rounded-2xl px-4 py-1.5 font-bold text-sm tracking-widest uppercase">
+            <p class="flex w-fit items-center border rounded-full px-2 py-1.5 font-bold text-sm tracking-widest uppercase">
               {{ 'products.available' | t }}
               {{ stock_quantity }}
             </p>
           {% endif %}
         </div>
+        {%- if product.variants.size > 1 -%}
+          <div x-data="{ open: false }" class="relative w-full flex items-center justify-start max-w-xs">
+            <label class="uppercase font-bold text-sm tracking-widest block">{{ 'products.variant' | t }}</label>
+            <button
+              type="button"
+              @click="open = !open"
+              class="flex py-2 px-4 ml-4 md:ml-6 items-center uppercase rounded-full border border-gray-300 w-full justify-between cursor-pointer hover:bg-gray-50 transition-colors min-w-48"
+              aria-haspopup="listbox"
+              :aria-expanded="open.toString()"
+            >
+              <span class="tracking-wide text-sm truncate">
+                {{ product.selected_or_first_available_variant.title }}
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 bg-gray-300 rounded-full p-1 transition-transform"
+                :class="{ 'rotate-180': open }"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <!-- Dropdown menu below the button -->
+            <div
+              x-show="open"
+              @click.away="open = false"
+              x-transition
+              class="absolute left-0 top-full z-10 mt-2 w-full bg-white border text-base border-gray-300 rounded-lg shadow-lg"
+              style="display: none;"
+            >
+              <ul class="py-2 max-h-60 overflow-y-auto list-none">
+                {% for variant in product.variants %}
+                  <li>
+                    <button
+                      type="button"
+                      class="w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-all duration-300"
+                      @click="
+                        $el.closest('[x-data]').querySelector('input[name=id]').value = '{{ variant.id }}';
+                        open = false;
+                        $el.closest('[x-data]').querySelector('span').textContent = '{{ variant.title | escape }}';
+                      "
+                    >
+                      {{ variant.title -}}
+                      {%- if variant.available == false %} ({{ 'products.not_available' | t }}){% endif %}
+                    </button>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          </div>
+        {%- endif -%}
         <div
           id="quantity-error"
           class="text-base text-red-600 h-4 opacity-0 transition-opacity duration-300 mb-4"
@@ -180,9 +180,8 @@
       {% endform %}
     </div>
 
-    {%- comment -%} Metafield-based dropdown descriptions {%- endcomment -%}
     <div class="mt-6">
-      {%- comment -%} Product Usage {%- endcomment -%}
+      <!-- PRODUCT USAGE DROPDOWN -->
       {%- if product.metafields.custom.product_usage != blank -%}
         {% assign products_usage = 'products.usage' | t %}
         {% render 'dropdown-description',
@@ -193,6 +192,7 @@
         %}
       {%- endif -%}
 
+      <!-- PRODUCT ACTIVE INGREDIENTS -->
       {%- if product.metafields.shopify['active-ingredient'] != blank -%}
         {% assign active_ingredients = product.metafields.shopify['active-ingredient'].value %}
         {% assign products_active_ingredients = 'products.active_ingredients' | t %}
@@ -203,7 +203,7 @@
         %}
       {%- endif -%}
 
-      {%- comment -%} Additional Information {%- endcomment -%}
+      <!-- PRODUCT ADDITIONAL INFORMATION -->
       {%- if product.metafields.custom.additional_information != blank -%}
         {% assign products_additional_info = 'products.additional_info' | t %}
         {% render 'dropdown-description',

@@ -299,7 +299,9 @@
 #team-carousel .f-carousel__dot,
 #services-carousel .f-carousel__dot,
 #category-carousel .f-carousel__dot,
-#product-recommendation-carousel .f-carousel__dot {
+#product-recommendation-carousel .f-carousel__dot,
+#product-view .f-carousel__dot,
+#product-view-mobile .f-carousel__dot {
     color: var(--color-brand-primary) !important;
 }
 
