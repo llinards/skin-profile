@@ -100,7 +100,7 @@
           "settings": {
             "photo": "shopify://shop_images/estetiska_medicina.jpg",
             "name": "<p>Estētiskā medicīna</p>",
-            "url": "shopify://pages/estetiska-medicina-1"
+            "url": "shopify://pages/aesthetic-medicine"
           }
         },
         "service_KHPgrF": {
@@ -136,7 +136,7 @@
           "settings": {
             "photo": "shopify://shop_images/lazerepilacija.jpg",
             "name": "<p>Lāzerepilācija</p>",
-            "url": "shopify://pages/lazerepilacija"
+            "url": "shopify://pages/laser-epilation"
           }
         },
         "service_xGwa3T": {
@@ -145,7 +145,7 @@
           "settings": {
             "photo": "shopify://shop_images/kermena_proceduras.jpg",
             "name": "<p>Ķermeņa procedūras</p>",
-            "url": "shopify://pages/kermena-proceduras"
+            "url": "shopify://pages/body-treatments"
           }
         },
         "service_VfRKwK": {
