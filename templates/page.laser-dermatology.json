@@ -175,7 +175,7 @@
         "title": "Fotoatjaunošana ar ALMA Dye_VL",
         "content": "<p>Ar intensīvi pulsējošās gaismas palīdzību tiek uzkarsēti ādas virspusējie un vidēji dziļie asinsvadi un pigmentplankumi, kā arī stimulēti ādas atjaunošanās procesi rētu un striju gadījumos. </p><p>Pateicoties procedūrai, ādas tonis kļūst gaišāks un vienmērīgāks, poras sašaurinās. Nepieciešams veikt 3–6 procedūras ar 3–4 nedēļu intervālu.</p>",
         "service_disclaimer": "",
-        "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url": "shopify://pages/appointment-booking",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false

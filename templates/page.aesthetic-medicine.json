@@ -105,7 +105,7 @@
         "title": "Polinukleotīdu injekcijas",
         "content": "<p>Efektīvs un inovatīvs risinājums sejas ādas reģenerācijai. Samazina tūsku un maisiņus zem acīm, mīmiskās grumbas, izlīdzina ādas toni un stimulē kolagēna un elastīna sintēzi.</p><p>Īpaši ieteicams kursa veidā pirms plastiskajām operācijām un pēcoperāciju periodā, lai mazinātu rētu risku, iekaisumu un veicinātu dzīšanu. Nepieciešams kurss 2 reizes ar 3–4 nedēļu intervālu.</p>",
         "service_disclaimer": "",
-        "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url": "shopify://pages/appointment-booking",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false

@@ -85,7 +85,7 @@
         "title": "Sejas ādas dziļā tīrīšana",
         "content": "<p>Procedūras mērķis ir nodrošināt ādas efektīvu un dziļu attīrīšanu visiem ādas tipiem.</p>",
         "service_disclaimer": "",
-        "service_url": "shopify://pages/pieteikuma-anketa",
+        "service_url": "shopify://pages/appointment-booking",
         "service_url_cta": "Pieteikt",
         "open_by_default": false,
         "space_bottom": false
