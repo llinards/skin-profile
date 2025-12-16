@@ -106,7 +106,26 @@
   },
   "filters": {
     "vendor_default": "Vendor",
-    "category_default": "Category"
+    "category_default": "Category",
+    "values": {
+    "filter_p_m_custom_product_type": {
+        "conditioners": "Conditioner",
+        "cleansing": "Cleansing",
+        "creams": "Cremes",
+        "serums": "Serums",
+        "masks": "Masks",
+        "washing": "Washing",
+        "deodorant": "Deodorant",
+        "moisturizing": "Moisturizing"
+      },
+      "filter_p_m_custom_product_category": {
+        "gift_cards": "Gift cards",
+        "facial_care": "Facial care",
+        "body_care": "Body care",
+        "hair_care": "Hair",
+        "nutritional_supplements": "Nutritional supplements",
+      }
+    }
   },
   "general": {
     "accessibility": {

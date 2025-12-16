@@ -2989,7 +2989,26 @@
   },
   "filters": {
     "vendor_default": "Ražotājs",
-    "category_default": "Kategorija"
+    "category_default": "Kategorija",
+    "values": {
+      "filter_p_m_custom_product_type": {
+        "conditioners": "Kondicionieri",
+        "cleansing": "Attīrīšana",
+        "creams": "Krēmi",
+        "serums": "Serumi",
+        "masks": "Maskas",
+        "washing": "Mazgāšana",
+        "deodorant": "Dezodorants",
+        "moisturizing": "Mitrināšana"
+      },
+      "filter_p_m_custom_product_category": {
+        "gift_cards": "Dāvanu kartes",
+        "facial_care": "Sejas kopšana",
+        "body_care": "Ķermeņa kopšana",
+        "hair_care": "Matu kopšana",
+        "nutritional_supplements": "Uztura bagātinātāji",
+      }
+    }
   },
   "general": {
     "accessibility": {

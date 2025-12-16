@@ -52,8 +52,12 @@ function collectionFilters() {
                     }
                 }
 
-                // append active filters
+                // append active filters (dedupe because same checkbox can exist in desktop + mobile UIs)
+                const seen = new Set();
                 document.querySelectorAll('.filter-checkbox:checked').forEach((box) => {
+                    const key = `${box.name}=${box.value}`;
+                    if (seen.has(key)) return;
+                    seen.add(key);
                     newParams.append(box.name, box.value);
                 });
 

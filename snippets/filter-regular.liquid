@@ -15,7 +15,7 @@
           <button 
             type="button" 
             class="text-xs text-gray-500 hover:text-sp-brown underline cursor-pointer w-full text-left"
-            @click="clearFilterGroup('{{ filter.param_name | escape }}')"
+            @click.prevent="window.clearFilterGroup && window.clearFilterGroup('{{ filter.param_name | escape }}')"
           >
             {{ 'collections.filters.clear' | t }}
           </button>
@@ -24,6 +24,19 @@
         {%- comment -%} Filter values as Checkboxes {%- endcomment -%}
         <div class="max-h-60 overflow-y-auto">
           {%- for value in filter.values -%}
+            {%- comment -%} Build translation key for custom filters only {%- endcomment -%}
+            {%- assign value_key = value.value | handleize | replace: '-', '_' -%}
+            {%- assign filter_key = filter.param_name | handleize | replace: '-', '_' -%}
+            {%- assign translation_key = 'filters.values.' | append: filter_key | append: '.' | append: value_key -%}
+            {%- assign translated_label = translation_key | t -%}
+            
+            {%- comment -%} Fallback to Shopify's label if translation doesn't exist {%- endcomment -%}
+            {%- if translated_label == translation_key -%}
+              {%- assign display_label = value.label -%}
+            {%- else -%}
+              {%- assign display_label = translated_label -%}
+            {%- endif -%}
+
             <label class="flex items-center px-4 py-2 hover:bg-gray-50 cursor-pointer transition-colors">
               <input 
                 type="checkbox" 
@@ -34,7 +47,7 @@
                 data-param="{{ filter.param_name | escape }}"
               >
               <span class="text-sm ml-3 {% if value.active %}font-semibold{% endif %}">
-                {{ value.label }}
+                {{ display_label }}
               </span>
               <span class="ml-auto text-xs text-gray-400 pl-2">({{ value.count }})</span>
             </label>
