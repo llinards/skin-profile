@@ -3000,7 +3000,6 @@
         "washing": "Mazgāšana",
         "deodorant": "Dezodorants",
         "moisturizing": "Mitrināšana",
-         "test_translate": ""
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Dāvanu kartes",
@@ -3008,6 +3007,7 @@
         "body_care": "Ķermeņa kopšana",
         "hair_care": "Matu kopšana",
         "nutritional_supplements": "Uztura bagātinātāji",
+        "test_translate": ""
       }
     }
   },
