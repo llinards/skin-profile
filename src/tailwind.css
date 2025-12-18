@@ -27,11 +27,11 @@
     }
 
     .fill-sp-light-brown {
-        fill: var(--color-brand-secondary-light);
+        fill: var(--color-brand-secondary);
     }
 
-    .text-sp-light-brown {
-        color: var(--color-brand-secondary-light);
+    .text-sp-brown {
+        color: var(--color-brand-secondary);
     }
 
     .fill-sp-brown {
