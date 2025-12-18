@@ -45,6 +45,15 @@
         "button_align_desktop": "start"
       }
     },
+    "text_section_BfGNQG": {
+      "type": "template-text-only",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
+        "text": "<p>Dibināts 2019. gadā, Skin Profile īsā laikā ir kļuvis par uzticamu veselības un skaistuma centru Vidzemē. Mūsu mērķis ir uzlabot Siguldas un apkārtējo novadu iedzīvotāju dzīves kvalitāti, piedāvājot inovatīvus, uz jaunākajām tehnoloģijām balstītus dermatoloģijas, lāzerdermatoloģijas un kosmetoloģijas pakalpojumus.</p><p>Mēs ticam, ka skaistums sākas ar veselību – tāpēc katrs mūsu pakalpojums ir veidots, lai sniegtu redzamus, ilgtermiņa rezultātus profesionālu speciālistu uzraudzībā. Mūsu komanda rūpējas par katru pacientu individuāli, meklējot precīzākos un efektīvākos risinājumus ādas veselības atjaunošanai.</p><p>Mūsu vīzija – kļūt par vadošo estētiskās medicīnas un dermatoloģijas centru reģionā, kas apvieno tehnoloģiju iespējas ar cilvēcīgu un iejūtīgu attieksmi.</p><p>Mūsu misija – palīdzēt cilvēkiem justies labi savā ādā – gan fiziski, gan emocionāli.</p>",
+        "text_html": ""
+      }
+    },
     "template_services_carousel_grid_phrCqU": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -297,15 +306,6 @@
         "alt": "Biodroga serums"
       }
     },
-    "text_section_BfGNQG": {
-      "type": "template-text-only",
-      "name": "Teksta sadaļa",
-      "settings": {
-        "heading": "Mēs esam vieta, kur veselība satiekas ar estētiku",
-        "text": "<p>Dibināts 2019. gadā, Skin Profile īsā laikā ir kļuvis par uzticamu veselības un skaistuma centru Vidzemē. Mūsu mērķis ir uzlabot Siguldas un apkārtējo novadu iedzīvotāju dzīves kvalitāti, piedāvājot inovatīvus, uz jaunākajām tehnoloģijām balstītus dermatoloģijas, lāzerdermatoloģijas un kosmetoloģijas pakalpojumus.</p><p>Mēs ticam, ka skaistums sākas ar veselību – tāpēc katrs mūsu pakalpojums ir veidots, lai sniegtu redzamus, ilgtermiņa rezultātus profesionālu speciālistu uzraudzībā. Mūsu komanda rūpējas par katru pacientu individuāli, meklējot precīzākos un efektīvākos risinājumus ādas veselības atjaunošanai.</p><p>Mūsu vīzija – kļūt par vadošo estētiskās medicīnas un dermatoloģijas centru reģionā, kas apvieno tehnoloģiju iespējas ar cilvēcīgu un iejūtīgu attieksmi.</p><p>Mūsu misija – palīdzēt cilvēkiem justies labi savā ādā – gan fiziski, gan emocionāli.</p>",
-        "text_html": ""
-      }
-    },
     "template_partners_RUpUhn": {
       "type": "template-partners-brands",
       "blocks": {
@@ -491,14 +491,14 @@
   },
   "order": [
     "main",
-    "template_services_carousel_grid_phrCqU",
-    "team_section_WTmffT",
-    "template_quote_fYGtGC",
-    "template_text_image_fyDtEG",
     "text_section_BfGNQG",
-    "template_partners_RUpUhn",
+    "template_quote_fYGtGC",
     "template_before_after_k3ACH6",
     "template_tab_switcher_nCtJiT",
+    "template_text_image_fyDtEG",
+    "template_partners_RUpUhn",
+    "team_section_WTmffT",
+    "template_services_carousel_grid_phrCqU",
     "template_contact_us_wXe9dp",
     "teamplate_btn_scroll_to_top_B9MAxk"
   ]

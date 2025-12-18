@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "add_top_padding": false
+      }
+    },
+    "template_header_carousel_wTTrcH": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_XNhjFU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Skin_profile_tehnologijas.jpg",
+            "alt_text": ""
+          }
+        },
+        "button_nFLLek": {
+          "type": "button",
+          "settings": {
+            "text": "Uzzināt vairāk",
+            "url": "#europe-projects",
+            "style": "white"
+          }
+        }
+      },
+      "block_order": [
+        "image_XNhjFU",
+        "button_nFLLek"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Sadarbība ar eiropasprojektiem",
+        "subtext": "",
+        "spacing": true
+      }
+    },
+    "template_dropdown_project_GLTNWR": {
+      "type": "template-dropdown-project",
+      "blocks": {
+        "project_dropdown_x6kEbf": {
+          "type": "project_dropdown",
+          "name": "Skin Profile",
+          "settings": {
+            "project_title": "Skin Profile",
+            "project_reference": "",
+            "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un diagnostikas klāstu reģionā.</p>",
+            "open": true,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_8UDfyN": {
+          "type": "project_dropdown",
+          "name": "Digitālā transformācija",
+          "settings": {
+            "project_title": "Digitālā transformācija",
+            "project_reference": "",
+            "content": "<p>2024. gadā SIA “Piecas dienas” saņēma atbalstu programmā “Digitālā transformācija”,līgums Nr. 17.2-5-N-2024/783. Investīcija paredzēta uzņēmuma procesu digitalizācijai,inovāciju attīstībai un darbības pilnveidei atbilstoši Latvijas Atveseļošanas un noturībasmehānisma plānam.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_yKifXW": {
+          "type": "project_dropdown",
+          "name": "CRM un medicīnas sistēmu integrācija",
+          "settings": {
+            "project_title": "CRM un medicīnas sistēmu integrācija",
+            "project_reference": "",
+            "content": "<p>Ar Atveseļošanas fonda atbalstu ieviesta CRM sistēma, kas automatizē klientu apkalpošanu, rezervācijas, norēķinus un datu glabāšanu. Tā integrēta ar e-veselības, NVD, VVIS un VID sistēmām. Risinājums: SMART MEDICAL ieviešana SKIN PROFILE estētikas centrā.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_QzLqa3": {
+          "type": "project_dropdown",
+          "name": "Geneo X un Deka Vizia 3D diagnostika",
+          "settings": {
+            "project_title": "Geneo X un Deka Vizia 3D diagnostika",
+            "project_reference": "",
+            "content": "<p>Ar projekta Nr. 25-04-CoLA19.2101-000006 atbalstu iegādāta Geneo X procedūru iekārta un Deka Vizia 3D ādas diagnostikas sistēma.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_twqHTw": {
+          "type": "project_dropdown",
+          "name": "DEKA TETRA Pro CO₂ lāzera sistēma",
+          "settings": {
+            "project_title": "DEKA TETRA Pro CO₂ lāzera sistēma",
+            "project_reference": "",
+            "content": "<p>Projekta Nr. 24-04-CL24-C0LA19.2101-000001 ietvaros iegādāta DEKA TETRA Pro CO₂ sistēma ādas veselības uzlabošanai un frakcionētai atjaunošanai.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_t46ERg": {
+          "type": "project_dropdown",
+          "name": "Alma Harmony Pro lāzerplatforma",
+          "settings": {
+            "project_title": "Alma Harmony Pro lāzerplatforma",
+            "project_reference": "",
+            "content": "<p>Projekta Nr. 23-04-AL32-A019.2101-000004 ietvaros iegādāta Alma Harmony Pro lāzerplatforma ar Clear Lift, ND:Yag un IPL tehnoloģijām.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_gieiDJ": {
+          "type": "project_dropdown",
+          "name": "Seši kabineti, IPL tehnoloģija un PRF",
+          "settings": {
+            "project_title": "Seši kabineti, IPL tehnoloģija un PRF",
+            "project_reference": "",
+            "content": "<p>2022. gadā ar LEADER projekta Nr. 22-04-AL32-A019.2101-000006 atbalstu izveidoti seši kabineti un iegādāta Overline IPL un PRF centrifūga.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_8hhWFN": {
+          "type": "project_dropdown",
+          "name": "Deka Motus AX aleksandrīta lāzers",
+          "settings": {
+            "project_title": "Deka Motus AX aleksandrīta lāzers",
+            "project_reference": "",
+            "content": "<p>2021. gadā ar LEADER projekta Nr. 21-04-AL32-A019.2101-000012 atbalstu iegādāts Deka Motus AX lāzers.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        },
+        "project_dropdown_dzbKRx": {
+          "type": "project_dropdown",
+          "name": "Skin Profile stāsts – sākums",
+          "settings": {
+            "project_title": "Skin Profile stāsts – sākums",
+            "project_reference": "",
+            "content": "<p>2020. gadā ar LEADER projekta Nr. 20-04-AL32-A019.2101-000008 atbalstu izveidots pirmais kabinets un iegādātas divas Overline iekārtas.</p>",
+            "open": false,
+            "inline_layout": true
+          }
+        }
+      },
+      "block_order": [
+        "project_dropdown_x6kEbf",
+        "project_dropdown_8UDfyN",
+        "project_dropdown_yKifXW",
+        "project_dropdown_QzLqa3",
+        "project_dropdown_twqHTw",
+        "project_dropdown_t46ERg",
+        "project_dropdown_gieiDJ",
+        "project_dropdown_8hhWFN",
+        "project_dropdown_dzbKRx"
+      ],
+      "name": "Dropdown - Projekti",
+      "settings": {}
+    },
+    "template_image_row_UiBNcT": {
+      "type": "template-image-row",
+      "blocks": {
+        "slide_aMrpEW": {
+          "type": "slide",
+          "name": "Finansē Eiropas Savienība Logo",
+          "settings": {
+            "image": "shopify://shop_images/finanse_eiropas_savieniba.png",
+            "alt": "Finansē Eiropas Savienība Logo",
+            "url": ""
+          }
+        },
+        "slide_U3V3qz": {
+          "type": "slide",
+          "name": "Nacionālās Attīstības Fonds Logo",
+          "settings": {
+            "image": "shopify://shop_images/nacionalais_attistibas_fonds.png",
+            "alt": "Nacionālās Attīstības Fonds Logo",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_aMrpEW",
+        "slide_U3V3qz"
+      ],
+      "name": "Eiropas Projektu Logo",
+      "settings": {}
+    },
+    "template_contact_us_cMNwtA": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_WCEVyY": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_4VchVn": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_WKHzNH": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_eN6RCJ": {
+          "type": "button",
+          "settings": {
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_WCEVyY",
+        "button_4VchVn",
+        "button_WKHzNH",
+        "button_eN6RCJ"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien</p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "template_header_carousel_wTTrcH",
+    "template_dropdown_project_GLTNWR",
+    "template_image_row_UiBNcT",
+    "template_contact_us_cMNwtA"
+  ]
+}
