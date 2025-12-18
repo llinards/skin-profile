@@ -1,68 +1,70 @@
-<section class="container mx-auto px-4 mb-12 transition-hide">
-  <h2 class="text-center mb-12">{{ section.settings.heading }}</h2>
-  <div class="mx-auto max-w-3xl space-y-6">
-    {% for block in section.blocks %}
-      {% if block.type == 'dropdown' %}
-        <div
-          {{ block.shopify_attributes }}
-          x-data="{ open: {{ block.settings.open | json }} }"
-          class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer rounded-md"
-          :class="open ? 'bg-sp-light-brown' : ''"
-        >
-          <button
-            type="button"
-            @click="open = !open"
-            class="w-full flex items-center justify-between gap-3 px-2 py-2 text-left cursor-pointer"
-            :aria-expanded="open.toString()"
-            :aria-controls="'panel-{{ block.id }}'"
-            :aria-label="open ? '{{ 'general.accordion.close' | t }}' : '{{ 'general.accordion.open' | t }}'"
-            id="accordion-header-{{ block.id }}"
-          >
-            <h3 class="flex-1 min-w-0 text-sm tracking-wider font-bold">
-              {{ block.settings.title }}
-            </h3>
-
-            <span class="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-sp-brown text-white transition-colors">
-              <svg
-                x-cloak
-                x-show="!open"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path stroke-linecap="round" d="M12 5v14M5 12h14" />
-              </svg>
-              <svg
-                x-cloak
-                x-show="open"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path stroke-linecap="round" d="M5 12h14" />
-              </svg>
-            </span>
-          </button>
-
+<section id="faq" class="container mx-auto px-4 mb-12">
+  <div class="transition-hide">
+    <h2 class="text-center mb-12">{{ section.settings.heading }}</h2>
+    <div class="mx-auto max-w-3xl space-y-6">
+      {% for block in section.blocks %}
+        {% if block.type == 'dropdown' %}
           <div
-            id="panel-{{ block.id }}"
-            role="region"
-            aria-labelledby="accordion-header-{{ block.id }}"
-            x-show="open"
-            x-transition
-            class="px-2 pb-4 sp-link"
+            {{ block.shopify_attributes }}
+            x-data="{ open: {{ block.settings.open | json }} }"
+            class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer rounded-md"
+            :class="open ? 'bg-sp-light-brown' : ''"
           >
-            {{ block.settings.content }}
+            <button
+              type="button"
+              @click="open = !open"
+              class="w-full flex items-center justify-between gap-3 px-2 py-2 text-left cursor-pointer"
+              :aria-expanded="open.toString()"
+              :aria-controls="'panel-{{ block.id }}'"
+              :aria-label="open ? '{{ 'general.accordion.close' | t }}' : '{{ 'general.accordion.open' | t }}'"
+              id="accordion-header-{{ block.id }}"
+            >
+              <h3 class="flex-1 min-w-0 text-sm tracking-wider font-bold">
+                {{ block.settings.title }}
+              </h3>
+
+              <span class="ml-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-sp-brown text-white transition-colors">
+                <svg
+                  x-cloak
+                  x-show="!open"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                </svg>
+                <svg
+                  x-cloak
+                  x-show="open"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path stroke-linecap="round" d="M5 12h14" />
+                </svg>
+              </span>
+            </button>
+
+            <div
+              id="panel-{{ block.id }}"
+              role="region"
+              aria-labelledby="accordion-header-{{ block.id }}"
+              x-show="open"
+              x-transition
+              class="px-2 pb-4 sp-link"
+            >
+              {{ block.settings.content }}
+            </div>
           </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 
