@@ -26,6 +26,14 @@
         color: var(--color-brand-primary) !important;
     }
 
+    .fill-sp-light-brown {
+        fill: var(--color-brand-secondary-light);
+    }
+
+    .text-sp-light-brown {
+        color: var(--color-brand-secondary-light);
+    }
+
     .fill-sp-brown {
         fill: var(--color-brand-primary);
     }
@@ -113,7 +121,7 @@
     }
 
     .group:hover .group-hover\:fill-sp-brown {
-        fill: var(--color-brand-primary) !important;
+        fill: var(--color-brand-primary) 
     }
 
     .group:hover .group-hover\:text-white {
