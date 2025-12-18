@@ -55,7 +55,7 @@
             "project_title": "Skin Profile",
             "project_reference": "",
             "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un diagnostikas klāstu reģionā.</p>",
-            "open": false,
+            "open": true,
             "inline_layout": true
           }
         },
@@ -66,7 +66,7 @@
             "project_title": "Digitālā transformācija",
             "project_reference": "",
             "content": "<p>2024. gadā SIA “Piecas dienas” saņēma atbalstu programmā “Digitālā transformācija”,līgums Nr. 17.2-5-N-2024/783. Investīcija paredzēta uzņēmuma procesu digitalizācijai,inovāciju attīstībai un darbības pilnveidei atbilstoši Latvijas Atveseļošanas un noturībasmehānisma plānam.</p>",
-            "open": true,
+            "open": false,
             "inline_layout": true
           }
         },
@@ -221,8 +221,8 @@
         "button_eN6RCJ": {
           "type": "button",
           "settings": {
-            "text": "Facebook",
-            "url": "https://www.facebook.com/skinprofile.lv",
+            "text": "WhatsApp",
+            "url": "https://wa.me/37127841111",
             "new_tab": true
           }
         }
