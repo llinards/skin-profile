@@ -24,17 +24,19 @@
         {%- comment -%} Filter values as Checkboxes {%- endcomment -%}
         <div class="max-h-60 overflow-y-auto">
           {%- for value in filter.values -%}
-            {%- comment -%} Build translation key for custom filters only {%- endcomment -%}
-            {%- assign value_key = value.value | handleize | replace: '-', '_' -%}
-            {%- assign filter_key = filter.param_name | handleize | replace: '-', '_' -%}
-            {%- assign translation_key = 'filters.values.' | append: filter_key | append: '.' | append: value_key -%}
-            {%- assign translated_label = translation_key | t -%}
-            
-            {%- comment -%} Fallback to Shopify's label if translation doesn't exist {%- endcomment -%}
-            {%- if translated_label == translation_key -%}
+            {%- if filter.param_name == 'filter.p.vendor' -%}
               {%- assign display_label = value.label -%}
             {%- else -%}
-              {%- assign display_label = translated_label -%}
+              {%- assign value_key = value.value | handleize | replace: '-', '_' -%}
+              {%- assign filter_key = filter.param_name | handleize | replace: '-', '_' -%}
+              {%- assign translation_key = 'filters.values.' | append: filter_key | append: '.' | append: value_key -%}
+              {%- assign translated_label = translation_key | t -%}
+
+              {%- if translated_label contains 'Translation missing' -%}
+                {%- assign display_label = value.label -%}
+              {%- else -%}
+                {%- assign display_label = translated_label -%}
+              {%- endif -%}
             {%- endif -%}
 
             <label class="flex items-center px-4 py-2 hover:bg-gray-50 cursor-pointer transition-colors">
