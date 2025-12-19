@@ -111,6 +111,7 @@
     "filter_p_m_custom_product_type": {
         "cleansing": "Cleansing",
         "cream": "Cream",
+        "day-cream": "Day cream",
         "deodorant": "Deodorant",
         "eye-cream": "Eye cream",
         "face-mask": "Face mask",
