@@ -2992,22 +2992,25 @@
     "category_default": "Kategorija",
     "values": {
       "filter_p_m_custom_product_type": {
-        "conditioners": "Kondicionieri",
-        "cleansing": "Attīrīšana",
-        "creams": "Krēmi",
-        "serums": "Serumi",
-        "masks": "Maskas",
-        "washing": "Mazgāšana",
+        "cleansing": "Attīrīšanai",
+        "cream": "Krēms",
         "deodorant": "Dezodorants",
-        "moisturizing": "Mitrināšana",
+        "eye-cream": "Acu krēms",
+        "face-mask": "Sejas krēms",
+        "moisturizing": "Mitrināšanai",
+        "night-cream": "Nakts krēms",
+        "peeling": "Pīlings",
+        "tonic": "Toniks",
+        "serum": "Serums",
+        "spf": "SPF",
+        "washing": "Mazgāšanai",
+        "other": "Cits",
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Dāvanu kartes",
         "facial_care": "Sejas kopšana",
         "body_care": "Ķermeņa kopšana",
-        "hair_care": "Matu kopšana",
         "nutritional_supplements": "Uztura bagātinātāji",
-        "test_translate": ""
       }
     }
   },

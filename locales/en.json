@@ -109,22 +109,25 @@
     "category_default": "Category",
     "values": {
     "filter_p_m_custom_product_type": {
-        "conditioners": "Conditioner",
         "cleansing": "Cleansing",
-        "creams": "Cremes",
-        "serums": "Serums",
-        "masks": "Masks",
-        "washing": "Washing",
+        "cream": "Cream",
         "deodorant": "Deodorant",
+        "eye-cream": "Eye cream",
+        "face-mask": "Face mask",
         "moisturizing": "Moisturizing",
+        "night-cream": "Night cream",
+        "peeling": "Peeling",
+        "tonic": "Tonic",
+        "serum": "Serum",
+        "spf": "SPF",
+        "washing": "Washing",
+        "other": "Other",
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Gift cards",
         "facial_care": "Facial care",
         "body_care": "Body care",
-        "hair_care": "Hair",
         "nutritional_supplements": "Nutritional supplements",
-        "test_translate": ""
       }
     }
   },
