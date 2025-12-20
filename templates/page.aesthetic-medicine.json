@@ -162,6 +162,18 @@
             "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_XJbdBQ": {
+          "type": "procedure",
+          "name": "Clear Lift – seja, kakls, dekoltē",
+          "settings": {
+            "procedure_name": "Clear Lift – seja, kakls, dekoltē",
+            "procedure_description": "Pilna liftinga procedūra trim zonām.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -172,7 +184,8 @@
         "procedure_JwA7c6",
         "procedure_8KtyXD",
         "procedure_DqwzTx",
-        "procedure_7hpFV7"
+        "procedure_7hpFV7",
+        "procedure_XJbdBQ"
       ],
       "name": "Procedūru tabula",
       "settings": {
