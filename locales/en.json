@@ -184,9 +184,14 @@
     },
     "procedure_table": {
       "procedure": "Procedure",
+      "description": "Description",
       "duration": "Duration",
       "price": "Price",
-      "no_services": "No services added"
+      "contraindications": "Contraindications",
+      "learn_more": "Learn more",
+      "min": "min",
+      "no_services": "No services added",
+      "no_procedures": "No procedures added"
     },
     "view_all": "View all",
     "loading": "Loading..."

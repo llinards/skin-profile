@@ -1,107 +1,163 @@
-<div class="container mx-auto px-4 transition-hide max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
-  {%- if section.settings.enable_dropdown -%}
-    <div
-      x-data="{ open: {{ section.settings.open_by_default | json }} }"
-      class="overflow-hidden border-t-2"
-    >
-      <!-- Dropdown Header -->
-      <button
-        type="button"
-        @click="open = !open"
-        class="
-          group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
-          focus-visible:ring-1 focus-visible:ring-inset
-        "
-        :aria-expanded="open.toString()"
-        :aria-label="open ? '{{ 'general.accordion.close_section' | t }}' : '{{ 'general.accordion.open_section' | t }}'"
+<div x-data="{ showContraModal: false, activeContraText: '', activeContraName: '' }">
+  <div class="container mx-auto px-4 transition-hide max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
+    {%- if section.settings.enable_dropdown -%}
+      <div
+        x-data="{ open: {{ section.settings.open_by_default | json }} }"
+        class="overflow-hidden border-t-2"
       >
-        <h3 class="flex-1 min-w-0 text-xl md:text-4xl leading-tight wrap-break-words">
-          {{ section.settings.title }}
-        </h3>
-
-        <!-- Icon wrapper -->
-        <span
+        <!-- Dropdown Header -->
+        <button
+          type="button"
+          @click="open = !open"
           class="
-            flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
-            group-hover:bg-sp-brown group-hover:text-white
+            group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
+            focus-visible:ring-1 focus-visible:ring-inset
           "
-          :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
+          :aria-expanded="open.toString()"
+          :aria-label="open ? '{{ 'general.accordion.close_section' | t }}' : '{{ 'general.accordion.open_section' | t }}'"
         >
-          <!-- Plus -->
-          <svg
-            x-cloak
-            x-show="!open"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            aria-hidden="true"
+          <h3 class="flex-1 min-w-0 text-xl md:text-4xl leading-tight wrap-break-words">
+            {{ section.settings.title }}
+          </h3>
+
+          <!-- Icon wrapper -->
+          <span
+            class="
+              flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
+              group-hover:bg-sp-brown group-hover:text-white
+            "
+            :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
           >
-            <path stroke-linecap="round" d="M12 5v14M5 12h14" />
-          </svg>
-          <!-- Minus -->
-          <svg
-            x-cloak
-            x-show="open"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 pointer-events-none"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" d="M5 12h14" />
-          </svg>
-        </span>
+            <!-- Plus -->
+            <svg
+              x-cloak
+              x-show="!open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+            </svg>
+            <!-- Minus -->
+            <svg
+              x-cloak
+              x-show="open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 pointer-events-none"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" d="M5 12h14" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Dropdown Body -->
+        <div
+          x-cloak
+          x-show="open"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0 -translate-y-2"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-2"
+          class="px-2 my-4 space-y-2"
+        >
+          {%- if section.settings.content != blank -%}
+            <div class="rte mb-6">{{ section.settings.content }}</div>
+          {%- endif -%}
+
+          {%- assign apply_url_fallback = section.settings.apply_url | default: '#' -%}
+
+          {% render 'procedure-table',
+            services: section.blocks,
+            disclaimer: section.settings.disclaimer,
+            apply_url_default: apply_url_fallback,
+            apply_cta: section.settings.apply_cta
+          %}
+        </div>
+      </div>
+    {%- else -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="text-xl md:text-4xl leading-tight wrap-break-words mb-6">{{ section.settings.title }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.content != blank -%}
+        <div class="rte mb-6">{{ section.settings.content }}</div>
+      {%- endif -%}
+
+      {%- assign apply_url_fallback = section.settings.apply_url | default: '#' -%}
+
+      {% render 'procedure-table',
+        services: section.blocks,
+        disclaimer: section.settings.disclaimer,
+        apply_url_default: apply_url_fallback,
+        apply_cta: section.settings.apply_cta
+      %}
+    {%- endif -%}
+  </div>
+
+  <!-- Contraindications Modal -->
+  <div
+    x-show="showContraModal"
+    x-cloak
+    @click.self="showContraModal = false"
+    class="fixed inset-0 z-51 flex items-center justify-center bg-black/50 px-4 py-8"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    style="display: none;"
+  >
+    <div
+      class="bg-sp-light-brown rounded-4xl shadow-xl w-full md:max-w-3xl max-w-lg transform relative"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-95"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-95"
+      @click.stop
+    >
+      <!-- Close Button -->
+      <button
+        @click="showContraModal = false"
+        class="
+          absolute top-8 right-8 size-8 rounded-full bg-sp-brown flex items-center justify-center group
+          text-white border border-sp-brown
+          hover:bg-white hover:sp-brown
+          active:bg-white active:sp-brown
+          transition-all duration-300 z-50
+        "
+        aria-label="{{ 'general.modal.close' | t }}"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size-6 fill-sp-light-brown group-hover:fill-sp-brown group-active:fill-sp-brown"
+        >
+          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+        </svg>
       </button>
 
-      <!-- Dropdown Body -->
-      <div
-        x-cloak
-        x-show="open"
-        x-transition:enter="transition ease-out duration-200"
-        x-transition:enter-start="opacity-0 -translate-y-2"
-        x-transition:enter-end="opacity-100 translate-y-0"
-        x-transition:leave="transition ease-in duration-150"
-        x-transition:leave-start="opacity-100 translate-y-0"
-        x-transition:leave-end="opacity-0 -translate-y-2"
-        class="px-2 my-4 space-y-2"
-      >
-        {%- if section.settings.content != blank -%}
-          <div class="rte mb-6">{{ section.settings.content }}</div>
-        {%- endif -%}
-
-        {%- assign apply_url_fallback = section.settings.apply_url | default: '#' -%}
-
-        {% render 'procedure-table',
-          services: section.blocks,
-          disclaimer: section.settings.disclaimer,
-          apply_url_default: apply_url_fallback,
-          apply_cta: section.settings.apply_cta
-        %}
+      <!-- Modal Content -->
+      <div class="p-8 md:p-12 space-y-6">
+        <h2 class="text-2xl md:text-4xl">{{ 'general.procedure_table.contraindications' | t }}</h2>
+        <div class="rte" x-html="activeContraText"></div>
       </div>
     </div>
-  {%- else -%}
-    {%- if section.settings.title != blank -%}
-      <h2 class="text-xl md:text-4xl leading-tight wrap-break-words mb-6">{{ section.settings.title }}</h2>
-    {%- endif -%}
-
-    {%- if section.settings.content != blank -%}
-      <div class="rte mb-6">{{ section.settings.content }}</div>
-    {%- endif -%}
-
-    {%- assign apply_url_fallback = section.settings.apply_url | default: '#' -%}
-
-    {% render 'procedure-table',
-      services: section.blocks,
-      disclaimer: section.settings.disclaimer,
-      apply_url_default: apply_url_fallback,
-      apply_cta: section.settings.apply_cta
-    %}
-  {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
@@ -191,7 +247,7 @@
           "default": "60"
         },
         {
-          "type": "richtext",
+          "type": "html",
           "id": "contraindications_text",
           "label": "Kontraindikācijas teksts",
           "info": "Teksts, kas parādīsies modalā",

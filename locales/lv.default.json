@@ -3067,9 +3067,14 @@
     },
     "procedure_table": {
       "procedure": "Procedūra",
+      "description": "Apraksts",
       "duration": "Ilgums",
       "price": "Cena",
-      "no_services": "Nav pievienotu pakalpojumu"
+      "contraindications": "Kontraindikācijas",
+      "learn_more": "Uzzināt vairāk",
+      "min": "min",
+      "no_services": "Nav pievienotu pakalpojumu",
+      "no_procedures": "Nav pievienota neviena procedūra"
     },
     "view_all": "Skatīt visu",
     "loading": "Ielādē..."
