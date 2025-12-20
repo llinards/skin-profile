@@ -84,7 +84,30 @@ function collectionFilters() {
                 if (!link) return;
 
                 e.preventDefault();
-                this.loadPage(link.href);
+                // Preserve current query params (filters + sort_by) across pagination.
+                // Shopify pagination links often only include ?page=..., which would drop sorting.
+                let nextUrl = link.href;
+                if (link.classList.contains('pagination-link')) {
+                    try {
+                        const target = new URL(link.href, window.location.origin);
+                        const currentParams = new URLSearchParams(window.location.search);
+                        const targetParams = new URLSearchParams(target.search);
+
+                        const page = targetParams.get('page');
+                        const merged = new URLSearchParams(currentParams);
+
+                        if (page) merged.set('page', page);
+                        else merged.delete('page');
+
+                        target.search = merged.toString();
+                        nextUrl = target.toString();
+                    } catch {
+                        // Fallback: use the raw href.
+                        nextUrl = link.href;
+                    }
+                }
+
+                this.loadPage(nextUrl);
 
                 setTimeout(() => {
                     document.getElementById('products')?.scrollIntoView({
