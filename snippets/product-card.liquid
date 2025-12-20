@@ -1,12 +1,12 @@
 <div class="transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer relative">
-  <div class="w-full max-h-36 md:max-h-72">
+  <div class="w-full">
     {% if product.featured_image %}
       {% render 'image',
         image: product.featured_image,
         width: 600,
         height: 600,
         url: product.url,
-        class: 'w-full max-h-36 md:max-h-72 object-contain object-center'
+        class: 'w-full object-contain object-center'
       %}
     {% endif %}
   </div>
