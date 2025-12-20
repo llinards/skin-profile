@@ -198,6 +198,30 @@
             "contraindications_text": "<ul><li>Kuperoze smagā stadijā</li><li>Asiņošanas traucējumi</li><li>Svaigs apdegums</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_GK79xa": {
+          "type": "procedure",
+          "name": "Asinsvadu likvidēšana – viena zvaigznīte",
+          "settings": {
+            "procedure_name": "Asinsvadu likvidēšana – viena zvaigznīte",
+            "procedure_description": "Atsevišķas asinsvadu zvaigznītes koagulācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Atvērtas brūces</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_rT3Gcz": {
+          "type": "procedure",
+          "name": "Asinsvadi – vaigi",
+          "settings": {
+            "procedure_name": "Asinsvadi – vaigi",
+            "procedure_description": "Nd:Yag procedūra vaigu kapilāriem.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -211,7 +235,9 @@
         "procedure_7hpFV7",
         "procedure_XJbdBQ",
         "procedure_tkB7nm",
-        "procedure_J7ctPL"
+        "procedure_J7ctPL",
+        "procedure_GK79xa",
+        "procedure_rT3Gcz"
       ],
       "name": "Procedūru tabula",
       "settings": {
