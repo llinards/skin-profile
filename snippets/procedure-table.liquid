@@ -5,7 +5,7 @@
 
 {%- assign procedure_blocks = services | where: 'type', 'procedure' -%}
 
-<div class="space-y-0 mb-6 md:my-12">
+<div class="space-y-0 mb-6 md:my-12" x-data="{ showContraModal: false, activeContraText: '', activeContraName: '' }">
   {%- if procedure_blocks.size > 0 -%}
     <!-- Desktop table header -->
     <div class="hidden md:grid md:grid-cols-12 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
@@ -22,7 +22,7 @@
       {%- assign procedure_description = b.settings.procedure_description | default: '' -%}
       {%- assign procedure_price = b.settings.procedure_price | default: '' -%}
       {%- assign procedure_duration = b.settings.procedure_duration | default: '' -%}
-      {%- assign contraindications_url = b.settings.contraindications_url | default: '#' -%}
+      {%- assign contraindications_text = b.settings.contraindications_text | default: '' -%}
       {%- assign apply_url_row = b.settings.apply_url | default: apply_url_default -%}
 
       <div class="border-b border-sp-light-brown border-dotted py-4">
@@ -37,7 +37,15 @@
             {%- endif -%}
           </div>
           <div class="col-span-2 text-center flex items-center justify-center">
-            {% render 'btn-white', text: 'Uzzināt vairāk', url: contraindications_url %}
+            {%- if contraindications_text != blank -%}
+              <button
+                type="button"
+                @click="showContraModal = true; activeContraText = '{{ contraindications_text }}'; activeContraName = '{{ procedure_name | escape }}'"
+                class="text-sp-brown underline hover:no-underline transition-all cursor-pointer"
+              >
+                Uzzināt vairāk
+              </button>
+            {%- endif -%}
           </div>
           <div class="col-span-3 text-right flex items-center justify-end">
             {% render 'btn-brown', text: apply_cta, url: apply_url_row %}
@@ -71,7 +79,15 @@
           <div class="space-y-3">
             <div class="space-y-2">
               <div class="font-bold text-sm">Kontraindikācijas</div>
-              {% render 'btn-white', text: 'Uzzināt vairāk', url: contraindications_url %}
+              {%- if contraindications_text != blank -%}
+                <button
+                  type="button"
+                  @click="showContraModal = true; activeContraText = '{{ contraindications_text }}'; activeContraName = '{{ procedure_name | escape }}'"
+                  class="text-sp-brown underline hover:no-underline transition-all cursor-pointer"
+                >
+                  Uzzināt vairāk
+                </button>
+              {%- endif -%}
             </div>
             <div>
               {% render 'btn-brown', text: apply_cta, url: apply_url_row, full_width: true %}
@@ -87,4 +103,58 @@
   {%- if disclaimer != blank -%}
     <p class="text-gray-500 mt-6 text-sm">{{ disclaimer }}</p>
   {%- endif -%}
+
+  <!-- Contraindications Modal -->
+  <div
+    x-show="showContraModal"
+    x-cloak
+    @click.self="showContraModal = false"
+    class="fixed inset-0 z-51 flex items-center justify-center bg-black/50 px-4 py-8"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    style="display: none;"
+  >
+    <div
+      class="bg-sp-light-brown rounded-4xl shadow-xl w-full md:max-w-3xl max-w-lg transform relative"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-95"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-95"
+      @click.stop
+    >
+      <!-- Close Button -->
+      <button
+        @click="showContraModal = false"
+        class="
+          absolute top-8 right-8 size-8 rounded-full bg-sp-brown flex items-center justify-center group
+          text-white border border-sp-brown
+          hover:bg-white hover:sp-brown
+          active:bg-white active:sp-brown
+          transition-all duration-300 z-50
+        "
+        aria-label="{{ 'general.modal.close' | t }}"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size-6 fill-sp-light-brown group-hover:fill-sp-brown group-active:fill-sp-brown"
+        >
+          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <!-- Modal Content -->
+      <div class="p-8 md:p-12 space-y-6">
+        <h2 class="text-2xl md:text-4xl" x-text="activeContraName + ' - Kontraindikācijas'"></h2>
+        <div class="rte" x-html="activeContraText"></div>
+      </div>
+    </div>
+  </div>
 </div>
