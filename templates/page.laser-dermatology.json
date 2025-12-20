@@ -326,6 +326,50 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_z4Ex4T": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_xB8M9e": {
+          "type": "procedure",
+          "name": "Viens nags",
+          "settings": {
+            "procedure_name": "Viens nags",
+            "procedure_description": "Nd:Yag lāzerprocedūra sēnītes mazināšanai.",
+            "procedure_price": "€20",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Atklātas brūces</li><li>Smagi cirkulācijas traucējumi</li><li>Infekcijas komplikācijas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_d8HgcG": {
+          "type": "procedure",
+          "name": "Visi nagi",
+          "settings": {
+            "procedure_name": "Visi nagi",
+            "procedure_description": "Kompleksa lāzerterapija visiem nagiem.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smaga neiropātija</li><li>Brūces uz pēdām</li><li>Cukura diabēta komplikācijas</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_xB8M9e",
+        "procedure_d8HgcG"
+      ],
+      "name": "Nagu sēnītes apstrāde",
+      "settings": {
+        "title": "Nagu sēnītes apstrāde",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_wcKf3n": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -469,6 +513,7 @@
     "template_procedure_table_mXB4KL",
     "template_procedure_table_fCMYGY",
     "template_procedure_table_jRizze",
+    "template_procedure_table_z4Ex4T",
     "template_services_carousel_grid_wcKf3n",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
