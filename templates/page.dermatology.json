@@ -64,199 +64,87 @@
         "text_html": ""
       }
     },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
+    "template_procedure_table_KpFDbn": {
+      "type": "template-procedure-table",
       "blocks": {
-        "service_FLCgdG": {
-          "type": "service",
-          "name": "Pirmreizējā Konsultācija",
+        "procedure_7MiX6j": {
+          "type": "procedure",
+          "name": "Dermatologa konsultācija",
           "settings": {
-            "service_name": "Pirmreizējā Konsultācija",
-            "service_price": "€55",
-            "service_length": "60"
+            "procedure_name": "Dermatologa konsultācija",
+            "procedure_description": "Ādas, matu un nagu stāvokļa izvērtēšana, diagnozes noteikšana un ārstēšanas plāna izstrāde.",
+            "procedure_price": "€55",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>",
+            "apply_url": ""
           }
         },
-        "service_kGdXVr": {
-          "type": "service",
-          "name": "Atkārtota konsultācija 30 dienu laikā",
+        "procedure_F8FXGT": {
+          "type": "procedure",
+          "name": "Ādas veidojumu diagnostika",
           "settings": {
-            "service_name": "Atkārtota konsultācija 30 dienu laikā",
-            "service_price": "€45.00",
-            "service_length": "60"
+            "procedure_name": "Ādas veidojumu diagnostika",
+            "procedure_description": "Ādas veidojumu izvērtēšana ar dermatoskopiju, lai atšķirtu labdabīgus un aizdomīgus veidojumus.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Akūtas infekcijas slimības ar drudzi (vizīti var pārcelt)</li><li>Nepietiekama sadarbspēja smagas psihiskas saslimšanas gadījumā</li><li>Nepilngadīgajiem nepieciešama likumiska pārstāvja klātbūtne</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_LQP6AL": {
+          "type": "procedure",
+          "name": "Atkārtota konsultācija mēneša laikā",
+          "settings": {
+            "procedure_name": "Atkārtota konsultācija mēneša laikā",
+            "procedure_description": "Atkārtota vizīte diagnozes precizēšanai, terapijas izvērtēšanai un korekcijai.",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta smaga saslimšana ar drudzi</li><li>Neatbilstoša sagatavošanās, ja nepieciešami konkrēti analīžu rezultāti</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_E7CNM8": {
+          "type": "procedure",
+          "name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
+          "settings": {
+            "procedure_name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
+            "procedure_description": "Dermatologa konsultācija ar detalizētu sejas 3D analīzi, lai plānotu estētiskās un ārstnieciskās procedūras.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nespēja noturēt stacionāru galvas pozīciju izmeklējuma laikā</li><li>Smagas klaustrofobijas izpausmes</li><li>Akūtas infekcijas ar drudzi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_rYkg3p": {
+          "type": "procedure",
+          "name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
+          "settings": {
+            "procedure_name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
+            "procedure_description": "Sejas 3D vizualizācija procedūru rezultātu dokumentēšanai un salīdzināšanai.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smaga nespēja sadarboties izmeklējuma laikā</li><li>Akūta infekcija ar drudzi</li><li>Nav piemērots, ja seja ir pārklāta ar svaigām brūcēm vai pārsējiem</li></ul>",
+            "apply_url": ""
           }
         }
       },
       "block_order": [
-        "service_FLCgdG",
-        "service_kGdXVr"
+        "procedure_7MiX6j",
+        "procedure_F8FXGT",
+        "procedure_LQP6AL",
+        "procedure_E7CNM8",
+        "procedure_rYkg3p"
       ],
-      "name": "Pirmreizējā Konsultācija",
+      "name": "Procedūru tabula",
       "settings": {
-        "title": "Pirmreizējā Konsultācija",
-        "content": "<p>Konsultācijas laikā tiek nodrošināta anamnēzes ievākšana un pacientam traucējošo ādas problēmu novēršana. </p><p>Klīnikas pieredzējušie ārsti veic ādas slimību diagnostiku un nodrošina turpmāko ārstēšanu – medikamentozu vai ar lāzeriem.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
+        "title": "Dermatoloģijas pakalpojumi",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": false
-      }
-    },
-    "template_services_section_qjdJcX": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_4HgD7c": {
-          "type": "service",
-          "name": "1 veidojuma noņemšana",
-          "settings": {
-            "service_name": "1 veidojuma noņemšana",
-            "service_price": "€25",
-            "service_length": "60"
-          }
-        },
-        "service_jzXAD9": {
-          "type": "service",
-          "name": "Vairāku veidojumu noņemšana",
-          "settings": {
-            "service_name": "Vairāku veidojumu noņemšana (atkarībā no veidojumu daudzuma)",
-            "service_price": "€35 – €100",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_4HgD7c",
-        "service_jzXAD9"
-      ],
-      "name": "Kriodestrukcija ar Šķidro Slāpekli",
-      "settings": {
-        "title": "Kriodestrukcija ar Šķidro Slāpekli",
-        "content": "<p>Kārpu, papilomu un citu labdabīgu veidojumu ārstēšana ar šķidro slāpekli.</p><p>Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu noņemšanas.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_7F6BhF": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_YWF9dz": {
-          "type": "service",
-          "name": "Analīzes uz sēnīti (materiāla paņemšana)",
-          "settings": {
-            "service_name": "Analīzes uz sēnīti (materiāla paņemšana)",
-            "service_price": "€10",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_YWF9dz"
-      ],
-      "name": "Analīzes uz sēnīti (materiāla paņemšana)",
-      "settings": {
-        "title": "Analīzes uz sēnīti (materiāla paņemšana)",
-        "content": "<p>Dermatologs novērtē ādas/nagu stāvokli un nozīmē nepieciešamās analīzes, kas apstiprina vai noliedz sēnīšu infekcijas klātbūtni un precizē sēnīšu veidu.</p><p>Atkarībā no rezultātiem dermatologs sastāda ārstēšanas plānu, nosaka vajadzīgo lāzerprocedūru skaitu un, ja nepieciešams, nozīmē medikamentus.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_kPR4ih": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_yfca67": {
-          "type": "service",
-          "name": "1 veidojuma apskate",
-          "settings": {
-            "service_name": "1 veidojuma apskate",
-            "service_price": "€20",
-            "service_length": "60"
-          }
-        },
-        "service_3qRRAc": {
-          "type": "service",
-          "name": "Katrs nākamais veidojums",
-          "settings": {
-            "service_name": "Katrs nākamais veidojums",
-            "service_price": "+€10",
-            "service_length": "60"
-          }
-        },
-        "service_WTbY8x": {
-          "type": "service",
-          "name": "Visa ķermeņa veidojumu apskate",
-          "settings": {
-            "service_name": "Visa ķermeņa veidojumu apskate",
-            "service_price": "€70",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_yfca67",
-        "service_3qRRAc",
-        "service_WTbY8x"
-      ],
-      "name": "Ādas Veidojumu Optiskā Dermatoskopija",
-      "settings": {
-        "title": "Ādas Veidojumu Optiskā Dermatoskopija",
-        "content": "<p>Svarīgākā ādas veidojumu izmeklēšanas metode dermatoloģijā. Ar speciālu ierīci (20 reižu palielinājums) tiek pārbaudīti visi ādas veidojumi. Ja ir skaidrs, ka veidojums ir labdabīgs, papildu izmeklēšana nav nepieciešama.</p><p>Ārsta konsultācija un dermatoskopiska izmeklēšana ir obligāta pirms jebkuru veidojumu apskates vai noņemšanas.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_jncnJR": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_jxXgAc": {
-          "type": "service",
-          "name": "Ādas punch biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-          "settings": {
-            "service_name": "Ādas punch biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€55",
-            "service_length": "60"
-          }
-        },
-        "service_dqhzkb": {
-          "type": "service",
-          "name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-          "settings": {
-            "service_name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€80",
-            "service_length": "60"
-          }
-        },
-        "service_9xz8R4": {
-          "type": "service",
-          "name": "Ādas ekscīzijas biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-          "settings": {
-            "service_name": "Ādas ekscīzijas biopsija lokālā anestēzijā (bez histoloģiskās izmeklēšanas)",
-            "service_price": "€130 - €200",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_jxXgAc",
-        "service_dqhzkb",
-        "service_9xz8R4"
-      ],
-      "name": "Ādas histoloģiskā izmeklēšana (biopsija)",
-      "settings": {
-        "title": "Ādas histoloģiskā izmeklēšana (biopsija)",
-        "content": "<p>Ādas audu gabaliņa paņemšana, kam seko histoloģiska izmeklēšana ar mikroskopu. Būtiska daudzu slimību diagnostikai un veidojumu izņemšanas izvērtēšanai.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": true
       }
     },
     "template_services_bN8zJK": {
@@ -393,103 +281,15 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien!</p>"
       }
-    },
-    "template_procedure_table_KpFDbn": {
-      "type": "template-procedure-table",
-      "blocks": {
-        "procedure_7MiX6j": {
-          "type": "procedure",
-          "name": "Dermatologa konsultācija",
-          "settings": {
-            "procedure_name": "Dermatologa konsultācija",
-            "procedure_description": "Ādas, matu un nagu stāvokļa izvērtēšana, diagnozes noteikšana un ārstēšanas plāna izstrāde.",
-            "procedure_price": "€55",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_F8FXGT": {
-          "type": "procedure",
-          "name": "Ādas veidojumu diagnostika",
-          "settings": {
-            "procedure_name": "Ādas veidojumu diagnostika",
-            "procedure_description": "Ādas veidojumu izvērtēšana ar dermatoskopiju, lai atšķirtu labdabīgus un aizdomīgus veidojumus.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Akūtas infekcijas slimības ar drudzi (vizīti var pārcelt)</li><li>Nepietiekama sadarbspēja smagas psihiskas saslimšanas gadījumā</li><li>Nepilngadīgajiem nepieciešama likumiska pārstāvja klātbūtne</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_LQP6AL": {
-          "type": "procedure",
-          "name": "Atkārtota konsultācija mēneša laikā",
-          "settings": {
-            "procedure_name": "Atkārtota konsultācija mēneša laikā",
-            "procedure_description": "Atkārtota vizīte diagnozes precizēšanai, terapijas izvērtēšanai un korekcijai.",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta smaga saslimšana ar drudzi</li><li>Neatbilstoša sagatavošanās, ja nepieciešami konkrēti analīžu rezultāti</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_E7CNM8": {
-          "type": "procedure",
-          "name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
-          "settings": {
-            "procedure_name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
-            "procedure_description": "Dermatologa konsultācija ar detalizētu sejas 3D analīzi, lai plānotu estētiskās un ārstnieciskās procedūras.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Nespēja noturēt stacionāru galvas pozīciju izmeklējuma laikā</li><li>Smagas klaustrofobijas izpausmes</li><li>Akūtas infekcijas ar drudzi</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_rYkg3p": {
-          "type": "procedure",
-          "name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
-          "settings": {
-            "procedure_name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
-            "procedure_description": "Sejas 3D vizualizācija procedūru rezultātu dokumentēšanai un salīdzināšanai.",
-            "procedure_price": "€30",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smaga nespēja sadarboties izmeklējuma laikā</li><li>Akūta infekcija ar drudzi</li><li>Nav piemērots, ja seja ir pārklāta ar svaigām brūcēm vai pārsējiem</li></ul>",
-            "apply_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "procedure_7MiX6j",
-        "procedure_F8FXGT",
-        "procedure_LQP6AL",
-        "procedure_E7CNM8",
-        "procedure_rYkg3p"
-      ],
-      "name": "Procedūru tabula",
-      "settings": {
-        "title": "Dermatoloģijas pakalpojumi",
-        "content": "",
-        "disclaimer": "",
-        "apply_url": "",
-        "apply_cta": "Pieteikt",
-        "enable_dropdown": false,
-        "open_by_default": false,
-        "space_bottom": false
-      }
     }
   },
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_services_section_J6AXyp",
-    "template_services_section_qjdJcX",
-    "template_dropdown_service_7F6BhF",
-    "template_services_section_kPR4ih",
-    "template_dropdown_service_jncnJR",
+    "template_procedure_table_KpFDbn",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
-    "template_contact_us_BzVhrB",
-    "template_procedure_table_KpFDbn"
+    "template_contact_us_BzVhrB"
   ]
 }
