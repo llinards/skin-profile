@@ -185,6 +185,10 @@
         scroll-snap-type: y mandatory;
     }
 
+    strong, b {
+        font-family: "Manrope-SemiBold";
+    }
+
     body {
         font-family: "Manrope-Light";
     }
