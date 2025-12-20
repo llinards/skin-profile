@@ -150,6 +150,18 @@
             "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_7hpFV7": {
+          "type": "procedure",
+          "name": "Clear Lift – dekoltē",
+          "settings": {
+            "procedure_name": "Clear Lift – dekoltē",
+            "procedure_description": "Dekoltē zonas atjaunošana.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -159,7 +171,8 @@
         "procedure_G9jxja",
         "procedure_JwA7c6",
         "procedure_8KtyXD",
-        "procedure_DqwzTx"
+        "procedure_DqwzTx",
+        "procedure_7hpFV7"
       ],
       "name": "Procedūru tabula",
       "settings": {
