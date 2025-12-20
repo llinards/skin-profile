@@ -64,29 +64,46 @@
         "text_html": "<ul class=\"list-disc\">\n    <li>Palīdz normalizēt ēšanas paradumus, svaru un uzlabot pašsajūtu.\n    </li>\n    <li>Konsultācijas laikā izstrādā individuālu ēšanas programmu un svara korekcijas plānu.\n    </li>\n    <li>Izmanto bioimpedances metodi, lai noteiktu:\n        <ul>\n            <li class=\"pl-6 list-[circle]\">vielmaiņas ātrumu;\n            </li>\n            <li class=\"pl-6 list-[circle]\">ķermeņa tauku, kaulu un ūdens proporcijas;\n            </li>\n            <li class=\"pl-6 list-[circle]\">muskuļu daudzumu;\n            </li>\n<li class=\"pl-6 list-[circle]\">ķermeņa masas indeksu;</li>\n            <li class=\"pl-6 list-[circle]\">bioloģisko vecumu.</li>\n        </ul>\n    </li>\n    <li>Balstoties uz rezultātiem, izstrādā piemērotu ēdienkarti un iesaka fiziskās aktivitātes.</li>\n    <li>Konsultācija piemērota visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</li>\n</ul>"
       }
     },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
+    "template_procedure_table_PWL9MH": {
+      "type": "template-procedure-table",
       "blocks": {
-        "service_kGdXVr": {
-          "type": "service",
-          "name": "Konstultācija",
+        "procedure_UKUah6": {
+          "type": "procedure",
+          "name": "Endokrinologa konsultācija",
           "settings": {
-            "service_name": "Konstultācija",
-            "service_price": "60",
-            "service_length": "60"
+            "procedure_name": "Endokrinologa konsultācija",
+            "procedure_description": "Hormonālās veselības izvērtēšana.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav absolūtu kontrindikāciju</li><li>Akūtas infekcijas ar drudzi</li><li>Nespēja sadarboties vizītes laikā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_dwkwhr": {
+          "type": "procedure",
+          "name": "Uztura speciālista konsultācija",
+          "settings": {
+            "procedure_name": "Uztura speciālista konsultācija",
+            "procedure_description": "Uztura paradumu analīze un plāna sastādīšana.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav specifisku kontrindikāciju</li><li>Akūta slimība ar drudzi</li><li>Nespēja sadarboties</li></ul>",
+            "apply_url": ""
           }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "procedure_UKUah6",
+        "procedure_dwkwhr"
       ],
-      "name": "Konstultācija",
+      "name": "Endokrinoloģija",
       "settings": {
-        "title": "Konstultācija",
-        "content": "<p>Balstoties uz rezultātiem, uztura speciālists izstrādā piemērotu ēdienkarti un sniedz ieteikumus fiziskajām aktivitātēm, kas palīdzēs sasniegt vēlamo rezultātu efektīvāk. Konsultācija ir noderīga visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
+        "title": "Endokrinoloģija",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": true
       }
@@ -231,7 +248,7 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_services_section_J6AXyp",
+    "template_procedure_table_PWL9MH",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
