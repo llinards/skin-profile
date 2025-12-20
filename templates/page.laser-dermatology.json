@@ -630,6 +630,20 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_A4Qrgw": {
+      "type": "template-procedure-table",
+      "name": "CO2 sejas atjaunošana",
+      "settings": {
+        "title": "CO2 sejas atjaunošana",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_wcKf3n": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -778,6 +792,7 @@
     "template_procedure_table_pXAGqK",
     "template_heading_xty9g3",
     "template_procedure_table_WbQM39",
+    "template_procedure_table_A4Qrgw",
     "template_services_carousel_grid_wcKf3n",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
