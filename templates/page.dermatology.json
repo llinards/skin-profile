@@ -399,6 +399,7 @@
       "blocks": {
         "procedure_7MiX6j": {
           "type": "procedure",
+          "name": "Dermatologa konsultācija",
           "settings": {
             "procedure_name": "Dermatologa konsultācija",
             "procedure_description": "Ādas, matu un nagu stāvokļa izvērtēšana, diagnozes noteikšana un ārstēšanas plāna izstrāde.",
@@ -407,10 +408,23 @@
             "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_F8FXGT": {
+          "type": "procedure",
+          "name": "Ādas veidojumu diagnostika",
+          "settings": {
+            "procedure_name": "Ādas veidojumu diagnostika",
+            "procedure_description": "Ādas veidojumu izvērtēšana ar dermatoskopiju, lai atšķirtu labdabīgus un aizdomīgus veidojumus.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Akūtas infekcijas slimības ar drudzi (vizīti var pārcelt)</li><li>Nepietiekama sadarbspēja smagas psihiskas saslimšanas gadījumā</li><li>Nepilngadīgajiem nepieciešama likumiska pārstāvja klātbūtne</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
-        "procedure_7MiX6j"
+        "procedure_7MiX6j",
+        "procedure_F8FXGT"
       ],
       "name": "Procedūru tabula",
       "settings": {
