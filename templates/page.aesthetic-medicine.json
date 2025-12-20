@@ -222,6 +222,18 @@
             "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_ytULEW": {
+          "type": "procedure",
+          "name": "Asinsvadi – kājas (5 cm2)",
+          "settings": {
+            "procedure_name": "Asinsvadi – kājas (5 cm2)",
+            "procedure_description": "Asinsvadu koagulācija kāju zonā.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -237,7 +249,8 @@
         "procedure_tkB7nm",
         "procedure_J7ctPL",
         "procedure_GK79xa",
-        "procedure_rT3Gcz"
+        "procedure_rT3Gcz",
+        "procedure_ytULEW"
       ],
       "name": "Procedūru tabula",
       "settings": {
