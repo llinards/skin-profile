@@ -393,6 +393,36 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien!</p>"
       }
+    },
+    "template_procedure_table_KpFDbn": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_7MiX6j": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Dermatologa konsultācija",
+            "procedure_description": "Ādas, matu un nagu stāvokļa izvērtēšana, diagnozes noteikšana un ārstēšanas plāna izstrāde.",
+            "procedure_price": "€55",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_7MiX6j"
+      ],
+      "name": "Procedūru tabula",
+      "settings": {
+        "title": "Procedūras",
+        "content": "<p>Jūsu teksts šeit.</p>",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
+        "open_by_default": false,
+        "space_bottom": false
+      }
     }
   },
   "order": [
@@ -406,6 +436,7 @@
     "template_dropdown_service_jncnJR",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
-    "template_contact_us_BzVhrB"
+    "template_contact_us_BzVhrB",
+    "template_procedure_table_KpFDbn"
   ]
 }
