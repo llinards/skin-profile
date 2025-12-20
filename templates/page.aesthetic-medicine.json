@@ -139,9 +139,9 @@
       "blocks": {
         "procedure_aVbgp8": {
           "type": "procedure",
-          "name": "Clear Lift – seja",
+          "name": "Seja",
           "settings": {
-            "procedure_name": "Clear Lift – seja",
+            "procedure_name": "Seja",
             "procedure_description": "Netraumatiska lāzerliftinga procedūra ādas tonusa uzlabošanai.",
             "procedure_price": "€180",
             "procedure_duration": "60",
@@ -151,9 +151,9 @@
         },
         "procedure_EwRdDj": {
           "type": "procedure",
-          "name": "Clear Lift – seja un pazode",
+          "name": "Seja un pazode",
           "settings": {
-            "procedure_name": "Clear Lift – seja un pazode",
+            "procedure_name": "Seja un pazode",
             "procedure_description": "Lāzerliftinga terapija sejas un zoda zonai.",
             "procedure_price": "€200",
             "procedure_duration": "60",
@@ -163,9 +163,9 @@
         },
         "procedure_9gfYMG": {
           "type": "procedure",
-          "name": "Clear Lift – kakls",
+          "name": "Kakls",
           "settings": {
-            "procedure_name": "Clear Lift – kakls",
+            "procedure_name": "Kakls",
             "procedure_description": "Lāzerliftinga procedūra kakla ādai.",
             "procedure_price": "€180",
             "procedure_duration": "60",
@@ -175,9 +175,9 @@
         },
         "procedure_bDBNEB": {
           "type": "procedure",
-          "name": "Clear Lift – dekoltē",
+          "name": "Dekoltē",
           "settings": {
-            "procedure_name": "Clear Lift – dekoltē",
+            "procedure_name": "Dekoltē",
             "procedure_description": "Dekoltē zonas atjaunošana.",
             "procedure_price": "€180",
             "procedure_duration": "60",
@@ -187,9 +187,9 @@
         },
         "procedure_bxcefX": {
           "type": "procedure",
-          "name": "Clear Lift – seja, kakls, dekoltē",
+          "name": "Seja, kakls, dekoltē",
           "settings": {
-            "procedure_name": "Clear Lift – seja, kakls, dekoltē",
+            "procedure_name": "Seja, kakls, dekoltē",
             "procedure_description": "Pilna liftinga procedūra trim zonām.",
             "procedure_price": "€300",
             "procedure_duration": "60",
@@ -199,9 +199,9 @@
         },
         "procedure_WKjNd3": {
           "type": "procedure",
-          "name": "Clear Lift – acu zona",
+          "name": "Acu zona",
           "settings": {
-            "procedure_name": "Clear Lift – acu zona",
+            "procedure_name": "Acu zona",
             "procedure_description": "Maiga liftinga procedūra acu zonai.",
             "procedure_price": "€100",
             "procedure_duration": "60",
@@ -225,7 +225,7 @@
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
-        "enable_dropdown": false,
+        "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
       }
@@ -295,7 +295,7 @@
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
-        "enable_dropdown": false,
+        "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
       }
