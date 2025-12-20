@@ -55,6 +55,14 @@
         "add_top_padding": false
       }
     },
+    "template_heading_4i8UtF": {
+      "type": "template-heading",
+      "name": "Lāzerepilācijas procedūras",
+      "settings": {
+        "heading": "Lāzerepilācijas procedūras",
+        "heading_level": "h2"
+      }
+    },
     "template_procedure_table_wpJzWq": {
       "type": "template-procedure-table",
       "blocks": {
@@ -744,6 +752,7 @@
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
+    "template_heading_4i8UtF",
     "template_procedure_table_wpJzWq",
     "template_procedure_table_KbiR6F",
     "template_procedure_table_gVVzqn",
