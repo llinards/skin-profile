@@ -230,6 +230,102 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_jRizze": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_Uw7UzX": {
+          "type": "procedure",
+          "name": "Deguns",
+          "settings": {
+            "procedure_name": "Deguns",
+            "procedure_description": "Nd:Yag asinsvadu lāzerterapija deguna zonā.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Kuperoze smagā stadijā</li><li>Asiņošanas traucējumi</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_pLmmTN": {
+          "type": "procedure",
+          "name": "Viena zvaigznīte",
+          "settings": {
+            "procedure_name": "Viena zvaigznīte",
+            "procedure_description": "Atsevišķas asinsvadu zvaigznītes koagulācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Atvērtas brūces</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_cYyxYd": {
+          "type": "procedure",
+          "name": "Vaigi",
+          "settings": {
+            "procedure_name": "Vaigi",
+            "procedure_description": "Nd:Yag procedūra vaigu kapilāriem.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_mx4Rnf": {
+          "type": "procedure",
+          "name": "Kājas (5 cm2)",
+          "settings": {
+            "procedure_name": "Kājas (5 cm2)",
+            "procedure_description": "Asinsvadu koagulācija kāju zonā.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_g8yJLa": {
+          "type": "procedure",
+          "name": "Asinsvadu impulss – 1 impulss",
+          "settings": {
+            "procedure_name": "Asinsvadu impulss – 1 impulss",
+            "procedure_description": "Atsevišķu asinsvadu impulsu apstrāde.",
+            "procedure_price": "€20",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_B93aNE": {
+          "type": "procedure",
+          "name": "Vairāku angiomu likvidēšana (līdz 10 gb.)",
+          "settings": {
+            "procedure_name": "Vairāku angiomu likvidēšana (līdz 10 gb.)",
+            "procedure_description": "Lāzerprocedūra sarkano angiom u likvidēšanai.",
+            "procedure_price": "€70 - €100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Ādas infekcijas</li><li>Fotosensitivitāte</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_Uw7UzX",
+        "procedure_pLmmTN",
+        "procedure_cYyxYd",
+        "procedure_mx4Rnf",
+        "procedure_g8yJLa",
+        "procedure_B93aNE"
+      ],
+      "name": "Asinsvadu likvidēšana ",
+      "settings": {
+        "title": "Asinsvadu likvidēšana",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_wcKf3n": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -372,6 +468,7 @@
     "template_text_section_JPJC6T",
     "template_procedure_table_mXB4KL",
     "template_procedure_table_fCMYGY",
+    "template_procedure_table_jRizze",
     "template_services_carousel_grid_wcKf3n",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
