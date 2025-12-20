@@ -531,11 +531,17 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
   .h-108 {
     height: calc(var(--spacing) * 108);
+  }
+  .h-128 {
+    height: calc(var(--spacing) * 128);
   }
   .h-156 {
     height: calc(var(--spacing) * 156);
@@ -563,6 +569,9 @@
   }
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
+  }
+  .max-h-108 {
+    max-height: calc(var(--spacing) * 108);
   }
   .min-h-5 {
     min-height: calc(var(--spacing) * 5);
@@ -1843,6 +1852,11 @@
   .md\:h-126 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 126);
+    }
+  }
+  .md\:h-128 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 128);
     }
   }
   .md\:h-256 {
