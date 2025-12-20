@@ -189,15 +189,6 @@
             "category_name_for_filter": "Ķermeņa kopšana"
           }
         },
-        "category_slide_8HkcUd": {
-          "type": "category_slide",
-          "name": "Matu kopšana",
-          "settings": {
-            "photo": "shopify://shop_images/matu_kopsana.jpg",
-            "name": "Matu kopšana",
-            "category_name_for_filter": "Matu kopšana"
-          }
-        },
         "category_slide_aRNYmm": {
           "type": "category_slide",
           "name": "Uztura bagātinātāji",
@@ -220,7 +211,6 @@
       "block_order": [
         "category_slide_TmPDec",
         "category_slide_ErxAz3",
-        "category_slide_8HkcUd",
         "category_slide_aRNYmm",
         "category_slide_WUnGtg"
       ],
