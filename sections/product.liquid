@@ -12,15 +12,6 @@
 
       {%- assign variant = product.selected_or_first_available_variant -%}
 
-      {% if product.has_only_default_variant %}
-        {%- assign v = product.selected_or_first_available_variant -%}
-        {% if v.title != 'Default Title' %}
-          <h2>
-            {{ v.title }}
-          </h2>
-        {% endif %}
-      {% endif %}
-
       <!-- PRODUCT PRICE -->
       {% if variant.compare_at_price > variant.price %}
         {%- comment -%} Product is on sale {%- endcomment -%}

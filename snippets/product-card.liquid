@@ -1,13 +1,15 @@
 <div class="transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer relative">
-  {% if product.featured_image %}
-    {% render 'image',
-      image: product.featured_image,
-      width: 300,
-      height: 300,
-      url: product.url,
-      class: 'h-full object-bottom object-cover'
-    %}
-  {% endif %}
+  <div class="w-full max-h-36 md:max-h-72">
+    {% if product.featured_image %}
+      {% render 'image',
+        image: product.featured_image,
+        width: 600,
+        height: 600,
+        url: product.url,
+        class: 'w-full max-h-36 md:max-h-72 object-contain object-center'
+      %}
+    {% endif %}
+  </div>
 
   {%- comment -%} Discount badge {%- endcomment -%}
   {%- assign variant = product.selected_or_first_available_variant -%}
@@ -28,14 +30,6 @@
   <h3 class="font-bold tracking-wider text-center text-xs sm:text-sm xl:px-6">
     {{ product.title | escape | link_to: product.url }}
   </h3>
-  {% if product.has_only_default_variant %}
-    {%- assign v = product.selected_or_first_available_variant -%}
-    {% if v.title != 'Default Title' %}
-      <p class="text-xs sm:text-sm text-center text-gray-500">
-        {{ v.title }}
-      </p>
-    {% endif %}
-  {% endif %}
 
   {%- comment -%} Price with discount {%- endcomment -%}
   {%- if variant.compare_at_price > variant.price -%}
