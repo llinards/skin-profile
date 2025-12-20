@@ -114,8 +114,30 @@
             "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>",
             "apply_url": ""
           }
-        },
-        "procedure_JwA7c6": {
+        }
+      },
+      "block_order": [
+        "procedure_idQC3f",
+        "procedure_iyWRx4",
+        "procedure_6qG7Li",
+        "procedure_G9jxja"
+      ],
+      "name": "Fotoatjaunošana",
+      "settings": {
+        "title": "Fotoatjaunošana",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_HbTjnp": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_aVbgp8": {
           "type": "procedure",
           "name": "Clear Lift – seja",
           "settings": {
@@ -127,7 +149,7 @@
             "apply_url": ""
           }
         },
-        "procedure_8KtyXD": {
+        "procedure_EwRdDj": {
           "type": "procedure",
           "name": "Clear Lift – seja un pazode",
           "settings": {
@@ -139,7 +161,7 @@
             "apply_url": ""
           }
         },
-        "procedure_DqwzTx": {
+        "procedure_9gfYMG": {
           "type": "procedure",
           "name": "Clear Lift – kakls",
           "settings": {
@@ -151,7 +173,7 @@
             "apply_url": ""
           }
         },
-        "procedure_7hpFV7": {
+        "procedure_bDBNEB": {
           "type": "procedure",
           "name": "Clear Lift – dekoltē",
           "settings": {
@@ -163,7 +185,7 @@
             "apply_url": ""
           }
         },
-        "procedure_XJbdBQ": {
+        "procedure_bxcefX": {
           "type": "procedure",
           "name": "Clear Lift – seja, kakls, dekoltē",
           "settings": {
@@ -175,7 +197,7 @@
             "apply_url": ""
           }
         },
-        "procedure_tkB7nm": {
+        "procedure_WKjNd3": {
           "type": "procedure",
           "name": "Clear Lift – acu zona",
           "settings": {
@@ -187,7 +209,7 @@
             "apply_url": ""
           }
         },
-        "procedure_J7ctPL": {
+        "procedure_MFxhQW": {
           "type": "procedure",
           "name": "Asinsvadu likvidēšana – deguns",
           "settings": {
@@ -199,7 +221,7 @@
             "apply_url": ""
           }
         },
-        "procedure_GK79xa": {
+        "procedure_B4HLMb": {
           "type": "procedure",
           "name": "Asinsvadu likvidēšana – viena zvaigznīte",
           "settings": {
@@ -211,7 +233,7 @@
             "apply_url": ""
           }
         },
-        "procedure_rT3Gcz": {
+        "procedure_7NdtyH": {
           "type": "procedure",
           "name": "Asinsvadi – vaigi",
           "settings": {
@@ -223,7 +245,7 @@
             "apply_url": ""
           }
         },
-        "procedure_ytULEW": {
+        "procedure_rkBpAL": {
           "type": "procedure",
           "name": "Asinsvadi – kājas (5 cm2)",
           "settings": {
@@ -237,24 +259,20 @@
         }
       },
       "block_order": [
-        "procedure_idQC3f",
-        "procedure_iyWRx4",
-        "procedure_6qG7Li",
-        "procedure_G9jxja",
-        "procedure_JwA7c6",
-        "procedure_8KtyXD",
-        "procedure_DqwzTx",
-        "procedure_7hpFV7",
-        "procedure_XJbdBQ",
-        "procedure_tkB7nm",
-        "procedure_J7ctPL",
-        "procedure_GK79xa",
-        "procedure_rT3Gcz",
-        "procedure_ytULEW"
+        "procedure_aVbgp8",
+        "procedure_EwRdDj",
+        "procedure_9gfYMG",
+        "procedure_bDBNEB",
+        "procedure_bxcefX",
+        "procedure_WKjNd3",
+        "procedure_MFxhQW",
+        "procedure_B4HLMb",
+        "procedure_7NdtyH",
+        "procedure_rkBpAL"
       ],
-      "name": "Procedūru tabula",
+      "name": "Clear Lift",
       "settings": {
-        "title": "Estētiskās Medicīnas Procedūras",
+        "title": "Clear Lift",
         "content": "",
         "disclaimer": "",
         "apply_url": "",
@@ -262,556 +280,6 @@
         "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": false
-      }
-    },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_kGdXVr": {
-          "type": "service",
-          "name": "Nucleofill Soft",
-          "settings": {
-            "service_name": "Nucleofill Soft",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_tDn8zY": {
-          "type": "service",
-          "name": "Nucleofill Medium",
-          "settings": {
-            "service_name": "Sejas tīrīšana",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_necEBB": {
-          "type": "service",
-          "name": "Nucleofill Strong",
-          "settings": {
-            "service_name": "Nucleofill Strong",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_kGdXVr",
-        "service_tDn8zY",
-        "service_necEBB"
-      ],
-      "name": "Polinukleotīdu injekcijas",
-      "settings": {
-        "title": "Polinukleotīdu injekcijas",
-        "content": "<p>Efektīvs un inovatīvs risinājums sejas ādas reģenerācijai. Samazina tūsku un maisiņus zem acīm, mīmiskās grumbas, izlīdzina ādas toni un stimulē kolagēna un elastīna sintēzi.</p><p>Īpaši ieteicams kursa veidā pirms plastiskajām operācijām un pēcoperāciju periodā, lai mazinātu rētu risku, iekaisumu un veicinātu dzīšanu. Nepieciešams kurss 2 reizes ar 3–4 nedēļu intervālu.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_qjdJcX": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_4HgD7c": {
-          "type": "service",
-          "name": "Mezoterapija",
-          "settings": {
-            "service_name": "Mezoterapija",
-            "service_price": "€80 – €120",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_4HgD7c"
-      ],
-      "name": "Mezoterapija",
-      "settings": {
-        "title": "Mezoterapija",
-        "content": "<p>Invazīva metode, kuras laikā ādā tiek ievadītas bioloģiski aktīvas vielas ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam, kā arī rozācijas, aknes un citu ādas problēmu risināšanai. </p><p>Procedūrā izmanto Aprilline Skin line vai Age line preparātus.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_kPR4ih": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_yfca67": {
-          "type": "service",
-          "name": "Neuvia HydroDelux (2,5 ml)",
-          "settings": {
-            "service_name": "Neuvia HydroDelux (2,5 ml)",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_3qRRAc": {
-          "type": "service",
-          "name": "Hyacell Electri (acu zonai, 0,55 % 1,5 ml)",
-          "settings": {
-            "service_name": "Hyacell Electri (acu zonai, 0,55 % 1,5 ml)",
-            "service_price": "€160",
-            "service_length": "60"
-          }
-        },
-        "service_WTbY8x": {
-          "type": "service",
-          "name": "Xela REDERM 1.8% (2 ml)",
-          "settings": {
-            "service_name": "Xela REDERM 1.8% (2 ml)",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_qcjc9U": {
-          "type": "service",
-          "name": "Xela REDERM 2.0% (2 ml)",
-          "settings": {
-            "service_name": "Xela REDERM 2.0% (2 ml)",
-            "service_price": "€200",
-            "service_length": "60"
-          }
-        },
-        "service_73XJ4V": {
-          "type": "service",
-          "name": "PROFHILO (2 ml)",
-          "settings": {
-            "service_name": "PROFHILO (2 ml)",
-            "service_price": "€250",
-            "service_length": "60"
-          }
-        },
-        "service_eXK9R7": {
-          "type": "service",
-          "name": "PROFHILO (2 ml) - 2 Iepakojumi",
-          "settings": {
-            "service_name": "PROFHILO (2 ml) - 2 Iepakojumi",
-            "service_price": "€450",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_yfca67",
-        "service_3qRRAc",
-        "service_WTbY8x",
-        "service_qcjc9U",
-        "service_73XJ4V",
-        "service_eXK9R7"
-      ],
-      "name": "Biorevitalizācija",
-      "settings": {
-        "title": "Biorevitalizācija",
-        "content": "<p>Hialuronskābes injekcijas ādas mitrināšanai, grumbu aizpildīšanai, kvalitātes uzlabošanai un kolagēna stimulēšanai.</p><p>Procedūra palīdz ādai uzturēt barības vielu līdzsvaru, elastību un tvirtumu.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_kn964N": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_YUJr6H": {
-          "type": "service",
-          "name": "Juviderm 4 (1 ml) - 1 iepakojums",
-          "settings": {
-            "service_name": "Juviderm 4 (1 ml) - 1 iepakojums",
-            "service_price": "€280",
-            "service_length": "60"
-          }
-        },
-        "service_ctCqip": {
-          "type": "service",
-          "name": "Juviderm 4 (1 ml) - 2 iepakojumi",
-          "settings": {
-            "service_name": "Juviderm 4 (1 ml) - 2 iepakojumi",
-            "service_price": "€520",
-            "service_length": "60"
-          }
-        },
-        "service_CwMQgA": {
-          "type": "service",
-          "name": "Dusmu rievas aizpildīšana Belotero",
-          "settings": {
-            "service_name": "Dusmu rievas aizpildīšana Belotero",
-            "service_price": "€260",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_YUJr6H",
-        "service_ctCqip",
-        "service_CwMQgA"
-      ],
-      "name": "Sejas konturēšana ar filleriem",
-      "settings": {
-        "title": "Sejas konturēšana ar filleriem",
-        "content": "<p>Jūsu teksts šeit.</p>",
-        "service_disclaimer": "Hialuronskābes injekcijas palīdz atjaunot sejas harmoniju, uzlabot ovālu, izlīdzināt krunciņas (piemēram, pieres, nasolabialajā zonā), koriģēt vaigu, žokļa līnijas un zoda izskatu, kā arī veidot lūpu kontūras.",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_VeALwy": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_KrphhX": {
-          "type": "service",
-          "name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
-          "settings": {
-            "service_name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
-            "service_price": "€300",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_KrphhX"
-      ],
-      "name": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
-      "settings": {
-        "title": "Filleri tumšo loku mazināšanai zem acīm (Tear Trough)",
-        "content": "<p>Dermāla pildviela tiek izmantota asaru rievas aizpildīšanai, kas palīdz mazināt tumšos lokus un noguruša izskata efektu.</p><p>Rezultāts parādās 2–3 nedēļu laikā.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_efLzGb": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_brxBa3": {
-          "type": "service",
-          "name": "APTOS vai Silhouette Soft diegi",
-          "settings": {
-            "service_name": "APTOS vai Silhouette Soft diegi (atkarībā no pacienta anatomijas)",
-            "service_price": "€1000 - €1500",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_brxBa3"
-      ],
-      "name": "APTOS vai Silhouette Soft diegi",
-      "settings": {
-        "title": "APTOS vai Silhouette Soft diegi",
-        "content": "<p>Procedūras laikā zem ādas tiek ievadīti diegi, kas nostiprina audus un nodrošina liftinga efektu bez operācijas.</p><p>Tie palīdz uzlabot ādas tvirtumu, mazināt noslīdējumu un atjaunot sejas kontūras. Efekts ir ilgnoturīgs – līdz 18 mēnešiem.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_rHtTmM": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_MHRyYp": {
-          "type": "service",
-          "name": "Teosyal RHA Kiss (0,7 ml)",
-          "settings": {
-            "service_name": "Teosyal RHA Kiss (0,7 ml)",
-            "service_price": "€250",
-            "service_length": "60"
-          }
-        },
-        "service_pM8aBw": {
-          "type": "service",
-          "name": "Belotero Soft (0,6 ml)",
-          "settings": {
-            "service_name": "Belotero Soft (0,6 ml)",
-            "service_price": "€240",
-            "service_length": "60"
-          }
-        },
-        "service_CVDfQy": {
-          "type": "service",
-          "name": "Belotero Lips (0,6 ml)",
-          "settings": {
-            "service_name": "Belotero Lips (0,6 ml)",
-            "service_price": "€240",
-            "service_length": "60"
-          }
-        },
-        "service_x9hBgr": {
-          "type": "service",
-          "name": "Juviderm 3 (1 ml)",
-          "settings": {
-            "service_name": "Juviderm 3 (1 ml)",
-            "service_price": "€280",
-            "service_length": "60"
-          }
-        },
-        "service_QmacAj": {
-          "type": "service",
-          "name": "Pildvielu šķīdināšana",
-          "settings": {
-            "service_name": "Pildvielu šķīdināšana",
-            "service_price": "€180 – €250",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_MHRyYp",
-        "service_pM8aBw",
-        "service_CVDfQy",
-        "service_x9hBgr",
-        "service_QmacAj"
-      ],
-      "name": "Lūpu apjoma palielināšana",
-      "settings": {
-        "title": "Lūpu apjoma palielināšana",
-        "content": "<p>Hialuronskābes preparāti piešķir lūpām svaigumu un apjomu, veido kontūru un koriģē asimetriju.</p><p>Efekts ir redzams uzreiz un saglabājas līdz 1 gadam.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_mRxjF3": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_YJGzdR": {
-          "type": "service",
-          "name": "1 Radiesse iepakojums",
-          "settings": {
-            "service_name": "1 Radiesse iepakojums",
-            "service_price": "€350",
-            "service_length": "60"
-          }
-        },
-        "service_EqKcUe": {
-          "type": "service",
-          "name": "2 Radiesse iepakojumi",
-          "settings": {
-            "service_name": "2 Radiesse iepakojumi",
-            "service_price": "€600",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_YJGzdR",
-        "service_EqKcUe"
-      ],
-      "name": "Sejas liftings ar Radiesse",
-      "settings": {
-        "title": "Sejas liftings ar Radiesse",
-        "content": "<p>Radiesse filleris palīdz atjaunot sejas ovālu, samazināt noslīdējušus vaigus un krunciņas, atjaunot apjomu sejā, kaklā un rokās.</p><p>Preparāts stimulē kolagēna sintēzi, nodrošinot dabisku un ilgstošu rezultātu – līdz 24 mēnešiem.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_CzzXek": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_Gi9hzU": {
-          "type": "service",
-          "name": "Visa seja",
-          "settings": {
-            "service_name": "Visa seja",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_MMDiQT": {
-          "type": "service",
-          "name": "Seja un kakls",
-          "settings": {
-            "service_name": "Seja un kakls",
-            "service_price": "€220",
-            "service_length": "60"
-          }
-        },
-        "service_YXaTPN": {
-          "type": "service",
-          "name": "Seja, kakls, dekoltē",
-          "settings": {
-            "service_name": "Seja, kakls, dekoltē",
-            "service_price": "€230",
-            "service_length": "60"
-          }
-        },
-        "service_jLxdr9": {
-          "type": "service",
-          "name": "Matu atjaunošana",
-          "settings": {
-            "service_name": "Matu atjaunošana",
-            "service_price": "€170",
-            "service_length": "60"
-          }
-        },
-        "service_zqmqT9": {
-          "type": "service",
-          "name": "Mazām zonām",
-          "settings": {
-            "service_name": "Mazām zonām",
-            "service_price": "€50 – €100",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_Gi9hzU",
-        "service_MMDiQT",
-        "service_YXaTPN",
-        "service_jLxdr9",
-        "service_zqmqT9"
-      ],
-      "name": "I-PRF injekcijas",
-      "settings": {
-        "title": "I-PRF injekcijas",
-        "content": "<p>Procedūrā izmanto pacienta asins šūnu koncentrātu, lai atjaunotu ādu, ārstētu grumbas, rētas un problemātisku ādu. Palīdz arī matu augšanas stimulēšanai.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_Akzmca": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_tfFAQk": {
-          "type": "service",
-          "name": "Pieres vertikālās (dusmu) krunkas ",
-          "settings": {
-            "service_name": "Pieres vertikālās (dusmu) krunkas",
-            "service_price": "€150",
-            "service_length": "60"
-          }
-        },
-        "service_wL6RdJ": {
-          "type": "service",
-          "name": "Visa piere (horizontālās + vertikālās rievas) ",
-          "settings": {
-            "service_name": "Visa piere (horizontālās + vertikālās rievas)",
-            "service_price": "€250",
-            "service_length": "60"
-          }
-        },
-        "service_BYgLJc": {
-          "type": "service",
-          "name": "Acu zona",
-          "settings": {
-            "service_name": "Acu zona",
-            "service_price": "€150 - €180",
-            "service_length": "60"
-          }
-        },
-        "service_MFyHFj": {
-          "type": "service",
-          "name": "Acu zona un piere",
-          "settings": {
-            "service_name": "Acu zona un piere",
-            "service_price": "€350 - €400",
-            "service_length": "60"
-          }
-        },
-        "service_mEXUrf": {
-          "type": "service",
-          "name": "Padušu pastiprināta svīšana",
-          "settings": {
-            "service_name": "Padušu pastiprināta svīšana",
-            "service_price": "€350",
-            "service_length": "60"
-          }
-        },
-        "service_MaiXwx": {
-          "type": "service",
-          "name": "Manganas smaida korekcija",
-          "settings": {
-            "service_name": "Manganas smaida korekcija",
-            "service_price": "€90",
-            "service_length": "60"
-          }
-        },
-        "service_kfeTWb": {
-          "type": "service",
-          "name": "Košļāšanas muskuļu hiperaktivitāte",
-          "settings": {
-            "service_name": "Košļāšanas muskuļu hiperaktivitāte",
-            "service_price": "€280",
-            "service_length": "60"
-          }
-        },
-        "service_GebWgT": {
-          "type": "service",
-          "name": "Smēķētāju krunciņu korekcija",
-          "settings": {
-            "service_name": "Smēķētāju krunciņu korekcija",
-            "service_price": "€70",
-            "service_length": "60"
-          }
-        },
-        "service_T3rXgY": {
-          "type": "service",
-          "name": "Zoda muskuļu korekcija",
-          "settings": {
-            "service_name": "Zoda muskuļu korekcija",
-            "service_price": "€70",
-            "service_length": "60"
-          }
-        },
-        "service_qMBkkz": {
-          "type": "service",
-          "name": "Visa seja",
-          "settings": {
-            "service_name": "Visa seja",
-            "service_price": "€420",
-            "service_length": "60"
-          }
-        },
-        "service_8VHDpg": {
-          "type": "service",
-          "name": "Visa seja + kakls",
-          "settings": {
-            "service_name": "Visa seja + kakls",
-            "service_price": "€500",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_tfFAQk",
-        "service_wL6RdJ",
-        "service_BYgLJc",
-        "service_MFyHFj",
-        "service_mEXUrf",
-        "service_MaiXwx",
-        "service_kfeTWb",
-        "service_GebWgT",
-        "service_T3rXgY",
-        "service_qMBkkz",
-        "service_8VHDpg"
-      ],
-      "name": "Botulīna injekcijas",
-      "settings": {
-        "title": "Botulīna injekcijas",
-        "content": "<p>Botulīna toksīns tiek ievadīts problēmzonās, lai samazinātu mīmisko muskulatūru darbību un izlīdzinātu grumbas.</p><p>Efekts iestājas 1–2 nedēļu laikā un saglabājas līdz 4 mēnešiem.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": true
       }
     },
     "template_services_carousel_grid_cwjP3x": {
@@ -955,16 +423,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_procedure_table_B3cdxV",
-    "template_services_section_J6AXyp",
-    "template_services_section_qjdJcX",
-    "template_services_section_kPR4ih",
-    "template_dropdown_service_kn964N",
-    "template_dropdown_service_VeALwy",
-    "template_dropdown_service_efLzGb",
-    "template_dropdown_service_rHtTmM",
-    "template_dropdown_service_mRxjF3",
-    "template_dropdown_service_CzzXek",
-    "template_dropdown_service_Akzmca",
+    "template_procedure_table_HbTjnp",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
