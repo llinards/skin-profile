@@ -204,7 +204,7 @@
           "settings": {
             "photo": "shopify://shop_images/davanu_kartes.jpg",
             "name": "Dāvanu kartes",
-            "category_name_for_filter": "gift-card"
+            "category_name_for_filter": "gift-cards"
           }
         }
       },
