@@ -570,9 +570,6 @@
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
   }
-  .max-h-108 {
-    max-height: calc(var(--spacing) * 108);
-  }
   .min-h-5 {
     min-height: calc(var(--spacing) * 5);
   }
@@ -1852,11 +1849,6 @@
   .md\:h-126 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 126);
-    }
-  }
-  .md\:h-128 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 128);
     }
   }
   .md\:h-256 {
