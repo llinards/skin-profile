@@ -138,6 +138,18 @@
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_DqwzTx": {
+          "type": "procedure",
+          "name": "Clear Lift – kakls",
+          "settings": {
+            "procedure_name": "Clear Lift – kakls",
+            "procedure_description": "Lāzerliftinga procedūra kakla ādai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -146,7 +158,8 @@
         "procedure_6qG7Li",
         "procedure_G9jxja",
         "procedure_JwA7c6",
-        "procedure_8KtyXD"
+        "procedure_8KtyXD",
+        "procedure_DqwzTx"
       ],
       "name": "Procedūru tabula",
       "settings": {
