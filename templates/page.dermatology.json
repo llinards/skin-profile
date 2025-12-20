@@ -435,6 +435,7 @@
         },
         "procedure_E7CNM8": {
           "type": "procedure",
+          "name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
           "settings": {
             "procedure_name": "Dermatologa konsultācija ar sejas ādas 3D diagnostiku (LifeViz® iekārta)",
             "procedure_description": "Dermatologa konsultācija ar detalizētu sejas 3D analīzi, lai plānotu estētiskās un ārstnieciskās procedūras.",
@@ -443,13 +444,26 @@
             "contraindications_text": "<ul><li>Nespēja noturēt stacionāru galvas pozīciju izmeklējuma laikā</li><li>Smagas klaustrofobijas izpausmes</li><li>Akūtas infekcijas ar drudzi</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_rYkg3p": {
+          "type": "procedure",
+          "name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
+          "settings": {
+            "procedure_name": "Sejas ādas 3D diagnostika (LifeViz® iekārta) pirms/pēc procedūras",
+            "procedure_description": "Sejas 3D vizualizācija procedūru rezultātu dokumentēšanai un salīdzināšanai.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smaga nespēja sadarboties izmeklējuma laikā</li><li>Akūta infekcija ar drudzi</li><li>Nav piemērots, ja seja ir pārklāta ar svaigām brūcēm vai pārsējiem</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_7MiX6j",
         "procedure_F8FXGT",
         "procedure_LQP6AL",
-        "procedure_E7CNM8"
+        "procedure_E7CNM8",
+        "procedure_rYkg3p"
       ],
       "name": "Procedūru tabula",
       "settings": {
