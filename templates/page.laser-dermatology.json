@@ -64,6 +64,14 @@
         "text_html": ""
       }
     },
+    "template_heading_Bxqtht": {
+      "type": "template-heading",
+      "name": "Lāzerdermatoloģijas procedūras",
+      "settings": {
+        "heading": "Lāzerdermatoloģijas procedūras",
+        "heading_level": "h2"
+      }
+    },
     "template_procedure_table_mXB4KL": {
       "type": "template-procedure-table",
       "blocks": {
@@ -468,7 +476,7 @@
     },
     "template_heading_xty9g3": {
       "type": "template-heading",
-      "name": "Virsraksts",
+      "name": "CO2 lāzerprocedūras",
       "settings": {
         "heading": "CO2 lāzerprocedūras",
         "heading_level": "h2"
@@ -762,6 +770,7 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
+    "template_heading_Bxqtht",
     "template_procedure_table_mXB4KL",
     "template_procedure_table_fCMYGY",
     "template_procedure_table_jRizze",
