@@ -165,6 +165,78 @@
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_R7RiBD": {
+          "type": "procedure",
+          "name": "Augšdelmi",
+          "settings": {
+            "procedure_name": "Augšdelmi",
+            "procedure_description": "Augšdelmu epilācija.",
+            "procedure_price": "€55",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_EYhFK9": {
+          "type": "procedure",
+          "name": "Rokas visā garumā",
+          "settings": {
+            "procedure_name": "Rokas visā garumā",
+            "procedure_description": "Pilna roku epilācija.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Svaigs apdegums</li><li>Herpes informācija šeit.</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_eVktzL": {
+          "type": "procedure",
+          "name": "Pirksti",
+          "settings": {
+            "procedure_name": "Pirksti",
+            "procedure_description": "Pirkstu lāzerepilācija.",
+            "procedure_price": "€20",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Traumas</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_g8y3pi": {
+          "type": "procedure",
+          "name": "Plaukstu virspuses",
+          "settings": {
+            "procedure_name": "Plaukstu virspuses",
+            "procedure_description": "Plaukstu lāzerepilācija.",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Psoriāze</li><li>Ekzēma</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_zBcbkD": {
+          "type": "procedure",
+          "name": "Apakšstilbi",
+          "settings": {
+            "procedure_name": "Apakšstilbi",
+            "procedure_description": "Apakšstilbu epilācija.",
+            "procedure_price": "€90",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Varikozas vēnas</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_QHfArR": {
+          "type": "procedure",
+          "name": "Augšstilbi ar celi",
+          "settings": {
+            "procedure_name": "Augšstilbi ar celi",
+            "procedure_description": "Augšstilbu epilācija.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -176,7 +248,13 @@
         "procedure_AdLVNy",
         "procedure_g9YHFR",
         "procedure_NTiAWV",
-        "procedure_drDWrB"
+        "procedure_drDWrB",
+        "procedure_R7RiBD",
+        "procedure_EYhFK9",
+        "procedure_eVktzL",
+        "procedure_g8y3pi",
+        "procedure_zBcbkD",
+        "procedure_QHfArR"
       ],
       "name": "Lāzerepilācija",
       "settings": {
