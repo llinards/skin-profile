@@ -90,11 +90,24 @@
             "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Grūtniecība</li><li>Herpes aktivizācija zonā</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_6qG7Li": {
+          "type": "procedure",
+          "name": "Fotoatjaunošana – seja un kakls",
+          "settings": {
+            "procedure_name": "Fotoatjaunošana – seja un kakls",
+            "procedure_description": "IPL atjaunošana plašākai zonai.",
+            "procedure_price": "€280",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_idQC3f",
-        "procedure_iyWRx4"
+        "procedure_iyWRx4",
+        "procedure_6qG7Li"
       ],
       "name": "Procedūru tabula",
       "settings": {
