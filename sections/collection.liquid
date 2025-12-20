@@ -5,7 +5,7 @@
   {% if section.settings.category_cards %}
     {% render 'store-category-cards' %}
   {% endif %}
-  <div id="products">
+  <div id="products" class="px-4">
     <div class="relative transition-hide">
       <h2 class="pb-12">
         {% if collection.title %}{{ collection.title }}{% else %}{{ 'collections.all_products' | t }}{% endif %}

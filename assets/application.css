@@ -531,9 +531,6 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-72 {
-    height: calc(var(--spacing) * 72);
-  }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
@@ -563,9 +560,6 @@
   }
   .max-h-60 {
     max-height: calc(var(--spacing) * 60);
-  }
-  .max-h-72 {
-    max-height: calc(var(--spacing) * 72);
   }
   .max-h-80 {
     max-height: calc(var(--spacing) * 80);
@@ -606,9 +600,6 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-36 {
-    width: calc(var(--spacing) * 36);
-  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -617,9 +608,6 @@
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
-  }
-  .w-72 {
-    width: calc(var(--spacing) * 72);
   }
   .w-auto {
     width: auto;
@@ -635,12 +623,6 @@
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
-  }
-  .max-w-36 {
-    max-width: calc(var(--spacing) * 36);
-  }
-  .max-w-72 {
-    max-width: calc(var(--spacing) * 72);
   }
   .max-w-96 {
     max-width: calc(var(--spacing) * 96);
@@ -1094,12 +1076,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-scale-down {
-    object-fit: scale-down;
-  }
-  .object-bottom {
-    object-position: bottom;
   }
   .object-bottom-right {
     object-position: right bottom;
@@ -2707,6 +2683,10 @@
   --f-carousel-slide-width: calc((100%) / 1.5);
   --f-carousel-gap: 24px;
 }
+#category-carousel {
+  margin-left: calc(var(--f-carousel-gap) / -2);
+  margin-right: calc(var(--f-carousel-gap) / -2);
+}
 #team-carousel .f-carousel__dot, #services-carousel .f-carousel__dot, #category-carousel .f-carousel__dot, #product-recommendation-carousel .f-carousel__dot, #product-view .f-carousel__dot, #product-view-mobile .f-carousel__dot {
   color: var(--color-brand-primary) !important;
 }
@@ -2769,7 +2749,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  #category-carousel, #services-carousel {
+  #services-carousel {
     --f-carousel-slide-width: calc((100% - 96px) / 5);
   }
 }

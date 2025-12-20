@@ -300,6 +300,12 @@
     --f-carousel-gap: 24px;
 }
 
+/* Remove edge padding caused by the carousel gap so first/last slides align */
+#category-carousel {
+    margin-left: calc(var(--f-carousel-gap) / -2);
+    margin-right: calc(var(--f-carousel-gap) / -2);
+}
+
 #team-carousel .f-carousel__dot,
 #services-carousel .f-carousel__dot,
 #category-carousel .f-carousel__dot,
@@ -397,7 +403,6 @@
 
 @media screen and (min-width: 1440px) {
 
-    #category-carousel,
     #services-carousel {
         --f-carousel-slide-width: calc((100% - 96px) / 5);
     }
