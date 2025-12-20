@@ -434,6 +434,75 @@
     },
     "template_procedure_table_ytwGHr": {
       "type": "template-procedure-table",
+      "blocks": {
+        "procedure_eFTtLU": {
+          "type": "procedure",
+          "name": "Neauvia Hydro Deluxe 2,5 ml",
+          "settings": {
+            "procedure_name": "Neauvia Hydro Deluxe 2,5 ml",
+            "procedure_description": "Biorevitalizējošs preparāts ilgnoturīgai mitrināšanai un ādas kvalitātes uzlabošanai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Akūtas ādas infekcijas injekcijas zonā</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_yHX4Dx": {
+          "type": "procedure",
+          "name": "Hyalual Xela Rederm 1,8 – 2% 2 ml",
+          "settings": {
+            "procedure_name": "Hyalual Xela Rederm 1,8 – 2% 2 ml",
+            "procedure_description": "Redermalizējošs preparāts ādas tvirtuma, tonusa un mirdzuma atjaunošanai.",
+            "procedure_price": "€180 - €200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_hbLnkq": {
+          "type": "procedure",
+          "name": "Hyalual Electri 0,55% 1,5 ml",
+          "settings": {
+            "procedure_name": "Hyalual Electri 0,55% 1,5 ml",
+            "procedure_description": "Mitrinošs un tonusu atjaunojošs preparāts ādas struktūras uzlabošanai.",
+            "procedure_price": "€160",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smaga ādas iekaisuma slimība injekcijas vietā</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_KUjdBy": {
+          "type": "procedure",
+          "name": "Prohilo 2ml",
+          "settings": {
+            "procedure_name": "Prohilo 2ml",
+            "procedure_description": "Stipri koncentrēts hialuronskābes preparāts ādas tvirtuma un elastības uzlabošanai.",
+            "procedure_price": "€250",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi</li><li>Asiņošanas traucējumi</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_FknfyE": {
+          "type": "procedure",
+          "name": "Polinukleotīdi Nucleofill",
+          "settings": {
+            "procedure_name": "Polinukleotīdi Nucleofill",
+            "procedure_description": "Biostimulējošs preparāts šūnu atjaunošanās un dziļas ādas reģenerācijas veicināšanai.",
+            "procedure_price": "€180 - €200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_eFTtLU",
+        "procedure_yHX4Dx",
+        "procedure_hbLnkq",
+        "procedure_KUjdBy",
+        "procedure_FknfyE"
+      ],
       "name": "Biorevitalizācija",
       "settings": {
         "title": "Biorevitalizācija",
