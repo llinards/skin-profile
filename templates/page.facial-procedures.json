@@ -199,6 +199,141 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_QfJjmK": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_7gW8qw": {
+          "type": "procedure",
+          "name": "Pollogen Geneo X sejas ādai",
+          "settings": {
+            "procedure_name": "Pollogen Geneo X sejas ādai",
+            "procedure_description": "PREMIUM sejas procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu viena seansa laikā.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_MWajCe": {
+          "type": "procedure",
+          "name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
+          "settings": {
+            "procedure_name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
+            "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai un liftingam.",
+            "procedure_price": "€170",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_C4MHGc": {
+          "type": "procedure",
+          "name": "V-Carbon System",
+          "settings": {
+            "procedure_name": "V-Carbon System",
+            "procedure_description": "Oglekļa pīlings ādas tekstūras un toni izlīdzināšanai, poru sašaurināšanai un mirdzuma uzlabošanai.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums vai solārija apmeklējums pēdējās dienās</li><li>Aktīvs dermatīts vai ekzēma</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_7kwfYP": {
+          "type": "procedure",
+          "name": "Ķīmiskais pīlings",
+          "settings": {
+            "procedure_name": "Ķīmiskais pīlings",
+            "procedure_description": "Profesionāls skābju pīlings ādas atjaunošanai, pigmentācijas un sīko grumbiņu mazināšanai.",
+            "procedure_price": "€80 - €100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Retinoīdu sistēmiska terapija pēdējo mēnešu laikā</li><li>Herpes infekcijas saasinājums apstrādes zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_Ug7WDE": {
+          "type": "procedure",
+          "name": "Fresh Up (SHRAMMEK GREEN PEEL)",
+          "settings": {
+            "procedure_name": "Fresh Up (SHRAMMEK GREEN PEEL)",
+            "procedure_description": "Maigs augu pīlings vieglai ādas atsvaidzināšanai un mirdzuma piešķiršanai.",
+            "procedure_price": "€90",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Aktīvs dermatīts vai ekzēma</li><li>Atvērtas brūces vai skrāpējumi</li><li>Paaugstināta jutība pret pīlinga sastāvdaļām</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_iDbCxA": {
+          "type": "procedure",
+          "name": "Energy (SHRAMMEK GREEN PEEL)",
+          "settings": {
+            "procedure_name": "Energy (SHRAMMEK GREEN PEEL)",
+            "procedure_description": "Intensīvāks augu pīlings ādas reģenerācijas stimulēšanai, tonusa un struktūras uzlabošanai.",
+            "procedure_price": "€120",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Smaga rozācija vai kuperoze</li><li>Aktīvas infekcijas ādā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_zaQN4b": {
+          "type": "procedure",
+          "name": "Classic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
+          "settings": {
+            "procedure_name": "Sejas tīrīšanaClassic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
+            "procedure_description": "Klasiskais Green Peel kurss ar intensīvu augu pīlingu un mājas kopšanas līdzekļiem.",
+            "procedure_price": "€230",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Ļoti jutīga āda ar barjeras bojājumu</li><li>Sistēmiska retinoīdu terapija</li><li>Grūtniecība (piesardzība) informācija šeit.</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_jttCHE": {
+          "type": "procedure",
+          "name": "Institut Esthederm Oxy",
+          "settings": {
+            "procedure_name": "Institut Esthederm Oxy",
+            "procedure_description": "Procedūra ar skābekli bagātinātu formulu, kas stimulē ādas šūnu funkcionēšanu un vielmaiņu.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Aktīvs dermatīts vai ekzēma</li><li>Svaigs saules apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_qVkGCt": {
+          "type": "procedure",
+          "name": "Mikroadatu terapija",
+          "settings": {
+            "procedure_name": "Mikroadatu terapija",
+            "procedure_description": "Dziļa ādas tīrīšana ar Pretnovecošanās terapija, ievadot zemādā bioloģiski aktīvās vielas un stimulējot dabīgu ādas atjaunošanos - cena pēc izvēlētā protokola (vadoties no cenrāža)",
+            "procedure_price": "-",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_7gW8qw",
+        "procedure_MWajCe",
+        "procedure_C4MHGc",
+        "procedure_7kwfYP",
+        "procedure_Ug7WDE",
+        "procedure_iDbCxA",
+        "procedure_zaQN4b",
+        "procedure_jttCHE",
+        "procedure_qVkGCt"
+      ],
+      "name": "Pollogen Geneo X un pīlingi",
+      "settings": {
+        "title": "Pollogen Geneo X un pīlingi",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_r7FVeG": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -340,6 +475,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_procedure_table_UXCkTh",
+    "template_procedure_table_QfJjmK",
     "template_services_carousel_grid_r7FVeG",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
