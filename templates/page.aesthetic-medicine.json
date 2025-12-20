@@ -328,14 +328,44 @@
     },
     "template_procedure_table_t9CxmT": {
       "type": "template-procedure-table",
-      "name": "Procedūru tabula",
+      "blocks": {
+        "procedure_BLjcFG": {
+          "type": "procedure",
+          "name": "Nagu sēnītes apstrāde – viens nags",
+          "settings": {
+            "procedure_name": "Nagu sēnītes apstrāde – viens nags",
+            "procedure_description": "Nd:Yag lāzerprocedūra sēnītes mazināšanai.",
+            "procedure_price": "€20",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Atklātas brūces</li><li>Smagi cirkulācijas traucējumi</li><li>Infekcijas komplikācijas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_UzNjgm": {
+          "type": "procedure",
+          "name": "Nagu sēnītes apstrāde – visi nagi",
+          "settings": {
+            "procedure_name": "Nagu sēnītes apstrāde – visi nagi",
+            "procedure_description": "Kompleksa lāzerterapija visiem nagiem.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smaga neiropātija</li><li>Brūces uz pēdām</li><li>Cukura diabēta komplikācijas</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_BLjcFG",
+        "procedure_UzNjgm"
+      ],
+      "name": "Nagu sēnītes apstrāde",
       "settings": {
-        "title": "Procedūras",
-        "content": "<p>Jūsu teksts šeit.</p>",
+        "title": "Nagu sēnītes apstrāde",
+        "content": "",
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
-        "enable_dropdown": false,
+        "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
       }
