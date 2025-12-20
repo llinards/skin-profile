@@ -377,6 +377,18 @@
             "contraindications_text": "<ul><li>Herpes</li><li>Alerģijas</li><li>Grūtniecība</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_MjxjH9": {
+          "type": "procedure",
+          "name": "APTOS diegi",
+          "settings": {
+            "procedure_name": "APTOS diegi",
+            "procedure_description": "Sejas liftinga diegi ar ilgstošu efektu.",
+            "procedure_price": "€1000",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -385,7 +397,8 @@
         "procedure_4GHNGw",
         "procedure_6tcYW4",
         "procedure_a4XAJr",
-        "procedure_xKqtxA"
+        "procedure_xKqtxA",
+        "procedure_MjxjH9"
       ],
       "name": "Citas procedūras",
       "settings": {
