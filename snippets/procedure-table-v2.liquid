@@ -1,0 +1,90 @@
+{%- assign disclaimer = disclaimer | default: '' -%}
+{%- assign services = services | default: section.blocks -%}
+{%- assign apply_url_default = apply_url_default | default: '/pages/pieteikuma-anketa' -%}
+{%- assign apply_cta = apply_cta | default: 'Pieteikt' -%}
+
+{%- assign procedure_blocks = services | where: 'type', 'procedure' -%}
+
+<div class="space-y-0 mb-6 md:my-12">
+  {%- if procedure_blocks.size > 0 -%}
+    <!-- Desktop table header -->
+    <div class="hidden md:grid md:grid-cols-12 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
+      <div class="col-span-2 text-left text-base">Procedūra</div>
+      <div class="col-span-3 text-left text-base">Apraksts</div>
+      <div class="col-span-1 text-right text-base">Cena</div>
+      <div class="col-span-1 text-right text-base">Ilgums</div>
+      <div class="col-span-2 text-center text-base">Kontraindikācijas</div>
+      <div class="col-span-3 text-right text-base"></div>
+    </div>
+
+    {%- for b in procedure_blocks -%}
+      {%- assign procedure_name = b.settings.procedure_name | default: '' -%}
+      {%- assign procedure_description = b.settings.procedure_description | default: '' -%}
+      {%- assign procedure_price = b.settings.procedure_price | default: '' -%}
+      {%- assign procedure_duration = b.settings.procedure_duration | default: '' -%}
+      {%- assign contraindications_url = b.settings.contraindications_url | default: '#' -%}
+      {%- assign apply_url_row = b.settings.apply_url | default: apply_url_default -%}
+
+      <div class="border-b border-sp-light-brown border-dotted py-4">
+        <!-- Desktop row -->
+        <div class="hidden md:grid md:grid-cols-12 gap-4 items-center">
+          <div class="col-span-2 text-left text-base font-bold wrap-break-words">{{ procedure_name }}</div>
+          <div class="col-span-3 text-left text-base text-gray-500 wrap-break-words">{{ procedure_description }}</div>
+          <div class="col-span-1 text-right text-base font-bold">{{ procedure_price }}</div>
+          <div class="col-span-1 text-right text-base text-gray-500">
+            {%- if procedure_duration != blank -%}
+              {{ procedure_duration }} min
+            {%- endif -%}
+          </div>
+          <div class="col-span-2 text-center flex items-center justify-center">
+            {% render 'btn-white', text: 'Uzzināt vairāk', url: contraindications_url %}
+          </div>
+          <div class="col-span-3 text-right flex items-center justify-end">
+            {% render 'btn-brown', text: apply_cta, url: apply_url_row %}
+          </div>
+        </div>
+
+        <!-- Mobile row -->
+        <div class="md:hidden space-y-4">
+          <div class="space-y-2">
+            <div class="font-bold text-base wrap-break-words">{{ procedure_name }}</div>
+            {%- if procedure_description != blank -%}
+              <div class="text-sm text-gray-500 wrap-break-words">{{ procedure_description }}</div>
+            {%- endif -%}
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="space-y-1">
+              <div class="text-gray-500">Cena</div>
+              <div class="font-bold">{{ procedure_price }}</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-gray-500">Ilgums</div>
+              <div class="font-bold">
+                {%- if procedure_duration != blank -%}
+                  {{ procedure_duration }} min
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="space-y-2">
+              <div class="font-bold text-sm">Kontraindikācijas</div>
+              {% render 'btn-white', text: 'Uzzināt vairāk', url: contraindications_url %}
+            </div>
+            <div>
+              {% render 'btn-brown', text: apply_cta, url: apply_url_row, full_width: true %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  {%- else -%}
+    <div class="py-4 text-center text-gray-500 text-sm">Nav pievienota neviena procedūra.</div>
+  {%- endif -%}
+
+  {%- if disclaimer != blank -%}
+    <p class="text-gray-500 mt-6 text-sm">{{ disclaimer }}</p>
+  {%- endif -%}
+</div>
