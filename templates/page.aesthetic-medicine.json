@@ -280,13 +280,26 @@
             "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_dAEenw": {
+          "type": "procedure",
+          "name": "Asinsvadu impulss – 1 impulss",
+          "settings": {
+            "procedure_name": "Asinsvadu impulss – 1 impulss",
+            "procedure_description": "Atsevišķu asinsvadu impulsu apstrāde.",
+            "procedure_price": "€20",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_wx6CDf",
         "procedure_yrpN8t",
         "procedure_dAyGMW",
-        "procedure_XceWH6"
+        "procedure_XceWH6",
+        "procedure_dAEenw"
       ],
       "name": "Asinsvadu likvidēšana ",
       "settings": {
