@@ -1,5 +1,5 @@
 <div x-data="{ showContraModal: false, activeContraText: '', activeContraName: '' }">
-  <div class="container mx-auto px-4 transition-hide max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
+  <div class="container mx-auto px-4 max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
     {%- if section.settings.enable_dropdown -%}
       <div
         x-data="{ open: {{ section.settings.open_by_default | json }} }"
