@@ -305,6 +305,88 @@
     },
     "template_procedure_table_N9LXVb": {
       "type": "template-procedure-table",
+      "blocks": {
+        "procedure_fVYPUD": {
+          "type": "procedure",
+          "name": "Lūpu palielināšana",
+          "settings": {
+            "procedure_name": "Lūpu palielināšana",
+            "procedure_description": "Lūpu kontūras un apjoma korekcija.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Alerģija pret HA</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_HWj8Fm": {
+          "type": "procedure",
+          "name": "Tear trough",
+          "settings": {
+            "procedure_name": "Tear trough",
+            "procedure_description": "Zemacu iedobumu korekcija.",
+            "procedure_price": "€350",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Tūska</li><li>Plāna āda</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_4GHNGw": {
+          "type": "procedure",
+          "name": "Radiesse 1 ampula",
+          "settings": {
+            "procedure_name": "Radiesse 1 ampula",
+            "procedure_description": "Kalcija hidroksilapatīta liftinga injekcijas.",
+            "procedure_price": "€350",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>infekcija</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_6tcYW4": {
+          "type": "procedure",
+          "name": "Radiesse 2 ampulas",
+          "settings": {
+            "procedure_name": "Radiesse 2 ampulas",
+            "procedure_description": "Dziļš liftinga protokols.",
+            "procedure_price": "€600",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Smagas slimības</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_a4XAJr": {
+          "type": "procedure",
+          "name": "Hialuronskābe 1 šļirce",
+          "settings": {
+            "procedure_name": "Hialuronskābe 1 šļirce",
+            "procedure_description": "Apjoma atjaunošana ar HA.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija</li><li>Infekcija</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_xKqtxA": {
+          "type": "procedure",
+          "name": "Hialuronskābe 2 šļirces",
+          "settings": {
+            "procedure_name": "Hialuronskābe 2 šļirces",
+            "procedure_description": "Dziļāka kontūras korekcija.",
+            "procedure_price": "€560",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Alerģijas</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_fVYPUD",
+        "procedure_HWj8Fm",
+        "procedure_4GHNGw",
+        "procedure_6tcYW4",
+        "procedure_a4XAJr",
+        "procedure_xKqtxA"
+      ],
       "name": "Citas procedūras",
       "settings": {
         "title": "Citas procedūras",
@@ -314,7 +396,7 @@
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
-        "space_bottom": false
+        "space_bottom": true
       }
     },
     "template_services_carousel_grid_cwjP3x": {
