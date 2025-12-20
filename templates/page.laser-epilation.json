@@ -55,38 +55,111 @@
         "add_top_padding": false
       }
     },
-    "template_text_section_JPJC6T": {
-      "type": "template-text-only",
-      "name": "Teksta sadaļa",
-      "settings": {
-        "heading": "Lāzerepilācija",
-        "text": "",
-        "text_html": ""
-      }
-    },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
+    "template_procedure_table_wpJzWq": {
+      "type": "template-procedure-table",
       "blocks": {
-        "service_kGdXVr": {
-          "type": "service",
-          "name": "Konstultācija",
+        "procedure_rFFaQA": {
+          "type": "procedure",
+          "name": "Paduses",
           "settings": {
-            "service_name": "Konstultācija",
-            "service_price": "60",
-            "service_length": "60"
+            "procedure_name": "Paduses",
+            "procedure_description": "Lāzerepilācija padusēs.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_x94BrX": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas",
+            "procedure_description": "Sānu joslu epilācija.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_bkd4KG": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns",
+            "procedure_description": "Pilna bikini zona.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_6bga9h": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+            "procedure_description": "Kombinēta bikini un sēžas zona.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_i37yRD": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+            "procedure_description": "Plaša epilācijas zona.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_AdLVNy": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse",
+            "procedure_description": "Vīriešu bikini epilācija.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_g9YHFR": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+            "procedure_description": "Pilna intīmās zonas epilācija.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
+            "apply_url": ""
           }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "procedure_rFFaQA",
+        "procedure_x94BrX",
+        "procedure_bkd4KG",
+        "procedure_6bga9h",
+        "procedure_i37yRD",
+        "procedure_AdLVNy",
+        "procedure_g9YHFR"
       ],
-      "name": "Konstultācija",
+      "name": "Lāzerepilācija",
       "settings": {
-        "title": "Konstultācija",
-        "content": "<p>Balstoties uz rezultātiem, uztura speciālists izstrādā piemērotu ēdienkarti un sniedz ieteikumus fiziskajām aktivitātēm, kas palīdzēs sasniegt vēlamo rezultātu efektīvāk. Konsultācija ir noderīga visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
+        "title": "Lāzerepilācija",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": true
       }
@@ -230,8 +303,7 @@
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
-    "template_text_section_JPJC6T",
-    "template_services_section_J6AXyp",
+    "template_procedure_table_wpJzWq",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
