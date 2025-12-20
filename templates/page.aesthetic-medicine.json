@@ -292,6 +292,18 @@
             "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_CGYxbJ": {
+          "type": "procedure",
+          "name": "Vairāku angiomu likvidēšana (līdz 10 gb.)",
+          "settings": {
+            "procedure_name": "Vairāku angiomu likvidēšana (līdz 10 gb.)",
+            "procedure_description": "Lāzerprocedūra sarkano angiom u likvidēšanai.",
+            "procedure_price": "€70 - €100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Ādas infekcijas</li><li>Fotosensitivitāte</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -299,7 +311,8 @@
         "procedure_yrpN8t",
         "procedure_dAyGMW",
         "procedure_XceWH6",
-        "procedure_dAEenw"
+        "procedure_dAEenw",
+        "procedure_CGYxbJ"
       ],
       "name": "Asinsvadu likvidēšana ",
       "settings": {
@@ -309,6 +322,20 @@
         "apply_url": "",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_t9CxmT": {
+      "type": "template-procedure-table",
+      "name": "Procedūru tabula",
+      "settings": {
+        "title": "Procedūras",
+        "content": "<p>Jūsu teksts šeit.</p>",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": false
       }
@@ -456,6 +483,7 @@
     "template_procedure_table_B3cdxV",
     "template_procedure_table_HbTjnp",
     "template_procedure_table_FPMR9H",
+    "template_procedure_table_t9CxmT",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
