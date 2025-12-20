@@ -370,6 +370,102 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_bJAdCU": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_DKXphd": {
+          "type": "procedure",
+          "name": " 1 cm2",
+          "settings": {
+            "procedure_name": " 1 cm2",
+            "procedure_description": "QS KTP lāzers melnu un krāsainu pigmentu likvidēšanai.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Fotosensitivitāte</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_rMFPaD": {
+          "type": "procedure",
+          "name": "2 cm2",
+          "settings": {
+            "procedure_name": "2 cm2",
+            "procedure_description": "Intensīvāka pigmentu apstrāde.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Asiņošanas traucējumi</li><li>Svaigs iedegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_RqFXxQ": {
+          "type": "procedure",
+          "name": "5 cm2",
+          "settings": {
+            "procedure_name": "5 cm2",
+            "procedure_description": "Vidēja laukuma tetovējuma lāzerlikvidēšana.",
+            "procedure_price": "€140",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes risks zonā</li><li>Infekcijas</li><li>Svaiga trauma</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_aMhiae": {
+          "type": "procedure",
+          "name": "10 cm2",
+          "settings": {
+            "procedure_name": "10 cm2",
+            "procedure_description": "Plašāka laukuma lāzerlikvidācija.",
+            "procedure_price": "€240",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdu veidošanās risks</li><li>Autoimūnas slimības</li><li>Asiņošana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_YmBkM7": {
+          "type": "procedure",
+          "name": "20 cm2",
+          "settings": {
+            "procedure_name": "20 cm2",
+            "procedure_description": "Liela laukuma apstrāde QS lāzerplatformā.",
+            "procedure_price": "€320",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Lietoti fotosensitīvi medikamenti</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_M6jRfC": {
+          "type": "procedure",
+          "name": "Permanentā grima dzēšana",
+          "settings": {
+            "procedure_name": "Permanentā grima dzēšana",
+            "procedure_description": "QS KTP lāzers sejas permanentā grima pigmenta izvadīšanai.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Grūtniecība</li><li>Fotosensitivitāte</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_DKXphd",
+        "procedure_rMFPaD",
+        "procedure_RqFXxQ",
+        "procedure_aMhiae",
+        "procedure_YmBkM7",
+        "procedure_M6jRfC"
+      ],
+      "name": "Tetovējumu likvidēšana",
+      "settings": {
+        "title": "Tetovējumu likvidēšana",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_cwjP3x": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -514,6 +610,7 @@
     "template_procedure_table_HbTjnp",
     "template_procedure_table_FPMR9H",
     "template_procedure_table_t9CxmT",
+    "template_procedure_table_bJAdCU",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
