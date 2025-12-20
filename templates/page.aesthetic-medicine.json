@@ -492,11 +492,102 @@
             "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>mūnsupresija</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_D4CWy7": {
+          "type": "procedure",
+          "name": "Veidojums virs 20 mm",
+          "settings": {
+            "procedure_name": "Veidojums virs 20 mm",
+            "procedure_description": "Plašāka veidojuma CO2 ablācija.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Imūnsupresija</li><li>Svaiga trauma</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_UDayUF": {
+          "type": "procedure",
+          "name": "Papillomas (segments)",
+          "settings": {
+            "procedure_name": "Papillomas (segments)",
+            "procedure_description": "CO2 ablācija papillomu grupai.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Slikta brūču dzīšana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_pMVLcL": {
+          "type": "procedure",
+          "name": "Keratomas (līdz 10 gb.)",
+          "settings": {
+            "procedure_name": "Keratomas (līdz 10 gb.)",
+            "procedure_description": "CO2 lāzers keratomu noņemšanai.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Pigmentētas neskaidras izmaiņas</li><li>Infekcija</li><li>Keloīdu risks</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_EkFfxp": {
+          "type": "procedure",
+          "name": "Kandilomu noņemšana",
+          "settings": {
+            "procedure_name": "Kandilomu noņemšana",
+            "procedure_description": "CO2 lāzers intīmo kārpu ārstēšanai.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Imūnsupresija</li><li>Akūtas infekcijas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_AkcDRg": {
+          "type": "procedure",
+          "name": "Ksantelazmas",
+          "settings": {
+            "procedure_name": "Ksantelazmas",
+            "procedure_description": "Acu plakstiņu tauku izgulsnējumu noņemšana.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asins recēšanas traucējumi</li><li>Plakstiņu infekcijas</li><li>Diabēta dekompensācija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_EWDrBY": {
+          "type": "procedure",
+          "name": "Kārpa viena",
+          "settings": {
+            "procedure_name": "Kārpa viena",
+            "procedure_description": "CO2 noņemšana vienai kārpai.",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Grūtniecība piesardzīgi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_hRjPGp": {
+          "type": "procedure",
+          "name": "Kārpas divas",
+          "settings": {
+            "procedure_name": "Kārpas divas",
+            "procedure_description": "Divu kārpu lāzerablācija.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Slikta dzīšana</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_6Tmyy8",
-        "procedure_RqgJAz"
+        "procedure_RqgJAz",
+        "procedure_D4CWy7",
+        "procedure_UDayUF",
+        "procedure_pMVLcL",
+        "procedure_EkFfxp",
+        "procedure_AkcDRg",
+        "procedure_EWDrBY",
+        "procedure_hRjPGp"
       ],
       "name": "Dermatoloģiski veidojumi",
       "settings": {
