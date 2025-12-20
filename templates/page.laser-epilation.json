@@ -153,8 +153,130 @@
             "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
             "apply_url": ""
           }
+        }
+      },
+      "block_order": [
+        "procedure_rFFaQA",
+        "procedure_x94BrX",
+        "procedure_bkd4KG",
+        "procedure_6bga9h",
+        "procedure_i37yRD",
+        "procedure_AdLVNy",
+        "procedure_g9YHFR",
+        "procedure_NTiAWV"
+      ],
+      "name": "Zonas",
+      "settings": {
+        "title": "Zonas",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
+        "open_by_default": false,
+        "space_bottom": true
+      }
+    },
+    "template_procedure_table_KbiR6F": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_DaRzdh": {
+          "type": "procedure",
+          "name": "Paduses",
+          "settings": {
+            "procedure_name": "Paduses",
+            "procedure_description": "Lāzerepilācija padusēs.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>",
+            "apply_url": ""
+          }
         },
-        "procedure_drDWrB": {
+        "procedure_EiFgen": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas",
+            "procedure_description": "Sānu joslu epilācija.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_QtQFtm": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns",
+            "procedure_description": "Pilna bikini zona.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_yqRbCK": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+            "procedure_description": "Kombinēta bikini un sēžas zona.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_YUw9mb": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+            "procedure_description": "Plaša epilācijas zona.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_nUCmBc": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse",
+            "procedure_description": "Vīriešu bikini epilācija.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_QaWAwq": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+            "procedure_description": "Pilna intīmās zonas epilācija.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_6kW6eK": {
+          "type": "procedure",
+          "name": "Sēža",
+          "settings": {
+            "procedure_name": "Sejas Sēža",
+            "procedure_description": "Sēžas zonas epilācija.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_hhVbEw": {
           "type": "procedure",
           "name": "Apakšdelmi",
           "settings": {
@@ -166,7 +288,7 @@
             "apply_url": ""
           }
         },
-        "procedure_R7RiBD": {
+        "procedure_dtU6id": {
           "type": "procedure",
           "name": "Augšdelmi",
           "settings": {
@@ -178,7 +300,7 @@
             "apply_url": ""
           }
         },
-        "procedure_EYhFK9": {
+        "procedure_n9AgUH": {
           "type": "procedure",
           "name": "Rokas visā garumā",
           "settings": {
@@ -190,7 +312,7 @@
             "apply_url": ""
           }
         },
-        "procedure_eVktzL": {
+        "procedure_zRmMxt": {
           "type": "procedure",
           "name": "Pirksti",
           "settings": {
@@ -202,7 +324,7 @@
             "apply_url": ""
           }
         },
-        "procedure_g8y3pi": {
+        "procedure_XkTnY8": {
           "type": "procedure",
           "name": "Plaukstu virspuses",
           "settings": {
@@ -214,7 +336,7 @@
             "apply_url": ""
           }
         },
-        "procedure_zBcbkD": {
+        "procedure_3GxTiY": {
           "type": "procedure",
           "name": "Apakšstilbi",
           "settings": {
@@ -226,7 +348,7 @@
             "apply_url": ""
           }
         },
-        "procedure_QHfArR": {
+        "procedure_Fwy4pi": {
           "type": "procedure",
           "name": "Augšstilbi ar celi",
           "settings": {
@@ -238,7 +360,7 @@
             "apply_url": ""
           }
         },
-        "procedure_tkh7Dn": {
+        "procedure_iWx4pn": {
           "type": "procedure",
           "name": "Kājas visā garumā",
           "settings": {
@@ -250,7 +372,7 @@
             "apply_url": ""
           }
         },
-        "procedure_GPf3DQ": {
+        "procedure_PJdCTV": {
           "type": "procedure",
           "name": "Pēdu virsma",
           "settings": {
@@ -262,7 +384,7 @@
             "apply_url": ""
           }
         },
-        "procedure_MWRGxj": {
+        "procedure_QgHhTQ": {
           "type": "procedure",
           "name": "Pirksti kājām",
           "settings": {
@@ -274,7 +396,7 @@
             "apply_url": ""
           }
         },
-        "procedure_4nwwfk": {
+        "procedure_eqYgK3": {
           "type": "procedure",
           "name": "Augšlūpa",
           "settings": {
@@ -285,28 +407,117 @@
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_WwETGy": {
+          "type": "procedure",
+          "name": "Zods",
+          "settings": {
+            "procedure_name": "Zods",
+            "procedure_description": "Zoda epilācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_yfKzyV": {
+          "type": "procedure",
+          "name": "Bakenes",
+          "settings": {
+            "procedure_name": "Bakenes",
+            "procedure_description": "Vaigu sānu zonas epilācija.",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Akne</li><li>Rozācija</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_ptDgMX": {
+          "type": "procedure",
+          "name": "Kakls",
+          "settings": {
+            "procedure_name": "Kakls",
+            "procedure_description": "Kakla apmatojuma epilācija.",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Folikulīts</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_pTENRn": {
+          "type": "procedure",
+          "name": "Vaigi",
+          "settings": {
+            "procedure_name": "Vaigi",
+            "procedure_description": "Vaigu epilācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Rozācija</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_CLa84W": {
+          "type": "procedure",
+          "name": "Žokļa līnija",
+          "settings": {
+            "procedure_name": "Žokļa līnija",
+            "procedure_description": "Žokļa apakšlīnijas epilācija.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Dermatīts</li><li>Folikulīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_aqzXWq": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "apply_url": ""
+          }
+        },
+        "procedure_wRD6LG": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
-        "procedure_rFFaQA",
-        "procedure_x94BrX",
-        "procedure_bkd4KG",
-        "procedure_6bga9h",
-        "procedure_i37yRD",
-        "procedure_AdLVNy",
-        "procedure_g9YHFR",
-        "procedure_NTiAWV",
-        "procedure_drDWrB",
-        "procedure_R7RiBD",
-        "procedure_EYhFK9",
-        "procedure_eVktzL",
-        "procedure_g8y3pi",
-        "procedure_zBcbkD",
-        "procedure_QHfArR",
-        "procedure_tkh7Dn",
-        "procedure_GPf3DQ",
-        "procedure_MWRGxj",
-        "procedure_4nwwfk"
+        "procedure_DaRzdh",
+        "procedure_EiFgen",
+        "procedure_QtQFtm",
+        "procedure_yqRbCK",
+        "procedure_YUw9mb",
+        "procedure_nUCmBc",
+        "procedure_QaWAwq",
+        "procedure_6kW6eK",
+        "procedure_hhVbEw",
+        "procedure_dtU6id",
+        "procedure_n9AgUH",
+        "procedure_zRmMxt",
+        "procedure_XkTnY8",
+        "procedure_3GxTiY",
+        "procedure_Fwy4pi",
+        "procedure_iWx4pn",
+        "procedure_PJdCTV",
+        "procedure_QgHhTQ",
+        "procedure_eqYgK3",
+        "procedure_WwETGy",
+        "procedure_yfKzyV",
+        "procedure_ptDgMX",
+        "procedure_pTENRn",
+        "procedure_CLa84W",
+        "procedure_aqzXWq",
+        "procedure_wRD6LG"
       ],
       "name": "Lāzerepilācija",
       "settings": {
@@ -460,6 +671,7 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_procedure_table_wpJzWq",
+    "template_procedure_table_KbiR6F",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
