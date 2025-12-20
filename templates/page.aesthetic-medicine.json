@@ -102,12 +102,38 @@
             "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_G9jxja": {
+          "type": "procedure",
+          "name": "Fotoatjaunošana – seja, kakls, dekoltē",
+          "settings": {
+            "procedure_name": "Fotoatjaunošana – seja, kakls, dekoltē",
+            "procedure_description": "Kompleksa fotoatjaunošana trīs zonām.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_JwA7c6": {
+          "type": "procedure",
+          "name": "Clear Lift – seja",
+          "settings": {
+            "procedure_name": "Clear Lift – seja",
+            "procedure_description": "Netraumatiska lāzerliftinga procedūra ādas tonusa uzlabošanai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_idQC3f",
         "procedure_iyWRx4",
-        "procedure_6qG7Li"
+        "procedure_6qG7Li",
+        "procedure_G9jxja",
+        "procedure_JwA7c6"
       ],
       "name": "Procedūru tabula",
       "settings": {
