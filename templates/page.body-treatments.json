@@ -149,6 +149,54 @@
             "contraindications_text": "<ul><li>Trombozes risks</li><li>Smagas hroniskas saslimšanas dekompensācijas stadijā</li><li>Grūtniecība</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_z9PU8J": {
+          "type": "procedure",
+          "name": "Kājas + sēža + limfodrenāžas zābaki",
+          "settings": {
+            "procedure_name": "Kājas + sēža + limfodrenāžas zābaki",
+            "procedure_description": "Kombinēta vakummasāža kājām un sēžai ar limfodrenāžas zābakiem.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga perifēro artēriju slimība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_bfcw4i": {
+          "type": "procedure",
+          "name": "Pressoterapija",
+          "settings": {
+            "procedure_name": "Pressoterapija",
+            "procedure_description": "Aparātprocedūra limfodrenāžas stimulēšanai, tūskas mazināšanai un noguruma samazināšanai kājās.",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaiga tromboze</li><li>Smaga sirds mazspēja</li><li>Nediagnosticēta tūska ar nezināmu etioloģiju</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_9Md97E": {
+          "type": "procedure",
+          "name": "Pressoterapija ar skrubēšanu, Isol apsējs 40 min",
+          "settings": {
+            "procedure_name": "Pressoterapija ar skrubēšanu, Isol apsējs 40 min",
+            "procedure_description": "Pressoterapija kombinācijā ar ķermeņa skrubi un Isol apsēju intensīvai limfodrenāžai.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Atvērtas brūces vai ādas bojājumi</li><li>Tromboflebīts</li><li>Smaga sirds mazspēja</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_6eCAmf": {
+          "type": "procedure",
+          "name": "Pressoterapija pie procedūras",
+          "settings": {
+            "procedure_name": "Pressoterapija pie procedūras",
+            "procedure_description": "Papildpakalpojums – pressoterapija pie citas ķermeņa procedūras.",
+            "procedure_price": "€15",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga vēnu mazspēja</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -158,7 +206,11 @@
         "procedure_C46nWk",
         "procedure_ihgy7i",
         "procedure_hYKkWH",
-        "procedure_GTwaMy"
+        "procedure_GTwaMy",
+        "procedure_z9PU8J",
+        "procedure_bfcw4i",
+        "procedure_9Md97E",
+        "procedure_6eCAmf"
       ],
       "name": "Vakummasāža un presoterapija",
       "settings": {
