@@ -420,11 +420,24 @@
             "contraindications_text": "<ul><li>Akūtas infekcijas slimības ar drudzi (vizīti var pārcelt)</li><li>Nepietiekama sadarbspēja smagas psihiskas saslimšanas gadījumā</li><li>Nepilngadīgajiem nepieciešama likumiska pārstāvja klātbūtne</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_LQP6AL": {
+          "type": "procedure",
+          "name": "Atkārtota konsultācija mēneša laikā",
+          "settings": {
+            "procedure_name": "Atkārtota konsultācija mēneša laikā",
+            "procedure_description": "Atkārtota vizīte diagnozes precizēšanai, terapijas izvērtēšanai un korekcijai.",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta smaga saslimšana ar drudzi</li><li>Neatbilstoša sagatavošanās, ja nepieciešami konkrēti analīžu rezultāti</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_7MiX6j",
-        "procedure_F8FXGT"
+        "procedure_F8FXGT",
+        "procedure_LQP6AL"
       ],
       "name": "Procedūru tabula",
       "settings": {
