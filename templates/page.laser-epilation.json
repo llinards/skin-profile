@@ -346,222 +346,6 @@
     "template_procedure_table_FfwFrg": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_KzEt6x": {
-          "type": "procedure",
-          "name": "Paduses",
-          "settings": {
-            "procedure_name": "Paduses",
-            "procedure_description": "Lāzerepilācija padusēs.",
-            "procedure_price": "€50",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_EcQyqp": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas",
-            "procedure_description": "Sānu joslu epilācija.",
-            "procedure_price": "€40",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_N9cBdC": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – pilns",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – pilns",
-            "procedure_description": "Pilna bikini zona.",
-            "procedure_price": "€65",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_wegxK3": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
-            "procedure_description": "Kombinēta bikini un sēžas zona.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_Bbka9T": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – pilns + sēžas intīmā zona",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – pilns + sēžas intīmā zona",
-            "procedure_description": "Plaša epilācijas zona.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_hnLAbk": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse",
-            "procedure_description": "Vīriešu bikini epilācija.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_hiLbDU": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-            "procedure_description": "Pilna intīmās zonas epilācija.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_CWwFxK": {
-          "type": "procedure",
-          "name": "Sēža",
-          "settings": {
-            "procedure_name": "Sejas Sēža",
-            "procedure_description": "Sēžas zonas epilācija.",
-            "procedure_price": "€50",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_kyqrm6": {
-          "type": "procedure",
-          "name": "Apakšdelmi",
-          "settings": {
-            "procedure_name": "Apakšdelmi",
-            "procedure_description": "Apakšdelmu lāzerepilācija.",
-            "procedure_price": "€55",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_FyNq9U": {
-          "type": "procedure",
-          "name": "Augšdelmi",
-          "settings": {
-            "procedure_name": "Augšdelmi",
-            "procedure_description": "Augšdelmu epilācija.",
-            "procedure_price": "€55",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Infekcija</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_pjEm9A": {
-          "type": "procedure",
-          "name": "Rokas visā garumā",
-          "settings": {
-            "procedure_name": "Rokas visā garumā",
-            "procedure_description": "Pilna roku epilācija.",
-            "procedure_price": "€80",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Svaigs apdegums</li><li>Herpes informācija šeit.</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_DHwLVt": {
-          "type": "procedure",
-          "name": "Pirksti",
-          "settings": {
-            "procedure_name": "Pirksti",
-            "procedure_description": "Pirkstu lāzerepilācija.",
-            "procedure_price": "€20",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Traumas</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_FwHHah": {
-          "type": "procedure",
-          "name": "Plaukstu virspuses",
-          "settings": {
-            "procedure_name": "Plaukstu virspuses",
-            "procedure_description": "Plaukstu lāzerepilācija.",
-            "procedure_price": "€35",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Psoriāze</li><li>Ekzēma</li><li>Infekcija</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_BhnAUc": {
-          "type": "procedure",
-          "name": "Apakšstilbi",
-          "settings": {
-            "procedure_name": "Apakšstilbi",
-            "procedure_description": "Apakšstilbu epilācija.",
-            "procedure_price": "€90",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Varikozas vēnas</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_yhJWtT": {
-          "type": "procedure",
-          "name": "Augšstilbi ar celi",
-          "settings": {
-            "procedure_name": "Augšstilbi ar celi",
-            "procedure_description": "Augšstilbu epilācija.",
-            "procedure_price": "€100",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_Aj3X4f": {
-          "type": "procedure",
-          "name": "Kājas visā garumā",
-          "settings": {
-            "procedure_name": "Kājas visā garumā",
-            "procedure_description": "Pilna kāju epilācija.",
-            "procedure_price": "€150",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Smags dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_4BXCr4": {
-          "type": "procedure",
-          "name": "Pēdu virsma",
-          "settings": {
-            "procedure_name": "Pēdu virsma",
-            "procedure_description": "Pēdu lāzerepilācija.",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Sēnīte</li><li>Traumas</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_brcFpV": {
-          "type": "procedure",
-          "name": "Pirksti kājām",
-          "settings": {
-            "procedure_name": "Pirksti kājām",
-            "procedure_description": "Pirkstu zona.",
-            "procedure_price": "€25",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sēnīte</li><li>Infekcija</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
         "procedure_eCzbRa": {
           "type": "procedure",
           "name": "Augšlūpa",
@@ -634,60 +418,44 @@
             "apply_url": ""
           }
         },
-        "procedure_UVU4nm": {
+        "procedure_cGwAjJ": {
           "type": "procedure",
+          "name": "Zona starp uzacīm",
           "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
+            "procedure_name": "Zona starp uzacīm",
+            "procedure_description": "Starpuzacu epilācija.",
+            "procedure_price": "€15",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Dermatīts</li></ul>",
             "apply_url": ""
           }
         },
-        "procedure_zxQqfb": {
+        "procedure_96cjyF": {
           "type": "procedure",
+          "name": "Pieres līnija",
           "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
+            "procedure_name": "Pieres līnija",
+            "procedure_description": "Pieres apmatojuma epilācija.",
+            "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "contraindications_text": "<ul><li>Akne</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
             "apply_url": ""
           }
         }
       },
       "block_order": [
-        "procedure_KzEt6x",
-        "procedure_EcQyqp",
-        "procedure_N9cBdC",
-        "procedure_wegxK3",
-        "procedure_Bbka9T",
-        "procedure_hnLAbk",
-        "procedure_hiLbDU",
-        "procedure_CWwFxK",
-        "procedure_kyqrm6",
-        "procedure_FyNq9U",
-        "procedure_pjEm9A",
-        "procedure_DHwLVt",
-        "procedure_FwHHah",
-        "procedure_BhnAUc",
-        "procedure_yhJWtT",
-        "procedure_Aj3X4f",
-        "procedure_4BXCr4",
-        "procedure_brcFpV",
         "procedure_eCzbRa",
         "procedure_NhYYcg",
         "procedure_HRjQbA",
         "procedure_Ldhw8E",
         "procedure_EYJNwt",
         "procedure_rQ9wiA",
-        "procedure_UVU4nm",
-        "procedure_zxQqfb"
+        "procedure_cGwAjJ",
+        "procedure_96cjyF"
       ],
-      "name": "Lāzerepilācija",
+      "name": "Seja",
       "settings": {
-        "title": "Lāzerepilācija",
+        "title": "Seja",
         "content": "",
         "disclaimer": "",
         "apply_url": "",
