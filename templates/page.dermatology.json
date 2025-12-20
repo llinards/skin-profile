@@ -64,34 +64,6 @@
         "text_html": ""
       }
     },
-    "template_procedure_table_v2_Le4bkD": {
-      "type": "template-procedure-table-v2",
-      "blocks": {
-        "procedure_qXa4jC": {
-          "type": "procedure",
-          "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_url": "",
-            "apply_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "procedure_qXa4jC"
-      ],
-      "name": "Procedūru tabula (V2)",
-      "settings": {
-        "title": "Procedūras",
-        "content": "<p>Jūsu teksts šeit.</p>",
-        "disclaimer": "",
-        "apply_url": "",
-        "apply_cta": "Pieteikt",
-        "space_bottom": false
-      }
-    },
     "template_services_section_J6AXyp": {
       "type": "template-dropdown-procedure",
       "blocks": {
