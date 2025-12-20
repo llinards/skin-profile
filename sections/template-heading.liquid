@@ -1,0 +1,43 @@
+{%- assign heading_tag = section.settings.heading_level | default: 'h2' -%}
+<{{ heading_tag }}>
+  {{ section.settings.heading }}
+</{{ heading_tag }}>
+
+{% schema %}
+{
+  "name": "Virsraksts",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Virsraksts",
+      "default": "Procedūras"
+    },
+    {
+      "type": "select",
+      "id": "heading_level",
+      "label": "Virsraksta līmenis",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        }
+      ],
+      "default": "h2",
+      "info": "Izvēlieties piemērotu virsraksta līmeni. Virsrakstiem jābūt secīgai struktūrai (H1 → H2 → H3 → H4). Lapā drīkst būt tikai viens H1 virsraksts."
+    }
+  ]
+}
+{% endschema %}
