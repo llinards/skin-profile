@@ -134,6 +134,102 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_fCMYGY": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_VMHggC": {
+          "type": "procedure",
+          "name": "Seja",
+          "settings": {
+            "procedure_name": "Seja",
+            "procedure_description": "Netraumatiska lāzerliftinga procedūra ādas tonusa uzlabošanai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_TaBFx7": {
+          "type": "procedure",
+          "name": "Seja un pazode",
+          "settings": {
+            "procedure_name": "Seja un pazode",
+            "procedure_description": "Lāzerliftinga terapija sejas un zoda zonai.",
+            "procedure_price": "€200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_PCR8XC": {
+          "type": "procedure",
+          "name": "Kakls",
+          "settings": {
+            "procedure_name": "Kakls",
+            "procedure_description": "Lāzerliftinga procedūra kakla ādai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_XVXBKB": {
+          "type": "procedure",
+          "name": "Dekoltē",
+          "settings": {
+            "procedure_name": "Dekoltē",
+            "procedure_description": "Dekoltē zonas atjaunošana.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_a9G4TJ": {
+          "type": "procedure",
+          "name": "Seja, kakls, dekoltē",
+          "settings": {
+            "procedure_name": "Seja, kakls, dekoltē",
+            "procedure_description": "Pilna liftinga procedūra trim zonām.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_hzEzfx": {
+          "type": "procedure",
+          "name": "Acu zona",
+          "settings": {
+            "procedure_name": "Acu zona",
+            "procedure_description": "Maiga liftinga procedūra acu zonai.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts ap acīm</li><li>Herpes</li><li>Svaigs iekaisums</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_VMHggC",
+        "procedure_TaBFx7",
+        "procedure_PCR8XC",
+        "procedure_XVXBKB",
+        "procedure_a9G4TJ",
+        "procedure_hzEzfx"
+      ],
+      "name": "Clear Lift",
+      "settings": {
+        "title": "Clear Lift",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_wcKf3n": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -275,6 +371,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_procedure_table_mXB4KL",
+    "template_procedure_table_fCMYGY",
     "template_services_carousel_grid_wcKf3n",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
