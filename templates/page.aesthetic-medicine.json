@@ -192,13 +192,52 @@
             "contraindications_text": "<ul><li>Miastēnija</li><li>Alerģijas</li><li>Grūtniecība</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_Y3MUbJ": {
+          "type": "procedure",
+          "name": "Padušu svīšana",
+          "settings": {
+            "procedure_name": "Padušu svīšana",
+            "procedure_description": "Hiperhidrozes ārstēšana ar botulīnu.",
+            "procedure_price": "€350",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Grūtniecība</li><li>Asins recēšanas traucējumi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_7t7Q3p": {
+          "type": "procedure",
+          "name": "Smaganu smaids",
+          "settings": {
+            "procedure_name": "Smaganu smaids",
+            "procedure_description": "Gummy smile korekcija.",
+            "procedure_price": "€90",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija</li><li>Infekcija</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_96H3wk": {
+          "type": "procedure",
+          "name": "Košanas muskuļi",
+          "settings": {
+            "procedure_name": "Košanas muskuļi",
+            "procedure_description": "Masetru relaksācija slaidākam sejas ovālam.",
+            "procedure_price": "€280",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Nervu slimības</li><li>Antikoagulanti</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
         "procedure_r99LKh",
         "procedure_pHqKxn",
         "procedure_nDkTKL",
-        "procedure_yB3hK7"
+        "procedure_yB3hK7",
+        "procedure_Y3MUbJ",
+        "procedure_7t7Q3p",
+        "procedure_96H3wk"
       ],
       "name": "Botulīns",
       "settings": {
