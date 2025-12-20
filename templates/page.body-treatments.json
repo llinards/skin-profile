@@ -55,40 +55,121 @@
         "add_top_padding": false
       }
     },
-    "template_text_section_JPJC6T": {
-      "type": "template-text-only",
-      "name": "Teksta sadaļa",
+    "template_heading_EqJntK": {
+      "type": "template-heading",
+      "name": "Ķermeņa procedūras",
       "settings": {
         "heading": "Ķermeņa procedūras",
-        "text": "",
-        "text_html": ""
+        "heading_level": "h2"
       }
     },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
+    "template_procedure_table_q4pgg9": {
+      "type": "template-procedure-table",
       "blocks": {
-        "service_kGdXVr": {
-          "type": "service",
-          "name": "Konstultācija",
+        "procedure_cYVJVJ": {
+          "type": "procedure",
+          "name": "Mugura + rokas",
           "settings": {
-            "service_name": "Konstultācija",
-            "service_price": "60",
-            "service_length": "60"
+            "procedure_name": "Mugura + rokas",
+            "procedure_description": "Vakuuma masāža mugurai un rokām limfodrenāžas un muskuļu atslābināšanas veicināšanai.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Tromboflebīts vai tromboze</li><li>Smagas sirds un asinsvadu saslimšanas</li><li>Ādas infekcijas apstrādes zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_gDj3Yr": {
+          "type": "procedure",
+          "name": "Vēders",
+          "settings": {
+            "procedure_name": "Vēders",
+            "procedure_description": "Vakuuma masāža vēdera zonai limfas plūsmas un mikrocirkulācijas uzlabošanai.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Vēdera trūce</li><li>Akūtas ginekoloģiskas vai gastrointestinālas saslimšanas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_k4A8Br": {
+          "type": "procedure",
+          "name": "Kājas + sēža",
+          "settings": {
+            "procedure_name": "Kājas + sēža",
+            "procedure_description": "Vakummasāža kājām un sēžas zonai celulīta un pietūkuma mazināšanai.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Ādas bojājumi apstrādes zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_C46nWk": {
+          "type": "procedure",
+          "name": "Kājas + sēža + vēders",
+          "settings": {
+            "procedure_name": "Kājas + sēža + vēders",
+            "procedure_description": "Kompleksa vakummasāža kājām, sēžai un vēdera zonai ķermeņa kontūras uzlabošanai.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Trombozes risks</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_ihgy7i": {
+          "type": "procedure",
+          "name": "Kājas + sēža + mugura",
+          "settings": {
+            "procedure_name": "Kājas + sēža + mugura",
+            "procedure_description": "Vakummasāža kājām, sēžai un mugurai limfodrenāžas un tonusa uzlabošanai.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Akūtas muskuļu-skeleta traumas</li><li>Izteiktas vēnu saslimšanas</li><li>Ādas infekcijas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_hYKkWH": {
+          "type": "procedure",
+          "name": "Viss ķermenis",
+          "settings": {
+            "procedure_name": "Viss ķermenis",
+            "procedure_description": "Pilna ķermeņa vakummasāža limfodrenāžai, celulīta mazināšanai un tonusa uzlabošanai.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smaga sirds mazspēja</li><li>Tromboflebīts</li><li>Sistēmiskas infekcijas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_GTwaMy": {
+          "type": "procedure",
+          "name": "Viss ķermenis (10 reizes)",
+          "settings": {
+            "procedure_name": "Viss ķermenis (10 reizes)",
+            "procedure_description": "Kurss ar 10 pilna ķermeņa vakummasāžas procedūrām.",
+            "procedure_price": "€550",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Trombozes risks</li><li>Smagas hroniskas saslimšanas dekompensācijas stadijā</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
           }
         }
       },
       "block_order": [
-        "service_kGdXVr"
+        "procedure_cYVJVJ",
+        "procedure_gDj3Yr",
+        "procedure_k4A8Br",
+        "procedure_C46nWk",
+        "procedure_ihgy7i",
+        "procedure_hYKkWH",
+        "procedure_GTwaMy"
       ],
-      "name": "Konstultācija",
+      "name": "Vakummasāža un presoterapija",
       "settings": {
-        "title": "Konstultācija",
-        "content": "<p>Balstoties uz rezultātiem, uztura speciālists izstrādā piemērotu ēdienkarti un sniedz ieteikumus fiziskajām aktivitātēm, kas palīdzēs sasniegt vēlamo rezultātu efektīvāk. Konsultācija ir noderīga visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
+        "title": "Vakummasāža un presoterapija",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
         "open_by_default": false,
-        "space_bottom": true
+        "space_bottom": false
       }
     },
     "template_services_carousel_grid_N7bVQt": {
@@ -230,8 +311,8 @@
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
-    "template_text_section_JPJC6T",
-    "template_services_section_J6AXyp",
+    "template_heading_EqJntK",
+    "template_procedure_table_q4pgg9",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
