@@ -64,593 +64,147 @@
         "text_html": ""
       }
     },
-    "template_services_section_J6AXyp": {
-      "type": "template-dropdown-procedure",
+    "template_heading_BPKB6t": {
+      "type": "template-heading",
+      "name": "Kosmetoloģijas procedūras",
+      "settings": {
+        "heading": "Kosmetoloģijas procedūras",
+        "heading_level": "h2"
+      }
+    },
+    "template_procedure_table_UXCkTh": {
+      "type": "template-procedure-table",
       "blocks": {
-        "service_kGdXVr": {
-          "type": "service",
+        "procedure_TALwPx": {
+          "type": "procedure",
           "name": "Sejas ādas dziļā tīrīšana",
           "settings": {
-            "service_name": "Sejas ādas dziļā tīrīšana",
-            "service_price": "€60",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_kGdXVr"
-      ],
-      "name": "Sejas ādas dziļā tīrīšana",
-      "settings": {
-        "title": "Sejas ādas dziļā tīrīšana",
-        "content": "<p>Procedūras mērķis ir nodrošināt ādas efektīvu un dziļu attīrīšanu visiem ādas tipiem.</p>",
-        "service_disclaimer": "",
-        "service_url": "shopify://pages/appointment-booking",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_qjdJcX": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_4HgD7c": {
-          "type": "service",
-          "name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
-          "settings": {
-            "service_name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
-            "service_price": "€65",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_4HgD7c"
-      ],
-      "name": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
-      "settings": {
-        "title": "Mikrodermobrāzija pelēcīgai, nogurušai sejas ādai",
-        "content": "<p>Procedūra nodrošina ādas virsējā slāņa, nedzīvo šūnu eksfoliāciju, neskarot dzīvas un veselās šūnas.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_services_section_kPR4ih": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_yfca67": {
-          "type": "service",
-          "name": "GENEO X sejai",
-          "settings": {
-            "service_name": "GENEO X sejai",
-            "service_price": "€130",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_yfca67"
-      ],
-      "name": "GENEO X sejai",
-      "settings": {
-        "title": "GENEO X sejai",
-        "content": "<p>Procedūra ietver četras dermālās aparāttehnoloģijas vienā sesijā: Tripollar RF, CO2 burbuļu dermālo oksigenāciju, Ultrasound un Neo Massage. Mērķis – attīrīt ādu un veicināt kolagēna un elastāna sintēzi.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_WVT8jP": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_BiE74w": {
-          "type": "service",
-          "name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
-          "settings": {
-            "service_name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
-            "service_price": "€150",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_BiE74w"
-      ],
-      "name": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
-      "settings": {
-        "title": "GENEO X sejai, kaklam, dekoltē un plaukstu virsmām",
-        "content": "<p>Četras dermālās aparāttehnoloģijas vienā sesijā: Tripollar RF, CO2 oksigenācija, Ultrasound un Neo Massage. Procedūras mērķis – ādas attīrīšana un kolagēna sintēzes aktivizēšana plašākā zonā.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_9dWycV": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_JPQQbE": {
-          "type": "service",
-          "name": "GENEO X divu aparātmetožu kopums",
-          "settings": {
-            "service_name": "GENEO X divu aparātmetožu kopums",
-            "service_price": "€100",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_JPQQbE"
-      ],
-      "name": "GENEO X divu aparātmetožu kopums",
-      "settings": {
-        "title": "GENEO X divu aparātmetožu kopums",
-        "content": "<p>Procedūra apvieno ādas attīrīšanu, Tripollar radiofrekvenci un ultraskaņu, lai stimulētu kolagēna sintēzi, aktivizētu aktīvo vielu uzsūkšanos un mazinātu novecošanās pazīmes.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_AtYwty": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_c9Whit": {
-          "type": "service",
-          "name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
-          "settings": {
-            "service_name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
-            "service_price": "€65",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_c9Whit"
-      ],
-      "name": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
-      "settings": {
-        "title": "Elektroporācija – bioloģiski aktīvo vielu ievadīšana ādā",
-        "content": "<p>Mūsdienīga, neinvazīva metode aktīvo vielu ievadīšanai ādā grumbu mazināšanai, pigmentācijas korekcijai un dziļai mitrināšanai.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_nYUEGQ": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_rQFRDH": {
-          "type": "service",
-          "name": "Fresh Up",
-          "settings": {
-            "service_name": "Fresh Up",
-            "service_price": "€90",
-            "service_length": "60"
+            "procedure_name": "Sejas ādas dziļā tīrīšana",
+            "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas efektīvu un dziļu tīrīšanu visiem ādas tipiem.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Aktīvas baktēriju vai vīrusu ādas infekcijas</li><li>Smags aknes iekaisums ar pustulām</li><li>Atvērtas brūces vai svaigi ādas bojājumi</li></ul>",
+            "apply_url": ""
           }
         },
-        "service_mbUyzC": {
-          "type": "service",
-          "name": "Energy",
+        "procedure_WW3krV": {
+          "type": "procedure",
+          "name": "Jauniešu sejas ādas tīrīšana",
           "settings": {
-            "service_name": "Energy",
-            "service_price": "€120",
-            "service_length": "60"
+            "procedure_name": "Jauniešu sejas ādas tīrīšana",
+            "procedure_description": "Procedūru kopums ar mērķi nodrošināt saudzīgu ādas attīrīšanu jauniešu ādai.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Izteikts akūts iekaisums ādā</li><li>Dermatīts saasinājuma fāzē</li><li>Svaigs saules apdegums sejas zonā</li></ul>",
+            "apply_url": ""
           }
         },
-        "service_aX3RVG": {
-          "type": "service",
-          "name": "Classic",
+        "procedure_Lc8XyH": {
+          "type": "procedure",
+          "name": "Mikrodermobrāzija",
           "settings": {
-            "service_name": "Classic",
-            "service_price": "€230",
-            "service_length": "60"
+            "procedure_name": "Mikrodermobrāzija",
+            "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas virsējā slāņa, nedzīvo šūnu eksfoliāciju, neskarot dzīvās šūnas.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Rozācija aktīvā stadijā</li><li>Psoriāze apstrādes zonā</li><li>Aktīvas strutainas izsitumu perēkļi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_xzbkEM": {
+          "type": "procedure",
+          "name": "Elektroporācija",
+          "settings": {
+            "procedure_name": "Elektroporācija",
+            "procedure_description": "Mūsdienīga, neinvazīva aktīvo vielu ievadīšana ādā grumbu mazināšanai, pigmentācijas un dziļas mitrināšanas nodrošināšanai.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sirds stimulatora vai cita implantēta elektrokardiostimulatora klātbūtne </li><li>Epilepsija</li><li>Grūtniecība (piesardzības nolūkos)</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_RCia4c": {
+          "type": "procedure",
+          "name": "Radiofrekvence",
+          "settings": {
+            "procedure_name": "Radiofrekvence",
+            "procedure_description": "Radiofrekvences procedūra sejas ādas struktūras uzlabošanai, sejas ovāla savilkšanai un kolagēna ražošanas stimulēšanai.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Metāla implanti apstrādes zonā</li><li>Smaga kardiovaskulāra patoloģija</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_YgnDcq": {
+          "type": "procedure",
+          "name": "Frakcionētā radiofrekvence",
+          "settings": {
+            "procedure_name": "Frakcionētā radiofrekvence",
+            "procedure_description": "Tiek uzlabota asins mikrocirkulācija, tonuss, mazināta tūska, padarot ādu blīvāku un nodrošinot tūlītēju liftinga efektu.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Aktīvas ādas infekcijas vai iekaisumi</li><li>Autoimūnas ādas slimības aktīvā fāzē</li><li>Grūtniecība un zīdīšanas periods (piesardzība)</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_N8Knkp": {
+          "type": "procedure",
+          "name": "Lukss klases programma",
+          "settings": {
+            "procedure_name": "Lukss klases programma",
+            "procedure_description": "Divu aparātprocedūru kopums sejas ādas tūlītējai atjaunošanai, svaigumam, mirdzumam un liftinga efektam.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Nediagnosticētas ādas izmaiņas</li><li>Grūtniecība (atkarībā no izmantotajām metodēm)</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_jhmg7h": {
+          "type": "procedure",
+          "name": "Endosfēra",
+          "settings": {
+            "procedure_name": "Endosfēra",
+            "procedure_description": "Mikrovibrāciju un kompresijas metode, kas uzlabo limfas atteci, mazina tūsku, maisiņus zem acīm un elastības zudumu.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigas trombozes vai tromboflebīts</li><li>Smaga sirds mazspēja</li><li>Akūtas ādas infekcijas apstrādes zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_G9hkaT": {
+          "type": "procedure",
+          "name": "Mikrostrāvu terapija",
+          "settings": {
+            "procedure_name": "Mikrostrāvu terapija",
+            "procedure_description": "Procedūra sejas ovāla nostiprināšanai, uzlabo sejas ādas apasiņošanu, mazina tūsku un pilnveido ādas vispārējo stāvokli.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sirds stimulatora klātbūtne</li><li>Epilepsija</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
+            "apply_url": ""
           }
         }
       },
       "block_order": [
-        "service_rQFRDH",
-        "service_mbUyzC",
-        "service_aX3RVG"
+        "procedure_TALwPx",
+        "procedure_WW3krV",
+        "procedure_Lc8XyH",
+        "procedure_xzbkEM",
+        "procedure_RCia4c",
+        "procedure_YgnDcq",
+        "procedure_N8Knkp",
+        "procedure_jhmg7h",
+        "procedure_G9hkaT"
       ],
-      "name": "Green Peel",
+      "name": "Procedūru tabula",
       "settings": {
-        "title": "Green Peel",
-        "content": "<p>Bioloģiska ādas atjaunošanas procedūra, kas balstīta uz Dr. Christine Schrammek izstrādāto fitopīlingu – augu maisījumu, kas stimulē ādas dabīgo reģenerāciju.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
+        "title": "Procedūras",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
-      }
-    },
-    "template_dropdown_service_aTUKmP": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_HMWkgE": {
-          "type": "service",
-          "name": "Mikroadatu terapija",
-          "settings": {
-            "service_name": "Mikroadatu terapija",
-            "service_price": "€80",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_HMWkgE"
-      ],
-      "name": "Mikroadatu terapija",
-      "settings": {
-        "title": "Mikroadatu terapija",
-        "content": "<p>Pretnovecošanās procedūra, kuras laikā zemādā tiek ievadītas bioloģiski aktīvās vielas. </p><p>Mikroskopiskas traumas stimulē ādas dabīgo atjaunošanos. Izmanto vienreizējus mikroadata uzgaļus.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_GCjiiP": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_wP8dqB": {
-          "type": "service",
-          "name": "Neuvia Hydro Delux",
-          "settings": {
-            "service_name": "Neuvia Hydro Delux",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_LD7cXc": {
-          "type": "service",
-          "name": "Electri acu zonai",
-          "settings": {
-            "service_name": "Electri acu zonai",
-            "service_price": "€160",
-            "service_length": "60"
-          }
-        },
-        "service_VkN6Le": {
-          "type": "service",
-          "name": "Xela Rederm 1,8%",
-          "settings": {
-            "service_name": "Xela Rederm 1,8%",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_t7BwDW": {
-          "type": "service",
-          "name": "Xela Rederm 2,0%",
-          "settings": {
-            "service_name": "Xela Rederm 2,0%",
-            "service_price": "€200",
-            "service_length": "60"
-          }
-        },
-        "service_7CxKEy": {
-          "type": "service",
-          "name": "Nucleofill Medium",
-          "settings": {
-            "service_name": "Nucleofill Medium",
-            "service_price": "€180",
-            "service_length": "60"
-          }
-        },
-        "service_iyHFwC": {
-          "type": "service",
-          "name": "Nucleofill Strong",
-          "settings": {
-            "service_name": "Nucleofill Strong",
-            "service_price": "€200",
-            "service_length": "60"
-          }
-        },
-        "service_qmrXka": {
-          "type": "service",
-          "name": "Profhilo (2 ml)",
-          "settings": {
-            "service_name": "Profhilo (2 ml)",
-            "service_price": "€250",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_wP8dqB",
-        "service_LD7cXc",
-        "service_VkN6Le",
-        "service_t7BwDW",
-        "service_7CxKEy",
-        "service_iyHFwC",
-        "service_qmrXka"
-      ],
-      "name": "Biorevitalizācija",
-      "settings": {
-        "title": "Biorevitalizācija",
-        "content": "<p>Hialuronskābes ievadīšana ādā dziļai mitrināšanai, grumbu aizpildīšanai, ādas kvalitātes uzlabošanai un kolagēna sintēzes stimulēšanai.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_788iPN": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_nVf6YV": {
-          "type": "service",
-          "name": "Polinukleotīdi",
-          "settings": {
-            "service_name": "Polinukleotīdi",
-            "service_price": "€180 – €200",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_nVf6YV"
-      ],
-      "name": "Polinukleotīdi",
-      "settings": {
-        "title": "Polinukleotīdi",
-        "content": "<p>Invazīva procedūra ādas bioreģenerācijai, tvirtuma atjaunošanai, elastības uzlabošanai, smalko grumbu un rētu mazināšanai, kā arī rozācijas un aknes ārstēšanai.</p><p>Ieteicama arī pirms operācijām un pēcoperāciju periodā.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_bcFrAa": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_rgeGxA": {
-          "type": "service",
-          "name": "Uzacu korekcija",
-          "settings": {
-            "service_name": "Uzacu korekcija",
-            "service_price": "€12",
-            "service_length": "60"
-          }
-        },
-        "service_JQxdt3": {
-          "type": "service",
-          "name": "Uzacu krāsošana",
-          "settings": {
-            "service_name": "Uzacu krāsošana",
-            "service_price": "€12",
-            "service_length": "60"
-          }
-        },
-        "service_MHVynp": {
-          "type": "service",
-          "name": "Skropstu krāsošana",
-          "settings": {
-            "service_name": "Skropstu krāsošana",
-            "service_price": "€12",
-            "service_length": "60"
-          }
-        },
-        "service_G7h8hM": {
-          "type": "service",
-          "name": "Uzacu korekcija un krāsošana",
-          "settings": {
-            "service_name": "Uzacu korekcija un krāsošana",
-            "service_price": "€20",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_rgeGxA",
-        "service_JQxdt3",
-        "service_MHVynp",
-        "service_G7h8hM"
-      ],
-      "name": "Uzacu korekcija",
-      "settings": {
-        "title": "Uzacu korekcija",
-        "content": "<p>Pareizi veidota uzacu forma un krāsa akcentē acu izteiksmīgumu un skatienu.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_xhkBRw": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_rPr48m": {
-          "type": "service",
-          "name": "Radiofrekvence sejas ādas liftingam",
-          "settings": {
-            "service_name": "Radiofrekvence sejas ādas liftingam",
-            "service_price": "€65",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_rPr48m"
-      ],
-      "name": "Radiofrekvence sejas ādas liftingam",
-      "settings": {
-        "title": "Radiofrekvence sejas ādas liftingam",
-        "content": "<p>Āda tiek sasildīta līdz 43°C, stimulējot kolagēna šķiedru saīsināšanos un jaunu šķiedru sintēzi. Rezultāts – tūlītējs liftinga efekts un tvirtāka āda.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_8i43Re": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_rPhDti": {
-          "type": "service",
-          "name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
-          "settings": {
-            "service_name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
-            "service_price": "€80",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_rPhDti"
-      ],
-      "name": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
-      "settings": {
-        "title": "Frakcionētā radiofrekvence intensīvam sejas liftingam",
-        "content": "<p>Uzlabota asins mikrocirkulācija, tonuss un sejas ovāls. Samazinās tūska, tiek stimulēta kolagēna un elastāna sintēze, nodrošinot intensīvāku efektu.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_XjhaAb": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_Lajmfx": {
-          "type": "service",
-          "name": "Lukss klases programma sejas ādas atjaunošanai",
-          "settings": {
-            "service_name": "Lukss klases programma sejas ādas atjaunošanai",
-            "service_price": "€100",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_Lajmfx"
-      ],
-      "name": "Lukss klases programma sejas ādas atjaunošanai",
-      "settings": {
-        "title": "Lukss klases programma sejas ādas atjaunošanai",
-        "content": "<p>Divu aparātmetožu apvienojums ādas atjaunošanai, svaiguma un tūlītēja liftinga efekta iegūšanai.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_wLkRQN": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_WaqYaV": {
-          "type": "service",
-          "name": "Endodermālā masāža vai Endosfēras masāža",
-          "settings": {
-            "service_name": "Endodermālā masāža vai Endosfēras masāža",
-            "service_price": "€50",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_WaqYaV"
-      ],
-      "name": "Endodermālā masāža vai Endosfēras masāža",
-      "settings": {
-        "title": "Endodermālā masāža vai Endosfēras masāža",
-        "content": "<p>Masāža, kas uzlabo limfas atteci, mazina tūsku un maisiņus zem acīm, veicina ādas elastību un tonusu.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_bcgYAY": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_MitMT7": {
-          "type": "service",
-          "name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
-          "settings": {
-            "service_name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
-            "service_price": "€65",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_MitMT7"
-      ],
-      "name": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
-      "settings": {
-        "title": "Mikrostrāvu terapija limfātiskās sistēmas atjaunošanai",
-        "content": "<p>Procedūra nostiprina sejas ovālu, mazina tūsku, uzlabo ādas apasiņošanu un vispārējo stāvokli.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
-    "template_dropdown_service_APWEFi": {
-      "type": "template-dropdown-procedure",
-      "blocks": {
-        "service_QAcK6n": {
-          "type": "service",
-          "name": "PRX pīlings",
-          "settings": {
-            "service_name": "PRX pīlings",
-            "service_price": "€80",
-            "service_length": "60"
-          }
-        },
-        "service_yPKqcN": {
-          "type": "service",
-          "name": "Karbona pīlings VS Carbon",
-          "settings": {
-            "service_name": "Karbona pīlings VS Carbon",
-            "service_price": "€80",
-            "service_length": "60"
-          }
-        },
-        "service_immC4N": {
-          "type": "service",
-          "name": "Kopējais diapazons",
-          "settings": {
-            "service_name": "Kopējais diapazons",
-            "service_price": "€80 - €100",
-            "service_length": "60"
-          }
-        }
-      },
-      "block_order": [
-        "service_QAcK6n",
-        "service_yPKqcN",
-        "service_immC4N"
-      ],
-      "name": "Ķīmiskais pīlings sejas ādas atjaunošanai",
-      "settings": {
-        "title": "Ķīmiskais pīlings sejas ādas atjaunošanai",
-        "content": "<p>Āda iegūst mirdzumu, tiek izlīdzinātas sīkās grumbiņas, mazināta pigmentācija un aknes rētas. Procedūra sniedz liftinga efektu un risina dažādas ādas problēmas.</p>",
-        "service_disclaimer": "",
-        "service_url": "",
-        "service_url_cta": "Pieteikt",
-        "open_by_default": false,
-        "space_bottom": true
       }
     },
     "template_services_carousel_grid_r7FVeG": {
@@ -793,23 +347,8 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_services_section_J6AXyp",
-    "template_services_section_qjdJcX",
-    "template_services_section_kPR4ih",
-    "template_dropdown_service_WVT8jP",
-    "template_dropdown_service_9dWycV",
-    "template_dropdown_service_AtYwty",
-    "template_dropdown_service_nYUEGQ",
-    "template_dropdown_service_aTUKmP",
-    "template_dropdown_service_GCjiiP",
-    "template_dropdown_service_788iPN",
-    "template_dropdown_service_bcFrAa",
-    "template_dropdown_service_xhkBRw",
-    "template_dropdown_service_8i43Re",
-    "template_dropdown_service_XjhaAb",
-    "template_dropdown_service_wLkRQN",
-    "template_dropdown_service_bcgYAY",
-    "template_dropdown_service_APWEFi",
+    "template_heading_BPKB6t",
+    "template_procedure_table_UXCkTh",
     "template_services_carousel_grid_r7FVeG",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
