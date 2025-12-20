@@ -462,7 +462,7 @@
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
-        "space_bottom": true
+        "space_bottom": false
       }
     },
     "template_procedure_table_gQkd3m": {
@@ -524,16 +524,85 @@
     },
     "template_procedure_table_z4aL6T": {
       "type": "template-procedure-table",
-      "name": "Procedūru tabula",
+      "blocks": {
+        "procedure_gbAiab": {
+          "type": "procedure",
+          "name": "Krūšu gali",
+          "settings": {
+            "procedure_name": "Krūšu gali",
+            "procedure_description": "Krūšu galu apmatojuma epilācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Traumas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_Nwih3a": {
+          "type": "procedure",
+          "name": "Krūšu virsma vīriešiem",
+          "settings": {
+            "procedure_name": "Krūšu virsma vīriešiem",
+            "procedure_description": "Krūšu lāzerepilācija.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_mWgXJy": {
+          "type": "procedure",
+          "name": "Vēders",
+          "settings": {
+            "procedure_name": "Vēders",
+            "procedure_description": "Vēdera epilācija.",
+            "procedure_price": "€90",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_3HBik8": {
+          "type": "procedure",
+          "name": "Vēdera baltā līnija",
+          "settings": {
+            "procedure_name": "Vēdera baltā līnija",
+            "procedure_description": "Baltās līnijas epilācija.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Traumas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_ggDQR9": {
+          "type": "procedure",
+          "name": "Laukums 22×13 cm",
+          "settings": {
+            "procedure_name": "Laukums 22×13 cm",
+            "procedure_description": "Mazs individuāls epilācijas laukums.",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Ekzēma</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_gbAiab",
+        "procedure_Nwih3a",
+        "procedure_mWgXJy",
+        "procedure_3HBik8",
+        "procedure_ggDQR9"
+      ],
+      "name": "Ķermenis",
       "settings": {
-        "title": "Procedūras",
-        "content": "<p></p>",
+        "title": "Ķermenis",
+        "content": "",
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
-        "space_bottom": false
+        "space_bottom": true
       }
     },
     "template_services_carousel_grid_N7bVQt": {
