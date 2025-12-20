@@ -5,7 +5,7 @@
 
 {%- assign procedure_blocks = services | where: 'type', 'procedure' -%}
 
-<div class="space-y-0 mb-6 md:my-12">
+<div class="space-y-0 mb-6 md:mb-12">
   {%- if procedure_blocks.size > 0 -%}
     <!-- Desktop table header -->
     <div class="hidden md:grid md:grid-cols-12 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
@@ -28,10 +28,10 @@
       <div class="border-b border-sp-light-brown border-dotted py-4">
         <!-- Desktop row -->
         <div class="hidden md:grid md:grid-cols-12 gap-4 items-center">
-          <div class="col-span-2 text-left text-base font-bold wrap-break-words">{{ procedure_name }}</div>
-          <div class="col-span-4 text-left text-base text-gray-500 wrap-break-words">{{ procedure_description }}</div>
-          <div class="col-span-1 text-right text-base font-bold">{{ procedure_price }}</div>
-          <div class="col-span-1 text-right text-base text-gray-500">
+          <div class="col-span-2 text-left text-sm font-bold wrap-break-words">{{ procedure_name }}</div>
+          <div class="col-span-4 text-left text-sm text-gray-500 wrap-break-words">{{ procedure_description }}</div>
+          <div class="col-span-1 text-right text-sm font-bold">{{ procedure_price }}</div>
+          <div class="col-span-1 text-right text-sm text-gray-500">
             {%- if procedure_duration != blank -%}
               {{ procedure_duration }}
               {{ 'general.procedure_table.min' | t }}
@@ -42,13 +42,13 @@
               <button
                 type="button"
                 @click="showContraModal = true; activeContraText = '{{ contraindications_text }}'; activeContraName = '{{ procedure_name | escape }}'"
-                class="text-sp-brown font-bold underline hover:no-underline transition-all duration-300 cursor-pointer"
+                class="text-sp-brown text-sm font-bold underline hover:no-underline transition-all duration-300 cursor-pointer"
               >
                 {{ 'general.procedure_table.learn_more' | t }}
               </button>
             {%- endif -%}
           </div>
-          <div class="col-span-2 text-right flex items-center justify-end">
+          <div class="col-span-2 text-right flex items-center justify-end text-sm">
             {% render 'btn-brown', text: apply_cta, url: apply_url_row %}
           </div>
         </div>
@@ -56,7 +56,7 @@
         <!-- Mobile row -->
         <div class="md:hidden space-y-4">
           <div class="space-y-2">
-            <div class="font-bold text-base wrap-break-words">{{ procedure_name }}</div>
+            <div class="font-bold text-sm wrap-break-words">{{ procedure_name }}</div>
             {%- if procedure_description != blank -%}
               <div class="text-sm text-gray-500 wrap-break-words">{{ procedure_description }}</div>
             {%- endif -%}
