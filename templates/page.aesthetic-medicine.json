@@ -126,6 +126,18 @@
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_8KtyXD": {
+          "type": "procedure",
+          "name": "Clear Lift – seja un pazode",
+          "settings": {
+            "procedure_name": "Clear Lift – seja un pazode",
+            "procedure_description": "Lāzerliftinga terapija sejas un zoda zonai.",
+            "procedure_price": "€200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -133,7 +145,8 @@
         "procedure_iyWRx4",
         "procedure_6qG7Li",
         "procedure_G9jxja",
-        "procedure_JwA7c6"
+        "procedure_JwA7c6",
+        "procedure_8KtyXD"
       ],
       "name": "Procedūru tabula",
       "settings": {
