@@ -471,18 +471,32 @@
       "blocks": {
         "procedure_6Tmyy8": {
           "type": "procedure",
+          "name": "Veidojums līdz 10 mm",
           "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
+            "procedure_name": "Veidojums līdz 10 mm",
+            "procedure_description": "CO2 lāzers labdabīgu veidojumu noņemšanai.",
+            "procedure_price": "€55",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija zonā</li><li>Asins recēšanas traucējumi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_RqgJAz": {
+          "type": "procedure",
+          "name": "Veidojums līdz 20 mm",
+          "settings": {
+            "procedure_name": "Veidojums līdz 20 mm",
+            "procedure_description": "CO2 lāzera noņemšana vidēja izmēra veidojumam.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>mūnsupresija</li></ul>",
             "apply_url": ""
           }
         }
       },
       "block_order": [
-        "procedure_6Tmyy8"
+        "procedure_6Tmyy8",
+        "procedure_RqgJAz"
       ],
       "name": "Dermatoloģiski veidojumi",
       "settings": {
