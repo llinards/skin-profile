@@ -271,9 +271,9 @@
         },
         "procedure_XceWH6": {
           "type": "procedure",
-          "name": "Asinsvadi – kājas (5 cm2)",
+          "name": "Kājas (5 cm2)",
           "settings": {
-            "procedure_name": "Asinsvadi – kājas (5 cm2)",
+            "procedure_name": "Kājas (5 cm2)",
             "procedure_description": "Asinsvadu koagulācija kāju zonā.",
             "procedure_price": "€50",
             "procedure_duration": "60",
