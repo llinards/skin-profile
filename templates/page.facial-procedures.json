@@ -309,6 +309,89 @@
             "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_xL34pc": {
+          "type": "procedure",
+          "name": "PRX pīlings",
+          "settings": {
+            "procedure_name": "PRX pīlings",
+            "procedure_description": "Bio-revitalizējoša ādas procedūra ar TCA, H2O2 un kojīnskābi, lai uzlabotu ādas tvirtumu un izgaismotu pigmentāciju bez lobīšanās.",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām (TCA, H2O2, kojīnskābe)</li><li>Svaigs iedegums</li><li>Herpes infekcija aktīvā fāzē</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_DDriaJ": {
+          "type": "procedure",
+          "name": "SHRAMMEK GREEN PEEL (kopējais diapazons)",
+          "settings": {
+            "procedure_name": "SHRAMMEK GREEN PEEL (kopējais diapazons)",
+            "procedure_description": "Augu pīlinga metode dažādos intensitātes līmeņos ādas reģenerācijai un atjaunošanai.",
+            "procedure_price": "€80 - €180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas ādas iekaisuma slimības</li><li>Sistēmiska retinoīdu terapija</li><li>Ļoti jutīga vai bojāta ādas barjera</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_nTabMC": {
+          "type": "procedure",
+          "name": "Derma Pen ar Eksosomām V-Tech",
+          "settings": {
+            "procedure_name": "Derma Pen ar Eksosomām V-Tech",
+            "procedure_description": "Mikroadatu terapija ar eksosomām ādas reģenerācijai, kolagēna stimulācijai un struktūras uzlabošanai.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_TGrmjm": {
+          "type": "procedure",
+          "name": "Mezoterapija",
+          "settings": {
+            "procedure_name": "Mezoterapija",
+            "procedure_description": "Invazīva bioloģiski aktīvo vielu ievadīšana ādā ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam.",
+            "procedure_price": "€80 - €130",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret injicējamām vielām</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_MYNHLT": {
+          "type": "procedure",
+          "name": "PB serums enzīmu terapija",
+          "settings": {
+            "procedure_name": "PB serums enzīmu terapija",
+            "procedure_description": "Audu remodelēšana, lai samazinātu liekos tauku depozītus, mīkstinātu fibrozi un rētas, uzlabotu ādas struktūru.",
+            "procedure_price": "€150 - €350",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smagas aknu vai nieru saslimšanas</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_GCFzRQ": {
+          "type": "procedure",
+          "name": "Fillmed NCTF 135 HA",
+          "settings": {
+            "procedure_name": "Fillmed NCTF 135 HA",
+            "procedure_description": "Intensīva ādas mitrināšana un tvirtuma uzlabošana ar hialuronskābes un aktīvo vielu kokteili.",
+            "procedure_price": "€160",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi vai citiem komponentiem</li><li>Autoimūnas saslimšanas aktīvā stadijā</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_wcg9yy": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -320,7 +403,14 @@
         "procedure_iDbCxA",
         "procedure_zaQN4b",
         "procedure_jttCHE",
-        "procedure_qVkGCt"
+        "procedure_qVkGCt",
+        "procedure_xL34pc",
+        "procedure_DDriaJ",
+        "procedure_nTabMC",
+        "procedure_TGrmjm",
+        "procedure_MYNHLT",
+        "procedure_GCFzRQ",
+        "procedure_wcg9yy"
       ],
       "name": "Pollogen Geneo X un pīlingi",
       "settings": {
