@@ -64,6 +64,76 @@
         "text_html": ""
       }
     },
+    "template_procedure_table_mXB4KL": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_UAaQbr": {
+          "type": "procedure",
+          "name": "Fotoatjaunošana ar Alma Harmony Pro – sejas centrs",
+          "settings": {
+            "procedure_name": "Fotoatjaunošana ar Alma Harmony Pro – sejas centrs",
+            "procedure_description": "Pigmentācijas, paplašinātu asinsvadu un apsārtuma mazināšana ar IPL.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Aktīva ādas infekcija</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_yHRYD9": {
+          "type": "procedure",
+          "name": "Seja",
+          "settings": {
+            "procedure_name": "Seja",
+            "procedure_description": "Ādas atjaunošana ar Harmony Pro sistēmu.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Grūtniecība</li><li>Herpes aktivizācija zonā</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_wyCgAx": {
+          "type": "procedure",
+          "name": "Seja un kakls",
+          "settings": {
+            "procedure_name": "Seja un kakls",
+            "procedure_description": "IPL atjaunošana plašākai zonai.",
+            "procedure_price": "€280",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_DFnEye": {
+          "type": "procedure",
+          "name": "Seja, kakls, dekoltē",
+          "settings": {
+            "procedure_name": "Seja, kakls, dekoltē",
+            "procedure_description": "Kompleksa fotoatjaunošana trīs zonām.",
+            "procedure_price": "€300",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_UAaQbr",
+        "procedure_yHRYD9",
+        "procedure_wyCgAx",
+        "procedure_DFnEye"
+      ],
+      "name": "Fotoatjaunošana",
+      "settings": {
+        "title": "Fotoatjaunošana",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_section_J6AXyp": {
       "type": "template-dropdown-procedure",
       "blocks": {
@@ -873,6 +943,7 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
+    "template_procedure_table_mXB4KL",
     "template_services_section_J6AXyp",
     "template_services_section_qjdJcX",
     "template_services_section_kPR4ih",
