@@ -105,9 +105,9 @@
         },
         "procedure_G9jxja": {
           "type": "procedure",
-          "name": "Fotoatjaunošana – seja, kakls, dekoltē",
+          "name": "Seja, kakls, dekoltē",
           "settings": {
-            "procedure_name": "Fotoatjaunošana – seja, kakls, dekoltē",
+            "procedure_name": "Seja, kakls, dekoltē",
             "procedure_description": "Kompleksa fotoatjaunošana trīs zonām.",
             "procedure_price": "€300",
             "procedure_duration": "60",
