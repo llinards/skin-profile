@@ -129,7 +129,7 @@
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
-        "enable_dropdown": false,
+        "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
       }
