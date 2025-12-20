@@ -434,16 +434,16 @@
     },
     "template_procedure_table_ytwGHr": {
       "type": "template-procedure-table",
-      "name": "Procedūru tabula",
+      "name": "Biorevitalizācija",
       "settings": {
-        "title": "Procedūras",
-        "content": "<p></p>",
+        "title": "Biorevitalizācija",
+        "content": "",
         "disclaimer": "",
         "apply_url": "",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
-        "space_bottom": false
+        "space_bottom": true
       }
     },
     "template_services_carousel_grid_r7FVeG": {
