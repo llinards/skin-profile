@@ -237,6 +237,54 @@
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_tkh7Dn": {
+          "type": "procedure",
+          "name": "Kājas visā garumā",
+          "settings": {
+            "procedure_name": "Kājas visā garumā",
+            "procedure_description": "Pilna kāju epilācija.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Smags dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_GPf3DQ": {
+          "type": "procedure",
+          "name": "Pēdu virsma",
+          "settings": {
+            "procedure_name": "Pēdu virsma",
+            "procedure_description": "Pēdu lāzerepilācija.",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Sēnīte</li><li>Traumas</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_MWRGxj": {
+          "type": "procedure",
+          "name": "Pirksti kājām",
+          "settings": {
+            "procedure_name": "Pirksti kājām",
+            "procedure_description": "Pirkstu zona.",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sēnīte</li><li>Infekcija</li><li>Dermatīts</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_4nwwfk": {
+          "type": "procedure",
+          "name": "Augšlūpa",
+          "settings": {
+            "procedure_name": "Augšlūpa",
+            "procedure_description": "Augšlūpas apmatojuma lāzerepilācija.",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -254,7 +302,11 @@
         "procedure_eVktzL",
         "procedure_g8y3pi",
         "procedure_zBcbkD",
-        "procedure_QHfArR"
+        "procedure_QHfArR",
+        "procedure_tkh7Dn",
+        "procedure_GPf3DQ",
+        "procedure_MWRGxj",
+        "procedure_4nwwfk"
       ],
       "name": "Lāzerepilācija",
       "settings": {
