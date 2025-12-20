@@ -9,12 +9,12 @@
   {%- if procedure_blocks.size > 0 -%}
     <!-- Desktop table header -->
     <div class="hidden md:grid md:grid-cols-12 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
-      <div class="col-span-2 text-left text-base">{{ 'general.procedure_table.procedure' | t }}</div>
-      <div class="col-span-4 text-left text-base">{{ 'general.procedure_table.description' | t }}</div>
-      <div class="col-span-1 text-right text-base">{{ 'general.procedure_table.price' | t }}</div>
-      <div class="col-span-1 text-right text-base">{{ 'general.procedure_table.duration' | t }}</div>
-      <div class="col-span-2 text-center text-base">{{ 'general.procedure_table.contraindications' | t }}</div>
-      <div class="col-span-2 text-right text-base"></div>
+      <div class="col-span-2 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
+      <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
+      <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.price' | t }}</div>
+      <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.duration' | t }}</div>
+      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.contraindications' | t }}</div>
+      <div class="col-span-2 text-right text-sm"></div>
     </div>
 
     {%- for b in procedure_blocks -%}
