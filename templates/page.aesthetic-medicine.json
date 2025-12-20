@@ -333,7 +333,7 @@
           "type": "procedure",
           "name": "Nagu sēnītes apstrāde – viens nags",
           "settings": {
-            "procedure_name": "Nagu sēnītes apstrāde – viens nags",
+            "procedure_name": "Viens nags",
             "procedure_description": "Nd:Yag lāzerprocedūra sēnītes mazināšanai.",
             "procedure_price": "€20",
             "procedure_duration": "60",
@@ -345,7 +345,7 @@
           "type": "procedure",
           "name": "Nagu sēnītes apstrāde – visi nagi",
           "settings": {
-            "procedure_name": "Nagu sēnītes apstrāde – visi nagi",
+            "procedure_name": "Visi nagi",
             "procedure_description": "Kompleksa lāzerterapija visiem nagiem.",
             "procedure_price": "€70",
             "procedure_duration": "60",
