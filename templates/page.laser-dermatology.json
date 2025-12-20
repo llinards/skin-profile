@@ -728,6 +728,54 @@
             "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Fotosensitivitāte</li><li>Diabēts dekompensācijā</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_k73U4r": {
+          "type": "procedure",
+          "name": "Rētu slīpēšana (1 cm2)",
+          "settings": {
+            "procedure_name": "Rētu slīpēšana (1 cm2)",
+            "procedure_description": "Precīza rētu korekcija CO2 lāzerī.",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija</li><li>Autoimūnas slimības</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_VdKnez": {
+          "type": "procedure",
+          "name": "Striju slīpēšana (5×10 cm)",
+          "settings": {
+            "procedure_name": "Striju slīpēšana (5×10 cm)",
+            "procedure_description": "Striju samazināšana frakcionētā režīmā.",
+            "procedure_price": "€100",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Slikta dzīšana</li><li>Ādas infekcija</li><li>Keloīdi</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_yHGGmK": {
+          "type": "procedure",
+          "name": "Ķeizargrieziena rēta",
+          "settings": {
+            "procedure_name": "Ķeizargrieziena rēta",
+            "procedure_description": "Rētas tekstūras un izskata uzlabošana.",
+            "procedure_price": "€130 - €150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaiga rēta (&lt;6 mēn.)</li><li>nfekcija</li><li>Psoriāze</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_zk3LTV": {
+          "type": "procedure",
+          "name": "Aknes rētu slīpēšana sejai",
+          "settings": {
+            "procedure_name": "Aknes rētu slīpēšana sejai",
+            "procedure_description": "Postakne rētu mazināšana frakcionēti.",
+            "procedure_price": "€350",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Aktīva akne</li><li>Svaigs iedegums</li><li>Herpes</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -738,7 +786,11 @@
         "procedure_ePqLjU",
         "procedure_ca9BQq",
         "procedure_cepGUx",
-        "procedure_9B4Pp4"
+        "procedure_9B4Pp4",
+        "procedure_k73U4r",
+        "procedure_VdKnez",
+        "procedure_yHGGmK",
+        "procedure_zk3LTV"
       ],
       "name": "CO2 sejas atjaunošana",
       "settings": {
