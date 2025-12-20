@@ -576,6 +576,18 @@
             "contraindications_text": "<ul><li>Keloīdu risks</li><li>Slikta dzīšana</li><li>Infekcija</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_RUBt6E": {
+          "type": "procedure",
+          "name": "Vairākas kārpas",
+          "settings": {
+            "procedure_name": "Vairākas kārpas",
+            "procedure_description": "CO2 lāzerattīrīšana vairākām kārpām.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Diabēta komplikācijas</li><li>Svaigs iekaisums</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -587,7 +599,8 @@
         "procedure_EkFfxp",
         "procedure_AkcDRg",
         "procedure_EWDrBY",
-        "procedure_hRjPGp"
+        "procedure_hRjPGp",
+        "procedure_RUBt6E"
       ],
       "name": "Dermatoloģiski veidojumi",
       "settings": {
