@@ -64,14 +64,6 @@
         "text_html": ""
       }
     },
-    "template_heading_BPKB6t": {
-      "type": "template-heading",
-      "name": "Kosmetoloģijas procedūras",
-      "settings": {
-        "heading": "Kosmetoloģijas procedūras",
-        "heading_level": "h2"
-      }
-    },
     "template_procedure_table_UXCkTh": {
       "type": "template-procedure-table",
       "blocks": {
@@ -195,9 +187,9 @@
         "procedure_jhmg7h",
         "procedure_G9hkaT"
       ],
-      "name": "Procedūru tabula",
+      "name": "Kosmetoloģijas procedūras",
       "settings": {
-        "title": "Procedūras",
+        "title": "Kosmetoloģijas procedūras",
         "content": "",
         "disclaimer": "",
         "apply_url": "",
@@ -347,7 +339,6 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_text_section_JPJC6T",
-    "template_heading_BPKB6t",
     "template_procedure_table_UXCkTh",
     "template_services_carousel_grid_r7FVeG",
     "template_virtual_consultation_pX36xq",
