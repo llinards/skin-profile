@@ -466,6 +466,14 @@
         "space_bottom": true
       }
     },
+    "template_heading_xty9g3": {
+      "type": "template-heading",
+      "name": "Virsraksts",
+      "settings": {
+        "heading": "CO2 lāzerprocedūras",
+        "heading_level": "h2"
+      }
+    },
     "template_procedure_table_WbQM39": {
       "type": "template-procedure-table",
       "blocks": {
@@ -759,6 +767,7 @@
     "template_procedure_table_jRizze",
     "template_procedure_table_z4Ex4T",
     "template_procedure_table_pXAGqK",
+    "template_heading_xty9g3",
     "template_procedure_table_WbQM39",
     "template_services_carousel_grid_wcKf3n",
     "template_virtual_consultation_pX36xq",
