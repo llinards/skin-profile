@@ -247,9 +247,9 @@
         },
         "procedure_yrpN8t": {
           "type": "procedure",
-          "name": "Asinsvadu likvidēšana – viena zvaigznīte",
+          "name": "Viena zvaigznīte",
           "settings": {
-            "procedure_name": "Asinsvadu likvidēšana – viena zvaigznīte",
+            "procedure_name": "Viena zvaigznīte",
             "procedure_description": "Atsevišķas asinsvadu zvaigznītes koagulācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
@@ -259,9 +259,9 @@
         },
         "procedure_dAyGMW": {
           "type": "procedure",
-          "name": "Asinsvadi – vaigi",
+          "name": "Vaigi",
           "settings": {
-            "procedure_name": "Asinsvadi – vaigi",
+            "procedure_name": "Vaigi",
             "procedure_description": "Nd:Yag procedūra vaigu kapilāriem.",
             "procedure_price": "€80",
             "procedure_duration": "60",
