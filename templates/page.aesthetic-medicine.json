@@ -81,9 +81,9 @@
         },
         "procedure_iyWRx4": {
           "type": "procedure",
-          "name": "Fotoatjaunošana – seja",
+          "name": "Seja",
           "settings": {
-            "procedure_name": "Fotoatjaunošana – seja",
+            "procedure_name": "Seja",
             "procedure_description": "Ādas atjaunošana ar Harmony Pro sistēmu.",
             "procedure_price": "€150",
             "procedure_duration": "60",
@@ -93,9 +93,9 @@
         },
         "procedure_6qG7Li": {
           "type": "procedure",
-          "name": "Fotoatjaunošana – seja un kakls",
+          "name": "Seja un kakls",
           "settings": {
-            "procedure_name": "Fotoatjaunošana – seja un kakls",
+            "procedure_name": "Seja un kakls",
             "procedure_description": "IPL atjaunošana plašākai zonai.",
             "procedure_price": "€280",
             "procedure_duration": "60",
