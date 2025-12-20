@@ -208,12 +208,36 @@
             "contraindications_text": "<ul><li>Dermatīts ap acīm</li><li>Herpes</li><li>Svaigs iekaisums</li></ul>",
             "apply_url": ""
           }
-        },
-        "procedure_MFxhQW": {
+        }
+      },
+      "block_order": [
+        "procedure_aVbgp8",
+        "procedure_EwRdDj",
+        "procedure_9gfYMG",
+        "procedure_bDBNEB",
+        "procedure_bxcefX",
+        "procedure_WKjNd3"
+      ],
+      "name": "Clear Lift",
+      "settings": {
+        "title": "Clear Lift",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": false,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_FPMR9H": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_wx6CDf": {
           "type": "procedure",
           "name": "Asinsvadu likvidēšana – deguns",
           "settings": {
-            "procedure_name": "Asinsvadu likvidēšana – deguns",
+            "procedure_name": "Deguns",
             "procedure_description": "Nd:Yag asinsvadu lāzerterapija deguna zonā.",
             "procedure_price": "€50",
             "procedure_duration": "60",
@@ -221,7 +245,7 @@
             "apply_url": ""
           }
         },
-        "procedure_B4HLMb": {
+        "procedure_yrpN8t": {
           "type": "procedure",
           "name": "Asinsvadu likvidēšana – viena zvaigznīte",
           "settings": {
@@ -233,7 +257,7 @@
             "apply_url": ""
           }
         },
-        "procedure_7NdtyH": {
+        "procedure_dAyGMW": {
           "type": "procedure",
           "name": "Asinsvadi – vaigi",
           "settings": {
@@ -245,7 +269,7 @@
             "apply_url": ""
           }
         },
-        "procedure_rkBpAL": {
+        "procedure_XceWH6": {
           "type": "procedure",
           "name": "Asinsvadi – kājas (5 cm2)",
           "settings": {
@@ -259,20 +283,14 @@
         }
       },
       "block_order": [
-        "procedure_aVbgp8",
-        "procedure_EwRdDj",
-        "procedure_9gfYMG",
-        "procedure_bDBNEB",
-        "procedure_bxcefX",
-        "procedure_WKjNd3",
-        "procedure_MFxhQW",
-        "procedure_B4HLMb",
-        "procedure_7NdtyH",
-        "procedure_rkBpAL"
+        "procedure_wx6CDf",
+        "procedure_yrpN8t",
+        "procedure_dAyGMW",
+        "procedure_XceWH6"
       ],
-      "name": "Clear Lift",
+      "name": "Asinsvadu likvidēšana ",
       "settings": {
-        "title": "Clear Lift",
+        "title": "Asinsvadu likvidēšana",
         "content": "",
         "disclaimer": "",
         "apply_url": "",
@@ -424,6 +442,7 @@
     "template_text_section_JPJC6T",
     "template_procedure_table_B3cdxV",
     "template_procedure_table_HbTjnp",
+    "template_procedure_table_FPMR9H",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
