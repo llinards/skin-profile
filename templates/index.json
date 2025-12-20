@@ -54,87 +54,195 @@
         "text_html": ""
       }
     },
-    "template_services_carousel_grid_phrCqU": {
-      "type": "template-services-carousel-grid",
+    "template_quote_fYGtGC": {
+      "type": "template-quote",
+      "name": "Citāts",
+      "settings": {
+        "quote_text": "<p>Ideja par Skin Profile radās no vēlmes apvienot rūpes par cilvēka veselību ar estētiku un individuālu pieeju. Lai gan sākotnēji plānoju kļūt par ārsti, dzīves ceļš mani aizveda citur – pie iespējas radīt vidi, kur ikviens var saņemt kvalitatīvu aprūpi, atrisināt ilgstošas ādas problēmas un veltīt laiku sev. Šī vieta ir veidota ar patiesu vēlmi palīdzēt.</p>",
+        "quote_signature": "Jana Krūmiņa, Dibinātāja"
+      }
+    },
+    "template_before_after_k3ACH6": {
+      "type": "template-before-after",
+      "name": "Pirms un Pēc Sadaļa",
+      "settings": {
+        "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
+        "text": "<p>LifeViz sistēma nodrošina augstas precizitātes 3D sejas un ķermeņa vizualizāciju, kas ļauj detalizēti novērtēt ādas stāvokli, sejas proporcijas un estētiskās izmaiņas. Tā ir<br/>droša, neinvazīva diagnostikas metode, ko izmanto gan skaistumkopšanas speciālisti, gan ārsti, lai precīzi plānotu procedūras un sekotu rezultātiem dinamikā.</p><ul><li>LifeViz piedāvā:</li><li>Reālistisku 3D attēlojumu ar augstu izšķirtspēju</li><li>Precīzu mērījumu sistēmu simetrijas, apjoma un struktūras analīzei</li><li>Progresu salīdzināšanu “pirms un pēc” formātā</li><li>Ādas virsmas, tekstūras un reljefa novērtēšanu</li></ul><p>Šī tehnoloģija palīdz pieņemt pārdomātus lēmumus un sniedz klientam skaidru, vizuāli saprotamu priekšstatu par gaidāmajiem uzlabojumiem un rekomendējamām<br/>procedūrām.</p>",
+        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "after_image": "shopify://shop_images/dermatology-slide-1.jpg",
+        "alt_text": "Attēls"
+      }
+    },
+    "template_tab_switcher_nCtJiT": {
+      "type": "template-tab-switcher",
       "blocks": {
-        "service_LAfwn9": {
-          "type": "service",
-          "name": "Estētiskā medicīna",
+        "tab_qmGnQx": {
+          "type": "tab",
+          "name": "3D attēlojums",
           "settings": {
-            "photo": "shopify://shop_images/estetiska_medicina.jpg",
-            "name": "<p>Estētiskā medicīna</p>",
-            "url": "shopify://pages/aesthetic-medicine"
+            "tab_label": "3D attēlojums",
+            "heading": "3D attēlojums",
+            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
+            "image": "shopify://shop_images/Mini_preOp_display-ezgif.com-optimize.gif",
+            "alt_text": "Tab image",
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_style": "brown"
           }
         },
-        "service_BqgxjN": {
-          "type": "service",
-          "name": "Dermatoloģija",
+        "tab_Kc7MJQ": {
+          "type": "tab",
+          "name": "Mērījumi",
           "settings": {
-            "photo": "shopify://shop_images/dermatologija.jpg",
-            "name": "<p>Dermatoloģija</p>",
-            "url": "shopify://pages/dermatology"
+            "tab_label": "Mērījumi",
+            "heading": "Mērījumi",
+            "text": "<p>Uzlabojiet estētiskās konsultācijas, izmantojot modernu, pārnēsājamu 3D sistēmu. Izvērtējiet pacienta morfoloģiju, lai pārliecinātu un veicinātu ātrāku lēmumu pieņemšanu par procedūrām.</p>",
+            "image": "shopify://shop_images/Mini_preOp_measurements.gif",
+            "alt_text": "Mērijumu animācija",
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_style": "brown"
           }
         },
-        "service_PUyKQR": {
-          "type": "service",
-          "name": "Lāzer-dermatoloģija",
+        "tab_wtY7kB": {
+          "type": "tab",
+          "name": "Simulācija",
           "settings": {
-            "photo": "shopify://shop_images/lazerdermatologija.jpg",
-            "name": "<p>Lāzer-dermatoloģija</p>",
-            "url": "shopify://pages/laser-dermatology"
+            "tab_label": "Simulācija",
+            "heading": "Simulācija",
+            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
+            "image": "shopify://shop_images/Mini_preOp_simu.gif",
+            "alt_text": "Simulācijas animācija",
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_style": "brown"
           }
         },
-        "service_yh3zXz": {
-          "type": "service",
-          "name": "Sejas procedūras",
+        "tab_fDqTj6": {
+          "type": "tab",
+          "name": "Ādas analīze",
           "settings": {
-            "photo": "shopify://shop_images/sejas_proceduras.jpg",
-            "name": "<p>Sejas procedūras</p>",
-            "url": "shopify://pages/facial-procedures"
-          }
-        },
-        "service_TKwWWg": {
-          "type": "service",
-          "name": "Lāzerepilācija",
-          "settings": {
-            "photo": "shopify://shop_images/lazerepilacija.jpg",
-            "name": "<p>Lāzerepilācija</p>",
-            "url": "shopify://pages/laser-epilation"
-          }
-        },
-        "service_PDwUdw": {
-          "type": "service",
-          "name": "Ķermeņa procedūras",
-          "settings": {
-            "photo": "shopify://shop_images/kermena_proceduras.jpg",
-            "name": "<p>Ķermeņa procedūras</p>",
-            "url": "shopify://pages/body-treatments"
-          }
-        },
-        "service_ECyhfD": {
-          "type": "service",
-          "name": "Uztura speciālists",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_specialists.jpg",
-            "name": "<p>Uztura speciālists</p>",
-            "url": "shopify://pages/nutrition-specialist"
+            "tab_label": "Ādas analīze",
+            "heading": "Ādas analīze",
+            "text": "<p>Uzlabojiet komunikāciju ar pacientiem, izmantojot detalizētu 3D ādas analīzi un personalizētus pārskatus. Sistēma ļauj precīzi novērtēt - grumbas, poras, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju.</p>",
+            "image": "shopify://shop_images/Mini_preOp_skincare-ezgif.com-optimize.gif",
+            "alt_text": "Ādas analīzes animācija",
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_style": "brown"
           }
         }
       },
       "block_order": [
-        "service_LAfwn9",
-        "service_BqgxjN",
-        "service_PUyKQR",
-        "service_yh3zXz",
-        "service_TKwWWg",
-        "service_PDwUdw",
-        "service_ECyhfD"
+        "tab_qmGnQx",
+        "tab_Kc7MJQ",
+        "tab_wtY7kB",
+        "tab_fDqTj6"
       ],
-      "name": "Pakalpojumu sadaļa",
+      "name": "Tab Switcher Section",
+      "settings": {}
+    },
+    "template_text_image_fyDtEG": {
+      "type": "template-text-with-image-wide",
+      "blocks": {
+        "button_iknHre": {
+          "type": "button",
+          "settings": {
+            "text": "Uz veikalu",
+            "url": "shopify://collections",
+            "style": "brown"
+          }
+        },
+        "slide_KPCDGA": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-serum.jpg",
+            "alt": "Biodroga Serum",
+            "url": ""
+          }
+        },
+        "slide_UPaJbx": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/schrammek_produkti.jpg",
+            "alt": "schrammek produkti",
+            "url": ""
+          }
+        },
+        "slide_AzfGjt": {
+          "type": "slide",
+          "name": "Slaids",
+          "settings": {
+            "image": "shopify://shop_images/biodroga-schwarzwald-new-series.jpg",
+            "alt": "biodroga schwarzwald new series produkti",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_iknHre",
+        "slide_KPCDGA",
+        "slide_UPaJbx",
+        "slide_AzfGjt"
+      ],
+      "name": "Teksts ar bildi",
       "settings": {
-        "heading": "Citi pakalpojumi",
-        "carousel_desktop": true
+        "heading": "Skaistums sākas ar rūpēm",
+        "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
+        "photo": "shopify://shop_images/biodroga-serum.jpg",
+        "alt": "Biodroga serums"
       }
+    },
+    "template_partners_RUpUhn": {
+      "type": "template-partners-brands",
+      "blocks": {
+        "slide_yiV3yr": {
+          "type": "slide",
+          "name": "Schramec",
+          "settings": {
+            "image": "shopify://shop_images/schramec.png",
+            "alt": "schramec_logo",
+            "url": ""
+          }
+        },
+        "slide_yk9Hee": {
+          "type": "slide",
+          "name": "Biodroga",
+          "settings": {
+            "image": "shopify://shop_images/biodroga.png",
+            "alt": "Biodroga Logo",
+            "url": ""
+          }
+        },
+        "slide_QyV7JH": {
+          "type": "slide",
+          "name": "Renew",
+          "settings": {
+            "image": "shopify://shop_images/renew.png",
+            "alt": "Renew Logo",
+            "url": ""
+          }
+        },
+        "slide_m4xgqM": {
+          "type": "slide",
+          "name": "Olaplex",
+          "settings": {
+            "image": "shopify://shop_images/olaplex.png",
+            "alt": "Olaplex Logo",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_yiV3yr",
+        "slide_yk9Hee",
+        "slide_QyV7JH",
+        "slide_m4xgqM"
+      ],
+      "name": "Sadarbības partneri",
+      "settings": {}
     },
     "team_section_WTmffT": {
       "type": "template-team-section",
@@ -245,195 +353,87 @@
         "use_grid_layout": false
       }
     },
-    "template_quote_fYGtGC": {
-      "type": "template-quote",
-      "name": "Citāts",
-      "settings": {
-        "quote_text": "<p>Ideja par Skin Profile radās no vēlmes apvienot rūpes par cilvēka veselību ar estētiku un individuālu pieeju. Lai gan sākotnēji plānoju kļūt par ārsti, dzīves ceļš mani aizveda citur – pie iespējas radīt vidi, kur ikviens var saņemt kvalitatīvu aprūpi, atrisināt ilgstošas ādas problēmas un veltīt laiku sev. Šī vieta ir veidota ar patiesu vēlmi palīdzēt.</p>",
-        "quote_signature": "Jana Krūmiņa, Dibinātāja"
-      }
-    },
-    "template_text_image_fyDtEG": {
-      "type": "template-text-with-image-wide",
+    "template_services_carousel_grid_phrCqU": {
+      "type": "template-services-carousel-grid",
       "blocks": {
-        "button_iknHre": {
-          "type": "button",
+        "service_LAfwn9": {
+          "type": "service",
+          "name": "Estētiskā medicīna",
           "settings": {
-            "text": "Uz veikalu",
-            "url": "shopify://collections",
-            "style": "brown"
+            "photo": "shopify://shop_images/estetiska_medicina.jpg",
+            "name": "<p>Estētiskā medicīna</p>",
+            "url": "shopify://pages/aesthetic-medicine"
           }
         },
-        "slide_KPCDGA": {
-          "type": "slide",
-          "name": "Slaids",
+        "service_BqgxjN": {
+          "type": "service",
+          "name": "Dermatoloģija",
           "settings": {
-            "image": "shopify://shop_images/biodroga-serum.jpg",
-            "alt": "Biodroga Serum",
-            "url": ""
+            "photo": "shopify://shop_images/dermatologija.jpg",
+            "name": "<p>Dermatoloģija</p>",
+            "url": "shopify://pages/dermatology"
           }
         },
-        "slide_UPaJbx": {
-          "type": "slide",
-          "name": "Slaids",
+        "service_PUyKQR": {
+          "type": "service",
+          "name": "Lāzer-dermatoloģija",
           "settings": {
-            "image": "shopify://shop_images/schrammek_produkti.jpg",
-            "alt": "schrammek produkti",
-            "url": ""
+            "photo": "shopify://shop_images/lazerdermatologija.jpg",
+            "name": "<p>Lāzer-dermatoloģija</p>",
+            "url": "shopify://pages/laser-dermatology"
           }
         },
-        "slide_AzfGjt": {
-          "type": "slide",
-          "name": "Slaids",
+        "service_yh3zXz": {
+          "type": "service",
+          "name": "Sejas procedūras",
           "settings": {
-            "image": "shopify://shop_images/biodroga-schwarzwald-new-series.jpg",
-            "alt": "biodroga schwarzwald new series produkti",
-            "url": ""
+            "photo": "shopify://shop_images/sejas_proceduras.jpg",
+            "name": "<p>Sejas procedūras</p>",
+            "url": "shopify://pages/facial-procedures"
+          }
+        },
+        "service_TKwWWg": {
+          "type": "service",
+          "name": "Lāzerepilācija",
+          "settings": {
+            "photo": "shopify://shop_images/lazerepilacija.jpg",
+            "name": "<p>Lāzerepilācija</p>",
+            "url": "shopify://pages/laser-epilation"
+          }
+        },
+        "service_PDwUdw": {
+          "type": "service",
+          "name": "Ķermeņa procedūras",
+          "settings": {
+            "photo": "shopify://shop_images/kermena_proceduras.jpg",
+            "name": "<p>Ķermeņa procedūras</p>",
+            "url": "shopify://pages/body-treatments"
+          }
+        },
+        "service_ECyhfD": {
+          "type": "service",
+          "name": "Uztura speciālists",
+          "settings": {
+            "photo": "shopify://shop_images/uztura_specialists.jpg",
+            "name": "<p>Uztura speciālists</p>",
+            "url": "shopify://pages/nutrition-specialist"
           }
         }
       },
       "block_order": [
-        "button_iknHre",
-        "slide_KPCDGA",
-        "slide_UPaJbx",
-        "slide_AzfGjt"
+        "service_LAfwn9",
+        "service_BqgxjN",
+        "service_PUyKQR",
+        "service_yh3zXz",
+        "service_TKwWWg",
+        "service_PDwUdw",
+        "service_ECyhfD"
       ],
-      "name": "Teksts ar bildi",
+      "name": "Pakalpojumu sadaļa",
       "settings": {
-        "heading": "Skaistums sākas ar rūpēm",
-        "text": "<p>Piedāvājam pārbaudītus, dermatologu un kosmetologu ieteiktus ādas kopšanas līdzekļus, kas piemēroti dažādiem ādas tipiem un vajadzībām. Katrs produkts ir rūpīgi atlasīts, balstoties uz mūsu speciālistu pieredzi un klientu vajadzībām. </p>",
-        "photo": "shopify://shop_images/biodroga-serum.jpg",
-        "alt": "Biodroga serums"
+        "heading": "Citi pakalpojumi",
+        "carousel_desktop": true
       }
-    },
-    "template_partners_RUpUhn": {
-      "type": "template-partners-brands",
-      "blocks": {
-        "slide_yiV3yr": {
-          "type": "slide",
-          "name": "Schramec",
-          "settings": {
-            "image": "shopify://shop_images/schramec.png",
-            "alt": "schramec_logo",
-            "url": ""
-          }
-        },
-        "slide_yk9Hee": {
-          "type": "slide",
-          "name": "Biodroga",
-          "settings": {
-            "image": "shopify://shop_images/biodroga.png",
-            "alt": "Biodroga Logo",
-            "url": ""
-          }
-        },
-        "slide_QyV7JH": {
-          "type": "slide",
-          "name": "Renew",
-          "settings": {
-            "image": "shopify://shop_images/renew.png",
-            "alt": "Renew Logo",
-            "url": ""
-          }
-        },
-        "slide_m4xgqM": {
-          "type": "slide",
-          "name": "Olaplex",
-          "settings": {
-            "image": "shopify://shop_images/olaplex.png",
-            "alt": "Olaplex Logo",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_yiV3yr",
-        "slide_yk9Hee",
-        "slide_QyV7JH",
-        "slide_m4xgqM"
-      ],
-      "name": "Sadarbības partneri",
-      "settings": {}
-    },
-    "template_before_after_k3ACH6": {
-      "type": "template-before-after",
-      "name": "Pirms un Pēc Sadaļa",
-      "settings": {
-        "heading": "3D sejas un ķermeņa vizualizācija ar LifeViz",
-        "text": "<p>LifeViz sistēma nodrošina augstas precizitātes 3D sejas un ķermeņa vizualizāciju, kas ļauj detalizēti novērtēt ādas stāvokli, sejas proporcijas un estētiskās izmaiņas. Tā ir<br/>droša, neinvazīva diagnostikas metode, ko izmanto gan skaistumkopšanas speciālisti, gan ārsti, lai precīzi plānotu procedūras un sekotu rezultātiem dinamikā.</p><ul><li>LifeViz piedāvā:</li><li>Reālistisku 3D attēlojumu ar augstu izšķirtspēju</li><li>Precīzu mērījumu sistēmu simetrijas, apjoma un struktūras analīzei</li><li>Progresu salīdzināšanu “pirms un pēc” formātā</li><li>Ādas virsmas, tekstūras un reljefa novērtēšanu</li></ul><p>Šī tehnoloģija palīdz pieņemt pārdomātus lēmumus un sniedz klientam skaidru, vizuāli saprotamu priekšstatu par gaidāmajiem uzlabojumiem un rekomendējamām<br/>procedūrām.</p>",
-        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
-        "after_image": "shopify://shop_images/dermatology-slide-1.jpg",
-        "alt_text": "Attēls"
-      }
-    },
-    "template_tab_switcher_nCtJiT": {
-      "type": "template-tab-switcher",
-      "blocks": {
-        "tab_qmGnQx": {
-          "type": "tab",
-          "name": "3D attēlojums",
-          "settings": {
-            "tab_label": "3D attēlojums",
-            "heading": "3D attēlojums",
-            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
-            "image": "shopify://shop_images/Mini_preOp_display-ezgif.com-optimize.gif",
-            "alt_text": "Tab image",
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_Kc7MJQ": {
-          "type": "tab",
-          "name": "Mērījumi",
-          "settings": {
-            "tab_label": "Mērījumi",
-            "heading": "Mērījumi",
-            "text": "<p>Uzlabojiet estētiskās konsultācijas, izmantojot modernu, pārnēsājamu 3D sistēmu. Izvērtējiet pacienta morfoloģiju, lai pārliecinātu un veicinātu ātrāku lēmumu pieņemšanu par procedūrām.</p>",
-            "image": "shopify://shop_images/Mini_preOp_measurements.gif",
-            "alt_text": "Mērijumu animācija",
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_wtY7kB": {
-          "type": "tab",
-          "name": "Simulācija",
-          "settings": {
-            "tab_label": "Simulācija",
-            "heading": "Simulācija",
-            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
-            "image": "shopify://shop_images/Mini_preOp_simu.gif",
-            "alt_text": "Simulācijas animācija",
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        },
-        "tab_fDqTj6": {
-          "type": "tab",
-          "name": "Ādas analīze",
-          "settings": {
-            "tab_label": "Ādas analīze",
-            "heading": "Ādas analīze",
-            "text": "<p>Uzlabojiet komunikāciju ar pacientiem, izmantojot detalizētu 3D ādas analīzi un personalizētus pārskatus. Sistēma ļauj precīzi novērtēt - grumbas, poras, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju.</p>",
-            "image": "shopify://shop_images/Mini_preOp_skincare-ezgif.com-optimize.gif",
-            "alt_text": "Ādas analīzes animācija",
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_style": "brown"
-          }
-        }
-      },
-      "block_order": [
-        "tab_qmGnQx",
-        "tab_Kc7MJQ",
-        "tab_wtY7kB",
-        "tab_fDqTj6"
-      ],
-      "name": "Tab Switcher Section",
-      "settings": {}
     },
     "template_contact_us_wXe9dp": {
       "type": "template-contact-us",
