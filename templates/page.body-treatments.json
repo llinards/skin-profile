@@ -224,6 +224,76 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_zAEkkn": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_mjJJ9R": {
+          "type": "procedure",
+          "name": "1 zona",
+          "settings": {
+            "procedure_name": "1 zona",
+            "procedure_description": "Aparātprocedūra tauku šūnu samazināšanai un limfodrenāžas uzlabošanai vienā ķermeņa zonā.",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Metāla implanti apstrādes zonā</li><li>Sirds stimulatora klātbūtne</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_rKbfz3": {
+          "type": "procedure",
+          "name": "2 zonas",
+          "settings": {
+            "procedure_name": "2 zonas",
+            "procedure_description": "Tauku samazināšanas un limfodrenāžas procedūra divās zonās.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sirds ritma traucējumi</li><li>Smagas endokrīnas saslimšanas</li><li>Grūtniecība</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_zrU9VD": {
+          "type": "procedure",
+          "name": "3 zonas",
+          "settings": {
+            "procedure_name": "3 zonas",
+            "procedure_description": "Procedūra trīs ķermeņa zonām lokalizēta tauku slāņa mazināšanai.",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Neārstēta hipertensija</li><li>Epilepsija</li><li>Implantēti elektriski medicīniski ierīces</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_mGkJwz": {
+          "type": "procedure",
+          "name": "4 zonas",
+          "settings": {
+            "procedure_name": "4 zonas",
+            "procedure_description": "Kompleksa procedūra četrām zonām figūras modelēšanai.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Grūtniecība</li><li>Nediagnosticētas sāpes vēderā vai kājās</li></ul>",
+            "apply_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "procedure_mjJJ9R",
+        "procedure_rKbfz3",
+        "procedure_zrU9VD",
+        "procedure_mGkJwz"
+      ],
+      "name": "Ektroporācija un elektrolipolīze",
+      "settings": {
+        "title": "Ektroporācija un elektrolipolīze",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_N7bVQt": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -365,6 +435,7 @@
     "main",
     "template_heading_EqJntK",
     "template_procedure_table_q4pgg9",
+    "template_procedure_table_zAEkkn",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
