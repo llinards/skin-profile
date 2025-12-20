@@ -141,6 +141,30 @@
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
             "apply_url": ""
           }
+        },
+        "procedure_NTiAWV": {
+          "type": "procedure",
+          "name": "Sēža",
+          "settings": {
+            "procedure_name": "Sejas Sēža",
+            "procedure_description": "Sēžas zonas epilācija.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
+            "apply_url": ""
+          }
+        },
+        "procedure_drDWrB": {
+          "type": "procedure",
+          "name": "Apakšdelmi",
+          "settings": {
+            "procedure_name": "Apakšdelmi",
+            "procedure_description": "Apakšdelmu lāzerepilācija.",
+            "procedure_price": "€55",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "apply_url": ""
+          }
         }
       },
       "block_order": [
@@ -150,7 +174,9 @@
         "procedure_6bga9h",
         "procedure_i37yRD",
         "procedure_AdLVNy",
-        "procedure_g9YHFR"
+        "procedure_g9YHFR",
+        "procedure_NTiAWV",
+        "procedure_drDWrB"
       ],
       "name": "Lāzerepilācija",
       "settings": {
