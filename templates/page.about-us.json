@@ -55,6 +55,16 @@
         "heading_align": "center"
       }
     },
+    "template_text_with_image_wide_MUjLM8": {
+      "type": "template-text-with-image-wide",
+      "name": "Teksts ar bildi",
+      "settings": {
+        "heading": "Profesionalitāte, uzticēšanās, kvalitāte un harmonija starp iekšējo un ārējo skaistumu.",
+        "text": "",
+        "photo": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "alt": "Bildes alt teksts šeit"
+      }
+    },
     "template_accordion_4wnPMn": {
       "type": "template-dropdown-faq",
       "blocks": {
@@ -210,6 +220,7 @@
     "main",
     "template_achievements_9ngQDJ",
     "template_text_on_image_bFCVjQ",
+    "template_text_with_image_wide_MUjLM8",
     "template_accordion_4wnPMn",
     "template_contact_us_QTGFLn"
   ]
