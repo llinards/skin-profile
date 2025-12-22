@@ -1057,7 +1057,8 @@
         "delivered": "Piegādāts",
         "delivered_title": "Jūsu pasūtījums ir piegādāts",
         "title": "Paldies par pirkumu!",
-        "page_title": "Palides {{ display_name }}"
+        "page_title": "Palides {{ display_name }}",
+        "thank_you_title": "Jūsu pasūtījums ir apstiprināts"
       },
       "vaulted": {
         "change_button": "Mainīt"
