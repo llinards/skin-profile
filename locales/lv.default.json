@@ -72,6 +72,7 @@
     }
   },
   "gift_card": {
+    "title": "Dāvanu karte",
     "add_to_apple_wallet": "Pievienot Apple Wallet",
     "card": "Dāvanu karte",
     "expired": "Šī dāvanu karte ir beigusies",
@@ -842,7 +843,7 @@
         "card_update_label": "Atjaunināt karti",
         "paypal_disconnect": "Atvienot",
         "ends_with_label": "beidzas ar %{last_digits}",
-        "masked_digits_label": "•••• %{pēdējie_cigari}",
+        "masked_digits_label": "•••• %{last_digits}",
         "payment_method_saved": "Maksājuma metode saglabāta",
         "card_vaulted_company_location": "Karte saglabāta šai atrašanās vietai",
         "bank_account_vaulted_company_location": "Šai atrašanās vietai saglabāts bankas konts",

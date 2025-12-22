@@ -72,6 +72,7 @@
     }
   },
   "gift_card": {
+    "title": "Gift card",
     "add_to_apple_wallet": "Add to Apple Wallet",
     "card": "Gift card",
     "expired": "This gift card has expired",
@@ -270,6 +271,12 @@
       "back_button": "Back",
       "back_button_accessibility_label": "Go back",
       "default": "Default",
+      "update_success": {
+        "done_button": "Done"
+      },
+      "add_success": {
+        "done_button": "Done"
+      },
       "generic_card": "Card",
       "expiration_warning_button_accessibility_label": "Expiration warning",
       "expires_soon": "Expires soon",
@@ -683,7 +690,8 @@
         "lessThanOneMinuteAgo": "Just now",
         "yesterday": "Yesterday",
         "today": "Today",
-        "tomorrow": "Tomorrow"
+        "tomorrow": "Tomorrow",
+        "lessThanOneYearAgo": "Less than a year ago"
       }
     },
     "enable_javascript": "Please enable JavaScript to view this page",
@@ -701,6 +709,8 @@
       "close_menu_accessibility_label": "Close menu",
       "contact_email_subject": "Customer inquiry",
       "contact_link": "Contact us",
+      "orders_link_label": "Orders",
+      "search": "Search",
       "delete_confirmation": {
         "cancel": "Cancel",
         "delete": "Delete"
@@ -796,6 +806,18 @@
         "hide_events_label": "Show less",
         "hide_events_accessibility_label": "Hide tracking events"
       },
+      "total": "Total",
+      "taxes_included": "Taxes included",
+      "subtotal": "Subtotal",
+      "contact": "Contact",
+      "show_order_summary": "Show order summary",
+      "hide_order_summary": "Hide order summary",
+      "subtitle": "Order details",
+      "summary_list_title_accessibility_label": "Order summary list",
+      "summary_title": "Order summary",
+      "summary_totals_title_accessibility_label": "Order totals",
+      "taxes": "Taxes",
+      "duties": "Duties",
       "addresses_section_title": "Addresses",
       "order_details": "Order details",
       "order_details_skeleton_accessibility_label": "Loading order details",
@@ -921,6 +943,9 @@
         "pickup_point": "Pickup point"
       },
       "show_items": "Show items"
+    },
+    "callback": {
+      "try_again": "Try again"
     }
   }
 }
