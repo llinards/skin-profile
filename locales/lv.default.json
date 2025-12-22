@@ -1067,7 +1067,8 @@
         },
         "customer_information_title": "Pasūtījuma detaļas",
         "contact_information_title": "Kontaktinformācija",
-        "payment_method_title": "Maksājuma metode"
+        "payment_method_title": "Maksājuma metode",
+        "billing_address_title": "Norēķinu adrese"
       },
       "vaulted": {
         "change_button": "Mainīt"
