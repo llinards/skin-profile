@@ -2749,7 +2749,8 @@
         "lessThanOneMinuteAgo": "Tikko",
         "yesterday": "Vakar plkst. {{time}}",
         "today": "Šodien plkst. {{time}}",
-        "tomorrow": "Rīt plkst. {{time}}"
+        "tomorrow": "Rīt plkst. {{time}}",
+        "lessThanOneYearAgo": "{{ date }} plkst. {{ time }}"
       }
     },
     "enable_javascript": "Lai skatītu savu kontu, pārlūkprogrammas iestatījumos iespējojiet JavaScript vai piesakieties, izmantojot citu pārlūkprogrammu.",
@@ -2793,7 +2794,9 @@
       "try_new_search": "Izmēģiniet jaunu meklēšanu",
       "view_details": "Skatīt detalizētu informāciju",
       "company_location": "Uzņēmuma atrašanās vieta",
-      "skip_to_content": "Pāriet uz saturu"
+      "skip_to_content": "Pāriet uz saturu",
+      "orders_link_label": "Pasūtījumu",
+      "search": "Meklēt"
     },
     "announcement_bar": {
       "expand_label": "Izvērst paziņojumu joslu",
@@ -2993,7 +2996,19 @@
       "show_items": "Rādīt vienumus",
       "total": "Kopā",
       "taxes_included": "Ieskaitot nodokli - {{amount}}",
-      "subtotal": "Starpsumma"
+      "subtotal": "Starpsumma",
+      "contact": "Sazināties",
+      "show_order_summary": "Rādīt pasūtījumu kopsavilkumu",
+      "hide_order_summary": "Noslēpt pasūtījuma kopsavilkumu",
+      "subtitle": "Apstiprināts {{ date }}",
+      "summary_list_title_accessibility_label": "Pasūtīt produktus",
+      "summary_title": "Pasūtījuma kopsavilkums",
+      "summary_totals_title_accessibility_label": "Pasūtījuma kopsumma",
+      "taxes": "Nodokļi",
+      "duties": "Nodeva"
+    },
+    "callback": {
+      "try_again": "Mēģiniet vēlreiz"
     }
   },
   "products": {
