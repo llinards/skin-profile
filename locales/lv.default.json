@@ -1055,7 +1055,9 @@
         "attempted_delivery_local_title": "Nokavēta piegāde",
         "attempted_delivery_local_description_html": "Mēs nevarējām piegādāt jūsu pasūtījumu. Lai ieplānotu citu piegādi, sazinieties ar mums, izmantojot saziņas veidlapu.",
         "delivered": "Piegādāts",
-        "delivered_title": "Jūsu pasūtījums ir piegādāts"
+        "delivered_title": "Jūsu pasūtījums ir piegādāts",
+        "title": "Paldies par pirkumu!",
+        "page_title": "Palides {{ display_name }}"
       },
       "vaulted": {
         "change_button": "Mainīt"
@@ -3006,13 +3008,13 @@
         "serum": "Serums",
         "spf": "SPF",
         "washing": "Mazgāšanai",
-        "other": "Cits",
+        "other": "Cits"
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Dāvanu kartes",
         "facial_care": "Sejas kopšana",
         "body_care": "Ķermeņa kopšana",
-        "nutritional_supplements": "Uztura bagātinātāji",
+        "nutritional_supplements": "Uztura bagātinātāji"
       }
     }
   },
