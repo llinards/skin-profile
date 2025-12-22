@@ -2991,7 +2991,8 @@
         "pickup_point": "Saņemšanas punkts"
       },
       "show_items": "Rādīt vienumus",
-      "total": "Kopā"
+      "total": "Kopā",
+      "taxes_included": "Ieskaitot nodokli - {{amount}}"
     }
   },
   "products": {
