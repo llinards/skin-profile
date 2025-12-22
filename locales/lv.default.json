@@ -2992,7 +2992,8 @@
       },
       "show_items": "Rādīt vienumus",
       "total": "Kopā",
-      "taxes_included": "Ieskaitot nodokli - {{amount}}"
+      "taxes_included": "Ieskaitot nodokli - {{amount}}",
+      "subtotal": "Starpsumma"
     }
   },
   "products": {
