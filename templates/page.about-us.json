@@ -57,6 +57,20 @@
     },
     "template_text_with_image_wide_MUjLM8": {
       "type": "template-text-with-image-wide",
+      "blocks": {
+        "button_E4TqJT": {
+          "type": "button",
+          "name": "PAKALPOJUMI",
+          "settings": {
+            "text": "Paklpojumi",
+            "url": "shopify://pages/dermatology",
+            "style": "brown"
+          }
+        }
+      },
+      "block_order": [
+        "button_E4TqJT"
+      ],
       "name": "Teksts ar bildi",
       "settings": {
         "heading": "Profesionalitāte, uzticēšanās, kvalitāte un harmonija starp iekšējo un ārējo skaistumu.",
