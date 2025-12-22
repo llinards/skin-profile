@@ -1068,7 +1068,8 @@
         "customer_information_title": "Pasūtījuma detaļas",
         "contact_information_title": "Kontaktinformācija",
         "payment_method_title": "Maksājuma metode",
-        "billing_address_title": "Norēķinu adrese"
+        "billing_address_title": "Norēķinu adrese",
+        "return_to_store_link_label": "Turpināt iepirkties"
       },
       "vaulted": {
         "change_button": "Mainīt"
@@ -2379,6 +2380,12 @@
         "billing_address_choose_from_list": "Izvēlieties no saraksta",
         "future_purchases_notice": "Šī maksājuma metode tiks saglabāta turpmākajiem pirkumiem.",
         "generic_error": "Atjaunināšanas laikā radās problēma. Lūdzu, mēģiniet vēlreiz."
+      },
+      "update_success": {
+        "done_button": "Turpināt iepirkties"
+      },
+      "add_success": {
+        "done_button": "Turpināt iepirkties"
       }
     },
     "payment_method_brands": {
