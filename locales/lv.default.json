@@ -1066,7 +1066,8 @@
           "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
         },
         "customer_information_title": "Pasūtījuma detaļas",
-        "contact_information_title": "Kontaktinformācija"
+        "contact_information_title": "Kontaktinformācija",
+        "payment_method_title": "Maksājuma metode"
       },
       "vaulted": {
         "change_button": "Mainīt"
