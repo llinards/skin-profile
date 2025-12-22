@@ -2990,7 +2990,8 @@
         "pickup_location": "Saņemšanas vieta",
         "pickup_point": "Saņemšanas punkts"
       },
-      "show_items": "Rādīt vienumus"
+      "show_items": "Rādīt vienumus",
+      "total": "Kopā"
     }
   },
   "products": {
