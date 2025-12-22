@@ -1,8 +1,8 @@
 <script src="{{ 'text-with-image-wide-carousel.js' | asset_url }}" defer></script>
 
-<div class="transition-hide bg-sp-light-brown mb-12 h-192 md:h-126">
-  <div class="container mx-auto md:flex md:gap-x-24">
-    <div class="md:w-4/7 px-4 py-12 flex flex-col justify-center h-96 md:h-126 space-y-6 md:space-y-12">
+<div class="transition-hide bg-sp-light-brown mb-12 relative md:flex md:min-h-126">
+  <div class="container mx-auto md:min-h-126 flex items-center">
+    <div class="px-4 py-12 md:w-4/7 flex flex-col space-y-6 md:space-y-12 w-full">
       <h2 class="text-center md:text-left">{{ section.settings.heading }}</h2>
       <div class="space-y-2 text-center md:text-left">
         {{ section.settings.text }}
@@ -23,38 +23,38 @@
         {% endfor %}
       </div>
     </div>
+  </div>
 
-    <div class="h-96 md:h-126 w-full absolute md:inset-y-0 left-0 md:left-auto md:right-0 md:w-3/7">
-      <div class="f-carousel p-0" id="product-banner-carousel">
-        {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
-        {% if slide_blocks.size > 0 %}
-          {% for block in slide_blocks %}
-            <div class="f-carousel__slide">
-              {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
-              <img
-                src="{{ block.settings.image | image_url }}"
-                alt="{{ block.settings.alt | escape }}"
-                width="1080"
-                height="1920"
-                loading="lazy"
-                class="object-cover w-full h-96 md:h-126 "
-              >
-              {% if block.settings.url != blank %}</a>{% endif %}
-            </div>
-          {% endfor %}
-        {% elsif section.settings.photo %}
-          <div class="f-carousel__slide">
+  <div class="w-full md:w-3/7 md:absolute md:inset-y-0 md:right-0 md:min-h-126">
+    <div class="f-carousel p-0 h-full" id="product-banner-carousel">
+      {% assign slide_blocks = section.blocks | where: 'type', 'slide' %}
+      {% if slide_blocks.size > 0 %}
+        {% for block in slide_blocks %}
+          <div class="f-carousel__slide h-full">
+            {% if block.settings.url != blank %}<a href="{{ block.settings.url }}" class="block h-full">{% endif %}
             <img
-              src="{{ section.settings.photo | image_url }}"
-              alt="{{ section.settings.alt | escape }}"
+              src="{{ block.settings.image | image_url }}"
+              alt="{{ block.settings.alt | escape }}"
               width="1080"
               height="1920"
               loading="lazy"
-              class="object-cover w-full h-96 md:h-126"
+              class="object-cover w-full h-full"
             >
+            {% if block.settings.url != blank %}</a>{% endif %}
           </div>
-        {% endif %}
-      </div>
+        {% endfor %}
+      {% elsif section.settings.photo %}
+        <div class="f-carousel__slide h-full">
+          <img
+            src="{{ section.settings.photo | image_url }}"
+            alt="{{ section.settings.alt | escape }}"
+            width="1080"
+            height="1920"
+            loading="lazy"
+            class="object-cover w-full h-full"
+          >
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

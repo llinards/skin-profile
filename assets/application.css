@@ -573,6 +573,12 @@
   .min-h-5 {
     min-height: calc(var(--spacing) * 5);
   }
+  .min-h-96 {
+    min-height: calc(var(--spacing) * 96);
+  }
+  .min-h-192 {
+    min-height: calc(var(--spacing) * 192);
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -1696,6 +1702,11 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
+  .md\:absolute {
+    @media (width >= 48rem) {
+      position: absolute;
+    }
+  }
   .md\:fixed {
     @media (width >= 48rem) {
       position: fixed;
@@ -1876,6 +1887,11 @@
   .md\:max-h-150 {
     @media (width >= 48rem) {
       max-height: calc(var(--spacing) * 150);
+    }
+  }
+  .md\:min-h-126 {
+    @media (width >= 48rem) {
+      min-height: calc(var(--spacing) * 126);
     }
   }
   .md\:w-1\/2 {
