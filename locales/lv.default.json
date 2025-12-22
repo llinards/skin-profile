@@ -1064,7 +1064,8 @@
         },
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
-        }
+        },
+        "customer_information_title": "Pasūtījuma detaļas"
       },
       "vaulted": {
         "change_button": "Mainīt"
