@@ -1058,7 +1058,13 @@
         "delivered_title": "Jūsu pasūtījums ir piegādāts",
         "title": "Paldies par pirkumu!",
         "page_title": "Palides {{ display_name }}",
-        "thank_you_title": "Jūsu pasūtījums ir apstiprināts"
+        "thank_you_title": "Jūsu pasūtījums ir apstiprināts",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
+        }
       },
       "vaulted": {
         "change_button": "Mainīt"
