@@ -452,7 +452,21 @@
         "region_none": "Nav atlasīts",
         "postal_code_label": "Pasta indeks",
         "optional_postal_code_label": "Pasta indeks",
-        "postal_code_placeholder": "Pasta indeks"
+        "postal_code_placeholder": "Pasta indeks",
+        "storefront_link": "tirgotāja vietne",
+        "postcode_label": "Pasta indeks",
+        "optional_postcode_label": "Pasta indeks (neobligāts)",
+        "postcode_placeholder": "Pasta indeks",
+        "pincode_label": "PIN kods",
+        "optional_pincode_label": "PIN kods (neobligāts)",
+        "pincode_placeholder": "PIN kods",
+        "civic_number_warning": "Pievienot māju numuru, ja tāds ir",
+        "optional_last_name_label": "Uzvārds (neobligāts)",
+        "different_shipping_address_label": "Nosūtīt uz citu adresi",
+        "different_shipping_address_text": "Šim pasūtījumam izmantojiet vienreizēju adresi",
+        "change_company_location_link_label": "Mainīt uzņēmuma atrašanās vietu",
+        "change_location_link_label": "Mainīt atrašanās vietu",
+        "ship_to_company": "Piegādāt uz {{companyName}}"
       },
       "order_summary": {
         "cart_does_not_meet_discount_requirements_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> nav derīgs precēm jūsu grozā.",
@@ -2024,7 +2038,14 @@
         "ship_to_address": "Piegādāt uz adresi",
         "shipping_address": "Piegādes adrese",
         "pick_up_in_two_to_four_days": "Parasti gatavs saņemšanai 2–4 darba dienu laikā",
-        "pick_up_locations": "Saņemšanas vietas"
+        "pick_up_locations": "Saņemšanas vietas",
+        "pick_up_in_one_hour": "Parasti gatavs stundas laikā",
+        "pick_up_in_two_hours": "Parasti gatavs 2 stundu laikā",
+        "pick_up_in_four_hours": "Parasti gatavs 4 stundu laikā",
+        "pick_up_in_twenty_four_hours": "Parasti gatavs 24 stundu laikā",
+        "pick_up_in_five_or_more_days": "Parasti gatavs 5+ dienās",
+        "pick_up_in_zero_to_two_hours": "Gatavs saņemšanai 2 stundu laikā",
+        "pick_up_in_two_to_four_hours": "Gatavs saņemšanai 4 stundu laikā"
       },
       "customer_account": {
         "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
