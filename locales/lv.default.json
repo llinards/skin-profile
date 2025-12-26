@@ -449,7 +449,10 @@
         "state_placeholder": "Štats",
         "region_label": "Reģions",
         "region_placeholder": "Reģions",
-        "region_none": "Nav atlasīts"
+        "region_none": "Nav atlasīts",
+        "postal_code_label": "Pasta indeks",
+        "optional_postal_code_label": "Pasta indeks",
+        "postal_code_placeholder": "Pasta indeks"
       },
       "order_summary": {
         "cart_does_not_meet_discount_requirements_notice": "Atlaides kods <strong style=\"text-transform:uppercase\">%{code}</strong> nav derīgs precēm jūsu grozā.",
