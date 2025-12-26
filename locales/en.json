@@ -33,7 +33,7 @@
     "price": "Price",
     "quantity": "Quantity",
     "subtotal": "Subtotal",
-    "discount_note": "Discount codes can be added at checkout.",
+    "discount_note": "Discount codes and gift cards can be added at checkout.",
     "cart_total": "Cart Total",
     "discount": "Discount",
     "shipping": "Shipping",

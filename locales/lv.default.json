@@ -33,7 +33,7 @@
     "price": "Cena",
     "quantity": "Daudzums",
     "subtotal": "Starpsumma",
-    "discount_note": "Atlaižu kuponu ir iespējams pievienot apmaksas solī.",
+    "discount_note": "Atlaižu kuponus dāvanu kartes ir iespējams pievienot apmaksas solī.",
     "cart_total": "Groza kopsumma",
     "discount": "Atlaide",
     "shipping": "Piegāde",

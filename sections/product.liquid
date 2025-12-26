@@ -66,49 +66,53 @@
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
         {%- assign stock_quantity = product.selected_or_first_available_variant.inventory_quantity -%}
+        {%- if variant.inventory_management == blank -%}
+          {%- assign max_quantity = 9999 -%}
+        {%- else -%}
+          {%- assign max_quantity = stock_quantity -%}
+        {%- endif -%}
 
         <div class="mb-6 flex flex-row gap-4 md:gap-6">
-          {% unless product.gift_card? %}
-            <div class="inline-flex items-center">
-              <label for="quantity" class="uppercase font-bold text-sm tracking-widest">
-                {{- 'products.quantity' | t -}}
-              </label>
-              <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4 md:ml-6">
-                <button
-                  type="button"
-                  id="minus-btn"
-                  class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-                >
-                  <span class="text-sm leading-none font-bold">−</span>
-                </button>
+          <div class="inline-flex items-center">
+            <label for="quantity" class="uppercase font-bold text-sm tracking-widest">
+              {{- 'products.quantity' | t -}}
+            </label>
+            <div class="rounded-full border border-gray-300 overflow-hidden w-fit ml-4 md:ml-6">
+              <button
+                type="button"
+                id="minus-btn"
+                class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+              >
+                <span class="text-sm leading-none font-bold">−</span>
+              </button>
 
-                <input
-                  id="quantity"
-                  type="number"
-                  name="quantity"
-                  min="1"
-                  max="{{ stock_quantity }}"
-                  value="1"
-                  class="w-4 md:w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
-                  readonly
-                  aria-describedby="quantity-error"
-                >
+              <input
+                id="quantity"
+                type="number"
+                name="quantity"
+                min="1"
+                max="{{ max_quantity }}"
+                value="1"
+                class="w-4 md:w-8 text-center py-1.5 font-bold focus:outline-none text-sm"
+                aria-describedby="quantity-error"
+              >
 
-                <button
-                  type="button"
-                  id="plus-btn"
-                  class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
-                >
-                  <span class="text-sm leading-none font-bold">+</span>
-                </button>
-              </div>
+              <button
+                type="button"
+                id="plus-btn"
+                class="px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+              >
+                <span class="text-sm leading-none font-bold">+</span>
+              </button>
             </div>
+          </div>
 
+          {% if variant.inventory_management %}
             <p class="flex w-fit items-center border rounded-full px-2 py-1.5 font-bold text-sm tracking-widest uppercase">
               {{ 'products.available' | t }}
               {{ stock_quantity }}
             </p>
-          {% endunless %}
+          {% endif %}
         </div>
         {%- if product.variants.size > 1 -%}
           <div x-data="{ open: false }" class="relative w-full flex items-center justify-start max-w-xs">
@@ -162,7 +166,6 @@
                 {% endfor %}
               </ul>
             </div>
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
           </div>
         {%- endif -%}
         <div
