@@ -198,6 +198,16 @@
     "loading": "Loading..."
   },
   "customer_accounts": {
+    "addresses": {
+      "edit_modal_title": {
+        "billing": "Edit billing address"
+      },
+      "loading_billing_accessibility_message": "Loading billing address",
+      "billing_address_dropdown_placeholder": "Select billing address"
+    },
+    "address_form": {
+      "billing_address": "Billing address"
+    },
     "payment_methods": {
       "card_fields": {
         "unavailable": {
