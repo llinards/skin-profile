@@ -864,7 +864,12 @@
             "sandbox_error": "Kaut kas nogāja greizi",
             "web_component_error": "Ielādējot šo lapu, radās problēma."
           }
-        }
+        },
+        "different_billing_address_label": "Izmantot citu norēķinu adresi",
+        "billing_address_associated_with_mandate_info": "Ja vēlaties mainīt savu norēķinu adresi, lūdzu, noņemiet un atkārtoti ievadiet savas kredītkartes datus.",
+        "billing_address_title": "Norēķinu adrese",
+        "billing_address_rollup_accessibility_label": "Norēķinu adrese opcijas",
+        "billing_address_not_supported_for_payment_method_error": "Šī maksājuma metode nav pieejama jūsu norēķinu adresei un valūtai. Lūdzu, mēģiniet citu maksājuma veidu."
       },
       "thank_you": {
         "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
@@ -2028,7 +2033,8 @@
         "shipping_method_title": "Piegādes metode",
         "delivery_title": "Piegāde",
         "free_rate_label": "Bezmaksas",
-        "split_shipping_option_free": "Bezmaksas piegāde"
+        "split_shipping_option_free": "Bezmaksas piegāde",
+        "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam."
       }
     },
     "notices": {
@@ -3053,6 +3059,16 @@
     },
     "callback": {
       "try_again": "Mēģiniet vēlreiz"
+    },
+    "addresses": {
+      "edit_modal_title": {
+        "billing": "Rediģēt norēķinu adresi"
+      },
+      "loading_billing_accessibility_message": "Ielādē norēķinu adresi",
+      "billing_address_dropdown_placeholder": "Norēķinu adrese"
+    },
+    "address_form": {
+      "billing_address": "Izmantot kā norēķinu adresi"
     }
   },
   "products": {
