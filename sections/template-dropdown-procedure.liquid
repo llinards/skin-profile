@@ -1,6 +1,7 @@
 <div class="container mx-auto px-4 transition-hide max-w-8xl {% if section.settings.space_bottom %}mb-12{% endif %}">
   <div
     x-data="{ open: {{ section.settings.open_by_default | json }} }"
+    :class="open ? 'bg-sp-light-brown' : ''"
     class="overflow-hidden border-t-2"
   >
     <!-- Header -->

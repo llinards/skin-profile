@@ -7,14 +7,19 @@
 
 <div class="space-y-0 mb-6 md:mb-12">
   {%- if procedure_blocks.size > 0 -%}
+    <div class="mb-4 flex justify-end">
+      <div class="w-full md:w-auto">
+        {% render 'btn-brown', text: apply_cta, url: apply_url_default, full_width: true %}
+      </div>
+    </div>
+
     <!-- Desktop table header -->
-    <div class="hidden md:grid md:grid-cols-12 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
+    <div class="hidden md:grid md:grid-cols-10 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
       <div class="col-span-2 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
       <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
       <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.price' | t }}</div>
       <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.duration' | t }}</div>
       <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.contraindications' | t }}</div>
-      <div class="col-span-2 text-right text-sm"></div>
     </div>
 
     {%- for b in procedure_blocks -%}
@@ -23,11 +28,10 @@
       {%- assign procedure_price = b.settings.procedure_price | default: '' -%}
       {%- assign procedure_duration = b.settings.procedure_duration | default: '' -%}
       {%- assign contraindications_text = b.settings.contraindications_text | default: '' -%}
-      {%- assign apply_url_row = b.settings.apply_url | default: apply_url_default -%}
 
       <div class="border-b border-sp-light-brown border-dotted py-4">
         <!-- Desktop row -->
-        <div class="hidden md:grid md:grid-cols-12 gap-4 items-center">
+        <div class="hidden md:grid md:grid-cols-10 gap-4 items-center">
           <div class="col-span-2 text-left text-sm font-bold wrap-break-words">{{ procedure_name }}</div>
           <div class="col-span-4 text-left text-sm text-gray-500 wrap-break-words">{{ procedure_description }}</div>
           <div class="col-span-1 text-right text-sm font-bold">{{ procedure_price }}</div>
@@ -47,9 +51,6 @@
                 {{ 'general.procedure_table.learn_more' | t }}
               </button>
             {%- endif -%}
-          </div>
-          <div class="col-span-2 text-right flex items-center justify-end text-sm">
-            {% render 'btn-brown', text: apply_cta, url: apply_url_row %}
           </div>
         </div>
 
@@ -88,10 +89,6 @@
                 </button>
               {%- endif -%}
             </div>
-          </div>
-
-          <div>
-            {% render 'btn-brown', text: apply_cta, url: apply_url_row, full_width: true %}
           </div>
         </div>
       </div>
