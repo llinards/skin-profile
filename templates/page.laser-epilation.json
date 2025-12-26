@@ -126,6 +126,18 @@
             "apply_url": ""
           }
         },
+        "procedure_JNUJKK": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse",
+            "procedure_description": "Vīriešu bikini epilācija.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
+            "apply_url": ""
+          }
+        },
         "procedure_NTiAWV": {
           "type": "procedure",
           "name": "Sēža",
@@ -145,6 +157,7 @@
         "procedure_bkd4KG",
         "procedure_6bga9h",
         "procedure_i37yRD",
+        "procedure_JNUJKK",
         "procedure_NTiAWV"
       ],
       "name": "Zonas",
