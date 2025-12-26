@@ -145,6 +145,18 @@
     "template_procedure_table_UMxnrf": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_mx4rKm": {
+          "type": "procedure",
+          "name": "Smēķētāju krociņas",
+          "settings": {
+            "procedure_name": "Smēķētāju krociņas",
+            "procedure_description": "Periorālās zonas izlīdzināšana.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Infekcija</li><li>Alerģijas</li></ul>",
+            "apply_url": ""
+          }
+        },
         "procedure_r99LKh": {
           "type": "procedure",
           "name": "Dusmu krunka",
@@ -267,6 +279,7 @@
         }
       },
       "block_order": [
+        "procedure_mx4rKm",
         "procedure_r99LKh",
         "procedure_pHqKxn",
         "procedure_nDkTKL",
