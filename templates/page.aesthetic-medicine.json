@@ -145,18 +145,6 @@
     "template_procedure_table_UMxnrf": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_mx4rKm": {
-          "type": "procedure",
-          "name": "Smēķētāju krociņas",
-          "settings": {
-            "procedure_name": "Smēķētāju krociņas",
-            "procedure_description": "Periorālās zonas izlīdzināšana.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Infekcija</li><li>Alerģijas</li></ul>",
-            "apply_url": ""
-          }
-        },
         "procedure_r99LKh": {
           "type": "procedure",
           "name": "Dusmu krunka",
@@ -241,6 +229,18 @@
             "apply_url": ""
           }
         },
+        "procedure_mx4rKm": {
+          "type": "procedure",
+          "name": "Smēķētāju krociņas",
+          "settings": {
+            "procedure_name": "Smēķētāju krociņas",
+            "procedure_description": "Periorālās zonas izlīdzināšana.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Infekcija</li><li>Alerģijas</li></ul>",
+            "apply_url": ""
+          }
+        },
         "procedure_WM67GW": {
           "type": "procedure",
           "name": "Zoda muskuļi",
@@ -279,7 +279,6 @@
         }
       },
       "block_order": [
-        "procedure_mx4rKm",
         "procedure_r99LKh",
         "procedure_pHqKxn",
         "procedure_nDkTKL",
@@ -287,6 +286,7 @@
         "procedure_Y3MUbJ",
         "procedure_7t7Q3p",
         "procedure_96H3wk",
+        "procedure_mx4rKm",
         "procedure_WM67GW",
         "procedure_KrV3p8",
         "procedure_PRiYx9"
