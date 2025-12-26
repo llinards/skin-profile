@@ -78,18 +78,6 @@
             "apply_url": ""
           }
         },
-        "procedure_hrePbq": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas",
-            "procedure_description": "Sānu joslu epilācija.",
-            "procedure_price": "€40",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
         "procedure_bkd4KG": {
           "type": "procedure",
           "name": "Bikini sievietēm – pilns",
@@ -126,30 +114,6 @@
             "apply_url": ""
           }
         },
-        "procedure_H3DfLD": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse",
-            "procedure_description": "Vīriešu bikini epilācija.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
-          }
-        },
-        "procedure_m9NrEf": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-            "procedure_description": "Pilna intīmās zonas epilācija.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
-            "apply_url": ""
-          }
-        },
         "procedure_NTiAWV": {
           "type": "procedure",
           "name": "Sēža",
@@ -165,12 +129,9 @@
       },
       "block_order": [
         "procedure_rFFaQA",
-        "procedure_hrePbq",
         "procedure_bkd4KG",
         "procedure_6bga9h",
         "procedure_i37yRD",
-        "procedure_H3DfLD",
-        "procedure_m9NrEf",
         "procedure_NTiAWV"
       ],
       "name": "Zonas",
