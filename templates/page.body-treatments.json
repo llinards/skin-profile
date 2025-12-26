@@ -220,7 +220,7 @@
         "apply_url": "",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
-        "open_by_default": false,
+        "open_by_default": true,
         "space_bottom": false
       }
     },
