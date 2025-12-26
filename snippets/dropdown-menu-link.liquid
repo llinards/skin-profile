@@ -149,7 +149,12 @@
 
         openMain() {
           this.isOpen = true;
-          this.$nextTick(() => this.positionPanel());
+          // Wait for Alpine to render, then for browser paint
+          this.$nextTick(() => {
+            requestAnimationFrame(() => {
+              this.positionPanel();
+            });
+          });
         },
 
         closeMain() {
@@ -164,6 +169,9 @@
           const panel = this.$refs.panel;
 
           if (!trigger || !panel) return;
+
+          // Force a reflow to ensure dimensions are accurate
+          panel.offsetHeight;
 
           // Find the nearest container to clamp within
           const container = trigger.closest('.container');
