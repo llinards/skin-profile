@@ -2025,7 +2025,9 @@
       },
       "shipping": {
         "shipping_method_title": "Piegādes metode",
-        "delivery_title": "Piegāde"
+        "delivery_title": "Piegāde",
+        "free_rate_label": "Bezmaksas",
+        "split_shipping_option_free": "Bezmaksas piegāde"
       }
     },
     "notices": {
