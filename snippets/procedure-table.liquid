@@ -41,7 +41,7 @@
             {%- if contraindications_text != blank -%}
               <button
                 type="button"
-                @click="showContraModal = true; activeContraText = {{ contraindications_text | json }}; activeContraName = {{ procedure_name | json }}"
+                @click="showContraModal = true; activeContraText = {{ contraindications_text | json | escape }}; activeContraName = {{ procedure_name | json | escape }}"
                 class="text-sp-brown text-sm font-bold underline hover:no-underline transition-all duration-300 cursor-pointer"
               >
                 {{ 'general.procedure_table.learn_more' | t }}
@@ -81,7 +81,7 @@
               {%- if contraindications_text != blank -%}
                 <button
                   type="button"
-                  @click="showContraModal = true; activeContraText = {{ contraindications_text | json }}; activeContraName = {{ procedure_name | json }}"
+                  @click="showContraModal = true; activeContraText = {{ contraindications_text | json | escape }}; activeContraName = {{ procedure_name | json | escape }}"
                   class="text-sp-brown underline hover:no-underline font-bold transition-all cursor-pointer text-left"
                 >
                   {{ 'general.procedure_table.learn_more' | t }}
