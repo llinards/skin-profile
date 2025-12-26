@@ -78,18 +78,6 @@
             "apply_url": ""
           }
         },
-        "procedure_pnTBNE": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas",
-            "procedure_description": "Sānu joslu epilācija.",
-            "procedure_price": "€40",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
-          }
-        },
         "procedure_bkd4KG": {
           "type": "procedure",
           "name": "Bikini sievietēm – pilns",
@@ -165,7 +153,6 @@
       },
       "block_order": [
         "procedure_rFFaQA",
-        "procedure_pnTBNE",
         "procedure_bkd4KG",
         "procedure_6bga9h",
         "procedure_i37yRD",
