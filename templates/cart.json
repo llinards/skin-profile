@@ -113,24 +113,10 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien!</p>"
       }
-    },
-    "17669223631af70094": {
-      "type": "apps",
-      "blocks": {
-        "parcely_app_parcely_iyXCbg": {
-          "type": "shopify://apps/parcely-app/blocks/parcely/cbdd14b4-8c8a-445b-bf69-fadc23ab031d",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "parcely_app_parcely_iyXCbg"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "main",
-    "17669223631af70094",
     "template_text_image_wide_7Wy8Pq",
     "template_contact_us_LXH4h7"
   ]
