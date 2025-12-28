@@ -2045,7 +2045,8 @@
         "pick_up_in_twenty_four_hours": "Parasti gatavs 24 stundu laikā",
         "pick_up_in_five_or_more_days": "Parasti gatavs 5+ dienās",
         "pick_up_in_zero_to_two_hours": "Gatavs saņemšanai 2 stundu laikā",
-        "pick_up_in_two_to_four_hours": "Gatavs saņemšanai 4 stundu laikā"
+        "pick_up_in_two_to_four_hours": "Gatavs saņemšanai 4 stundu laikā",
+        "pick_up": "Saņemt veikalā"
       },
       "customer_account": {
         "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
