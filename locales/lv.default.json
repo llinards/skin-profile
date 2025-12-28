@@ -1128,7 +1128,9 @@
         "contact_information_title": "Kontaktinformācija",
         "payment_method_title": "Maksājuma metode",
         "billing_address_title": "Norēķinu adrese",
-        "return_to_store_link_label": "Turpināt iepirkties"
+        "return_to_store_link_label": "Turpināt iepirkties",
+        "tracking_number": "Izsekošanas numurs:",
+        "company_tracking_number": "{{ company }} izsekošanas numurs:"
       },
       "vaulted": {
         "change_button": "Mainīt"
