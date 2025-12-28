@@ -366,11 +366,11 @@
   .col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .col-span-5 {
+    grid-column: span 5 / span 5;
+  }
   .col-span-full {
     grid-column: 1 / -1;
-  }
-  .row-1 {
-    grid-row: 1;
   }
   .container {
     width: 100%;
@@ -980,10 +980,6 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-8 {
-    border-style: var(--tw-border-style);
-    border-width: 8px;
-  }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
@@ -1185,6 +1181,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-end {
+    text-align: end;
   }
   .text-left {
     text-align: left;
@@ -1976,9 +1975,9 @@
       grid-template-columns: repeat(10, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-12 {
+  .md\:grid-cols-15 {
     @media (width >= 48rem) {
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-columns: repeat(15, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
@@ -2296,6 +2295,16 @@
       order: 5;
     }
   }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:col-span-5 {
+    @media (width >= 64rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -2398,6 +2407,16 @@
   .lg\:text-white {
     @media (width >= 64rem) {
       color: var(--color-white);
+    }
+  }
+  .xl\:col-span-1 {
+    @media (width >= 80rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .xl\:col-span-3 {
+    @media (width >= 80rem) {
+      grid-column: span 3 / span 3;
     }
   }
   .xl\:flex {

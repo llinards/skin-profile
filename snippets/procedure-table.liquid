@@ -14,12 +14,14 @@
     </div>
 
     <!-- Desktop table header -->
-    <div class="hidden md:grid md:grid-cols-10 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
-      <div class="col-span-2 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
-      <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
-      <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.price' | t }}</div>
-      <div class="col-span-1 text-right text-sm">{{ 'general.procedure_table.duration' | t }}</div>
-      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.contraindications' | t }}</div>
+    <div class="hidden md:grid md:grid-cols-15 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
+      <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
+      <div class="col-span-4 lg:col-span-5 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
+      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.price' | t }}</div>
+      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.duration' | t }}</div>
+      <div class="col-span-3 lg:col-span-2 text-right text-sm">
+        {{ 'general.procedure_table.contraindications' | t }}
+      </div>
     </div>
 
     {%- for b in procedure_blocks -%}
@@ -31,17 +33,19 @@
 
       <div class="border-b border-sp-light-brown border-dotted py-4">
         <!-- Desktop row -->
-        <div class="hidden md:grid md:grid-cols-10 gap-4 items-center">
-          <div class="col-span-2 text-left text-sm font-bold wrap-break-words">{{ procedure_name }}</div>
-          <div class="col-span-4 text-left text-sm text-gray-500 wrap-break-words">{{ procedure_description }}</div>
-          <div class="col-span-1 text-right text-sm font-bold">{{ procedure_price }}</div>
-          <div class="col-span-1 text-right text-sm text-gray-500">
+        <div class="hidden md:grid md:grid-cols-15 gap-4 items-center">
+          <div class="col-span-4 text-left text-sm font-bold wrap-break-words">{{ procedure_name }}</div>
+          <div class="col-span-4 lg:col-span-5 text-left text-sm text-gray-500 wrap-break-words">
+            {{ procedure_description }}
+          </div>
+          <div class="col-span-2 text-center text-sm font-bold">{{ procedure_price }}</div>
+          <div class="col-span-2 text-center text-sm text-gray-500">
             {%- if procedure_duration != blank -%}
               {{ procedure_duration }}
               {{ 'general.procedure_table.min' | t }}
             {%- endif -%}
           </div>
-          <div class="col-span-2 text-center flex items-center justify-center">
+          <div class="col-span-3 lg:col-span-2 text-center flex items-center justify-end">
             {%- if contraindications_text != blank -%}
               <button
                 type="button"
