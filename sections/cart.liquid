@@ -21,10 +21,17 @@
 
             <tbody class="block md:table-row-group">
               {% for item in cart.items %}
+                {%- assign max_qty = 9999 -%}
+                {%- if item.variant.inventory_management and item.variant.inventory_policy == 'deny' -%}
+                  {%- assign max_qty = item.variant.inventory_quantity | default: 0 | plus: 0 -%}
+                  {%- if max_qty < 0 -%}
+                    {%- assign max_qty = 0 -%}
+                  {%- endif -%}
+                {%- endif -%}
                 <tr
                   class="relative overflow-hidden block md:table-row shadow-lg rounded-lg mb-4 md:mb-0 p-2 md:p-0 cart-line-item border border-gray-200 md:border-0"
                   data-key="{{ item.key }}"
-                  data-max="{{ item.variant.inventory_quantity | default: 9999 }}"
+                  data-max="{{ max_qty }}"
                 >
                   <!-- Product -->
                   <td class="block md:table-cell px-6 py-4">
@@ -153,8 +160,8 @@
     moneyFormat: {{ shop.money_format | json }},
     locale: {{ shop.locale | default: 'lv' | json }},
     currency: {{ shop.currency | json }},
-    {% comment %} freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }}, {% endcomment %}
-    {% comment %} flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }}, {% endcomment %}
+    freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }},
+    flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }},
     initialCartTotalCents: {{ cart.total_price }}
   };
 </script>

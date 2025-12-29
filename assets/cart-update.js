@@ -47,27 +47,31 @@
         container.classList.toggle('pointer-events-none', isLoading);
     }
 
+    function getMaxQty(container) {
+        const raw = Number(container?.dataset?.max);
+        if (!Number.isFinite(raw) || raw < 0) return 9999;
+        return raw;
+    }
+
     function updateSummary(totalCents) {
-        // Shipping logic commented out
-        // const cfg = window.themeCart || {};
-        // const threshold = Number(cfg.freeShippingThresholdCents || 0);
-        // const flat = Number(cfg.flatShippingCents || 0);
+        const cfg = window.themeCart || {};
+        const threshold = Number(cfg.freeShippingThresholdCents || 0);
+        const flat = Number(cfg.flatShippingCents || 0);
         const subtotalEl = document.querySelector('[data-subtotal-amount]');
-        // const shippingEl = document.querySelector('[data-shipping-amount]');
+        const shippingEl = document.querySelector('[data-shipping-amount]');
         const grandEl = document.querySelector('[data-grandtotal-amount]');
 
-        // const shippingCents = totalCents >= threshold ? 0 : flat;
-        // const grandCents = totalCents + shippingCents;
-        const grandCents = totalCents; // no shipping added
+        const shippingCents = totalCents >= threshold ? 0 : flat;
+        const grandCents = totalCents + shippingCents;
 
         if (subtotalEl) subtotalEl.textContent = formatMoney(totalCents);
-        // if (shippingEl) {
-        //     if (shippingCents === 0) {
-        //         shippingEl.textContent = shippingEl.dataset.freeLabel || 'Free';
-        //     } else {
-        //         shippingEl.textContent = formatMoney(shippingCents);
-        //     }
-        // }
+        if (shippingEl) {
+            if (shippingCents === 0) {
+                shippingEl.textContent = shippingEl.dataset.freeLabel || 'Free';
+            } else {
+                shippingEl.textContent = formatMoney(shippingCents);
+            }
+        }
         if (grandEl) grandEl.textContent = formatMoney(grandCents);
     }
 
@@ -86,7 +90,7 @@
             const cart = await res.json();
 
             const updated = cart.items.find(i => i.key === key);
-            const max = Number(container.dataset.max || '9999');
+            const max = getMaxQty(container);
 
             if (updated) {
                 const qtyEl = container.querySelector('[data-qty]');
@@ -133,7 +137,7 @@
         if (!container) return;
 
         const key = container.dataset.key;
-        const max = Number(container.dataset.max || '9999');
+        const max = getMaxQty(container);
         const qtyEl = container.querySelector('[data-qty]');
         let qty = parseInt(qtyEl?.textContent, 10) || 1;
 
@@ -175,8 +179,7 @@
             const cart = await res.json();
             row.remove();
 
-            const totalEl = document.querySelector('[data-cart-total]');
-            if (totalEl) totalEl.textContent = formatMoney(cart.total_price);
+            updateSummary(cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
 
             if (cart.item_count === 0) {

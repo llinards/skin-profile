@@ -1,5 +1,5 @@
 {% if cart.item_count > 0 %}
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 pb-12">
     <div id="cart-total" class="flex md:justify-end">
       <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
         <h2 class="text-2xl mb-4 text-sp-brown">{{ 'cart.cart_total' | t }}</h2>
@@ -61,6 +61,12 @@
     </div>
   </div>
 {% endif %}
+
+<script>
+  window.themeCart = window.themeCart || {};
+  window.themeCart.freeShippingThresholdCents = {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }};
+  window.themeCart.flatShippingCents = {{ section.settings.flat_shipping | default: 0 | times: 100 | round }};
+</script>
 
 {% schema %}
 {
