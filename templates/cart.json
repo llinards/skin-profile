@@ -13,6 +13,14 @@
       "type": "cart",
       "settings": {}
     },
+    "template_cart_total_FYAzD9": {
+      "type": "template-cart-total",
+      "name": "Groza kopsumma",
+      "settings": {
+        "free_shipping_threshold": "70.00",
+        "flat_shipping": "3.99"
+      }
+    },
     "template_text_image_wide_7Wy8Pq": {
       "type": "template-text-with-image-wide",
       "blocks": {
@@ -117,6 +125,7 @@
   },
   "order": [
     "main",
+    "template_cart_total_FYAzD9",
     "template_text_image_wide_7Wy8Pq",
     "template_contact_us_LXH4h7"
   ]
