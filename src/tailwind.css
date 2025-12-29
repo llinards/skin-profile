@@ -271,7 +271,7 @@
     }
 }
 
-.parcely_app>div {
+/* .parcely_app>div {
     background: 0% 0% no-repeat border-box !important;
     border-radius: 5px;
     border: 1px solid var(--color-brand-primary);
@@ -299,7 +299,7 @@
 .css-1sszepo-control input,
 .css-1sszepo-control div {
     background-color: var(--color-brand-secondary-light) !important;
-}
+} */
 
 [x-cloak] {
     display: none !important;
