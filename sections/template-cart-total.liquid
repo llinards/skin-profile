@@ -40,6 +40,8 @@
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
+                  {%- when 'shipping_design' -%}
+                    {% render 'block-shipping-design' %}
                   {%- when 'content' -%}
                     {{ block.settings.content }}
                 {%- endcase -%}
@@ -88,6 +90,11 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "shipping_design",
+      "name": "Piegādes dizains",
+      "settings": []
     },
     {
       "type": "content",
