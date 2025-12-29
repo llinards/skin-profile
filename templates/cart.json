@@ -113,11 +113,30 @@
         "heading": "Sazinies ar mums!",
         "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien!</p>"
       }
+    },
+    "17670292093096ef5a": {
+      "type": "apps",
+      "blocks": {
+        "pickup_points_pro_map_cart_widget_XJRTCf": {
+          "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
+          "settings": {
+            "country_selector_text": "Select your shipping country:",
+            "opening_button_text": "Choose pickup point on map",
+            "additional_info_text": "If you want to choose a different delivery method than the pickup point, please skip this step and select your preferred option at the checkout.",
+            "widget_background": "#FAFAFA"
+          }
+        }
+      },
+      "block_order": [
+        "pickup_points_pro_map_cart_widget_XJRTCf"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "template_text_image_wide_7Wy8Pq",
-    "template_contact_us_LXH4h7"
+    "template_contact_us_LXH4h7",
+    "17670292093096ef5a"
   ]
 }
