@@ -16,10 +16,6 @@
     "template_cart_total_FYAzD9": {
       "type": "template-cart-total",
       "blocks": {
-        "shipping_design_VzwzxE": {
-          "type": "shipping_design",
-          "settings": {}
-        },
         "pickup_points_pro_map_cart_widget_7xAb4L": {
           "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
           "settings": {
@@ -28,11 +24,15 @@
             "additional_info_text": "Ja vēlaties izvēlēties citu piegādes veidu, nevis saņemšanas punktu, lūdzu, izlaidiet šo soli un izvēlieties vēlamo opciju norēķinoties.",
             "widget_background": "#fafafa"
           }
+        },
+        "shipping_design_VzwzxE": {
+          "type": "shipping_design",
+          "settings": {}
         }
       },
       "block_order": [
-        "shipping_design_VzwzxE",
-        "pickup_points_pro_map_cart_widget_7xAb4L"
+        "pickup_points_pro_map_cart_widget_7xAb4L",
+        "shipping_design_VzwzxE"
       ],
       "name": "Groza kopsumma",
       "settings": {
