@@ -13,6 +13,28 @@
       "type": "cart",
       "settings": {}
     },
+    "template_cart_total_FYAzD9": {
+      "type": "template-cart-total",
+      "blocks": {
+        "pickup_points_pro_map_cart_widget_7xAb4L": {
+          "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
+          "settings": {
+            "country_selector_text": "Select your shipping country:",
+            "opening_button_text": "Choose pickup point on map",
+            "additional_info_text": "If you want to choose a different delivery method than the pickup point, please skip this step and select your preferred option at the checkout.",
+            "widget_background": "#FAFAFA"
+          }
+        }
+      },
+      "block_order": [
+        "pickup_points_pro_map_cart_widget_7xAb4L"
+      ],
+      "name": "Groza kopsumma",
+      "settings": {
+        "free_shipping_threshold": "70.00",
+        "flat_shipping": "3.99"
+      }
+    },
     "template_text_image_wide_7Wy8Pq": {
       "type": "template-text-with-image-wide",
       "blocks": {
@@ -117,6 +139,7 @@
   },
   "order": [
     "main",
+    "template_cart_total_FYAzD9",
     "template_text_image_wide_7Wy8Pq",
     "template_contact_us_LXH4h7"
   ]
