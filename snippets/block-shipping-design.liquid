@@ -1,12 +1,34 @@
-<style>
+{% stylesheet %}
   .pp-country-selector-label,
   .pp-country-selector {
     display: none;
   }
 
   .pp-choose-point-button-container {
-    text-transform: uppercase;
     background-color: var(--color-brand-primary);
     text-align: center;
+    color: #ffffff;
+    padding-block: calc(var(--spacing) * 3);
+    padding-inline: calc(var(--spacing) * 4);
+    border-radius: var(--radius-xl);
+    letter-spacing: var(--tracking-wider);
+    transition: all 300ms;
+    border: 1px solid var(--color-brand-primary);
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
   }
-</style>
+
+  .pp-choose-point-button-container:hover {
+    background-color: #ffffff;
+    color: var(--color-brand-primary);
+    cursor: pointer;
+  }
+
+  .pp-choose-point-button-container button {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+{% endstylesheet %}

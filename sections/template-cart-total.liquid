@@ -56,9 +56,9 @@
         </div>
 
         {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
-        <div class="flex justify-center">
+        <form action="{{ routes.cart_url }}" method="post" novalidate class="flex justify-center">
           {% render 'btn-brown-submit', text: checkout_text, name: 'checkout' %}
-        </div>
+        </form>
       </div>
     </div>
   </div>
