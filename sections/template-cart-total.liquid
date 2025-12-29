@@ -1,5 +1,5 @@
 {% if cart.item_count > 0 %}
-  <div class="container mx-auto px-4 pb-12">
+  <div class="container mx-auto px-4 pb-12" data-cart-total-section="{{ section.id }}">
     <div id="cart-total" class="flex md:justify-end">
       <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
         <h2 class="text-2xl mb-4 text-sp-brown">{{ 'cart.cart_total' | t }}</h2>
@@ -21,6 +21,31 @@
           <p data-subtotal-amount>{{ cart.total_price | money }}</p>
         </div>
 
+        <div class="py-4" role="group" aria-label="Pickup method">
+          <p class="mb-3">Saņemšanas veids:</p>
+          <div class="flex flex-wrap gap-4">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input
+                class="accent-sp-brown"
+                type="radio"
+                name="pickup_method_{{ section.id }}"
+                value="store"
+                checked
+              >
+              <span>Saņemšana veikalā</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input
+                class="accent-sp-brown"
+                type="radio"
+                name="pickup_method_{{ section.id }}"
+                value="locker"
+              >
+              <span>Saņemšana pakomātā</span>
+            </label>
+          </div>
+        </div>
+
         {%- if total_savings > 0 -%}
           <div class="flex justify-between border-b border-sp-brown py-4 text-sp-brown">
             <p>{{ 'cart.discount' | t }}:</p>
@@ -28,26 +53,44 @@
           </div>
         {%- endif -%}
 
-        <div class="flex justify-between border-b border-sp-brown py-4">
-          <p>{{ 'cart.shipping' | t }}:</p>
-          <p data-shipping-amount data-free-label="Bezmaksas"></p>
+        <div class="border-b border-sp-brown py-4 hidden" data-shipping-row aria-hidden="true">
+          <div class="flex justify-between">
+            <p>{{ 'cart.shipping' | t }}:</p>
+            <p data-shipping-amount data-free-label="Bezmaksas"></p>
+          </div>
         </div>
 
         {%- if section.blocks.size > 0 -%}
-          <div class="border-b border-sp-brown py-4">
+          {%- capture other_blocks_markup -%}
             {%- for block in section.blocks -%}
-              <div {{ block.shopify_attributes }}>
-                {%- case block.type -%}
-                  {%- when '@app' -%}
-                    {% render block %}
-                  {%- when 'shipping_design' -%}
-                    {% render 'block-shipping-design' %}
-                  {%- when 'content' -%}
-                    {{ block.settings.content }}
-                {%- endcase -%}
-              </div>
+              {%- if block.type != '@app' -%}
+                <div {{ block.shopify_attributes }}>
+                  {%- case block.type -%}
+                    {%- when 'shipping_design' -%}
+                      {% render 'block-shipping-design' %}
+                    {%- when 'content' -%}
+                      {{ block.settings.content }}
+                  {%- endcase -%}
+                </div>
+              {%- endif -%}
             {%- endfor -%}
-          </div>
+          {%- endcapture -%}
+
+          {%- capture app_blocks_markup -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == '@app' -%}
+                <div {{ block.shopify_attributes }}>
+                  {% render block %}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endcapture -%}
+
+          {%- if app_blocks_markup != blank -%}
+            <div data-pickup-locker-app class="hidden py-4" aria-hidden="true">
+              {{ app_blocks_markup }}
+            </div>
+          {%- endif -%}
         {%- endif -%}
 
         <div class="flex justify-between py-4">
@@ -68,6 +111,40 @@
   window.themeCart = window.themeCart || {};
   window.themeCart.freeShippingThresholdCents = {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }};
   window.themeCart.flatShippingCents = {{ section.settings.flat_shipping | default: 0 | times: 100 | round }};
+</script>
+
+<script>
+  (function () {
+    const root = document.querySelector('[data-cart-total-section="{{ section.id }}"]');
+    if (!root) return;
+
+    const radios = root.querySelectorAll('input[type="radio"][name="pickup_method_{{ section.id }}"]');
+    if (!radios.length) return;
+
+    const appWrap = root.querySelector('[data-pickup-locker-app]');
+    const shippingRow = root.querySelector('[data-shipping-row]');
+
+    function applyState() {
+      const checked = root.querySelector('input[type="radio"][name="pickup_method_{{ section.id }}"]:checked');
+      const isLocker = checked && checked.value === 'locker';
+      if (appWrap) {
+        appWrap.classList.toggle('hidden', !isLocker);
+        appWrap.setAttribute('aria-hidden', isLocker ? 'false' : 'true');
+      }
+      if (shippingRow) {
+        shippingRow.classList.toggle('hidden', !isLocker);
+        shippingRow.setAttribute('aria-hidden', isLocker ? 'false' : 'true');
+      }
+      document.dispatchEvent(new CustomEvent('theme:pickupMethodChanged'));
+    }
+
+    if (!root.querySelector('input[type="radio"][name="pickup_method_{{ section.id }}"]:checked')) {
+      radios[0].checked = true;
+    }
+
+    radios.forEach((r) => r.addEventListener('change', applyState));
+    applyState();
+  })();
 </script>
 
 {% schema %}
