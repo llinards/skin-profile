@@ -16,6 +16,10 @@
     "template_cart_total_FYAzD9": {
       "type": "template-cart-total",
       "blocks": {
+        "shipping_design_VzwzxE": {
+          "type": "shipping_design",
+          "settings": {}
+        },
         "pickup_points_pro_map_cart_widget_7xAb4L": {
           "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
           "settings": {
@@ -27,6 +31,7 @@
         }
       },
       "block_order": [
+        "shipping_design_VzwzxE",
         "pickup_points_pro_map_cart_widget_7xAb4L"
       ],
       "name": "Groza kopsumma",
