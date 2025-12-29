@@ -1,59 +1,62 @@
 {% if cart.item_count > 0 %}
-  <div id="cart-total" class="flex md:justify-end">
-    <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
-      <h2 class="text-2xl mb-4 text-sp-brown">{{ 'cart.cart_total' | t }}</h2>
+  <div class="container mx-auto px-4">
+    <div id="cart-total" class="flex md:justify-end">
+      <div class="text-sp-brown p-6 border-2 border-sp-brown flex flex-col w-full md:max-w-lg">
+        <h2 class="text-2xl mb-4 text-sp-brown">{{ 'cart.cart_total' | t }}</h2>
 
-      {%- comment -%} Calculate total savings {%- endcomment -%}
-      {%- assign total_savings = 0 -%}
-      {%- for item in cart.items -%}
-        {%- if item.variant.compare_at_price > item.variant.price -%}
-          {%- assign item_savings = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity -%}
-          {%- assign total_savings = total_savings | plus: item_savings -%}
+        {%- comment -%} Calculate total savings {%- endcomment -%}
+        {%- assign total_savings = 0 -%}
+        {%- for item in cart.items -%}
+          {%- if item.variant.compare_at_price > item.variant.price -%}
+            {%- assign item_savings = item.variant.compare_at_price
+              | minus: item.variant.price
+              | times: item.quantity
+            -%}
+            {%- assign total_savings = total_savings | plus: item_savings -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        <div class="flex justify-between border-b border-sp-brown py-4">
+          <p>{{ 'cart.subtotal' | t }}:</p>
+          <p data-subtotal-amount>{{ cart.total_price | money }}</p>
+        </div>
+
+        {%- if total_savings > 0 -%}
+          <div class="flex justify-between border-b border-sp-brown py-4 text-sp-brown">
+            <p>{{ 'cart.discount' | t }}:</p>
+            <p class="font-semibold">-{{ total_savings | money }}</p>
+          </div>
         {%- endif -%}
-      {%- endfor -%}
 
-      <div class="flex justify-between border-b border-sp-brown py-4">
-        <p>{{ 'cart.subtotal' | t }}:</p>
-        <p data-subtotal-amount>{{ cart.total_price | money }}</p>
-      </div>
-
-      {%- if total_savings > 0 -%}
-        <div class="flex justify-between border-b border-sp-brown py-4 text-sp-brown">
-          <p>{{ 'cart.discount' | t }}:</p>
-          <p class="font-semibold">-{{ total_savings | money }}</p>
+        <div class="flex justify-between border-b border-sp-brown py-4">
+          <p>{{ 'cart.shipping' | t }}:</p>
+          <p data-shipping-amount data-free-label="Bezmaksas"></p>
         </div>
-      {%- endif -%}
 
-      {% comment %} <div id="parcelyWidget"></div> {% endcomment %}
+        {%- if section.blocks.size > 0 -%}
+          <div class="border-b border-sp-brown py-4">
+            {%- for block in section.blocks -%}
+              <div {{ block.shopify_attributes }}>
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {% render block %}
+                  {%- when 'content' -%}
+                    {{ block.settings.content }}
+                {%- endcase -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
 
-      <div class="flex justify-between border-b border-sp-brown py-4">
-        <p>{{ 'cart.shipping' | t }}:</p>
-        <p data-shipping-amount data-free-label="Bezmaksas"></p>
-      </div>
-
-      {%- if section.blocks.size > 0 -%}
-        <div class="border-b border-sp-brown py-4">
-          {%- for block in section.blocks -%}
-            <div {{ block.shopify_attributes }}>
-              {%- case block.type -%}
-                {%- when '@app' -%}
-                  {% render block %}
-                {%- when 'content' -%}
-                  {{ block.settings.content }}
-              {%- endcase -%}
-            </div>
-          {%- endfor -%}
+        <div class="flex justify-between py-4">
+          <p>{{ 'cart.total' | t }}:</p>
+          <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
         </div>
-      {%- endif -%}
 
-      <div class="flex justify-between py-4">
-        <p>{{ 'cart.total' | t }}:</p>
-        <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
-      </div>
-
-      {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
-      <div class="flex justify-center">
-        {% render 'btn-brown-submit', text: checkout_text, name: 'checkout' %}
+        {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
+        <div class="flex justify-center">
+          {% render 'btn-brown-submit', text: checkout_text, name: 'checkout' %}
+        </div>
       </div>
     </div>
   </div>
