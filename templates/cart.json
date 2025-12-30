@@ -28,27 +28,6 @@
     },
     "template_cart_total_FYAzD9": {
       "type": "template-cart-total",
-      "blocks": {
-        "pickup_points_pro_map_cart_widget_7xAb4L": {
-          "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
-          "disabled": true,
-          "settings": {
-            "country_selector_text": "Select your shipping country:",
-            "opening_button_text": "Izvēlēties pakomātu",
-            "additional_info_text": "Ja vēlaties izvēlēties citu piegādes veidu, nevis saņemšanas punktu, lūdzu, izlaidiet šo soli un izvēlieties vēlamo opciju norēķinoties.",
-            "widget_background": "#fafafa"
-          }
-        },
-        "shipping_design_VzwzxE": {
-          "type": "shipping_design",
-          "disabled": true,
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "pickup_points_pro_map_cart_widget_7xAb4L",
-        "shipping_design_VzwzxE"
-      ],
       "name": "Groza kopsumma",
       "settings": {
         "free_shipping_threshold": "70.00",
