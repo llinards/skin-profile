@@ -46,7 +46,7 @@
                           class="rounded"
                         >
                         <div class="flex flex-col">
-                          <p class="font-medium">{{ item.product.title | truncatewords: 3 }}</p>
+                          <p class="font-medium">{{ item.product.title }}</p>
                           {% if item.variant and item.variant.title != 'Default Title' %}
                             <p class="text-xs text-gray-500 mt-1">
                               {{ item.variant.title }}
