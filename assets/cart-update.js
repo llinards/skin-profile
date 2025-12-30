@@ -53,11 +53,6 @@
         return raw;
     }
 
-    function getPickupMethod() {
-        const checked = document.querySelector('input[type="radio"][name^="pickup_method_"]:checked');
-        return checked?.value || 'store';
-    }
-
     function updateSummary(totalCents) {
         const cfg = window.themeCart || {};
         cfg.currentCartTotalCents = totalCents;
@@ -67,8 +62,7 @@
         const shippingEl = document.querySelector('[data-shipping-amount]');
         const grandEl = document.querySelector('[data-grandtotal-amount]');
 
-        const pickupMethod = getPickupMethod();
-        const shippingCents = pickupMethod === 'store' ? 0 : (totalCents >= threshold ? 0 : flat);
+        const shippingCents = totalCents >= threshold ? 0 : flat;
         const grandCents = totalCents + shippingCents;
 
         if (subtotalEl) subtotalEl.textContent = formatMoney(totalCents);
@@ -81,12 +75,6 @@
         }
         if (grandEl) grandEl.textContent = formatMoney(grandCents);
     }
-
-    document.addEventListener('theme:pickupMethodChanged', function () {
-        const cfg = window.themeCart || {};
-        const total = cfg.currentCartTotalCents ?? cfg.initialCartTotalCents;
-        if (total != null) updateSummary(Number(total));
-    });
 
     async function changeLineQty(key, qty, container) {
         const btns = container.querySelectorAll('.quantity__button');
