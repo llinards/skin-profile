@@ -18,6 +18,7 @@
       "blocks": {
         "pickup_points_pro_map_cart_widget_7xAb4L": {
           "type": "shopify://apps/pickup-points-pro/blocks/map_cart_widget/005581db-53ad-477a-b330-60f483c76b50",
+          "disabled": true,
           "settings": {
             "country_selector_text": "Select your shipping country:",
             "opening_button_text": "Izvēlēties pakomātu",
@@ -27,6 +28,7 @@
         },
         "shipping_design_VzwzxE": {
           "type": "shipping_design",
+          "disabled": true,
           "settings": {}
         }
       },
