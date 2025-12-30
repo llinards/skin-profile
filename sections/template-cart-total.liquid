@@ -37,22 +37,6 @@
           </div>
         {% endcomment %}
 
-        {%- comment -%} Hide pickup locker app when cart is gift-card-only {%- endcomment -%}
-        {%- assign has_non_giftcard_item = false -%}
-        {%- for item in cart.items -%}
-          {%- assign is_gift_card_item = false -%}
-          {%- if item.product.gift_card? -%}
-            {%- assign is_gift_card_item = true -%}
-          {%- elsif item.product.title == 'Digital Gift Card' -%}
-            {%- assign is_gift_card_item = true -%}
-          {%- endif -%}
-
-          {%- unless is_gift_card_item -%}
-            {%- assign has_non_giftcard_item = true -%}
-            {%- break -%}
-          {%- endunless -%}
-        {%- endfor -%}
-
         {%- if section.blocks.size > 0 -%}
           {%- capture other_blocks_markup -%}
             {%- for block in section.blocks -%}
@@ -79,7 +63,7 @@
             {%- endfor -%}
           {%- endcapture -%}
 
-          {%- if app_blocks_markup != blank and has_non_giftcard_item -%}
+          {%- if app_blocks_markup != blank -%}
             <div data-pickup-locker-app class="py-4">
               {{ app_blocks_markup }}
             </div>
