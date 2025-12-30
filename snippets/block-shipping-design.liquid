@@ -1,5 +1,5 @@
 {% stylesheet %}
-  .pp-country-selector-label,
+  /* .pp-country-selector-label,
   .pp-country-selector {
     display: none;
   }
@@ -30,5 +30,40 @@
   .pp-choose-point-button-container button {
     text-transform: uppercase;
     cursor: pointer;
+  } */
+
+  .parcely_app > div {
+    background: 0% 0% no-repeat border-box !important;
+
+    border-radius: 5px;
+
+    border: 1px solid var(--color-brand-primary);
+
+    padding: 8px 8px;
+  }
+
+  .parcely_app {
+    color: #14160d !important;
+  }
+
+  .parcely_shipping_provider,
+  .parcely_app_shipping_method {
+    cursor: pointer;
+
+    transition: all;
+
+    transition-duration: 300ms;
+  }
+
+  .parcely_shipping_provider:hover,
+  .parcely_app_shipping_method:hover {
+    background-color: var(--color-brand-secondary-light) !important;
+  }
+
+  .css-1sszepo-control,
+  .css-1sszepo-control span,
+  .css-1sszepo-control input,
+  .css-1sszepo-control div {
+    background-color: var(--color-brand-secondary-light) !important;
   }
 {% endstylesheet %}
