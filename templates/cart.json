@@ -28,6 +28,15 @@
     },
     "template_cart_total_FYAzD9": {
       "type": "template-cart-total",
+      "blocks": {
+        "shipping_design_ih4RPg": {
+          "type": "shipping_design",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "shipping_design_ih4RPg"
+      ],
       "name": "Groza kopsumma",
       "settings": {
         "free_shipping_threshold": "70.00",
