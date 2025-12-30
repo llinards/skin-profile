@@ -13,6 +13,19 @@
       "type": "cart",
       "settings": {}
     },
+    "1767097612be1150cd": {
+      "type": "apps",
+      "blocks": {
+        "parcely_app_parcely_XKh7j9": {
+          "type": "shopify://apps/parcely-app/blocks/parcely/cbdd14b4-8c8a-445b-bf69-fadc23ab031d",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "parcely_app_parcely_XKh7j9"
+      ],
+      "settings": {}
+    },
     "template_cart_total_FYAzD9": {
       "type": "template-cart-total",
       "blocks": {
@@ -146,6 +159,7 @@
   },
   "order": [
     "main",
+    "1767097612be1150cd",
     "template_cart_total_FYAzD9",
     "template_text_image_wide_7Wy8Pq",
     "template_contact_us_LXH4h7"
