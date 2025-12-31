@@ -1,6 +1,7 @@
 <button
   type="submit"
   name="{{ name }}"
+  {% if disabled %}disabled aria-disabled="true"{% endif %}
   class="{{ class }} inline-block text-white bg-sp-brown border border-sp-brown hover:bg-white hover:sp-brown fill-white hover:fill-sp-brown transition-all duration-300 uppercase rounded-xl py-3 px-4 tracking-wider cursor-pointer {% if full_width %}w-full text-center{% endif %}"
 >
   {{ text }}

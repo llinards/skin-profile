@@ -264,6 +264,14 @@
             btns.forEach(btn => {
                 btn.classList.toggle('disabled', disabled);
                 btn.classList.toggle('opacity-50', disabled);
+
+                if (btn instanceof HTMLButtonElement || btn instanceof HTMLInputElement) {
+                    btn.disabled = disabled;
+                } else {
+                    if (disabled) btn.setAttribute('disabled', '');
+                    else btn.removeAttribute('disabled');
+                }
+
                 if (disabled) {
                     btn.setAttribute('aria-disabled', 'true');
                 } else {
