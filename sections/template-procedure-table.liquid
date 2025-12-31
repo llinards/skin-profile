@@ -79,7 +79,7 @@
             <div class="rte mb-6">{{ section.settings.content }}</div>
           {%- endif -%}
 
-          {%- assign apply_url_fallback = section.settings.apply_url | default: '#' -%}
+          {%- assign apply_url_fallback = section.settings.apply_url | default: pages['appointment-booking'].url -%}
 
           {% render 'procedure-table',
             services: section.blocks,
@@ -189,8 +189,8 @@
     {
       "type": "url",
       "id": "apply_url",
-      "label": "Noklusējuma pieteikšanās saite",
-      "info": "Izmanto, ja konkrētai procedūrai nav norādīta saite."
+      "label": "Pieteikšanās saite",
+      "info": "Konsultācijas anketas vai procedūras saitei."
     },
     {
       "type": "text",
@@ -256,12 +256,6 @@
           "label": "Kontraindikācijas teksts",
           "info": "Teksts, kas parādīsies modalā",
           "default": "<p>Kontraindikācijas informācija šeit.</p>"
-        },
-        {
-          "type": "url",
-          "id": "apply_url",
-          "label": "Individuāla pieteikšanās saite",
-          "info": "Ja tukšs, izmanto sadaļas noklusējuma saiti"
         }
       ]
     }

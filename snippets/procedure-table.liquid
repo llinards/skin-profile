@@ -1,6 +1,6 @@
 {%- assign disclaimer = disclaimer | default: '' -%}
 {%- assign services = services | default: section.blocks -%}
-{%- assign apply_url_default = apply_url_default | default: '/pages/pieteikuma-anketa' -%}
+{%- assign apply_url_default = apply_url_default | default: pages['appointment-booking'].url -%}
 {%- assign apply_cta = apply_cta | default: 'Pieteikt' -%}
 
 {%- assign procedure_blocks = services | where: 'type', 'procedure' -%}
