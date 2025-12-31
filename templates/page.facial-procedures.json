@@ -84,7 +84,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Aktīvas baktēriju vai vīrusu ādas infekcijas</li><li>Smags aknes iekaisums ar pustulām</li><li>Atvērtas brūces vai svaigi ādas bojājumi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_WW3krV": {
@@ -96,7 +95,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Izteikts akūts iekaisums ādā</li><li>Dermatīts saasinājuma fāzē</li><li>Svaigs saules apdegums sejas zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Lc8XyH": {
@@ -108,7 +106,6 @@
             "procedure_price": "€65",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Rozācija aktīvā stadijā</li><li>Psoriāze apstrādes zonā</li><li>Aktīvas strutainas izsitumu perēkļi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_xzbkEM": {
@@ -120,7 +117,6 @@
             "procedure_price": "€65",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sirds stimulatora vai cita implantēta elektrokardiostimulatora klātbūtne </li><li>Epilepsija</li><li>Grūtniecība (piesardzības nolūkos)</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_RCia4c": {
@@ -132,7 +128,6 @@
             "procedure_price": "€65",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Metāla implanti apstrādes zonā</li><li>Smaga kardiovaskulāra patoloģija</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_YgnDcq": {
@@ -144,7 +139,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Aktīvas ādas infekcijas vai iekaisumi</li><li>Autoimūnas ādas slimības aktīvā fāzē</li><li>Grūtniecība un zīdīšanas periods (piesardzība)</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_N8Knkp": {
@@ -156,7 +150,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Nediagnosticētas ādas izmaiņas</li><li>Grūtniecība (atkarībā no izmantotajām metodēm)</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_jhmg7h": {
@@ -168,7 +161,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigas trombozes vai tromboflebīts</li><li>Smaga sirds mazspēja</li><li>Akūtas ādas infekcijas apstrādes zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_G9hkaT": {
@@ -180,7 +172,6 @@
             "procedure_price": "€65",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sirds stimulatora klātbūtne</li><li>Epilepsija</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -200,7 +191,7 @@
         "title": "Kosmetoloģija",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
@@ -219,7 +210,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_MWajCe": {
@@ -231,7 +221,6 @@
             "procedure_price": "€170",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_C4MHGc": {
@@ -243,7 +232,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums vai solārija apmeklējums pēdējās dienās</li><li>Aktīvs dermatīts vai ekzēma</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_7kwfYP": {
@@ -255,7 +243,6 @@
             "procedure_price": "€80 - €100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Retinoīdu sistēmiska terapija pēdējo mēnešu laikā</li><li>Herpes infekcijas saasinājums apstrādes zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Ug7WDE": {
@@ -267,7 +254,6 @@
             "procedure_price": "€90",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Aktīvs dermatīts vai ekzēma</li><li>Atvērtas brūces vai skrāpējumi</li><li>Paaugstināta jutība pret pīlinga sastāvdaļām</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_iDbCxA": {
@@ -279,7 +265,6 @@
             "procedure_price": "€120",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Smaga rozācija vai kuperoze</li><li>Aktīvas infekcijas ādā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_zaQN4b": {
@@ -291,7 +276,6 @@
             "procedure_price": "€230",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Ļoti jutīga āda ar barjeras bojājumu</li><li>Sistēmiska retinoīdu terapija</li><li>Grūtniecība (piesardzība) informācija šeit.</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_jttCHE": {
@@ -303,7 +287,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Aktīvs dermatīts vai ekzēma</li><li>Svaigs saules apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_qVkGCt": {
@@ -315,7 +298,6 @@
             "procedure_price": "-",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_xL34pc": {
@@ -327,7 +309,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām (TCA, H2O2, kojīnskābe)</li><li>Svaigs iedegums</li><li>Herpes infekcija aktīvā fāzē</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_DDriaJ": {
@@ -339,7 +320,6 @@
             "procedure_price": "€80 - €180",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas ādas iekaisuma slimības</li><li>Sistēmiska retinoīdu terapija</li><li>Ļoti jutīga vai bojāta ādas barjera</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_nTabMC": {
@@ -351,7 +331,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība un zīdīšana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_TGrmjm": {
@@ -363,7 +342,6 @@
             "procedure_price": "€80 - €130",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret injicējamām vielām</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_MYNHLT": {
@@ -375,7 +353,6 @@
             "procedure_price": "€150 - €350",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smagas aknu vai nieru saslimšanas</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_GCFzRQ": {
@@ -387,7 +364,6 @@
             "procedure_price": "€160",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret hialuronskābi vai citiem komponentiem</li><li>Autoimūnas saslimšanas aktīvā stadijā</li><li>Grūtniecība un zīdīšana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_wcg9yy": {
@@ -398,7 +374,6 @@
             "procedure_price": "€45",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
-            "apply_url": ""
           }
         }
       },
@@ -425,7 +400,7 @@
         "title": "Pollogen Geneo X un pīlingi",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -444,7 +419,6 @@
             "procedure_price": "€180",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Akūtas ādas infekcijas injekcijas zonā</li><li>Grūtniecība un zīdīšana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_yHX4Dx": {
@@ -456,7 +430,6 @@
             "procedure_price": "€180 - €200",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_hbLnkq": {
@@ -468,7 +441,6 @@
             "procedure_price": "€160",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smaga ādas iekaisuma slimība injekcijas vietā</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_KUjdBy": {
@@ -480,7 +452,6 @@
             "procedure_price": "€250",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Alerģija pret hialuronskābi</li><li>Asiņošanas traucējumi</li><li>Grūtniecība un zīdīšana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_FknfyE": {
@@ -492,7 +463,6 @@
             "procedure_price": "€180 - €200",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -508,7 +478,7 @@
         "title": "Biorevitalizācija",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,

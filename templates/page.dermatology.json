@@ -76,7 +76,6 @@
             "procedure_price": "€55",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_F8FXGT": {
@@ -88,7 +87,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Akūtas infekcijas slimības ar drudzi (vizīti var pārcelt)</li><li>Nepietiekama sadarbspēja smagas psihiskas saslimšanas gadījumā</li><li>Nepilngadīgajiem nepieciešama likumiska pārstāvja klātbūtne</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_LQP6AL": {
@@ -100,7 +98,6 @@
             "procedure_price": "€45",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta smaga saslimšana ar drudzi</li><li>Neatbilstoša sagatavošanās, ja nepieciešami konkrēti analīžu rezultāti</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_E7CNM8": {
@@ -112,7 +109,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nespēja noturēt stacionāru galvas pozīciju izmeklējuma laikā</li><li>Smagas klaustrofobijas izpausmes</li><li>Akūtas infekcijas ar drudzi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_rYkg3p": {
@@ -124,7 +120,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smaga nespēja sadarboties izmeklējuma laikā</li><li>Akūta infekcija ar drudzi</li><li>Nav piemērots, ja seja ir pārklāta ar svaigām brūcēm vai pārsējiem</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -140,7 +135,7 @@
         "title": "Dermatoloģijas pakalpojumi",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": false,
         "open_by_default": false,

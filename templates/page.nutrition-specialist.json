@@ -76,7 +76,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nav absolūtu kontrindikāciju</li><li>Akūtas infekcijas ar drudzi</li><li>Nespēja sadarboties vizītes laikā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_dwkwhr": {
@@ -88,7 +87,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nav specifisku kontrindikāciju</li><li>Akūta slimība ar drudzi</li><li>Nespēja sadarboties</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -101,7 +99,7 @@
         "title": "Endokrinoloģija",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": false,
         "open_by_default": false,

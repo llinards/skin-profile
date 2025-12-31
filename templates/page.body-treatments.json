@@ -75,7 +75,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Tromboflebīts vai tromboze</li><li>Smagas sirds un asinsvadu saslimšanas</li><li>Ādas infekcijas apstrādes zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_gDj3Yr": {
@@ -87,7 +86,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Vēdera trūce</li><li>Akūtas ginekoloģiskas vai gastrointestinālas saslimšanas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_k4A8Br": {
@@ -99,7 +97,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Ādas bojājumi apstrādes zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_C46nWk": {
@@ -111,7 +108,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Trombozes risks</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_ihgy7i": {
@@ -123,7 +119,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Akūtas muskuļu-skeleta traumas</li><li>Izteiktas vēnu saslimšanas</li><li>Ādas infekcijas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_hYKkWH": {
@@ -135,7 +130,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smaga sirds mazspēja</li><li>Tromboflebīts</li><li>Sistēmiskas infekcijas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_GTwaMy": {
@@ -147,7 +141,6 @@
             "procedure_price": "€550",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Trombozes risks</li><li>Smagas hroniskas saslimšanas dekompensācijas stadijā</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_z9PU8J": {
@@ -159,7 +152,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga perifēro artēriju slimība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_bfcw4i": {
@@ -171,7 +163,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaiga tromboze</li><li>Smaga sirds mazspēja</li><li>Nediagnosticēta tūska ar nezināmu etioloģiju</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_9Md97E": {
@@ -183,7 +174,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Atvērtas brūces vai ādas bojājumi</li><li>Tromboflebīts</li><li>Smaga sirds mazspēja</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_6eCAmf": {
@@ -195,7 +185,6 @@
             "procedure_price": "€15",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga vēnu mazspēja</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -217,7 +206,7 @@
         "title": "Vakummasāža un presoterapija",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
@@ -236,7 +225,6 @@
             "procedure_price": "€35",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Metāla implanti apstrādes zonā</li><li>Sirds stimulatora klātbūtne</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_rKbfz3": {
@@ -248,7 +236,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sirds ritma traucējumi</li><li>Smagas endokrīnas saslimšanas</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_zrU9VD": {
@@ -260,7 +247,6 @@
             "procedure_price": "€45",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Neārstēta hipertensija</li><li>Epilepsija</li><li>Implantēti elektriski medicīniski ierīces</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_mGkJwz": {
@@ -272,7 +258,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Grūtniecība</li><li>Nediagnosticētas sāpes vēderā vai kājās</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -287,7 +272,7 @@
         "title": "Ektroporācija un elektrolipolīze",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,

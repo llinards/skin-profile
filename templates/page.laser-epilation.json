@@ -75,7 +75,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_8ged3R": {
@@ -87,7 +86,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_bkd4KG": {
@@ -99,7 +97,6 @@
             "procedure_price": "€65",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_6bga9h": {
@@ -111,7 +108,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_i37yRD": {
@@ -123,7 +119,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_kgAmLU": {
@@ -135,7 +130,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_xrAidR": {
@@ -147,7 +141,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_NTiAWV": {
@@ -159,7 +152,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -178,7 +170,7 @@
         "title": "Zonas",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
@@ -197,7 +189,6 @@
             "procedure_price": "€55",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_dtU6id": {
@@ -209,7 +200,6 @@
             "procedure_price": "€55",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_n9AgUH": {
@@ -221,7 +211,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Dermatīts</li><li>Svaigs apdegums</li><li>Herpes informācija šeit.</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_zRmMxt": {
@@ -233,7 +222,6 @@
             "procedure_price": "€20",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Traumas</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_XkTnY8": {
@@ -245,7 +233,6 @@
             "procedure_price": "€35",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Psoriāze</li><li>Ekzēma</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -261,7 +248,7 @@
         "title": "Rokas",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -280,7 +267,6 @@
             "procedure_price": "€90",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Varikozas vēnas</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_ytMPUn": {
@@ -292,7 +278,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_x36Ka6": {
@@ -304,7 +289,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Smags dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_XUDgMV": {
@@ -316,7 +300,6 @@
             "procedure_price": "€45",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Sēnīte</li><li>Traumas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_txDdr9": {
@@ -328,7 +311,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sēnīte</li><li>Infekcija</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -344,7 +326,7 @@
         "title": "Kājas",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -363,7 +345,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_NhYYcg": {
@@ -375,7 +356,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_HRjQbA": {
@@ -387,7 +367,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Akne</li><li>Rozācija</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Ldhw8E": {
@@ -399,7 +378,6 @@
             "procedure_price": "€35",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Folikulīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_EYJNwt": {
@@ -411,7 +389,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Dermatīts</li><li>Rozācija</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_rQ9wiA": {
@@ -423,7 +400,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Dermatīts</li><li>Folikulīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_cGwAjJ": {
@@ -435,7 +411,6 @@
             "procedure_price": "€15",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_96cjyF": {
@@ -447,7 +422,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Akne</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -466,7 +440,7 @@
         "title": "Seja",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -485,7 +459,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Dermatīts</li><li>Smags folikulīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_wRxWAa": {
@@ -497,7 +470,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Infekcija</li><li>Sēnīte</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_4nmkN4": {
@@ -509,7 +481,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Folikulīts</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -523,7 +494,7 @@
         "title": "Mugura",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -542,7 +513,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Traumas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Nwih3a": {
@@ -554,7 +524,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_mWgXJy": {
@@ -566,7 +535,6 @@
             "procedure_price": "€90",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_3HBik8": {
@@ -578,7 +546,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Traumas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_ggDQR9": {
@@ -590,7 +557,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Ekzēma</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -606,7 +572,7 @@
         "title": "Ķermenis",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,

@@ -84,7 +84,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Aktīva ādas infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_yHRYD9": {
@@ -96,7 +95,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Grūtniecība</li><li>Herpes aktivizācija zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_wyCgAx": {
@@ -108,7 +106,6 @@
             "procedure_price": "€280",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_DFnEye": {
@@ -120,7 +117,6 @@
             "procedure_price": "€300",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -135,7 +131,7 @@
         "title": "Fotoatjaunošana",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
@@ -154,7 +150,6 @@
             "procedure_price": "€180",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_TaBFx7": {
@@ -166,7 +161,6 @@
             "procedure_price": "€200",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_PCR8XC": {
@@ -178,7 +172,6 @@
             "procedure_price": "€180",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_XVXBKB": {
@@ -190,7 +183,6 @@
             "procedure_price": "€180",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_a9G4TJ": {
@@ -202,7 +194,6 @@
             "procedure_price": "€300",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_8jxBMM": {
@@ -214,7 +205,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Dermatīts ap acīm</li><li>Herpes</li><li>Svaigs iekaisums</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -231,7 +221,7 @@
         "title": "Clear Lift",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -250,7 +240,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Kuperoze smagā stadijā</li><li>Asiņošanas traucējumi</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_pLmmTN": {
@@ -262,7 +251,6 @@
             "procedure_price": "€30",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošana</li><li>Atvērtas brūces</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_cYyxYd": {
@@ -274,7 +262,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_mx4Rnf": {
@@ -286,7 +273,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_g8yJLa": {
@@ -298,7 +284,6 @@
             "procedure_price": "€20",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_B93aNE": {
@@ -310,7 +295,6 @@
             "procedure_price": "€70 - €100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Ādas infekcijas</li><li>Fotosensitivitāte</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -327,7 +311,7 @@
         "title": "Asinsvadu likvidēšana",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -346,7 +330,6 @@
             "procedure_price": "€20",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Atklātas brūces</li><li>Smagi cirkulācijas traucējumi</li><li>Infekcijas komplikācijas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_d8HgcG": {
@@ -358,7 +341,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smaga neiropātija</li><li>Brūces uz pēdām</li><li>Cukura diabēta komplikācijas</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -371,7 +353,7 @@
         "title": "Nagu sēnītes apstrāde",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -390,7 +372,6 @@
             "procedure_price": "€40",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdu risks</li><li>Fotosensitivitāte</li><li>Grūtniecība</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_n7AnX4": {
@@ -402,7 +383,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Asiņošanas traucējumi</li><li>Svaigs iedegums</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_xFFzbJ": {
@@ -414,7 +394,6 @@
             "procedure_price": "€140",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes risks zonā</li><li>Infekcijas</li><li>Svaiga trauma</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_nTg3c4": {
@@ -426,7 +405,6 @@
             "procedure_price": "€240",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdu veidošanās risks</li><li>Autoimūnas slimības</li><li>Asiņošana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_grKY3q": {
@@ -438,7 +416,6 @@
             "procedure_price": "€320",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Lietoti fotosensitīvi medikamenti</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_47jXpN": {
@@ -450,7 +427,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Grūtniecība</li><li>Fotosensitivitāte</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -467,7 +443,7 @@
         "title": "Tetovējumu likvidēšana",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
@@ -494,7 +470,6 @@
             "procedure_price": "€55",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija zonā</li><li>Asins recēšanas traucējumi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_EBww3n": {
@@ -506,7 +481,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>mūnsupresija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_c89DBC": {
@@ -518,7 +492,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdi</li><li>Imūnsupresija</li><li>Svaiga trauma</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_6qLzG8": {
@@ -530,7 +503,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Slikta brūču dzīšana</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Dypttm": {
@@ -542,7 +514,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Pigmentētas neskaidras izmaiņas</li><li>Infekcija</li><li>Keloīdu risks</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_xwW7jP": {
@@ -554,7 +525,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Imūnsupresija</li><li>Akūtas infekcijas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_NqTjzV": {
@@ -566,7 +536,6 @@
             "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Asins recēšanas traucējumi</li><li>Plakstiņu infekcijas</li><li>Diabēta dekompensācija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_8b4nyP": {
@@ -578,7 +547,6 @@
             "procedure_price": "€35",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Grūtniecība piesardzīgi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_EM4LQa": {
@@ -590,7 +558,6 @@
             "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdu risks</li><li>Slikta dzīšana</li><li>Infekcija</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_XgrFCe": {
@@ -602,7 +569,6 @@
             "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Diabēta komplikācijas</li><li>Svaigs iekaisums</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -623,7 +589,7 @@
         "title": "Dermatoloģiski veidojumi",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
@@ -642,7 +608,6 @@
             "procedure_price": "€350",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Retinoīdu terapija</li><li>Keloīdu risks</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_4Vrggj": {
@@ -654,7 +619,6 @@
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes</li><li>Ekzēma</li><li>Infekcijas</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_Ek7ViF": {
@@ -666,7 +630,6 @@
             "procedure_price": "€110",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Sausa acs sindroms</li><li>Blefarīts</li><li>Herpes</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_dNc8wA": {
@@ -678,7 +641,6 @@
             "procedure_price": "€200",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Psoriāze</li><li>Dermatīts</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_ePqLjU": {
@@ -690,7 +652,6 @@
             "procedure_price": "€120",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Rozācija</li><li>Svaigs iekaisums</li><li>Fotosensitivitāte</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_ca9BQq": {
@@ -702,7 +663,6 @@
             "procedure_price": "€110",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Infekcija</li><li>Eritēma</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_cepGUx": {
@@ -714,7 +674,6 @@
             "procedure_price": "€170",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs iedegums</li><li>Herpes</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_9B4Pp4": {
@@ -726,7 +685,6 @@
             "procedure_price": "€580",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Fotosensitivitāte</li><li>Diabēts dekompensācijā</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_k73U4r": {
@@ -738,7 +696,6 @@
             "procedure_price": "€25",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija</li><li>Autoimūnas slimības</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_VdKnez": {
@@ -750,7 +707,6 @@
             "procedure_price": "€100",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Slikta dzīšana</li><li>Ādas infekcija</li><li>Keloīdi</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_yHGGmK": {
@@ -762,7 +718,6 @@
             "procedure_price": "€130 - €150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Svaiga rēta (&lt;6 mēn.)</li><li>nfekcija</li><li>Psoriāze</li></ul>",
-            "apply_url": ""
           }
         },
         "procedure_zk3LTV": {
@@ -774,7 +729,6 @@
             "procedure_price": "€350",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Aktīva akne</li><li>Svaigs iedegums</li><li>Herpes</li></ul>",
-            "apply_url": ""
           }
         }
       },
@@ -797,7 +751,7 @@
         "title": "CO2 sejas atjaunošana",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": false,
