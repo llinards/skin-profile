@@ -35,11 +35,45 @@
       x-transition:leave-start="opacity-100 translate-y-0"
       x-transition:leave-end="opacity-0 translate-y-4"
     >
-      {% render 'icon-phone' %}
-      {% render 'icon-mail' %}
-      {% render 'icon-facebook' %}
-      {% render 'icon-instagram' %}
-      {% render 'icon-booking' %}
+      {% if phone_number != blank %}
+        <a class="block" aria-label="Call" href="tel:{{ phone_number | strip | replace: ' ', '' }}">
+          {% render 'icon-phone' %}
+        </a>
+      {% else %}
+        {% render 'icon-phone' %}
+      {% endif %}
+
+      {% if email_address != blank %}
+        <a class="block" aria-label="Email" href="mailto:{{ email_address | strip }}">
+          {% render 'icon-mail' %}
+        </a>
+      {% else %}
+        {% render 'icon-mail' %}
+      {% endif %}
+
+      {% if facebook_url != blank %}
+        <a class="block" aria-label="Facebook" href="{{ facebook_url }}" target="_blank" rel="noopener noreferrer">
+          {% render 'icon-facebook' %}
+        </a>
+      {% else %}
+        {% render 'icon-facebook' %}
+      {% endif %}
+
+      {% if instagram_url != blank %}
+        <a class="block" aria-label="Instagram" href="{{ instagram_url }}" target="_blank" rel="noopener noreferrer">
+          {% render 'icon-instagram' %}
+        </a>
+      {% else %}
+        {% render 'icon-instagram' %}
+      {% endif %}
+
+      {% if booking_url != blank %}
+        <a class="block" aria-label="Booking" href="{{ booking_url }}" target="_blank" rel="noopener noreferrer">
+          {% render 'icon-booking' %}
+        </a>
+      {% else %}
+        {% render 'icon-booking' %}
+      {% endif %}
     </div>
   </div>
 </div>

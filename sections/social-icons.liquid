@@ -1,0 +1,75 @@
+{%- liquid
+  assign variant = section.settings.variant | default: 'both'
+-%}
+
+{%- if variant == 'mobile' or variant == 'both' -%}
+  {% render 'mobile-social-icons',
+    phone_number: section.settings.phone_number,
+    email_address: section.settings.email_address,
+    facebook_url: section.settings.facebook_url,
+    instagram_url: section.settings.instagram_url,
+    booking_url: section.settings.booking_url
+  %}
+{%- endif -%}
+
+{%- if variant == 'desktop' or variant == 'both' -%}
+  {% render 'social-icons',
+    phone_number: section.settings.phone_number,
+    email_address: section.settings.email_address,
+    facebook_url: section.settings.facebook_url,
+    instagram_url: section.settings.instagram_url,
+    booking_url: section.settings.booking_url
+  %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Sociālās ikonas",
+  "settings": [
+    {
+      "type": "select",
+      "id": "variant",
+      "label": "Attēlojums",
+      "options": [
+        { "value": "both", "label": "Mobilās + datora" },
+        { "value": "mobile", "label": "Tikai mobilajās" },
+        { "value": "desktop", "label": "Tikai datorā" }
+      ],
+      "default": "both"
+    },
+    { "type": "header", "content": "Saites" },
+    {
+      "type": "text",
+      "id": "phone_number",
+      "label": "Tālruņa numurs",
+      "info": "Tiks izmantots tel: saitē (piem: +37126123456)."
+    },
+    {
+      "type": "text",
+      "id": "email_address",
+      "label": "E-pasts",
+      "info": "Tiks izmantots mailto: saitē (piem: info@example.com)."
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook saite"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram saite"
+    },
+    {
+      "type": "url",
+      "id": "booking_url",
+      "label": "Booking saite"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sociālās ikonas"
+    }
+  ]
+}
+{% endschema %}

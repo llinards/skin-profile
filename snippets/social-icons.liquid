@@ -3,10 +3,44 @@
     id="social-icons"
     class="flex flex-col items-center md:fixed md:top-1/2 md:right-8 md:-translate-y-1/2 space-y-4 fill-white z-10 bg-sp-brown-30 px-2 py-4 rounded-full"
   >
-    {% render 'icon-phone', class: 'h-5 w-5' %}
-    {% render 'icon-mail', class: 'h-5 w-5' %}
-    {% render 'icon-facebook', class: 'h-5 w-5' %}
-    {% render 'icon-instagram', class: 'h-5 w-5' %}
-    {% render 'icon-booking', class: 'h-5 w-5' %}
+    {% if phone_number != blank %}
+      <a class="block" aria-label="Call" href="tel:{{ phone_number | strip | replace: ' ', '' }}">
+        {% render 'icon-phone', class: 'h-5 w-5' %}
+      </a>
+    {% else %}
+      {% render 'icon-phone', class: 'h-5 w-5' %}
+    {% endif %}
+
+    {% if email_address != blank %}
+      <a class="block" aria-label="Email" href="mailto:{{ email_address | strip }}">
+        {% render 'icon-mail', class: 'h-5 w-5' %}
+      </a>
+    {% else %}
+      {% render 'icon-mail', class: 'h-5 w-5' %}
+    {% endif %}
+
+    {% if facebook_url != blank %}
+      <a class="block" aria-label="Facebook" href="{{ facebook_url }}" target="_blank" rel="noopener noreferrer">
+        {% render 'icon-facebook', class: 'h-5 w-5' %}
+      </a>
+    {% else %}
+      {% render 'icon-facebook', class: 'h-5 w-5' %}
+    {% endif %}
+
+    {% if instagram_url != blank %}
+      <a class="block" aria-label="Instagram" href="{{ instagram_url }}" target="_blank" rel="noopener noreferrer">
+        {% render 'icon-instagram', class: 'h-5 w-5' %}
+      </a>
+    {% else %}
+      {% render 'icon-instagram', class: 'h-5 w-5' %}
+    {% endif %}
+
+    {% if booking_url != blank %}
+      <a class="block" aria-label="Booking" href="{{ booking_url }}" target="_blank" rel="noopener noreferrer">
+        {% render 'icon-booking', class: 'h-5 w-5' %}
+      </a>
+    {% else %}
+      {% render 'icon-booking', class: 'h-5 w-5' %}
+    {% endif %}
   </div>
 </div>
