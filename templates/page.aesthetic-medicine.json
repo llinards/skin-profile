@@ -46,7 +46,12 @@
       "settings": {
         "heading": "Estētiskā medicīna",
         "subtext": "<p>Procedūras ne tikai atjauno ādas toni un elastību, bet arī novērš slimību attīstību, nodrošinot ilgtermiņa ieguvumus.</p>",
-        "spacing": false
+        "spacing": false,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -135,7 +140,7 @@
         "title": "I-PRF",
         "content": "",
         "disclaimer": "",
-        "apply_url": "",
+        "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
         "open_by_default": true,
