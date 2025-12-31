@@ -16,7 +16,7 @@
     <button
       type="button"
       @click="toggle()"
-      class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
+      class="text-base lg:text-lg w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
       :aria-expanded="open.toString()"
       :aria-controls="'{{ submenu_id }}'"
       aria-haspopup="true"
@@ -71,7 +71,7 @@
                   <button
                     type="button"
                     @click="toggleChild()"
-                    class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 px-3 py-3 hover:bg-white/30 transition-all duration-200 rounded"
+                    class="text-base lg:text-lg w-full inline-flex items-center justify-center gap-2 px-3 py-3 hover:bg-white/30 transition-all duration-200 rounded"
                     :aria-expanded="childOpen.toString()"
                     :aria-controls="'{{ child_submenu_id }}'"
                     aria-haspopup="true"
@@ -110,7 +110,7 @@
                         <li>
                           <a
                             href="{{ grandchild.url }}"
-                            class="inline-block w-full px-3 py-2 text-sm hover:bg-white/30 transition-all duration-200 rounded"
+                            class="inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded"
                           >
                             {{ grandchild.title }}
                           </a>
@@ -125,7 +125,7 @@
                 <a
                   href="{{ child.url }}"
                   class="
-                    inline-block w-full px-3 py-3 text-sm hover:bg-white/30 transition-all
+                    inline-block w-full px-3 py-3 text-base lg:text-lg hover:bg-white/30 transition-all
                     duration-200 rounded
                   "
                 >
@@ -233,7 +233,7 @@
               >
                 <a
                   href="{{ child.url }}"
-                  class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-sm hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
+                  class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-base hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
                 >
                   {{ child.title }}
                   {% if child.links and child.links.size > 0 %}
@@ -263,7 +263,7 @@
                   <li>
                     <a
                       href="{{ sub.url }}"
-                      class="block px-6 py-2 text-sm hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
+                      class="block px-6 py-2 text-base hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
                     >
                       {{ sub.title }}
                     </a>
