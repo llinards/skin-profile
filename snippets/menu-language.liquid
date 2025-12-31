@@ -51,7 +51,7 @@
                 <a
                   href="#"
                   data-locale="{{ locale.iso_code }}"
-                  class="locale-link inline-block px-3 py-2 rounded hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+                  class="text-base xl:text-lg locale-link inline-block px-3 py-2 rounded hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
                 >
                   {{ locale.endonym_name | capitalize }}
                 </a>
@@ -94,11 +94,11 @@
           {% form 'localization', id: 'localization_form_desktop' %}
             <ul class="py-2 text-center list-none {{ invert_class }}">
               {% for locale in languages %}
-                <li>
+                <li class="text-base xl:text-lg">
                   <a
                     href="#"
                     data-locale="{{ locale.iso_code }}"
-                    class="locale-link block px-3 py-2 text-sm hover:bg-neutral-100 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
+                    class="locale-link block px-3 py-2 text-base xl:text-lg hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
                   >
                     {{ locale.endonym_name | capitalize }}
                   </a>
