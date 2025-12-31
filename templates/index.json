@@ -19,19 +19,10 @@
             "url": "shopify://pages/dermatology",
             "style": "white"
           }
-        },
-        "button_TVAP9j": {
-          "type": "button",
-          "settings": {
-            "text": "Virtuālais konsultants",
-            "url": "#",
-            "style": "ai"
-          }
         }
       },
       "block_order": [
-        "button_4bdWCH",
-        "button_TVAP9j"
+        "button_4bdWCH"
       ],
       "settings": {
         "bg_image": "shopify://shop_images/skin-profile-background-image.jpg",
@@ -42,7 +33,12 @@
         "bg_pos_desktop": "center",
         "heading_align": "left",
         "button_align_mobile": "center",
-        "button_align_desktop": "start"
+        "button_align_desktop": "start",
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "text_section_BfGNQG": {
