@@ -9,18 +9,6 @@
  */
 {
   "sections": {
-    "social_icons_Lq9tdc": {
-      "type": "social-icons",
-      "name": "Sociālās ikonas",
-      "settings": {
-        "variant": "both",
-        "phone_number": "tel:+37127841111",
-        "email_address": "mailto:toskinprofile@gmail.com ",
-        "facebook_url": "https://www.facebook.com/skinprofile.lv",
-        "instagram_url": "https://www.instagram.com/skinprofilesigulda",
-        "booking_url": "shopify://pages/appointment-booking"
-      }
-    },
     "main": {
       "type": "template-header",
       "blocks": {
@@ -51,6 +39,18 @@
         "facebook_url": "",
         "instagram_url": "",
         "booking_url": ""
+      }
+    },
+    "social_icons_Lq9tdc": {
+      "type": "social-icons",
+      "name": "Sociālās ikonas",
+      "settings": {
+        "variant": "both",
+        "phone_number": "tel:+37127841111",
+        "email_address": "mailto:toskinprofile@gmail.com ",
+        "facebook_url": "https://www.facebook.com/skinprofile.lv",
+        "instagram_url": "https://www.instagram.com/skinprofilesigulda",
+        "booking_url": "shopify://pages/appointment-booking"
       }
     },
     "text_section_BfGNQG": {
@@ -498,8 +498,8 @@
     }
   },
   "order": [
-    "social_icons_Lq9tdc",
     "main",
+    "social_icons_Lq9tdc",
     "text_section_BfGNQG",
     "template_quote_fYGtGC",
     "template_before_after_k3ACH6",
