@@ -19,7 +19,7 @@
       <button
         type="button"
         @click="toggle()"
-        class="text-base xl:text-lg w-full inline-flex items-center justify-center gap-2 py-2 text-center"
+        class="text-base w-full inline-flex items-center justify-center gap-2 py-2 text-center"
         :aria-expanded="open.toString()"
         aria-haspopup="true"
       >
@@ -51,7 +51,7 @@
                 <a
                   href="#"
                   data-locale="{{ locale.iso_code }}"
-                  class="text-base xl:text-lg locale-link inline-block px-3 py-2 rounded hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+                  class="text-base locale-link inline-block px-3 py-2 rounded hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
                 >
                   {{ locale.endonym_name | capitalize }}
                 </a>
@@ -78,7 +78,7 @@
     >
       <button
         type="button"
-        class="text-base xl:text-lg flex lg:text-white items-center py-1 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap {{ invert_class }}"
+        class="text-base flex lg:text-white items-center py-1 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap {{ invert_class }}"
         :aria-expanded="isOpen.toString()"
         aria-haspopup="true"
       >
@@ -94,11 +94,11 @@
           {% form 'localization', id: 'localization_form_desktop' %}
             <ul class="py-2 text-center list-none {{ invert_class }}">
               {% for locale in languages %}
-                <li class="text-base xl:text-lg">
+                <li class="text-base">
                   <a
                     href="#"
                     data-locale="{{ locale.iso_code }}"
-                    class="locale-link block px-3 py-2 text-base xl:text-lg hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
+                    class="locale-link block px-3 py-2 text-base hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
                   >
                     {{ locale.endonym_name | capitalize }}
                   </a>
