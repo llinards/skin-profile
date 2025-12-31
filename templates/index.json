@@ -11,15 +11,14 @@
   "sections": {
     "social_icons_Lq9tdc": {
       "type": "social-icons",
-      "disabled": true,
       "name": "Sociālās ikonas",
       "settings": {
         "variant": "both",
-        "phone_number": "",
-        "email_address": "",
-        "facebook_url": "",
-        "instagram_url": "",
-        "booking_url": ""
+        "phone_number": "tel:+37127841111",
+        "email_address": "mailto:toskinprofile@gmail.com ",
+        "facebook_url": "https://www.facebook.com/skinprofile.lv",
+        "instagram_url": "https://www.instagram.com/skinprofilesigulda",
+        "booking_url": "shopify://pages/appointment-booking"
       }
     },
     "main": {
