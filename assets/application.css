@@ -1779,6 +1779,11 @@
       display: none;
     }
   }
+  .md\:inline-block {
+    @media (width >= 48rem) {
+      display: inline-block;
+    }
+  }
   .md\:table-cell {
     @media (width >= 48rem) {
       display: table-cell;
