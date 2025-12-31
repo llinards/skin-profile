@@ -228,7 +228,7 @@
             {% for child in link.links %}
               <li
                 @mouseenter="openChild({{ forloop.index0 }})"
-                class="relative group"
+                class="relative group w-full"
                 x-ref="item{{ forloop.index0 }}"
               >
                 <a

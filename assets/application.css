@@ -618,6 +618,9 @@
   .w-fit {
     width: fit-content;
   }
+  .w-fit\! {
+    width: fit-content !important;
+  }
   .w-full {
     width: 100%;
   }
@@ -2525,9 +2528,6 @@
   }
   .bg-sp-brown-30 {
     background-color: rgb(136 86 66 / 0.3);
-  }
-  .group {
-    width: fit-content !important;
   }
   .group:hover .group-hover\:bg-sp-brown {
     background-color: var(--color-brand-primary) !important;

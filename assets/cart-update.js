@@ -2,6 +2,12 @@
     if (window.__cartAjaxInit) return;
     window.__cartAjaxInit = true;
 
+    function reindexLines() {
+        document.querySelectorAll('.cart-line-item').forEach((row, idx) => {
+            row.dataset.line = String(idx + 1);
+        });
+    }
+
     function formatMoney(cents) {
         try {
             if (window.Shopify && Shopify.formatMoney && window.themeCart?.moneyFormat) {
@@ -80,7 +86,7 @@
         if (grandEl) grandEl.textContent = formatMoney(grandCents);
     }
 
-    async function changeLineQty(key, qty, container) {
+    async function changeLineQty(key, line, qty, container) {
         const btns = container.querySelectorAll('.quantity__button');
         btns.forEach(b => b.setAttribute('aria-disabled', 'true'));
         setLoading(container, true);
@@ -89,12 +95,22 @@
             const res = await fetch('/cart/change.js', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify({ id: key, quantity: qty })
+                body: JSON.stringify(
+                    Number.isFinite(line) && line > 0
+                        ? { line, quantity: qty }
+                        : { id: key, quantity: qty }
+                )
             });
             if (!res.ok) throw new Error('Cart update failed');
             const cart = await res.json();
 
-            const updated = cart.items.find(i => i.key === key);
+            let updated = null;
+            if (Number.isFinite(line) && line > 0 && Array.isArray(cart.items)) {
+                updated = cart.items[line - 1] || null;
+            }
+            if (!updated && Array.isArray(cart.items)) {
+                updated = cart.items.find(i => i && i.key === key) || null;
+            }
             const max = getMaxQty(container);
 
             if (updated) {
@@ -105,8 +121,15 @@
                     (updated.original_line_price != null ? updated.original_line_price : updated.final_line_price)
                 );
                 setButtonsState(container, updated.quantity, max);
+
+                if (updated.key) container.dataset.key = updated.key;
             } else {
-                container.remove();
+                if (cart.item_count === 0) {
+                    container.remove();
+                } else {
+                    window.location.reload();
+                    return;
+                }
             }
 
             updateSummary(cart.original_total_price != null ? cart.original_total_price : cart.total_price);
@@ -117,6 +140,8 @@
                 document.querySelectorAll('.cart-count').forEach(el => { el.textContent = '0'; });
                 return;
             }
+
+            reindexLines();
         } catch (e) {
             console.error(e);
         } finally {
@@ -144,6 +169,7 @@
         if (!container) return;
 
         const key = container.dataset.key;
+        const line = parseInt(container.dataset.line, 10);
         const max = getMaxQty(container);
         const qtyEl = container.querySelector('[data-qty]');
         let qty = parseInt(qtyEl?.textContent, 10) || 1;
@@ -160,7 +186,7 @@
             qty = Math.max(1, qty - 1);
         }
 
-        changeLineQty(key, qty, container);
+        changeLineQty(key, Number.isFinite(line) ? line : null, qty, container);
     });
 
     document.addEventListener('click', async function (e) {
@@ -172,6 +198,7 @@
         if (!row) return;
 
         const key = row.dataset.key;
+        const line = parseInt(row.dataset.line, 10);
         link.setAttribute('aria-disabled', 'true');
         setLoading(row, true);
 
@@ -179,7 +206,11 @@
             const res = await fetch('/cart/change.js', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify({ id: key, quantity: 0 })
+                body: JSON.stringify(
+                    Number.isFinite(line) && line > 0
+                        ? { line, quantity: 0 }
+                        : { id: key, quantity: 0 }
+                )
             });
             if (!res.ok) throw new Error('Remove failed');
 
@@ -194,6 +225,8 @@
                 document.querySelectorAll('.cart-count').forEach(el => { el.textContent = '0'; });
                 return;
             }
+
+            reindexLines();
         } catch (err) {
             console.error(err);
         } finally {
@@ -208,6 +241,9 @@
             const qty = parseInt(container.querySelector('[data-qty]')?.textContent, 10) || 1;
             setButtonsState(container, qty, max);
         });
+
+        reindexLines();
+
         if (window.themeCart?.initialCartTotalCents != null) {
             updateSummary(window.themeCart.initialCartTotalCents);
         }
