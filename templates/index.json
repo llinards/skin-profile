@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "social_icons_Lq9tdc": {
+      "type": "social-icons",
+      "disabled": true,
+      "name": "Sociālās ikonas",
+      "settings": {
+        "variant": "both",
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
+      }
+    },
     "main": {
       "type": "template-header",
       "blocks": {
@@ -483,21 +496,10 @@
       "type": "teamplate-btn-scroll-to-top",
       "name": "Atpakaļ uz lapas sākumu",
       "settings": {}
-    },
-    "social_icons_Lq9tdc": {
-      "type": "social-icons",
-      "name": "Sociālās ikonas",
-      "settings": {
-        "variant": "both",
-        "phone_number": "",
-        "email_address": "",
-        "facebook_url": "",
-        "instagram_url": "",
-        "booking_url": ""
-      }
     }
   },
   "order": [
+    "social_icons_Lq9tdc",
     "main",
     "text_section_BfGNQG",
     "template_quote_fYGtGC",
@@ -508,7 +510,6 @@
     "team_section_WTmffT",
     "template_services_carousel_grid_phrCqU",
     "template_contact_us_wXe9dp",
-    "teamplate_btn_scroll_to_top_B9MAxk",
-    "social_icons_Lq9tdc"
+    "teamplate_btn_scroll_to_top_B9MAxk"
   ]
 }
