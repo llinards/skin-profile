@@ -38,7 +38,11 @@
     function setLoading(container, isLoading) {
         const rowOverlay = container.querySelector('[data-row-overlay]');
         if (rowOverlay) {
-            rowOverlay.classList.toggle('hidden', !isLoading);
+            if (rowOverlay.classList.contains('hidden')) {
+                rowOverlay.classList.toggle('hidden', !isLoading);
+            } else {
+                rowOverlay.style.display = isLoading ? 'flex' : 'none';
+            }
         } else {
             const loader = container.querySelector('[data-loading]');
             if (loader) loader.classList.toggle('hidden', !isLoading);
@@ -97,13 +101,15 @@
                 const qtyEl = container.querySelector('[data-qty]');
                 const amountEl = container.querySelector('[data-line-price-amount]');
                 if (qtyEl) qtyEl.textContent = updated.quantity;
-                if (amountEl) amountEl.textContent = formatMoney(updated.final_line_price);
+                if (amountEl) amountEl.textContent = formatMoney(
+                    (updated.original_line_price != null ? updated.original_line_price : updated.final_line_price)
+                );
                 setButtonsState(container, updated.quantity, max);
             } else {
                 container.remove();
             }
 
-            updateSummary(cart.total_price);
+            updateSummary(cart.original_total_price != null ? cart.original_total_price : cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
 
             if (cart.item_count === 0) {
@@ -180,7 +186,7 @@
             const cart = await res.json();
             row.remove();
 
-            updateSummary(cart.total_price);
+            updateSummary(cart.original_total_price != null ? cart.original_total_price : cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
 
             if (cart.item_count === 0) {

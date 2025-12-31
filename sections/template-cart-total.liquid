@@ -18,7 +18,7 @@
 
         <div class="flex justify-between border-b border-sp-brown py-4">
           <p>{{ 'cart.subtotal' | t }}:</p>
-          <p data-subtotal-amount>{{ cart.total_price | money }}</p>
+          <p data-subtotal-amount>{{ cart.original_total_price | money }}</p>
         </div>
 
         {%- if total_savings > 0 -%}
@@ -68,11 +68,17 @@
               {{ app_blocks_markup }}
             </div>
           {%- endif -%}
+
+          {%- if other_blocks_markup != blank -%}
+            <div class="py-4">
+              {{ other_blocks_markup }}
+            </div>
+          {%- endif -%}
         {%- endif -%}
 
         <div class="flex justify-between py-4">
           <p>{{ 'cart.total' | t }}:</p>
-          <p data-grandtotal-amount>{{ cart.total_price | money }}</p>
+          <p data-grandtotal-amount>{{ cart.original_total_price | money }}</p>
         </div>
 
         {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
