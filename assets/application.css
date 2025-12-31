@@ -2340,11 +2340,6 @@
       align-items: flex-start;
     }
   }
-  .lg\:justify-end {
-    @media (width >= 64rem) {
-      justify-content: flex-end;
-    }
-  }
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
@@ -2454,6 +2449,9 @@
   }
   .sp-brown {
     color: var(--color-brand-primary);
+  }
+  .sp-light-brown {
+    color: var(--color-brand-secondary);
   }
   .active\:sp-brown:active {
     color: var(--color-brand-primary) !important;

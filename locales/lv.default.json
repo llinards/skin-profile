@@ -3157,7 +3157,9 @@
       "follow": "Pieseko",
       "hours": "Pirmdiena - Piektdiena",
       "hours_time": "09:00 - 18:00",
-      "rights": "Visas tiesības rezervētas"
+      "rights": "Visas tiesības rezervētas",
+      "design": "Dizains",
+      "developed": "Izstrādāja"
     },
     "header": {
       "contacts": "Kontakti"
