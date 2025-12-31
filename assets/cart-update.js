@@ -247,6 +247,86 @@
         if (window.themeCart?.initialCartTotalCents != null) {
             updateSummary(window.themeCart.initialCartTotalCents);
         }
+
+        initParcelyCheckoutButton();
+    }
+
+    function initParcelyCheckoutButton() {
+        const parcelyWidget = document.getElementById('parcelyWidget');
+
+        function getCheckoutButtons() {
+            return Array.from(document.querySelectorAll('button[name="checkout"], input[name="checkout"]'));
+        }
+
+        function setCheckoutDisabled(disabled) {
+            const btns = getCheckoutButtons();
+            if (btns.length === 0) return;
+            btns.forEach(btn => {
+                btn.classList.toggle('disabled', disabled);
+                btn.classList.toggle('opacity-50', disabled);
+                if (disabled) {
+                    btn.setAttribute('aria-disabled', 'true');
+                } else {
+                    btn.removeAttribute('aria-disabled');
+                }
+            });
+        }
+
+        function hasAnyParcelyRadioChecked() {
+            if (!parcelyWidget) return true;
+            return Boolean(parcelyWidget.querySelector('input.parcelyRadio[type="radio"]:checked'));
+        }
+
+        function updateCheckoutState() {
+            setCheckoutDisabled(!hasAnyParcelyRadioChecked());
+        }
+
+        let updateScheduled = false;
+        function scheduleUpdate() {
+            if (updateScheduled) return;
+            updateScheduled = true;
+
+            // Parcely can toggle checked state asynchronously; re-check across ticks.
+            queueMicrotask(() => updateCheckoutState());
+            requestAnimationFrame(() => {
+                updateCheckoutState();
+                setTimeout(() => {
+                    updateCheckoutState();
+                    updateScheduled = false;
+                }, 0);
+            });
+        }
+
+        if (!parcelyWidget) {
+            setCheckoutDisabled(false);
+            return;
+        }
+
+        // Initial state (usually disabled until a selection exists)
+        updateCheckoutState();
+
+        // Event delegation so it still works if Parcely replaces DOM nodes.
+        document.addEventListener('change', function (e) {
+            const t = e.target;
+            if (!(t instanceof HTMLElement)) return;
+            if (!t.classList.contains('parcelyRadio')) return;
+            scheduleUpdate();
+        }, true);
+
+        // Some widgets update checked state around click/label interactions.
+        document.addEventListener('click', function (e) {
+            const t = e.target;
+            if (!(t instanceof HTMLElement)) return;
+            // If user clicks anywhere inside the widget (labels/spans), re-check.
+            if (!parcelyWidget.contains(t)) return;
+            scheduleUpdate();
+        }, true);
+
+        // Re-check whenever Parcely re-renders its widget.
+        const observer = new MutationObserver(() => {
+            scheduleUpdate();
+        });
+        observer.observe(parcelyWidget, { childList: true, subtree: true, attributes: true });
     }
 
     if (document.readyState === 'loading') {

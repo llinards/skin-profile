@@ -140,7 +140,6 @@
               {% endfor %}
             </tbody>
           </table>
-          <p class="text-gray-400">{{ 'cart.discount_note' | t }}</p>
         </div>
         <div class="container mx-auto px-4 pb-12" data-cart-total-section="{{ section.id }}">
           <div id="cart-total" class="flex md:justify-end">
@@ -187,9 +186,11 @@
                 <p data-grandtotal-amount>{{ cart.original_total_price | money }}</p>
               </div>
 
+              <p class="text-gray-400 pb-4">{{ 'cart.discount_note' | t }}</p>
+
               {%- assign checkout_text = 'cart.continue_to_checkout' | t -%}
               <form action="{{ routes.cart_url }}" method="post" novalidate class="flex justify-center">
-                {% render 'btn-brown-submit', text: checkout_text, name: 'checkout' %}
+                {% render 'btn-brown-submit', text: checkout_text, name: 'checkout', class: 'disabled opacity-50' %}
               </form>
             </div>
           </div>
