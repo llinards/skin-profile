@@ -2180,6 +2180,14 @@
           "title": "Cenas atjauninājums",
           "description": "Šo preču cenas ir mainījušās un ir atjauninātas jūsu grozā.",
           "updated_price": "Atjaunināta cena"
+        },
+        "price_and_quantity_update": {
+          "title": "Cenas un daudzuma atjauninājums",
+          "description": "Šo preču cenas un pieejamais daudzums ir mainījies un atjaunināts jūsu grozā."
+        },
+        "out_of_stock": {
+          "description": "Šīs preces vairs nav pieejamas un ir izņemtas no jūsu groza.",
+          "items_unavailable": "Dažas preces vairs nav pieejamas un ir izņemtas no jūsu groza."
         }
       }
     },
