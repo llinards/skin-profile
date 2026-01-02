@@ -1014,7 +1014,11 @@
           "other": "{{ count }} atlaižu kodi tika noņemti"
         },
         "add_payment_method": "Pievienojiet maksājuma veidu",
-        "choose_new_payment_method": "Izvēlieties jaunu maksājuma veidu"
+        "choose_new_payment_method": "Izvēlieties jaunu maksājuma veidu",
+        "mor_disclaimer_html": "Noklikšķinot zemāk un pabeidzot pasūtījumu, jūs piekrītat iegādāties preci(-es) no Global-e kā reģistrētais tirgotājs šim darījumam saskaņā ar Global-e <a class=\"link--small\" data-modal=\"true\" data-title-text=\"{{ mor_terms }}\" href=\"{{ terms_href }}\">Noteikumiem un nosacījumiem</a> un <a class=\"link--small\" data-modal=\"true\" data-title-text=\"{{ privacy_policy }}\" href=\"{{ policy_href }}\">Privātuma politiku</a>. Global-e ir starptautisks izpildes pakalpojumu sniedzējs {{ shop_name }}",
+        "update_payment_method": "Atjauniniet maksājuma veidu",
+        "order_covered_by_store_credit_notice": "Jūsu pasūtījumu sedz jūsu veikala kredīts.",
+        "order_covered_by_redeemables_notice": "Jūsu pasūtījums ir apmaksāts."
       },
       "thank_you": {
         "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
