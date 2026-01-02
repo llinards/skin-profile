@@ -200,14 +200,6 @@
             </div>
           </div>
         </div>
-
-        {% comment %}
-          <script>
-            window.themeCart = window.themeCart || {};
-            window.themeCart.freeShippingThresholdCents = {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }};
-            window.themeCart.flatShippingCents = {{ section.settings.flat_shipping | default: 0 | times: 100 | round }};
-          </script>
-        {% endcomment %}
       </div>
     {% else %}
       <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
@@ -243,6 +235,7 @@
   .parcely_app h4 {
     color: #14160d !important;
     font-family: 'Manrope-SemiBold' !important;
+    padding-bottom: 8px !important;
   }
 
   .parcely_shipping_provider,
