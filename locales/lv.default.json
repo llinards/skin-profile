@@ -2343,6 +2343,11 @@
           },
           "label": "Nav piegādes"
         }
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Lai pabeigtu norēķināšanos, nepieciešama paplašinājuma mijiedarbība."
+        }
       }
     },
     "notices": {
