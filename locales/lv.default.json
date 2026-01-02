@@ -2507,7 +2507,15 @@
           "shipping_price_included": "Iekļauts",
           "recurring_order_shipping_price": "kam seko {{ recurring_order_shipping_price }}",
           "first_order_shipping_price_included": "Pirmais pasūtījums iekļauts, kam seko {{ recurring_order_shipping_price }}",
-          "first_order_different_shipping_price": "{{ first_order_shipping_price }} ({{ per_delivery_price }} par piegādi), kam seko {{ recurring_order_shipping_price }}"
+          "first_order_different_shipping_price": "{{ first_order_shipping_price }} ({{ per_delivery_price }} par piegādi), kam seko {{ recurring_order_shipping_price }}",
+          "prepaid_order_no_cycle": {
+            "one": "{{ shipping_price }} par vēl {{ count }} piegādi, kam seko {{ recurring_order_shipping_price }}",
+            "other": "{{ shipping_price }} par vēl {{ count }} piegādēm ({{ per_delivery_cost }}), kam seko {{ recurring_order_shipping_price }}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "{{ shipping_price }} par {{ count }} piegādi, kam seko {{ recurring_order_shipping_price }}",
+            "other": "{{ shipping_price }} par {{ count }} piegādēm ({{ per_delivery_cost }}), kam seko {{ recurring_order_shipping_price }}"
+          }
         },
         "duties_and_taxes_options": {
           "ddu_title": "Maksājiet pēc piegādes",
