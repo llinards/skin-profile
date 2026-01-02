@@ -2570,6 +2570,14 @@
         },
         "prime_not_available": {
           "default": "Jūsu pasūtījumam nav pieejama galvenā piegāde. Jūsu piegādes iespējas ir atjauninātas."
+        },
+        "shipping_method_first_shipment_group_title": {
+          "one": "Pirmais sūtījums",
+          "other": "Pirmie sūtījumi"
+        },
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Atkārtota sūtīšana",
+          "other": "Atkārtotas sūtīšanas"
         }
       },
       "remote_merchandise_only": {
