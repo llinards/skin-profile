@@ -109,7 +109,7 @@
     "vendor_default": "Vendor",
     "category_default": "Category",
     "values": {
-    "filter_p_m_custom_product_type": {
+      "filter_p_m_custom_product_type": {
         "cleansing": "Cleansing",
         "cream": "Cream",
         "day_cream": "Day cream",
@@ -124,13 +124,13 @@
         "serum": "Serum",
         "spf": "SPF",
         "washing": "Washing",
-        "other": "Other",
+        "other": "Other"
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Gift cards",
         "facial_care": "Facial care",
         "body_care": "Body care",
-        "nutritional_supplements": "Nutritional supplements",
+        "nutritional_supplements": "Nutritional supplements"
       }
     }
   },
@@ -958,6 +958,13 @@
     },
     "callback": {
       "try_again": "Try again"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "Are you sure you want to delete the address {{address}}?"
+      }
     }
   }
 }
