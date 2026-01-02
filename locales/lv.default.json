@@ -2081,7 +2081,9 @@
         "cannot_verify": "Jūsu maksājuma informāciju nevarēja verificēt. Pārbaudiet kartes informāciju un mēģiniet vēlreiz.",
         "invalid_number": "Ievadiet derīgu kartes numuru",
         "invalid_expiry_date": "Ievadiet derīgu derīguma termiņu",
-        "invalid_cvc": "Ievadiet derīgu drošības kodu"
+        "invalid_cvc": "Ievadiet derīgu drošības kodu",
+        "captcha_required": "Lūdzu, ievadiet maksājuma informāciju un atrisiniet captcha, lai pabeigtu pirkumu.",
+        "captcha_required_without_payment_information": "Lūdzu, atrisiniet captcha, lai pabeigtu pirkumu."
       },
       "shipping_errors": {
         "shipping_method": "Jūsu pasūtījuma piegādes iespējas ir mainījušās. Lūdzu, pārskatiet savu izvēli.",
@@ -2106,7 +2108,7 @@
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Ātrā norēķināšanās",
-        "or": "VAI",
+        "or": "Vai",
         "or_pay_another_way": "Vai arī maksājiet citā veidā",
         "or_check_out_another_way": "Vai arī pārbaudiet citu veidu",
         "or_pay_with_credit_card": "Vai arī maksājiet ar kredītkarti",
