@@ -2135,6 +2135,11 @@
         "item_label": {
           "one": "{{count}} vienība",
           "other": "{{count}} vienības"
+        },
+        "quantity_update": {
+          "page_title": "Daudzuma atjauninājums",
+          "title": "Daudzuma atjauninājums",
+          "description": "Šo preču pieejamais daudzums ir mainījies un ir atjaunināts jūsu grozā."
         }
       }
     },
