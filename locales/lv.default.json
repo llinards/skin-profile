@@ -2089,7 +2089,11 @@
         "rollup_accessibility_label": "Konta iespējas",
         "invalid_shipping_method_summary": "Izvēlieties derīgu piegādes adresi, lai skatītu pieejamās piegādes metodes.",
         "saved_address_option_link": "Izmantojiet saglabātu adresi",
-        "saved_address_modal_title": "Izmantot manu saglabāto adresi"
+        "saved_address_modal_title": "Izmantot manu saglabāto adresi",
+        "saved_address_option_description": {
+          "one": "Jums ir saglabātas {{count}} adreses.",
+          "other": "Jums ir saglabātas {{count}} adreses."
+        }
       },
       "shipping": {
         "shipping_method_title": "Piegādes metode",
@@ -2097,6 +2101,16 @@
         "free_rate_label": "Bezmaksas",
         "split_shipping_option_free": "Bezmaksas piegāde",
         "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam."
+      },
+      "remote_merchandise_only": {
+        "title": "Pabeidziet pirkumu",
+        "remote_only_notice": "Šīs preces pārdod un piegādā citi veikali. Lai pabeigtu pirkumu, sazinieties ar katru veikalu.",
+        "detail_item_label": {
+          "one": "{{count}} vienība",
+          "other": "{{count}} vienības"
+        },
+        "checkout_on_shop_label": "Atgriezties uz veikalu",
+        "single_shop_transition": "Jūs tiekat novirzīts uz {{ advertiser }}, lai pabeigtu pirkumu."
       }
     },
     "notices": {
