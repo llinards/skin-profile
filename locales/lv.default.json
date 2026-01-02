@@ -4072,6 +4072,46 @@
         "location_picker_label": "Vietas nosaukums",
         "location_picker_accessibility_label": "Vietas nosaukums: {{locationName}}"
       }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "Kartes numurs",
+        "title": "Aizstāt maksājuma veidu",
+        "replace_with": "Aizstāt ar",
+        "add_new_payment_method": "Pievienot maksājuma metodi",
+        "save_button": "Saglabāt",
+        "close_button": "Aizvērt",
+        "loading": "Notiek maksājuma veida aizstāšanas modālā loga ielāde.",
+        "success": "Maksājuma veids ir atjaunināts",
+        "invalid_subscription_contract": "Nevar atrast abonementu"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "{{ shop_name }} Logo",
+      "processing": "Apstrādā",
+      "step_one": {
+        "page_title": "Pierakstīties  - {{ shop_name }}",
+        "heading": "Pierakstīties ",
+        "subheading": "Ievadiet savu e-pasta adresi, un mēs nosūtīsim jums verifikācijas kodu",
+        "subheading_with_sign_in_options": "Pierakstieties vai izveidojiet kontu",
+        "input_field_label": "E-pasts",
+        "button": "Turpināt",
+        "or": "vai"
+      },
+      "step_two": {
+        "page_title": "Ievadīt kodu - {{ shop_name }}",
+        "heading": "Ievadīt kodu",
+        "subheading": "Aizsūtīt uz {{ email }}",
+        "restart_link": "Pierakstīties are citu e-pastu",
+        "input_field_label": "6 ciparu kodus",
+        "button": "Iesniegt"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "Ievadiet derīgu e-pasta adresi",
+          "invalid_code": "Ievadiet pareizo 6 ciparu kodu"
+        }
+      }
     }
   },
   "products": {
