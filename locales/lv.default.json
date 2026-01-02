@@ -3230,7 +3230,10 @@
       },
       "pay_pal": {
         "iframe_title_accessibility_label": "Pievienot PayPal maksājuma metodi",
-        "loading_accessibility_message": "Notiek PayPal ielāde"
+        "loading_accessibility_message": "Notiek PayPal ielāde",
+        "errors": {
+          "generic": "Radās problēma ar PayPal. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu."
+        }
       },
       "apple_pay": {
         "loading": "Apple Pay ielāde",
@@ -3347,6 +3350,15 @@
         "pre_orders_list_accessibility_label": "Nepabeigto pasūtījumu produktu saraksts",
         "resources_list_accessibility_label": "Abonēšanas produkti un nepabeigti pasūtījumi, izmantojot šo maksājuma veidu",
         "resources_card_scroll": "Ritiniet, lai skatītu citus vienumus"
+      },
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "Pievienojot maksājuma veidu, jūs pilnvarojat iekasēt maksu no jūsu kartes vai debetēt bankas kontu par turpmākajiem pirkumiem, ko apstiprināsiet, līdz atcelsiet pirkumu."
+      },
+      "bank_account": {
+        "loading_accessibility_message": "Bankas konta poga tiek ielādēta",
+        "iframe_title_accessibility_label": "Bankas konta iestatīšana",
+        "display_name": "Bankas konts",
+        "generic_error": "Nevarēja pievienot bankas kontu. Mēģiniet vēlreiz vēlāk."
       }
     },
     "payment_method_brands": {
