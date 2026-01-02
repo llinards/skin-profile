@@ -2464,6 +2464,22 @@
           "search_address": "Meklēt adresi",
           "rollup_title": "Saņemšanas vieta",
           "rollup_accessibility_label": "Saņemšanas vietas iespējas"
+        },
+        "subscription_delivery_description": {
+          "first_n_order_free": {
+            "one": "Pirmais pasūtījums bez maksas",
+            "other": "Pirmie {{ count }} pasūtījumi bez maksas"
+          },
+          "free_for_first_n_order": {
+            "one": "Pirmajam pasūtījumam",
+            "other": "Pirmajiem {{ count }} pasūtījumiem"
+          }
+        },
+        "duties_and_taxes_options": {
+          "ddu_title": "Maksājiet pēc piegādes",
+          "ddu_caption": "Var tikt piemērota papildu maksa",
+          "ddp_title": "Samaksāts tagad",
+          "ddp_caption": "Nav papildu maksas par piegādi"
         }
       },
       "remote_merchandise_only": {
