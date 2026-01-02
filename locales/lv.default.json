@@ -2111,6 +2111,31 @@
         },
         "checkout_on_shop_label": "Atgriezties uz veikalu",
         "single_shop_transition": "Jūs tiekat novirzīts uz {{ advertiser }}, lai pabeigtu pirkumu."
+      },
+      "stock": {
+        "page_title": "Inventāra problēmas",
+        "title": "Nav noliktavā",
+        "items_unavailable_notice": "Dažas preces vairs nav pieejamas.",
+        "product_column_header": "Produkti",
+        "quantity_column_header": "Daudzums",
+        "price_column_header": "Cena",
+        "status_column_header": "Status",
+        "removed_from_cart_notice": "Izņemts no groza",
+        "sold_out_label": "Izpārdots",
+        "reduced_label": "Samazināts",
+        "reduced_with_quantity_label": "Atlikušas tikai {{ quantity_available }}",
+        "remove_from_cart_button_label": "Izņemt no groza",
+        "continue_shopping_button_label": "Turpināt",
+        "go_back_to_cart_button_label": "Atgriezties pie mana groza",
+        "remove": "Noņemt",
+        "return_to_store_label": "Atgriezties uz veikalu",
+        "continue_cta_label": "Turpināt norēķināties",
+        "empty_cart_label": "Jūsu grozs ir tukšs",
+        "out_of_stock_in_context_label": "Šis produkts nav pieejams jūsu valstī/reģionā.",
+        "item_label": {
+          "one": "{{count}} vienība",
+          "other": "{{count}} vienības"
+        }
       }
     },
     "notices": {
