@@ -2441,6 +2441,23 @@
           "decrement_fulfilled_line_item": "Atgriezts {{ delta }} no {{ total }}",
           "decrement_return_line_item": "No atgriešanas vērtības ir noņemts {{ delta }}"
         }
+      },
+      "customer": {
+        "password_reset_error": "Paroles atiestatīšanas kļūda",
+        "subscribe_error": "Abonēšanas kļūda",
+        "unsubscribe_error": "Kļūda pātraucot abonēšanu",
+        "no_account_found": "Ar šo e-pasta adresi netika atrasts neviens konts.",
+        "invalid_credentials": "Nepareiza e-pasta adrese vai parole.",
+        "denylisted_reset_password": "Jūsu kontam nevarēja piekļūt, jo pašreizējā parole nav droša. Jūs saņemsiet e-pastu, lai atjauninātu paroli.",
+        "signup_disabled": "Klienta konta izveide ir atspējota."
+      },
+      "address": {
+        "updated": "Adrese veiksmīgi atjaunināta.",
+        "error_updating": "Atjauninot adresi, radās kļūda",
+        "created": "Adrese ir veiksmīgi izveidota",
+        "error_creating": "Veidojot adresi, radās kļūda.",
+        "deleted": "Adrese ir veiksmīgi izdzēsta",
+        "error_deleting": "Dzēšot adresi, radās kļūda."
       }
     },
     "email_marketing": {
@@ -2605,7 +2622,49 @@
       "discount_limit_reached": "Šī atlaide ir sasniegusi savu izmantošanas ierobežojumu",
       "discount_not_found": "Nevar atrast derīgu atlaidi, kas atbilst ievadītajam kodam.",
       "customer_already_used_once_per_customer_discount_notice": "Šī atlaide ir sasniegusi savu izmantošanas ierobežojumu",
-      "gift_card_already_applied": "Kods jau ir piemērots jūsu norēķināšanās procesam"
+      "gift_card_already_applied": "Kods jau ir piemērots jūsu norēķināšanās procesam",
+      "shop_404": {
+        "title": "Izveidojiet e-komercijas vietni un pārdodiet tiešsaistē! E-komercijas programmatūra no Shopify.",
+        "heros": {
+          "store_unavailable": "Atvainojiet, šis veikals pašlaik nav pieejams.",
+          "store_not_exist": "Šis veikals neeksistē.",
+          "no_storefront": "Šim veikalam vēl nav tīmekļa vietnes."
+        },
+        "links": {
+          "explore_other_stores": "Izpētiet citus veikalus",
+          "start_free_trial": "Sāciet bezmaksas izmēģinājumu"
+        },
+        "owner_ctas": {
+          "header": "Vai jūs esat veikala īpašnieks?",
+          "fix_domain": "Pabeidziet savas jaunās tīmekļa adreses iestatīšanu, dodieties uz {{ domain_settings_link }}. Noklikšķiniet uz “Savienot domēnu” un ievadiet: {{ domain }}.<br>Ja rodas problēmas ar piekļuvi savam veikalam, izmēģiniet lapu {{ forgot_your_store_link }}.",
+          "fix_domain_link_text": "jūsu domēna uzstādījumu",
+          "forgot_your_store_link_text": "aizmirsu savu veikalu",
+          "add_storefront": "Savu tīmekļa vietni varat iestatīt, pievienojot tiešsaistes veikala kanālu savā {{ admin_link }} lapā. Ja rodas problēmas ar piekļuvi veikalam, izmēģiniet {{ forgot_your_store_link }} lapu.",
+          "admin_link_text": "admin"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Pārdot tiekoties",
+            "caption": "Iegūstiet funkcijas, kas nepieciešamas mazumtirdzniecības veikala vadīšanai neatkarīgi no tā, vai sākat vai paplašināt savu darbību.",
+            "link_text": "Sāciet bezmaksas izmēģinājumu"
+          },
+          "open_a_store": {
+            "header": "Atveriet jaunu Shopify veikalu",
+            "caption": "Sāciet 3 dienu bezmaksas izmēģinājumu un pēc tam turpiniet par 1 USD mēnesī nākamos 3 mēnešus.",
+            "link_text": "Reģistrējieties tūlīt"
+          },
+          "editions": {
+            "header": "Apskatiet Shopify izdevumus",
+            "caption": "Ar vairāk nekā 100 produktu atjauninājumiem jūs varat būt produktīvāks, radošāks un spēcīgāks tirdzniecībā, nekā jebkad esat iedomājies.",
+            "link_text": "Izpētiet jaunākos izdevumus"
+          },
+          "store_owner": {
+            "header": "Vai jūs esat veikala īpašnieks?",
+            "caption": "Vai rodas problēmas iekļūt veikalā? Izmēģiniet funkciju {{ forgot_your_store_link }}. Ja vēlaties atkārtoti aktivizēt savu veikalu, sazinieties ar {{ shopify_support_link }}.",
+            "shopify_support_link_text": "Shopify atbalsts"
+          }
+        }
+      }
     },
     "subscriptions": {
       "buyer_consent_product": "Šī prece ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
