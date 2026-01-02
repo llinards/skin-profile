@@ -2535,6 +2535,22 @@
           "prepaid_free_shipping_with_cycles": {
             "one": "Bezmaksas piegāde pirmajam {{ cycle }}, kam seko {{ recurring_order_shipping_price }}",
             "other": "Bezmaksas piegāde pirmajam {{ cycle }}, kam seko {{ recurring_order_shipping_price }}"
+          },
+          "free_shipping_cycles": {
+            "one": "Bezmaksas piegāde, ja piegāde pārsniedz {{ count }} reizes",
+            "other": "Bezmaksas piegāde vēl {{ count }} piegādēm"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Bezmaksas piegāde, ja piegāde ir {{ count }}",
+            "other": "Bezmaksas piegāde {{ count }} piegādēm"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Bezmaksas piegāde, ja piegāde pārsniedz {{ count }} reizes, tad — {{ recurring_order_shipping_price }}\"",
+            "other": "Bezmaksas piegāde, ja piegādā vēl {{ count }} reizes, tad cena ir {{ recurring_order_shipping_price }}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Bezmaksas piegāde, ja pasūtījums ir {{ count }}, pēc tam — {{ recurring_order_shipping_price }}",
+            "other": "Bezmaksas piegāde {{ count }} piegādēm, pēc tam {{ recurring_order_shipping_price }}"
           }
         },
         "duties_and_taxes_options": {
@@ -2542,6 +2558,18 @@
           "ddu_caption": "Var tikt piemērota papildu maksa",
           "ddp_title": "Samaksāts tagad",
           "ddp_caption": "Nav papildu maksas par piegādi"
+        },
+        "estimated_delivery_date": {
+          "one": "{{ count }} darba diena",
+          "other": "{{ count }} darba dienas"
+        },
+        "other_method": {
+          "zero": "Citas metodes nav pieejamas",
+          "one": "{{ count }} cita metode pieejama vietnē",
+          "other": "{{ count }} citas pieejamās metodes, sākot no"
+        },
+        "prime_not_available": {
+          "default": "Jūsu pasūtījumam nav pieejama galvenā piegāde. Jūsu piegādes iespējas ir atjauninātas."
         }
       },
       "remote_merchandise_only": {
