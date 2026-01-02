@@ -3204,7 +3204,8 @@
           "choose_billing_address_from_list_button_accessibility_label": "Izvēlieties norēķinu adresi no saraksta",
           "missing_billing_address_error_message": "Lūdzu, norādiet norēķinu adresi",
           "default_checkbox": "Iestatīt kā noklusējuma maksājuma veidu"
-        }
+        },
+        "button_title": "Pievienot"
       },
       "delete_payment_method_button_accessibility_label": "Dzēst {{paymentMethodName}}",
       "back_button": "Atpakaļ",
@@ -3314,6 +3315,9 @@
       },
       "add_success": {
         "done_button": "Turpināt iepirkties"
+      },
+      "three_d_secure": {
+        "verification_failed": "Jūsu maksājumu nevarēja verificēt. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu."
       }
     },
     "payment_method_brands": {
