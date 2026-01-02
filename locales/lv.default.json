@@ -4112,6 +4112,32 @@
           "invalid_code": "Ievadiet pareizo 6 ciparu kodu"
         }
       }
+    },
+    "subscriptions": {
+      "subscription_contracts": {
+        "title": "Izmantojiet maksājuma metodi atkārtotiem pasūtījumiem",
+        "more_items": {
+          "one": "vēl {{count}} produkts",
+          "other": "vēl {{count}} produkti"
+        },
+        "product_count": {
+          "one": "{{count}} produkts",
+          "other": "{{count}} produkti"
+        },
+        "subscription_contracts_updated": "Atjaunināti {{succeeded}} no {{total}} abonementiem",
+        "product_details": "Produkta detaļas",
+        "load_more": "Ielādēt vēl"
+      },
+      "updating_contracts": {
+        "one": "Atjaunina {{count}} abonēšanas līgumu...",
+        "other": "Atjaunina {{count}} abonēšanas līgumus..."
+      },
+      "contracts_updated": {
+        "one": "Veiksmīgi atjaunināts {{count}} abonēšanas līgums",
+        "other": "Veiksmīgi atjaunināti {{count}} abonēšanas līgumi"
+      },
+      "contracts_update_failed": "Neizdevās atjaunināt dažus abonēšanas līgumus.",
+      "invalid_wallet_type_error": "Nederīgs maka veids."
     }
   },
   "products": {
