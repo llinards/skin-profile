@@ -2068,7 +2068,14 @@
         "pick_up_in_zero_to_two_hours": "Gatavs saņemšanai 2 stundu laikā",
         "pick_up_in_two_to_four_hours": "Gatavs saņemšanai 4 stundu laikā",
         "pick_up": "Saņemt veikalā",
-        "ship": "Peigāde"
+        "ship": "Peigāde",
+        "pick_up_immediately": "Gatavs saņemšanai tūlīt",
+        "pick_up_next_day": "Gatavs saņemšanai nākamajā dienā",
+        "pickup_point_method_definition": "Sūtīt uz saņemšanas punktu",
+        "retail_method_definition": "Mazumtirdzniecības piegāde",
+        "company_location_no_address_banner": "Pasūtījumi, kas tiek piegādāti uz vietām bez adreses, tiks iesniegti pārskatīšanai.",
+        "none_method_definition": "Nav piegādes",
+        "subscription_pickup_information": "Šī piegādes metode attieksies uz visām precēm šajā pasūtījumā un visiem turpmākajiem pasūtījumiem šim abonementam."
       },
       "customer_account": {
         "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
