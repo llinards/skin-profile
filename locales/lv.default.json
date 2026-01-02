@@ -2346,7 +2346,7 @@
       },
       "required_extensions": {
         "errors": {
-          "interaction_required": "Lai pabeigtu norēķināšanos, nepieciešama paplašinājuma mijiedarbība."
+          "interaction_required": "Lai pabeigtu pirkumu, ir nepieciešama paplašinājuma darbība."
         }
       }
     },
