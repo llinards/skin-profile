@@ -720,7 +720,12 @@
       },
       "payment": {
         "store_credit": {
-          "no_fixed_selling_plans": "Veikala kredītu nevar izmantot ar atliktā pirkuma iespējām."
+          "no_fixed_selling_plans": "Veikala kredītu nevar izmantot ar atliktā pirkuma iespējām.",
+          "label": "Veikala kredīts",
+          "apply_label": "Pievienot veikala kredītu",
+          "add_label": "Pievienojiet veikala kredītu",
+          "manage_label": "Pārvaldiet veikala kredītu",
+          "buying_gift_card": "Veikala kredītu nevar izmantot dāvanu kartes iegādei"
         },
         "clear": "Skaidrs",
         "billing_must_match_shipping_notice": "Jūsu maksājuma veida norēķinu adresei ir jāsakrīt ar piegādes adresi.",
