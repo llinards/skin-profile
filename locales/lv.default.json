@@ -1812,6 +1812,16 @@
             "cta": "Atsvaidzināt lapu"
           },
           "request_id": "Pieprasījuma ID: {{requestId}}"
+        },
+        "embed_errors": {
+          "storefront_password_required": "This shop is password protected",
+          "customer_account_required": "Lai pabeigtu norēķināšanos, nepieciešams klienta konts.",
+          "cart_completed": "Šī norēķināšanās jau ir pabeigta",
+          "invalid_cart": "Grozs vairs nav derīgs",
+          "not_authorized": "Norēķinu autentifikācija neizdevās. Lūdzu, pārbaudiet savas lietojumprogrammas akreditācijas datus.",
+          "killswitch_enabled": "Norēķināšanās īslaicīgi nav pieejama",
+          "policy_violation": "Nevar pabeigt norēķināšanos politikas konfigurācijas ierobežojumu dēļ",
+          "unrecoverable_failure": "Nevar ielādēt norēķinu lapu. Lūdzu, mēģiniet vēlreiz."
         }
       },
       "notice_banner": {
