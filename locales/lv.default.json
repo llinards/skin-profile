@@ -3326,6 +3326,15 @@
         "update_message": "Šī saite maksājuma veida atjaunināšanai ir beigusies.",
         "add_message": "Šī saite maksājuma veida pievienošanai ir beidzies derīguma termiņš.",
         "return_home_button": "Atgriezties uz sākumlapu"
+      },
+      "update_payment_method": {
+        "resources_card_show_more": "Rādīt vairāk",
+        "resources_card_show_less": "Rādīt mazāk",
+        "loading_form_accessibility_message": "Notiek maksājuma veida atjaunināšanas veidlapas ielāde",
+        "loading_current_payment_method": "Notiek pašreizējā maksājuma veida ielāde",
+        "loading_digital_wallets": "Notiek digitālā maka iespēju ielāde",
+        "loading_card_fields": "Notiek kredītkartes lauku ielāde",
+        "loading_resources": "Notiek abonementu un gaidāmo pasūtījumu ielāde"
       }
     },
     "payment_method_brands": {
