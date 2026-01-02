@@ -658,7 +658,17 @@
         "duties_label": "Nodevas",
         "duties_and_taxes_label": "Nodevas un nodokļi",
         "error_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts, tāpēc piegādes brīdī var tikt piemērotas nodevas un nodokļi.",
-        "may_be_charged_on_delivery": "Var tikt iekasēta maksa piegādes laikā"
+        "may_be_charged_on_delivery": "Var tikt iekasēta maksa piegādes laikā",
+        "total_updated_label_with_price": "Atjauninātā kopējā cena: {{ totalPrice }}",
+        "updated_shipping_method": "Atjauninātā piegādes metode: {{ shipping_method }}",
+        "recurring_payments": "Atkārtoti maksājumi",
+        "recurring_total_multiple_label": "Šim pasūtījumam ir atkārtota maksa par vairākām precēm.",
+        "deferred_total_due_date_label": "Kopējais maksājums: {{date}}",
+        "deferred_total_due_date_label_next": "Jāiesniedz {{ datums }}",
+        "full_price": "Pilna cena: {{ cena }}",
+        "custom_discount": "Pielāgota atlaide",
+        "alternative_payment_currency_total": "Iekasēta kā {{ amount_due }}",
+        "discount_applies_to_subscription_items_only": "Šī atlaide attiecas tikai uz abonēšanas precēm"
       },
       "payment": {
         "store_credit": {
