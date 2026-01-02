@@ -2233,7 +2233,8 @@
           "message": {
             "one": "Šī prece tiks noņemta no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes.",
             "other": "Šīs preces tiks noņemtas no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes."
-          }
+          },
+          "label": "Nav piegādes"
         }
       }
     },
