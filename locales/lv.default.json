@@ -2473,7 +2473,41 @@
           "free_for_first_n_order": {
             "one": "Pirmajam pasūtījumam",
             "other": "Pirmajiem {{ count }} pasūtījumiem"
-          }
+          },
+          "subscription_free_with_frequency_label": "Bezmaksas piegāde {{ delivery_frequency }}",
+          "prepaid_delivery_frequency": {
+            "one": "par {{ count }} piegādi",
+            "other": "par {{ count }} piegādēm"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "katru dienu",
+              "other": "katras {{ count }} dienas"
+            },
+            "week": {
+              "one": "katru nedēļu",
+              "other": "katras {{ count }} nedēļas"
+            },
+            "month": {
+              "one": "katru mēnesi",
+              "other": "katrus {{ count }} mēnešus"
+            },
+            "year": {
+              "one": "katru gadu",
+              "other": "katrus {{ count }} gadus"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "{{ shipping_price }} par piegādi",
+          "prepaid_shipping_price_label": "{{ shipping_price }} par piegādi x {{ delivery_interval_count }}",
+          "initial_order_discounted": "Vispirms piegādes izmaksas {{ discounted_shipping_cost }}, pēc tam {{ frequency_description }}",
+          "prepaid_initial_order_discounted": "Pirmās piegādes izmaksas {{ discounted_shipping_price }} {{ prepaid_delivery_frequency }}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Pirmās piegādes izmaksas {{ discounted_shipping_price }} {{ prepaid_delivery_frequency }} ({{ discounted_cost_per_delivery }})",
+          "prepaid_initial_order_discounted_with_renewal": "Pirmās piegādes izmaksas {{ discounted_shipping_price }} {{ prepaid_delivery_frequency }}, pēc tam {{ shipping_price }} {{ billing_cycle }}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Pirmās piegādes izmaksas {{ discounted_shipping_price }} {{ prepaid_delivery_frequency }} ({{ discounted_cost_per_delivery }}), pēc tam {{ shipping_price }} {{ billing_cycle }}",
+          "shipping_price_included": "Iekļauts",
+          "recurring_order_shipping_price": "kam seko {{ recurring_order_shipping_price }}",
+          "first_order_shipping_price_included": "Pirmais pasūtījums iekļauts, kam seko {{ recurring_order_shipping_price }}",
+          "first_order_different_shipping_price": "{{ first_order_shipping_price }} ({{ per_delivery_price }} par piegādi), kam seko {{ recurring_order_shipping_price }}"
         },
         "duties_and_taxes_options": {
           "ddu_title": "Maksājiet pēc piegādes",
