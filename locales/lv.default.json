@@ -1008,7 +1008,13 @@
         "card_fields_unavailable_html": {
           "one": "Kredītkaršu un debetkaršu maksājumi pašlaik nav pieejami.<br><a href=\"{{ current_url }}\">Atsvaidziniet šo lapu</a> vai mēģiniet vēlreiz vēlāk.",
           "other": "Kredītkaršu un debetkaršu maksājumi pašlaik nav pieejami.<br><a href=\"{{ current_url }}\">Atsvaidziniet šo lapu</a> vai izmēģiniet citu maksājuma veidu."
-        }
+        },
+        "discount_codes_removed_summary": {
+          "one": "{{ count }} atlaižu kods tika noņemts",
+          "other": "{{ count }} atlaižu kodi tika noņemti"
+        },
+        "add_payment_method": "Pievienojiet maksājuma veidu",
+        "choose_new_payment_method": "Izvēlieties jaunu maksājuma veidu"
       },
       "thank_you": {
         "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
