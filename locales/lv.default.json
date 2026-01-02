@@ -1238,7 +1238,16 @@
         "items_fulfilled_by_store": {
           "one": "Jūsu iegādātās preces tiks piegādātas no {{ remote_shop_name }}.",
           "other": "Jūsu iegādātās preces tiks piegādātas no citiem veikaliem."
-        }
+        },
+        "thank_you_payments_app_failed_pending_payment": "No jums netika iekasēta maksa par jūsu pasūtījumu. Atgriezieties grozā, lai pārskatītu pasūtījumu un vēlreiz samaksātu.",
+        "thank_you_payments_app_failed_pending_payment_payment": "No jums netika iekasēta maksa par jūsu pasūtījumu. Atgriezieties grozā, lai pārskatītu pasūtījumu un vēlreiz samaksātu.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "No jums netika iekasēta maksa par jūsu pasūtījumu. Atgriezieties grozā, lai pārskatītu pasūtījumu un vēlreiz samaksātu.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Lai saņemtu pasūtījuma apstiprinājumu, sazinieties ar mums pa e-pastu vai tālruni.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Lai saņemtu pasūtījuma apstiprinājumu, sazinieties ar mums pa e-pastu vai tālruni.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Lai saņemtu pasūtījuma apstiprinājumu, sazinieties ar mums pa e-pastu vai tālruni.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Drīzumā saņemsiet apstiprinājuma e-pastu ar pasūtījuma numuru.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Mēģināt norēķināties vēlreiz",
+        "checkout_again": "Mēģināt norēķināties vēlreiz"
       },
       "vaulted": {
         "change_button": "Mainīt"
