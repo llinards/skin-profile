@@ -711,7 +711,11 @@
           "other": "Slēpt {{ count }} vienības"
         },
         "discount_discovery": {
-          "add_code": "Pievienot atlaidi"
+          "add_code": "Pievienot atlaidi",
+          "merchandise_quantity_label": {
+            "one": "{{ skaits }} vienība",
+            "other": "{{ skaits }} vienības"
+          }
         }
       },
       "payment": {
@@ -2163,7 +2167,33 @@
         "delivery_title": "Piegāde",
         "free_rate_label": "Bezmaksas",
         "split_shipping_option_free": "Bezmaksas piegāde",
-        "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam."
+        "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam.",
+        "shipping_method_rollup_accessibility_label": "Piegādes metodes iespējas",
+        "shipping_method_one_time_purchase_group_title": "Vienreizējs pirkums",
+        "shipping_method_subscription_group_title": "Abonements",
+        "subscription_shipping": "Abonementa piegāde",
+        "subscription_local_delivery": "Abonēšanas vietējā piegāde",
+        "subscription_pickup": "Abonementa saņemšana",
+        "waiting_on_rate_notice": "Notiek pieejamo piegādes likmju iegūšana…",
+        "waiting_on_pickup_location_notice": "Notiek pieejamo saņemšanas vietu iegūšana…",
+        "no_rates_for_cart_or_destination_notice": "Jūsu grozam vai adresei nav pieejamas piegādes metodes.",
+        "no_pickup_location_notice": "Vismaz viens no jūsu produktiem nav pieejams saņemšanai",
+        "no_rates_for_country_notice": "Šai adresei nav atrastas piegādes cenas.",
+        "no_rates_contact_notice": "Sazinieties ar mums, lai iegūtu vairāk informācijas",
+        "cheapest_rate_label": "Lētākais",
+        "please_enter_your_shipping_information_notice": "Lūdzu, ievadiet savu piegādes informāciju.",
+        "estimated_delivery_date_range": "{{ minimum }} līdz {{ maximum }} darba dienas",
+        "delivery_date_range": "{{ min_time }}–{{ max_time }}",
+        "estimated_delivery_time": "Paredzamais piegādes laiks: {{ time }}",
+        "estimated_delivery_time_range": "Paredzamais piegādes laiks {{ min_time }}–{{ max_time }}",
+        "delivery_today": "Piegāde tajā pašā dienā {{ time }}",
+        "delivery_tomorrow": "Piegāde nākamajā dienā {{ time }}",
+        "two_day_delivery": "Piegāde 2 dienu laikā {{ time }}",
+        "delivery": "Piegāde {{ time }}",
+        "arrives_time": "Ierodas {{ time }}",
+        "arrives_time_range": "Ierodas {{ min_time }}–{{ max_time }}",
+        "estimated_time": "Aptuvenais {{ time }}",
+        "estimated_time_range": "Aptuvenais {{ min_time }}–{{ max_time }}"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
