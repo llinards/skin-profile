@@ -2191,7 +2191,23 @@
             "message": "{{logIn}} kontam ar piekļuvi šai atrašanās vietai, lai pievienotu vai izmantotu saglabātās maksājuma metodes.",
             "link": "Pieteikties"
           }
-        }
+        },
+        "direct_payment_terms": "Jūs esat saskaņā ar {{translatedName}} noteikumiem. No jūsu kartes tiks iekasēta maksa šādā datumā: {{dueDate}}.",
+        "fixed_direct_payment_terms": "No jūsu kartes tiks iekasēta maksa šādā datumā: {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Jūsu maksājums būs jāveic, tiklīdz jūsu pasūtījums būs izpildīts.",
+        "order_due_on_fulfillment_payment": "Maksa no jūsu kartes tiks iekasēta, tiklīdz jūsu pasūtījums būs izpildīts.",
+        "order_due_on_receipt_choose_later": "Jūsu maksājums būs jāveic saņemšanas brīdī.",
+        "order_deposit_due_now": "Šodien ir jāatmaksā {{depositAmount}}. Atlikums ir saskaņā ar {{translatedName}} noteikumiem un jāatmaksā {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "Šodien jāiemaksā {{depositAmount}}. Atlikusī summa būs jāmaksā, tiklīdz jūsu pasūtījums būs izpildīts.",
+        "order_deposit_due_on_receipt": "Šodien jāiemaksā {{depositAmount}}. Atlikusī summa būs jāmaksā vēlāk.",
+        "order_deposit_due_on_fixed_date": "Šodien jāiemaksā {{depositAmount}}. Atlikusī summa būs jāmaksā {{dueDate}}.",
+        "draft_order_payment_due_later_no_terms": "Jūsu maksājums būs jāveic, tiklīdz jūsu pasūtījums būs apstiprināts.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Maksa no jūsu kartes tiks iekasēta, tiklīdz jūsu pasūtījums būs apstiprināts.",
+        "draft_order_payment_due_later_terms": "Kad jūsu pasūtījums būs apstiprināts, jūs būsiet pakļauts {{translatedName}} noteikumiem.",
+        "draft_order_payment_due_on_fulfillment": "Jūsu maksājums būs jāveic, tiklīdz jūsu pasūtījums būs apstiprināts un izpildīts.",
+        "draft_order_deposit_due_later": "Summa {{depositAmount}} būs jāmaksā, kad jūsu pasūtījums būs apstiprināts. Atlikusī summa tiks samaksāta saskaņā ar {{translatedName}} noteikumiem.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} būs jāmaksā, kad jūsu pasūtījums būs apstiprināts. Atlikusī summa būs jāmaksā, kad jūsu pasūtījums būs izpildīts.",
+        "bank_account_label": "Bankas konts"
       },
       "store_credit_errors": {
         "generic_error": "Radās problēma ar jūsu veikala kredītu. Mēģiniet vēlreiz vai atkārtoti ielādējiet lapu."
