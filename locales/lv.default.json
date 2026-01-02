@@ -3812,7 +3812,8 @@
       "grouped_view_components": {
         "expand_line_items": "Rādīt {{count}} vienumus",
         "collapse_line_items": "Slēpt {{count}} vienumus",
-        "line_item_summary_list_accessibility_label": "Preces {{productTitle}} komplektā"
+        "line_item_summary_list_accessibility_label": "Preces {{productTitle}} komplektā",
+        "line_item_summary_accessibility_label": "{{productTitle}}, Daudzums: {{refundableQuantity}}"
       },
       "discount": "Atlaide",
       "hide_items": "Slēpt vienumus",
@@ -3825,7 +3826,8 @@
         "load_more_items": {
           "one": "Ielādēt vēl {{count}} vienumus",
           "other": "Ielādēt vēl {{count}} vienumus"
-        }
+        },
+        "product_name_and_quantity": "{{productName}} dadzums {{quantity}}"
       },
       "mobile_summary_toggle_button": {
         "open": "Rādīt pasūtījuma kopsavilkumu",
