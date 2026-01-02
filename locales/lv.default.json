@@ -2152,6 +2152,13 @@
           "header": "Dažas preces tika izņemtas no jūsu groza",
           "message": "Šīs preces nav pieejamas.",
           "status_column_header": "Nav pieejams"
+        },
+        "unfulfillable_product": {
+          "title": "Piegāde nav pieejama",
+          "message": {
+            "one": "{{ delivery_method }} vairs nav pieejams šai precei.",
+            "other": "{{ delivery_method }} vairs nav pieejams šīm precēm."
+          }
         }
       }
     },
