@@ -3994,7 +3994,9 @@
     },
     "addresses": {
       "edit_modal_title": {
-        "billing": "Rediģēt norēķinu adresi"
+        "billing": "Rediģēt norēķinu adresi",
+        "default": "Rediģēt adresi",
+        "shipping": "Rediģēt piegādes adresi"
       },
       "loading_billing_accessibility_message": "Ielādē norēķinu adresi",
       "billing_address_dropdown_placeholder": "Norēķinu adrese",
@@ -4024,10 +4026,52 @@
       "loading_finished_accessibility_message": "Ir ielādēta jauna adrešu lapa",
       "loading_shipping_accessibility_message": "Ielādē piegādes adresi",
       "save_new_address_accessibility_label": "Saglabāt adresi",
-      "title": "Adreses"
+      "title": "Adreses",
+      "default_address": {
+        "title": "Noklusējuma adrese",
+        "title_accessibility_label": "Noklusējuma adrese: {{address}}"
+      },
+      "pagination": {
+        "load_more": "Ielādēt vēl",
+        "load_more_accessibility_label": "Ielādēt vēl adreses"
+      }
     },
     "address_form": {
-      "billing_address": "Izmantot kā norēķinu adresi"
+      "billing_address": "Izmantot kā norēķinu adresi",
+      "attention": "Uzmanību",
+      "attention_company": "Uzņēmums/uzmanība",
+      "attention_help_text": "Personas vai nodaļas vārds",
+      "auto_complete_close_accessibility_label": "Aizvērt ieteikumus",
+      "auto_complete_title": "Ieteikumi",
+      "cancel": "Atcelt",
+      "cancel_accessibility_label": "Atcelt {{address}} rediģēšanu",
+      "creation_success_notification": "Adrese pievienotu",
+      "default_address": "Šī ir mana noklusējuma adrese",
+      "default_address_creation_success_notification": "Noklusējuma adrese pievienota",
+      "default_address_update_success_notification": "Noklusējuma adrese atjaunināta",
+      "loading_add_form_accessibility_message": "Notiek jaunas adreses veidlapas ielāde",
+      "loading_edit_form_accessibility_message": "Notiek adreses rediģēšanas veidlapas ielāde",
+      "loading_form_accessibility_message": "Notiek adreses veidlapas ielāde",
+      "loading_finished_accessibility_message": "Adreses veidlapa ir ielādēta",
+      "save": "Saglabāt",
+      "save_accessibility_label": "Saglabāt adresi {{address}}",
+      "section_title_accessibility_label": "Pievienot adresi",
+      "update_success_notification": "Adrese atjaunināta"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Uzņēmuma nosaukums",
+        "company_card_section_accessibility_label": "Uzņēmums"
+      },
+      "locations": {
+        "contact_email": "E-pasts",
+        "contact_list_title": "Cilvēki",
+        "contact_name": "Vārds",
+        "contact_permissions": "Atļaujas",
+        "contact_phone_number": "Tālruņa numurs",
+        "location_picker_label": "Vietas nosaukums",
+        "location_picker_accessibility_label": "Vietas nosaukums: {{locationName}}"
+      }
     }
   },
   "products": {
