@@ -1208,7 +1208,8 @@
           "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
         },
         "thank_you_confirmed_with_email_and_phone_description": {
-          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
+          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu",
+          "multi_store": "Drīzumā jūs saņemsiet atsevišķus apstiprinājuma e-pastus no katra veikala."
         },
         "customer_information_title": "Pasūtījuma detaļas",
         "contact_information_title": "Kontaktinformācija",
@@ -1216,7 +1217,22 @@
         "billing_address_title": "Norēķinu adrese",
         "return_to_store_link_label": "Turpināt iepirkties",
         "tracking_number": "Izsekošanas numurs:",
-        "company_tracking_number": "{{ company }} izsekošanas numurs:"
+        "company_tracking_number": "{{ company }} izsekošanas numurs:",
+        "thank_you_confirmed_with_phone_description": {
+          "multi_store": "Drīzumā jūs saņemsiet atsevišķu apstiprinājuma īsziņu no katra veikala."
+        },
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 prece nav apstiprināta",
+          "other": "Dažas preces nav apstiprinātas"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "Jums par to nav iekasēta maksa.",
+          "other": "Jums par šiem pakalpojumiem nav iekasēta maksa."
+        },
+        "thank_you_item_label": {
+          "one": "{{ count }} vienība",
+          "other": "{{ count }} vienības"
+        }
       },
       "vaulted": {
         "change_button": "Mainīt"
