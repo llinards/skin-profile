@@ -676,6 +676,20 @@
         "view_all_items": {
           "one": "Rādīt {{ count }} vienību",
           "other": "Rādīt visas {{ count }} vienības"
+        },
+        "more_items_modal": {
+          "search_item": "Meklēt",
+          "clear_search": "Notīrīt meklēšanu",
+          "empty_results": "Nav atrasts neviens rezultāts vaicājumam \"{{ searchText }}\". Pārbaudiet pareizrakstību vai izmantojiet citu vārdu vai frāzi.",
+          "number_items_shown": "{{ shownNumber }} no {{ totalNumber }} vienībām"
+        },
+        "discount_title_stacking": {
+          "one": "Atlaide",
+          "other": "Atlaides"
+        },
+        "discount_order_stacking": {
+          "one": "Pasūtījuma atlaide",
+          "other": "Pasūtījuma atlaides"
         }
       },
       "payment": {
