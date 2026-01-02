@@ -3380,7 +3380,17 @@
       "qrCode": "QR kods",
       "addFile": "Pievienot failu",
       "dropzoneInvalidFileType": "Faila tips netiek atbalstīts",
-      "dropzoneDraggedOver": "Ievelciet failu, lai augšupielādētu"
+      "dropzoneDraggedOver": "Ievelciet failu, lai augšupielādētu",
+      "removeTag": "Noņemt atzīmi",
+      "month": {
+        "one": "mēnesis",
+        "other": "mēneši"
+      },
+      "mapClusterTitle": {
+        "one": "{{number}} marķieru kopa",
+        "other": "{{number}} marķieru kopas"
+      },
+      "expandSheet": "Izvērst"
     },
     "orders": {
       "order_list": {
