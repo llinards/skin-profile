@@ -373,11 +373,13 @@
             "sunday": "Svētdiena"
           },
           "weekdays_abbreviation": {
-            "tuesday": "Otrdiena",
-            "wednesday": "Mēs",
-            "thursday": "Ceturtdiena",
-            "friday": "Piektdiena",
-            "sunday": "Sv"
+            "tuesday": "Ot.",
+            "wednesday": "Tr.",
+            "thursday": "Ce.",
+            "friday": "Pi.",
+            "sunday": "Sv.",
+            "monday": "Pi.",
+            "saturday": "Se."
           },
           "months": {
             "january": "Janvāris",
