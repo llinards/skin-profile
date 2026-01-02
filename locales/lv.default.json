@@ -2584,7 +2584,10 @@
         "split_shipping_option_recommended": "Ieteicams",
         "split_shipping_option_custom": "Pielāgots",
         "add_shipping_address": "Pievienojiet piegādes adresi",
-        "choose_new_address": "Izvēlieties jaunu adresi"
+        "choose_new_address": "Izvēlieties jaunu adresi",
+        "split_shipping_shipment_number": "Sūtījums {{ number }}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Daudzums: {{ quantity }}",
+        "split_shipping_merchandise_quantity_label_inline": "{{ merchandise_title }} ×{{ quantity }}"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
