@@ -624,7 +624,7 @@
         "shopping_cart_label": "Iepirkuma grozs",
         "discount_title": "Atlaide",
         "discount_not_found": "Nevar atrast derīgu atlaidi, kas atbilst ievadītajam kodam.",
-        "discount_code_replaced": "\"Atlaides kods {{ old_code }} ir noņemts un ir piemērots {{ code }}\"",
+        "discount_code_replaced": "Atlaides kods {{ old_code }} ir noņemts un ir piemērots {{ code }}",
         "discount_code_replaced_multiple": "Vairāki atlaižu kodi ir noņemti, un ir piemērots kods {{ code }}",
         "discount_code_allocations_mismatch": "Jūsu atlaižu kods <strong style=\"text-transform:uppercase\">{{ code }</strong> ir mainījies. Pārskatiet savu grozu un mēģiniet vēlreiz.",
         "order_discounts_apply_to_local_shop": "Pasūtījumu atlaides attiecas tikai uz precēm no {{ shop_name }}",
@@ -649,7 +649,8 @@
         "gift_card_has_been_applied": "Dāvanu karte pievienota",
         "gift_card_has_been_removed": "Dāvanu karte noņemta",
         "gift_card_subscriptions_notice": "Dāvanu kartes tiks piemērotas tikai jūsu pirmajam maksājumam",
-        "discount_already_applied": "Šim pasūtījumam ir piemērota atlaide. Jūs nevarat pievienot citu atlaidi."
+        "discount_already_applied": "Šim pasūtījumam ir piemērota atlaide. Jūs nevarat pievienot citu atlaidi.",
+        "estimated_taxes_finalization_tooltip_content_short": "Nodoklis ir galīgi aprēķināts pēc maksājuma veikšanas"
       },
       "payment": {
         "store_credit": {
