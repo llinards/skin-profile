@@ -2193,7 +2193,15 @@
         "arrives_time": "Ierodas {{ time }}",
         "arrives_time_range": "Ierodas {{ min_time }}–{{ max_time }}",
         "estimated_time": "Aptuvenais {{ time }}",
-        "estimated_time_range": "Aptuvenais {{ min_time }}–{{ max_time }}"
+        "estimated_time_range": "Aptuvenais {{ min_time }}–{{ max_time }}",
+        "default_description": "Piegāde 1 darba dienas laikā",
+        "unbranded_default_description": "Gatavs nosūtīšanai",
+        "shipping_line_phone_label": "Mobilā tālruņa numurs (obligāti)",
+        "shipping_line_phone": "Jūsu kurjers var izmantot šo numuru, lai sazinātos ar jums.",
+        "shipping_line_delivery_phone_label": "Mobilā tālruņa numurs",
+        "shipping_line_delivery_phone": "Ar jums var sazināties, lai sniegtu jaunāko informāciju par jūsu piegādi.",
+        "optional_shipping_line_delivery_instructions_label": "Piegādes instrukcijas (pēc izvēles)",
+        "shipping_line_delivery_instructions": "Ievadiet nepieciešamo informāciju, piemēram, durvju kodus vai piegādes instrukcijas."
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
