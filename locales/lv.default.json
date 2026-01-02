@@ -2429,6 +2429,17 @@
           "pending": "Apstrādē",
           "failure": "Noraidīts",
           "error": "Kļūda"
+        },
+        "not_available": "Šis pasūtījums nav pieejams",
+        "cash_on_delivery": "Apmaksa piegādes brīdī "
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Pievienots {{ delta }}",
+          "increment_item": "Pievienots {{ delta }}",
+          "decrement_item": "Noņemts {{ delta }} no {{ total }}",
+          "decrement_fulfilled_line_item": "Atgriezts {{ delta }} no {{ total }}",
+          "decrement_return_line_item": "No atgriešanas vērtības ir noņemts {{ delta }}"
         }
       }
     },
