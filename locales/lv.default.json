@@ -2158,7 +2158,19 @@
           "message": {
             "one": "{{ delivery_method }} vairs nav pieejams šai precei.",
             "other": "{{ delivery_method }} vairs nav pieejams šīm precēm."
+          },
+          "default_message": {
+            "one": "Izvēlētā piegādes metode šai precei vairs nav pieejama.",
+            "other": "Izvēlētā piegādes metode šīm precēm vairs nav pieejama."
           }
+        },
+        "unshippable_product": {
+          "title": "Piegāde nav pieejama",
+          "header": {
+            "one": "Piegāde nav pieejama {{ count }} precei",
+            "other": "Piegāde nav pieejama {{ count }} precēm"
+          },
+          "status_column_header": "Nav piegādes"
         }
       }
     },
