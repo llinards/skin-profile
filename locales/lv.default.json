@@ -1491,7 +1491,8 @@
         "payment_not_processed_title": "Maksājums neizdevās",
         "payment_not_processed_text": "Mēģiniet vēlreiz noskenēt QR kodu. Ja tas joprojām nedarbojas, informējiet mūsu darbiniekus un izmēģiniet citu maksājuma veidu.",
         "payment_link_expired_title": "Maksājuma saite ir beigusies",
-        "payment_link_expired_text": "Mēģiniet vēlreiz skenēt QR kodu."
+        "payment_link_expired_text": "Mēģiniet vēlreiz skenēt QR kodu.",
+        "title": "Maksājums ārējā vietnē neizdevās."
       },
       "one": {
         "errors": {
