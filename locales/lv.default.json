@@ -3311,13 +3311,21 @@
         "generic_error": "Atjaunināšanas laikā radās problēma. Lūdzu, mēģiniet vēlreiz."
       },
       "update_success": {
-        "done_button": "Turpināt iepirkties"
+        "done_button": "Turpināt iepirkties",
+        "title": "Maksājuma metode atjaunināta"
       },
       "add_success": {
-        "done_button": "Turpināt iepirkties"
+        "done_button": "Turpināt iepirkties",
+        "title": "Maksājuma metode pievienota"
       },
       "three_d_secure": {
         "verification_failed": "Jūsu maksājumu nevarēja verificēt. Mēģiniet vēlreiz vai izmantojiet citu maksājuma veidu."
+      },
+      "link_expired": {
+        "message": "Šī saite maksājuma veida atjaunināšanai ir beigusies.",
+        "update_message": "Šī saite maksājuma veida atjaunināšanai ir beigusies.",
+        "add_message": "Šī saite maksājuma veida pievienošanai ir beidzies derīguma termiņš.",
+        "return_home_button": "Atgriezties uz sākumlapu"
       }
     },
     "payment_method_brands": {
