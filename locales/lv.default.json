@@ -4137,7 +4137,31 @@
         "other": "Veiksmīgi atjaunināti {{count}} abonēšanas līgumi"
       },
       "contracts_update_failed": "Neizdevās atjaunināt dažus abonēšanas līgumus.",
-      "invalid_wallet_type_error": "Nederīgs maka veids."
+      "invalid_wallet_type_error": "Nederīgs maka veids.",
+      "update_payment_instrument": {
+        "title": "Aizstāt maksājuma veidu",
+        "loading": "Notiek maksājuma veidu ielāde",
+        "no_payment_methods_available": "Nav pieejams neviens maksājuma veids",
+        "select_new_payment_method": "Izvēlieties jaunu maksājuma veidu",
+        "current_method": "Pašreizējais",
+        "cancel": "Atcelt",
+        "save": "Saglabāt",
+        "success": "Maksājuma veids ir atjaunināts",
+        "use_new_payment_method": "+ Izmantot jaunu maksājuma veidu"
+      }
+    },
+    "shop_ads": {
+      "title": "Citi produkti, kas jums varētu patikt",
+      "subtitle": "Pieejams ierobežotu laiku",
+      "button": "Izpētiet veikalā",
+      "previous_button": "Iepriekšējais",
+      "next_button": "Tālāk"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "Klienti var paši pieprasīt un pārvaldīt preču atgriešanu.",
+        "disabled": "Lai pieprasītu preces atgriešanu, klientiem ir jāsazinās ar tirgotāju."
+      }
     }
   },
   "products": {
