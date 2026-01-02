@@ -2194,6 +2194,23 @@
         "title": {
           "one": "Nepieejams produkts",
           "other": "Nepieejami produkti"
+        },
+        "products_not_available": {
+          "one": "Šis produkts tiks noņemts no jūsu groza, jo tas nav pieejams jūsu valstī/reģionā.",
+          "other": "Šie produkti tiks noņemti no jūsu groza, jo tie nav pieejami jūsu valstī/reģionā."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Šis produkts nav pieejams jūsu valstī/reģionā.",
+          "other": "Šie produkti nav pieejami jūsu valstī/reģionā."
+        },
+        "unavailable_label": "Nav pieejams"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Šis produkts nav pieejams piegādei uz {{ location_name }}.",
+          "some_products_other": "Šīs preces nav pieejamas piegādei uz {{ location_name }}.",
+          "all_products_one": "Produkts jūsu grozā nav pieejams piegādei uz {{ location_name }}.",
+          "all_products_other": "Jūsu grozā esošās preces nav pieejamas piegādei uz {{ location_name }}."
         }
       }
     },
