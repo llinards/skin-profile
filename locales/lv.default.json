@@ -2515,6 +2515,14 @@
           "prepaid_order_no_cycle_delivery_not_included": {
             "one": "{{ shipping_price }} par {{ count }} piegādi, kam seko {{ recurring_order_shipping_price }}",
             "other": "{{ shipping_price }} par {{ count }} piegādēm ({{ per_delivery_cost }}), kam seko {{ recurring_order_shipping_price }}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "{{ shipping_price }} par vēl {{ count }} piegādi",
+            "other": "{{ shipping_price }} par vēl {{ count }} piegādēm ({{ per_delivery_cost }})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "{{ shipping_price }} par {{ count }} piegādi",
+            "other": "{{ shipping_price }} par {{ count }} piegādēm ({{ per_delivery_cost }})"
           }
         },
         "duties_and_taxes_options": {
