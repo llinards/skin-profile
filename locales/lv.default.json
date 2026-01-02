@@ -3360,10 +3360,10 @@
       "friday": "Piektdiena",
       "saturday": "Sestdiena",
       "sunday": "Svētdiena",
-      "tuesdayAbbreviation": "Otrdiena",
-      "wednesdayAbbreviation": "Mēs",
-      "thursdayAbbreviation": "Ceturtdiena",
-      "fridayAbbreviation": "Piektdiena",
+      "tuesdayAbbreviation": "O",
+      "wednesdayAbbreviation": "T",
+      "thursdayAbbreviation": "C",
+      "fridayAbbreviation": "Pk",
       "sundayAbbreviation": "Sv",
       "showNextMonth": "Rādīt nākamo mēnesi, {{month}} {{year}}",
       "showPreviousMonth": "Rādīt iepriekšējo mēnesi, {{month}} {{year}}",
@@ -3374,7 +3374,13 @@
         "one": "{{count}} prece pieejama",
         "other": "{{count}} pieejamas preces"
       },
-      "removeItem": "Noņemt {{label}}"
+      "removeItem": "Noņemt {{label}}",
+      "mondayAbbreviation": "P",
+      "saturdayAbbreviation": "S",
+      "qrCode": "QR kods",
+      "addFile": "Pievienot failu",
+      "dropzoneInvalidFileType": "Faila tips netiek atbalstīts",
+      "dropzoneDraggedOver": "Ievelciet failu, lai augšupielādētu"
     },
     "orders": {
       "order_list": {
@@ -4165,7 +4171,14 @@
     },
     "active_inspector": {
       "extension": {
-        "remove_tooltip": "Noņemt"
+        "remove_tooltip": "Noņemt",
+        "select": "Atlasiet paplašinājumu ar nosaukumu {{extensionName}}",
+        "unselect": "Noņemiet atzīmi paplašinājumam ar nosaukumu {{extensionName}}",
+        "move_down": "Pārvietot paplašinājumu uz nākamo pozīciju",
+        "move_up": "Pārvietot paplašinājumu uz iepriekšējo pozīciju",
+        "remove": "Noņemt paplašinājumu",
+        "move_down_tooltip": "Pāriet uz nākamo pozīciju",
+        "move_up_tooltip": "Pāriet uz iepriekšējo pozīciju"
       }
     },
     "editor": {
@@ -4180,6 +4193,17 @@
         "button": "Izrakstieties visur",
         "warning_message": "Jūs tiksiet izrakstīts arī šajā ierīcē."
       }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Pielāgot",
+      "hide_bar": "Slēpt joslu",
+      "navigate_to_admin": "Pārejiet uz admin",
+      "close_preview": "Aizvērt priekšskatījumu",
+      "previewing": "Jūs priekšskatāt:",
+      "saved_at": "Saglabāts {{date}} plkst. {{time}}",
+      "viewing": "Jūs skatāties:",
+      "not_available": "Profila dati nav pieejami",
+      "actions_button": "Darbības"
     }
   },
   "products": {
