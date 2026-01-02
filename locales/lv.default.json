@@ -606,7 +606,13 @@
         },
         "payment_terms_totals": {
           "due_today": "Kopā jāmaksā šodien",
-          "due_today_next": "Jāmaksā šodien"
+          "due_today_next": "Jāmaksā šodien",
+          "due_later": "Kopā jāmaksā {{ due_at }}",
+          "due_on_fulfillment": "Kopā, kas jāmaksā pēc izpildes",
+          "due_on_fulfillment_next": "Ar izpildes termiņu",
+          "due_on_receipt": "Kopā maksājama pēc saņemšanas",
+          "due_later_checkout_to_draft": "Kopā vēlāk",
+          "total_paid": "Kopā samaksāts"
         },
         "enter_shipping_address": "Ievadīt piegādes adresi",
         "discount_label": "Atlaižu kods",
@@ -695,6 +701,17 @@
         "pickup_unavailable_banner_title_with_country": {
           "one": "Nav pieejamu veikalu šajā valstī: {{ country }} ar jūsu preci",
           "other": "Nav pieejamu veikalu šajā valstī: {{ country }} ar jūsu precēm"
+        },
+        "expand_component_information": {
+          "one": "Rādīt {{ count }} vienību",
+          "other": "Rādīt {{ count }} vienības"
+        },
+        "collapse_component_information": {
+          "one": "Slēpt {{ count }} vienību",
+          "other": "Slēpt {{ count }} vienības"
+        },
+        "discount_discovery": {
+          "add_code": "Pievienot atlaidi"
         }
       },
       "payment": {
