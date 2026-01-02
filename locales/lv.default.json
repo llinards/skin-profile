@@ -2189,6 +2189,12 @@
           "description": "Šīs preces vairs nav pieejamas un ir izņemtas no jūsu groza.",
           "items_unavailable": "Dažas preces vairs nav pieejamas un ir izņemtas no jūsu groza."
         }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Nepieejams produkts",
+          "other": "Nepieejami produkti"
+        }
       }
     },
     "notices": {
