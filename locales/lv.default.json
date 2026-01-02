@@ -2664,7 +2664,18 @@
             "shopify_support_link_text": "Shopify atbalsts"
           }
         }
-      }
+      },
+      "not_supported": "netiek atbalstīts",
+      "full_name_required": "Ievadiet vārdu un uzvārdu",
+      "invalid_for_card_type": "nav derīgs",
+      "invalid_type": "atvainojiet, mēs nepieņemam šāda veida kartes",
+      "invalid_format": "formāts nav derīgs",
+      "expired": "ir beidzies",
+      "invalid_start_date_or_issue_number_for_debit": "nepieciešams derīgs sākuma datums vai izdevuma numurs",
+      "invalid_expiry_year": "nav derīgs derīguma termiņš",
+      "reset_password_html": "Šī e-pasta adrese jau ir saistīta ar kontu. Ja šis konts ir jūsu, varat <a href=\"/account/login#recover\">atiestatīt savu paroli</a>.",
+      "verify_email": "Esam nosūtījuši e-pastu uz {{ customer_email }}, lūdzu, noklikšķiniet uz iekļautās saites, lai verificētu savu e-pasta adresi.",
+      "product_not_available": "produkts šim klientam nav publicēts."
     },
     "subscriptions": {
       "buyer_consent_product": "Šī prece ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
