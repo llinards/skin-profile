@@ -3920,7 +3920,7 @@
         "subscription": "Abonementa piegāde"
       },
       "pickup": {
-        "pickup": "Pikaps",
+        "pickup": "Saņemšana uz vietas",
         "pickup_location": "Saņemšanas vieta",
         "pickup_point": "Saņemšanas punkts"
       },
@@ -3953,7 +3953,41 @@
       "adjusted_total": "Koriģēta kopsumma",
       "due_on_date": "Izpildes datums: {{date}}",
       "due_on_fulfillment": "Ar izpildes termiņu",
-      "due_on_receipt": "Jāmaksā pēc saņemšanas"
+      "due_on_receipt": "Jāmaksā pēc saņemšanas",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Lejupielādēt Shop, lai izsekotu sūtījumu",
+        "track_order_with_shop": "Izsekot pasūtījumu ar Shop",
+        "title_header": "Skenējiet ar tālruni",
+        "real_time_delivery_updates": "Shop nosūtīs jums reāllaika piegādes atjauninājumus, tiklīdz jūsu pasūtījums būs nosūtīts."
+      },
+      "edit_summary": {
+        "added": "Pievienots",
+        "added_with_quantity": "Pievienoti {{quantity}}",
+        "removed": "Noņemts",
+        "removed_with_quantity": "Noņemti {{quantity}}",
+        "updated_at": "Jūsu pasūtījums tika atjaunināts {{date}}",
+        "returned": "Atgriezts",
+        "returned_with_quantities": "Atgriezts {{delta}} no {{total}}",
+        "removed_with_quantities": "Noņemts {{delta}} no {{total}}",
+        "return_line_item_removed": "Noņemts no atgriešanas",
+        "return_line_item_removed_with_quantities": "No atgriešanas vērtības ir noņemts {{ delta }}"
+      },
+      "shop_pay": {
+        "order_completed_with": "Pasūtījums pabeigts ar",
+        "learn_more": "Uzzināt vairāk"
+      },
+      "pagination": {
+        "load_more": "Ielādēt vairāk",
+        "load_more_accessibility_label": "Ielādē vairāk preces",
+        "loading_accessibility_label": "Ielādē preces"
+      },
+      "fees": {
+        "restocking_fee": "Maksa par preces atgriešanu",
+        "return_shipping_fee": "Atgriešanas piegādes maksa"
+      },
+      "vat_invoices": {
+        "title": "PVN rēķini"
+      }
     },
     "callback": {
       "try_again": "Mēģiniet vēlreiz"
@@ -3963,7 +3997,11 @@
         "billing": "Rediģēt norēķinu adresi"
       },
       "loading_billing_accessibility_message": "Ielādē norēķinu adresi",
-      "billing_address_dropdown_placeholder": "Norēķinu adrese"
+      "billing_address_dropdown_placeholder": "Norēķinu adrese",
+      "add_button": "Pievienot adresi",
+      "add_button_text": "Pievienot",
+      "add_button_accessibility_label": "Pievienot adresi",
+      "back_button": "Atpakaļ"
     },
     "address_form": {
       "billing_address": "Izmantot kā norēķinu adresi"
