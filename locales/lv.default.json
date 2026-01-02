@@ -3334,7 +3334,19 @@
         "loading_current_payment_method": "Notiek pašreizējā maksājuma veida ielāde",
         "loading_digital_wallets": "Notiek digitālā maka iespēju ielāde",
         "loading_card_fields": "Notiek kredītkartes lauku ielāde",
-        "loading_resources": "Notiek abonementu un gaidāmo pasūtījumu ielāde"
+        "loading_resources": "Notiek abonementu un gaidāmo pasūtījumu ielāde",
+        "title": "Atjaunināt maksājuma metodi",
+        "button_title": "Atjaunināt",
+        "billing_address": "Billing address",
+        "disclaimer": "Šī maksājuma metode tiks saglabāta turpmākajiem pirkumiem un to varēs izmantot jebkuram atkārtotam vai atliktam pirkumam.",
+        "error_message": "Nevar atjaunināt maksājuma veidu",
+        "current": "Pašreizējais",
+        "subscriptions_title": "Abonementi",
+        "subscriptions_list_accessibility_label": "Abonēšanas produktu saraksts",
+        "pre_orders_title": "Gaidāms",
+        "pre_orders_list_accessibility_label": "Nepabeigto pasūtījumu produktu saraksts",
+        "resources_list_accessibility_label": "Abonēšanas produkti un nepabeigti pasūtījumi, izmantojot šo maksājuma veidu",
+        "resources_card_scroll": "Ritiniet, lai skatītu citus vienumus"
       }
     },
     "payment_method_brands": {
