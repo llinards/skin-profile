@@ -4162,6 +4162,24 @@
         "enabled": "Klienti var paši pieprasīt un pārvaldīt preču atgriešanu.",
         "disabled": "Lai pieprasītu preces atgriešanu, klientiem ir jāsazinās ar tirgotāju."
       }
+    },
+    "active_inspector": {
+      "extension": {
+        "remove_tooltip": "Noņemt"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "Šo saiti nevar atvērt redaktorā. Tā tiks atvērta jaunā logā ({{resolved_to_link}}). Lai turpinātu, noklikšķiniet uz Labi."
+    },
+    "settings": {
+      "title": "Iestatījumi",
+      "loading_accessibility_message": "Notiek iestatījumu lapas ielāde",
+      "log_out_everywhere": {
+        "title": "Izrakstieties visur",
+        "description": "Ja esat pazaudējis ierīci vai rodas bažas par drošību, izrakstieties no visām sistēmām, lai nodrošinātu sava konta drošību.",
+        "button": "Izrakstieties visur",
+        "warning_message": "Jūs tiksiet izrakstīts arī šajā ierīcē."
+      }
     }
   },
   "products": {
