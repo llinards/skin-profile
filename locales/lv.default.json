@@ -2384,7 +2384,9 @@
         "merchandise_line_transformers": {
           "run_error": "Jūsu grozā radās kļūda."
         },
-        "merchandise_not_applicable": "Preci nevar iegādāties šādā konfigurācijā."
+        "merchandise_not_applicable": "Preci nevar iegādāties šādā konfigurācijā.",
+        "only_n_items_available": "Grozam var pievienot tikai {{ count }} {{ name }}.",
+        "too_many_items_in_cart": "Grozam vairs nevar pievienot vairāk {{ name }}."
       },
       "storefront": {
         "invalid_password": "Parole nepareiza, lūdzu, mēģiniet vēlreiz."
@@ -2394,6 +2396,16 @@
         "add_products": "Sašauriniet atlasi līdz produktiem, kas atbilst tagam %{tag}",
         "remove_articles": "Paplašināt meklēšanu, iekļaujot rakstus, kas nav atzīmēti ar %{tag}",
         "remove_products": "Noņemt tagu %{tag}"
+      },
+      "order": {
+        "cancel_reason": {
+          "declined": "Maksājums noraidīts",
+          "inventory": "Preces nav pieejamas",
+          "fraud": "Krāpniecisks pasūtījums",
+          "customer": "Klients mainīja/atcēla pasūtījumu",
+          "staff": "Personāla kļūda",
+          "other": "Citi"
+        }
       }
     },
     "email_marketing": {
@@ -2471,7 +2483,8 @@
       "collections": "Kolekcijas",
       "not_found": "404 Nav atrasts",
       "challenge": "Izaicinājums",
-      "checkpoint": "Kontrolpunkts"
+      "checkpoint": "Kontrolpunkts",
+      "search": "Meklēt"
     },
     "cart": {
       "discounts_with_count": "%{count} atlaides ir piemērotas"
