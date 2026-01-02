@@ -2078,7 +2078,18 @@
         "subscription_pickup_information": "Šī piegādes metode attieksies uz visām precēm šajā pasūtījumā un visiem turpmākajiem pasūtījumiem šim abonementam."
       },
       "customer_account": {
-        "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam"
+        "save_my_information_label": "Saglabāt informāciju nākamajam pirkumam",
+        "not_user_label": "Vai šis nav {{ first_name }}?",
+        "have_an_account_label": "Vai jums ir konts?",
+        "sign_in_link_label": "Izrakstīties",
+        "sign_out_link_label": "Izrakstīties",
+        "invalid_address": "Atlasītā adrese nav derīga. {{ update_address_link }} vai atlasiet citu adresi.",
+        "incomplete_address": "Atlasītā adrese ir nepilnīga. {{ update_address_link }} vai atlasiet citu adresi.",
+        "rollup_label": "Konts",
+        "rollup_accessibility_label": "Konta iespējas",
+        "invalid_shipping_method_summary": "Izvēlieties derīgu piegādes adresi, lai skatītu pieejamās piegādes metodes.",
+        "saved_address_option_link": "Izmantojiet saglabātu adresi",
+        "saved_address_modal_title": "Izmantot manu saglabāto adresi"
       },
       "shipping": {
         "shipping_method_title": "Piegādes metode",
