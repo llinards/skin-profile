@@ -1205,7 +1205,8 @@
         "page_title": "Paldies, {{ display_name }}!",
         "thank_you_title": "Jūsu pasūtījums ir apstiprināts",
         "thank_you_confirmed_with_email_description": {
-          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu"
+          "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu",
+          "multi_store": "Drīzumā jūs saņemsiet atsevišķus apstiprinājuma e-pastus no katra veikala."
         },
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Drīzumā saņemsiet apstiprinājuma e-pastu",
@@ -1219,7 +1220,8 @@
         "tracking_number": "Izsekošanas numurs:",
         "company_tracking_number": "{{ company }} izsekošanas numurs:",
         "thank_you_confirmed_with_phone_description": {
-          "multi_store": "Drīzumā jūs saņemsiet atsevišķu apstiprinājuma īsziņu no katra veikala."
+          "multi_store": "Drīzumā jūs saņemsiet atsevišķu apstiprinājuma īsziņu no katra veikala.",
+          "single_store": "Drīzumā saņemsiet apstiprinājuma īsziņu"
         },
         "thank_you_unconfirmed_items_heading": {
           "one": "1 prece nav apstiprināta",
@@ -1232,6 +1234,10 @@
         "thank_you_item_label": {
           "one": "{{ count }} vienība",
           "other": "{{ count }} vienības"
+        },
+        "items_fulfilled_by_store": {
+          "one": "Jūsu iegādātās preces tiks piegādātas no {{ remote_shop_name }}.",
+          "other": "Jūsu iegādātās preces tiks piegādātas no citiem veikaliem."
         }
       },
       "vaulted": {
