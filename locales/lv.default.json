@@ -2675,7 +2675,20 @@
       "invalid_expiry_year": "nav derīgs derīguma termiņš",
       "reset_password_html": "Šī e-pasta adrese jau ir saistīta ar kontu. Ja šis konts ir jūsu, varat <a href=\"/account/login#recover\">atiestatīt savu paroli</a>.",
       "verify_email": "Esam nosūtījuši e-pastu uz {{ customer_email }}, lūdzu, noklikšķiniet uz iekļautās saites, lai verificētu savu e-pasta adresi.",
-      "product_not_available": "produkts šim klientam nav publicēts."
+      "product_not_available": "produkts šim klientam nav publicēts.",
+      "bad_domain": "satur nederīgu domēna nosaukumu",
+      "taken": "jau ir aizņemts",
+      "contains_html_tags": "nevar saturēt HTML tagus",
+      "too_short": "ir pārāk īss (minimālais rakstzīmju skaits ir {{ count }})",
+      "too_long": "ir pārāk garš (maksimums ir {{ count }} rakstzīmes)",
+      "password_mismatch": "ir jāatbilst norādītajai parolei",
+      "contains_spaces": "sākas vai beidzas ar atstarpēm.",
+      "invalid_for_country": "nav derīgs šai valstij: {{ country }}",
+      "invalid_for_country_and_province": "nav derīgs šīm valstīm: {{ province }} un {{ country }}",
+      "invalid_province_in_country": "nav derīga province šajā valstī: {{ country }}",
+      "invalid_state_in_country": "nav derīgs štats šajā valstī: {{ country }}",
+      "invalid_region_in_country": "nav derīgs reģions šajā valstī: {{ country }}",
+      "less_than_or_equal_to": "jābūt mazākam vai vienādam ar {{ count }}"
     },
     "subscriptions": {
       "buyer_consent_product": "Šī prece ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
