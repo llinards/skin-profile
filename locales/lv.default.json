@@ -416,6 +416,16 @@
           "add_file": "Pievienot failu",
           "invalid_file_type": "Faila tips netiek atbalstīts",
           "dragged_over": "Nometiet failu, lai augšupielādētu"
+        },
+        "list_formatter": {
+          "and": {
+            "lastWordConnector": "{{previousWords}} un {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} un {{secondWord}}"
+          },
+          "or": {
+            "lastWordConnector": "{{previousWords}}, vai {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} vai {{secondWord}}"
+          }
         }
       },
       "contact": {
