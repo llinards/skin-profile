@@ -579,7 +579,8 @@
           "per_unit": {
             "single": "%{cena}/%{vienība}",
             "plural": "%{cena}/%{skaits}%{vienība}"
-          }
+          },
+          "content_html": "{{ price }}{{ accessible_separator }}{{ per_unit }}"
         },
         "gift_card_ending": "Dāvanu karte, kas beidzas ar %{last_characters}",
         "estimated_tax_label": "Paredzamais nodoklis",
@@ -690,6 +691,10 @@
         "discount_order_stacking": {
           "one": "Pasūtījuma atlaide",
           "other": "Pasūtījuma atlaides"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Nav pieejamu veikalu šajā valstī: {{ country }} ar jūsu preci",
+          "other": "Nav pieejamu veikalu šajā valstī: {{ country }} ar jūsu precēm"
         }
       },
       "payment": {
