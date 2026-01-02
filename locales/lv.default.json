@@ -1482,7 +1482,8 @@
         "payment_in_progress_title": "Maksājums tiek apstrādāts",
         "payment_in_progress_body": "Jūsu maksājums tiek apstrādāts. Jūsu pasūtījums drīz tiks pabeigts.",
         "call_to_action": "Maksājiet ar {{walletName}}",
-        "redirection_notice": "Pēc noklikšķināšanas uz “ {{buttonLabel}} ” jūs tiksiet novirzīts uz {{walletName}} lai droši pabeigtu pirkumu."
+        "redirection_notice": "Pēc noklikšķināšanas uz “ {{buttonLabel}} ” jūs tiksiet novirzīts uz {{walletName}} lai droši pabeigtu pirkumu.",
+        "connect_shipping_methods": "{{method1}} un {{method2}}"
       },
       "note": {
         "length_exceeds_maximum": "Samaziniet piezīmes lielumu līdz 5000 vai mazāk rakstzīmēm."
