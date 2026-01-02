@@ -668,7 +668,15 @@
         "full_price": "Pilna cena: {{ cena }}",
         "custom_discount": "Pielāgota atlaide",
         "alternative_payment_currency_total": "Iekasēta kā {{ amount_due }}",
-        "discount_applies_to_subscription_items_only": "Šī atlaide attiecas tikai uz abonēšanas precēm"
+        "discount_applies_to_subscription_items_only": "Šī atlaide attiecas tikai uz abonēšanas precēm",
+        "number_items": {
+          "one": "{{ count }} vienība",
+          "other": "{{ count }} vienības"
+        },
+        "view_all_items": {
+          "one": "Rādīt {{ count }} vienību",
+          "other": "Rādīt visas {{ count }} vienības"
+        }
       },
       "payment": {
         "store_credit": {
