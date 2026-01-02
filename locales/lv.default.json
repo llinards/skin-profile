@@ -3414,7 +3414,7 @@
           "next": "Nākamais"
         },
         "items": {
-          "one": "{{count}} vienums",
+          "one": "{{count}} vienība",
           "other": "{{count}} vienības"
         },
         "no_filtered_results_description": "Noņemiet vai pielāgojiet filtrus, lai skatītu savus pasūtījumus",
@@ -3666,7 +3666,8 @@
       "buy_again_accessibility_label": "Pirkt vēlreiz pasūtījumam {{orderId}}",
       "manage": "Pārvaldīt",
       "manage_accessiblity_label": "Pārvaldīt pasūtījumu {{orderId}}",
-      "group_title_label": "Daļa no: {{groupTitle}}"
+      "group_title_label": "Daļa no: {{groupTitle}}",
+      "list_title": "Pasūtījumi"
     },
     "date": {
       "humanize": {
@@ -3933,7 +3934,24 @@
       "summary_title": "Pasūtījuma kopsavilkums",
       "summary_totals_title_accessibility_label": "Pasūtījuma kopsumma",
       "taxes": "Nodokļi",
-      "duties": "Nodeva"
+      "duties": "Nodeva",
+      "ok_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts, tāpēc jūsu pasūtījuma kopsummai ir pievienotas nodevas.",
+      "error_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts, tāpēc piegādes brīdī var tikt piemērotas nodevas un nodokļi.",
+      "zero_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts. Nodevas netiek iekasētas pasūtījumiem šādā vērtībā.",
+      "tip": "Dzeramnauda",
+      "title": "Pasūtījums {{name}}",
+      "unit_price": "{{price}}/gab.",
+      "login_to_view_all_order_details": "Pierakstieties, lai skatītu visu pasūtījuma informāciju.",
+      "log_in": "Pierakstīties",
+      "logged_in_account_no_permission_to_order": "Jūs esat pierakstījies kā {{email}}. Šim kontam nav atļaujas pārvaldīt šo pasūtījumu.",
+      "log_in_to_a_different_account": "Pierakstīties citā kontā",
+      "link_sent": "Saite nosutīta",
+      "cash_rounding": "Skaidras naudas noapaļošana",
+      "adjusted_payment": "Koriģēts maksājums",
+      "adjusted_total": "Koriģēta kopsumma",
+      "due_on_date": "Izpildes datums: {{date}}",
+      "due_on_fulfillment": "Ar izpildes termiņu",
+      "due_on_receipt": "Jāmaksā pēc saņemšanas"
     },
     "callback": {
       "try_again": "Mēģiniet vēlreiz"
