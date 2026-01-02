@@ -974,7 +974,33 @@
         "billing_address_associated_with_mandate_info": "Ja vēlaties mainīt savu norēķinu adresi, lūdzu, noņemiet un atkārtoti ievadiet savas kredītkartes datus.",
         "billing_address_title": "Norēķinu adrese",
         "billing_address_rollup_accessibility_label": "Norēķinu adrese opcijas",
-        "billing_address_not_supported_for_payment_method_error": "Šī maksājuma metode nav pieejama jūsu norēķinu adresei un valūtai. Lūdzu, mēģiniet citu maksājuma veidu."
+        "billing_address_not_supported_for_payment_method_error": "Šī maksājuma metode nav pieejama jūsu norēķinu adresei un valūtai. Lūdzu, mēģiniet citu maksājuma veidu.",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Abonementi",
+          "order_contains_fixed_selling_plans": "Kopsumma var neietvert nodokļus, piegādes maksu, atliktos maksājumus un dažas atlaides. Turpiniet norēķināties, lai uzzinātu šodien maksājamo summu."
+        },
+        "paypal": {
+          "connect": "Noklikšķiniet, lai savienotu savu PayPal kontu"
+        },
+        "apple": {
+          "connect": "Noklikšķiniet, lai pievienotu savu Apple Pay kontu",
+          "not_available": "Apple Pay šajā pārlūkprogrammā nav pieejams. Lai pievienotu savu Apple Pay kontu, jums jāizmanto Safari Apple ierīcē."
+        },
+        "google": {
+          "connect": "Noklikšķiniet, lai izveidotu savienojumu ar savu Google Pay kontu",
+          "error_authorizing": "Autorizējot maksājumu, radās kļūda"
+        },
+        "pending_payment": {
+          "due_notice": "Jūsu maksājums {{ amount_due }} apmērā jāveic {{ due_date }}.",
+          "multibanco": {
+            "buyer_action_info": "Jūsu maksājums {{ amount_due }} apmērā ir jāveic.",
+            "instruction_html": "Veiciet maksājumu Multibanco vai tiešsaistē, izmantojot tālāk norādīto informāciju. Ja jums ir jautājumi vai vēlaties atjaunināt maksājuma informāciju, sazinieties ar mums, izmantojot {{ contact_us }}.",
+            "entity": "Vienība",
+            "reference": "Atsauce",
+            "amount": "Summa",
+            "find_nearest_atm": "Atrodiet tuvāko bankomātu"
+          }
+        }
       },
       "thank_you": {
         "delivered_description_html": "Jūsu pasūtījums ir piegādāts uz jūsu norādīto adresi. Ja neesat to saņēmis vai rodas citas problēmas, sazinieties ar mums, izmantojot saziņas veidlapu.",
