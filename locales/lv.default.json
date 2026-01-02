@@ -2688,7 +2688,13 @@
       "invalid_province_in_country": "nav derīga province šajā valstī: {{ country }}",
       "invalid_state_in_country": "nav derīgs štats šajā valstī: {{ country }}",
       "invalid_region_in_country": "nav derīgs reģions šajā valstī: {{ country }}",
-      "less_than_or_equal_to": "jābūt mazākam vai vienādam ar {{ count }}"
+      "less_than_or_equal_to": "jābūt mazākam vai vienādam ar {{ count }}",
+      "gift_card_code_invalid": "Kods nav derīgs",
+      "gift_card_currency_mismatch": "Jūsu dāvanu karte ir {{ gift_card_currency }}. Sazinieties ar mums, lai to atkārtoti izsniegtu {{ checkout_currency }}.",
+      "gift_card_depleted": "Šajā dāvanu kartē nav palikuši līdzekļi",
+      "gift_card_disabled": "Dāvanu karte ir atspējota",
+      "gift_card_expired": "Dāvanu kartei ir beidzies derīguma termiņš",
+      "invalid": "ir nederīgs"
     },
     "subscriptions": {
       "buyer_consent_product": "Šī prece ir atkārtots vai atlikts pirkums. Turpinot, es piekrītu %{cancellationPolicyLink} un pilnvaroju jūs iekasēt maksu no mana maksājuma veida par šajā lapā norādītajām cenām, biežumu un datumiem, līdz mans pasūtījums ir izpildīts vai es to atceļu, ja tas ir atļauts.",
