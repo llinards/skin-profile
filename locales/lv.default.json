@@ -2594,7 +2594,9 @@
         "split_shipping_multiple_shipment_quantity_label": "{{ quantity }} sūtījumi",
         "split_shipping_multiple_shipment_notice": "Jūsu pasūtījums tiks piegādāts vairākās piegādēs",
         "split_shipping_multiple_shipment_notice_one_time_purchase": "Jūsu pasūtījums tiks piegādāts {{ daudzums }} sūtījumos",
-        "split_shipping_more_shipping_options": "Vairāk piegādes iespēju"
+        "split_shipping_more_shipping_options": "Vairāk piegādes iespēju",
+        "split_shipping_shipped_by_shop": "Piegādātājs: {{ shop_name }}",
+        "split_shipping_multiple_shipment_label": "Vairāki sūtījumi"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
