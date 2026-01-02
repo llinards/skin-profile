@@ -1885,7 +1885,8 @@
         "all_stores_far_away": {
           "title": "Tuvākās atrašanās vietas atrodas vairāk nekā %{distance} attālumā",
           "description": "Izvēlieties atrašanās vietu vai %{ship_to_address_link}",
-          "ship_to_address_link": "nosūtīt uz adresi"
+          "ship_to_address_link": "nosūtīt uz adresi",
+          "title_with_location": "Tuvākās atrašanās vietas atrodas vairāk nekā {{ distance }} attālumā no {{ location }}"
         },
         "selected_pickup_option_no_longer_available": {
           "title": "Jūsu iepriekš izvēlētā atrašanās vieta vairs nav pieejama",
@@ -1905,7 +1906,8 @@
         "reveal_more_label": {
           "one": "Rādīt vēl %{count} atrašanās vietu",
           "other": "Rādīt vēl %{count} atrašanās vietas"
-        }
+        },
+        "location_address_search_placeholder": "{{ postal_code_label }} vai adrese"
       },
       "captcha": {
         "title": "Lai turpinātu, aizpildiet CAPTCHA.",
