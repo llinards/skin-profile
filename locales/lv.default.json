@@ -2587,7 +2587,14 @@
         "choose_new_address": "Izvēlieties jaunu adresi",
         "split_shipping_shipment_number": "Sūtījums {{ number }}",
         "split_shipping_merchandise_quantity_label_inline_primary": "Daudzums: {{ quantity }}",
-        "split_shipping_merchandise_quantity_label_inline": "{{ merchandise_title }} ×{{ quantity }}"
+        "split_shipping_merchandise_quantity_label_inline": "{{ merchandise_title }} ×{{ quantity }}",
+        "split_shipping_shipping_label": "Metode",
+        "split_shipping_shipment_notice": "Jūsu pasūtījums tiks piegādāts {{ quantity_shipments }} laikā",
+        "split_shipping_first_shipment_notice": "Jūsu pirmais pasūtījums tiks piegādāts {{ quantity_shipments }} laikā",
+        "split_shipping_multiple_shipment_quantity_label": "{{ quantity }} sūtījumi",
+        "split_shipping_multiple_shipment_notice": "Jūsu pasūtījums tiks piegādāts vairākās piegādēs",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Jūsu pasūtījums tiks piegādāts {{ daudzums }} sūtījumos",
+        "split_shipping_more_shipping_options": "Vairāk piegādes iespēju"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
