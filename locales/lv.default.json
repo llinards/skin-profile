@@ -2523,6 +2523,18 @@
           "prepaid_order_one_cycle_delivery_not_included": {
             "one": "{{ shipping_price }} par {{ count }} piegādi",
             "other": "{{ shipping_price }} par {{ count }} piegādēm ({{ per_delivery_cost }})"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Vēl {{ count }} piegāde par {{ shipping_price }}",
+            "other": "Vēl {{ count }} piegādes par {{ shipping_price }} katra"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "Piegāde par {{ shipping_price }}: {{ count }}",
+            "other": "Vēl {{ count }} piegādes par {{ shipping_price }} katra"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Bezmaksas piegāde pirmajam {{ cycle }}, kam seko {{ recurring_order_shipping_price }}",
+            "other": "Bezmaksas piegāde pirmajam {{ cycle }}, kam seko {{ recurring_order_shipping_price }}"
           }
         },
         "duties_and_taxes_options": {
