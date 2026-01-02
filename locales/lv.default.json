@@ -2405,6 +2405,25 @@
           "customer": "Klients mainīja/atcēla pasūtījumu",
           "staff": "Personāla kļūda",
           "other": "Citi"
+        },
+        "financial_status": {
+          "partially_paid": "Daļēji samaksāts",
+          "partially_refunded": "Daļēji atmaksāts",
+          "refunded": "Atmaksāts",
+          "expired": "Beidzies derīguma termiņš"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Izpildīts",
+          "complete": "Pabeigts",
+          "partial": "Daļēji",
+          "unfulfilled": "Nezipildīts",
+          "restocked": "Papildināts"
+        },
+        "transaction_status": {
+          "success": "Sekmīgi",
+          "pending": "Apstrādē",
+          "failure": "Noraidīts",
+          "error": "Kļūda"
         }
       }
     },
