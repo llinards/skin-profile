@@ -3359,7 +3359,18 @@
         "iframe_title_accessibility_label": "Bankas konta iestatīšana",
         "display_name": "Bankas konts",
         "generic_error": "Nevarēja pievienot bankas kontu. Mēģiniet vēlreiz vēlāk."
-      }
+      },
+      "replacement_payment_method_title": "Aizstāšanas maksājuma veids",
+      "title": "Maksājuma metodes",
+      "add_payment_method_button": "Pievienot maksājuma metodi",
+      "add_payment_method_banner": "Pievienojiet maksājuma veidu ātrākai norēķināšanās vai iepriekš autorizētu pakalpojumu saņemšanai",
+      "no_payment_methods_banner": "Nav pievienots neviens maksājuma veids",
+      "edit_payment_method_button_accessibility_label": "Rediģēt {{paymentMethodName}}, kura beidzās ar {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Rediģēt {{paymentMethodName}}",
+      "delete_payment_method_button": "Dzēst",
+      "credit_card_title": "Kredītkarte",
+      "additional_payment_methods": "Pievienot papildus maksājuma metodes",
+      "or": "vai"
     },
     "payment_method_brands": {
       "visa": "Vīza",
@@ -4132,6 +4143,21 @@
         "contact_phone_number": "Tālruņa numurs",
         "location_picker_label": "Vietas nosaukums",
         "location_picker_accessibility_label": "Vietas nosaukums: {{locationName}}"
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Pievienot pasūtījuma numuru",
+        "add_modal_title": "Pievienot pasūtījuma numuru",
+        "cancel": "Atcelt",
+        "close_modal_accessibility_label": "Aizvērt pasūtījuma numura modālo logu",
+        "discard": "Atmest",
+        "discard_changes_modal_title": "Vai atmest izmaiņas?",
+        "edit_accessibility_label": "Rediģēt pasūtījuma numuru",
+        "edit_modal_title": "Rediģēt pasūtījuma numuru",
+        "empty_state": "Nav pasūtījuma numura",
+        "modal_po_number_input_label": "Pasūtījuma nr. ",
+        "modal_po_number_input_max_length_error": "Pasūtījuma numuru maksimālais rakstzīmju skaits ir {{maxLength}}.",
+        "save": "Saglabāt",
+        "title": "Pasūtījuma nr. {{poNumber}}"
       }
     },
     "intents": {
@@ -4259,6 +4285,73 @@
       "viewing": "Jūs skatāties:",
       "not_available": "Profila dati nav pieejami",
       "actions_button": "Darbības"
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Dzēšot šo adresi, radās problēma. Mēģiniet vēlreiz vai atsvaidziniet lapu."
+      },
+      "addresses_loading_issue": {
+        "description": "Savienojuma kļūda. Pārbaudiet interneta savienojumu un mēģiniet vēlreiz."
+      },
+      "banner_title": {
+        "one": "Ir {{count}} kļūda",
+        "other": "Ir {{count}} kļūdas"
+      },
+      "failed_address_creation": {
+        "description": "Radās problēma, izveidojot jūsu adresi. Mēģiniet atsvaidzināt šo lapu vai pārbaudiet interneta savienojumu."
+      },
+      "failed_address_update": {
+        "description": "Atjauninot jūsu adresi, radās problēma. Mēģiniet atsvaidzināt šo lapu vai pārbaudiet interneta savienojumu."
+      },
+      "load_address_form_error": {
+        "title": "Nevar ielādēt adreses veidlapu",
+        "description": "Nevarēja ielādēt adreses veidlapu.",
+        "refresh_button": "Pārlādēt lapu"
+      },
+      "load_orders_error": {
+        "title": "Nevar ielādēt pasūtījumus",
+        "description": "Mēģiniet vēlreiz vai atgriezieties vēlāk.",
+        "retry_button": "Mēģināt vēlreiz"
+      },
+      "load_paypal_error": {
+        "description": "Ielādējot PayPal, radās problēma. Lūdzu, mēģiniet vēlreiz."
+      },
+      "logout_everywhere": {
+        "description": "Izrakstīšanās laikā radās problēma. Lūdzu, mēģiniet vēlreiz."
+      },
+      "no_access_to_locations": {
+        "description": "Jums nav piekļuves nevienai atrašanās vietai"
+      },
+      "not_found": {
+        "description": "Pārbaudiet URL vai mēģiniet vēlreiz pēc dažām minūtēm.",
+        "title": "Radās problēma ielādējot lapu"
+      },
+      "order_not_found": {
+        "description": "Šis pasūtījums neeksistē vai jums nav atļaujas to skatīt.",
+        "title": "Pasūtījums nav atrasts"
+      },
+      "profile_update_error": {
+        "description": "Atjauninot jūsu profilu, radās problēma. Mēģiniet atsvaidzināt šo lapu vai pārbaudiet interneta savienojumu."
+      },
+      "profile_name_update_error": {
+        "description": "Atjauninot jūsu vārdu, radās problēma. Mēģiniet atsvaidzināt šo lapu vai pārbaudiet interneta savienojumu."
+      },
+      "retry_action_label": "Mēģiniet vēlreiz",
+      "resend_link": {
+        "too_many_requests": "Pārāk daudz mēģinājumu. Mēģiniet vēlāk.",
+        "generic": "Neizdevās pieprasījums"
+      },
+      "load_extension_error": {
+        "title": "Kļūda",
+        "description": "Pārlādējiet šo lapu vai mēģiniet vēlreiz pēc dažām minūtēm.",
+        "refresh_button": "Pārlādējiet lapu"
+      }
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Pārāk daudz mēģinājumu",
+        "description": "Lūdzu, mēģiniet vēlreiz pēc dažām minūtēm"
+      }
     }
   },
   "products": {
