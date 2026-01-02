@@ -2140,6 +2140,18 @@
           "page_title": "Daudzuma atjauninājums",
           "title": "Daudzuma atjauninājums",
           "description": "Šo preču pieejamais daudzums ir mainījies un ir atjaunināts jūsu grozā."
+        },
+        "unpurchasable_product": {
+          "title": "Neiegādājams produkts",
+          "header": "Dažas preces tika izņemtas no jūsu groza",
+          "message": "Šīs preces nav pieejamas B2B pasūtījumiem.",
+          "status_column_header": "Nav pieejams"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Neiegādājams produkts",
+          "header": "Dažas preces tika izņemtas no jūsu groza",
+          "message": "Šīs preces nav pieejamas.",
+          "status_column_header": "Nav pieejams"
         }
       }
     },
