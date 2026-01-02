@@ -2410,7 +2410,12 @@
           "partially_paid": "Daļēji samaksāts",
           "partially_refunded": "Daļēji atmaksāts",
           "refunded": "Atmaksāts",
-          "expired": "Beidzies derīguma termiņš"
+          "expired": "Beidzies derīguma termiņš",
+          "authorized": "Autorizēts",
+          "pending": "Apstrādē",
+          "paid": "Samaksāts",
+          "unpaid": "Nesamaksāts",
+          "voided": "Anulēts"
         },
         "fulfillment_status": {
           "fulfilled": "Izpildīts",
