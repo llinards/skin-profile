@@ -650,7 +650,15 @@
         "gift_card_has_been_removed": "Dāvanu karte noņemta",
         "gift_card_subscriptions_notice": "Dāvanu kartes tiks piemērotas tikai jūsu pirmajam maksājumam",
         "discount_already_applied": "Šim pasūtījumam ir piemērota atlaide. Jūs nevarat pievienot citu atlaidi.",
-        "estimated_taxes_finalization_tooltip_content_short": "Nodoklis ir galīgi aprēķināts pēc maksājuma veikšanas"
+        "estimated_taxes_finalization_tooltip_content_short": "Nodoklis ir galīgi aprēķināts pēc maksājuma veikšanas",
+        "maximum_discount_code_limit_reached": "Jūs esat sasniedzis maksimālo atlaižu kodu skaitu. Noņemiet esošo kodu, lai izmantotu <strong style=&quot;text-transform:uppercase&quot;>{{ code }</strong>.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">{{ code }</strong> pašlaik nedarbojas. Sazinieties ar mums, lai saņemtu palīdzību.",
+        "due_on_fulfillment": "Ar izpildes termiņu",
+        "subscriptions": "Abonementi",
+        "duties_label": "Nodevas",
+        "duties_and_taxes_label": "Nodevas un nodokļi",
+        "error_duties_tooltip": "Šis pasūtījums tiek sūtīts no citas valsts, tāpēc piegādes brīdī var tikt piemērotas nodevas un nodokļi.",
+        "may_be_charged_on_delivery": "Var tikt iekasēta maksa piegādes laikā"
       },
       "payment": {
         "store_credit": {
