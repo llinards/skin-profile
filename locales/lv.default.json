@@ -2201,7 +2201,13 @@
         "shipping_line_delivery_phone_label": "Mobilā tālruņa numurs",
         "shipping_line_delivery_phone": "Ar jums var sazināties, lai sniegtu jaunāko informāciju par jūsu piegādi.",
         "optional_shipping_line_delivery_instructions_label": "Piegādes instrukcijas (pēc izvēles)",
-        "shipping_line_delivery_instructions": "Ievadiet nepieciešamo informāciju, piemēram, durvju kodus vai piegādes instrukcijas."
+        "shipping_line_delivery_instructions": "Ievadiet nepieciešamo informāciju, piemēram, durvju kodus vai piegādes instrukcijas.",
+        "shipping_rate_discounted_amount": "Bija: {{ original_amount }}. Tagad: {{ amount }}\"",
+        "local_delivery": "Vietējā piegāde",
+        "one_time_purchase_shipping": "Vienreizēja piegāde",
+        "duties_and_taxes_title": "Nodevas un nodokļi",
+        "shipping_information_required_notice": "Nepieciešama piegādes informācija. {{link}}.",
+        "shipping_information_redirect_link": "Ievadiet savu informāciju šeit"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
