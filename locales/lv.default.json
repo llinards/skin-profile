@@ -2578,7 +2578,13 @@
         "shipping_method_recurring_shipments_group_title": {
           "one": "Atkārtota sūtīšana",
           "other": "Atkārtotas sūtīšanas"
-        }
+        },
+        "split_shipping_option_lowest_price": "Zemākā cena",
+        "split_shipping_option_fastest": "Atrākais",
+        "split_shipping_option_recommended": "Ieteicams",
+        "split_shipping_option_custom": "Pielāgots",
+        "add_shipping_address": "Pievienojiet piegādes adresi",
+        "choose_new_address": "Izvēlieties jaunu adresi"
       },
       "remote_merchandise_only": {
         "title": "Pabeidziet pirkumu",
