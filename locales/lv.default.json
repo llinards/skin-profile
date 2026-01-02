@@ -2211,6 +2211,29 @@
           "some_products_other": "Šīs preces nav pieejamas piegādei uz {{ location_name }}.",
           "all_products_one": "Produkts jūsu grozā nav pieejams piegādei uz {{ location_name }}.",
           "all_products_other": "Jūsu grozā esošās preces nav pieejamas piegādei uz {{ location_name }}."
+        },
+        "missing_country_fallback": "savu valsti",
+        "indeterminate_location_fallback": "jūsu atrašanās vieta",
+        "cart_updated": "Jūsu grozs ir atjaunināts.",
+        "change_address_only": "Lai turpinātu, mainiet piegādes adresi.",
+        "change_address_or_remove": "Mainiet piegādes adresi vai {{ remove_action }}.",
+        "remove_items_action": {
+          "one": "noņemt nepieejamo vienumu",
+          "other": "noņemt nepieejamas preces"
+        },
+        "empty_cart_action": "iztukšojiet grozu un atgrieziet veikalā",
+        "unavailable_line_item": "{{ product_name }} / {{ variant_label }}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Piegāde nav pieejama {{ count }} precei",
+            "other": "Piegāde nav pieejama {{ count }} precēm"
+          },
+          "message": {
+            "one": "Šī prece tiks noņemta no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes.",
+            "other": "Šīs preces tiks noņemtas no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes."
+          }
         }
       }
     },
