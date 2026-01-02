@@ -2170,7 +2170,16 @@
             "one": "Piegāde nav pieejama {{ count }} precei",
             "other": "Piegāde nav pieejama {{ count }} precēm"
           },
-          "status_column_header": "Nav piegādes"
+          "status_column_header": "Nav piegādes",
+          "message": {
+            "one": "Šī prece tiks noņemta no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes.",
+            "other": "Šīs preces tiks noņemtas no jūsu groza, jo jūsu adresei nav pieejamas piegādes metodes."
+          }
+        },
+        "price_update": {
+          "title": "Cenas atjauninājums",
+          "description": "Šo preču cenas ir mainījušās un ir atjauninātas jūsu grozā.",
+          "updated_price": "Atjaunināta cena"
         }
       }
     },
