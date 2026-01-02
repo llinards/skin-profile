@@ -1293,7 +1293,8 @@
         "thank_you_confirmed_order_with_draft_payment": "Mēs jūs informēsim, ja mums būs nepieciešama papildu informācija vai kad jūsu pasūtījums būs apstiprināts.",
         "thank_you_confirmed_order_with_draft_pick_up": "Mēs jūs informēsim, ja mums būs nepieciešama papildu informācija vai kad jūsu pasūtījums būs apstiprināts.",
         "thank_you_from_shop": "No {{ shop_name }}",
-        "thank_you_from_other_store": "No cita veikala"
+        "thank_you_from_other_store": "No cita veikala",
+        "confirmation_email_sent_text": "Apstiprinājuma e-pasts ir nosūtīts uz adresi {{ email }}"
       },
       "vaulted": {
         "change_button": "Mainīt"
@@ -2184,7 +2185,13 @@
         "debit_card_label": "Debetkarte",
         "deferred_payment_label": "Izvēlieties maksājuma veidu vēlāk",
         "fixed_payment_label": "Jūsu maksājums būs jāveic {{dueDate}} .",
-        "generic_payment_terms": "Jūs esat saskaņā ar {{translatedName}} noteikumiem. Jūsu maksājums būs jāveic {{dueDate}} ."
+        "generic_payment_terms": "Jūs esat saskaņā ar {{translatedName}} noteikumiem. Jūsu maksājums būs jāveic {{dueDate}} .",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} kontam ar piekļuvi šai atrašanās vietai, lai pievienotu vai izmantotu saglabātās maksājuma metodes.",
+            "link": "Pieteikties"
+          }
+        }
       },
       "store_credit_errors": {
         "generic_error": "Radās problēma ar jūsu veikala kredītu. Mēģiniet vēlreiz vai atkārtoti ielādējiet lapu."
