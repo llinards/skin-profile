@@ -4059,7 +4059,8 @@
       },
       "vat_invoices": {
         "title": "PVN rēķini"
-      }
+      },
+      "duties_and_taxes_included": "Kopsumma ietver nodevas un nodokļus. Piegādes maksa netiek iekasēta."
     },
     "callback": {
       "try_again": "Mēģiniet vēlreiz"
@@ -4142,7 +4143,30 @@
         "contact_permissions": "Atļaujas",
         "contact_phone_number": "Tālruņa numurs",
         "location_picker_label": "Vietas nosaukums",
-        "location_picker_accessibility_label": "Vietas nosaukums: {{locationName}}"
+        "location_picker_accessibility_label": "Vietas nosaukums: {{locationName}}",
+        "net_payment_terms_description": "{{name}}: maksājumi jāveic {{numberOfDays}} dienu laikā",
+        "deposit_percentage": "{{percentage}} depozīts",
+        "own_role_contact_name": "Jūs",
+        "pagination": {
+          "load_more": "Ielādēt vēl",
+          "load_more_accessibility_label": "Ielādēt vairāk atrašanās vietu"
+        },
+        "payment_details_title": "Maksājuma informācija",
+        "payment_terms": "Apmaksas noteikumi",
+        "permissions_label": "Jūsu atļaujas",
+        "permissions_title": "Atļaujas",
+        "section_title": "Atrašanās vieta",
+        "shipping_address_required": "Lai sāktu pasūtījumu veikšanu, pievienojiet šai atrašanās vietai piegādes adresi.",
+        "staff_and_permissions_title": "Personāls un atļaujas",
+        "tax_details_title": "Nodokļu informācija",
+        "tax_id": "Nodokļa ID",
+        "tax_exemptions": "Nodokļu atbrīvojumi",
+        "multiple_tax_exemptions": "vēl {{taxExemptionsCount}}",
+        "multiple_tax_exemptions_and": "un",
+        "tax_exemptions_modal_close": "Aizvērt",
+        "taxes_none": "Nav",
+        "tax_exemption_not_applicable": "N/A",
+        "tax_exemptions_modal_button_accessibility_label": "Skatīt visus nodokļu atbrīvojumus"
       },
       "purchase_order_number": {
         "add_accessibility_label": "Pievienot pasūtījuma numuru",
@@ -4158,6 +4182,30 @@
         "modal_po_number_input_max_length_error": "Pasūtījuma numuru maksimālais rakstzīmju skaits ir {{maxLength}}.",
         "save": "Saglabāt",
         "title": "Pasūtījuma nr. {{poNumber}}"
+      },
+      "location_selection": {
+        "continue_to_store": "Turpināt uz veikalu",
+        "description": "Ja jūsu grozā jau ir preces, atrašanās vietas maiņa var ietekmēt groza cenas un daudzumus.",
+        "description_switch_later": "Jūs vienmēr varat pārslēgties vēlāk",
+        "list_accessibility_label": "Atrašanās vietu saraksts",
+        "list_item_accessibility_label": "{{name}}: {{address}}",
+        "list_item_without_address_accessibility_label": "{{name}}: Nav adreses",
+        "list_loading_accessibility_message": "Notiek atrašanās vietu saraksta ielāde",
+        "list_loading_address_accessibility_message": "Notiek atrašanās vietas {{locationName}} adreses ielāde",
+        "list_loading_finished_accessibility_message": "Vietu saraksts ir ielādēts",
+        "loading_store_accessibility_message": "Dodos uz veikalu",
+        "no_location_title": "Tikai personīgi pasūtījumi",
+        "no_location_description": "Jums vairs nav atļaujas veikt pasūtījumus uzņēmumam {{company}}. Jūs joprojām varat veikt personiskos pasūtījumus.",
+        "no_locations_found": "Nav atrasta neviena atrašanās vieta",
+        "search": "Meklēt atrašanās vietas",
+        "search_location_title": "Izvēlieties atrašanās vietu",
+        "selection_cancel_button": "Atcelt",
+        "selection_confirmation_button": "Izvēlieties atrašanās vietu",
+        "selection_continue_button": "Turpināt",
+        "title": "Kurai vietai jūs pērkat?",
+        "title_choose_location": "Izvēlieties atrašanās vietu",
+        "clear_search": "Notīrīt meklēšanu",
+        "try_new_search": "Izmēģiniet jaunu meklēšanu"
       }
     },
     "intents": {
