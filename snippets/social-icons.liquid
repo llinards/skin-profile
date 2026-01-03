@@ -1,7 +1,7 @@
 <div class="hidden md:flex justify-end items-center mt-12 z-10">
   <div
     id="social-icons"
-    class="flex flex-col items-center md:fixed md:top-1/2 md:right-8 md:-translate-y-1/2 space-y-2 fill-white z-10 bg-sp-brown-30 px-2 py-4 rounded-full"
+    class="flex flex-col items-center md:fixed md:top-1/2 md:right-8 md:-translate-y-1/2 space-y-2 fill-white z-10 bg-(--color-brand-primary)-30 px-2 py-4 rounded-full"
   >
     {% if phone_number != blank %}
       <a class="block" aria-label="Call" href="tel:{{ phone_number | strip | replace: ' ', '' }}">

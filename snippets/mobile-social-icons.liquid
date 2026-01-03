@@ -3,7 +3,7 @@
     <!-- Toggle Button (at the bottom) -->
     <button @click="open = !open" aria-label="{{ 'general.accessibility.open_contacts' | t }}">
       <div
-        class="p-2 rounded-full border border-sp-brown bg-sp-brown text-white"
+        class="p-2 rounded-full border border-(--color-brand-primary) bg-(--color-brand-primary) text-white"
       >
         <!-- Closed Icon -->
         <span x-show="!open">
@@ -23,7 +23,7 @@
       x-show="open"
       class="
         flex flex-col items-center space-y-2 fill-white
-        bg-sp-brown py-3 px-2 mb-1 rounded-full shadow-lg
+        bg-(--color-brand-primary) py-3 px-2 mb-1 rounded-full shadow-lg
         transition-all duration-300
       "
 

@@ -24,7 +24,7 @@
     {%- assign sort_url = collection.url | append: '?sort_by=' | append: option | append: filter_params -%}
     <a
       href="{{ sort_url }}"
-      class="block px-4 py-2 text-sm transition-colors filter-link {% if selected_sort_key == option %}bg-sp-brown text-white font-semibold {% else %} hover:bg-sp-light-brown{% endif %}"
+      class="block px-4 py-2 text-sm transition-colors filter-link {% if selected_sort_key == option %}bg-(--color-brand-primary) text-white font-semibold {% else %} hover:bg-sp-light-brown{% endif %}"
     >
       {{ sort_labels[forloop.index0] | t }}
     </a>

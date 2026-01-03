@@ -9,7 +9,7 @@
         {%- comment -%} Previous Link {%- endcomment -%}
         {% if paginate.previous %}
           <a
-            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-(--color-brand-primary) hover:text-white transition-all duration-200 pagination-link"
             href="{{ paginate.previous.url }}"
           >
             &laquo;
@@ -43,7 +43,7 @@
             </span>
           {% else %}
             <a
-              class="bg-sp-light-brown-opacity px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 hover:bg-sp-brown hover:text-white pagination-link"
+              class="bg-sp-light-brown-opacity px-4 sm:px-6 py-3 rounded-xl transition-all duration-200 hover:bg-(--color-brand-primary) hover:text-white pagination-link"
               href="{{ collection.url }}?page={{ i }}"
             >
               {{ i }}
@@ -54,7 +54,7 @@
         {%- comment -%} Next Link {%- endcomment -%}
         {% if paginate.next %}
           <a
-            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-sp-brown hover:text-white transition-all duration-200 pagination-link"
+            class="bg-sp-light-brown-opacity px-4 py-3 rounded-xl hover:bg-(--color-brand-primary) hover:text-white transition-all duration-200 pagination-link"
             href="{{ paginate.next.url }}"
           >
             &raquo;

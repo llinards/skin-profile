@@ -28,9 +28,9 @@
           <span
             class="
               flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
-              group-hover:bg-sp-brown group-hover:text-white
+              group-hover:bg-(--color-brand-primary) group-hover:text-white
             "
-            :class="open ? 'bg-sp-brown text-white' : 'bg-sp-light-brown text-sp-brown'"
+            :class="open ? 'bg-(--color-brand-primary) text-white' : 'bg-sp-light-brown text-(--color-brand-primary)'"
           >
             <!-- Plus -->
             <svg
@@ -137,10 +137,10 @@
       <button
         @click="showContraModal = false"
         class="
-          absolute top-8 right-8 size-8 rounded-full bg-sp-brown flex items-center justify-center group
-          text-white border border-sp-brown
-          hover:bg-white hover:sp-brown
-          active:bg-white active:sp-brown
+          absolute top-8 right-8 size-8 rounded-full bg-(--color-brand-primary) flex items-center justify-center group
+          text-white border border-(--color-brand-primary)
+          hover:bg-white hover:text-(--color-brand-primary)
+          active:bg-white active:text-(--color-brand-primary)
           transition-all duration-300 z-50
         "
         aria-label="{{ 'general.modal.close' | t }}"
@@ -149,7 +149,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="size-6 fill-sp-light-brown group-hover:fill-sp-brown group-active:fill-sp-brown"
+          class="size-6 fill-sp-light-brown group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)"
         >
           <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
         </svg>

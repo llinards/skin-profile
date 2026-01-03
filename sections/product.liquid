@@ -17,7 +17,7 @@
         {%- comment -%} Product is on sale {%- endcomment -%}
         <div class="mb-4 space-y-2">
           <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-3xl md:text-4xl header-font font-semibold text-sp-brown">
+            <span class="text-3xl md:text-4xl header-font font-semibold text-(--color-brand-primary)">
               {{ variant.price | money }}
             </span>
             <span class="text-xl md:text-2xl line-through opacity-60">
@@ -29,7 +29,7 @@
               | divided_by: variant.compare_at_price
               | round
             -%}
-            <span class="inline-flex items-center text-sm font-bold tracking-widest uppercase bg-sp-brown text-white px-3 py-1 rounded-xl">
+            <span class="inline-flex items-center text-sm font-bold tracking-widest uppercase bg-(--color-brand-primary) text-white px-3 py-1 rounded-xl">
               -{{ discount_pct }}%
             </span>
           </div>

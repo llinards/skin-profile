@@ -1076,6 +1076,9 @@
   .fill-white {
     fill: var(--color-white);
   }
+  .stroke-\(--color-brand-primary\) {
+    stroke: var(--color-brand-primary);
+  }
   .stroke-white {
     stroke: var(--color-white);
   }
@@ -1305,6 +1308,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .accent-\(--color-brand-primary\) {
+    accent-color: var(--color-brand-primary);
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -1441,38 +1447,10 @@
       }
     }
   }
-  .group-hover\:bg-white {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-color: var(--color-white);
-      }
-    }
-  }
   .group-hover\:fill-\(--color-brand-primary\) {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         fill: var(--color-brand-primary);
-      }
-    }
-  }
-  .group-hover\:text-\(--color-brand-primary\) {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-brand-primary);
-      }
-    }
-  }
-  .group-hover\:text-\[var\(--color-brand-primary\)\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-brand-primary);
-      }
-    }
-  }
-  .group-hover\:text-black {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-black);
       }
     }
   }
@@ -1483,54 +1461,9 @@
       }
     }
   }
-  .group-focus\:bg-\(--color-brand-primary\) {
-    &:is(:where(.group):focus *) {
-      background-color: var(--color-brand-primary);
-    }
-  }
-  .group-focus\:bg-white {
-    &:is(:where(.group):focus *) {
-      background-color: var(--color-white);
-    }
-  }
-  .group-focus\:fill-\(--color-brand-primary\) {
-    &:is(:where(.group):focus *) {
-      fill: var(--color-brand-primary);
-    }
-  }
-  .group-focus\:text-\(--color-brand-primary\) {
-    &:is(:where(.group):focus *) {
-      color: var(--color-brand-primary);
-    }
-  }
-  .group-focus\:text-white {
-    &:is(:where(.group):focus *) {
-      color: var(--color-white);
-    }
-  }
-  .group-active\:bg-\(--color-brand-primary\) {
-    &:is(:where(.group):active *) {
-      background-color: var(--color-brand-primary);
-    }
-  }
-  .group-active\:bg-white {
-    &:is(:where(.group):active *) {
-      background-color: var(--color-white);
-    }
-  }
   .group-active\:fill-\(--color-brand-primary\) {
     &:is(:where(.group):active *) {
       fill: var(--color-brand-primary);
-    }
-  }
-  .group-active\:text-\(--color-brand-primary\) {
-    &:is(:where(.group):active *) {
-      color: var(--color-brand-primary);
-    }
-  }
-  .group-active\:text-white {
-    &:is(:where(.group):active *) {
-      color: var(--color-white);
     }
   }
   .after\:content-\[\'\,\\00a0\'\] {
@@ -1554,6 +1487,13 @@
         --tw-scale-y: 105%;
         --tw-scale-z: 105%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:border-\(--color-brand-primary\) {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-brand-primary);
       }
     }
   }
@@ -1660,6 +1600,11 @@
   .focus\:text-white {
     &:focus {
       color: var(--color-white);
+    }
+  }
+  .focus\:ring-\(--color-brand-primary\) {
+    &:focus {
+      --tw-ring-color: var(--color-brand-primary);
     }
   }
   .focus\:outline-none {
@@ -2396,6 +2341,15 @@
       }
     }
   }
+  .md\:hover\:fill-\(--color-brand-primary\) {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          fill: var(--color-brand-primary);
+        }
+      }
+    }
+  }
   .md\:hover\:text-\(--color-brand-primary\) {
     @media (width >= 48rem) {
       &:hover {
@@ -2633,23 +2587,6 @@
   }
   .hover\:fill-sp-brown:hover {
     fill: var(--color-brand-primary) !important;
-  }
-  @media (min-width: 768px) {
-    .md\:hover\:fill-sp-brown:hover {
-      fill: var(--color-brand-primary) !important;
-    }
-    .md\:hover\:bg-sp-brown:hover {
-      background-color: var(--color-brand-primary) !important;
-    }
-    .md\:hover\:text-sp-brown:hover {
-      color: var(--color-brand-primary) !important;
-    }
-    .md\:hover\:text-white:hover {
-      color: #ffffff !important;
-    }
-    .md\:hover\:fill-white:hover {
-      fill: #ffffff !important;
-    }
   }
   .sp-dark {
     color: #14160D;

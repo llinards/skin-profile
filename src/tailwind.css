@@ -54,7 +54,7 @@
         fill: var(--color-brand-primary) !important;
     }
 
-    @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
         .md\:hover\:fill-sp-brown:hover {
             fill: var(--color-brand-primary) !important;
         }
@@ -74,7 +74,7 @@
         .md\:hover\:fill-white:hover {
             fill: #ffffff !important;
         }
-    }
+    } */
 
     .sp-dark {
         color: #14160D;

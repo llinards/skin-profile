@@ -25,16 +25,16 @@
     <button
       @click="showContactModal = false; "
       class="
-        absolute top-8 right-8 size-8 rounded-full bg-sp-brown flex items-center justify-center group px-1
-        text-white border border-sp-brown
-        hover:bg-white hover:sp-brown
-        active:bg-white active:sp-brown
+        absolute top-8 right-8 size-8 rounded-full bg-(--color-brand-primary) flex items-center justify-center group px-1
+        text-white border border-(--color-brand-primary)
+        hover:bg-white hover:text-(--color-brand-primary)
+        active:bg-white active:text-(--color-brand-primary)
         transition-all duration-300 z-50 cursor-pointer w-fit!
       "
       aria-label="{{ 'general.modal.close' | t }}"
     >
       {% render 'icon-mobile-menu-close',
-        class: 'size-6 fill-sp-light-brown group-hover:fill-sp-brown group-active:fill-sp-brown'
+        class: 'size-6 fill-sp-light-brown group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)'
       %}
     </button>
 
@@ -50,7 +50,7 @@
           <li>
             <a
               href="tel:{{ shop.phone }}"
-              class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+              class="hover:text-(--color-brand-primary) text-base xl:text-lg py-1 border-b border-transparent hover:border-(--color-brand-primary) transition-all duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@
           <li>
             <a
               href="mailto:{{ shop.email }}"
-              class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+              class="hover:text-(--color-brand-primary) text-base xl:text-lg py-1 border-b border-transparent hover:border-(--color-brand-primary) transition-all duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
               %}
               <a
                 href="https://www.google.com/maps/search/?api=1&query={{ map_query | url_encode }}"
-                class="hover:sp-brown text-base xl:text-lg py-1 border-b border-transparent hover:border-sp-brown transition-all duration-300"
+                class="hover:text-(--color-brand-primary) text-base xl:text-lg py-1 border-b border-transparent hover:border-(--color-brand-primary) transition-all duration-300"
                 target="_blank"
               >
                 <svg

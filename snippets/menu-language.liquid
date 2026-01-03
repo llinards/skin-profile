@@ -19,7 +19,7 @@
       <button
         type="button"
         @click="toggle()"
-        class="text-base w-full inline-flex items-center justify-center gap-2 py-2 text-center"
+        class="text-base w-full inline-flex items-center justify-center gap-2 py-2 text-center cursor-pointer"
         :aria-expanded="open.toString()"
         aria-haspopup="true"
       >
@@ -51,7 +51,7 @@
                 <a
                   href="#"
                   data-locale="{{ locale.iso_code }}"
-                  class="text-base locale-link inline-block px-3 py-2 rounded hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %}"
+                  class="text-base locale-link inline-block px-3 py-2 rounded hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-(--color-brand-primary){% endif %}"
                 >
                   {{ locale.endonym_name | capitalize }}
                 </a>
@@ -78,7 +78,7 @@
     >
       <button
         type="button"
-        class="text-base xl:text-lg flex lg:text-white items-center py-1 border border-transparent hover:border-b-white transition-all duration-300 whitespace-nowrap {{ invert_class }}"
+        class="text-base xl:text-lg flex lg:text-white items-center py-1 border border-transparent cursor-pointer hover:border-b-white transition-all duration-300 whitespace-nowrap {{ invert_class }}"
         :aria-expanded="isOpen.toString()"
         aria-haspopup="true"
       >
@@ -98,7 +98,7 @@
                   <a
                     href="#"
                     data-locale="{{ locale.iso_code }}"
-                    class="locale-link block px-3 py-2 text-base hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-sp-brown{% endif %} {{ invert_class }}"
+                    class="locale-link block px-3 py-2 text-base hover:bg-sp-light-brown transition-all duration-300 {% if locale.iso_code == current %}font-semibold text-(--color-brand-primary){% endif %} {{ invert_class }}"
                   >
                     {{ locale.endonym_name | capitalize }}
                   </a>

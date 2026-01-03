@@ -9,7 +9,7 @@
               {% if block.type == 'tab' %}
                 <button
                   @click="activeTab = {{ forloop.index0 }}"
-                  :class="activeTab === {{ forloop.index0 }} ? 'sp-brown' : ''"
+                  :class="activeTab === {{ forloop.index0 }} ? 'text-(--color-brand-primary)' : ''"
                   class="cursor-pointer border-b md:border-b-0 uppercase py-3 px-4 tracking-wider transition-all duration-300 "
                 >
                   {{ block.settings.tab_label }}

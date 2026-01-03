@@ -8,7 +8,7 @@
       <div class="flex flex-row justify-between mb-6 md:mb-12 ">
         <h2>{{ section.settings.heading }}</h2>
         <!--
-          <div class="group flex items-center justify-end cursor-pointer border-b border-transparent hover:border-sp-brown transition-colors duration-150">
+          <div class="group flex items-center justify-end cursor-pointer border-b border-transparent hover:border-(--color-brand-primary) transition-colors duration-150">
             <a class="text-gray-500 pr-2" href="{{ pages['komanda'].url }}">{{ 'general.view_all' | t }}</a>
             <span class="pointer-events-none">
               {% render 'icon-arrow' %}
@@ -146,16 +146,16 @@
           <button
             @click="activeModal = null; document.body.style.overflow = 'auto'"
             class="
-              absolute top-8 right-8 size-8 rounded-full bg-sp-brown flex items-center justify-center group
-              text-white border border-sp-brown
-              hover:bg-white hover:sp-brown
-              active:bg-white active:sp-brown
+              absolute top-8 right-8 size-8 rounded-full bg-(--color-brand-primary) flex items-center justify-center group
+              text-white border border-(--color-brand-primary)
+              hover:bg-white hover:text-(--color-brand-primary)
+              active:bg-white active:text-(--color-brand-primary)
               transition-all duration-300 z-50
             "
             aria-label="{{ 'general.modal.close' | t }}"
           >
             {% render 'icon-mobile-menu-close',
-              class: 'size-6 fill-white group-hover:fill-sp-brown group-active:fill-sp-brown'
+              class: 'size-6 fill-white group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)'
             %}
           </button>
           {% if block.settings.photo %}
