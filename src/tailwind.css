@@ -415,6 +415,29 @@
     }
 }
 
+  @media (hover: none) {
+
+      /* iPad/iOS can "stick" :hover after tapping; neutralize hover styles on touch */
+      .sp-btn--brown:hover {
+          background-color: var(--color-brand-primary) !important;
+          color: var(--color-white) !important;
+          fill: var(--color-white) !important;
+      }
+
+      .sp-btn--brown:hover svg {
+          fill: var(--color-white) !important;
+      }
+
+      .sp-btn--white:hover {
+          background-color: var(--color-white) !important;
+          color: var(--color-brand-primary) !important;
+      }
+
+      .sp-btn--white:hover svg {
+          fill: var(--color-brand-primary) !important;
+      }
+  }
+
 /* Optional utility for consistent focus */
 @layer utilities {
   .focus-ring {
