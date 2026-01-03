@@ -4183,30 +4183,6 @@
         "save": "Saglabāt",
         "title": "Pasūtījuma nr. {{poNumber}}"
       },
-      "location_selection": {
-        "continue_to_store": "Turpināt uz veikalu",
-        "description": "Ja jūsu grozā jau ir preces, atrašanās vietas maiņa var ietekmēt groza cenas un daudzumus.",
-        "description_switch_later": "Jūs vienmēr varat pārslēgties vēlāk",
-        "list_accessibility_label": "Atrašanās vietu saraksts",
-        "list_item_accessibility_label": "{{name}}: {{address}}",
-        "list_item_without_address_accessibility_label": "{{name}}: Nav adreses",
-        "list_loading_accessibility_message": "Notiek atrašanās vietu saraksta ielāde",
-        "list_loading_address_accessibility_message": "Notiek atrašanās vietas {{locationName}} adreses ielāde",
-        "list_loading_finished_accessibility_message": "Vietu saraksts ir ielādēts",
-        "loading_store_accessibility_message": "Dodos uz veikalu",
-        "no_location_title": "Tikai personīgi pasūtījumi",
-        "no_location_description": "Jums vairs nav atļaujas veikt pasūtījumus uzņēmumam {{company}}. Jūs joprojām varat veikt personiskos pasūtījumus.",
-        "no_locations_found": "Nav atrasta neviena atrašanās vieta",
-        "search": "Meklēt atrašanās vietas",
-        "search_location_title": "Izvēlieties atrašanās vietu",
-        "selection_cancel_button": "Atcelt",
-        "selection_confirmation_button": "Izvēlieties atrašanās vietu",
-        "selection_continue_button": "Turpināt",
-        "title": "Kurai vietai jūs pērkat?",
-        "title_choose_location": "Izvēlieties atrašanās vietu",
-        "clear_search": "Notīrīt meklēšanu",
-        "try_new_search": "Izmēģiniet jaunu meklēšanu"
-      },
       "addresses": {
         "add_billing_address_button": "Pievienojiet norēķinu adresi",
         "add_billing_address_section_accessibility_label": "Pievienojiet norēķinu adresi",
@@ -4259,7 +4235,8 @@
               "other": "Jūsu maksājums ir nokavēts par {{count}} dienām"
             },
             "banner_due": {
-              "one": "Jūsu maksājums jāveic pēc {{count}} dienas"
+              "one": "Jūsu maksājums jāveic pēc {{count}} dienas",
+              "other": "Jūsu maksājums jāveic pēc {{count}} dienām"
             }
           }
         }
