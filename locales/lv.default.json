@@ -4255,7 +4255,8 @@
         "payment_status": {
           "pending": {
             "banner_overdue": {
-              "one": "Jūsu maksājums ir nokavēts par {{count}} dienu"
+              "one": "Jūsu maksājums ir nokavēts par {{count}} dienu",
+              "other": "Jūsu maksājums ir nokavēts par {{count}} dienām"
             }
           }
         }
