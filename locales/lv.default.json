@@ -4226,8 +4226,32 @@
           "hide_all_accessibility_label": "Slēpt visus pārskatāmos pasūtījumus",
           "show_all_accessibility_label": "Rādīt visus pārskatāmos pasūtījumus",
           "show_all_orders_in_review": "Rādīt visus pārskatāmos pasūtījumus",
-          "show_less_orders_in_review": "Rādīt mazāk pārskatāmo pasūtījumu"
-        }
+          "show_less_orders_in_review": "Rādīt mazāk pārskatāmo pasūtījumu",
+          "title": "Apstrādē",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Jums nav neapstiprinātu pasūtījumu",
+            "pending_orders": {
+              "one": "Jums ir {{count}} neapstiprināts pasūtījums",
+              "other": "Jums ir {{count}} neapstiprināti pasūtījumi"
+            },
+            "more_than_pagination_length": "Jums ir vairāk nekā {{count}} neapstiprināti pasūtījumi"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}}+",
+          "pagination": {
+            "nav_accessibility_label": "Pārskatāmo pasūtījumu navigācijas pogas"
+          }
+        },
+        "order_list_column_headers_location": "Atrašanās vieta",
+        "order_list_column_headers_contact": "Sazināties",
+        "order_list_column_headers_status": "Status",
+        "removed_company_contact_tooltip": "Izņemts no uzņēmuma"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Apstiprināts {{date}} no pasūtījuma {{draftOrderName}}",
+        "loading": "Notiek pasūtījuma informācijas ielāde",
+        "loading_finished_accessibility_message": "Pasūtījuma informācija ir ielādēta",
+        "subtitle": "Iesniegts {{date}}",
+        "title": "Pasūtījums {{name}}"
       }
     },
     "intents": {
