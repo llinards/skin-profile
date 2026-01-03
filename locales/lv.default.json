@@ -4218,6 +4218,16 @@
         "save_new_billing_address_accessibility_label": "Saglabājiet norēķinu adresi",
         "save_new_shipping_address_accessibility_label": "Saglabājiet norēķinu adresi",
         "shipping_address_card_title": "Piegādes adrese"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Slēpt visu",
+          "show_all": "Rādīt visu",
+          "hide_all_accessibility_label": "Slēpt visus pārskatāmos pasūtījumus",
+          "show_all_accessibility_label": "Rādīt visus pārskatāmos pasūtījumus",
+          "show_all_orders_in_review": "Rādīt visus pārskatāmos pasūtījumus",
+          "show_less_orders_in_review": "Rādīt mazāk pārskatāmo pasūtījumu"
+        }
       }
     },
     "intents": {
