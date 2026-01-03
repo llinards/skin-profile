@@ -4251,7 +4251,14 @@
         "loading": "Notiek pasūtījuma informācijas ielāde",
         "loading_finished_accessibility_message": "Pasūtījuma informācija ir ielādēta",
         "subtitle": "Iesniegts {{date}}",
-        "title": "Pasūtījums {{name}}"
+        "title": "Pasūtījums {{name}}",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Jūsu maksājums ir nokavēts par {{count}} dienu"
+            }
+          }
+        }
       }
     },
     "intents": {
