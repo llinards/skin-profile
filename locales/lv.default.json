@@ -4257,6 +4257,9 @@
             "banner_overdue": {
               "one": "Jūsu maksājums ir nokavēts par {{count}} dienu",
               "other": "Jūsu maksājums ir nokavēts par {{count}} dienām"
+            },
+            "banner_due": {
+              "one": "Jūsu maksājums jāveic pēc {{count}} dienas"
             }
           }
         }
