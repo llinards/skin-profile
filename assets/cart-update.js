@@ -274,6 +274,43 @@
             return Array.from(document.querySelectorAll('button[name="checkout"], input[name="checkout"]'));
         }
 
+        // Parcely (or other shipping widgets) may attach submit/click guards that
+        // still run after the cart becomes non-shipping via AJAX (gift-card-only).
+        // Intercept in capture phase and go straight to /checkout when shipping
+        // isn't required.
+        function interceptCheckoutWhenNoShipping(event) {
+            if (requiresShipping) return;
+
+            // Clicks on the checkout button
+            const checkoutBtn = event.target && event.target.closest
+                ? event.target.closest('button[name="checkout"], input[name="checkout"]')
+                : null;
+            if (!checkoutBtn) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+            if (typeof event.stopImmediatePropagation === 'function') {
+                event.stopImmediatePropagation();
+            }
+
+            window.location.href = '/checkout';
+        }
+
+        function interceptSubmitWhenNoShipping(event) {
+            if (requiresShipping) return;
+
+            // Form submission via Enter key or programmatic submit
+            const submitter = event.submitter;
+            if (submitter && submitter.getAttribute && submitter.getAttribute('name') === 'checkout') {
+                event.preventDefault();
+                event.stopPropagation();
+                if (typeof event.stopImmediatePropagation === 'function') {
+                    event.stopImmediatePropagation();
+                }
+                window.location.href = '/checkout';
+            }
+        }
+
         function setCheckoutDisabled(disabled) {
             const btns = getCheckoutButtons();
             if (btns.length === 0) return;
@@ -343,6 +380,9 @@
             if (window.themeCart) window.themeCart.requiresShipping = requiresShipping;
             scheduleUpdate();
         };
+
+        document.addEventListener('click', interceptCheckoutWhenNoShipping, true);
+        document.addEventListener('submit', interceptSubmitWhenNoShipping, true);
 
         // Initial state (usually disabled until a selection exists)
         updateCheckoutState();
