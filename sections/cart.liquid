@@ -273,9 +273,9 @@
   <div class="h-60 md:h-120 mx-auto flex items-center justify-center">
     <div class="text-center">
       <h2 class="text-3xl my-4">{{ 'cart.empty' | t }}</h2>
-      {%- assign cartBtn = 'cart.empty_button' | t -%}
+      {%- assign cart_empty = 'cart.empty_button' | t -%}
       <div class="my-4 py-4">
-        {% render 'btn-brown', text: cartBtn, url: routes.all_products_collection_url %}
+        {% render 'btn-brown', text: cart_empty, url: routes.all_products_collection_url %}
       </div>
     </div>
   </div>
