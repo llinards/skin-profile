@@ -4,7 +4,7 @@
   {% if disabled %}
     disabled aria-disabled="true"
   {% endif %}
-  class="{{ class }} inline-block text-white bg-sp-brown border border-sp-brown fill-white transition-all duration-300 uppercase rounded-xl py-3 px-4 tracking-wider cursor-pointer {% if full_width %}w-full text-center{% endif %} hover:bg-white hover:sp-brown hover:fill-sp-brown active:bg-white active:sp-brown active:fill-sp-brown focus:bg-white focus:sp-brown focus:fill-sp-brown"
+  class="{{ class }} inline-block text-white bg-(--color-brand-primary) border border-(--color-brand-primary) fill-white transition-all duration-300 uppercase rounded-xl py-3 px-4 tracking-wider cursor-pointer {% if full_width %}w-full text-center{% endif %} hover:bg-white hover:text-(--color-brand-primary) hover:fill-(--color-brand-primary) active:bg-white active:text-(--color-brand-primary) active:fill-(--color-brand-primary) focus:bg-white focus:text-(--color-brand-primary) focus:fill-(--color-brand-primary)"
 >
   {{ text }}
 </button>

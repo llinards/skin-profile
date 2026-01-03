@@ -995,6 +995,9 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
+  .border-\(--color-brand-primary\) {
+    border-color: var(--color-brand-primary);
+  }
   .border-gray-100 {
     border-color: var(--color-gray-100);
   }
@@ -1012,6 +1015,9 @@
   }
   .border-b-black {
     border-bottom-color: var(--color-black);
+  }
+  .bg-\(--color-brand-primary\) {
+    background-color: var(--color-brand-primary);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1260,6 +1266,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\(--color-brand-primary\) {
+    color: var(--color-brand-primary);
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -1425,10 +1434,24 @@
       }
     }
   }
+  .group-hover\:bg-\(--color-brand-primary\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-brand-primary);
+      }
+    }
+  }
   .group-hover\:bg-white {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .group-hover\:fill-\(--color-brand-primary\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        fill: var(--color-brand-primary);
       }
     }
   }
@@ -1458,6 +1481,56 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .group-focus\:bg-\(--color-brand-primary\) {
+    &:is(:where(.group):focus *) {
+      background-color: var(--color-brand-primary);
+    }
+  }
+  .group-focus\:bg-white {
+    &:is(:where(.group):focus *) {
+      background-color: var(--color-white);
+    }
+  }
+  .group-focus\:fill-\(--color-brand-primary\) {
+    &:is(:where(.group):focus *) {
+      fill: var(--color-brand-primary);
+    }
+  }
+  .group-focus\:text-\(--color-brand-primary\) {
+    &:is(:where(.group):focus *) {
+      color: var(--color-brand-primary);
+    }
+  }
+  .group-focus\:text-white {
+    &:is(:where(.group):focus *) {
+      color: var(--color-white);
+    }
+  }
+  .group-active\:bg-\(--color-brand-primary\) {
+    &:is(:where(.group):active *) {
+      background-color: var(--color-brand-primary);
+    }
+  }
+  .group-active\:bg-white {
+    &:is(:where(.group):active *) {
+      background-color: var(--color-white);
+    }
+  }
+  .group-active\:fill-\(--color-brand-primary\) {
+    &:is(:where(.group):active *) {
+      fill: var(--color-brand-primary);
+    }
+  }
+  .group-active\:text-\(--color-brand-primary\) {
+    &:is(:where(.group):active *) {
+      color: var(--color-brand-primary);
+    }
+  }
+  .group-active\:text-white {
+    &:is(:where(.group):active *) {
+      color: var(--color-white);
     }
   }
   .after\:content-\[\'\,\\00a0\'\] {
@@ -1491,6 +1564,13 @@
       }
     }
   }
+  .hover\:bg-\(--color-brand-primary\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-brand-primary);
+      }
+    }
+  }
   .hover\:bg-gray-50 {
     &:hover {
       @media (hover: hover) {
@@ -1515,6 +1595,13 @@
       }
     }
   }
+  .hover\:fill-\(--color-brand-primary\) {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-brand-primary);
+      }
+    }
+  }
   .hover\:fill-white {
     &:hover {
       @media (hover: hover) {
@@ -1526,6 +1613,13 @@
     &:hover {
       @media (hover: hover) {
         stroke: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-\(--color-brand-primary\) {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brand-primary);
       }
     }
   }
@@ -1543,9 +1637,19 @@
       }
     }
   }
+  .focus\:bg-\(--color-brand-primary\) {
+    &:focus {
+      background-color: var(--color-brand-primary);
+    }
+  }
   .focus\:bg-white {
     &:focus {
       background-color: var(--color-white);
+    }
+  }
+  .focus\:fill-\(--color-brand-primary\) {
+    &:focus {
+      fill: var(--color-brand-primary);
     }
   }
   .focus\:text-\(--color-brand-primary\) {
@@ -1575,9 +1679,19 @@
       --tw-ring-inset: inset;
     }
   }
+  .active\:bg-\(--color-brand-primary\) {
+    &:active {
+      background-color: var(--color-brand-primary);
+    }
+  }
   .active\:bg-white {
     &:active {
       background-color: var(--color-white);
+    }
+  }
+  .active\:fill-\(--color-brand-primary\) {
+    &:active {
+      fill: var(--color-brand-primary);
     }
   }
   .active\:text-\(--color-brand-primary\) {

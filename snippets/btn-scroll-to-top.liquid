@@ -5,13 +5,13 @@
     window.addEventListener('scroll', check);
     setTimeout(check, 50);
   "
-  class="fixed bottom-4 left-4 z-50"
+  class="fixed bottom-4 left-4 z-50 cursor-pointer"
 >
   <button
     x-show="show"
     @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
     x-transition.opacity.duration.300ms
-    class="p-2 rounded-full border border-sp-brown bg-sp-brown text-white md:hover:text-(--color-brand-primary) md:hover:bg-white"
+    class="p-2 rounded-full border border-(--color-brand-primary) bg-(--color-brand-primary) text-white md:hover:text-(--color-brand-primary) md:hover:bg-white"
     aria-label="{{ 'general.accessibility.scroll_to_top' | t }}"
   >
     {% render 'icon-arrow-up', class: 'size-6' %}
