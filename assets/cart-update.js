@@ -86,6 +86,11 @@
         if (grandEl) grandEl.textContent = formatMoney(grandCents);
     }
 
+    function cartRequiresShipping(cart) {
+        if (!cart || !Array.isArray(cart.items)) return true;
+        return cart.items.some(i => i && i.requires_shipping);
+    }
+
     async function changeLineQty(key, line, qty, container) {
         const btns = container.querySelectorAll('.quantity__button');
         btns.forEach(b => b.setAttribute('aria-disabled', 'true'));
@@ -134,6 +139,10 @@
 
             updateSummary(cart.original_total_price != null ? cart.original_total_price : cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
+
+            if (typeof window.__themeCartSetRequiresShipping === 'function') {
+                window.__themeCartSetRequiresShipping(cartRequiresShipping(cart));
+            }
 
             if (cart.item_count === 0) {
                 showEmptyState();
@@ -220,6 +229,10 @@
             updateSummary(cart.original_total_price != null ? cart.original_total_price : cart.total_price);
             document.querySelectorAll('.cart-count').forEach(el => { el.textContent = cart.item_count; });
 
+            if (typeof window.__themeCartSetRequiresShipping === 'function') {
+                window.__themeCartSetRequiresShipping(cartRequiresShipping(cart));
+            }
+
             if (cart.item_count === 0) {
                 showEmptyState();
                 document.querySelectorAll('.cart-count').forEach(el => { el.textContent = '0'; });
@@ -254,6 +267,9 @@
     function initParcelyCheckoutButton() {
         const parcelyWidget = document.getElementById('parcelyWidget');
 
+        let requiresShipping = window.themeCart?.requiresShipping;
+        if (typeof requiresShipping !== 'boolean') requiresShipping = true;
+
         function getCheckoutButtons() {
             return Array.from(document.querySelectorAll('button[name="checkout"], input[name="checkout"]'));
         }
@@ -280,12 +296,24 @@
             });
         }
 
+        function setParcelyVisible(visible) {
+            if (!parcelyWidget) return;
+            parcelyWidget.style.display = visible ? '' : 'none';
+        }
+
         function hasAnyParcelyRadioChecked() {
             if (!parcelyWidget) return true;
+            if (!requiresShipping) return true;
+
+            const radios = parcelyWidget.querySelectorAll('input.parcelyRadio[type="radio"]');
+            // If shipping is required, keep checkout disabled until Parcely loads options.
+            if (radios.length === 0) return false;
+
             return Boolean(parcelyWidget.querySelector('input.parcelyRadio[type="radio"]:checked'));
         }
 
         function updateCheckoutState() {
+            setParcelyVisible(requiresShipping);
             setCheckoutDisabled(!hasAnyParcelyRadioChecked());
         }
 
@@ -309,6 +337,12 @@
             setCheckoutDisabled(false);
             return;
         }
+
+        window.__themeCartSetRequiresShipping = function (nextValue) {
+            requiresShipping = Boolean(nextValue);
+            if (window.themeCart) window.themeCart.requiresShipping = requiresShipping;
+            scheduleUpdate();
+        };
 
         // Initial state (usually disabled until a selection exists)
         updateCheckoutState();

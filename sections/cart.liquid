@@ -179,7 +179,12 @@
                 </div>
               {% endcomment %}
 
-              <div id="parcelyWidget"></div>
+              <div
+                id="parcelyWidget"
+                {% unless cart.requires_shipping %}
+                  style="display: none;"
+                {% endunless %}
+              ></div>
 
               <div class="flex justify-between py-4">
                 <p>{{ 'cart.total' | t }}:</p>
@@ -265,7 +270,8 @@
     currency: {{ shop.currency | json }},
     freeShippingThresholdCents: {{ section.settings.free_shipping_threshold | default: 0 | times: 100 | round }},
     flatShippingCents: {{ section.settings.flat_shipping | default: 0 | times: 100 | round }},
-    initialCartTotalCents: {{ cart.original_total_price }}
+    initialCartTotalCents: {{ cart.original_total_price }},
+    requiresShipping: {{ cart.requires_shipping | json }}
   };
 </script>
 <script src="{{ 'cart-update.js' | asset_url }}" defer></script>
