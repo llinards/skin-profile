@@ -1425,6 +1425,34 @@
       }
     }
   }
+  .group-hover\:bg-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .group-hover\:text-\(--color-brand-primary\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-brand-primary);
+      }
+    }
+  }
+  .group-hover\:text-\[var\(--color-brand-primary\)\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-brand-primary);
+      }
+    }
+  }
+  .group-hover\:text-black {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
   .group-hover\:text-white {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1520,6 +1548,11 @@
       background-color: var(--color-white);
     }
   }
+  .focus\:text-\(--color-brand-primary\) {
+    &:focus {
+      color: var(--color-brand-primary);
+    }
+  }
   .focus\:text-white {
     &:focus {
       color: var(--color-white);
@@ -1545,6 +1578,11 @@
   .active\:bg-white {
     &:active {
       background-color: var(--color-white);
+    }
+  }
+  .active\:text-\(--color-brand-primary\) {
+    &:active {
+      color: var(--color-brand-primary);
     }
   }
   .active\:text-white {
