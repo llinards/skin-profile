@@ -202,14 +202,74 @@
   "customer_accounts": {
     "addresses": {
       "edit_modal_title": {
-        "billing": "Edit billing address"
+        "billing": "Edit billing address",
+        "default": "Edit default address",
+        "shipping": "Edit shipping address"
       },
       "loading_billing_accessibility_message": "Loading billing address",
-      "billing_address_dropdown_placeholder": "Select billing address"
+      "billing_address_dropdown_placeholder": "Select billing address",
+
+      "add_button": "Add address",
+      "add_button_text": "Add address",
+      "add_button_accessibility_label": "Add address",
+      "back_button": "Back",
+      "back_button_accessibility_label": "Go back",
+      "add_address_banner": "Add an address to speed up checkout",
+      "no_addresses_banner": "You don't have any saved addresses",
+      "address_deleted_notification": "Address deleted",
+      "cancel_adding_address_accessibility_label": "Cancel adding address",
+      "cancel_deletion_button": "Cancel",
+      "cancel_deletion_button_accessibility_label": "Cancel deletion",
+      "delete_button": "Delete",
+      "delete_button_accessibility_label": "Delete address",
+      "delete_confirmation_button": "Delete",
+      "delete_confirmation_button_accessibility_label": "Confirm delete address",
+      "delete_confirmation_message": "Delete this address?",
+      "delete_confirmation_title": "Delete address",
+      "delete_confirmation_description": "This action can't be undone.",
+      "edit_button": "Edit",
+      "edit_button_accessibility_label": "Edit address",
+      "edit_section_accessibility_label": "Edit address section",
+      "loading_accessibility_message": "Loading addresses",
+      "loading_addresses_accessibility_message": "Loading saved addresses",
+      "loading_finished_accessibility_message": "Addresses loaded",
+      "loading_shipping_accessibility_message": "Loading shipping address",
+      "save_new_address_accessibility_label": "Save new address",
+      "title": "Addresses",
+      "default_address": {
+        "title": "Default address",
+        "title_accessibility_label": "Default address"
+      },
+      "pagination": {
+        "load_more": "Load more",
+        "load_more_accessibility_label": "Load more addresses"
+      }
     },
+
     "address_form": {
-      "billing_address": "Billing address"
+      "billing_address": "Billing address",
+
+      "attention": "Attention",
+      "attention_company": "Attention (company)",
+      "attention_help_text": "Who should we mark this address for?",
+      "auto_complete_close_accessibility_label": "Close address autocomplete",
+      "auto_complete_title": "Address suggestions",
+      "cancel": "Cancel",
+      "cancel_accessibility_label": "Cancel",
+      "creation_success_notification": "Address added",
+      "default_address": "Set as default address",
+      "default_address_creation_success_notification": "Default address added",
+      "default_address_update_success_notification": "Default address updated",
+      "loading_add_form_accessibility_message": "Loading add address form",
+      "loading_edit_form_accessibility_message": "Loading edit address form",
+      "loading_form_accessibility_message": "Loading address form",
+      "loading_finished_accessibility_message": "Address form loaded",
+      "save": "Save",
+      "save_accessibility_label": "Save address",
+      "section_title_accessibility_label": "Address form",
+      "update_success_notification": "Address updated"
     },
+
     "payment_methods": {
       "card_fields": {
         "unavailable": {
@@ -265,6 +325,7 @@
       },
       "add_payment_method": {
         "title": "Add payment method",
+        "button_title": "Add payment method",
         "payment_method_added_confirmation": "Payment method added",
         "replace_mode_warning": "This will replace your current payment method",
         "choose_from_list": "Choose from saved payment methods",
@@ -279,14 +340,66 @@
           "default_checkbox": "Set as default payment method"
         }
       },
+      "add_payment_method_button": "Add payment method",
+      "add_payment_method_banner": "Add a payment method to speed up checkout",
+      "no_payment_methods_banner": "You don't have any saved payment methods",
+      "edit_payment_method_button_accessibility_label": "Edit payment method",
+      "edit_payment_method_brand_button_accessibility_label": "Edit payment method brand",
+      "delete_payment_method_button": "Remove",
+      "credit_card_title": "Credit card",
+      "additional_payment_methods": "Additional payment methods",
+      "or": "or",
+      "replacement_payment_method_title": "Replacement payment method",
+      "title": "Payment methods",
+      "three_d_secure": {
+        "verification_failed": "Verification failed. Please try again."
+      },
+      "link_expired": {
+        "message": "This link has expired.",
+        "update_message": "Your update link has expired. Please request a new link.",
+        "add_message": "Your add payment method link has expired. Please request a new link.",
+        "return_home_button": "Return home"
+      },
+      "update_payment_method": {
+        "resources_card_show_more": "Show more",
+        "resources_card_show_less": "Show less",
+        "loading_form_accessibility_message": "Loading update payment method form",
+        "loading_current_payment_method": "Loading current payment method",
+        "loading_digital_wallets": "Loading digital wallets",
+        "loading_card_fields": "Loading card fields",
+        "loading_resources": "Loading resources",
+        "title": "Update payment method",
+        "button_title": "Update payment method",
+        "billing_address": "Billing address",
+        "disclaimer": "Your payment information is encrypted and secure",
+        "error_message": "Unable to update payment method",
+        "current": "Current payment method",
+        "subscriptions_title": "Subscriptions",
+        "subscriptions_list_accessibility_label": "Subscriptions list",
+        "pre_orders_title": "Pre-orders",
+        "pre_orders_list_accessibility_label": "Pre-orders list",
+        "resources_list_accessibility_label": "Resources list",
+        "resources_card_scroll": "Scroll to view more"
+      },
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "By adding this bank account, you agree to save it for future purchases"
+      },
+      "bank_account": {
+        "loading_accessibility_message": "Loading bank account",
+        "iframe_title_accessibility_label": "Bank account",
+        "display_name": "Bank account",
+        "generic_error": "Unable to load bank account"
+      },
       "delete_payment_method_button_accessibility_label": "Delete payment method",
       "back_button": "Back",
       "back_button_accessibility_label": "Go back",
       "default": "Default",
       "update_success": {
+        "title": "Payment method updated",
         "done_button": "Done"
       },
       "add_success": {
+        "title": "Payment method added",
         "done_button": "Done"
       },
       "generic_card": "Card",
@@ -308,7 +421,10 @@
       },
       "pay_pal": {
         "iframe_title_accessibility_label": "PayPal",
-        "loading_accessibility_message": "Loading PayPal"
+        "loading_accessibility_message": "Loading PayPal",
+        "errors": {
+          "generic": "Unable to load PayPal"
+        }
       },
       "apple_pay": {
         "loading": "Loading...",
@@ -433,11 +549,19 @@
       "friday": "Friday",
       "saturday": "Saturday",
       "sunday": "Sunday",
+      "mondayAbbreviation": "Mon",
       "tuesdayAbbreviation": "Tue",
       "wednesdayAbbreviation": "Wed",
       "thursdayAbbreviation": "Thu",
       "fridayAbbreviation": "Fri",
+      "saturdayAbbreviation": "Sat",
       "sundayAbbreviation": "Sun",
+      "qrCode": "QR code",
+      "addFile": "Add file",
+      "dropzoneInvalidFileType": "Invalid file type",
+      "dropzoneDraggedOver": "Drop files to upload",
+      "removeTag": "Remove tag",
+      "expandSheet": "Expand sheet",
       "showNextMonth": "Show next month",
       "showPreviousMonth": "Show previous month",
       "rangeStart": "Range start",
@@ -446,6 +570,7 @@
       "removeItem": "Remove item"
     },
     "orders": {
+      "list_title": "Orders",
       "order_list": {
         "column_headers": {
           "products_accessibility_label": "Products",
@@ -848,7 +973,8 @@
       "grouped_view_components": {
         "expand_line_items": "Show items",
         "collapse_line_items": "Hide items",
-        "line_item_summary_list_accessibility_label": "Order items"
+        "line_item_summary_list_accessibility_label": "Order items",
+        "line_item_summary_accessibility_label": "Order item summary"
       },
       "discount": "Discount",
       "hide_items": "Hide items",
@@ -857,8 +983,61 @@
       "location": "Location",
       "image_gallery": {
         "next": "Next image",
-        "previous": "Previous image"
+        "previous": "Previous image",
+        "product_name_and_quantity": "{{ product_name }} ({{ quantity }})"
       },
+      "ok_duties_tooltip": "Duties are included in your order total.",
+      "error_duties_tooltip": "We couldn’t calculate duties for this order.",
+      "zero_duties_tooltip": "No duties were charged for this order.",
+      "tip": "Tip",
+      "title": "Order details",
+      "unit_price": "Unit price",
+      "login_to_view_all_order_details": "Log in to view all order details",
+      "log_in": "Log in",
+      "logged_in_account_no_permission_to_order": "This account doesn’t have permission to view this order.",
+      "log_in_to_a_different_account": "Log in to a different account",
+      "link_sent": "Link sent",
+      "cash_rounding": "Cash rounding",
+      "adjusted_payment": "Adjusted payment",
+      "adjusted_total": "Adjusted total",
+      "due_on_date": "Due on {{ date }}",
+      "due_on_fulfillment": "Due on fulfillment",
+      "due_on_receipt": "Due on receipt",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Download Shop to track your order",
+        "track_order_with_shop": "Track order with Shop",
+        "title_header": "Track your order",
+        "real_time_delivery_updates": "Get real-time delivery updates"
+      },
+      "edit_summary": {
+        "added": "Added",
+        "added_with_quantity": "Added {{ quantity }}",
+        "removed": "Removed",
+        "removed_with_quantity": "Removed {{ quantity }}",
+        "updated_at": "Updated {{ date }}",
+        "returned": "Returned",
+        "returned_with_quantities": "Returned {{ quantity }}",
+        "removed_with_quantities": "Removed {{ quantity }}",
+        "return_line_item_removed": "Return item removed",
+        "return_line_item_removed_with_quantities": "Return item removed ({{ quantity }})"
+      },
+      "shop_pay": {
+        "order_completed_with": "Order completed with Shop Pay",
+        "learn_more": "Learn more"
+      },
+      "pagination": {
+        "load_more": "Load more",
+        "load_more_accessibility_label": "Load more",
+        "loading_accessibility_label": "Loading"
+      },
+      "fees": {
+        "restocking_fee": "Restocking fee",
+        "return_shipping_fee": "Return shipping fee"
+      },
+      "vat_invoices": {
+        "title": "VAT invoices"
+      },
+      "duties_and_taxes_included": "Duties and taxes included",
       "mobile_summary_toggle_button": {
         "open": "Show summary",
         "closed": "Hide summary"
@@ -958,13 +1137,294 @@
     },
     "callback": {
       "try_again": "Try again"
-    }
-  },
-  "shopify": {
-    "checkout": {
-      "address_management": {
-        "confirm_address_deletion": "Are you sure you want to delete the address {{address}}?"
+    },
+
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Company",
+        "company_card_section_accessibility_label": "Company information"
+      },
+      "locations": {
+        "contact_email": "Email",
+        "contact_list_title": "Contacts",
+        "contact_name": "Name",
+        "contact_permissions": "Permissions",
+        "contact_phone_number": "Phone number",
+        "location_picker_label": "Location",
+        "location_picker_accessibility_label": "Choose location",
+        "net_payment_terms_description": "Net payment terms",
+        "deposit_percentage": "Deposit percentage",
+        "own_role_contact_name": "You",
+        "pagination": {
+          "load_more": "Load more",
+          "load_more_accessibility_label": "Load more locations"
+        },
+        "payment_details_title": "Payment details",
+        "payment_terms": "Payment terms",
+        "permissions_label": "Permissions",
+        "permissions_title": "Permissions",
+        "section_title": "Locations",
+        "shipping_address_required": "Shipping address required",
+        "staff_and_permissions_title": "Staff and permissions",
+        "tax_details_title": "Tax details",
+        "tax_id": "Tax ID",
+        "tax_exemptions": "Tax exemptions",
+        "multiple_tax_exemptions": "Multiple tax exemptions",
+        "multiple_tax_exemptions_and": "and",
+        "tax_exemptions_modal_close": "Close",
+        "tax_exemption_not_applicable": "Not applicable",
+        "tax_exemptions_modal_button_accessibility_label": "Tax exemptions details"
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Add purchase order number",
+        "add_modal_title": "Add purchase order number",
+        "cancel": "Cancel",
+        "close_modal_accessibility_label": "Close",
+        "discard": "Discard",
+        "discard_changes_modal_title": "Discard changes?",
+        "edit_accessibility_label": "Edit purchase order number",
+        "edit_modal_title": "Edit purchase order number",
+        "empty_state": "No purchase order number",
+        "modal_po_number_input_label": "Purchase order number",
+        "modal_po_number_input_max_length_error": "Purchase order number is too long",
+        "save": "Save",
+        "title": "Purchase order number"
+      },
+      "location_selection": {
+        "continue_to_store": "Continue to store",
+        "description": "Select a location to continue.",
+        "description_switch_later": "You can switch locations later.",
+        "list_accessibility_label": "Locations list",
+        "list_item_accessibility_label": "Location",
+        "list_item_without_address_accessibility_label": "Location without address",
+        "list_loading_accessibility_message": "Loading locations",
+        "list_loading_address_accessibility_message": "Loading location addresses",
+        "list_loading_finished_accessibility_message": "Locations loaded",
+        "loading_store_accessibility_message": "Loading store",
+        "no_location_title": "No location selected",
+        "no_location_description": "Select a location to continue.",
+        "no_locations_found": "No locations found",
+        "search": "Search",
+        "search_location_title": "Search locations",
+        "selection_cancel_button": "Cancel",
+        "selection_confirmation_button": "Confirm",
+        "selection_continue_button": "Continue",
+        "title": "Choose a location",
+        "title_choose_location": "Choose location",
+        "clear_search": "Clear search",
+        "try_new_search": "Try a new search"
+      },
+      "addresses": {
+        "add_billing_address_button": "Add billing address",
+        "add_billing_address_section_accessibility_label": "Add billing address section",
+        "add_shipping_address_button": "Add shipping address",
+        "add_shipping_address_section_accessibility_label": "Add shipping address section",
+        "billing_address_card_title": "Billing address",
+        "cancel_adding_billing_address_accessibility_label": "Cancel adding billing address",
+        "cancel_adding_shipping_address_accessibility_label": "Cancel adding shipping address",
+        "save_new_billing_address_accessibility_label": "Save new billing address",
+        "save_new_shipping_address_accessibility_label": "Save new shipping address",
+        "shipping_address_card_title": "Shipping address"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Hide all",
+          "show_all": "Show all",
+          "hide_all_accessibility_label": "Hide all orders",
+          "show_all_accessibility_label": "Show all orders",
+          "show_all_orders_in_review": "Show all orders in review",
+          "show_less_orders_in_review": "Show fewer orders in review",
+          "title": "Draft orders",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "No pending orders",
+            "more_than_pagination_length": "More pending orders available"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{ count }}+ pending orders",
+          "pagination": {
+            "nav_accessibility_label": "Pagination"
+          }
+        },
+        "order_list_column_headers_location": "Location",
+        "order_list_column_headers_contact": "Contact",
+        "order_list_column_headers_status": "Status",
+        "removed_company_contact_tooltip": "Company contact removed"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Draft order details",
+        "loading": "Loading...",
+        "loading_finished_accessibility_message": "Draft order details loaded",
+        "subtitle": "Draft order details",
+        "title": "Draft order"
+      }
+    },
+
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "Card number",
+        "title": "Replace payment method",
+        "replace_with": "Replace with",
+        "add_new_payment_method": "Add new payment method",
+        "save_button": "Save",
+        "close_button": "Close",
+        "loading": "Loading...",
+        "success": "Payment method updated",
+        "invalid_subscription_contract": "Invalid subscription"
+      }
+    },
+
+    "sign_in": {
+      "brand_logo_alt_text": "{{ shop }} logo",
+      "processing": "Processing...",
+      "step_one": {
+        "page_title": "Sign in",
+        "heading": "Sign in",
+        "subheading": "Use your email to sign in",
+        "subheading_with_sign_in_options": "Choose a sign-in method",
+        "input_field_label": "Email",
+        "button": "Continue",
+        "or": "or"
+      },
+      "step_two": {
+        "page_title": "Enter code",
+        "heading": "Check your email",
+        "subheading": "Enter the verification code we sent you",
+        "restart_link": "Use a different email",
+        "input_field_label": "Verification code",
+        "button": "Verify"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "Please enter a valid email",
+          "invalid_code": "Please enter a valid code"
+        }
+      }
+    },
+
+    "subscriptions": {
+      "subscription_contracts": {
+        "title": "Subscriptions",
+        "subscription_contracts_updated": "Subscriptions updated",
+        "product_details": "Product details",
+        "load_more": "Load more"
+      },
+      "contracts_update_failed": "Unable to update subscriptions",
+      "invalid_wallet_type_error": "This payment method isn’t supported",
+      "update_payment_instrument": {
+        "title": "Update payment method",
+        "loading": "Loading...",
+        "no_payment_methods_available": "No payment methods available",
+        "select_new_payment_method": "Select a new payment method",
+        "current_method": "Current payment method",
+        "cancel": "Cancel",
+        "save": "Save",
+        "success": "Payment method updated",
+        "use_new_payment_method": "Use new payment method"
+      }
+    },
+
+    "shop_ads": {
+      "title": "Shop",
+      "subtitle": "Get faster checkout and order tracking with Shop",
+      "button": "Get Shop",
+      "previous_button": "Previous",
+      "next_button": "Next"
+    },
+
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "Returns are available for this order",
+        "disabled": "Returns aren’t available for this order"
+      }
+    },
+
+    "active_inspector": {
+      "extension": {
+        "remove_tooltip": "Remove",
+        "select": "Select",
+        "unselect": "Unselect",
+        "move_down": "Move down",
+        "move_up": "Move up",
+        "remove": "Remove",
+        "move_down_tooltip": "Move down",
+        "move_up_tooltip": "Move up"
+      }
+    },
+
+    "editor": {
+      "link_new_tab_confirmation": "This link will open in a new tab."
+    },
+
+    "settings": {
+      "title": "Settings",
+      "loading_accessibility_message": "Loading settings",
+      "log_out_everywhere": {
+        "title": "Log out everywhere",
+        "description": "Log out of all devices where you’re signed in.",
+        "button": "Log out everywhere",
+        "warning_message": "You’ll need to sign in again on all devices."
+      }
+    },
+
+    "profile_preview_bar": {
+      "customize_button": "Customize",
+      "hide_bar": "Hide",
+      "navigate_to_admin": "Go to admin",
+      "close_preview": "Close preview",
+      "previewing": "Previewing",
+      "saved_at": "Saved at {{ time }}",
+      "viewing": "Viewing",
+      "not_available": "Not available",
+      "actions_button": "Actions"
+    },
+
+    "errors": {
+      "address_deletion_error": { "description": "Unable to delete address" },
+      "addresses_loading_issue": { "description": "Unable to load addresses" },
+      "failed_address_creation": { "description": "Unable to add address" },
+      "failed_address_update": { "description": "Unable to update address" },
+      "load_address_form_error": {
+        "title": "Unable to load address form",
+        "description": "Please refresh and try again.",
+        "refresh_button": "Refresh"
+      },
+      "load_orders_error": {
+        "title": "Unable to load orders",
+        "description": "Please try again.",
+        "retry_button": "Try again"
+      },
+      "load_paypal_error": { "description": "Unable to load PayPal" },
+      "logout_everywhere": { "description": "Unable to log out everywhere" },
+      "no_access_to_locations": { "description": "You don’t have access to any locations." },
+      "not_found": {
+        "title": "Not found",
+        "description": "We couldn’t find what you were looking for."
+      },
+      "order_not_found": {
+        "title": "Order not found",
+        "description": "We couldn’t find this order."
+      },
+      "profile_update_error": { "description": "Unable to update profile" },
+      "profile_name_update_error": { "description": "Unable to update name" },
+      "retry_action_label": "Try again",
+      "resend_link": {
+        "too_many_requests": "Too many requests. Please try again later.",
+        "generic": "Unable to resend link"
+      },
+      "load_extension_error": {
+        "title": "Unable to load extension",
+        "description": "Please refresh and try again.",
+        "refresh_button": "Refresh"
+      }
+    },
+
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Too many attempts",
+        "description": "Please wait and try again."
       }
     }
+
+    // ...existing code...
   }
+  // ...existing code...
 }
