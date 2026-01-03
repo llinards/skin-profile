@@ -14,7 +14,7 @@
     </div>
 
     <!-- Desktop table header -->
-    <div class="hidden md:grid md:grid-cols-15 gap-4 font-bold items-center py-3 border-b-2 border-sp-light-brown">
+    <div class="hidden md:grid md:grid-cols-15 gap-4 font-bold items-center py-3 border-b-2 border-(--color-brand-secondary)">
       <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
       <div class="col-span-4 lg:col-span-5 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
       <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.price' | t }}</div>
@@ -31,7 +31,7 @@
       {%- assign procedure_duration = b.settings.procedure_duration | default: '' -%}
       {%- assign contraindications_text = b.settings.contraindications_text | default: '' -%}
 
-      <div class="border-b border-sp-light-brown border-dotted py-4">
+      <div class="border-b border-(--color-brand-secondary) border-dotted py-4">
         <!-- Desktop row -->
         <div class="hidden md:grid md:grid-cols-15 gap-4 items-center">
           <div class="col-span-4 text-left text-sm font-bold wrap-break-words">{{ procedure_name }}</div>

@@ -7,8 +7,8 @@
           <div
             {{ block.shopify_attributes }}
             x-data="{ open: {{ block.settings.open | json }} }"
-            class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-sp-light-brown transition-all duration-300 cursor-pointer rounded-md"
-            :class="open ? 'bg-sp-light-brown' : ''"
+            class="p-2 shadow-[0_4px_12px_0_rgba(0,0,0,0.35)] hover:bg-(--color-brand-secondary) transition-all duration-300 cursor-pointer rounded-md"
+            :class="open ? 'bg-(--color-brand-secondary)' : ''"
           >
             <button
               type="button"

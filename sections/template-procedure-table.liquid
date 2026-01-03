@@ -13,10 +13,10 @@
           type="button"
           @click="open = !open"
           class="
-            group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-sp-light-brown active:bg-sp-light-brown transition-colors cursor-pointer
+            group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-(--color-brand-secondary) active:bg-(--color-brand-secondary) transition-colors cursor-pointer
             focus-visible:ring-1 focus-visible:ring-inset
           "
-          :class="open ? 'bg-sp-light-brown' : ''"
+          :class="open ? 'bg-(--color-brand-secondary)' : ''"
           :aria-expanded="open.toString()"
           :aria-label="open ? '{{ 'general.accordion.close_section' | t }}' : '{{ 'general.accordion.open_section' | t }}'"
         >
@@ -27,10 +27,10 @@
           <!-- Icon wrapper -->
           <span
             class="
-              flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-sp-light-brown transition-colors select-none
+              flex-none shrink-0 ml-2 inline-flex h-9 w-9 aspect-square items-center justify-center rounded-full border border-(--color-brand-secondary) transition-colors select-none
               group-hover:bg-(--color-brand-primary) group-hover:text-white
             "
-            :class="open ? 'bg-(--color-brand-primary) text-white' : 'bg-sp-light-brown text-(--color-brand-primary)'"
+            :class="open ? 'bg-(--color-brand-primary) text-white' : 'bg-(--color-brand-secondary) text-(--color-brand-primary)'"
           >
             <!-- Plus -->
             <svg
@@ -124,7 +124,7 @@
     style="display: none;"
   >
     <div
-      class="bg-sp-light-brown rounded-4xl shadow-xl w-full md:max-w-3xl max-w-lg transform relative"
+      class="bg-(--color-brand-secondary) rounded-4xl shadow-xl w-full md:max-w-3xl max-w-lg transform relative"
       x-transition:enter="transition ease-out duration-300"
       x-transition:enter-start="opacity-0 scale-95"
       x-transition:enter-end="opacity-100 scale-100"
@@ -149,7 +149,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="size-6 fill-sp-light-brown group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)"
+          class="size-6 fill-(--color-brand-secondary) group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)"
         >
           <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
         </svg>

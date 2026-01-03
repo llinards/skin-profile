@@ -16,7 +16,7 @@
     <button
       type="button"
       @click="toggle()"
-      class="text-base lg:text-lg w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-sp-light-brown/30 transition-colors duration-200 rounded"
+      class="text-base lg:text-lg w-full inline-flex items-center justify-center gap-2 py-3 text-center font-medium hover:bg-(--color-brand-secondary)/30 transition-colors duration-200 rounded"
       :aria-expanded="open.toString()"
       :aria-controls="'{{ submenu_id }}'"
       aria-haspopup="true"
@@ -51,7 +51,7 @@
         role="region"
         :aria-hidden="(!open).toString()"
       >
-        <ul class="mt-2 space-y-1 list-none text-center bg-sp-light-brown rounded-lg py-2 ">
+        <ul class="mt-2 space-y-1 list-none text-center bg-(--color-brand-secondary) rounded-lg py-2 ">
           {% for child in link.links %}
             <li>
               {% if child.links and child.links.size > 0 %}
@@ -105,7 +105,7 @@
                     role="region"
                     :aria-hidden="(!childOpen).toString()"
                   >
-                    <ul class="mt-2 space-y-1 list-none text-center bg-sp-light-brown-opacity rounded-lg py-2 mx-3 ">
+                    <ul class="mt-2 space-y-1 list-none text-center bg-(--color-brand-secondary)-opacity rounded-lg py-2 mx-3 ">
                       {% for grandchild in child.links %}
                         <li>
                           <a
@@ -233,7 +233,7 @@
               >
                 <a
                   href="{{ child.url }}"
-                  class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-base hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
+                  class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap"
                 >
                   {{ child.title }}
                   {% if child.links and child.links.size > 0 %}
@@ -263,7 +263,7 @@
                   <li>
                     <a
                       href="{{ sub.url }}"
-                      class="block px-6 py-2 text-base hover:bg-sp-light-brown transition-colors duration-300 whitespace-nowrap"
+                      class="block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap"
                     >
                       {{ sub.title }}
                     </a>

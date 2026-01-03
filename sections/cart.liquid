@@ -91,13 +91,13 @@
                         <div class="inline-flex items-center border rounded-2xl overflow-hidden w-fit">
                           <a
                             href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | minus: 1 }}"
-                            class="link--no-underline quantity__button button quantity-minus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                            class="link--no-underline quantity__button button quantity-minus px-2.5 py-1.5 hover:bg-(--color-brand-secondary) transition-colors cursor-pointer"
                             >−</a
                           >
                           <span data-qty class="w-8 text-center py-1.5 font-bold">{{ item.quantity }}</span>
                           <a
                             href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | plus: 1 }}"
-                            class="link--no-underline quantity__button button quantity-plus px-2.5 py-1.5 hover:bg-sp-light-brown transition-colors cursor-pointer"
+                            class="link--no-underline quantity__button button quantity-plus px-2.5 py-1.5 hover:bg-(--color-brand-secondary) transition-colors cursor-pointer"
                             >+</a
                           >
                         </div>
