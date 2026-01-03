@@ -1602,7 +1602,8 @@
         "split_cart_international_shipping_not_supported": "Visām precēm, piegādājot starptautiski, jāizmanto viena un tā pati piegādes metode. Atjauniniet piegādes metodi vai izveidojiet vairākus pasūtījumus.",
         "invalid_delivery_address_reference_handle": "Piegādes adreses atsauces turi nevarēja saskaņot ar nevienu pieejamo piegādes adresi.",
         "must_use_available_delivery_address": "Piegādes adrese jāizvēlas no pieejamajām piegādes adresēm.",
-        "must_use_available_shipping_rate": "Piegādes cena jāizvēlas no pieejamajām piegādes cenām."
+        "must_use_available_shipping_rate": "Piegādes cena jāizvēlas no pieejamajām piegādes cenām.",
+        "shipping_method_invalid_phone_number": "Atjauniniet tālruņa numuru savā piegādes adresē, lai redzētu pieejamās piegādes metodes."
       },
       "wallets": {
         "errors": {
