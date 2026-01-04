@@ -71,12 +71,34 @@
     "1765737966c919fa21": {
       "type": "_blocks",
       "settings": {}
+    },
+    "17675207812a00b34b": {
+      "type": "apps",
+      "blocks": {
+        "chatty_chatbox_block_nCDyCz": {
+          "type": "shopify://apps/chatty/blocks/chatbox-block/1c0e135d-e8e1-4fe2-86be-1c36def46675",
+          "settings": {
+            "custom_width": 400,
+            "fill_width": true,
+            "widget_style": "shadow",
+            "widget_border_color": "#000000",
+            "online_status": "no",
+            "widget_radius": 0,
+            "device": "all"
+          }
+        }
+      },
+      "block_order": [
+        "chatty_chatbox_block_nCDyCz"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "product_recommendations_JKDVwU",
     "template_contact_us_etDVeW",
-    "1765737966c919fa21"
+    "1765737966c919fa21",
+    "17675207812a00b34b"
   ]
 }
