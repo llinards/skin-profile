@@ -45,8 +45,13 @@
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
         "heading": "Ķermeņa procedūras",
-        "subtext": "",
-        "spacing": true
+        "subtext": "<p>Ķermeņa procedūras, kas palīdz uzlabot ādas tvirtumu, veidot siluetu un veicināt labsajūtu. Individuāli pielāgota pieeja redzamiem rezultātiem.</p>",
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -74,7 +79,7 @@
             "procedure_description": "Vakuuma masāža mugurai un rokām limfodrenāžas un muskuļu atslābināšanas veicināšanai.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Tromboflebīts vai tromboze</li><li>Smagas sirds un asinsvadu saslimšanas</li><li>Ādas infekcijas apstrādes zonā</li></ul>",
+            "contraindications_text": "<ul><li>Tromboflebīts vai tromboze</li><li>Smagas sirds un asinsvadu saslimšanas</li><li>Ādas infekcijas apstrādes zonā</li></ul>"
           }
         },
         "procedure_gDj3Yr": {
@@ -85,7 +90,7 @@
             "procedure_description": "Vakuuma masāža vēdera zonai limfas plūsmas un mikrocirkulācijas uzlabošanai.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Vēdera trūce</li><li>Akūtas ginekoloģiskas vai gastrointestinālas saslimšanas</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Vēdera trūce</li><li>Akūtas ginekoloģiskas vai gastrointestinālas saslimšanas</li></ul>"
           }
         },
         "procedure_k4A8Br": {
@@ -96,7 +101,7 @@
             "procedure_description": "Vakummasāža kājām un sēžas zonai celulīta un pietūkuma mazināšanai.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Ādas bojājumi apstrādes zonā</li></ul>",
+            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Ādas bojājumi apstrādes zonā</li></ul>"
           }
         },
         "procedure_C46nWk": {
@@ -107,7 +112,7 @@
             "procedure_description": "Kompleksa vakummasāža kājām, sēžai un vēdera zonai ķermeņa kontūras uzlabošanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Trombozes risks</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Trombozes risks</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_ihgy7i": {
@@ -118,7 +123,7 @@
             "procedure_description": "Vakummasāža kājām, sēžai un mugurai limfodrenāžas un tonusa uzlabošanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Akūtas muskuļu-skeleta traumas</li><li>Izteiktas vēnu saslimšanas</li><li>Ādas infekcijas</li></ul>",
+            "contraindications_text": "<ul><li>Akūtas muskuļu-skeleta traumas</li><li>Izteiktas vēnu saslimšanas</li><li>Ādas infekcijas</li></ul>"
           }
         },
         "procedure_hYKkWH": {
@@ -129,7 +134,7 @@
             "procedure_description": "Pilna ķermeņa vakummasāža limfodrenāžai, celulīta mazināšanai un tonusa uzlabošanai.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smaga sirds mazspēja</li><li>Tromboflebīts</li><li>Sistēmiskas infekcijas</li></ul>",
+            "contraindications_text": "<ul><li>Smaga sirds mazspēja</li><li>Tromboflebīts</li><li>Sistēmiskas infekcijas</li></ul>"
           }
         },
         "procedure_GTwaMy": {
@@ -140,7 +145,7 @@
             "procedure_description": "Kurss ar 10 pilna ķermeņa vakummasāžas procedūrām.",
             "procedure_price": "€550",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Trombozes risks</li><li>Smagas hroniskas saslimšanas dekompensācijas stadijā</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Trombozes risks</li><li>Smagas hroniskas saslimšanas dekompensācijas stadijā</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_z9PU8J": {
@@ -151,7 +156,7 @@
             "procedure_description": "Kombinēta vakummasāža kājām un sēžai ar limfodrenāžas zābakiem.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga perifēro artēriju slimība</li></ul>",
+            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga perifēro artēriju slimība</li></ul>"
           }
         },
         "procedure_bfcw4i": {
@@ -162,7 +167,7 @@
             "procedure_description": "Aparātprocedūra limfodrenāžas stimulēšanai, tūskas mazināšanai un noguruma samazināšanai kājās.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaiga tromboze</li><li>Smaga sirds mazspēja</li><li>Nediagnosticēta tūska ar nezināmu etioloģiju</li></ul>",
+            "contraindications_text": "<ul><li>Svaiga tromboze</li><li>Smaga sirds mazspēja</li><li>Nediagnosticēta tūska ar nezināmu etioloģiju</li></ul>"
           }
         },
         "procedure_9Md97E": {
@@ -173,7 +178,7 @@
             "procedure_description": "Pressoterapija kombinācijā ar ķermeņa skrubi un Isol apsēju intensīvai limfodrenāžai.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Atvērtas brūces vai ādas bojājumi</li><li>Tromboflebīts</li><li>Smaga sirds mazspēja</li></ul>",
+            "contraindications_text": "<ul><li>Atvērtas brūces vai ādas bojājumi</li><li>Tromboflebīts</li><li>Smaga sirds mazspēja</li></ul>"
           }
         },
         "procedure_6eCAmf": {
@@ -184,7 +189,7 @@
             "procedure_description": "Papildpakalpojums – pressoterapija pie citas ķermeņa procedūras.",
             "procedure_price": "€15",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga vēnu mazspēja</li></ul>",
+            "contraindications_text": "<ul><li>Tromboflebīts</li><li>Sirds mazspēja</li><li>Smaga vēnu mazspēja</li></ul>"
           }
         }
       },
@@ -224,7 +229,7 @@
             "procedure_description": "Aparātprocedūra tauku šūnu samazināšanai un limfodrenāžas uzlabošanai vienā ķermeņa zonā.",
             "procedure_price": "€35",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Metāla implanti apstrādes zonā</li><li>Sirds stimulatora klātbūtne</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Metāla implanti apstrādes zonā</li><li>Sirds stimulatora klātbūtne</li></ul>"
           }
         },
         "procedure_rKbfz3": {
@@ -235,7 +240,7 @@
             "procedure_description": "Tauku samazināšanas un limfodrenāžas procedūra divās zonās.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sirds ritma traucējumi</li><li>Smagas endokrīnas saslimšanas</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Sirds ritma traucējumi</li><li>Smagas endokrīnas saslimšanas</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_zrU9VD": {
@@ -246,7 +251,7 @@
             "procedure_description": "Procedūra trīs ķermeņa zonām lokalizēta tauku slāņa mazināšanai.",
             "procedure_price": "€45",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Neārstēta hipertensija</li><li>Epilepsija</li><li>Implantēti elektriski medicīniski ierīces</li></ul>",
+            "contraindications_text": "<ul><li>Neārstēta hipertensija</li><li>Epilepsija</li><li>Implantēti elektriski medicīniski ierīces</li></ul>"
           }
         },
         "procedure_mGkJwz": {
@@ -257,7 +262,7 @@
             "procedure_description": "Kompleksa procedūra četrām zonām figūras modelēšanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Grūtniecība</li><li>Nediagnosticētas sāpes vēderā vai kājās</li></ul>",
+            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Grūtniecība</li><li>Nediagnosticētas sāpes vēderā vai kājās</li></ul>"
           }
         }
       },
