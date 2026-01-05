@@ -509,7 +509,7 @@
           "one": "Starpsumma · %{count} prece",
           "other": "Starpsumma · %{count} vienības"
         },
-        "shipping_label": "Piegāde",
+        "shipping_label": "Kontaktinformācija",
         "pickup_label": "Saņemšana veikalā",
         "no_pickup_location": "Nav pieejamas saņemšanas vietas.",
         "pickup_unavailable_banner_title": {
