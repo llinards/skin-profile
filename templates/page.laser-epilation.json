@@ -152,7 +152,7 @@
           "type": "procedure",
           "name": "Sēža",
           "settings": {
-            "procedure_name": "Sejas Sēža",
+            "procedure_name": "Sēža",
             "procedure_description": "Sēžas zonas epilācija.",
             "procedure_price": "€50",
             "procedure_duration": "60",
