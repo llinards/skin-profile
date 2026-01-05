@@ -250,12 +250,12 @@
 
    
 
-    .transition-hide {
+    /* .transition-hide {
         opacity: 0;
         filter: blur(3px);
         transform: translateY(200px);
         transition: all 1s ease;
-    }
+    } */
 
     .show {
         opacity: 1;
