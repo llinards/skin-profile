@@ -4,8 +4,10 @@
 {% endcomment %}
 {% if link.title == 'Kontakti' or link.title == 'Contacts' %}
   <button
-    @click="showContactModal = 'contact'; document.body.style.overflow = 'hidden'"
-    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-none {{ invert_class }}"
+    x-data
+    type="button"
+    @click.prevent="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
+    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
   >
     {{- link.title -}}
   </button>

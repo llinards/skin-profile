@@ -151,8 +151,49 @@
               </svg>
 
               {{ shop.metafields.custom.working_days }}
-              <br>
-              {{ shop.metafields.custom.working_hours }}
+              ({{ shop.metafields.custom.working_hours }})
+            </span>
+          </li>
+        {%- endif -%}
+        {% if shop.metafields.custom.working_days_saturday and shop.metafields.custom.working_hours_saturday %}
+          <li>
+            <span
+              class="items-center lg:text-white py-1 border border-transparent transition-all duration-300"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="inline-block size-4 mr-1"
+              >
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+              </svg>
+
+              {{ shop.metafields.custom.working_days_saturday }}
+              ({{ shop.metafields.custom.working_hours_saturday }})
+            </span>
+          </li>
+        {%- endif -%}
+        {% if shop.metafields.custom.working_days_sunday and shop.metafields.custom.working_hours_sunday %}
+          <li>
+            <span
+              class="items-center lg:text-white py-1 border border-transparent transition-all duration-300"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="inline-block size-4 mr-1"
+              >
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+              </svg>
+
+              {{ shop.metafields.custom.working_days_sunday }}
+              ({{ shop.metafields.custom.working_hours_sunday }})
             </span>
           </li>
         {%- endif -%}
