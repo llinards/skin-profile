@@ -46,7 +46,12 @@
       "settings": {
         "heading": "Lāzerdermatoloģija",
         "subtext": "<p>Piedāvājam mūsdienīgu pieeju dermatoloģisku problēmu risināšanā ar jaunākās paaudzes lāzertehnoloģijām. </p>",
-        "spacing": false
+        "spacing": false,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -83,7 +88,7 @@
             "procedure_description": "Pigmentācijas, paplašinātu asinsvadu un apsārtuma mazināšana ar IPL.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Aktīva ādas infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Aktīva ādas infekcija</li></ul>"
           }
         },
         "procedure_yHRYD9": {
@@ -94,7 +99,7 @@
             "procedure_description": "Ādas atjaunošana ar Harmony Pro sistēmu.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Grūtniecība</li><li>Herpes aktivizācija zonā</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Grūtniecība</li><li>Herpes aktivizācija zonā</li></ul>"
           }
         },
         "procedure_wyCgAx": {
@@ -105,7 +110,7 @@
             "procedure_description": "IPL atjaunošana plašākai zonai.",
             "procedure_price": "€280",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Sistēmiskas slimības saasinājums</li><li>Svaigs saules apdegums</li></ul>"
           }
         },
         "procedure_DFnEye": {
@@ -116,7 +121,7 @@
             "procedure_description": "Kompleksa fotoatjaunošana trīs zonām.",
             "procedure_price": "€300",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Aktīva pigmentācija pēc apdeguma</li><li>Autoimūnas slimības aktīvā fāzē</li></ul>"
           }
         }
       },
@@ -149,7 +154,7 @@
             "procedure_description": "Netraumatiska lāzerliftinga procedūra ādas tonusa uzlabošanai.",
             "procedure_price": "€180",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Epilepsija</li><li>Atvērtas ādas brūces</li></ul>"
           }
         },
         "procedure_TaBFx7": {
@@ -160,7 +165,7 @@
             "procedure_description": "Lāzerliftinga terapija sejas un zoda zonai.",
             "procedure_price": "€200",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvie medikamenti</li><li>Aktīvi iekaisumi</li></ul>"
           }
         },
         "procedure_PCR8XC": {
@@ -171,7 +176,7 @@
             "procedure_description": "Lāzerliftinga procedūra kakla ādai.",
             "procedure_price": "€180",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Šķiedru rētas</li><li>Metāla implanti zonā</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_XVXBKB": {
@@ -182,7 +187,7 @@
             "procedure_description": "Dekoltē zonas atjaunošana.",
             "procedure_price": "€180",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>",
+            "contraindications_text": "<ul><li>Ādas infekcijas</li><li>Fotosensitivitāte</li><li>Nesenas operācijas zonā</li></ul>"
           }
         },
         "procedure_a9G4TJ": {
@@ -193,7 +198,7 @@
             "procedure_description": "Pilna liftinga procedūra trim zonām.",
             "procedure_price": "€300",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Autoimūnas slimības</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_8jxBMM": {
@@ -204,7 +209,7 @@
             "procedure_description": "Maiga liftinga procedūra acu zonai.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts ap acīm</li><li>Herpes</li><li>Svaigs iekaisums</li></ul>",
+            "contraindications_text": "<ul><li>Dermatīts ap acīm</li><li>Herpes</li><li>Svaigs iekaisums</li></ul>"
           }
         }
       },
@@ -239,7 +244,7 @@
             "procedure_description": "Nd:Yag asinsvadu lāzerterapija deguna zonā.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Kuperoze smagā stadijā</li><li>Asiņošanas traucējumi</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Kuperoze smagā stadijā</li><li>Asiņošanas traucējumi</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_pLmmTN": {
@@ -250,7 +255,7 @@
             "procedure_description": "Atsevišķas asinsvadu zvaigznītes koagulācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošana</li><li>Atvērtas brūces</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Atvērtas brūces</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_cYyxYd": {
@@ -261,7 +266,7 @@
             "procedure_description": "Nd:Yag procedūra vaigu kapilāriem.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Sarkana aktīva rozācija</li><li>Kuperoze smaga</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_mx4Rnf": {
@@ -272,7 +277,7 @@
             "procedure_description": "Asinsvadu koagulācija kāju zonā.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>",
+            "contraindications_text": "<ul><li>Varikozas vēnas smagā stadijā</li><li>Tromboflebīts</li><li>Sirds mazspēja</li></ul>"
           }
         },
         "procedure_g8yJLa": {
@@ -283,7 +288,7 @@
             "procedure_description": "Atsevišķu asinsvadu impulsu apstrāde.",
             "procedure_price": "€20",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>Nesenas traumas</li></ul>"
           }
         },
         "procedure_B93aNE": {
@@ -294,7 +299,7 @@
             "procedure_description": "Lāzerprocedūra sarkano angiom u likvidēšanai.",
             "procedure_price": "€70 - €100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Ādas infekcijas</li><li>Fotosensitivitāte</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Ādas infekcijas</li><li>Fotosensitivitāte</li></ul>"
           }
         }
       },
@@ -329,7 +334,7 @@
             "procedure_description": "Nd:Yag lāzerprocedūra sēnītes mazināšanai.",
             "procedure_price": "€20",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Atklātas brūces</li><li>Smagi cirkulācijas traucējumi</li><li>Infekcijas komplikācijas</li></ul>",
+            "contraindications_text": "<ul><li>Atklātas brūces</li><li>Smagi cirkulācijas traucējumi</li><li>Infekcijas komplikācijas</li></ul>"
           }
         },
         "procedure_d8HgcG": {
@@ -340,7 +345,7 @@
             "procedure_description": "Kompleksa lāzerterapija visiem nagiem.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smaga neiropātija</li><li>Brūces uz pēdām</li><li>Cukura diabēta komplikācijas</li></ul>",
+            "contraindications_text": "<ul><li>Smaga neiropātija</li><li>Brūces uz pēdām</li><li>Cukura diabēta komplikācijas</li></ul>"
           }
         }
       },
@@ -371,7 +376,7 @@
             "procedure_description": "QS KTP lāzers melnu un krāsainu pigmentu likvidēšanai.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Fotosensitivitāte</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Fotosensitivitāte</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_n7AnX4": {
@@ -382,7 +387,7 @@
             "procedure_description": "Intensīvāka pigmentu apstrāde.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Asiņošanas traucējumi</li><li>Svaigs iedegums</li></ul>",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Asiņošanas traucējumi</li><li>Svaigs iedegums</li></ul>"
           }
         },
         "procedure_xFFzbJ": {
@@ -393,7 +398,7 @@
             "procedure_description": "Vidēja laukuma tetovējuma lāzerlikvidēšana.",
             "procedure_price": "€140",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes risks zonā</li><li>Infekcijas</li><li>Svaiga trauma</li></ul>",
+            "contraindications_text": "<ul><li>Herpes risks zonā</li><li>Infekcijas</li><li>Svaiga trauma</li></ul>"
           }
         },
         "procedure_nTg3c4": {
@@ -404,7 +409,7 @@
             "procedure_description": "Plašāka laukuma lāzerlikvidācija.",
             "procedure_price": "€240",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdu veidošanās risks</li><li>Autoimūnas slimības</li><li>Asiņošana</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdu veidošanās risks</li><li>Autoimūnas slimības</li><li>Asiņošana</li></ul>"
           }
         },
         "procedure_grKY3q": {
@@ -415,7 +420,7 @@
             "procedure_description": "Liela laukuma apstrāde QS lāzerplatformā.",
             "procedure_price": "€320",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Lietoti fotosensitīvi medikamenti</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Lietoti fotosensitīvi medikamenti</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_47jXpN": {
@@ -426,7 +431,7 @@
             "procedure_description": "QS KTP lāzers sejas permanentā grima pigmenta izvadīšanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Grūtniecība</li><li>Fotosensitivitāte</li></ul>",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Grūtniecība</li><li>Fotosensitivitāte</li></ul>"
           }
         }
       },
@@ -469,7 +474,7 @@
             "procedure_description": "CO2 lāzers labdabīgu veidojumu noņemšanai.",
             "procedure_price": "€55",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija zonā</li><li>Asins recēšanas traucējumi</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija zonā</li><li>Asins recēšanas traucējumi</li></ul>"
           }
         },
         "procedure_EBww3n": {
@@ -480,7 +485,7 @@
             "procedure_description": "CO2 lāzera noņemšana vidēja izmēra veidojumam.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>mūnsupresija</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošana</li><li>Infekcija</li><li>mūnsupresija</li></ul>"
           }
         },
         "procedure_c89DBC": {
@@ -491,7 +496,7 @@
             "procedure_description": "Plašāka veidojuma CO2 ablācija.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdi</li><li>Imūnsupresija</li><li>Svaiga trauma</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Imūnsupresija</li><li>Svaiga trauma</li></ul>"
           }
         },
         "procedure_6qLzG8": {
@@ -502,7 +507,7 @@
             "procedure_description": "CO2 ablācija papillomu grupai.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Slikta brūču dzīšana</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Slikta brūču dzīšana</li></ul>"
           }
         },
         "procedure_Dypttm": {
@@ -513,7 +518,7 @@
             "procedure_description": "CO2 lāzers keratomu noņemšanai.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Pigmentētas neskaidras izmaiņas</li><li>Infekcija</li><li>Keloīdu risks</li></ul>",
+            "contraindications_text": "<ul><li>Pigmentētas neskaidras izmaiņas</li><li>Infekcija</li><li>Keloīdu risks</li></ul>"
           }
         },
         "procedure_xwW7jP": {
@@ -524,7 +529,7 @@
             "procedure_description": "CO2 lāzers intīmo kārpu ārstēšanai.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Imūnsupresija</li><li>Akūtas infekcijas</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Imūnsupresija</li><li>Akūtas infekcijas</li></ul>"
           }
         },
         "procedure_NqTjzV": {
@@ -535,29 +540,29 @@
             "procedure_description": "Acu plakstiņu tauku izgulsnējumu noņemšana.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asins recēšanas traucējumi</li><li>Plakstiņu infekcijas</li><li>Diabēta dekompensācija</li></ul>",
+            "contraindications_text": "<ul><li>Asins recēšanas traucējumi</li><li>Plakstiņu infekcijas</li><li>Diabēta dekompensācija</li></ul>"
           }
         },
         "procedure_8b4nyP": {
           "type": "procedure",
-          "name": "Kārpa viena",
+          "name": "Kārpa (viena)",
           "settings": {
-            "procedure_name": "Kārpa viena",
+            "procedure_name": "Kārpa (viena)",
             "procedure_description": "CO2 noņemšana vienai kārpai.",
             "procedure_price": "€35",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Grūtniecība piesardzīgi</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Autoimūnas slimības</li><li>Grūtniecība piesardzīgi</li></ul>"
           }
         },
         "procedure_EM4LQa": {
           "type": "procedure",
-          "name": "Kārpas divas",
+          "name": "Kārpas (divas)",
           "settings": {
-            "procedure_name": "Kārpas divas",
+            "procedure_name": "Kārpas (divas)",
             "procedure_description": "Divu kārpu lāzerablācija.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Slikta dzīšana</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdu risks</li><li>Slikta dzīšana</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_XgrFCe": {
@@ -568,7 +573,7 @@
             "procedure_description": "CO2 lāzerattīrīšana vairākām kārpām.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Diabēta komplikācijas</li><li>Svaigs iekaisums</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Diabēta komplikācijas</li><li>Svaigs iekaisums</li></ul>"
           }
         }
       },
@@ -607,7 +612,7 @@
             "procedure_description": "Frakcionēts CO2 sejas ādas slīpējums un atjaunošana.",
             "procedure_price": "€350",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Retinoīdu terapija</li><li>Keloīdu risks</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Retinoīdu terapija</li><li>Keloīdu risks</li></ul>"
           }
         },
         "procedure_4Vrggj": {
@@ -618,7 +623,7 @@
             "procedure_description": "Maigas ādas atjaunošana ap acīm.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Ekzēma</li><li>Infekcijas</li></ul>",
+            "contraindications_text": "<ul><li>Herpes</li><li>Ekzēma</li><li>Infekcijas</li></ul>"
           }
         },
         "procedure_Ek7ViF": {
@@ -629,7 +634,7 @@
             "procedure_description": "Plakstiņu ādas atjaunošana ar CO2 lāzeri.",
             "procedure_price": "€110",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sausa acs sindroms</li><li>Blefarīts</li><li>Herpes</li></ul>",
+            "contraindications_text": "<ul><li>Sausa acs sindroms</li><li>Blefarīts</li><li>Herpes</li></ul>"
           }
         },
         "procedure_dNc8wA": {
@@ -640,7 +645,7 @@
             "procedure_description": "Rētu, grumbiņu un pigmentu mazināšana pierē.",
             "procedure_price": "€200",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Psoriāze</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Autoimūnas slimības</li><li>Psoriāze</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_ePqLjU": {
@@ -651,7 +656,7 @@
             "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
             "procedure_price": "€120",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Rozācija</li><li>Svaigs iekaisums</li><li>Fotosensitivitāte</li></ul>",
+            "contraindications_text": "<ul><li>Rozācija</li><li>Svaigs iekaisums</li><li>Fotosensitivitāte</li></ul>"
           }
         },
         "procedure_ca9BQq": {
@@ -662,7 +667,7 @@
             "procedure_description": "Ādas reljefa uzlabošana zoda zonā.",
             "procedure_price": "€110",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Infekcija</li><li>Eritēma</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Infekcija</li><li>Eritēma</li></ul>"
           }
         },
         "procedure_cepGUx": {
@@ -673,7 +678,7 @@
             "procedure_description": "Dekoltē ādas atjaunošana.",
             "procedure_price": "€170",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs iedegums</li><li>Herpes</li></ul>",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs iedegums</li><li>Herpes</li></ul>"
           }
         },
         "procedure_9B4Pp4": {
@@ -684,7 +689,7 @@
             "procedure_description": "Komplekss CO2 atjaunojošs protokols.",
             "procedure_price": "€580",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Fotosensitivitāte</li><li>Diabēts dekompensācijā</li></ul>",
+            "contraindications_text": "<ul><li>Retinoīdu terapija</li><li>Fotosensitivitāte</li><li>Diabēts dekompensācijā</li></ul>"
           }
         },
         "procedure_k73U4r": {
@@ -695,7 +700,7 @@
             "procedure_description": "Precīza rētu korekcija CO2 lāzerī.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija</li><li>Autoimūnas slimības</li></ul>",
+            "contraindications_text": "<ul><li>Keloīdi</li><li>Infekcija</li><li>Autoimūnas slimības</li></ul>"
           }
         },
         "procedure_VdKnez": {
@@ -706,7 +711,7 @@
             "procedure_description": "Striju samazināšana frakcionētā režīmā.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Slikta dzīšana</li><li>Ādas infekcija</li><li>Keloīdi</li></ul>",
+            "contraindications_text": "<ul><li>Slikta dzīšana</li><li>Ādas infekcija</li><li>Keloīdi</li></ul>"
           }
         },
         "procedure_yHGGmK": {
@@ -717,7 +722,7 @@
             "procedure_description": "Rētas tekstūras un izskata uzlabošana.",
             "procedure_price": "€130 - €150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaiga rēta (&lt;6 mēn.)</li><li>nfekcija</li><li>Psoriāze</li></ul>",
+            "contraindications_text": "<ul><li>Svaiga rēta (&lt;6 mēn.)</li><li>nfekcija</li><li>Psoriāze</li></ul>"
           }
         },
         "procedure_zk3LTV": {
@@ -728,7 +733,7 @@
             "procedure_description": "Postakne rētu mazināšana frakcionēti.",
             "procedure_price": "€350",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Aktīva akne</li><li>Svaigs iedegums</li><li>Herpes</li></ul>",
+            "contraindications_text": "<ul><li>Aktīva akne</li><li>Svaigs iedegums</li><li>Herpes</li></ul>"
           }
         }
       },
