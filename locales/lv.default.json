@@ -433,7 +433,7 @@
         "address_title": "Adrese",
         "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam.",
         "delivery_option_title": "Piegādes metode",
-        "contact_method_title": "Kontaktinformācija",
+        "contact_method_title": "E-pasts",
         "email_label": "E-pasts",
         "email_rollup_accessibility_label": "E-pasta opcijas",
         "email_placeholder": "E-pasts",
@@ -1341,7 +1341,7 @@
           "multi_store": "Drīzumā jūs saņemsiet atsevišķus apstiprinājuma e-pastus no katra veikala."
         },
         "customer_information_title": "Pasūtījuma detaļas",
-        "contact_information_title": "E-pasts",
+        "contact_information_title": "Kontaktinformācija",
         "payment_method_title": "Maksājuma metode",
         "billing_address_title": "Norēķinu adrese",
         "return_to_store_link_label": "Turpināt iepirkties",
