@@ -21,7 +21,12 @@
         "bg_pos_desktop": "center",
         "heading_align": "left",
         "button_align_mobile": "center",
-        "button_align_desktop": "start"
+        "button_align_desktop": "start",
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -47,7 +52,7 @@
           "type": "button",
           "name": "PAKALPOJUMI",
           "settings": {
-            "text": "Paklpojumi",
+            "text": "Pakalpojumi",
             "url": "shopify://pages/dermatology",
             "style": "brown"
           }
