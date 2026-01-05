@@ -2409,7 +2409,7 @@
       },
       "shipping": {
         "shipping_method_title": "Piegādes metode",
-        "delivery_title": "Piegāde",
+        "delivery_title": "Kontaktinformācija",
         "free_rate_label": "Bezmaksas",
         "split_shipping_option_free": "Bezmaksas piegāde",
         "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam.",
