@@ -319,12 +319,24 @@
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Onkoloģiskas saslimšanas</li><li>Akūti iekaisuma procesi</li><li>Tromboze, tromboflebīts</li><li>Smagas sirds un asinsvadu slimības</li><li>Infekcijas slimības akūtā stadijā</li><li>Atvērtas brūces vai ādas bojājumi procedūras zonā</li></ul>"
           }
+        },
+        "procedure_6Mhbtf": {
+          "type": "procedure",
+          "name": "6 procedūru abonements (augšstilbi + sēža)",
+          "settings": {
+            "procedure_name": "6 procedūru abonements (augšstilbi + sēža)",
+            "procedure_description": "Procedūru kurss ilgstošākam efektam.",
+            "procedure_price": "€240",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Onkoloģiskas saslimšanas</li><li>Akūti iekaisuma procesi</li><li>Tromboze, tromboflebīts</li><li>Smagas sirds un asinsvadu slimības</li><li>Infekcijas slimības akūtā stadijā</li><li>Atvērtas brūces vai ādas bojājumi procedūras zonā</li></ul>"
+          }
         }
       },
       "block_order": [
         "procedure_Ud8BGQ",
         "procedure_93aQag",
-        "procedure_erefM9"
+        "procedure_erefM9",
+        "procedure_6Mhbtf"
       ],
       "name": "Endosfēra",
       "settings": {
