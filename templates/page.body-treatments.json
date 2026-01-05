@@ -308,11 +308,23 @@
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība</li><li>Onkoloģiskas saslimšanas</li><li>Akūti iekaisuma procesi</li><li>Tromboze, tromboflebīts</li><li>Smagas sirds un asinsvadu slimības</li><li>Infekcijas slimības akūtā stadijā</li><li>Atvērtas brūces vai ādas bojājumi procedūras zonā</li></ul>"
           }
+        },
+        "procedure_erefM9": {
+          "type": "procedure",
+          "name": "Kāju augšstilbu priekšējā un aizmugurējā virsma + sēža + vēders + rokas",
+          "settings": {
+            "procedure_name": "Kāju augšstilbu priekšējā un aizmugurējā virsma + sēža + vēders + rokas",
+            "procedure_description": "Plašāka ķermeņa zonu apstrāde redzamiem rezultātiem.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Onkoloģiskas saslimšanas</li><li>Akūti iekaisuma procesi</li><li>Tromboze, tromboflebīts</li><li>Smagas sirds un asinsvadu slimības</li><li>Infekcijas slimības akūtā stadijā</li><li>Atvērtas brūces vai ādas bojājumi procedūras zonā</li></ul>"
+          }
         }
       },
       "block_order": [
         "procedure_Ud8BGQ",
-        "procedure_93aQag"
+        "procedure_93aQag",
+        "procedure_erefM9"
       ],
       "name": "Endosfēra",
       "settings": {
