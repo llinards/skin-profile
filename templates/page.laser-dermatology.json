@@ -501,9 +501,9 @@
         },
         "procedure_6qLzG8": {
           "type": "procedure",
-          "name": "Papillomas (segments)",
+          "name": "Papilomas (segments)",
           "settings": {
-            "procedure_name": "Papillomas (segments)",
+            "procedure_name": "Papilomas (segments)",
             "procedure_description": "CO2 ablācija papillomu grupai.",
             "procedure_price": "€100",
             "procedure_duration": "60",
