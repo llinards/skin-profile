@@ -1434,7 +1434,8 @@
         "shipping_label": "Shipping"
       },
       "shipping": {
-        "delivery_title": "Contact information"
+        "delivery_title": "Contact information",
+        "shipping_method_title": "Chosen hipping method"
       }
     }
   }
