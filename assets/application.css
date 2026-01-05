@@ -2698,6 +2698,9 @@
     list-style-position: inside;
     list-style-type: disc;
   }
+  .dash-list::marker {
+    content: "- ";
+  }
 }
 @layer base {
   :root {

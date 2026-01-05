@@ -156,6 +156,10 @@
     ul {
         @apply list-disc list-inside;
     }
+
+    .dash-list::marker {
+        content: "- ";
+    }
 }
 @layer base {
 
