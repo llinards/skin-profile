@@ -739,7 +739,7 @@
         },
         "clear": "Skaidrs",
         "billing_must_match_shipping_notice": "Jūsu maksājuma veida norēķinu adresei ir jāsakrīt ar piegādes adresi.",
-        "same_billing_address_checkbox_label": "Izmantot piegādes adresi kā norēķinu adresi",
+        "same_billing_address_checkbox_label": "Izmantot kontaktinformācijas adresi kā norēķinu adresi",
         "location_billing_address_label": "Atrašanās vietas norēķinu adrese",
         "fact_billing_address_label": "Rēķina adrese",
         "location_shipping_address_label": "Atrašanās vietas piegādes adrese",
