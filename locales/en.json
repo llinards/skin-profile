@@ -1429,6 +1429,9 @@
     "checkout": {
       "contact": {
         "contact_method_title": "Email"
+      },
+      "order_summary": {
+        "shipping_label": "Test"
       }
     }
   }
