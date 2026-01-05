@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="order-1 lg:order-2">
-      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.menu' | t }}</h3>
+      <h3 class="text-2xl capitalize text-white pb-1">{{ 'general.footer.menu' | t }}</h3>
       <ul class="list-none space-y-2">
         {% assign links = linklists['main-menu'].links %}
         {% for link in links %}
@@ -49,7 +49,7 @@
       </ul>
     </div>
     <div class="order-2 sm:order-3">
-      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.information' | t }}</h3>
+      <h3 class="text-2xl capitalize text-white pb-1">{{ 'general.footer.information' | t }}</h3>
       {% assign links = linklists['information-menu'].links %}
       <ul class="list-none space-y-2">
         {% for link in links %}
@@ -60,7 +60,7 @@
       </ul>
     </div>
     <div class="order-3 sm:order-2 lg:order-4">
-      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.contacts' | t }}</h3>
+      <h3 class="text-2xl capitalize text-white pb-1">{{ 'general.footer.contacts' | t }}</h3>
       <ul class="text-base xl:text-lg list-none space-y-2">
         {%- if shop.phone != blank -%}
           <li>
@@ -159,7 +159,7 @@
       </ul>
     </div>
     <div class="order-4 lg:order-5">
-      <h3 class="text-2xl capitalize text-white pb-2">{{ 'general.footer.follow' | t }}</h3>
+      <h3 class="text-2xl capitalize text-white pb-1">{{ 'general.footer.follow' | t }}</h3>
       <div class="flex flex-row fill-white space-x-6">
         {% render 'icon-facebook' %}
         {% render 'icon-instagram' %}
@@ -167,7 +167,7 @@
     </div>
   </div>
 
-  <div class="text-white container flex flex-col items-center justify-center mx-auto px-8 space-x-2">
+  <div class="text-white container flex flex-col items-center justify-center mx-auto px-8 space-y-2">
     <p>
       &copy; {{ 'now' | date: '%Y' }}
       {{ shop.name }} - {{ 'general.footer.rights' | t }}
@@ -175,7 +175,7 @@
     <p>
       <a href="https://www.simpledesign.lv" target="_blank">
         {{- 'general.footer.design' | t }}:
-        <span class="(--color-brand-secondary) border-b hover:border-b-white hover:text-white transition-all duration-300"
+        <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
           >SIMPLE DESIGN</span
         ></a
       >
@@ -183,7 +183,7 @@
     <p>
       <a href="https://www.slmedia.lv" target="_blank">
         {{- 'general.footer.developed' | t }}:
-        <span class="(--color-brand-secondary) border-b hover:border-b-white hover:text-white transition-all duration-300"
+        <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
           >S&L MEDIA</span
         ></a
       >

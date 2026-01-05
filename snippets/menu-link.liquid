@@ -5,14 +5,14 @@
 {% if link.title == 'Kontakti' or link.title == 'Contacts' %}
   <button
     @click="showContactModal = 'contact'; document.body.style.overflow = 'hidden'"
-    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer {{ invert_class }}"
+    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-none {{ invert_class }}"
   >
     {{- link.title -}}
   </button>
 {% else %}
   <a
     href="{{ link.url }}"
-    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 {% if link.active %}border-b-black lg:border-b-white{% endif %} {{ invert_class }}"
+    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer {% if link.active %}border-b-black lg:border-b-white{% endif %} {{ invert_class }}"
   >
     {{- link.title -}}
   </a>
