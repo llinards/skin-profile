@@ -1431,7 +1431,10 @@
         "contact_method_title": "Email"
       },
       "order_summary": {
-        "shipping_label": "Test"
+        "shipping_label": "Shipping"
+      },
+      "shipping": {
+        "delivery_title": "Test"
       }
     }
   }
