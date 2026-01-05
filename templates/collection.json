@@ -55,7 +55,12 @@
       "settings": {
         "heading": "Profesionāla sejas kopšana tavās mājās",
         "subtext": "<p>Izvēlies dermatologu un kosmetologu ieteiktus produktus no pasaules vadošajiem zīmoliem.</p>",
-        "spacing": false
+        "spacing": false,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "template_partners_brands_RyzTUA": {
@@ -202,7 +207,7 @@
           "type": "category_slide",
           "name": "Dāvanu kartes",
           "settings": {
-            "photo": "shopify://shop_images/davanu_kartes.jpg",
+            "photo": "shopify://shop_images/skin_profile_gift_card.jpg",
             "name": "Dāvanu kartes",
             "category_name_for_filter": "gift-cards"
           }
