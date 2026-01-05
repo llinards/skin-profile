@@ -45,8 +45,13 @@
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
         "heading": "Lāzerepilācija",
-        "subtext": "",
-        "spacing": true
+        "subtext": "<p>Lāzerepilācija ir drošākais, saudzējošākais un ilgstošākais veids, kā atbrīvoties no nevēlama apmatojuma.</p>",
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -74,7 +79,7 @@
             "procedure_description": "Lāzerepilācija padusēs.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>"
           }
         },
         "procedure_8ged3R": {
@@ -85,7 +90,7 @@
             "procedure_description": "Sānu joslu epilācija.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_bkd4KG": {
@@ -96,7 +101,7 @@
             "procedure_description": "Pilna bikini zona.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_6bga9h": {
@@ -107,7 +112,7 @@
             "procedure_description": "Kombinēta bikini un sēžas zona.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_i37yRD": {
@@ -118,7 +123,7 @@
             "procedure_description": "Plaša epilācijas zona.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>"
           }
         },
         "procedure_kgAmLU": {
@@ -129,7 +134,7 @@
             "procedure_description": "Vīriešu bikini epilācija.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_xrAidR": {
@@ -140,7 +145,7 @@
             "procedure_description": "Pilna intīmās zonas epilācija.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>"
           }
         },
         "procedure_NTiAWV": {
@@ -151,7 +156,7 @@
             "procedure_description": "Sēžas zonas epilācija.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>"
           }
         }
       },
@@ -188,7 +193,7 @@
             "procedure_description": "Apakšdelmu lāzerepilācija.",
             "procedure_price": "€55",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_dtU6id": {
@@ -199,7 +204,7 @@
             "procedure_description": "Augšdelmu epilācija.",
             "procedure_price": "€55",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_n9AgUH": {
@@ -210,7 +215,7 @@
             "procedure_description": "Pilna roku epilācija.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Svaigs apdegums</li><li>Herpes informācija šeit.</li></ul>",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Svaigs apdegums</li><li>Herpes informācija šeit.</li></ul>"
           }
         },
         "procedure_zRmMxt": {
@@ -221,7 +226,7 @@
             "procedure_description": "Pirkstu lāzerepilācija.",
             "procedure_price": "€20",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Traumas</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Traumas</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_XkTnY8": {
@@ -232,7 +237,7 @@
             "procedure_description": "Plaukstu lāzerepilācija.",
             "procedure_price": "€35",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Psoriāze</li><li>Ekzēma</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Psoriāze</li><li>Ekzēma</li><li>Infekcija</li></ul>"
           }
         }
       },
@@ -266,7 +271,7 @@
             "procedure_description": "Apakšstilbu epilācija.",
             "procedure_price": "€90",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Varikozas vēnas</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Varikozas vēnas</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_ytMPUn": {
@@ -277,7 +282,7 @@
             "procedure_description": "Augšstilbu epilācija.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Infekcija</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_x36Ka6": {
@@ -288,7 +293,7 @@
             "procedure_description": "Pilna kāju epilācija.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Smags dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Fotosensitivitāte</li><li>Svaigs apdegums</li><li>Smags dermatīts</li></ul>"
           }
         },
         "procedure_XUDgMV": {
@@ -299,7 +304,7 @@
             "procedure_description": "Pēdu lāzerepilācija.",
             "procedure_price": "€45",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Sēnīte</li><li>Traumas</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Sēnīte</li><li>Traumas</li></ul>"
           }
         },
         "procedure_txDdr9": {
@@ -310,7 +315,7 @@
             "procedure_description": "Pirkstu zona.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sēnīte</li><li>Infekcija</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Sēnīte</li><li>Infekcija</li><li>Dermatīts</li></ul>"
           }
         }
       },
@@ -344,7 +349,7 @@
             "procedure_description": "Augšlūpas apmatojuma lāzerepilācija.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_NhYYcg": {
@@ -355,7 +360,7 @@
             "procedure_description": "Zoda epilācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Svaigs apdegums</li></ul>"
           }
         },
         "procedure_HRjQbA": {
@@ -366,7 +371,7 @@
             "procedure_description": "Vaigu sānu zonas epilācija.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Akne</li><li>Rozācija</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Akne</li><li>Rozācija</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_Ldhw8E": {
@@ -377,7 +382,7 @@
             "procedure_description": "Kakla apmatojuma epilācija.",
             "procedure_price": "€35",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Folikulīts</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Folikulīts</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_EYJNwt": {
@@ -388,7 +393,7 @@
             "procedure_description": "Vaigu epilācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Rozācija</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Rozācija</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_rQ9wiA": {
@@ -399,7 +404,7 @@
             "procedure_description": "Žokļa apakšlīnijas epilācija.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Dermatīts</li><li>Folikulīts</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Dermatīts</li><li>Folikulīts</li></ul>"
           }
         },
         "procedure_cGwAjJ": {
@@ -410,7 +415,7 @@
             "procedure_description": "Starpuzacu epilācija.",
             "procedure_price": "€15",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_96cjyF": {
@@ -421,7 +426,7 @@
             "procedure_description": "Pieres apmatojuma epilācija.",
             "procedure_price": "€25",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Akne</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Akne</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>"
           }
         }
       },
@@ -458,7 +463,7 @@
             "procedure_description": "Plecu lāzerepilācija.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Dermatīts</li><li>Smags folikulīts</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Smags folikulīts</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_wRxWAa": {
@@ -469,7 +474,7 @@
             "procedure_description": "Jostas zonas epilācija.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Infekcija</li><li>Sēnīte</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Infekcija</li><li>Sēnīte</li></ul>"
           }
         },
         "procedure_4nmkN4": {
@@ -480,7 +485,7 @@
             "procedure_description": "Pilnas muguras epilācija.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Folikulīts</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Dermatīts</li><li>Folikulīts</li></ul>"
           }
         }
       },
@@ -512,7 +517,7 @@
             "procedure_description": "Krūšu galu apmatojuma epilācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Traumas</li></ul>",
+            "contraindications_text": "<ul><li>Ekzēma</li><li>Infekcija</li><li>Traumas</li></ul>"
           }
         },
         "procedure_Nwih3a": {
@@ -523,7 +528,7 @@
             "procedure_description": "Krūšu lāzerepilācija.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Infekcija</li></ul>",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Dermatīts</li><li>Infekcija</li></ul>"
           }
         },
         "procedure_mWgXJy": {
@@ -534,7 +539,7 @@
             "procedure_description": "Vēdera epilācija.",
             "procedure_price": "€90",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>"
           }
         },
         "procedure_3HBik8": {
@@ -545,7 +550,7 @@
             "procedure_description": "Baltās līnijas epilācija.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Traumas</li></ul>",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Traumas</li></ul>"
           }
         },
         "procedure_ggDQR9": {
@@ -556,7 +561,7 @@
             "procedure_description": "Mazs individuāls epilācijas laukums.",
             "procedure_price": "€30",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Infekcija</li><li>Ekzēma</li><li>Svaigs apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Ekzēma</li><li>Svaigs apdegums</li></ul>"
           }
         }
       },
