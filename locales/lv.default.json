@@ -432,7 +432,7 @@
         "title": "Informācija",
         "address_title": "Adrese",
         "shipping_used_as_billing_notice": "Šī adrese tiks izmantota arī kā jūsu norēķinu adrese šim pasūtījumam.",
-        "delivery_option_title": "Izvēlētā piegādes metode",
+        "delivery_option_title": "Piegādes metode",
         "contact_method_title": "E-pasts",
         "email_label": "E-pasts",
         "email_rollup_accessibility_label": "E-pasta opcijas",
@@ -2408,7 +2408,7 @@
         }
       },
       "shipping": {
-        "shipping_method_title": "Piegādes metode",
+        "shipping_method_title": "Izvēlētā piegādes metode",
         "delivery_title": "Kontaktinformācija",
         "free_rate_label": "Bezmaksas",
         "split_shipping_option_free": "Bezmaksas piegāde",
