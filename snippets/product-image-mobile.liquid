@@ -1,12 +1,12 @@
 <div class="md:hidden">
   <div class="f-carousel" id="product-view-mobile">
-    <div class="f-carousel__viewport h-72">
+    <div class="f-carousel__viewport">
       {% for image in product.images %}
         <div
           class="f-carousel__slide"
           data-thumb-src="{{ image | image_url: width: 120, height: 120, crop: 'center' }}"
         >
-          {% render 'image', class: 'product-image h-72', image: image %}
+          {% render 'image', class: 'product-image', image: image %}
         </div>
       {% endfor %}
     </div>
