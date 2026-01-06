@@ -745,9 +745,6 @@
   .resize {
     resize: both;
   }
-  .list-\[circle\] {
-    list-style-type: circle;
-  }
   .list-disc {
     list-style-type: disc;
   }
@@ -1245,14 +1242,6 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .leading-1\.25 {
-    --tw-leading: calc(var(--spacing) * 1.25);
-    line-height: calc(var(--spacing) * 1.25);
-  }
-  .leading-\[1\.25\] {
-    --tw-leading: 1.25;
-    line-height: 1.25;
   }
   .leading-none {
     --tw-leading: 1;

@@ -213,22 +213,24 @@
       &copy; {{ 'now' | date: '%Y' }}
       {{ shop.name }} - {{ 'general.footer.rights' | t }}
     </p>
-    <p>
-      <a href="https://www.simpledesign.lv" target="_blank">
-        {{- 'general.footer.design' | t }}:
-        <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
-          >SIMPLE DESIGN</span
-        ></a
-      >
-    </p>
-    <p>
-      <a href="https://www.slmedia.lv" target="_blank">
-        {{- 'general.footer.developed' | t }}:
-        <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
-          >S&L MEDIA</span
-        ></a
-      >
-    </p>
+    {% comment %}
+      <p>
+        <a href="https://www.simpledesign.lv" target="_blank">
+          {{- 'general.footer.design' | t }}:
+          <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
+            >SIMPLE DESIGN</span
+          ></a
+        >
+      </p>
+      <p>
+        <a href="https://www.slmedia.lv" target="_blank">
+          {{- 'general.footer.developed' | t }}:
+          <span class="text-(--color-brand-secondary) pb-1 border-b border-transparent hover:border-b-white hover:text-white transition-all duration-300"
+            >S&L MEDIA</span
+          ></a
+        >
+      </p>
+    {% endcomment %}
   </div>
 </footer>
 
