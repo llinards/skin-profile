@@ -326,6 +326,35 @@
     color: var(--color-brand-primary) !important;
 }
 
+#product-view .is-arrow,
+#product-view-mobile .is-arrow {
+    background-color: var(--color-brand-primary);
+    border: 1px solid var(--color-brand-primary);
+    border-radius: 100%;
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+    --f-arrow-pos: 20px;
+    --f-arrow-width: 2rem;
+    --f-arrow-height: 2rem;
+    --f-arrow-svg-width: 1rem;
+    --f-arrow-svg-height: 1rem;
+    z-index: 2;
+    
+}
+
+/* Keep carousel slides below arrows to prevent flickering */
+#product-view .f-carousel__slide,
+#product-view-mobile .f-carousel__slide {
+    z-index: 0;
+}
+
+#product-view .is-arrow:hover,
+#product-view-mobile .is-arrow:hover {
+    background-color: white;
+    color: var(--color-brand-primary);
+}
+
 .f-carousel__dot::after {
     padding: 8px;
 }

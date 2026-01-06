@@ -539,9 +539,6 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-72 {
-    height: calc(var(--spacing) * 72);
-  }
   .h-108 {
     height: calc(var(--spacing) * 108);
   }
@@ -1346,10 +1343,6 @@
   }
   .opacity-100 {
     opacity: 100%;
-  }
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[0_4px_12px_0_rgba\(0\,0\,0\,0\.35\)\] {
     --tw-shadow: 0 4px 12px 0 var(--tw-shadow-color, rgba(0,0,0,0.35));
@@ -2834,6 +2827,27 @@
 }
 #team-carousel .f-carousel__dot, #services-carousel .f-carousel__dot, #category-carousel .f-carousel__dot, #product-recommendation-carousel .f-carousel__dot, #product-view .f-carousel__dot, #product-view-mobile .f-carousel__dot {
   color: var(--color-brand-primary) !important;
+}
+#product-view .is-arrow, #product-view-mobile .is-arrow {
+  background-color: var(--color-brand-primary);
+  border: 1px solid var(--color-brand-primary);
+  border-radius: 100%;
+  color: white;
+  transition: all;
+  transition-duration: 300ms;
+  --f-arrow-pos: 20px;
+  --f-arrow-width: 2rem;
+  --f-arrow-height: 2rem;
+  --f-arrow-svg-width: 1rem;
+  --f-arrow-svg-height: 1rem;
+  z-index: 2;
+}
+#product-view .f-carousel__slide, #product-view-mobile .f-carousel__slide {
+  z-index: 0;
+}
+#product-view .is-arrow:hover, #product-view-mobile .is-arrow:hover {
+  background-color: white;
+  color: var(--color-brand-primary);
 }
 .f-carousel__dot::after {
   padding: 8px;

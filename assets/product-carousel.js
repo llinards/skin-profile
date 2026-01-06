@@ -4,6 +4,7 @@
       document.getElementById('product-view'),
       {},
       {
+        Arrows,
         Lazyload,
         Dots,
       }
@@ -12,6 +13,7 @@
       document.getElementById('product-view-mobile'),
       {},
       {
+        Arrows,
         Lazyload,
         Dots,
       }
