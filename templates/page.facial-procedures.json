@@ -46,7 +46,12 @@
       "settings": {
         "heading": "Procedūras Sejai",
         "subtext": "<p>Apvienojot jaunākās tehnoloģijas ar profesionālu medicīnisku pieeju, mēs palīdzam saglabāt dabisku skaistumu un ilgtermiņā rūpējamies par ādas veselību.</p>",
-        "spacing": true
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -83,7 +88,7 @@
             "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas efektīvu un dziļu tīrīšanu visiem ādas tipiem.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Aktīvas baktēriju vai vīrusu ādas infekcijas</li><li>Smags aknes iekaisums ar pustulām</li><li>Atvērtas brūces vai svaigi ādas bojājumi</li></ul>",
+            "contraindications_text": "<ul><li>Aktīvas baktēriju vai vīrusu ādas infekcijas</li><li>Smags aknes iekaisums ar pustulām</li><li>Atvērtas brūces vai svaigi ādas bojājumi</li></ul>"
           }
         },
         "procedure_WW3krV": {
@@ -94,7 +99,7 @@
             "procedure_description": "Procedūru kopums ar mērķi nodrošināt saudzīgu ādas attīrīšanu jauniešu ādai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Izteikts akūts iekaisums ādā</li><li>Dermatīts saasinājuma fāzē</li><li>Svaigs saules apdegums sejas zonā</li></ul>",
+            "contraindications_text": "<ul><li>Izteikts akūts iekaisums ādā</li><li>Dermatīts saasinājuma fāzē</li><li>Svaigs saules apdegums sejas zonā</li></ul>"
           }
         },
         "procedure_Lc8XyH": {
@@ -105,7 +110,7 @@
             "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas virsējā slāņa, nedzīvo šūnu eksfoliāciju, neskarot dzīvās šūnas.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Rozācija aktīvā stadijā</li><li>Psoriāze apstrādes zonā</li><li>Aktīvas strutainas izsitumu perēkļi</li></ul>",
+            "contraindications_text": "<ul><li>Rozācija aktīvā stadijā</li><li>Psoriāze apstrādes zonā</li><li>Aktīvas strutainas izsitumu perēkļi</li></ul>"
           }
         },
         "procedure_xzbkEM": {
@@ -116,7 +121,7 @@
             "procedure_description": "Mūsdienīga, neinvazīva aktīvo vielu ievadīšana ādā grumbu mazināšanai, pigmentācijas un dziļas mitrināšanas nodrošināšanai.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sirds stimulatora vai cita implantēta elektrokardiostimulatora klātbūtne </li><li>Epilepsija</li><li>Grūtniecība (piesardzības nolūkos)</li></ul>",
+            "contraindications_text": "<ul><li>Sirds stimulatora vai cita implantēta elektrokardiostimulatora klātbūtne </li><li>Epilepsija</li><li>Grūtniecība (piesardzības nolūkos)</li></ul>"
           }
         },
         "procedure_RCia4c": {
@@ -127,7 +132,7 @@
             "procedure_description": "Radiofrekvences procedūra sejas ādas struktūras uzlabošanai, sejas ovāla savilkšanai un kolagēna ražošanas stimulēšanai.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Metāla implanti apstrādes zonā</li><li>Smaga kardiovaskulāra patoloģija</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Metāla implanti apstrādes zonā</li><li>Smaga kardiovaskulāra patoloģija</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_YgnDcq": {
@@ -138,7 +143,7 @@
             "procedure_description": "Tiek uzlabota asins mikrocirkulācija, tonuss, mazināta tūska, padarot ādu blīvāku un nodrošinot tūlītēju liftinga efektu.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Aktīvas ādas infekcijas vai iekaisumi</li><li>Autoimūnas ādas slimības aktīvā fāzē</li><li>Grūtniecība un zīdīšanas periods (piesardzība)</li></ul>",
+            "contraindications_text": "<ul><li>Aktīvas ādas infekcijas vai iekaisumi</li><li>Autoimūnas ādas slimības aktīvā fāzē</li><li>Grūtniecība un zīdīšanas periods (piesardzība)</li></ul>"
           }
         },
         "procedure_N8Knkp": {
@@ -149,7 +154,7 @@
             "procedure_description": "Divu aparātprocedūru kopums sejas ādas tūlītējai atjaunošanai, svaigumam, mirdzumam un liftinga efektam.",
             "procedure_price": "€100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Nediagnosticētas ādas izmaiņas</li><li>Grūtniecība (atkarībā no izmantotajām metodēm)</li></ul>",
+            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Nediagnosticētas ādas izmaiņas</li><li>Grūtniecība (atkarībā no izmantotajām metodēm)</li></ul>"
           }
         },
         "procedure_jhmg7h": {
@@ -160,7 +165,7 @@
             "procedure_description": "Mikrovibrāciju un kompresijas metode, kas uzlabo limfas atteci, mazina tūsku, maisiņus zem acīm un elastības zudumu.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigas trombozes vai tromboflebīts</li><li>Smaga sirds mazspēja</li><li>Akūtas ādas infekcijas apstrādes zonā</li></ul>",
+            "contraindications_text": "<ul><li>Svaigas trombozes vai tromboflebīts</li><li>Smaga sirds mazspēja</li><li>Akūtas ādas infekcijas apstrādes zonā</li></ul>"
           }
         },
         "procedure_G9hkaT": {
@@ -171,7 +176,7 @@
             "procedure_description": "Procedūra sejas ovāla nostiprināšanai, uzlabo sejas ādas apasiņošanu, mazina tūsku un pilnveido ādas vispārējo stāvokli.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sirds stimulatora klātbūtne</li><li>Epilepsija</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
+            "contraindications_text": "<ul><li>Sirds stimulatora klātbūtne</li><li>Epilepsija</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>"
           }
         }
       },
@@ -194,7 +199,7 @@
         "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
-        "open_by_default": true,
+        "open_by_default": false,
         "space_bottom": false
       }
     },
@@ -209,7 +214,7 @@
             "procedure_description": "PREMIUM sejas procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu viena seansa laikā.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>",
+            "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>"
           }
         },
         "procedure_MWajCe": {
@@ -220,7 +225,7 @@
             "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai un liftingam.",
             "procedure_price": "€170",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>",
+            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>"
           }
         },
         "procedure_C4MHGc": {
@@ -231,7 +236,7 @@
             "procedure_description": "Oglekļa pīlings ādas tekstūras un toni izlīdzināšanai, poru sašaurināšanai un mirdzuma uzlabošanai.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums vai solārija apmeklējums pēdējās dienās</li><li>Aktīvs dermatīts vai ekzēma</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums vai solārija apmeklējums pēdējās dienās</li><li>Aktīvs dermatīts vai ekzēma</li><li>Grūtniecība (relatīva kontrindikācija)</li></ul>"
           }
         },
         "procedure_7kwfYP": {
@@ -242,7 +247,7 @@
             "procedure_description": "Profesionāls skābju pīlings ādas atjaunošanai, pigmentācijas un sīko grumbiņu mazināšanai.",
             "procedure_price": "€80 - €100",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Retinoīdu sistēmiska terapija pēdējo mēnešu laikā</li><li>Herpes infekcijas saasinājums apstrādes zonā</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs saules apdegums</li><li>Retinoīdu sistēmiska terapija pēdējo mēnešu laikā</li><li>Herpes infekcijas saasinājums apstrādes zonā</li></ul>"
           }
         },
         "procedure_Ug7WDE": {
@@ -253,7 +258,7 @@
             "procedure_description": "Maigs augu pīlings vieglai ādas atsvaidzināšanai un mirdzuma piešķiršanai.",
             "procedure_price": "€90",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Aktīvs dermatīts vai ekzēma</li><li>Atvērtas brūces vai skrāpējumi</li><li>Paaugstināta jutība pret pīlinga sastāvdaļām</li></ul>",
+            "contraindications_text": "<ul><li>Aktīvs dermatīts vai ekzēma</li><li>Atvērtas brūces vai skrāpējumi</li><li>Paaugstināta jutība pret pīlinga sastāvdaļām</li></ul>"
           }
         },
         "procedure_iDbCxA": {
@@ -264,7 +269,7 @@
             "procedure_description": "Intensīvāks augu pīlings ādas reģenerācijas stimulēšanai, tonusa un struktūras uzlabošanai.",
             "procedure_price": "€120",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Smaga rozācija vai kuperoze</li><li>Aktīvas infekcijas ādā</li></ul>",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Smaga rozācija vai kuperoze</li><li>Aktīvas infekcijas ādā</li></ul>"
           }
         },
         "procedure_zaQN4b": {
@@ -275,7 +280,7 @@
             "procedure_description": "Klasiskais Green Peel kurss ar intensīvu augu pīlingu un mājas kopšanas līdzekļiem.",
             "procedure_price": "€230",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Ļoti jutīga āda ar barjeras bojājumu</li><li>Sistēmiska retinoīdu terapija</li><li>Grūtniecība (piesardzība) informācija šeit.</li></ul>",
+            "contraindications_text": "<ul><li>Ļoti jutīga āda ar barjeras bojājumu</li><li>Sistēmiska retinoīdu terapija</li><li>Grūtniecība (piesardzība) informācija šeit.</li></ul>"
           }
         },
         "procedure_jttCHE": {
@@ -286,7 +291,7 @@
             "procedure_description": "Procedūra ar skābekli bagātinātu formulu, kas stimulē ādas šūnu funkcionēšanu un vielmaiņu.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Aktīvs dermatīts vai ekzēma</li><li>Svaigs saules apdegums</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Aktīvs dermatīts vai ekzēma</li><li>Svaigs saules apdegums</li></ul>"
           }
         },
         "procedure_qVkGCt": {
@@ -297,7 +302,7 @@
             "procedure_description": "Dziļa ādas tīrīšana ar Pretnovecošanās terapija, ievadot zemādā bioloģiski aktīvās vielas un stimulējot dabīgu ādas atjaunošanos - cena pēc izvēlētā protokola (vadoties no cenrāža)",
             "procedure_price": "-",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_xL34pc": {
@@ -308,7 +313,7 @@
             "procedure_description": "Bio-revitalizējoša ādas procedūra ar TCA, H2O2 un kojīnskābi, lai uzlabotu ādas tvirtumu un izgaismotu pigmentāciju bez lobīšanās.",
             "procedure_price": "€80",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām (TCA, H2O2, kojīnskābe)</li><li>Svaigs iedegums</li><li>Herpes infekcija aktīvā fāzē</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām (TCA, H2O2, kojīnskābe)</li><li>Svaigs iedegums</li><li>Herpes infekcija aktīvā fāzē</li></ul>"
           }
         },
         "procedure_DDriaJ": {
@@ -319,7 +324,7 @@
             "procedure_description": "Augu pīlinga metode dažādos intensitātes līmeņos ādas reģenerācijai un atjaunošanai.",
             "procedure_price": "€80 - €180",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas ādas iekaisuma slimības</li><li>Sistēmiska retinoīdu terapija</li><li>Ļoti jutīga vai bojāta ādas barjera</li></ul>",
+            "contraindications_text": "<ul><li>Smagas ādas iekaisuma slimības</li><li>Sistēmiska retinoīdu terapija</li><li>Ļoti jutīga vai bojāta ādas barjera</li></ul>"
           }
         },
         "procedure_nTabMC": {
@@ -330,7 +335,7 @@
             "procedure_description": "Mikroadatu terapija ar eksosomām ādas reģenerācijai, kolagēna stimulācijai un struktūras uzlabošanai.",
             "procedure_price": "€150",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība un zīdīšana</li></ul>"
           }
         },
         "procedure_TGrmjm": {
@@ -341,7 +346,7 @@
             "procedure_description": "Invazīva bioloģiski aktīvo vielu ievadīšana ādā ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam.",
             "procedure_price": "€80 - €130",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret injicējamām vielām</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret injicējamām vielām</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_MYNHLT": {
@@ -352,7 +357,7 @@
             "procedure_description": "Audu remodelēšana, lai samazinātu liekos tauku depozītus, mīkstinātu fibrozi un rētas, uzlabotu ādas struktūru.",
             "procedure_price": "€150 - €350",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smagas aknu vai nieru saslimšanas</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smagas aknu vai nieru saslimšanas</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_GCFzRQ": {
@@ -363,7 +368,7 @@
             "procedure_description": "Intensīva ādas mitrināšana un tvirtuma uzlabošana ar hialuronskābes un aktīvo vielu kokteili.",
             "procedure_price": "€160",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi vai citiem komponentiem</li><li>Autoimūnas saslimšanas aktīvā stadijā</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi vai citiem komponentiem</li><li>Autoimūnas saslimšanas aktīvā stadijā</li><li>Grūtniecība un zīdīšana</li></ul>"
           }
         },
         "procedure_wcg9yy": {
@@ -373,7 +378,7 @@
             "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
             "procedure_price": "€45",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
         }
       },
@@ -418,7 +423,7 @@
             "procedure_description": "Biorevitalizējošs preparāts ilgnoturīgai mitrināšanai un ādas kvalitātes uzlabošanai.",
             "procedure_price": "€180",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Akūtas ādas infekcijas injekcijas zonā</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Akūtas ādas infekcijas injekcijas zonā</li><li>Grūtniecība un zīdīšana</li></ul>"
           }
         },
         "procedure_yHX4Dx": {
@@ -429,7 +434,7 @@
             "procedure_description": "Redermalizējošs preparāts ādas tvirtuma, tonusa un mirdzuma atjaunošanai.",
             "procedure_price": "€180 - €200",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_hbLnkq": {
@@ -440,7 +445,7 @@
             "procedure_description": "Mitrinošs un tonusu atjaunojošs preparāts ādas struktūras uzlabošanai.",
             "procedure_price": "€160",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smaga ādas iekaisuma slimība injekcijas vietā</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smaga ādas iekaisuma slimība injekcijas vietā</li><li>Grūtniecība</li></ul>"
           }
         },
         "procedure_KUjdBy": {
@@ -451,7 +456,7 @@
             "procedure_description": "Stipri koncentrēts hialuronskābes preparāts ādas tvirtuma un elastības uzlabošanai.",
             "procedure_price": "€250",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi</li><li>Asiņošanas traucējumi</li><li>Grūtniecība un zīdīšana</li></ul>",
+            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi</li><li>Asiņošanas traucējumi</li><li>Grūtniecība un zīdīšana</li></ul>"
           }
         },
         "procedure_FknfyE": {
@@ -462,7 +467,7 @@
             "procedure_description": "Biostimulējošs preparāts šūnu atjaunošanās un dziļas ādas reģenerācijas veicināšanai.",
             "procedure_price": "€180 - €200",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>",
+            "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>"
           }
         }
       },
