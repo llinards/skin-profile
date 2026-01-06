@@ -178,7 +178,7 @@
         "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
         "enable_dropdown": true,
-        "open_by_default": true,
+        "open_by_default": false,
         "space_bottom": false
       }
     },
