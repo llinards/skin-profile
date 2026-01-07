@@ -44,9 +44,14 @@
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
-        "heading": "Uztura Speciālists",
+        "heading": "Endokrinoloģija",
         "subtext": "<p>Uztura speciālists ir augsti kvalificēta ārstniecības persona, kas palīdz normalizēt ēšanas paradumus, svaru un uzlabot vispārējo pašsajūtu. Konsultācijas laikā tiek izstrādāta individuāla ēšanas programma un svara korekcijas plāns, ņemot vērā katra pacienta vajadzības un veselības stāvokli.</p>",
-        "spacing": true
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -75,7 +80,7 @@
             "procedure_description": "Hormonālās veselības izvērtēšana.",
             "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Nav absolūtu kontrindikāciju</li><li>Akūtas infekcijas ar drudzi</li><li>Nespēja sadarboties vizītes laikā</li></ul>",
+            "contraindications_text": "<ul><li>Nav absolūtu kontrindikāciju</li><li>Akūtas infekcijas ar drudzi</li><li>Nespēja sadarboties vizītes laikā</li></ul>"
           }
         },
         "procedure_dwkwhr": {
@@ -86,7 +91,7 @@
             "procedure_description": "Uztura paradumu analīze un plāna sastādīšana.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Nav specifisku kontrindikāciju</li><li>Akūta slimība ar drudzi</li><li>Nespēja sadarboties</li></ul>",
+            "contraindications_text": "<ul><li>Nav specifisku kontrindikāciju</li><li>Akūta slimība ar drudzi</li><li>Nespēja sadarboties</li></ul>"
           }
         }
       },
