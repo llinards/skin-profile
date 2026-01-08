@@ -14,7 +14,7 @@
           @click="open = !open"
           class="
             group relative w-full flex items-start gap-3 px-2 md:px-0 md:pr-2 py-4 text-left hover:bg-(--color-brand-secondary) active:bg-(--color-brand-secondary) transition-colors cursor-pointer
-            focus-visible:ring-1 focus-visible:ring-inset
+            focus-visible:ring-1 focus-visible:ring-insetc
           "
           :class="open ? 'bg-(--color-brand-secondary)' : ''"
           :aria-expanded="open.toString()"
@@ -253,7 +253,7 @@
         {
           "type": "richtext",
           "id": "contraindications_text",
-          "label": "Kontraindikācijas teksts",
+          "label": "Kontrindikācijas teksts",
           "info": "Teksts, kas parādīsies modalā",
           "default": "<p>Kontraindikācijas informācija šeit.</p>"
         }
