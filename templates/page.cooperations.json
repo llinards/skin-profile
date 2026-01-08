@@ -40,9 +40,14 @@
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
-        "heading": "Sadarbība ar eiropasprojektiem",
+        "heading": "Sadarbība ar eiropas projektiem",
         "subtext": "",
-        "spacing": true
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "template_dropdown_project_GLTNWR": {
