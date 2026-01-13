@@ -3,6 +3,22 @@
 {%- assign apply_url_default = apply_url_default | default: pages['appointment-booking'].url -%}
 {%- assign apply_cta = apply_cta | default: 'Pieteikt' -%}
 
+{%- if label_procedure == blank -%}
+  {%- assign label_procedure = 'general.procedure_table.procedure' | t -%}
+{%- endif -%}
+{%- if label_description == blank -%}
+  {%- assign label_description = 'general.procedure_table.description' | t -%}
+{%- endif -%}
+{%- if label_price == blank -%}
+  {%- assign label_price = 'general.procedure_table.price' | t -%}
+{%- endif -%}
+{%- if label_duration == blank -%}
+  {%- assign label_duration = 'general.procedure_table.duration' | t -%}
+{%- endif -%}
+{%- if label_contraindications == blank -%}
+  {%- assign label_contraindications = 'general.procedure_table.contraindications' | t -%}
+{%- endif -%}
+
 {%- assign procedure_blocks = services | where: 'type', 'procedure' -%}
 
 <div class="space-y-0 mb-6 md:mb-12">
@@ -15,12 +31,12 @@
 
     <!-- Desktop table header -->
     <div class="hidden md:grid md:grid-cols-15 gap-4 font-bold items-center py-3 border-b-2 border-(--color-brand-secondary)">
-      <div class="col-span-4 text-left text-sm">{{ 'general.procedure_table.procedure' | t }}</div>
-      <div class="col-span-4 lg:col-span-5 text-left text-sm">{{ 'general.procedure_table.description' | t }}</div>
-      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.price' | t }}</div>
-      <div class="col-span-2 text-center text-sm">{{ 'general.procedure_table.duration' | t }}</div>
+      <div class="col-span-4 text-left text-sm">{{ label_procedure }}</div>
+      <div class="col-span-4 lg:col-span-5 text-left text-sm">{{ label_description }}</div>
+      <div class="col-span-2 text-center text-sm">{{ label_price }}</div>
+      <div class="col-span-2 text-center text-sm">{{ label_duration }}</div>
       <div class="col-span-3 lg:col-span-2 text-right text-sm">
-        {{ 'general.procedure_table.contraindications' | t }}
+        {{ label_contraindications }}
       </div>
     </div>
 
@@ -69,11 +85,11 @@
 
           <div class="grid grid-cols-3 gap-3 text-sm items-end">
             <div class="space-y-1">
-              <div class="text-gray-500">{{ 'general.procedure_table.price' | t }}</div>
+              <div class="text-gray-500">{{ label_price }}</div>
               <div class="font-bold">{{ procedure_price }}</div>
             </div>
             <div class="space-y-1">
-              <div class="text-gray-500">{{ 'general.procedure_table.duration' | t }}</div>
+              <div class="text-gray-500">{{ label_duration }}</div>
               <div class="font-bold">
                 {%- if procedure_duration != blank -%}
                   {{ procedure_duration }}
@@ -82,7 +98,7 @@
               </div>
             </div>
             <div class="space-y-1">
-              <div class="font-bold text-xs">{{ 'general.procedure_table.contraindications' | t }}</div>
+              <div class="font-bold text-xs">{{ label_contraindications }}</div>
               {%- if contraindications_text != blank -%}
                 <button
                   type="button"

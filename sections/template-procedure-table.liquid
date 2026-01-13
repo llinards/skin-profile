@@ -85,7 +85,12 @@
             services: section.blocks,
             disclaimer: section.settings.disclaimer,
             apply_url_default: apply_url_fallback,
-            apply_cta: section.settings.apply_cta
+            apply_cta: section.settings.apply_cta,
+            label_procedure: section.settings.label_procedure,
+            label_description: section.settings.label_description,
+            label_price: section.settings.label_price,
+            label_duration: section.settings.label_duration,
+            label_contraindications: section.settings.label_contraindications
           %}
         </div>
       </div>
@@ -104,7 +109,12 @@
         services: section.blocks,
         disclaimer: section.settings.disclaimer,
         apply_url_default: apply_url_fallback,
-        apply_cta: section.settings.apply_cta
+        apply_cta: section.settings.apply_cta,
+        label_procedure: section.settings.label_procedure,
+        label_description: section.settings.label_description,
+        label_price: section.settings.label_price,
+        label_duration: section.settings.label_duration,
+        label_contraindications: section.settings.label_contraindications
       %}
     {%- endif -%}
   </div>
@@ -197,6 +207,40 @@
       "id": "apply_cta",
       "label": "Pieteikt poga teksts",
       "default": "Pieteikt"
+    },
+    {
+      "type": "header",
+      "content": "Tabulas kolonnu virsraksti"
+    },
+    {
+      "type": "text",
+      "id": "label_procedure",
+      "label": "Procedūras kolonnas virsraksts",
+      "default": "Procedūra"
+    },
+    {
+      "type": "text",
+      "id": "label_description",
+      "label": "Apraksta kolonnas virsraksts",
+      "default": "Apraksts"
+    },
+    {
+      "type": "text",
+      "id": "label_price",
+      "label": "Cenas kolonnas virsraksts",
+      "default": "Cena"
+    },
+    {
+      "type": "text",
+      "id": "label_duration",
+      "label": "Ilguma kolonnas virsraksts",
+      "default": "Ilgums"
+    },
+    {
+      "type": "text",
+      "id": "label_contraindications",
+      "label": "Kontrindikāciju kolonnas virsraksts",
+      "default": "Kontrindikācijas"
     },
     {
       "type": "checkbox",
