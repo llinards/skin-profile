@@ -430,6 +430,89 @@
         "label_contraindications": "Kontrindikācijas",
         "enable_dropdown": true,
         "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_CaxVdm": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_jyeEWa": {
+          "type": "procedure",
+          "name": "Neauvia Hydro Deluxe 2,5 ml",
+          "settings": {
+            "procedure_name": "Neauvia Hydro Deluxe 2,5 ml",
+            "procedure_description": "Biorevitalizējošs preparāts ilgnoturīgai mitrināšanai un ādas kvalitātes uzlabošanai.",
+            "procedure_price": "€180",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Akūtas ādas infekcijas injekcijas zonā</li><li>Grūtniecība un zīdīšana</li></ul>"
+          }
+        },
+        "procedure_nrDj9p": {
+          "type": "procedure",
+          "name": "Hyalual Xela Rederm 1,8 – 2% 2 ml",
+          "settings": {
+            "procedure_name": "Hyalual Xela Rederm 1,8 – 2% 2 ml",
+            "procedure_description": "Redermalizējošs preparāts ādas tvirtuma, tonusa un mirdzuma atjaunošanai.",
+            "procedure_price": "€180 - €200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
+          }
+        },
+        "procedure_BYRbwa": {
+          "type": "procedure",
+          "name": "Hyalual Electri 0,55% 1,5 ml",
+          "settings": {
+            "procedure_name": "Hyalual Electri 0,55% 1,5 ml",
+            "procedure_description": "Mitrinošs un tonusu atjaunojošs preparāts ādas struktūras uzlabošanai.",
+            "procedure_price": "€160",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smaga ādas iekaisuma slimība injekcijas vietā</li><li>Grūtniecība</li></ul>"
+          }
+        },
+        "procedure_DmBc8a": {
+          "type": "procedure",
+          "name": "Prohilo 2ml",
+          "settings": {
+            "procedure_name": "Prohilo 2ml",
+            "procedure_description": "Stipri koncentrēts hialuronskābes preparāts ādas tvirtuma un elastības uzlabošanai.",
+            "procedure_price": "€250",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi</li><li>Asiņošanas traucējumi</li><li>Grūtniecība un zīdīšana</li></ul>"
+          }
+        },
+        "procedure_thtjFw": {
+          "type": "procedure",
+          "name": "Polinukleotīdi Nucleofill",
+          "settings": {
+            "procedure_name": "Polinukleotīdi Nucleofill",
+            "procedure_description": "Biostimulējošs preparāts šūnu atjaunošanās un dziļas ādas reģenerācijas veicināšanai.",
+            "procedure_price": "€180 - €200",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_jyeEWa",
+        "procedure_nrDj9p",
+        "procedure_BYRbwa",
+        "procedure_DmBc8a",
+        "procedure_thtjFw"
+      ],
+      "name": "Biorevitalizācija",
+      "settings": {
+        "title": "Biorevitalizācija",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "shopify://pages/appointment-booking",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
         "space_bottom": true
       }
     },
@@ -578,6 +661,7 @@
     "template_procedure_table_UMxnrf",
     "template_procedure_table_N9LXVb",
     "template_procedure_table_aTRUCz",
+    "template_procedure_table_CaxVdm",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
