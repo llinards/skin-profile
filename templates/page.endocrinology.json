@@ -106,6 +106,11 @@
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
         "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": true
