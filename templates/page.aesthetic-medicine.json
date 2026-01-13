@@ -371,8 +371,37 @@
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Herpes</li><li>Alerģijas</li><li>Grūtniecība</li></ul>"
           }
-        },
-        "procedure_MjxjH9": {
+        }
+      },
+      "block_order": [
+        "procedure_fVYPUD",
+        "procedure_HWj8Fm",
+        "procedure_4GHNGw",
+        "procedure_6tcYW4",
+        "procedure_a4XAJr",
+        "procedure_xKqtxA"
+      ],
+      "name": "Fillerju injekcijas",
+      "settings": {
+        "title": "Fillerju injekcijas",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "shopify://pages/appointment-booking",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_aTRUCz": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_bciqCx": {
           "type": "procedure",
           "name": "APTOS diegi",
           "settings": {
@@ -385,17 +414,11 @@
         }
       },
       "block_order": [
-        "procedure_fVYPUD",
-        "procedure_HWj8Fm",
-        "procedure_4GHNGw",
-        "procedure_6tcYW4",
-        "procedure_a4XAJr",
-        "procedure_xKqtxA",
-        "procedure_MjxjH9"
+        "procedure_bciqCx"
       ],
-      "name": "Citas procedūras",
+      "name": "Kontūrplastika ar diegiem Aptos ",
       "settings": {
-        "title": "Citas procedūras",
+        "title": "Kontūrplastika ar diegiem Aptos ",
         "content": "",
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
@@ -554,6 +577,7 @@
     "template_procedure_table_B3cdxV",
     "template_procedure_table_UMxnrf",
     "template_procedure_table_N9LXVb",
+    "template_procedure_table_aTRUCz",
     "template_services_carousel_grid_cwjP3x",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
