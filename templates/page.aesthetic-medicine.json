@@ -446,10 +446,22 @@
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
+        },
+        "procedure_rdXLnt": {
+          "type": "procedure",
+          "name": "PB serums enzīmu terapija",
+          "settings": {
+            "procedure_name": "PB serums enzīmu terapija",
+            "procedure_description": "Audu remodelēšana, lai samazinātu liekos tauku depozītus, mīkstinātu fibrozi un rētas, uzlabotu ādas struktūru.",
+            "procedure_price": "€150 - €350",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
         }
       },
       "block_order": [
-        "procedure_TJPnqp"
+        "procedure_TJPnqp",
+        "procedure_rdXLnt"
       ],
       "name": "Mezoterapija",
       "settings": {
