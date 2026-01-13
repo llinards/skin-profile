@@ -46,7 +46,12 @@
       "settings": {
         "heading": "Dermatoloģija",
         "subtext": "<p>Āda ir mūsu vislielākais orgāns un dzīves laikā tā saskaras ar dažādām problēmām, kuras mums palīdz atrisināt dermatologs. Ja Jums ir radušās jebkādas izmaiņas ādas stāvoklī – nieze, izsitumi, iekaisumi, jaunveidojumi, izaugumi, nekavējoties vēršaties pie mums.</p>",
-        "spacing": false
+        "spacing": false,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
       }
     },
     "main": {
@@ -137,6 +142,11 @@
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
         "enable_dropdown": false,
         "open_by_default": false,
         "space_bottom": false
