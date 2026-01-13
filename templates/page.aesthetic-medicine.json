@@ -490,6 +490,17 @@
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Autoimūnas saslimšanas</li><li>Smagas sistēmiskas saslimšanas</li><li>Grūtniecība</li></ul>"
           }
+        },
+        "procedure_PXTGrd": {
+          "type": "procedure",
+          "name": "Fillmed NCTF 135 HA",
+          "settings": {
+            "procedure_name": "Fillmed NCTF 135 HA",
+            "procedure_description": "Intensīva ādas mitrināšana un tvirtuma uzlabošana ar hialuronskābes un aktīvo vielu kokteili.",
+            "procedure_price": "€160",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
         }
       },
       "block_order": [
@@ -497,7 +508,8 @@
         "procedure_nrDj9p",
         "procedure_BYRbwa",
         "procedure_DmBc8a",
-        "procedure_thtjFw"
+        "procedure_thtjFw",
+        "procedure_PXTGrd"
       ],
       "name": "Biorevitalizācija",
       "settings": {
