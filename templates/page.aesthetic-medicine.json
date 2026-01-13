@@ -444,7 +444,7 @@
             "procedure_description": "Invazīva bioloģiski aktīvo vielu ievadīšana ādā ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam.",
             "procedure_price": "€80 - €130",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
+            "contraindications_text": ""
           }
         },
         "procedure_rdXLnt": {
@@ -455,7 +455,7 @@
             "procedure_description": "Audu remodelēšana, lai samazinātu liekos tauku depozītus, mīkstinātu fibrozi un rētas, uzlabotu ādas struktūru.",
             "procedure_price": "€150 - €350",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
+            "contraindications_text": ""
           }
         }
       },
