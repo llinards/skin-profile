@@ -422,6 +422,27 @@
             "procedure_duration": "40",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_EAhgyr": {
+          "type": "procedure",
+          "name": "Kāju priekšpuse + zonas 2, 4, 5 – kāju aizmugure + sēža",
+          "settings": {
+            "procedure_name": "Kāju priekšpuse + zonas 2, 4, 5 – kāju aizmugure + sēža",
+            "procedure_description": "-",
+            "procedure_price": "€50 | 6 reizes - €288",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>-</p>"
+          }
+        },
+        "procedure_4V4Neh": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
         }
       },
       "block_order": [
@@ -429,7 +450,9 @@
         "procedure_pV9TCR",
         "procedure_hxkNAG",
         "procedure_KERfBE",
-        "procedure_EgNTpG"
+        "procedure_EgNTpG",
+        "procedure_EAhgyr",
+        "procedure_4V4Neh"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
