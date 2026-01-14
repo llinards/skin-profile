@@ -488,6 +488,17 @@
             "procedure_duration": "40",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
+        },
+        "procedure_LAQxrU": {
+          "type": "procedure",
+          "name": "Roku apakšdelmi un augšdelmi",
+          "settings": {
+            "procedure_name": "Roku apakšdelmi un augšdelmi",
+            "procedure_description": "-",
+            "procedure_price": "€45 | 6 reizes – €260",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
@@ -501,7 +512,8 @@
         "procedure_VLkRbD",
         "procedure_RPJGrD",
         "procedure_JmLQkw",
-        "procedure_jNFTgg"
+        "procedure_jNFTgg",
+        "procedure_LAQxrU"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
