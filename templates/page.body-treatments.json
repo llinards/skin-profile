@@ -362,6 +362,25 @@
         "label_contraindications": "Kontrindikācijas",
         "enable_dropdown": true,
         "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_Ez6AUV": {
+      "type": "template-procedure-table",
+      "name": "Radio frekvences siltuma terapija ",
+      "settings": {
+        "title": "Radio frekvences siltuma terapija",
+        "content": "<p>Neinvazīva procedūra, kas ar kontrolētu siltuma iedarbību stimulē kolagēna veidošanos, nostiprina ādu, uzlabo tās tonusu un elastību, kā arī palīdz samazināt tauku uzkrājumus un tūsku. Rezultāts – stingrāka, gludāka un vizuāli paceltāka āda bez atlabšanas laika.</p>",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Zonas",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
         "space_bottom": true
       }
     },
@@ -508,6 +527,7 @@
     "template_procedure_table_q4pgg9",
     "template_procedure_table_zAEkkn",
     "template_procedure_table_RciTEC",
+    "template_procedure_table_Ez6AUV",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
