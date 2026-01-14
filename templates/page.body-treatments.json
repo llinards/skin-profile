@@ -444,6 +444,17 @@
             "procedure_duration": "30",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_VLkRbD": {
+          "type": "procedure",
+          "name": "Vēders un gurni",
+          "settings": {
+            "procedure_name": "Vēders un gurni",
+            "procedure_description": "-",
+            "procedure_price": "€45 | 6 reizes – 258 €",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
@@ -453,7 +464,8 @@
         "procedure_KERfBE",
         "procedure_EgNTpG",
         "procedure_EAhgyr",
-        "procedure_4V4Neh"
+        "procedure_4V4Neh",
+        "procedure_VLkRbD"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
