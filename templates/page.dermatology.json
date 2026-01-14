@@ -219,7 +219,7 @@
           "settings": {
             "procedure_name": "Katrs nākamais veidojums",
             "procedure_description": "-",
-            "procedure_price": "+ €10",
+            "procedure_price": "+€10",
             "procedure_duration": "60",
             "contraindications_text": "<p>-</p>"
           }
