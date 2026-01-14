@@ -210,7 +210,7 @@
             "procedure_description": "-",
             "procedure_price": "€20",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+            "contraindications_text": "<p>-</p>"
           }
         },
         "procedure_U4teR9": {
@@ -226,12 +226,13 @@
         },
         "procedure_iPDKiq": {
           "type": "procedure",
+          "name": "Visa ķermeņa veidojumu apskate",
           "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
+            "procedure_name": "Visa ķermeņa veidojumu apskate",
+            "procedure_description": "-",
+            "procedure_price": "€70",
             "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+            "contraindications_text": "<p>-as informācija šeit.</p>"
           }
         }
       },
