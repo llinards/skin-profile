@@ -400,12 +400,24 @@
             "procedure_duration": "40",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_KERfBE": {
+          "type": "procedure",
+          "name": "Sēža",
+          "settings": {
+            "procedure_name": "Sēža",
+            "procedure_description": "-",
+            "procedure_price": "€30 | 6 reizes – €168",
+            "procedure_duration": "30",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
         "procedure_neaqVJ",
         "procedure_pV9TCR",
-        "procedure_hxkNAG"
+        "procedure_hxkNAG",
+        "procedure_KERfBE"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
