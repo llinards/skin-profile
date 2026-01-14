@@ -118,7 +118,7 @@
           "settings": {
             "tab_label": "Simulācija",
             "heading": "Simulācija",
-            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem.</p>",
+            "text": "<p>Simulējiet estētiskās procedūras, lai palīdzētu pacientiem vizualizēt vēlamo rezultātu uz sejas. Dažādās simulācijas atvieglo komunikāciju par iespējamiem risinājumiem. Diagnostikas laikā, mēs varam simulēt pacienta vēlamo procedūru rezultātu uz sejas, kas atvieglo un ļauj vizualizēt labāk iespējamos risinājumus.</p>",
             "image": "shopify://shop_images/Mini_preOp_simu.gif",
             "alt_text": "Simulācijas animācija",
             "button_text": "Learn More",
@@ -132,7 +132,7 @@
           "settings": {
             "tab_label": "3D attēlojums",
             "heading": "3D attēlojums",
-            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
+            "text": "<p>Veicot 3D ādas analīzi, sistēma ļauj precīzi novērtēt grumbu daudzumu, ādas porainību, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju, kas ļauj precīzi izstrādāt ārstēšanas plānu un izvērtēt procedūru rezultātus.</p>",
             "image": "shopify://shop_images/Mini_preOp_display-ezgif.com-optimize.gif",
             "alt_text": "Tab image",
             "button_text": "Learn More",
