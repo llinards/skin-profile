@@ -257,9 +257,9 @@
         },
         "procedure_zaQN4b": {
           "type": "procedure",
-          "name": "Classic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
+          "name": "Sejas tīrīšana - Classic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
           "settings": {
-            "procedure_name": "Sejas tīrīšanaClassic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
+            "procedure_name": "Sejas tīrīšana - Classic (2 procedūras + mājas kosmētika) (SHRAMMEK GREEN PEEL)",
             "procedure_description": "Klasiskais Green Peel kurss ar intensīvu augu pīlingu un mājas kopšanas līdzekļiem.",
             "procedure_price": "€230",
             "procedure_duration": "60",
@@ -322,8 +322,8 @@
           "type": "procedure",
           "name": "Pollogen Geneo X sejas ādai",
           "settings": {
-            "procedure_name": "Pollogen Geneo X sejas ādai",
-            "procedure_description": "PREMIUM sejas procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu viena seansa laikā.",
+            "procedure_name": "Pollogen Geneo X sejas procedūra",
+            "procedure_description": "Premium procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu vienā seansā, nodrošinot ādas atjaunošanu, tonusa uzlabošanu un liftinga efektu.",
             "procedure_price": "€150",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>"
@@ -331,10 +331,10 @@
         },
         "procedure_nqzmXQ": {
           "type": "procedure",
-          "name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
+          "name": "Pollogen Geneo X sejas, kakla un dekoltē procedūra ",
           "settings": {
-            "procedure_name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
-            "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai un liftingam.",
+            "procedure_name": "Pollogen Geneo X sejas, kakla un dekoltē procedūra",
+            "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai, nostiprināšanai un liftingam.",
             "procedure_price": "€170",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>"
