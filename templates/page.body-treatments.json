@@ -387,13 +387,25 @@
             "procedure_description": "-",
             "procedure_price": "€25 | 6 reizes – €140",
             "procedure_duration": "30",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+            "contraindications_text": "<p>-</p>"
+          }
+        },
+        "procedure_hxkNAG": {
+          "type": "procedure",
+          "name": "Kāju priekšpuse",
+          "settings": {
+            "procedure_name": "Kāju priekšpuse",
+            "procedure_description": "-",
+            "procedure_price": "€40 | 6 reizes – €220",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>-</p>"
           }
         }
       },
       "block_order": [
         "procedure_neaqVJ",
-        "procedure_pV9TCR"
+        "procedure_pV9TCR",
+        "procedure_hxkNAG"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
