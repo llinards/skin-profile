@@ -104,28 +104,6 @@
             "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>"
           }
         },
-        "procedure_6bga9h": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
-            "procedure_description": "Kombinēta bikini un sēžas zona.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>"
-          }
-        },
-        "procedure_i37yRD": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – pilns + sēžas intīmā zona",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – pilns + sēžas intīmā zona",
-            "procedure_description": "Plaša epilācijas zona.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>"
-          }
-        },
         "procedure_kgAmLU": {
           "type": "procedure",
           "name": "Bikini vīriešiem – priekšpuse",
@@ -135,17 +113,6 @@
             "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>"
-          }
-        },
-        "procedure_xrAidR": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
-            "procedure_description": "Pilna intīmās zonas epilācija.",
-            "procedure_price": "€70",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>"
           }
         },
         "procedure_NTiAWV": {
@@ -164,15 +131,131 @@
         "procedure_rFFaQA",
         "procedure_8ged3R",
         "procedure_bkd4KG",
-        "procedure_6bga9h",
-        "procedure_i37yRD",
         "procedure_kgAmLU",
-        "procedure_xrAidR",
         "procedure_NTiAWV"
       ],
       "name": "Zonas",
       "settings": {
         "title": "Zonas",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "shopify://pages/appointment-booking",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Zonas",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_jMzci8": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_RWb9CA": {
+          "type": "procedure",
+          "name": "Paduses",
+          "settings": {
+            "procedure_name": "Paduses",
+            "procedure_description": "Lāzerepilācija padusēs.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs iedegums</li><li>Fotosensitīvi medikamenti</li><li>Grūtniecība (piesardzīgi)</li></ul>"
+          }
+        },
+        "procedure_NiVgbx": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas",
+            "procedure_description": "Sānu joslu epilācija.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Infekcija</li><li>Svaigs apdegums</li><li>Dermatīts</li></ul>"
+          }
+        },
+        "procedure_agHeKh": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns",
+            "procedure_description": "Pilna bikini zona.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Infekcija</li></ul>"
+          }
+        },
+        "procedure_3gnmFz": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
+            "procedure_description": "Kombinēta bikini un sēžas zona.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Sēnīšu infekcija</li><li>Dermatīts</li><li>Grūtniecība</li></ul>"
+          }
+        },
+        "procedure_WQmjwF": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns + sēžas intīmā zona",
+            "procedure_description": "Plaša epilācijas zona.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Svaigs apdegums</li><li>Sāpīgas ādas slimības</li><li>Herpes</li></ul>"
+          }
+        },
+        "procedure_njF6Q4": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse",
+            "procedure_description": "Vīriešu bikini epilācija.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Folikulīts</li><li>Infekcija</li><li>Svaigs apdegums</li></ul>"
+          }
+        },
+        "procedure_66H3DL": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse + sēžas zona",
+            "procedure_description": "Pilna intīmās zonas epilācija.",
+            "procedure_price": "€70",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Herpes</li><li>Dermatīts</li><li>Traumas zonā</li></ul>"
+          }
+        },
+        "procedure_RREWnW": {
+          "type": "procedure",
+          "name": "Sēža",
+          "settings": {
+            "procedure_name": "Sēža",
+            "procedure_description": "Sēžas zonas epilācija.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Dermatīts</li><li>Infekcija</li><li>Sēnīte</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_RWb9CA",
+        "procedure_NiVgbx",
+        "procedure_agHeKh",
+        "procedure_3gnmFz",
+        "procedure_WQmjwF",
+        "procedure_njF6Q4",
+        "procedure_66H3DL",
+        "procedure_RREWnW"
+      ],
+      "name": "Komplekti",
+      "settings": {
+        "title": "Komplekti",
         "content": "",
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
@@ -755,6 +838,7 @@
     "main",
     "template_heading_4i8UtF",
     "template_procedure_table_wpJzWq",
+    "template_procedure_table_jMzci8",
     "template_procedure_table_KbiR6F",
     "template_procedure_table_gVVzqn",
     "template_procedure_table_FfwFrg",
