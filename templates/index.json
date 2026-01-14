@@ -84,15 +84,15 @@
     "template_tab_switcher_nCtJiT": {
       "type": "template-tab-switcher",
       "blocks": {
-        "tab_qmGnQx": {
+        "tab_fDqTj6": {
           "type": "tab",
-          "name": "3D attēlojums",
+          "name": "Ādas analīze",
           "settings": {
-            "tab_label": "3D attēlojums",
-            "heading": "3D attēlojums",
-            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
-            "image": "shopify://shop_images/Mini_preOp_display-ezgif.com-optimize.gif",
-            "alt_text": "Tab image",
+            "tab_label": "Ādas analīze",
+            "heading": "Ādas analīze",
+            "text": "<p>Uzlabojiet komunikāciju ar pacientiem, izmantojot detalizētu 3D ādas analīzi un personalizētus pārskatus. Sistēma ļauj precīzi novērtēt - grumbas, poras, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju.</p>",
+            "image": "shopify://shop_images/Mini_preOp_skincare-ezgif.com-optimize.gif",
+            "alt_text": "Ādas analīzes animācija",
             "button_text": "Learn More",
             "button_url": "",
             "button_style": "brown"
@@ -126,15 +126,15 @@
             "button_style": "brown"
           }
         },
-        "tab_fDqTj6": {
+        "tab_qmGnQx": {
           "type": "tab",
-          "name": "Ādas analīze",
+          "name": "3D attēlojums",
           "settings": {
-            "tab_label": "Ādas analīze",
-            "heading": "Ādas analīze",
-            "text": "<p>Uzlabojiet komunikāciju ar pacientiem, izmantojot detalizētu 3D ādas analīzi un personalizētus pārskatus. Sistēma ļauj precīzi novērtēt - grumbas, poras, ādas taukainību, tonālā vienmērīgumu, asinsvadu izmaiņas un pigmentāciju.</p>",
-            "image": "shopify://shop_images/Mini_preOp_skincare-ezgif.com-optimize.gif",
-            "alt_text": "Ādas analīzes animācija",
+            "tab_label": "3D attēlojums",
+            "heading": "3D attēlojums",
+            "text": "<p>3D tehnoloģija ļauj unikāli vizualizēt sejas formas no jebkura leņķa. Ar anatomiskajiem atskaites punktiem papildināts 3D attēlojums ir vienīgais veids, kā iegūt standartizētus un salīdzināmus attēlus visu vizīšu laikā. Pēc definīcijas estētisko procedūru radītās apjoma izmaiņas nav iespējams pareizi novērtēt, izmantojot parastus 2D attēlus.</p>",
+            "image": "shopify://shop_images/Mini_preOp_display-ezgif.com-optimize.gif",
+            "alt_text": "Tab image",
             "button_text": "Learn More",
             "button_url": "",
             "button_style": "brown"
@@ -142,10 +142,10 @@
         }
       },
       "block_order": [
-        "tab_qmGnQx",
+        "tab_fDqTj6",
         "tab_Kc7MJQ",
         "tab_wtY7kB",
-        "tab_fDqTj6"
+        "tab_qmGnQx"
       ],
       "name": "Tab Switcher Section",
       "settings": {}
