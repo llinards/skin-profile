@@ -483,10 +483,10 @@
           "name": "Roku apakšdelmi",
           "settings": {
             "procedure_name": "Roku apakšdelmi",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_description": "-",
             "procedure_price": "€30 | 6 reizes – €168",
             "procedure_duration": "40",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+            "contraindications_text": "<p>-</p>"
           }
         },
         "procedure_LAQxrU": {
