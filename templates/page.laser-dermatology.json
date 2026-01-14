@@ -493,10 +493,22 @@
             "procedure_duration": "60",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_VetG3k": {
+          "type": "procedure",
+          "name": "CoolPeel + PRF injekcijas",
+          "settings": {
+            "procedure_name": "CoolPeel + PRF injekcijas",
+            "procedure_description": "-",
+            "procedure_price": "€299",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
-        "procedure_GGyxa7"
+        "procedure_GGyxa7",
+        "procedure_VetG3k"
       ],
       "name": "Cool peel",
       "settings": {
