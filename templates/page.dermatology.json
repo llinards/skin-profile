@@ -271,10 +271,22 @@
             "procedure_duration": "60",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_n7ciJr": {
+          "type": "procedure",
+          "name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā",
+          "settings": {
+            "procedure_name": "Ādas punch biopsija ar ligatūru lokālā anestēzijā",
+            "procedure_description": "(histoloģiskā izmeklēšana nav iekļauta cenā)",
+            "procedure_price": "€80",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
-        "procedure_XpgENy"
+        "procedure_XpgENy",
+        "procedure_n7ciJr"
       ],
       "name": "Ādas histoloģiskā izmeklēšana biopsija ",
       "settings": {
