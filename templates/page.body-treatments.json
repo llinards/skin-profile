@@ -378,10 +378,22 @@
             "procedure_duration": "30",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_pV9TCR": {
+          "type": "procedure",
+          "name": "Kāju priekšpuse virs ceļiem",
+          "settings": {
+            "procedure_name": "Kāju priekšpuse virs ceļiem",
+            "procedure_description": "-",
+            "procedure_price": "€25 | 6 reizes – €140",
+            "procedure_duration": "30",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
         }
       },
       "block_order": [
-        "procedure_neaqVJ"
+        "procedure_neaqVJ",
+        "procedure_pV9TCR"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
