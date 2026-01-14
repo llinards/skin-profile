@@ -78,7 +78,7 @@
           "settings": {
             "procedure_name": "Dermatologa konsultācija",
             "procedure_description": "Ādas, matu un nagu stāvokļa izvērtēšana, diagnozes noteikšana un ārstēšanas plāna izstrāde.",
-            "procedure_price": "€55",
+            "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Nav specifisku absolūtu kontrindikāciju</li><li>Akūta, dzīvību apdraudoša stāvokļa gadījumā jāvēršas neatliekamajā palīdzībā</li><li>Nepilngadīgajiem nepieciešama vecāku vai aizbildņa klātbūtne</li></ul>"
           }
@@ -135,12 +135,58 @@
         "procedure_E7CNM8",
         "procedure_rYkg3p"
       ],
-      "name": "Procedūru tabula",
+      "name": "Dermatoloģijas pakalpojumi",
       "settings": {
         "title": "Dermatoloģijas pakalpojumi",
         "content": "",
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_BfqGKY": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_q97LmQ": {
+          "type": "procedure",
+          "name": "1 veidojuma noņemšana",
+          "settings": {
+            "procedure_name": "1 veidojuma noņemšana",
+            "procedure_description": "-",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>-</p>"
+          }
+        },
+        "procedure_QgwLNj": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_q97LmQ",
+        "procedure_QgwLNj"
+      ],
+      "name": "Kriodesrtrukcija ar šķidro slāpekli ",
+      "settings": {
+        "title": "Kriodesrtrukcija ar šķidro slāpekli",
+        "content": "<p>Kārpu, papilomu un citu labdabīgu ādas veidojumu noņemšana, izmantojot šķidro slāpekli.</p>",
+        "disclaimer": "",
+        "apply_url": "",
         "apply_cta": "Pieteikt",
         "label_procedure": "Procedūra",
         "label_description": "Apraksts",
@@ -293,6 +339,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_procedure_table_KpFDbn",
+    "template_procedure_table_BfqGKY",
     "template_services_bN8zJK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
