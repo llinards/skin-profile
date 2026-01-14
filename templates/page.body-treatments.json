@@ -436,12 +436,13 @@
         },
         "procedure_4V4Neh": {
           "type": "procedure",
+          "name": "Vēdera priekšpuse",
           "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+            "procedure_name": "Vēdera priekšpuse",
+            "procedure_description": "-",
+            "procedure_price": "€40 | 6 reizes – €222",
+            "procedure_duration": "30",
+            "contraindications_text": "<p>-</p>"
           }
         }
       },
