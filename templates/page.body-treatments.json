@@ -466,6 +466,17 @@
             "procedure_duration": "50",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_JmLQkw": {
+          "type": "procedure",
+          "name": "Krūtis",
+          "settings": {
+            "procedure_name": "Krūtisna",
+            "procedure_description": "-",
+            "procedure_price": "€40 | 6 reizes – €222",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
@@ -477,7 +488,8 @@
         "procedure_EAhgyr",
         "procedure_4V4Neh",
         "procedure_VLkRbD",
-        "procedure_RPJGrD"
+        "procedure_RPJGrD",
+        "procedure_JmLQkw"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
