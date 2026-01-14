@@ -504,11 +504,23 @@
             "procedure_duration": "60",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_TEf4XU": {
+          "type": "procedure",
+          "name": "CoolPeel sejas atjaunošana",
+          "settings": {
+            "procedure_name": "CoolPeel sejas atjaunošana",
+            "procedure_description": "-",
+            "procedure_price": "€199",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
         "procedure_GGyxa7",
-        "procedure_VetG3k"
+        "procedure_VetG3k",
+        "procedure_TEf4XU"
       ],
       "name": "Cool peel",
       "settings": {
