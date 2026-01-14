@@ -211,28 +211,6 @@
     "template_procedure_table_QfJjmK": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_7gW8qw": {
-          "type": "procedure",
-          "name": "Pollogen Geneo X sejas ādai",
-          "settings": {
-            "procedure_name": "Pollogen Geneo X sejas ādai",
-            "procedure_description": "PREMIUM sejas procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu viena seansa laikā.",
-            "procedure_price": "€150",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>"
-          }
-        },
-        "procedure_MWajCe": {
-          "type": "procedure",
-          "name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
-          "settings": {
-            "procedure_name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
-            "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai un liftingam.",
-            "procedure_price": "€170",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>"
-          }
-        },
         "procedure_C4MHGc": {
           "type": "procedure",
           "name": "V-Carbon System",
@@ -288,28 +266,6 @@
             "contraindications_text": "<ul><li>Ļoti jutīga āda ar barjeras bojājumu</li><li>Sistēmiska retinoīdu terapija</li><li>Grūtniecība (piesardzība) informācija šeit.</li></ul>"
           }
         },
-        "procedure_jttCHE": {
-          "type": "procedure",
-          "name": "Institut Esthederm Oxy",
-          "settings": {
-            "procedure_name": "Institut Esthederm Oxy",
-            "procedure_description": "Procedūra ar skābekli bagātinātu formulu, kas stimulē ādas šūnu funkcionēšanu un vielmaiņu.",
-            "procedure_price": "€80",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret kādu no sastāvdaļām</li><li>Aktīvs dermatīts vai ekzēma</li><li>Svaigs saules apdegums</li></ul>"
-          }
-        },
-        "procedure_qVkGCt": {
-          "type": "procedure",
-          "name": "Mikroadatu terapija",
-          "settings": {
-            "procedure_name": "Mikroadatu terapija",
-            "procedure_description": "Dziļa ādas tīrīšana ar Pretnovecošanās terapija, ievadot zemādā bioloģiski aktīvās vielas un stimulējot dabīgu ādas atjaunošanos - cena pēc izvēlētā protokola (vadoties no cenrāža)",
-            "procedure_price": "-",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi vai antikoagulantu terapija</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība</li></ul>"
-          }
-        },
         "procedure_xL34pc": {
           "type": "procedure",
           "name": "PRX pīlings",
@@ -331,83 +287,67 @@
             "procedure_duration": "60",
             "contraindications_text": "<ul><li>Smagas ādas iekaisuma slimības</li><li>Sistēmiska retinoīdu terapija</li><li>Ļoti jutīga vai bojāta ādas barjera</li></ul>"
           }
-        },
-        "procedure_nTabMC": {
-          "type": "procedure",
-          "name": "Derma Pen ar Eksosomām V-Tech",
-          "settings": {
-            "procedure_name": "Derma Pen ar Eksosomām V-Tech",
-            "procedure_description": "Mikroadatu terapija ar eksosomām ādas reģenerācijai, kolagēna stimulācijai un struktūras uzlabošanai.",
-            "procedure_price": "€150",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Asiņošanas traucējumi</li><li>Aktīvas ādas infekcijas</li><li>Grūtniecība un zīdīšana</li></ul>"
-          }
-        },
-        "procedure_TGrmjm": {
-          "type": "procedure",
-          "name": "Mezoterapija",
-          "settings": {
-            "procedure_name": "Mezoterapija",
-            "procedure_description": "Invazīva bioloģiski aktīvo vielu ievadīšana ādā ilgnoturīgam pretnovecošanās un pretpigmentācijas efektam.",
-            "procedure_price": "€80 - €130",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret injicējamām vielām</li><li>Autoimūnas saslimšanas aktīvā fāzē</li><li>Grūtniecība</li></ul>"
-          }
-        },
-        "procedure_MYNHLT": {
-          "type": "procedure",
-          "name": "PB serums enzīmu terapija",
-          "settings": {
-            "procedure_name": "PB serums enzīmu terapija",
-            "procedure_description": "Audu remodelēšana, lai samazinātu liekos tauku depozītus, mīkstinātu fibrozi un rētas, uzlabotu ādas struktūru.",
-            "procedure_price": "€150 - €350",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret preparāta sastāvdaļām</li><li>Smagas aknu vai nieru saslimšanas</li><li>Grūtniecība</li></ul>"
-          }
-        },
-        "procedure_GCFzRQ": {
-          "type": "procedure",
-          "name": "Fillmed NCTF 135 HA",
-          "settings": {
-            "procedure_name": "Fillmed NCTF 135 HA",
-            "procedure_description": "Intensīva ādas mitrināšana un tvirtuma uzlabošana ar hialuronskābes un aktīvo vielu kokteili.",
-            "procedure_price": "€160",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Alerģija pret hialuronskābi vai citiem komponentiem</li><li>Autoimūnas saslimšanas aktīvā stadijā</li><li>Grūtniecība un zīdīšana</li></ul>"
-          }
-        },
-        "procedure_wcg9yy": {
-          "type": "procedure",
-          "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
-          }
         }
       },
       "block_order": [
-        "procedure_7gW8qw",
-        "procedure_MWajCe",
         "procedure_C4MHGc",
         "procedure_7kwfYP",
         "procedure_Ug7WDE",
         "procedure_iDbCxA",
         "procedure_zaQN4b",
-        "procedure_jttCHE",
-        "procedure_qVkGCt",
         "procedure_xL34pc",
-        "procedure_DDriaJ",
-        "procedure_nTabMC",
-        "procedure_TGrmjm",
-        "procedure_MYNHLT",
-        "procedure_GCFzRQ",
-        "procedure_wcg9yy"
+        "procedure_DDriaJ"
       ],
-      "name": "Pollogen Geneo X un pīlingi",
+      "name": "Pīlingi",
       "settings": {
-        "title": "Pollogen Geneo X un pīlingi",
+        "title": "Pīlingi",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "shopify://pages/appointment-booking",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
+    "template_procedure_table_gpGreq": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_G3KUie": {
+          "type": "procedure",
+          "name": "Pollogen Geneo X sejas ādai",
+          "settings": {
+            "procedure_name": "Pollogen Geneo X sejas ādai",
+            "procedure_description": "PREMIUM sejas procedūra, kas apvieno OxyGeneo™, TriPollar RF, ESA un ultraskaņu viena seansa laikā.",
+            "procedure_price": "€150",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Grūtniecība (piesardzība RF un dažām tehnoloģijām)</li><li>Sirds stimulatora vai metāla implanti apstrādes zonā</li><li>Aktīvas ādas infekcijas vai atvērtas brūces</li></ul>"
+          }
+        },
+        "procedure_nqzmXQ": {
+          "type": "procedure",
+          "name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
+          "settings": {
+            "procedure_name": "Pollogen Geneo X sejas ādai, kaklam un dekoltē zonai",
+            "procedure_description": "Kompleksa Geneo X procedūra sejas, kakla un dekoltē zonas ādas atjaunošanai un liftingam.",
+            "procedure_price": "€170",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li>Smagas kardiovaskulāras saslimšanas</li><li>Grūtniecība</li><li>Fotosensitivitāti izraisošu medikamentu lietošana</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_G3KUie",
+        "procedure_nqzmXQ"
+      ],
+      "name": "Pollogen Geneo X",
+      "settings": {
+        "title": "Pollogen Geneo X",
         "content": "",
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
@@ -565,6 +505,7 @@
     "template_heading_RLVJwU",
     "template_procedure_table_UXCkTh",
     "template_procedure_table_QfJjmK",
+    "template_procedure_table_gpGreq",
     "template_services_carousel_grid_r7FVeG",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
