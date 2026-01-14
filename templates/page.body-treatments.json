@@ -411,13 +411,25 @@
             "procedure_duration": "30",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_EgNTpG": {
+          "type": "procedure",
+          "name": "Kāju aizmugure",
+          "settings": {
+            "procedure_name": "Kāju aizmugure",
+            "procedure_description": "-",
+            "procedure_price": "€40 | 6 reizes - €210",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>-</p>"
+          }
         }
       },
       "block_order": [
         "procedure_neaqVJ",
         "procedure_pV9TCR",
         "procedure_hxkNAG",
-        "procedure_KERfBE"
+        "procedure_KERfBE",
+        "procedure_EgNTpG"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
