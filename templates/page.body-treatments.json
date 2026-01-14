@@ -367,6 +367,22 @@
     },
     "template_procedure_table_Ez6AUV": {
       "type": "template-procedure-table",
+      "blocks": {
+        "procedure_neaqVJ": {
+          "type": "procedure",
+          "name": "Kāju aizmugure (ikri)",
+          "settings": {
+            "procedure_name": "Kāju aizmugure (ikri)",
+            "procedure_description": "-",
+            "procedure_price": "€25 | 6 reizes – €140",
+            "procedure_duration": "30",
+            "contraindications_text": "<p>-</p>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_neaqVJ"
+      ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
         "title": "Radio frekvences siltuma terapija",
