@@ -219,15 +219,26 @@
           "settings": {
             "procedure_name": "Katrs nākamais veidojums",
             "procedure_description": "-",
-            "procedure_price": "€10",
+            "procedure_price": "+ €10",
             "procedure_duration": "60",
             "contraindications_text": "<p>-</p>"
+          }
+        },
+        "procedure_iPDKiq": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
         }
       },
       "block_order": [
         "procedure_zxgGMi",
-        "procedure_U4teR9"
+        "procedure_U4teR9",
+        "procedure_iPDKiq"
       ],
       "name": "Ādas veidojumu optiskā dermatoskopija",
       "settings": {
