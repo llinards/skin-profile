@@ -477,6 +477,17 @@
             "procedure_duration": "40",
             "contraindications_text": "<p>-</p>"
           }
+        },
+        "procedure_jNFTgg": {
+          "type": "procedure",
+          "name": "Roku apakšdelmi",
+          "settings": {
+            "procedure_name": "Roku apakšdelmi",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€30 | 6 reizes – €168",
+            "procedure_duration": "40",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
         }
       },
       "block_order": [
@@ -489,7 +500,8 @@
         "procedure_4V4Neh",
         "procedure_VLkRbD",
         "procedure_RPJGrD",
-        "procedure_JmLQkw"
+        "procedure_JmLQkw",
+        "procedure_jNFTgg"
       ],
       "name": "Radio frekvences siltuma terapija ",
       "settings": {
