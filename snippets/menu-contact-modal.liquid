@@ -120,7 +120,11 @@
             {% assign info_menu = linklists['information-menu'] %}
 
             {% for link in info_menu.links %}
-              {% if link.title == 'Kā nokļūt pie mums?' or link.title == 'Atstāt atsauksmi Google' %}
+              {% if link.title == 'Kā nokļūt pie mums?'
+                or link.title == 'Atstāt atsauksmi Google'
+                or link.title == 'How to get to us?'
+                or link.title == 'Leave a review on Google'
+              %}
                 <li>
                   <a
                     href="{{ link.url }}"
