@@ -48,7 +48,7 @@
       {% render 'product-image-mobile' %}
 
       <!-- PRODUCT DESCRIPTION -->
-      <div class="hidden md:block space-y-4">{{ product.description }}</div>
+      <div class="hidden md:block space-y-4">{{ product.description | truncatewords: 100 | truncate: 700 }}</div>
       {% assign products_usage = 'products.description' | t %}
       <div class="md:hidden">
         {% render 'dropdown-description',
