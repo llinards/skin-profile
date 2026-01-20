@@ -60,13 +60,15 @@
         "add_top_padding": true
       }
     },
-    "template_text_section_JPJC6T": {
-      "type": "template-text-only",
-      "name": "Teksta sadaļa",
+    "template_before_after_mBBpQ6": {
+      "type": "template-before-after",
+      "name": "Pirms un Pēc Sadaļa",
       "settings": {
         "heading": "PIE MUMS PROCEDŪRAS VEIC AR JAUNĀKĀS PAAUDZES LĀZERTEHNOLOĢIJĀM",
         "text": "<h3><strong>ALMA Harmony XL PRO (Izraēla)</strong></h3><ul><li>Multifunkcionāla platforma ar plašu procedūru klāstu</li><li>Saudzējošas un efektīvas metodes</li><li>Lieto: kuperozes un rozācijas ārstēšanai/profilaksei, poru sašaurināšanai, liftingam, sēnīšu profilaksei, asins kapilāru noņemšanai</li></ul><h3><strong>Deka Tetra Pro (Itālija)</strong></h3><ul><li>Frakcionētais CO2 lāzers jaunākās paaudzes tehnoloģijā</li><li>Veidojumu noņemšana un ķirurģiskas procedūras</li><li>Rētu slīpēšana un ādas atjaunošana</li></ul><p>* Pirms jebkuras lāzerprocedūras obligāta ir dermatologa konsultācija un dermatoskopiskā apskate.</p>",
-        "text_html": ""
+        "before_image": "shopify://shop_images/skin-profile-par-mums-bg.jpg",
+        "after_image": "shopify://shop_images/dermatology-slide-1.jpg",
+        "alt_text": "Attēls"
       }
     },
     "template_heading_Bxqtht": {
@@ -996,7 +998,7 @@
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
-    "template_text_section_JPJC6T",
+    "template_before_after_mBBpQ6",
     "template_heading_Bxqtht",
     "template_procedure_table_mXB4KL",
     "template_procedure_table_fCMYGY",
