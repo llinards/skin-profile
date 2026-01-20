@@ -43,14 +43,6 @@
     "empty_button": "Back to store",
     "remove_product": "Remove product"
   },
-  "customers": {
-    "login": {
-      "email": "Email",
-      "password": "Password",
-      "submit": "Sign in",
-      "title": "Login"
-    }
-  },
   "collections": {
     "title": "Collections",
     "all_products": "Products",
@@ -154,7 +146,8 @@
       "hours_time": "09:00 - 18:00",
       "rights": "All rights reserved",
       "design": "Design",
-      "developed": "Website developed by"
+      "developed": "Website developed by",
+      "medical_institution_code": "Medical institution code"
     },
     "header": {
       "contacts": "Contacts"

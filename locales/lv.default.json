@@ -43,14 +43,6 @@
     "empty_button": "Atpakaļ uz veikalu",
     "remove_product": "Noņemt produktu"
   },
-  "customers": {
-    "login": {
-      "email": "E-pasts",
-      "password": "Parole",
-      "submit": "Pierakstīties",
-      "title": "Pierakstīšanās"
-    }
-  },
   "collections": {
     "title": "Kolekcijas",
     "all_products": "Produkti",
@@ -2876,15 +2868,6 @@
           "decrement_return_line_item": "No atgriešanas vērtības ir noņemts {{ delta }}"
         }
       },
-      "customer": {
-        "password_reset_error": "Paroles atiestatīšanas kļūda",
-        "subscribe_error": "Abonēšanas kļūda",
-        "unsubscribe_error": "Kļūda pātraucot abonēšanu",
-        "no_account_found": "Ar šo e-pasta adresi netika atrasts neviens konts.",
-        "invalid_credentials": "Nepareiza e-pasta adrese vai parole.",
-        "denylisted_reset_password": "Jūsu kontam nevarēja piekļūt, jo pašreizējā parole nav droša. Jūs saņemsiet e-pastu, lai atjauninātu paroli.",
-        "signup_disabled": "Klienta konta izveide ir atspējota."
-      },
       "address": {
         "updated": "Adrese veiksmīgi atjaunināta.",
         "error_updating": "Atjauninot adresi, radās kļūda",
@@ -4523,7 +4506,8 @@
       "hours_time": "09:00 - 18:00",
       "rights": "Visas tiesības rezervētas",
       "design": "Dizains",
-      "developed": "Izstrādāja"
+      "developed": "Izstrādāja",
+      "medical_institution_code": "Medicīna iestādes kods"
     },
     "header": {
       "contacts": "Kontakti"
