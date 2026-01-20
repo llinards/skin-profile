@@ -5,7 +5,7 @@
 >
   <!-- Contact Modal -->
   <div x-show="showCompanyDetailsModal === '/company-details'" style="display: none;">
-    {% render 'footer-company-details-modal' %}
+    {% render 'footer-company-details-modal', company_details: section.settings.company_details %}
   </div>
 
   <div class="container mx-auto flex flex-col justify-between px-8 md:px-4 pb-12 gap-12 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row text-white">
@@ -258,14 +258,21 @@
     {
       "type": "text",
       "id": "address",
-      "label": "Address",
+      "label": "Addrese",
       "default": "Pils iela 13, Sigulda, Latvija"
     },
     {
       "type": "url",
       "id": "map_link",
-      "label": "Google Maps Link",
-      "info": "Link to Google Maps location"
+      "label": "Google Maps saite",
+      "info": "Saite uz Google Maps"
+    },
+    {
+      "type": "richtext",
+      "id": "company_details",
+      "label": "Rekvizīti",
+      "default": "<p>Šeit var pievienot uzņēmuma rekvizītus.</p>",
+      "info": "Rekvizītu informācija"
     }
   ]
 }
