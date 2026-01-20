@@ -34,9 +34,9 @@
           }
         "
       >
-        <!-- Before Image (base layer) -->
+        <!-- After Image (base layer) -->
         <img
-          :src="beforeSrc"
+          :src="afterSrc"
           alt="{{ section.settings.alt_text }}"
           class="w-full block"
           width="1024"
@@ -44,10 +44,10 @@
           loading="lazy"
         >
 
-        <!-- After Image (clipped overlay) -->
+        <!-- Before Image (clipped overlay) -->
         <div
           class="absolute bottom-0 left-0 top-0 z-10 bg-cover bg-left"
-          x-bind:style="`width: ${value}%; background-image: url('${afterSrc}');`"
+          x-bind:style="`width: ${value}%; background-image: url('${beforeSrc}');`"
         ></div>
 
         <!-- Range Input Slider -->
