@@ -15,7 +15,8 @@
       "type": "footer",
       "settings": {
         "menu": "",
-        "show_payment_icons": true
+        "cooperation_partners": "",
+        "company_details": "<ul><li>SIA “Piecas dienas”</li><li>PVN reģistrācijas numurs: 44103127212</li><li>Jurid. adrese: Kr. Barona iela 4-24, Sigulda, Latvija</li><li>Banka: A/S Swedbank</li><li>Konts: LV17HABA0551047165185</li></ul>"
       }
     }
   },
