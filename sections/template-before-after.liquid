@@ -1,6 +1,28 @@
 <div class="container mx-auto px-4 pb-12 transition-hide">
   <div class="md:flex md:gap-x-24 md:items-center">
     <!-- Left column: Text content grouped -->
+    <div class="flex flex-col md:w-1/2 items-center md:items-start justify-center space-y-6 md:space-y-12">
+      <h2 class="text-center md:text-left">{{ section.settings.heading }}</h2>
+      <div class="space-y-2 text-left">
+        {{ section.settings.text }}
+      </div>
+      <div class="hidden md:flex">
+        {% for block in section.blocks %}
+          {% if block.type == 'button' %}
+            <div class="flex justify-center md:justify-start w-full">
+              {% case block.settings.style %}
+                {% when 'white' %}
+                  {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
+                {% when 'brown' %}
+                  {% render 'btn-brown', text: block.settings.text, url: block.settings.url %}
+              {% endcase %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Right column: Image -->
     <div class="w-full md:w-1/2 h-full">
       <div
         class="relative overflow-hidden"
@@ -68,28 +90,6 @@
         </div>
       </div>
       <p class="uppercase text-sm text-gray-400 text-center mt-2 pb-6 md:pb-0">*{{ 'general.image_disclaimer' | t }}</p>
-    </div>
-
-    <!-- Right column: Image -->
-    <div class="flex flex-col md:w-1/2 items-center md:items-start justify-center space-y-6 md:space-y-12">
-      <h2 class="text-center md:text-left">{{ section.settings.heading }}</h2>
-      <div class="space-y-2 text-left">
-        {{ section.settings.text }}
-      </div>
-      <div class="hidden md:flex">
-        {% for block in section.blocks %}
-          {% if block.type == 'button' %}
-            <div class="flex justify-center md:justify-start w-full">
-              {% case block.settings.style %}
-                {% when 'white' %}
-                  {% render 'btn-white', text: block.settings.text, url: block.settings.url %}
-                {% when 'brown' %}
-                  {% render 'btn-brown', text: block.settings.text, url: block.settings.url %}
-              {% endcase %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
     </div>
 
     <div class="md:hidden">
