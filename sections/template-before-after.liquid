@@ -29,8 +29,8 @@
         x-data="
           {
             value: 50,
-            beforeSrc: '{{ section.settings.before_image | image_url: width: 1024 }}',
-            afterSrc: '{{ section.settings.after_image | image_url: width: 1024 }}'
+            afterSrc: '{{ section.settings.after_image | image_url: width: 1024 }}',
+            beforeSrc: '{{ section.settings.before_image | image_url: width: 1024 }}'
           }
         "
       >
@@ -127,13 +127,13 @@
     },
     {
       "type": "image_picker",
-      "id": "after_image",
-      "label": "Pēc attēls"
+      "id": "before_image",
+      "label": "Pirms attēls"
     },
     {
       "type": "image_picker",
-      "id": "before_image",
-      "label": "Pirms attēls"
+      "id": "after_image",
+      "label": "Pēc attēls"
     },
     {
       "type": "text",
