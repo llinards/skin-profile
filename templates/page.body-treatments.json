@@ -234,7 +234,7 @@
             "procedure_description": "Aparātprocedūra tauku šūnu samazināšanai un limfodrenāžas uzlabošanai vienā ķermeņa zonā.",
             "procedure_price": "€35",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Grūtniecība</li><li>Metāla implanti apstrādes zonā</li><li>Sirds stimulatora klātbūtne</li></ul>"
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
         },
         "procedure_rKbfz3": {
@@ -245,7 +245,7 @@
             "procedure_description": "Tauku samazināšanas un limfodrenāžas procedūra divās zonās.",
             "procedure_price": "€40",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Sirds ritma traucējumi</li><li>Smagas endokrīnas saslimšanas</li><li>Grūtniecība</li></ul>"
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
         },
         "procedure_zrU9VD": {
@@ -256,7 +256,7 @@
             "procedure_description": "Procedūra trīs ķermeņa zonām lokalizēta tauku slāņa mazināšanai.",
             "procedure_price": "€45",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Neārstēta hipertensija</li><li>Epilepsija</li><li>Implantēti elektriski medicīniski ierīces</li></ul>"
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
         },
         "procedure_mGkJwz": {
@@ -267,7 +267,7 @@
             "procedure_description": "Kompleksa procedūra četrām zonām figūras modelēšanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li>Smagas sirds un asinsvadu saslimšanas</li><li>Grūtniecība</li><li>Nediagnosticētas sāpes vēderā vai kājās</li></ul>"
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
         }
       },
