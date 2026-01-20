@@ -4507,7 +4507,8 @@
       "rights": "Visas tiesības rezervētas",
       "design": "Dizains",
       "developed": "Izstrādāja",
-      "medical_institution_code": "Medicīna iestādes kods"
+      "medical_institution_code": "Medicīna iestādes kods",
+      "company_details_title": "Rekvizīti"
     },
     "header": {
       "contacts": "Kontakti"

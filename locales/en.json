@@ -147,7 +147,8 @@
       "rights": "All rights reserved",
       "design": "Design",
       "developed": "Website developed by",
-      "medical_institution_code": "Medical institution code"
+      "medical_institution_code": "Medical institution code",
+      "company_details_title": "Company details"
     },
     "header": {
       "contacts": "Contacts"
