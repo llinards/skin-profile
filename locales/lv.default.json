@@ -4529,7 +4529,8 @@
     },
     "modal": {
       "close": "Aizvērt logu",
-      "contacts_title": "Kontakti"
+      "contacts_title": "Kontakti",
+      "company_details": "Rekvizīti"
     },
     "team": {
       "specialization": "Specializācija",

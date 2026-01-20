@@ -1,11 +1,13 @@
-<div x-show="showCompanyDetailsModal === '/company-details'" style="display: none;">
-  {% render 'footer-company-details-modal' %}
-</div>
 <footer
   class="relative bg-black text-white py-12 md:py-24 z-11"
   x-data="{ showCompanyDetailsModal: null }"
   x-on:open-footer-contact-modal.window="showCompanyDetailsModal = '/company-details'; document.body.style.overflow = 'hidden'"
 >
+  <!-- Contact Modal -->
+  <div x-show="showCompanyDetailsModal === '/company-details'" style="display: none;">
+    {% render 'footer-company-details-modal' %}
+  </div>
+
   <div class="container mx-auto flex flex-col justify-between px-8 md:px-4 pb-12 gap-12 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row text-white">
     <div class="order-5 md:order-4 lg:order-1 md:col-span-2">
       <div>

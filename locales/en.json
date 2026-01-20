@@ -169,7 +169,8 @@
     },
     "modal": {
       "close": "Close modal",
-      "contacts_title": "Contacts"
+      "contacts_title": "Contacts",
+      "company_details": "Company details"
     },
     "team": {
       "specialization": "Specialization",
