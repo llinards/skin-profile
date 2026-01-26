@@ -543,7 +543,7 @@
         "free_shipping_total_label": "Bezmaksas",
         "paid_label": "Apmaksāts",
         "payment_due_label": "Maksājuma termiņš",
-        "vat_label_html": "Ieskaitot nodokļos %{amount}",
+        "vat_label_html": "Ieskaitot nodokli %{amount}",
         "duties_included_label": "Kopsumma ietver nodokļus un nodevas. Piegādes maksa netiek iekasēta.",
         "discount_and_gift_card_savings_notice": "Pēc %{discount_amount} atlaidēm un %{gift_card_amount} dāvanu kartēm",
         "discount_savings_notice": "Pēc atlaidēm %{discount_amount}",
