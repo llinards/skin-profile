@@ -282,14 +282,16 @@
     display: none !important;
 }
 
-.sp-link a {
+.sp-link a, 
+.sp-modal a{
     text-decoration: 2px solid underline;
     transition: all;
     transition-duration: 300ms;
     font-weight: bold;
 }
 
-.sp-link a:hover {
+.sp-link a:hover,
+.sp-modal a:hover {
     color: var(--color-brand-primary);
 }
 
