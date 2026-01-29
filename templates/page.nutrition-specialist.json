@@ -60,7 +60,7 @@
         "add_top_padding": false
       }
     },
-    "template_text_section_JPJC6T": {
+    "template_text_only_bBc38B": {
       "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
@@ -243,7 +243,7 @@
   "order": [
     "template_header_carousel_tpn6mQ",
     "main",
-    "template_text_section_JPJC6T",
+    "template_text_only_bBc38B",
     "template_procedure_table_kdByqB",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
