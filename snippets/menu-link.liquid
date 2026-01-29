@@ -11,11 +11,20 @@
   >
     {{- link.title -}}
   </button>
-{% elsif link.url contains '/company-details' %}
+{% elsif is_footer and link.url contains '/company-details' %}
   <button
     x-data
     type="button"
     @click.prevent="window.dispatchEvent(new CustomEvent('open-footer-contact-modal'))"
+    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
+  >
+    {{- link.title -}}
+  </button>
+{% elsif is_footer and link.url contains '/accessibility' %}
+  <button
+    x-data
+    type="button"
+    @click.prevent="window.dispatchEvent(new CustomEvent('open-footer-accessibility-modal'))"
     class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
   >
     {{- link.title -}}
