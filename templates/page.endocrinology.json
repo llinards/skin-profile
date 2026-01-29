@@ -64,9 +64,9 @@
       "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
-        "heading": "Individuāla pieeja veselīgam dzīvesveidam",
-        "text": "",
-        "text_html": "<ul class=\"list-disc\">\n    <li>Palīdz normalizēt ēšanas paradumus, svaru un uzlabot pašsajūtu.\n    </li>\n    <li>Konsultācijas laikā izstrādā individuālu ēšanas programmu un svara korekcijas plānu.\n    </li>\n    <li>Izmanto bioimpedances metodi, lai noteiktu:\n        <ul>\n            <li class=\"pl-6 dash-list\">vielmaiņas ātrumu;\n            </li>\n            <li class=\"pl-6 dash-list\">ķermeņa tauku, kaulu un ūdens proporcijas;\n            </li>\n            <li class=\"pl-6 dash-list\">muskuļu daudzumu;\n            </li>\n<li class=\"pl-6 dash-list\">ķermeņa masas indeksu;</li>\n            <li class=\"pl-6 dash-list\">bioloģisko vecumu.</li>\n        </ul>\n    </li>\n    <li>Balstoties uz rezultātiem, izstrādā piemērotu ēdienkarti un iesaka fiziskās aktivitātes.</li>\n    <li>Konsultācija piemērota visu vecumu cilvēkiem gan ikdienā, gan veselības problēmu gadījumos.</li>\n</ul>"
+        "heading": "Individuāla pieeja hormonu līdzsvaram",
+        "text": "<p>Palīdz diagnosticēt un risināt hormonālās sistēmas traucējumus, uzlabojot pašsajūtu un vispārējo dzīves kvalitāti. Konsultācijas laikā tiek izvērtēts veselības stāvoklis un izstrādāts individuāls ārstēšanas vai novērošanas plāns.</p><p>Izmeklējumi ietver hormonālās sistēmas darbības izvērtējumu, tostarp vairogdziedzera funkciju, vielmaiņas procesus, cukura līmeni asinīs, kā arī virsnieru un dzimumhormonu līdzsvaru. Balstoties uz rezultātiem, tiek sniegtas personalizētas rekomendācijas par ārstēšanu, uzturu un dzīvesveidu. Konsultācija piemērota dažāda vecuma cilvēkiem gan profilaktiski, gan konkrētu hormonālu traucējumu gadījumos.</p>",
+        "text_html": ""
       }
     },
     "template_procedure_table_PWL9MH": {
@@ -102,41 +102,6 @@
         "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
-      }
-    },
-    "template_procedure_table_NChqNA": {
-      "type": "template-procedure-table",
-      "blocks": {
-        "procedure_yPx4LH": {
-          "type": "procedure",
-          "name": "Uztura speciālista konsultācija",
-          "settings": {
-            "procedure_name": "Uztura speciālista konsultācija",
-            "procedure_description": "Uztura paradumu analīze un plāna sastādīšana.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "procedure_yPx4LH"
-      ],
-      "name": "Uztura speciālists",
-      "settings": {
-        "title": "Uztura speciālists",
-        "content": "<p>Veselības aprūpes profesionālis, kurš palīdz ar uztura palīdzību uzlabot veselību, hormonālo līdzsvaru, vielmaiņu un pašsajūtu. Viņš strādā ar ēšanas paradumiem, analīžu rezultātiem un dzīvesveidu, lai izveidotu ilgtspējīgu, individuāli piemērotu uztura plānu.</p>",
-        "disclaimer": "",
-        "apply_url": "shopify://pages/appointment-booking",
-        "apply_cta": "Pieteikt",
-        "label_procedure": "Procedūra",
-        "label_description": "Apraksts",
-        "label_price": "Cena",
-        "label_duration": "Ilgums",
-        "label_contraindications": "Kontrindikācijas",
-        "enable_dropdown": true,
-        "open_by_default": false,
-        "space_bottom": true
       }
     },
     "template_services_carousel_grid_N7bVQt": {
@@ -280,7 +245,6 @@
     "main",
     "template_text_section_JPJC6T",
     "template_procedure_table_PWL9MH",
-    "template_procedure_table_NChqNA",
     "template_services_carousel_grid_N7bVQt",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
