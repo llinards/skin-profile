@@ -2,12 +2,12 @@
   Check if this is the Kontakti/Contacts link
   If yes, make it trigger the modal instead of navigating
 {% endcomment %}
-{% if link.title == 'Kontakti' or link.title == 'Contacts' %}
+{% if link.title == 'Kontakti' or link.title == 'Contacts' and link.url contains '/contact-us' %}
   <a
     x-data
     href="{{ link.url }}"
     @click.prevent="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
-    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
+    class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer {% if link.active %}border-b-black lg:border-b-white{% endif %} {{ invert_class }}"
   >
     {{- link.title -}}
   </a>
