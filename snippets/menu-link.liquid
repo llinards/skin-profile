@@ -3,32 +3,32 @@
   If yes, make it trigger the modal instead of navigating
 {% endcomment %}
 {% if link.title == 'Kontakti' or link.title == 'Contacts' %}
-  <button
+  <a
     x-data
-    type="button"
+    href="{{ link.url }}"
     @click.prevent="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
     class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
   >
     {{- link.title -}}
-  </button>
+  </a>
 {% elsif is_footer and link.url contains '/company-details' %}
-  <button
+  <a
     x-data
-    type="button"
+    href="{{ link.url }}"
     @click.prevent="window.dispatchEvent(new CustomEvent('open-footer-contact-modal'))"
     class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
   >
     {{- link.title -}}
-  </button>
+  </a>
 {% elsif is_footer and link.url contains '/accessibility' %}
-  <button
+  <a
     x-data
-    type="button"
+    href="{{ link.url }}"
     @click.prevent="window.dispatchEvent(new CustomEvent('open-footer-accessibility-modal'))"
     class="lg:text-white text-base xl:text-lg py-1 border border-transparent hover:border-b-white transition-all duration-300 cursor-pointer leading-tight {{ invert_class }}"
   >
     {{- link.title -}}
-  </button>
+  </a>
 {% else %}
   <a
     href="{{ link.url }}"
