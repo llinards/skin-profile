@@ -4530,7 +4530,8 @@
     "modal": {
       "close": "Aizvērt logu",
       "contacts_title": "Kontakti",
-      "company_details": "Rekvizīti"
+      "company_details": "Rekvizīti",
+      "accessibility_details": "Pieklūstamība"
     },
     "team": {
       "specialization": "Specializācija",

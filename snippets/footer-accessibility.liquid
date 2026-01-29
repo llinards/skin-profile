@@ -1,0 +1,50 @@
+<div
+  x-show="showAccessibilityModal"
+  x-cloak
+  @click.self="showAccessibilityModal = false; document.body.style.overflow = 'auto'"
+  class="fixed inset-0 z-51 flex items-center justify-center bg-black/50 px-4 py-8"
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  style="display: none;"
+>
+  <div
+    class="bg-(--color-brand-secondary) rounded-4xl shadow-xl w-full md:max-w-3xl max-w-lg transform relative"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    @click.stop
+  >
+    <!-- Close Button -->
+    <button
+      @click="showAccessibilityModal = false; document.body.style.overflow = 'auto'"
+      class="
+        absolute top-8 right-8 size-8 rounded-full bg-(--color-brand-primary) flex items-center justify-center group px-1
+        text-white border border-(--color-brand-primary)
+        hover:bg-white hover:text-(--color-brand-primary)
+        active:bg-white active:text-(--color-brand-primary)
+        transition-all duration-300 z-50 cursor-pointer w-fit!
+      "
+      aria-label="{{ 'general.modal.close' | t }}"
+    >
+      {% render 'icon-mobile-menu-close',
+        class: 'size-6 fill-(--color-brand-secondary) group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)'
+      %}
+    </button>
+
+    <!-- Modal Content - Customize this section -->
+    <div class="p-8 md:p-12 space-y-6">
+      <h2>{{ 'general.modal.accessibility_details' | t }}</h2>
+
+      <div class="space-y-4 text-black">
+        {{ accessibility_details }}
+      </div>
+    </div>
+  </div>
+</div>
