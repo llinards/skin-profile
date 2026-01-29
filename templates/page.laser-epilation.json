@@ -68,89 +68,6 @@
         "heading_level": "h2"
       }
     },
-    "template_procedure_table_wpJzWq": {
-      "type": "template-procedure-table",
-      "blocks": {
-        "procedure_rFFaQA": {
-          "type": "procedure",
-          "name": "Paduses",
-          "settings": {
-            "procedure_name": "Paduses",
-            "procedure_description": "Lāzerepilācija padusēs.",
-            "procedure_price": "€50",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        },
-        "procedure_8ged3R": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – sānu malas",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – sānu malas",
-            "procedure_description": "Sānu joslu epilācija.",
-            "procedure_price": "€40",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        },
-        "procedure_bkd4KG": {
-          "type": "procedure",
-          "name": "Bikini sievietēm – pilns",
-          "settings": {
-            "procedure_name": "Bikini sievietēm – pilns",
-            "procedure_description": "Pilna bikini zona.",
-            "procedure_price": "€65",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        },
-        "procedure_kgAmLU": {
-          "type": "procedure",
-          "name": "Bikini vīriešiem – priekšpuse",
-          "settings": {
-            "procedure_name": "Bikini vīriešiem – priekšpuse",
-            "procedure_description": "Vīriešu bikini epilācija.",
-            "procedure_price": "€60",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        },
-        "procedure_NTiAWV": {
-          "type": "procedure",
-          "name": "Sēža",
-          "settings": {
-            "procedure_name": "Sēža",
-            "procedure_description": "Sēžas zonas epilācija.",
-            "procedure_price": "€50",
-            "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "procedure_rFFaQA",
-        "procedure_8ged3R",
-        "procedure_bkd4KG",
-        "procedure_kgAmLU",
-        "procedure_NTiAWV"
-      ],
-      "name": "Zonas",
-      "settings": {
-        "title": "Zonas",
-        "content": "",
-        "disclaimer": "",
-        "apply_url": "shopify://pages/appointment-booking",
-        "apply_cta": "Pieteikt",
-        "label_procedure": "Zonas",
-        "label_description": "Apraksts",
-        "label_price": "Cena",
-        "label_duration": "Ilgums",
-        "label_contraindications": "Kontrindikācijas",
-        "enable_dropdown": true,
-        "open_by_default": false,
-        "space_bottom": false
-      }
-    },
     "template_procedure_table_jMzci8": {
       "type": "template-procedure-table",
       "blocks": {
@@ -557,6 +474,61 @@
     "template_procedure_table_z4aL6T": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_gU48ry": {
+          "type": "procedure",
+          "name": "Paduses",
+          "settings": {
+            "procedure_name": "Paduses",
+            "procedure_description": "Lāzerepilācija padusēs.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+          }
+        },
+        "procedure_hRai7h": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – sānu malas",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – sānu malas",
+            "procedure_description": "Sānu joslu epilācija.",
+            "procedure_price": "€40",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+          }
+        },
+        "procedure_DggD4Q": {
+          "type": "procedure",
+          "name": "Bikini sievietēm – pilns",
+          "settings": {
+            "procedure_name": "Bikini sievietēm – pilns",
+            "procedure_description": "Pilna bikini zona.",
+            "procedure_price": "€65",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+          }
+        },
+        "procedure_QAWg8j": {
+          "type": "procedure",
+          "name": "Bikini vīriešiem – priekšpuse",
+          "settings": {
+            "procedure_name": "Bikini vīriešiem – priekšpuse",
+            "procedure_description": "Vīriešu bikini epilācija.",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+          }
+        },
+        "procedure_J67MNi": {
+          "type": "procedure",
+          "name": "Sēža",
+          "settings": {
+            "procedure_name": "Sēža",
+            "procedure_description": "Sēžas zonas epilācija.",
+            "procedure_price": "€50",
+            "procedure_duration": "60",
+            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+          }
+        },
         "procedure_gbAiab": {
           "type": "procedure",
           "name": "Krūšu gali",
@@ -614,6 +586,11 @@
         }
       },
       "block_order": [
+        "procedure_gU48ry",
+        "procedure_hRai7h",
+        "procedure_DggD4Q",
+        "procedure_QAWg8j",
+        "procedure_J67MNi",
         "procedure_gbAiab",
         "procedure_Nwih3a",
         "procedure_mWgXJy",
@@ -627,7 +604,7 @@
         "disclaimer": "",
         "apply_url": "shopify://pages/appointment-booking",
         "apply_cta": "Pieteikt",
-        "label_procedure": "Procedūra",
+        "label_procedure": "Zonas",
         "label_description": "Apraksts",
         "label_price": "Cena",
         "label_duration": "Ilgums",
@@ -777,7 +754,6 @@
     "template_header_carousel_tpn6mQ",
     "main",
     "template_heading_4i8UtF",
-    "template_procedure_table_wpJzWq",
     "template_procedure_table_jMzci8",
     "template_procedure_table_KbiR6F",
     "template_procedure_table_gVVzqn",
