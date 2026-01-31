@@ -4483,7 +4483,7 @@
         "facial_care": "Sejas kopšana",
         "body_care": "Ķermeņa kopšana",
         "nutritional_supplements": "Uztura bagātinātāji",
-        "test-product": "Testa produkti"
+        "test_product": "Testa produkti"
       }
     }
   },
