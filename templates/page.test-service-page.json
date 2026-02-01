@@ -44,14 +44,23 @@
       ],
       "name": "Galvenes sadaļa ar karuseli",
       "settings": {
-        "heading": "Procedūras Sejai",
-        "subtext": "<p>Mēs veicam profesionālas sejas attīrīšanas procedūras, kuru mērķis ir atjaunot ādas dabisko līdzsvaru un veselīgu izskatu. Procedūras palīdz dziļi attīrīt poras, mazināt pinnes un komedonus, samazināt iekaisumu, kā arī uzlabot ādas tekstūru un toni. Individuāli pielāgota pieeja ļauj ne tikai risināt esošās ādas problēmas, bet arī stiprināt ādas aizsargbarjeru, veicināt šūnu atjaunošanos un nodrošināt ilgtermiņā koptu, svaigu un starojošu sejas ādu.</p>",
+        "heading": "Jauns pakalpojums",
+        "subtext": "<p>Jaunā pakalpojuma apraksts.</p>",
         "spacing": true,
         "phone_number": "",
         "email_address": "",
         "facebook_url": "",
         "instagram_url": "",
         "booking_url": ""
+      }
+    },
+    "template_text_only_8j88Xd": {
+      "type": "template-text-only",
+      "name": "Dabisks skaistums ar medicīnisku precizitāti",
+      "settings": {
+        "heading": "Dabisks skaistums ar medicīnisku precizitāti",
+        "text": "<ul><li>Piedāvājam risinājumus pigmentācijas, rētu un ādas problēmu korekcijai.</li><li>Nodrošinām drošas un efektīvas procedūras ar jaunākajām tehnoloģijām (Overline, Pollogen Geneo) </li><li>Pie mums strādā tikai sertificēti speciālisti.</li></ul>",
+        "text_html": ""
       }
     },
     "main": {
@@ -63,6 +72,7 @@
   },
   "order": [
     "template_header_carousel_8y9dAH",
+    "template_text_only_8j88Xd",
     "main"
   ]
 }
