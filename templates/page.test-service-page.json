@@ -145,6 +145,54 @@
         "carousel_desktop": true
       }
     },
+    "template_contact_us_3jEAqx": {
+      "type": "template-contact-us",
+      "blocks": {
+        "button_yFmWXy": {
+          "type": "button",
+          "settings": {
+            "text": "Zvanīt",
+            "url": "tel:+37127841111",
+            "new_tab": false
+          }
+        },
+        "button_Ep9zDk": {
+          "type": "button",
+          "settings": {
+            "text": "Nosūtīt e-pastu",
+            "url": "mailto:toskinprofile@gmail.com",
+            "new_tab": false
+          }
+        },
+        "button_i3xBkH": {
+          "type": "button",
+          "settings": {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/skinprofilesigulda/",
+            "new_tab": true
+          }
+        },
+        "button_kJHhpi": {
+          "type": "button",
+          "settings": {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/skinprofile.lv",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "button_yFmWXy",
+        "button_Ep9zDk",
+        "button_i3xBkH",
+        "button_kJHhpi"
+      ],
+      "name": "Kontaktu sadaļa",
+      "settings": {
+        "heading": "Sazinies ar mums!",
+        "text": "<p>Atrodi sev piemērotāko ādas kopšanas risinājumu jau šodien!</p>"
+      }
+    },
     "main": {
       "type": "page",
       "settings": {
@@ -156,6 +204,7 @@
     "template_header_carousel_8y9dAH",
     "template_text_only_8j88Xd",
     "template_services_carousel_grid_yPrpGT",
+    "template_contact_us_3jEAqx",
     "main"
   ]
 }
