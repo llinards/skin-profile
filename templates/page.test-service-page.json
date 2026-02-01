@@ -63,6 +63,21 @@
         "text_html": ""
       }
     },
+    "template_text_on_image_HtzQGq": {
+      "type": "template-text-on-image",
+      "name": "Teksts uz bildes",
+      "settings": {
+        "bg_image": "shopify://shop_images/about-us-slide-1.jpg",
+        "bg_alt": "",
+        "bg_pos_mobile": "center",
+        "bg_pos_desktop": "center",
+        "heading": "Super jauns produkts",
+        "subtext": "<p>Vislabākais produkts uz pasaules</p>",
+        "button_align_mobile": "center",
+        "button_align_desktop": "start",
+        "heading_align": "center"
+      }
+    },
     "template_services_carousel_grid_yPrpGT": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -203,6 +218,7 @@
   "order": [
     "template_header_carousel_8y9dAH",
     "template_text_only_8j88Xd",
+    "template_text_on_image_HtzQGq",
     "template_services_carousel_grid_yPrpGT",
     "template_contact_us_3jEAqx",
     "main"
