@@ -117,6 +117,7 @@
         "spf": "SPF",
         "washing": "Washing",
         "other": "Other",
+        "test_new_type": "New Product Type"
       },
       "filter_p_m_custom_product_category": {
         "gift_cards": "Gift cards",
