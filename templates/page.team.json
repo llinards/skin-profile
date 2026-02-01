@@ -18,6 +18,16 @@
     "template_team_section_8U3NT7": {
       "type": "template-team-section",
       "blocks": {
+        "member_wyfEnW": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Jauns Komandas Biedrs",
+            "position": "Kosmētiķis",
+            "specialities": "<p>Kosmetoloģija</p>",
+            "identificator": "12345678"
+          }
+        },
         "member_BnTCca": {
           "type": "member",
           "name": "Jana Krūmiņa",
@@ -108,6 +118,7 @@
         }
       },
       "block_order": [
+        "member_wyfEnW",
         "member_BnTCca",
         "member_qEBT9H",
         "member_dTDW4h",
