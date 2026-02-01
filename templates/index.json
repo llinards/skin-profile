@@ -375,6 +375,14 @@
     "template_services_carousel_grid_phrCqU": {
       "type": "template-services-carousel-grid",
       "blocks": {
+        "service_f4C6M6": {
+          "type": "service",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "<p>Jauns pakalpojums</p>",
+            "url": "shopify://pages/jauna-pakalpojuma-lapa"
+          }
+        },
         "service_LAfwn9": {
           "type": "service",
           "name": "Estētiskā medicīna",
@@ -440,6 +448,7 @@
         }
       },
       "block_order": [
+        "service_f4C6M6",
         "service_LAfwn9",
         "service_BqgxjN",
         "service_PUyKQR",
