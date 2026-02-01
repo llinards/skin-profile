@@ -657,97 +657,6 @@
         "carousel_desktop": true
       }
     },
-    "template_services_carousel_grid_cQANeK": {
-      "type": "template-services-carousel-grid",
-      "blocks": {
-        "service_8TPpXY": {
-          "type": "service",
-          "settings": {
-            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
-            "name": "<p>Jauns pakalpojums</p>",
-            "url": "shopify://pages/jauna-pakalpojuma-lapa"
-          }
-        },
-        "service_GpqcpV": {
-          "type": "service",
-          "name": "Estētiskā medicīna",
-          "settings": {
-            "photo": "shopify://shop_images/estetiska_medicina.jpg",
-            "name": "<p>Estētiskā medicīna</p>",
-            "url": "shopify://pages/aesthetic-medicine"
-          }
-        },
-        "service_MriQGH": {
-          "type": "service",
-          "name": "Dermatoloģija",
-          "settings": {
-            "photo": "shopify://shop_images/dermatologija.jpg",
-            "name": "<p>Dermatoloģija</p>",
-            "url": "shopify://pages/dermatology"
-          }
-        },
-        "service_37xhja": {
-          "type": "service",
-          "name": "Lāzer-dermatoloģija",
-          "settings": {
-            "photo": "shopify://shop_images/lazerdermatologija.jpg",
-            "name": "<p>Lāzer-dermatoloģija</p>",
-            "url": "shopify://pages/laser-dermatology"
-          }
-        },
-        "service_QeHfyr": {
-          "type": "service",
-          "name": "Sejas procedūras",
-          "settings": {
-            "photo": "shopify://shop_images/sejas_proceduras.jpg",
-            "name": "<p>Sejas procedūras</p>",
-            "url": "shopify://pages/facial-procedures"
-          }
-        },
-        "service_8QrNmQ": {
-          "type": "service",
-          "name": "Lāzerepilācija",
-          "settings": {
-            "photo": "shopify://shop_images/lazerepilacija.jpg",
-            "name": "<p>Lāzerepilācija</p>",
-            "url": "shopify://pages/laser-epilation"
-          }
-        },
-        "service_rU9DMQ": {
-          "type": "service",
-          "name": "Ķermeņa procedūras",
-          "settings": {
-            "photo": "shopify://shop_images/kermena_proceduras.jpg",
-            "name": "<p>Ķermeņa procedūras</p>",
-            "url": "shopify://pages/body-treatments"
-          }
-        },
-        "service_WfqYRa": {
-          "type": "service",
-          "name": "Uztura speciālists",
-          "settings": {
-            "photo": "shopify://shop_images/uztura_specialists.jpg",
-            "name": "<p>Uztura speciālists</p>",
-            "url": "shopify://pages/endocrinology"
-          }
-        }
-      },
-      "block_order": [
-        "service_8TPpXY",
-        "service_GpqcpV",
-        "service_MriQGH",
-        "service_37xhja",
-        "service_QeHfyr",
-        "service_8QrNmQ",
-        "service_rU9DMQ",
-        "service_WfqYRa"
-      ],
-      "name": "Pakalpojumu sadaļa",
-      "settings": {
-        "heading": "Citi pakalpojumi",
-        "carousel_desktop": true
-      }
-    },
     "template_virtual_consultation_pX36xq": {
       "type": "template-virtual-consultation",
       "name": "Virtuālā konsutlācija",
@@ -814,7 +723,6 @@
     "template_procedure_table_VtPah6",
     "template_procedure_table_CaxVdm",
     "template_services_carousel_grid_cwjP3x",
-    "template_services_carousel_grid_cQANeK",
     "template_virtual_consultation_pX36xq",
     "template_contact_us_BzVhrB"
   ]
