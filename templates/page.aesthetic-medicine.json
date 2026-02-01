@@ -577,6 +577,22 @@
     },
     "template_procedure_table_tXKFwX": {
       "type": "template-procedure-table",
+      "blocks": {
+        "procedure_EJEdke": {
+          "type": "procedure",
+          "name": "Testa procedūra",
+          "settings": {
+            "procedure_name": "Testa procedūra",
+            "procedure_description": "Testa procedūra",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_EJEdke"
+      ],
       "name": "Procedūru tabula",
       "settings": {
         "title": "Testa Procedūras",
