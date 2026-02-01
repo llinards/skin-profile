@@ -9,12 +9,60 @@
  */
 {
   "sections": {
+    "template_header_carousel_9zKPr9": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_U7PVDA": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 1",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-1.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 1"
+          }
+        },
+        "image_tMH7pe": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 2",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 2"
+          }
+        },
+        "image_pFpD3G": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 3",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 3"
+          }
+        }
+      },
+      "block_order": [
+        "image_U7PVDA",
+        "image_tMH7pe",
+        "image_pFpD3G"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Pakalpojuma Testa Lapa",
+        "subtext": "<p>Neliels apraksts par lapu. </p>",
+        "spacing": false,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
+      }
+    },
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
     }
   },
   "order": [
+    "template_header_carousel_9zKPr9",
     "main"
   ]
 }
