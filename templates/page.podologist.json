@@ -66,22 +66,13 @@
     "template_procedure_table_jVCQeG": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_KQkH9m": {
+        "procedure_Nm3L8j": {
           "type": "procedure",
+          "name": "Ārstnieciskā pēdu aprūpe",
           "settings": {
             "procedure_name": "Ārstnieciskā pēdu aprūpe",
             "procedure_description": "",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
-          }
-        },
-        "procedure_Nm3L8j": {
-          "type": "procedure",
-          "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
+            "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
@@ -99,7 +90,6 @@
         }
       },
       "block_order": [
-        "procedure_KQkH9m",
         "procedure_Nm3L8j",
         "procedure_rhdBPQ"
       ],
