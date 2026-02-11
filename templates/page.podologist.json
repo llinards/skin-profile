@@ -122,6 +122,41 @@
         "space_bottom": false
       }
     },
+    "template_procedure_table_CPLAYj": {
+      "type": "template-procedure-table",
+      "blocks": {
+        "procedure_cJytzD": {
+          "type": "procedure",
+          "name": "Nagu apstrāde ",
+          "settings": {
+            "procedure_name": "Nagu apstrāde",
+            "procedure_description": "",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_cJytzD"
+      ],
+      "name": "Nagu aprūpe",
+      "settings": {
+        "title": "Nagu aprūpe",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_services_carousel_grid_BHz4Xq": {
       "type": "template-services-carousel-grid",
       "blocks": {
@@ -278,6 +313,7 @@
     "template_header_carousel_wQVDCN",
     "template_text_only_NjE7rg",
     "template_procedure_table_jVCQeG",
+    "template_procedure_table_CPLAYj",
     "template_services_carousel_grid_BHz4Xq",
     "template_virtual_consultation_UnCe3i",
     "template_contact_us_9jmUKV",
