@@ -125,6 +125,17 @@
     "template_procedure_table_CPLAYj": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_PpPCQa": {
+          "type": "procedure",
+          "name": "Nagu plātnes atjaunošana ar ārstniecisko gēlu (visi pirksti) ",
+          "settings": {
+            "procedure_name": "Nagu plātnes atjaunošana ar ārstniecisko gēlu (visi pirksti)",
+            "procedure_description": "",
+            "procedure_price": "€60",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_byQpyq": {
           "type": "procedure",
           "name": "Ieauguša vai traumēta naga pārsiešana ",
@@ -193,6 +204,7 @@
         }
       },
       "block_order": [
+        "procedure_PpPCQa",
         "procedure_byQpyq",
         "procedure_V6eUfj",
         "procedure_4WWk3C",
