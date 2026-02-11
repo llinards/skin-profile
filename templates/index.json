@@ -255,6 +255,16 @@
     "team_section_WTmffT": {
       "type": "template-team-section",
       "blocks": {
+        "member_x6NexG": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Dr. Ilga Metāla",
+            "position": "Dermatologs, venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
+            "identificator": "41810012718"
+          }
+        },
         "member_VUrXxz": {
           "type": "member",
           "name": "Jana Krūmiņa",
@@ -345,6 +355,7 @@
         }
       },
       "block_order": [
+        "member_x6NexG",
         "member_VUrXxz",
         "member_DeRTbH",
         "member_ydrh6E",
