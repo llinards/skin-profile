@@ -58,9 +58,17 @@
       "type": "template-text-only",
       "name": "Teksta sadaļa",
       "settings": {
-        "heading": "Droša un profesionāla pēdu veselības aprūpe",
-        "text": "<p>• Speciālists sniedz profesionālas konsultācijas un veic pilnu pēdu un nagu aprūpi, palīdzot risināt gan estētiskas, gan medicīniskas problēmas.</p><p>• Tiek nodrošināta individuāli pielāgota pieeja katram pacientam, izstrādājot piemērotāko aprūpes un ārstēšanas plānu.</p><p>• Izmantojot mūsdienīgas metodes un ievērojot augstākos higiēnas standartus, tiek nodrošināta droša un efektīva pēdu veselības aprūpe.</p>",
+        "heading": "Kādas problēmas risina podologs?",
+        "text": "<p>Podologs nodrošina ārstniecisku pēdu un nagu aprūpi gan medicīnisku, gan estētisku problēmu gadījumos. Speciālists savlaicīgi atpazīst un risina dažādas pēdu un nagu saslimšanas, tostarp ieaugušus nagus, infekcijas, sēnīšu un baktēriju izraisītas izmaiņas, kā arī ādas sabiezējumus.</p><p>Pirms procedūras tiek veikta pēdu un roku apskate, sniegta konsultācija un izvērtēta piemērotākā ārstēšanas metode. Procedūras ilgums un cena var mainīties atkarībā no naga vai ādas stāvokļa, sarežģītības un nepieciešamās ārstēšanas apjoma.</p>",
         "text_html": ""
+      }
+    },
+    "template_heading_QRREV6": {
+      "type": "template-heading",
+      "name": "Virsraksts",
+      "settings": {
+        "heading": "Procedūras",
+        "heading_level": "h2"
       }
     },
     "template_services_carousel_grid_BHz4Xq": {
@@ -218,6 +226,7 @@
   "order": [
     "template_header_carousel_wQVDCN",
     "template_text_only_NjE7rg",
+    "template_heading_QRREV6",
     "template_services_carousel_grid_BHz4Xq",
     "template_virtual_consultation_UnCe3i",
     "template_contact_us_9jmUKV",
