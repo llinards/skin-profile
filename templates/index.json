@@ -321,17 +321,6 @@
             "identificator": "74230058656"
           }
         },
-        "member_946Gdq": {
-          "type": "member",
-          "name": "Dr. Dace Beķere",
-          "settings": {
-            "photo": "shopify://shop_images/Dace.jpg",
-            "name": "Dr. Dace Beķere",
-            "position": "Dermatologs, venerologs",
-            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, iPRF un botulīna toksīna injekcijas.</p>",
-            "identificator": "31950045069"
-          }
-        },
         "member_3AxYwb": {
           "type": "member",
           "name": "Tatjana Krūmiņa",
@@ -351,7 +340,6 @@
         "member_PbAW4D",
         "member_mJgHKp",
         "member_BdQJaQ",
-        "member_946Gdq",
         "member_3AxYwb"
       ],
       "name": "Komanda",
