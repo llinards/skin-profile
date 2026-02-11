@@ -185,7 +185,7 @@
           "name": "Mikotiska vai sabiezējuša naga apstrāde ",
           "settings": {
             "procedure_name": "Mikotiska vai sabiezējuša naga apstrāde",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_description": "",
             "procedure_price": "€35",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
