@@ -314,6 +314,22 @@
     },
     "template_procedure_table_PzxEkd": {
       "type": "template-procedure-table",
+      "blocks": {
+        "procedure_AcEaxh": {
+          "type": "procedure",
+          "name": "Ieauguša naga korekcija ar ortoniksijas metodi ",
+          "settings": {
+            "procedure_name": "Ieauguša naga korekcija ar ortoniksijas metodi",
+            "procedure_description": "",
+            "procedure_price": "€55",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "procedure_AcEaxh"
+      ],
       "name": "Ortoniksija",
       "settings": {
         "title": "Ortoniksija",
