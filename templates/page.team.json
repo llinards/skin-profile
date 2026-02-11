@@ -73,6 +73,17 @@
             "identificator": "23130060765"
           }
         },
+        "member_eTnfMa": {
+          "type": "member",
+          "name": "Dr. Ilga Metāla",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Dr. Ilga Metāla",
+            "position": "Dermatologs, venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
+            "identificator": "41810012718"
+          }
+        },
         "member_Pw3ifY": {
           "type": "member",
           "name": "Dr. Guna Grūbe",
@@ -113,6 +124,7 @@
         "member_dTDW4h",
         "member_qRYnCt",
         "member_7GY3ze",
+        "member_eTnfMa",
         "member_Pw3ifY",
         "member_ifG7cd",
         "member_L7J3aB"
