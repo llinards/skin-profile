@@ -66,18 +66,30 @@
     "template_procedure_table_jVCQeG": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_rhdBPQ": {
+        "procedure_KQkH9m": {
           "type": "procedure",
           "settings": {
+            "procedure_name": "Ārstnieciskā pēdu aprūpe",
+            "procedure_description": "",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
+        "procedure_rhdBPQ": {
+          "type": "procedure",
+          "name": "Pirmreizēja podologa konsultācija un apskate",
+          "settings": {
             "procedure_name": "Pirmreizēja podologa konsultācija un apskate",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€60",
+            "procedure_description": "",
+            "procedure_price": "€50",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
         }
       },
       "block_order": [
+        "procedure_KQkH9m",
         "procedure_rhdBPQ"
       ],
       "name": "Procedūru tabula",
