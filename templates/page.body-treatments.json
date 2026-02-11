@@ -562,6 +562,15 @@
             "url": "shopify://pages/laser-dermatology"
           }
         },
+        "service_xLMg88": {
+          "type": "service",
+          "name": "Podoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Background_10bd5df5-b2ef-46cf-b516-b1865edb6382.png",
+            "name": "<p>Podoloģija</p>",
+            "url": "shopify://pages/podologija"
+          }
+        },
         "service_WTCgTN": {
           "type": "service",
           "name": "Endokrinoloģija",
@@ -612,6 +621,7 @@
         "service_ntPz4G",
         "service_KHPgrF",
         "service_jWyfPH",
+        "service_xLMg88",
         "service_WTCgTN",
         "service_a89Azd",
         "service_BLxeLX",
