@@ -125,6 +125,28 @@
     "template_procedure_table_CPLAYj": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_4WWk3C": {
+          "type": "procedure",
+          "name": "Ieauguša naga korekcija",
+          "settings": {
+            "procedure_name": "Ieauguša naga korekcija",
+            "procedure_description": "",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
+        "procedure_p6CqEm": {
+          "type": "procedure",
+          "name": "Mikotiska vai sabiezējuša naga apstrāde ",
+          "settings": {
+            "procedure_name": "Mikotiska vai sabiezējuša naga apstrāde",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_Jkgj3a": {
           "type": "procedure",
           "name": "Inficēta naga apstrāde (viens nags) ",
@@ -149,6 +171,8 @@
         }
       },
       "block_order": [
+        "procedure_4WWk3C",
+        "procedure_p6CqEm",
         "procedure_Jkgj3a",
         "procedure_cJytzD"
       ],
