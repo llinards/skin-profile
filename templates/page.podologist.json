@@ -125,6 +125,17 @@
     "template_procedure_table_CPLAYj": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_VAHVqg": {
+          "type": "procedure",
+          "name": "Neesoša naga aizstāšana ar ārstniecisko gēlu ",
+          "settings": {
+            "procedure_name": "Neesoša naga aizstāšana ar ārstniecisko gēlu",
+            "procedure_description": "",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_PpPCQa": {
           "type": "procedure",
           "name": "Nagu plātnes atjaunošana ar ārstniecisko gēlu (visi pirksti) ",
@@ -204,6 +215,7 @@
         }
       },
       "block_order": [
+        "procedure_VAHVqg",
         "procedure_PpPCQa",
         "procedure_byQpyq",
         "procedure_V6eUfj",
