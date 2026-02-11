@@ -95,6 +95,17 @@
             "identificator": "47000038121"
           }
         },
+        "member_8B8TN7": {
+          "type": "member",
+          "name": "Evija Bīriņa",
+          "settings": {
+            "photo": "shopify://shop_images/SKIN__NEW.png",
+            "name": "Evija Bīriņa",
+            "position": "Podologs",
+            "specialities": "<p>Pilna pēdu aprūpe, diabēta pēdas aprūpe, nagu apstrāde un individuāli pielāgoti risinājumi jūsu komfortam un veselībai.</p>",
+            "identificator": ""
+          }
+        },
         "member_ifG7cd": {
           "type": "member",
           "name": "Anita Baumane",
@@ -126,6 +137,7 @@
         "member_7GY3ze",
         "member_eTnfMa",
         "member_Pw3ifY",
+        "member_8B8TN7",
         "member_ifG7cd",
         "member_L7J3aB"
       ],
