@@ -388,15 +388,6 @@
     "template_services_carousel_grid_phrCqU": {
       "type": "template-services-carousel-grid",
       "blocks": {
-        "service_A8dNzw": {
-          "type": "service",
-          "name": "Endokrinoloģija",
-          "settings": {
-            "photo": "shopify://shop_images/Screenshot_2026-02-11_at_20.25.37.png",
-            "name": "<p>Endokrinoloģija</p>",
-            "url": ""
-          }
-        },
         "service_LAfwn9": {
           "type": "service",
           "name": "Estētiskā medicīna",
@@ -442,6 +433,15 @@
             "url": "shopify://pages/laser-epilation"
           }
         },
+        "service_A8dNzw": {
+          "type": "service",
+          "name": "Endokrinoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Screenshot_2026-02-11_at_20.25.37.png",
+            "name": "<p>Endokrinoloģija</p>",
+            "url": ""
+          }
+        },
         "service_PDwUdw": {
           "type": "service",
           "name": "Ķermeņa procedūras",
@@ -462,12 +462,12 @@
         }
       },
       "block_order": [
-        "service_A8dNzw",
         "service_LAfwn9",
         "service_BqgxjN",
         "service_PUyKQR",
         "service_yh3zXz",
         "service_TKwWWg",
+        "service_A8dNzw",
         "service_PDwUdw",
         "service_ECyhfD"
       ],
