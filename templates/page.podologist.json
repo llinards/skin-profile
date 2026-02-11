@@ -66,6 +66,17 @@
     "template_procedure_table_jVCQeG": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_LXAhcH": {
+          "type": "procedure",
+          "name": "Pēdu ādas apstrāde ",
+          "settings": {
+            "procedure_name": "Pēdu ādas apstrāde",
+            "procedure_description": "",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_Nm3L8j": {
           "type": "procedure",
           "name": "Ārstnieciskā pēdu aprūpe",
@@ -90,10 +101,11 @@
         }
       },
       "block_order": [
+        "procedure_LXAhcH",
         "procedure_Nm3L8j",
         "procedure_rhdBPQ"
       ],
-      "name": "Procedūru tabula",
+      "name": "Konsultācija un aprūpe",
       "settings": {
         "title": "Konsultācija un aprūpe",
         "content": "",
