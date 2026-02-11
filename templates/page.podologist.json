@@ -125,6 +125,17 @@
     "template_procedure_table_CPLAYj": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_Jkgj3a": {
+          "type": "procedure",
+          "name": "Inficēta naga apstrāde (viens nags) ",
+          "settings": {
+            "procedure_name": "Inficēta naga apstrāde (viens nags)",
+            "procedure_description": "",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_cJytzD": {
           "type": "procedure",
           "name": "Nagu apstrāde ",
@@ -138,6 +149,7 @@
         }
       },
       "block_order": [
+        "procedure_Jkgj3a",
         "procedure_cJytzD"
       ],
       "name": "Nagu aprūpe",
