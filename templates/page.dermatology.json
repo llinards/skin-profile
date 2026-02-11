@@ -391,15 +391,6 @@
             "url": "shopify://pages/endocrinology"
           }
         },
-        "service_yBPagk": {
-          "type": "service",
-          "name": "Endokrinoloģija",
-          "settings": {
-            "photo": "shopify://shop_images/Screenshot_2026-02-11_at_20.25.37.png",
-            "name": "<p>Endokrinoloģija</p>",
-            "url": ""
-          }
-        },
         "service_xgkqQx": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -442,7 +433,6 @@
         "service_f9K83j",
         "service_q4TViX",
         "service_9gmJMa",
-        "service_yBPagk",
         "service_xgkqQx",
         "service_PTnLDR",
         "service_UhXfgi",
