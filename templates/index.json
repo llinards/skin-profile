@@ -388,6 +388,15 @@
     "template_services_carousel_grid_phrCqU": {
       "type": "template-services-carousel-grid",
       "blocks": {
+        "service_p9RcbY": {
+          "type": "service",
+          "name": "Podoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Background_10bd5df5-b2ef-46cf-b516-b1865edb6382.png",
+            "name": "<p>Podoloģija</p>",
+            "url": "shopify://pages/podologija"
+          }
+        },
         "service_LAfwn9": {
           "type": "service",
           "name": "Estētiskā medicīna",
@@ -462,6 +471,7 @@
         }
       },
       "block_order": [
+        "service_p9RcbY",
         "service_LAfwn9",
         "service_BqgxjN",
         "service_PUyKQR",
