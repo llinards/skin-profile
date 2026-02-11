@@ -9,12 +9,60 @@
  */
 {
   "sections": {
+    "template_header_carousel_wQVDCN": {
+      "type": "template-header-carousel",
+      "blocks": {
+        "image_bAh63V": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 1",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-1.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 1"
+          }
+        },
+        "image_XdbjaK": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 2",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-2.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 2"
+          }
+        },
+        "image_mryGbT": {
+          "type": "image",
+          "name": "Dermatoloģija - Slaids - 3",
+          "settings": {
+            "image": "shopify://shop_images/dermatology-slide-3.jpg",
+            "alt_text": "Dermatoloģija - Slaids - 3"
+          }
+        }
+      },
+      "block_order": [
+        "image_bAh63V",
+        "image_XdbjaK",
+        "image_mryGbT"
+      ],
+      "name": "Galvenes sadaļa ar karuseli",
+      "settings": {
+        "heading": "Procedūras Sejai",
+        "subtext": "<p>Mēs veicam profesionālas sejas attīrīšanas procedūras, kuru mērķis ir atjaunot ādas dabisko līdzsvaru un veselīgu izskatu. Procedūras palīdz dziļi attīrīt poras, mazināt pinnes un komedonus, samazināt iekaisumu, kā arī uzlabot ādas tekstūru un toni. Individuāli pielāgota pieeja ļauj ne tikai risināt esošās ādas problēmas, bet arī stiprināt ādas aizsargbarjeru, veicināt šūnu atjaunošanos un nodrošināt ilgtermiņā koptu, svaigu un starojošu sejas ādu.</p>",
+        "spacing": true,
+        "phone_number": "",
+        "email_address": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "booking_url": ""
+      }
+    },
     "main": {
       "type": "page",
-      "settings": {}
+      "settings": {
+        "add_top_padding": true
+      }
     }
   },
   "order": [
+    "template_header_carousel_wQVDCN",
     "main"
   ]
 }
