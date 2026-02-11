@@ -76,13 +76,23 @@
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
         },
+        "procedure_Nm3L8j": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_rhdBPQ": {
           "type": "procedure",
           "name": "Pirmreizēja podologa konsultācija un apskate",
           "settings": {
             "procedure_name": "Pirmreizēja podologa konsultācija un apskate",
             "procedure_description": "",
-            "procedure_price": "€50",
+            "procedure_price": "€60",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
@@ -90,6 +100,7 @@
       },
       "block_order": [
         "procedure_KQkH9m",
+        "procedure_Nm3L8j",
         "procedure_rhdBPQ"
       ],
       "name": "Procedūru tabula",
