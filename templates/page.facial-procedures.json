@@ -392,6 +392,15 @@
             "url": "shopify://pages/laser-dermatology"
           }
         },
+        "service_QXtUp4": {
+          "type": "service",
+          "name": "Endokrinoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Screenshot_2026-02-11_at_20.25.37.png",
+            "name": "<p>Endokrinoloģija</p>",
+            "url": "shopify://pages/endocrinology"
+          }
+        },
         "service_CiKxQC": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -433,6 +442,7 @@
         "service_mhLaFU",
         "service_YVkFqj",
         "service_LFL3BB",
+        "service_QXtUp4",
         "service_CiKxQC",
         "service_jVYWyn",
         "service_iJtMHF",
