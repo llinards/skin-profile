@@ -125,6 +125,17 @@
     "template_procedure_table_CPLAYj": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_V6eUfj": {
+          "type": "procedure",
+          "name": "Ieauguša vai traumēta naga korekcija ar iekaisumu un hipergranulāciju ",
+          "settings": {
+            "procedure_name": "Ieauguša vai traumēta naga korekcija ar iekaisumu un hipergranulāciju",
+            "procedure_description": "",
+            "procedure_price": "€35",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_4WWk3C": {
           "type": "procedure",
           "name": "Ieauguša naga korekcija",
@@ -171,6 +182,7 @@
         }
       },
       "block_order": [
+        "procedure_V6eUfj",
         "procedure_4WWk3C",
         "procedure_p6CqEm",
         "procedure_Jkgj3a",
