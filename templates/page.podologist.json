@@ -315,6 +315,17 @@
     "template_procedure_table_PzxEkd": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_TdeQ94": {
+          "type": "procedure",
+          "name": "Ortoniksijas skavas kontroles vizīte ",
+          "settings": {
+            "procedure_name": "Ortoniksijas skavas kontroles vizīte",
+            "procedure_description": "",
+            "procedure_price": "€30",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_AcEaxh": {
           "type": "procedure",
           "name": "Ieauguša naga korekcija ar ortoniksijas metodi ",
@@ -328,6 +339,7 @@
         }
       },
       "block_order": [
+        "procedure_TdeQ94",
         "procedure_AcEaxh"
       ],
       "name": "Ortoniksija",
