@@ -244,6 +244,17 @@
     "template_procedure_table_xqgXKq": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_a33Vwp": {
+          "type": "procedure",
+          "name": "Varžacu apstrāde (vairākas) ",
+          "settings": {
+            "procedure_name": "Varžacu apstrāde (vairākas)",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€ sākot no 40",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_AEqaVX": {
           "type": "procedure",
           "name": "Varžacas apstrāde (viena) ",
@@ -257,6 +268,7 @@
         }
       },
       "block_order": [
+        "procedure_a33Vwp",
         "procedure_AEqaVX"
       ],
       "name": "Ādas veidojumu apstrāde",
