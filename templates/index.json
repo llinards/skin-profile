@@ -255,16 +255,6 @@
     "team_section_WTmffT": {
       "type": "template-team-section",
       "blocks": {
-        "member_FRQhw6": {
-          "type": "member",
-          "settings": {
-            "photo": "shopify://shop_images/SKIN__NEW.png",
-            "name": "Evija Bīriņa",
-            "position": "Podologs",
-            "specialities": "<p>Pilna pēdu aprūpe, diabēta pēdas aprūpe, nagu apstrāde un individuāli pielāgoti risinājumi jūsu komfortam un veselībai.</p>",
-            "identificator": ""
-          }
-        },
         "member_VUrXxz": {
           "type": "member",
           "name": "Jana Krūmiņa",
@@ -342,6 +332,16 @@
             "identificator": "47000038121"
           }
         },
+        "member_FRQhw6": {
+          "type": "member",
+          "settings": {
+            "photo": "shopify://shop_images/SKIN__NEW.png",
+            "name": "Evija Bīriņa",
+            "position": "Podologs",
+            "specialities": "<p>Pilna pēdu aprūpe, diabēta pēdas aprūpe, nagu apstrāde un individuāli pielāgoti risinājumi jūsu komfortam un veselībai.</p>",
+            "identificator": ""
+          }
+        },
         "member_BdQJaQ": {
           "type": "member",
           "name": "Anita Baumane",
@@ -366,7 +366,6 @@
         }
       },
       "block_order": [
-        "member_FRQhw6",
         "member_VUrXxz",
         "member_DeRTbH",
         "member_ydrh6E",
@@ -374,6 +373,7 @@
         "member_mJgHKp",
         "member_x6NexG",
         "member_8k4Ldf",
+        "member_FRQhw6",
         "member_BdQJaQ",
         "member_3AxYwb"
       ],
