@@ -596,6 +596,15 @@
             "url": "shopify://pages/dermatology"
           }
         },
+        "service_hD8bpd": {
+          "type": "service",
+          "name": "Podoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Background_10bd5df5-b2ef-46cf-b516-b1865edb6382.png",
+            "name": "<p>Podoloģija</p>",
+            "url": "shopify://pages/podologija"
+          }
+        },
         "service_yrmgEN": {
           "type": "service",
           "name": "Lāzerdermatoloģija",
@@ -654,6 +663,7 @@
       "block_order": [
         "service_qGYpKD",
         "service_cDKehU",
+        "service_hD8bpd",
         "service_yrmgEN",
         "service_EAXyc3",
         "service_nMbTUh",
