@@ -54,6 +54,15 @@
         "booking_url": ""
       }
     },
+    "template_text_only_NjE7rg": {
+      "type": "template-text-only",
+      "name": "Teksta sadaļa",
+      "settings": {
+        "heading": "Droša un profesionāla pēdu veselības aprūpe",
+        "text": "<p>• Speciālists sniedz profesionālas konsultācijas un veic pilnu pēdu un nagu aprūpi, palīdzot risināt gan estētiskas, gan medicīniskas problēmas.</p><p>• Tiek nodrošināta individuāli pielāgota pieeja katram pacientam, izstrādājot piemērotāko aprūpes un ārstēšanas plānu.</p><p>• Izmantojot mūsdienīgas metodes un ievērojot augstākos higiēnas standartus, tiek nodrošināta droša un efektīva pēdu veselības aprūpe.</p>",
+        "text_html": ""
+      }
+    },
     "main": {
       "type": "page",
       "settings": {
@@ -63,6 +72,7 @@
   },
   "order": [
     "template_header_carousel_wQVDCN",
+    "template_text_only_NjE7rg",
     "main"
   ]
 }
