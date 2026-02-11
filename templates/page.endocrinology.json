@@ -134,6 +134,15 @@
             "url": "shopify://pages/laser-dermatology"
           }
         },
+        "service_qiXxtV": {
+          "type": "service",
+          "name": "Podoloģija",
+          "settings": {
+            "photo": "shopify://shop_images/Background_10bd5df5-b2ef-46cf-b516-b1865edb6382.png",
+            "name": "<p>Podoloģija</p>",
+            "url": "shopify://pages/podologija"
+          }
+        },
         "service_a89Azd": {
           "type": "service",
           "name": "Sejas procedūras",
@@ -175,6 +184,7 @@
         "service_ntPz4G",
         "service_KHPgrF",
         "service_jWyfPH",
+        "service_qiXxtV",
         "service_a89Azd",
         "service_BLxeLX",
         "service_xGwa3T",
