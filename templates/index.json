@@ -310,6 +310,17 @@
             "identificator": "23130060765"
           }
         },
+        "member_8k4Ldf": {
+          "type": "member",
+          "name": "Dr. Guna Grūbe",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Dr. Guna Grūbe",
+            "position": "Dermatologs, venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
+            "identificator": "47000038121"
+          }
+        },
         "member_BdQJaQ": {
           "type": "member",
           "name": "Anita Baumane",
@@ -339,6 +350,7 @@
         "member_ydrh6E",
         "member_PbAW4D",
         "member_mJgHKp",
+        "member_8k4Ldf",
         "member_BdQJaQ",
         "member_3AxYwb"
       ],
