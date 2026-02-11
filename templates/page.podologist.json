@@ -250,7 +250,7 @@
           "settings": {
             "procedure_name": "Varžacu apstrāde (vairākas)",
             "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€ sākot no 40",
+            "procedure_price": "sākot no €40",
             "procedure_duration": "60",
             "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
           }
