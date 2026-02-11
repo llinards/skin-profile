@@ -244,6 +244,17 @@
     "template_procedure_table_xqgXKq": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_MLwhXw": {
+          "type": "procedure",
+          "name": "Kārpu apstrāde (vairākas) ",
+          "settings": {
+            "procedure_name": "Kārpu apstrāde (vairākas)",
+            "procedure_description": "",
+            "procedure_price": "sākot no €40",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_zDYMFG": {
           "type": "procedure",
           "name": "Kārpas apstrāde (viena) ",
@@ -279,6 +290,7 @@
         }
       },
       "block_order": [
+        "procedure_MLwhXw",
         "procedure_zDYMFG",
         "procedure_a33Vwp",
         "procedure_AEqaVX"
