@@ -390,6 +390,7 @@
       "blocks": {
         "service_A8dNzw": {
           "type": "service",
+          "name": "Endokrinoloģija",
           "settings": {
             "photo": "shopify://shop_images/Screenshot_2026-02-11_at_20.25.37.png",
             "name": "<p>Endokrinoloģija</p>",
