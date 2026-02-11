@@ -244,6 +244,17 @@
     "template_procedure_table_xqgXKq": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_zDYMFG": {
+          "type": "procedure",
+          "name": "Kārpas apstrāde (viena) ",
+          "settings": {
+            "procedure_name": "Kārpas apstrāde (viena)",
+            "procedure_description": "",
+            "procedure_price": "€25",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_a33Vwp": {
           "type": "procedure",
           "name": "Varžacu apstrāde (vairākas) ",
@@ -268,6 +279,7 @@
         }
       },
       "block_order": [
+        "procedure_zDYMFG",
         "procedure_a33Vwp",
         "procedure_AEqaVX"
       ],
