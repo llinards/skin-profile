@@ -3,7 +3,9 @@
     {% if cart.item_count > 0 %}
       <div data-cart-body>
         {%- assign back_to_store_text = 'cart.back_to_store' | t -%}
-        {% render 'btn-brown', url: routes.all_products_collection_url, text: back_to_store_text %}
+        <div data-return-to-store>
+          {% render 'btn-brown', url: routes.all_products_collection_url, text: back_to_store_text %}
+        </div>
         <div class="flex items-center justify-between mb-6">
           <h1 class="hidden">{{ 'cart.heading' | t }}</h1>
         </div>
@@ -212,7 +214,9 @@
           <h2 class="text-3xl my-4">{{ 'cart.empty' | t }}</h2>
           <div class="my-4 py-4">
             {%- assign empty_button_text = 'cart.empty_button' | t -%}
-            {% render 'btn-brown', text: empty_button_text, url: routes.all_products_collection_url %}
+            <div data-return-to-store>
+              {% render 'btn-brown', text: empty_button_text, url: routes.all_products_collection_url %}
+            </div>
           </div>
         </div>
       </div>
@@ -281,7 +285,9 @@
       <h2 class="text-3xl my-4">{{ 'cart.empty' | t }}</h2>
       {%- assign cart_empty = 'cart.empty_button' | t -%}
       <div class="my-4 py-4">
-        {% render 'btn-brown', text: cart_empty, url: routes.all_products_collection_url %}
+        <div data-return-to-store>
+          {% render 'btn-brown', text: cart_empty, url: routes.all_products_collection_url %}
+        </div>
       </div>
     </div>
   </div>
