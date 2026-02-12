@@ -117,6 +117,17 @@
             "identificator": "74230058656"
           }
         },
+        "member_dhxEQB": {
+          "type": "member",
+          "name": "Inga Ničaja",
+          "settings": {
+            "photo": "shopify://shop_images/SKIN__NEW_64be5474-5b5b-4612-9654-2694e1cca638.png",
+            "name": "Inga Ničaja",
+            "position": "Administrators",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
         "member_L7J3aB": {
           "type": "member",
           "name": "Tatjana Krūmiņa",
@@ -139,6 +150,7 @@
         "member_Pw3ifY",
         "member_8B8TN7",
         "member_ifG7cd",
+        "member_dhxEQB",
         "member_L7J3aB"
       ],
       "name": "Komanda",
