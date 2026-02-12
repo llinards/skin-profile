@@ -11,10 +11,7 @@
   "sections": {
     "main": {
       "type": "collections",
-      "settings": {
-        "grid_item_width": "collections--full",
-        "grid_gap": 10
-      }
+      "settings": {}
     },
     "redirect_collections_pACtQt": {
       "type": "redirect-collections",
