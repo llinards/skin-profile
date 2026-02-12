@@ -54,30 +54,10 @@
           </div>
         {% endif %}
 
-        {%- comment -%} Button placement (justify-start/center/end on mobile and desktop) {%- endcomment -%}
-        {%- assign btn_m = section.settings.button_align_mobile | default: 'center' -%}
-        {%- assign btn_d = section.settings.button_align_desktop | default: 'start' -%}
-        {%- case btn_m -%}
-          {%- when 'start' -%}
-            {%- assign btn_class_m = 'justify-start' -%}
-          {%- when 'end' -%}
-            {%- assign btn_class_m = 'justify-end' -%}
-          {%- else -%}
-            {%- assign btn_class_m = 'justify-center' -%}
-        {%- endcase -%}
-        {%- case btn_d -%}
-          {%- when 'start' -%}
-            {%- assign btn_class_d = 'md:justify-start' -%}
-          {%- when 'end' -%}
-            {%- assign btn_class_d = 'md:justify-end' -%}
-          {%- else -%}
-            {%- assign btn_class_d = 'md:justify-center' -%}
-        {%- endcase -%}
-
         <div class="flex flex-col gap-4 w-full">
           {% for block in section.blocks %}
             {% if block.type == 'button' %}
-              <div class="flex {{ btn_class_m }} {{ btn_class_d }} w-full">
+              <div class="flex justify-start w-full">
                 {% case block.settings.style %}
                   {% when 'white' -%}
                     {%- render 'btn-white', text: block.settings.text, url: block.settings.url %}
@@ -158,30 +138,6 @@
         { "value": "right", "label": "Pa labi (text-right)" }
       ],
       "default": "left"
-    },
-
-    { "type": "header", "content": "Pogu novietojums" },
-    {
-      "type": "select",
-      "id": "button_align_mobile",
-      "label": "Mobilajās",
-      "options": [
-        { "value": "start", "label": "Pa kreisi (justify-start)" },
-        { "value": "center", "label": "Centrā (justify-center)" },
-        { "value": "end", "label": "Pa labi (justify-end)" }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "select",
-      "id": "button_align_desktop",
-      "label": "Dators",
-      "options": [
-        { "value": "start", "label": "Pa kreisi (md:justify-start)" },
-        { "value": "center", "label": "Centrā (md:justify-center)" },
-        { "value": "end", "label": "Pa labi (md:justify-end)" }
-      ],
-      "default": "start"
     },
 
     { "type": "header", "content": "Sociālo ikonu saites" },
