@@ -77,6 +77,25 @@
         "heading_level": "h2"
       }
     },
+    "template_procedure_table_NQrYmk": {
+      "type": "template-procedure-table",
+      "name": "Procedūru tabula",
+      "settings": {
+        "title": "Procedūras",
+        "content": "",
+        "disclaimer": "",
+        "apply_url": "",
+        "apply_cta": "Pieteikt",
+        "label_procedure": "Procedūra",
+        "label_description": "Apraksts",
+        "label_price": "Cena",
+        "label_duration": "Ilgums",
+        "label_contraindications": "Kontrindikācijas",
+        "enable_dropdown": true,
+        "open_by_default": false,
+        "space_bottom": false
+      }
+    },
     "template_procedure_table_UXCkTh": {
       "type": "template-procedure-table",
       "blocks": {
@@ -130,7 +149,7 @@
           "settings": {
             "procedure_name": "Radiofrekvence",
             "procedure_description": "Radiofrekvences procedūra sejas ādas struktūras uzlabošanai, sejas ovāla savilkšanai un kolagēna ražošanas stimulēšanai.",
-            "procedure_price": "€65",
+            "procedure_price": "€70",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
@@ -141,7 +160,7 @@
           "settings": {
             "procedure_name": "Frakcionētā radiofrekvence",
             "procedure_description": "Tiek uzlabota asins mikrocirkulācija, tonuss, mazināta tūska, padarot ādu blīvāku un nodrošinot tūlītēju liftinga efektu.",
-            "procedure_price": "€70",
+            "procedure_price": "€80",
             "procedure_duration": "60",
             "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
@@ -523,6 +542,7 @@
     "main",
     "template_text_section_JPJC6T",
     "template_heading_RLVJwU",
+    "template_procedure_table_NQrYmk",
     "template_procedure_table_UXCkTh",
     "template_procedure_table_QfJjmK",
     "template_procedure_table_gpGreq",
