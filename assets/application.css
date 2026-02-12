@@ -2717,8 +2717,6 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-snap-align: start;
-    scroll-snap-type: y mandatory;
   }
   strong, b {
     font-family: "Manrope-SemiBold";
