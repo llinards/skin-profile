@@ -143,31 +143,34 @@
       x-transition:leave-end="opacity-0 scale-95"
       @click.stop
     >
-      <!-- Close Button -->
-      <button
-        @click="showContraModal = false"
-        class="
-          absolute top-8 right-8 size-8 rounded-full bg-(--color-brand-primary) flex items-center justify-center group
-          text-white border border-(--color-brand-primary)
-          hover:bg-white hover:text-(--color-brand-primary)
-          active:bg-white active:text-(--color-brand-primary)
-          transition-all duration-300 z-50
-        "
-        aria-label="{{ 'general.modal.close' | t }}"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="size-6 fill-(--color-brand-secondary) group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)"
-        >
-          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-        </svg>
-      </button>
-
       <!-- Modal Content -->
-      <div class="p-8 md:p-12 space-y-6 overflow-y-auto flex-1">
-        <h2 class="text-xl md:text-3xl">{{ 'general.procedure_table.contraindications' | t }}</h2>
+      <div class="p-8 md:p-12 space-y-6 overflow-y-auto">
+        <div class="flex justify-between items-start">
+          <h2 class="text-xl md:text-3xl">{{ 'general.procedure_table.contraindications' | t }}</h2>
+
+          <!-- Close Button -->
+          <button
+            @click="showContraModal = false"
+            class="
+                           rounded-full bg-(--color-brand-primary) flex items-center justify-center group
+              text-white border border-(--color-brand-primary)
+              hover:bg-white hover:text-(--color-brand-primary)
+              active:bg-white active:text-(--color-brand-primary)
+              transition-all duration-300 z-50 size-8 md:size-9 cursor-pointer
+            "
+            aria-label="{{ 'general.modal.close' | t }}"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 fill-(--color-brand-secondary) group-hover:fill-(--color-brand-primary) group-active:fill-(--color-brand-primary)"
+            >
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
         <div class="rte" x-html="activeContraText"></div>
       </div>
     </div>
