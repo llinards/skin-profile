@@ -9,17 +9,19 @@ Shopify Online Store 2.0 theme for a Latvian dermatology clinic. Built on Skelet
 ## Build & Development Commands
 
 ```bash
-# Theme Development
-shopify theme dev                    # Start live preview
+# Theme Development (primary)
+shopify theme dev                    # Start live preview (main command)
 shopify theme push                   # Push to store
 shopify theme pull                   # Pull from store
 shopify theme check                  # Lint theme files
 shopify theme check sections/file.liquid  # Lint single file
 
-# CSS (Tailwind via Vite)
-npm run dev                          # Vite dev server
-npm run build                        # Production build
+# CSS (only if editing src/tailwind.css)
+npm run build                        # One-time Tailwind build
+npx @tailwindcss/cli -i src/tailwind.css -o assets/application.css --watch
 ```
+
+**Workflow:** Usually just `shopify theme dev` is enough. Only run Tailwind CLI in a second terminal if actively editing `src/tailwind.css`.
 
 **No test suite** - use `shopify theme check` for validation.
 
