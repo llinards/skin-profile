@@ -57,9 +57,9 @@
           "type": "project_dropdown",
           "name": "Skin Profile",
           "settings": {
-            "project_title": "Skin Profile",
+            "project_title": "Atbalsts procesu digitalizācijai komercdarbībā",
             "project_reference": "",
-            "content": "<p>“Skin Profile” ir ādas medicīnas centrs Nr. 1 Siguldā ar plašāko un modernāko procedūru un diagnostikas klāstu reģionā.</p>",
+            "content": "<p>SIA \"Piecas dienas\" Atveseļošanās fonda ietvaros veic ieguldījumu pārdošanas procesu uzlabošanā - jaunas uzņēmuma tīmekļa vietnes ar e-komercijas risinājumu izstrādi un ieviešanu, izmantojot mākslīgā intelekta rīkus. </p><p>Līgums Nr. 9.2-17-L-2025/1106</p><p></p>",
             "open": true,
             "inline_layout": true
           }
