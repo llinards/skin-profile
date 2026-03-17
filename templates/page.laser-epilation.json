@@ -71,6 +71,16 @@
     "template_procedure_table_jMzci8": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_GXG3Gg": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Virslūpa + Zods",
+            "procedure_description": "Komplekts",
+            "procedure_price": "40",
+            "procedure_duration": "30",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_3gnmFz": {
           "type": "procedure",
           "name": "Bikini sievietēm – sānu malas + sēžas intīmā zona",
@@ -106,6 +116,7 @@
         }
       },
       "block_order": [
+        "procedure_GXG3Gg",
         "procedure_3gnmFz",
         "procedure_WQmjwF",
         "procedure_66H3DL"
