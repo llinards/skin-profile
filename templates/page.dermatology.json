@@ -155,16 +155,6 @@
     "template_procedure_table_BfqGKY": {
       "type": "template-procedure-table",
       "blocks": {
-        "procedure_Le77LU": {
-          "type": "procedure",
-          "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
-          }
-        },
         "procedure_q97LmQ": {
           "type": "procedure",
           "name": "1 veidojuma noņemšana",
@@ -189,7 +179,6 @@
         }
       },
       "block_order": [
-        "procedure_Le77LU",
         "procedure_q97LmQ",
         "procedure_QgwLNj"
       ],
