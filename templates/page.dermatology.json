@@ -89,7 +89,7 @@
           "settings": {
             "procedure_name": "Ādas veidojumu diagnostika",
             "procedure_description": "Ādas veidojumu izvērtēšana ar dermatoskopiju, lai atšķirtu labdabīgus un aizdomīgus veidojumus.",
-            "procedure_price": "€20-70",
+            "procedure_price": "€20-€70",
             "procedure_duration": "30",
             "contraindications_text": ""
           }
