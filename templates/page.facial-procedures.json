@@ -88,7 +88,7 @@
             "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas efektīvu un dziļu tīrīšanu visiem ādas tipiem.",
             "procedure_price": "€60",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+            "contraindications_text": ""
           }
         },
         "procedure_WW3krV": {
@@ -102,6 +102,16 @@
             "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
           }
         },
+        "procedure_JNFfXK": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_Lc8XyH": {
           "type": "procedure",
           "name": "Mikrodermobrāzija",
@@ -110,7 +120,7 @@
             "procedure_description": "Procedūru kopums ar mērķi nodrošināt ādas virsējā slāņa, nedzīvo šūnu eksfoliāciju, neskarot dzīvās šūnas.",
             "procedure_price": "€65",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+            "contraindications_text": "<p><strong>• Aktīvas infekcijas vai iekaisuma procesi apstrādes zonā<br/>• Ādas slimības</strong> (dermatīts, ekzēma, psoriāze, herpes aktīvā fāzē)<strong><br/>• Atvērtas brūces, nobrāzumi vai bojāta āda<br/>• Smaga akne (iekaisīga forma)<br/>• Rosacea aktīvā stadijā<br/>• Keloīdu rētu veidošanās tendence<br/>• Nesen veiktas agresīvas procedūras </strong>(lāzers, ķīmiskais pīlings)<strong><br/><br/></strong></p>"
           }
         },
         "procedure_xzbkEM": {
@@ -183,6 +193,7 @@
       "block_order": [
         "procedure_TALwPx",
         "procedure_WW3krV",
+        "procedure_JNFfXK",
         "procedure_Lc8XyH",
         "procedure_xzbkEM",
         "procedure_RCia4c",
