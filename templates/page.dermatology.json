@@ -252,7 +252,7 @@
         "label_description": "Apraksts",
         "label_price": "Cena",
         "label_duration": "Ilgums",
-        "label_contraindications": "Kontrindikācijas",
+        "label_contraindications": "",
         "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
