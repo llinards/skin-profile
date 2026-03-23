@@ -71,6 +71,16 @@
     "template_procedure_table_q4pgg9": {
       "type": "template-procedure-table",
       "blocks": {
+        "procedure_BCHeqA": {
+          "type": "procedure",
+          "settings": {
+            "procedure_name": "Sejas tīrīšana",
+            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
+            "procedure_price": "€45",
+            "procedure_duration": "60",
+            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
+          }
+        },
         "procedure_cYVJVJ": {
           "type": "procedure",
           "name": "Mugura + rokas",
@@ -112,7 +122,7 @@
             "procedure_description": "Kompleksa vakummasāža kājām, sēžai un vēdera zonai ķermeņa kontūras uzlabošanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+            "contraindications_text": ""
           }
         },
         "procedure_ihgy7i": {
@@ -123,7 +133,7 @@
             "procedure_description": "Vakummasāža kājām, sēžai un mugurai limfodrenāžas un tonusa uzlabošanai.",
             "procedure_price": "€50",
             "procedure_duration": "60",
-            "contraindications_text": "<ul><li><strong>Grūtniecība</strong></li><li><strong>Aktīvas ādas infekcijas</strong> procedūras zonā (herpes simplex, bakteriālas, sēnīšu infekcijas)</li><li><strong>Ādas onkoloģija</strong> vai aizdomas par ļaundabīgu procesu apstrādes zonā</li><li><strong>Nesen veikta radioterapija</strong> apstrādes zonā</li><li><strong>Smagi imūnsistēmas traucējumi </strong>(piem., imūnsupresīva terapija)</li><li><strong>Nespēja ievērot pēcprocedūras režīmu</strong> (saules izvairīšanās, kopšana)</li><li><strong>Tendence uz keloīdu vai hipertrofisku rētu veidošanos</strong></li><li><strong>Autoimūnas slimības</strong> (īpaši aktīvā fāzē)</li><li><strong>Nesen lietots izotretinoīns</strong> (parasti 6–12 mēn. intervāls)</li><li><strong>Nesen veikts dziļš ķīmiskais pīlings vai cita agresīva procedūra</strong></li><li><strong>Svaigs iedegums / solārijs </strong>(↑ hiperpigmentācijas risks)</li><li><strong>Aktīvs dermatīts, psoriāze, rosacea uzliesmojums </strong>procedūras zonā</li><li><strong>Koagulācijas traucējumi vai antikoagulantu terapija</strong></li><li><strong>Nekontrolēts cukura diabēts</strong></li></ul>"
+            "contraindications_text": ""
           }
         },
         "procedure_hYKkWH": {
@@ -194,6 +204,7 @@
         }
       },
       "block_order": [
+        "procedure_BCHeqA",
         "procedure_cYVJVJ",
         "procedure_gDj3Yr",
         "procedure_k4A8Br",
@@ -288,7 +299,7 @@
         "label_description": "Apraksts",
         "label_price": "Cena",
         "label_duration": "Ilgums",
-        "label_contraindications": "Kontrindikācijas",
+        "label_contraindications": "",
         "enable_dropdown": true,
         "open_by_default": false,
         "space_bottom": false
