@@ -120,7 +120,7 @@
             "procedure_name": "Elektroporācija",
             "procedure_description": "Mūsdienīga, neinvazīva aktīvo vielu ievadīšana ādā grumbu mazināšanai, pigmentācijas un dziļas mitrināšanas nodrošināšanai.",
             "procedure_price": "€70",
-            "procedure_duration": "60",
+            "procedure_duration": "90",
             "contraindications_text": "<p><strong>• Grūtniecība<br/>• Elektrokardiostimulators vai metāla implanti apstrādes zonā<br/>• Alerģija pret izmantotajiem preparātiem<br/>• Aktīvas infekcijas vai iekaisuma procesi apstrādes zonā<br/>• Ādas slimības </strong>(dermatīts, ekzēma, herpes aktīvā fāzē)<strong><br/>• Onkoloģiskas slimības<br/>• Autoimūnas slimības aktīvā fāzē<br/>• Imūnsupresija<br/><br/></strong></p>"
           }
         },
@@ -131,7 +131,7 @@
             "procedure_name": "Radiofrekvence",
             "procedure_description": "Radiofrekvences procedūra sejas ādas struktūras uzlabošanai, sejas ovāla savilkšanai un kolagēna ražošanas stimulēšanai.",
             "procedure_price": "€70",
-            "procedure_duration": "60",
+            "procedure_duration": "90",
             "contraindications_text": "<p><strong>• Grūtniecība<br/>• Elektrokardiostimulators<br/>• Metāla implanti apstrādes zonā<br/>• Aktīvas infekcijas vai iekaisuma procesi apstrādes zonā<br/>• Ādas slimības</strong> (dermatīts, ekzēma, psoriāze, herpes aktīvā fāzē)<strong><br/>• Onkoloģiskas slimības<br/>• Autoimūnas slimības aktīvā fāzē<br/>• Imūnsupresija<br/>• Nekontrolēts cukura diabēts<br/>• Keloīdu rētu veidošanās tendence<br/><br/></strong></p>"
           }
         },
