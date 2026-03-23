@@ -102,16 +102,6 @@
             "contraindications_text": "<p><strong>• Aktīvas infekcijas vai iekaisuma procesi (piem., strutaina akne)<br/>• Ādas slimības </strong>(dermatīts, ekzēma, psoriāze, herpes aktīvā fāzē)<strong><br/>• Atvērtas brūces, nobrāzumi vai bojāta āda<br/>• Izteikti jutīga vai kairināta āda<br/>• Rosacea aktīvā stadijā<br/>• Alerģija pret izmantotajiem kosmētikas līdzekļiem<br/>• Nesen veiktas agresīvas procedūras </strong>(lāzers, ķīmiskais pīlings)<strong><br/><br/></strong></p>"
           }
         },
-        "procedure_JNFfXK": {
-          "type": "procedure",
-          "settings": {
-            "procedure_name": "Sejas tīrīšana",
-            "procedure_description": "Dziļa ādas tīrīšana ar tonizēšanu",
-            "procedure_price": "€45",
-            "procedure_duration": "60",
-            "contraindications_text": "<p>Kontraindikācijas informācija šeit.</p>"
-          }
-        },
         "procedure_Lc8XyH": {
           "type": "procedure",
           "name": "Mikrodermobrāzija",
@@ -193,7 +183,6 @@
       "block_order": [
         "procedure_TALwPx",
         "procedure_WW3krV",
-        "procedure_JNFfXK",
         "procedure_Lc8XyH",
         "procedure_xzbkEM",
         "procedure_RCia4c",
