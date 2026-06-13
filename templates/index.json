@@ -255,11 +255,12 @@
       "blocks": {
         "member_VUKA4t": {
           "type": "member",
+          "name": "Jūlija Klendere",
           "settings": {
             "photo": "shopify://shop_images/skin-profile-favicon.jpg",
             "name": "Dr. Jūlija Klendere",
             "position": "Dermatologs, Trihologs un venerologs",
-            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu <br/>diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze<br/> un ablatīvā lāzerķirurģija, skaistuma injekcijas, botulīna toksīna injekcijas, biorevitalizācija,  triholoģija. </p>",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu <br/>diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze<br/>un ablatīvā lāzerķirurģija, skaistuma injekcijas, botulīna toksīna injekcijas, biorevitalizācija,  triholoģija. </p>",
             "identificator": "45090055558"
           }
         },
