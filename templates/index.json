@@ -330,6 +330,15 @@
             "identificator": "47000038121"
           }
         },
+        "member_UmLp6t": {
+          "type": "member",
+          "settings": {
+            "name": "",
+            "position": "",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
         "member_FRQhw6": {
           "type": "member",
           "name": "Evija Bīriņa",
@@ -383,6 +392,7 @@
         "member_mJgHKp",
         "member_x6NexG",
         "member_8k4Ldf",
+        "member_UmLp6t",
         "member_FRQhw6",
         "member_BdQJaQ",
         "member_33Nwe7",
