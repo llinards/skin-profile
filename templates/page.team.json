@@ -18,6 +18,26 @@
     "template_team_section_8U3NT7": {
       "type": "template-team-section",
       "blocks": {
+        "member_PkV4DD": {
+          "type": "member",
+          "name": "Poļina Kluškina",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Poļina Kluškina",
+            "position": "Kosmētiķis, vispārējās aprūpes māsa",
+            "specialities": "<p>Sejas un ķermeņa kopšanas procedūras, lāzerestētika, lāzerepilācija, biorevitalizācija, infūzijas, trihoskopija</p>",
+            "identificator": "19240061309"
+          }
+        },
+        "member_37ayPi": {
+          "type": "member",
+          "settings": {
+            "name": "",
+            "position": "",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
         "member_BnTCca": {
           "type": "member",
           "name": "Jana Krūmiņa",
@@ -29,15 +49,59 @@
             "identificator": "43520060764"
           }
         },
-        "member_qEBT9H": {
+        "member_dhxEQB": {
           "type": "member",
-          "name": "Laura Nebija",
+          "name": "Inga Ničaja",
           "settings": {
-            "photo": "shopify://shop_images/Laura.jpg",
-            "name": "Laura Nebija",
-            "position": "Kosmētiķis",
-            "specialities": "<p>Lāzerepilācija, ķermeņa kopšanas procedūras.</p>",
-            "identificator": "55600060766"
+            "photo": "shopify://shop_images/SKIN__NEW_64be5474-5b5b-4612-9654-2694e1cca638.png",
+            "name": "Inga Ničaja",
+            "position": "Administrators",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_L7J3aB": {
+          "type": "member",
+          "name": "Tatjana Krūmiņa",
+          "settings": {
+            "photo": "shopify://shop_images/Tatjana.jpg",
+            "name": "Tatjana Krūmiņa",
+            "position": "Administrators",
+            "specialities": "",
+            "identificator": ""
+          }
+        },
+        "member_eTnfMa": {
+          "type": "member",
+          "name": "Dr. Ilga Metāla",
+          "settings": {
+            "photo": "shopify://shop_images/Ilga1.png",
+            "name": "Dr. Ilga Metāla",
+            "position": "Dermatologs, venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
+            "identificator": "41810012718"
+          }
+        },
+        "member_Pw3ifY": {
+          "type": "member",
+          "name": "Dr. Guna Grūbe",
+          "settings": {
+            "photo": "shopify://shop_images/Guna.jpg",
+            "name": "Dr. Guna Grūbe",
+            "position": "Dermatologs, venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
+            "identificator": "47000038121"
+          }
+        },
+        "member_grzGmf": {
+          "type": "member",
+          "name": "Jūlija Klendere",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Dr. Jūlija Klendere",
+            "position": "Dermatologs, Trihologs un venerologs",
+            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu <br/>diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze<br/>un ablatīvā lāzerķirurģija, skaistuma injekcijas, botulīna toksīna injekcijas, biorevitalizācija,  triholoģija. </p>",
+            "identificator": "45090055558"
           }
         },
         "member_dTDW4h": {
@@ -73,26 +137,15 @@
             "identificator": "23130060765"
           }
         },
-        "member_eTnfMa": {
+        "member_qEBT9H": {
           "type": "member",
-          "name": "Dr. Ilga Metāla",
+          "name": "Laura Nebija",
           "settings": {
-            "photo": "shopify://shop_images/Ilga1.png",
-            "name": "Dr. Ilga Metāla",
-            "position": "Dermatologs, venerologs",
-            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, rētu ārstēšana, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
-            "identificator": "41810012718"
-          }
-        },
-        "member_Pw3ifY": {
-          "type": "member",
-          "name": "Dr. Guna Grūbe",
-          "settings": {
-            "photo": "shopify://shop_images/Guna.jpg",
-            "name": "Dr. Guna Grūbe",
-            "position": "Dermatologs, venerologs",
-            "specialities": "<p>Akūtu un hronisku ādas slimību diagnostika un ārstēšana, ādas veidojumu diagnostika, lāzerdermatoloģija, selektīvā fototermolīze un ablatīvā lāzerķirurģija.</p>",
-            "identificator": "47000038121"
+            "photo": "shopify://shop_images/Laura.jpg",
+            "name": "Laura Nebija",
+            "position": "Kosmētiķis",
+            "specialities": "<p>Lāzerepilācija, ķermeņa kopšanas procedūras.</p>",
+            "identificator": "55600060766"
           }
         },
         "member_8B8TN7": {
@@ -116,42 +169,23 @@
             "specialities": "<p>Sniedz rekomendācijas un izstrādā uztura plānu hronisku slimību ārstēšanai un profilaksei, strādā ar ikvienu, kurš ir ieinteresēts ēšanas paradumu maiņā un sabalansēta uztura ieviešanā.</p>",
             "identificator": "74230058656"
           }
-        },
-        "member_dhxEQB": {
-          "type": "member",
-          "name": "Inga Ničaja",
-          "settings": {
-            "photo": "shopify://shop_images/SKIN__NEW_64be5474-5b5b-4612-9654-2694e1cca638.png",
-            "name": "Inga Ničaja",
-            "position": "Administrators",
-            "specialities": "",
-            "identificator": ""
-          }
-        },
-        "member_L7J3aB": {
-          "type": "member",
-          "name": "Tatjana Krūmiņa",
-          "settings": {
-            "photo": "shopify://shop_images/Tatjana.jpg",
-            "name": "Tatjana Krūmiņa",
-            "position": "Administrators",
-            "specialities": "",
-            "identificator": ""
-          }
         }
       },
       "block_order": [
+        "member_PkV4DD",
+        "member_37ayPi",
         "member_BnTCca",
-        "member_qEBT9H",
+        "member_dhxEQB",
+        "member_L7J3aB",
+        "member_eTnfMa",
+        "member_Pw3ifY",
+        "member_grzGmf",
         "member_dTDW4h",
         "member_qRYnCt",
         "member_7GY3ze",
-        "member_eTnfMa",
-        "member_Pw3ifY",
+        "member_qEBT9H",
         "member_8B8TN7",
-        "member_ifG7cd",
-        "member_dhxEQB",
-        "member_L7J3aB"
+        "member_ifG7cd"
       ],
       "name": "Komanda",
       "settings": {
