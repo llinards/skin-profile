@@ -18,17 +18,6 @@
     "template_team_section_8U3NT7": {
       "type": "template-team-section",
       "blocks": {
-        "member_PkV4DD": {
-          "type": "member",
-          "name": "Poļina Kluškina",
-          "settings": {
-            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
-            "name": "Poļina Kluškina",
-            "position": "Kosmētiķis, vispārējās aprūpes māsa",
-            "specialities": "<p>Sejas un ķermeņa kopšanas procedūras, lāzerestētika, lāzerepilācija, biorevitalizācija, infūzijas, trihoskopija</p>",
-            "identificator": "19240061309"
-          }
-        },
         "member_37ayPi": {
           "type": "member",
           "settings": {
@@ -148,6 +137,17 @@
             "identificator": "55600060766"
           }
         },
+        "member_PkV4DD": {
+          "type": "member",
+          "name": "Poļina Kluškina",
+          "settings": {
+            "photo": "shopify://shop_images/skin-profile-favicon.jpg",
+            "name": "Poļina Kluškina",
+            "position": "Kosmētiķis, vispārējās aprūpes māsa",
+            "specialities": "<p>Sejas un ķermeņa kopšanas procedūras, lāzerestētika, lāzerepilācija, biorevitalizācija, infūzijas, trihoskopija</p>",
+            "identificator": "19240061309"
+          }
+        },
         "member_8B8TN7": {
           "type": "member",
           "name": "Evija Bīriņa",
@@ -172,7 +172,6 @@
         }
       },
       "block_order": [
-        "member_PkV4DD",
         "member_37ayPi",
         "member_BnTCca",
         "member_dhxEQB",
@@ -184,6 +183,7 @@
         "member_qRYnCt",
         "member_7GY3ze",
         "member_qEBT9H",
+        "member_PkV4DD",
         "member_8B8TN7",
         "member_ifG7cd"
       ],
