@@ -16,12 +16,13 @@ shopify theme pull                   # Pull from store
 shopify theme check                  # Lint theme files
 shopify theme check sections/file.liquid  # Lint single file
 
-# CSS (only if editing src/tailwind.css)
-npm run build                        # One-time Tailwind build
-npx @tailwindcss/cli -i src/tailwind.css -o assets/application.css --watch
+# CSS (only if editing src/tailwind.css) — compiled by the Tailwind CLI, NOT Vite.
+# The `npm run dev`/`npm run build` scripts call vite but there is no vite config; ignore them.
+npx @tailwindcss/cli -i src/tailwind.css -o assets/application.css           # one-time build
+npx @tailwindcss/cli -i src/tailwind.css -o assets/application.css --watch   # watch mode
 ```
 
-**Workflow:** Usually just `shopify theme dev` is enough. Only run Tailwind CLI in a second terminal if actively editing `src/tailwind.css`.
+**Workflow:** Usually just `shopify theme dev` is enough. Only run the Tailwind CLI in a second terminal if actively editing `src/tailwind.css`. `assets/application.css` is the committed build output the theme serves — regenerate it after changing the Tailwind source.
 
 **No test suite** - use `shopify theme check` for validation.
 
