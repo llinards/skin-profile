@@ -1,0 +1,116 @@
+{%- if section.settings.enabled and section.blocks.size > 0 -%}
+  {%- liquid
+    assign speed = section.settings.scroll_speed | default: 120
+    assign gap = section.settings.gap | default: 160
+  -%}
+  <style>
+    #announcement-bar-{{ section.id }} {
+      background-color: var(--color-brand-primary, #885642);
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.2;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) {
+      #announcement-bar-{{ section.id }} {
+        font-size: 24px;
+      }
+    }
+    #announcement-bar-{{ section.id }} .ab-viewport {
+      display: flex;
+      width: max-content;
+      animation: ab-scroll-{{ section.id }} {{ speed }}s linear infinite;
+    }
+    #announcement-bar-{{ section.id }}:hover .ab-viewport,
+    #announcement-bar-{{ section.id }}:focus-within .ab-viewport {
+      animation-play-state: paused;
+    }
+    #announcement-bar-{{ section.id }} .ab-track {
+      display: flex;
+      align-items: center;
+      gap: {{ gap }}px;
+      padding-right: {{ gap }}px;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    @keyframes ab-scroll-{{ section.id }} {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #announcement-bar-{{ section.id }} .ab-viewport {
+        animation: none;
+      }
+      #announcement-bar-{{ section.id }} .ab-track--dup {
+        display: none;
+      }
+    }
+  </style>
+
+  <aside
+    id="announcement-bar-{{ section.id }}"
+    role="region"
+    aria-label="{{ 'general.accessibility.announcement_marquee_label' | t }}"
+    {{ section.shopify_attributes }}
+  >
+    <div class="ab-viewport">
+      {%- for copy in (1..2) -%}
+        <div
+          class="ab-track{% if copy == 2 %} ab-track--dup{% endif %}"
+          {% if copy == 2 %}aria-hidden="true"{% endif %}
+        >
+          {%- comment -%} Repeat the message set so the track always overflows the viewport and slides full width {%- endcomment -%}
+          {%- for rep in (1..4) -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'message' and block.settings.text != blank -%}
+                <span{% if copy == 1 and rep == 1 %} {{ block.shopify_attributes }}{% endif %}>{{ block.settings.text | escape }}</span>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </aside>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Paziņojumu josla",
+  "tag": "section",
+  "class": "announcement-bar-section",
+  "settings": [
+    { "type": "checkbox", "id": "enabled", "label": "Rādīt paziņojumu joslu", "default": true },
+    { "type": "header", "content": "Kustība un izkārtojums" },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 5,
+      "max": 120,
+      "step": 5,
+      "unit": "s",
+      "label": "Ritināšanas ilgums (mazāks = ātrāk)",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 8,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Atstarpe starp ziņojumiem",
+      "default": 160
+    }
+  ],
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Ziņojums",
+      "settings": [{ "type": "text", "id": "text", "label": "Teksts", "default": "Bezmaksas pirmreizēja konsultācija" }]
+    }
+  ],
+  "presets": [{ "name": "Paziņojumu josla", "settings": { "enabled": true } }]
+}
+{% endschema %}

@@ -4498,7 +4498,8 @@
       "email_us": "Nosūtīt e-pastu",
       "visit_facebook": "Apmeklēt mūsu Facebook lapu",
       "visit_instagram": "Apmeklēt mūsu Instagram lapu",
-      "book_online": "Pieteikties internetā"
+      "book_online": "Pieteikties internetā",
+      "announcement_marquee_label": "Paziņojumi"
     },
     "footer": {
       "menu": "Izvēlne",
