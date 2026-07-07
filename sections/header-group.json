@@ -13,8 +13,28 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "message_AmHWMy": {
+          "type": "message",
+          "settings": {
+            "text": "Piegāde 2 līdz 4 darba dienu laikā"
+          }
+        },
+        "message_8B996Y": {
+          "type": "message",
+          "settings": {
+            "text": "Bezmaksas piegāde no 60€"
+          }
+        }
+      },
+      "block_order": [
+        "message_AmHWMy",
+        "message_8B996Y"
+      ],
       "settings": {
-        "enabled": true
+        "enabled": true,
+        "scroll_speed": 120,
+        "gap": 160
       }
     },
     "header": {
