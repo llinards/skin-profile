@@ -45,6 +45,7 @@
       "settings": {
         "variant": "both",
         "phone_number": "tel:+37127841111",
+        "whatsapp_number": "+37127841111",
         "email_address": "skin@skinprofile.lv",
         "facebook_url": "https://www.facebook.com/skinprofile.lv",
         "instagram_url": "https://www.instagram.com/skinprofilesigulda",
