@@ -40,7 +40,8 @@
     "header": {
       "type": "header",
       "settings": {
-        "menu": ""
+        "menu": "",
+        "menu_highlighted_vendors": "Ksurgery"
       }
     }
   },
