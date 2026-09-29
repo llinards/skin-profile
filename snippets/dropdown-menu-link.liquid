@@ -200,14 +200,15 @@
           const desiredLeft = t.left + (t.width / 2) - (panelWidth / 2);
           const left = Math.min(Math.max(desiredLeft, c.left), c.right - panelWidth);
 
-          // Match Tailwind mt-2 (~8px)
-          const top = t.bottom + 8;
+          // Panel starts flush with the trigger; the ~8px visual gap is padding inside the panel,
+          // so the cursor never leaves the hover area on its way down
+          const top = t.bottom;
 
           // Panel is absolute inside this wrapper, so convert viewport coords to wrapper-relative
           // (a fixed panel would stay put while the non-sticky header scrolls away)
           const r = this.$root.getBoundingClientRect();
 
-          this.panelStyle = `left:${Math.round(left - r.left)}px; top:${Math.round(top - r.top)}px;`;
+          this.panelStyle = `left:${Math.round(left - r.left)}px; top:${Math.round(top - r.top)}px; padding-top:8px;`;
         }
       }
     "
