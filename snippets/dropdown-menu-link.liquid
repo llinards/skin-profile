@@ -203,7 +203,11 @@
           // Match Tailwind mt-2 (~8px)
           const top = t.bottom + 8;
 
-          this.panelStyle = `left:${Math.round(left)}px; top:${Math.round(top)}px;`;
+          // Panel is absolute inside this wrapper, so convert viewport coords to wrapper-relative
+          // (a fixed panel would stay put while the non-sticky header scrolls away)
+          const r = this.$root.getBoundingClientRect();
+
+          this.panelStyle = `left:${Math.round(left - r.left)}px; top:${Math.round(top - r.top)}px;`;
         }
       }
     "
@@ -234,7 +238,7 @@
         x-transition:leave="transition ease-in duration-150"
         x-transition:leave-start="opacity-100"
         x-transition:leave-end="opacity-0"
-        class="hidden lg:block fixed z-50"
+        class="hidden lg:block absolute z-50"
         style="display: none;"
         :style="panelStyle"
       >
