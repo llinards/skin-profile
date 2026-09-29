@@ -119,7 +119,7 @@
                       {% endif %}
                     >
                       {% if child_is_brands %}
-                        {% render 'menu-brand-links', link_class: 'inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded' %}
+                        {% render 'menu-brand-links', highlighted_vendors: highlighted_vendors, link_class: 'inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded' %}
                       {% else %}
                         {% for grandchild in child.links %}
                           <li>
@@ -293,7 +293,7 @@
                 style="display: none;{% if child_is_brands %} grid-auto-flow: column; grid-template-rows: repeat({{ brand_rows }}, auto);{% endif %}"
               >
                 {% if child_is_brands %}
-                  {% render 'menu-brand-links', link_class: 'block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap' %}
+                  {% render 'menu-brand-links', highlighted_vendors: highlighted_vendors, link_class: 'block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap' %}
                 {% else %}
                   {% for sub in child.links %}
                     <li>

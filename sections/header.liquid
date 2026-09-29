@@ -9,9 +9,9 @@
         or template.name == 'collection'
         or page.metafields.custom.navigation_style == 'light'
       %}
-        {% render 'menu' %}
+        {% render 'menu', highlighted_vendors: section.settings.menu_highlighted_vendors %}
       {% else %}
-        {% render 'menu', invert_class: 'invert' %}
+        {% render 'menu', invert_class: 'invert', highlighted_vendors: section.settings.menu_highlighted_vendors %}
       {% endif %}
     </nav>
   </div>
@@ -35,6 +35,12 @@
       "type": "link_list",
       "id": "menu",
       "label": "Menu"
+    },
+    {
+      "type": "text",
+      "id": "menu_highlighted_vendors",
+      "label": "Izceltie zīmoli",
+      "info": "Tiks attēloti treknrakstā apakšizvēlnē Zīmoli. Vairākus zīmolus atdali ar komatu. Nosaukumam precīzi jāsakrīt ar produkta zīmolu (vendor)."
     }
   ]
 }

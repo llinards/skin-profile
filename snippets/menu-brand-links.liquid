@@ -4,14 +4,24 @@
 
   Accepts:
   - link_class: {String} Classes for each <a>
+  - highlighted_vendors: {String} Comma-separated vendor names to show in bold
+    (Header section "Highlighted brands" setting)
 {%- endcomment -%}
+{%- assign highlighted_list = highlighted_vendors | split: ',' -%}
 {%- assign vendors = shop.vendors | sort_natural -%}
 {%- for vendor in vendors -%}
   {%- if vendor != blank -%}
+    {%- assign is_highlighted = false -%}
+    {%- for highlighted in highlighted_list -%}
+      {%- assign highlighted_name = highlighted | strip -%}
+      {%- if highlighted_name == vendor -%}
+        {%- assign is_highlighted = true -%}
+      {%- endif -%}
+    {%- endfor -%}
     <li>
       <a
         href="{{ routes.all_products_collection_url }}?filter.p.vendor={{ vendor | url_param_escape }}#products"
-        class="{{ link_class }}"
+        class="{{ link_class }}{% if is_highlighted %} font-bold{% endif %}"
       >
         {{ vendor }}
       </a>
