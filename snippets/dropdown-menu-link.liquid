@@ -54,7 +54,12 @@
         <ul class="mt-2 space-y-1 list-none text-center bg-(--color-brand-secondary) rounded-lg py-2 ">
           {% for child in link.links %}
             <li>
-              {% if child.links and child.links.size > 0 %}
+              {%- comment -%} A childless "Zīmoli" item lists every product vendor as its submenu {%- endcomment -%}
+              {%- assign child_is_brands = false -%}
+              {%- if child.links.size == 0 and child.handle == 'zimoli' -%}
+                {%- assign child_is_brands = true -%}
+              {%- endif -%}
+              {% if child.links.size > 0 or child_is_brands %}
                 {%- assign child_submenu_id = 'submenu-' | append: child.title | handleize -%}
                 <!-- Nested dropdown -->
                 <div
@@ -105,17 +110,28 @@
                     role="region"
                     :aria-hidden="(!childOpen).toString()"
                   >
-                    <ul class="mt-2 space-y-1 list-none text-center bg-(--color-brand-secondary)-opacity rounded-lg py-2 mx-3 ">
-                      {% for grandchild in child.links %}
-                        <li>
-                          <a
-                            href="{{ grandchild.url }}"
-                            class="inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded"
-                          >
-                            {{ grandchild.title }}
-                          </a>
-                        </li>
-                      {% endfor %}
+                    {%- comment -%} Brands flow A–Z down 2 columns to keep the list short on mobile {%- endcomment -%}
+                    {%- assign brand_rows = shop.vendors.size | divided_by: 2.0 | ceil -%}
+                    <ul
+                      class="mt-2 list-none text-center bg-(--color-brand-secondary)-opacity rounded-lg py-2 mx-3 {% if child_is_brands %}grid grid-cols-2 gap-x-2{% else %}space-y-1{% endif %}"
+                      {% if child_is_brands %}
+                        style="grid-auto-flow: column; grid-template-rows: repeat({{ brand_rows }}, auto);"
+                      {% endif %}
+                    >
+                      {% if child_is_brands %}
+                        {% render 'menu-brand-links', link_class: 'inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded' %}
+                      {% else %}
+                        {% for grandchild in child.links %}
+                          <li>
+                            <a
+                              href="{{ grandchild.url }}"
+                              class="inline-block w-full px-3 py-2 text-base lg:text-lg hover:bg-white/30 transition-all duration-200 rounded"
+                            >
+                              {{ grandchild.title }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      {% endif %}
                     </ul>
                   </div>
                 </div>
@@ -226,6 +242,11 @@
           <!-- LEFT SIDE — Level 1 -->
           <ul class="py-2 text-center list-none min-w-[200px]">
             {% for child in link.links %}
+              {%- comment -%} A childless "Zīmoli" item lists every product vendor as its submenu {%- endcomment -%}
+              {%- assign child_is_brands = false -%}
+              {%- if child.links.size == 0 and child.handle == 'zimoli' -%}
+                {%- assign child_is_brands = true -%}
+              {%- endif -%}
               <li
                 @mouseenter="openChild({{ forloop.index0 }})"
                 class="relative group w-full"
@@ -236,7 +257,7 @@
                   class="wrap-break-word w-full justify-between flex items-center px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap"
                 >
                   {{ child.title }}
-                  {% if child.links and child.links.size > 0 %}
+                  {% if child.links.size > 0 or child_is_brands %}
                     {% render 'icon-chevron-down', class: 'rotate-270' %}
                   {% endif %}
                 </a>
@@ -246,7 +267,14 @@
 
           <!-- RIGHT SIDE — Level 2 (child.links) -->
           {% for child in link.links %}
-            {% if child.links and child.links.size > 0 %}
+            {%- comment -%} A childless "Zīmoli" item lists every product vendor as its submenu {%- endcomment -%}
+            {%- assign child_is_brands = false -%}
+            {%- if child.links.size == 0 and child.handle == 'zimoli' -%}
+              {%- assign child_is_brands = true -%}
+            {%- endif -%}
+            {% if child.links.size > 0 or child_is_brands %}
+              {%- comment -%} Brands flow A–Z down 3 columns so the full list fits without scrolling {%- endcomment -%}
+              {%- assign brand_rows = shop.vendors.size | divided_by: 3.0 | ceil -%}
               <ul
                 x-show="activeChild === {{ forloop.index0 }}"
                 x-transition:enter="transition ease-out duration-150"
@@ -255,20 +283,24 @@
                 x-transition:leave="transition ease-in duration-150"
                 x-transition:leave-start="opacity-100"
                 x-transition:leave-end="opacity-0"
-                class="absolute left-full -ml-2 bg-white shadow-xl ring-1 ring-black/5 py-2 min-w-[200px] text-center rounded-md list-none transition-all duration-150"
+                class="absolute left-full -ml-2 bg-white shadow-xl ring-1 ring-black/5 py-2 min-w-[200px] text-center rounded-md list-none transition-all duration-150{% if child_is_brands %} grid gap-x-2{% endif %}"
                 x-init="$watch('activeChild', value => { if(value === {{ forloop.index0 }}) { $el.style.top = $refs.item{{ forloop.index0 }}.offsetTop + 'px' } })"
-                style="display: none;"
+                style="display: none;{% if child_is_brands %} grid-auto-flow: column; grid-template-rows: repeat({{ brand_rows }}, auto);{% endif %}"
               >
-                {% for sub in child.links %}
-                  <li>
-                    <a
-                      href="{{ sub.url }}"
-                      class="block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap"
-                    >
-                      {{ sub.title }}
-                    </a>
-                  </li>
-                {% endfor %}
+                {% if child_is_brands %}
+                  {% render 'menu-brand-links', link_class: 'block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap' %}
+                {% else %}
+                  {% for sub in child.links %}
+                    <li>
+                      <a
+                        href="{{ sub.url }}"
+                        class="block px-6 py-2 text-base hover:bg-(--color-brand-secondary) transition-colors duration-300 whitespace-nowrap"
+                      >
+                        {{ sub.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
               </ul>
             {% endif %}
           {% endfor %}
