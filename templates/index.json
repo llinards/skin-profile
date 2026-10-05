@@ -205,6 +205,15 @@
     "template_partners_RUpUhn": {
       "type": "template-partners-brands",
       "blocks": {
+        "slide_UGRhr6": {
+          "type": "slide",
+          "name": "Ksurgery",
+          "settings": {
+            "image": "shopify://shop_images/Ksurgery_logo_-_white.png",
+            "alt": "Ksurgery",
+            "url": ""
+          }
+        },
         "slide_yiV3yr": {
           "type": "slide",
           "name": "Schramec",
@@ -243,6 +252,7 @@
         }
       },
       "block_order": [
+        "slide_UGRhr6",
         "slide_yiV3yr",
         "slide_yk9Hee",
         "slide_QyV7JH",
