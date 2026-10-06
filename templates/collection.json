@@ -20,6 +20,13 @@
             "style": "white"
           }
         },
+        "image_c9i3Bm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/KS.jpg",
+            "alt_text": "KSurgery"
+          }
+        },
         "image_pNn6QV": {
           "type": "image",
           "name": "Biodroga Schwarzwald New Series",
@@ -47,6 +54,7 @@
       },
       "block_order": [
         "button_qiQdFx",
+        "image_c9i3Bm",
         "image_pNn6QV",
         "image_GdUeAh",
         "image_KKHWnD"
