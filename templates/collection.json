@@ -161,11 +161,11 @@
         },
         "category_slide_ntqPnp": {
           "type": "category_slide",
-          "name": "Uztura bagātinātāji",
+          "name": "Black Friday",
           "settings": {
             "photo": "shopify://shop_images/uztura_bagatinataji.jpg",
             "name": "Black Friday",
-            "category_name_for_filter": "Nutritional supplements"
+            "category_name_for_filter": "Black Friday"
           }
         },
         "category_slide_zbXkHt": {
